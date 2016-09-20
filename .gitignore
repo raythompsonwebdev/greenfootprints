@@ -45,3 +45,22 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+package.json
+npm-debug.log
+grunt.js
+SQL files/
+TEXT/
+HTML files/
+Fonts/
+img/
+js/elementTransitions.min.js
+js/html5shiv.min.js
+js/modernizr-2.6.2.min.js
+js/jquery-1.11.0.min.js
+js/jquery.flexslider.js
+
+css/min/
+css/elementTransitions.css
+style.css.map
+gitignore
