@@ -80,7 +80,7 @@
   
  
     
-<section id="content" >
+<section id="content"  role="main">
     	
 <article class="text">
 
