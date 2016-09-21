@@ -53,13 +53,13 @@ body { font-family: 'Harabara', Arial, sans-serif; margin: 0; line-height: 1; ba
 .container_24 header #logo { display: inline-block; margin: 1%; width: 8%; float: left; }
 .container_24 header .socials { width: 17%; height: 40%; display: inline-block; float: right; margin-top: 1%; }
 .container_24 header .socials ul { margin: 0; padding: 0; height: 100%; }
-.container_24 header .socials ul li { display: inline-block; width: 22%; height: 100%; line-height: 32px; }
+.container_24 header .socials ul li { display: inline-block; width: 22%; height: 100%; }
 .container_24 header .socials ul li a { height: 100%; width: 100%; text-align: center; display: block; }
-.container_24 header .socials ul li a i { display: block; width: 100%; height: 100%; text-align: center; font-size: 1.2em; color: #336600; -webkit-transition: all 0.1s linear; -moz-transition: all 0.1s linear; -o-transition: all 0.1s linear; transition: all 0.1s linear; }
-.container_24 header .socials ul li a i:hover { transform: scale(1.1); }
+.container_24 header .socials ul li a i { display: block; width: 100%; height: 100%; text-align: center; line-height: 32px; font-size: 1.2em; color: #336600; -webkit-transition: all 0.1s linear; -moz-transition: all 0.1s linear; -o-transition: all 0.1s linear; transition: all 0.1s linear; }
+.container_24 header .socials ul li a i:hover { transform: scale(1.1); color: #297f10; }
 .container_24 nav { height: 50px; text-align: center; margin: 1% 0; color: #000; background-color: #297F10; }
 .container_24 nav ul { list-style: none; margin: 0 auto; height: 50px; width: 90%; background-color: #297F10; }
-.container_24 nav ul li { float: left; height: 50px; width: 13.7%; list-style: none; line-height: 50px; margin: 0 0.5% 0 0; background-color: #297F10; display: inline-block; }
+.container_24 nav ul li { float: left; height: 50px; width: 14.285714%; list-style: none; line-height: 50px; margin: 0; background-color: #297F10; display: inline-block; }
 .container_24 nav ul li:hover { background-color: #ccffbb; color: #fff; }
 .container_24 nav ul li a { color: #ccffbb; background-color: #297F10; display: block; font-size: 1em; letter-spacing: 0.1em; }
 .container_24 nav ul li a:hover { color: #297F10; background-color: #ccffbb; text-decoration: none; }
@@ -110,7 +110,7 @@ body { font-family: 'Harabara', Arial, sans-serif; margin: 0; line-height: 1; ba
 .container_24 .grid_24 #content .contentbox .content-button:hover { background-color: #2c6700; color: #ffffff; font-weight: bold; cursor: pointer; }
 .container_24 .grid_24 footer { height: 50px; text-align: center; font-size: 1em; margin-top: 10px; background-color: #297F10; }
 .container_24 .grid_24 footer ul { list-style: none; margin: auto 0; height: 50px; width: 80%; margin: auto; background-color: #297F10; }
-.container_24 .grid_24 footer ul li { float: left; height: 50px; width: 13.5%; line-height: 50px; margin: 0 5px 0 0; }
+.container_24 .grid_24 footer ul li { float: left; height: 50px; width: 14.285714%; line-height: 50px; margin: 0; }
 .container_24 .grid_24 footer ul li:hover { background-color: #ccffbb; color: #fff; }
 .container_24 .grid_24 footer ul li a { color: #ccffbb; background-color: #297F10; display: block; font-size: 1em; }
 .container_24 .grid_24 footer ul li a:hover { color: #297F10; background-color: #ccffbb; text-decoration: none; }
@@ -119,8 +119,8 @@ body { font-family: 'Harabara', Arial, sans-serif; margin: 0; line-height: 1; ba
 @media (max-device-width: 1024px) { .container_24 header hgroup h1 { color: #3A5F0B; font-size: 1.8em; }
   .container_24 header hgroup h2 { font-size: 0.8em; }
   .container_24 header #logo { width: 12%; }
+  .container_24 header .socials { width: 19%; }
   .container_24 nav ul { width: 90%; }
-  .container_24 nav ul li { width: 13.6%; }
   .container_24 nav ul li a { font-size: 0.80em; }
   .container_24 .grid_24 #slider { /*slider*/ height: 315px; }
   .container_24 .grid_24 #slider .main-slider { height: 305px; }
@@ -153,7 +153,7 @@ body { font-family: 'Harabara', Arial, sans-serif; margin: 0; line-height: 1; ba
   .container_24 header hgroup h2 { font-size: 0.8em; }
   .container_24 header #logo { width: 13%; }
   .container_24 nav ul { width: 90%; }
-  .container_24 nav ul li { width: 13.6%; }
+  .container_24 nav ul li { width: 14.285714%; }
   .container_24 nav ul li a { font-size: 0.80em; }
   .container_24 .grid_24 #slider { /*slider*/ height: 315px; }
   .container_24 .grid_24 #slider .main-slider { height: 305px; }
@@ -180,7 +180,7 @@ body { font-family: 'Harabara', Arial, sans-serif; margin: 0; line-height: 1; ba
   .container_24 header hgroup h2 { font-size: 0.75em; }
   .container_24 header #logo { width: 16%; }
   .container_24 nav ul { width: 100%; }
-  .container_24 nav ul li { width: 13.6%; }
+  .container_24 nav ul li { width: 14.285714%; }
   .container_24 nav ul li a { font-size: 0.75em; }
   .container_24 .grid_24 #slider { /*slider*/ height: 310px; }
   .container_24 .grid_24 #slider .main-slider { height: 300px; }
@@ -205,13 +205,13 @@ body { font-family: 'Harabara', Arial, sans-serif; margin: 0; line-height: 1; ba
   .container_24 .grid_24 #content .text h3 { font-size: 1.1em; }
   .container_24 .grid_24 #content .text p { font-size: 0.8em; }
   .container_24 .grid_24 #content .text .recycle_img { width: 18%; }
-  .container_24 .grid_24 footer ul li { width: 14%; }
+  .container_24 .grid_24 footer ul li { width: 14.285714%; }
   .container_24 .grid_24 footer ul li a { font-size: 0.75em; } }
 @media (max-device-width: 768px) { .container_24 { width: 95.49%; }
   .container_24 header hgroup h1 { color: #3A5F0B; font-size: 1.5em; }
   .container_24 header hgroup h2 { font-size: 0.8em; }
   .container_24 nav ul { width: 100%; }
-  .container_24 nav ul li { width: 13.6%; }
+  .container_24 nav ul li { width: 14.285714%; }
   .container_24 nav ul li a { font-size: 0.75em; }
   .container_24 .grid_24 #slider { /*slider*/ height: 300px; }
   .container_24 .grid_24 #slider .main-slider { height: 290px; }
@@ -233,13 +233,13 @@ body { font-family: 'Harabara', Arial, sans-serif; margin: 0; line-height: 1; ba
   .container_24 .grid_24 #content .text h2 { font-size: 1.3em; }
   .container_24 .grid_24 #content .text p { font-size: 0.75em; }
   .container_24 .grid_24 #content .text .recycle_img { width: 17%; }
-  .container_24 .grid_24 footer ul li { width: 14%; }
+  .container_24 .grid_24 footer ul li { width: 14.285714%; }
   .container_24 .grid_24 footer ul li a { font-size: 0.75em; } }
 @media (max-device-width: 640px) { .container_24 header hgroup h1 { color: #3A5F0B; font-size: 1.8em; }
   .container_24 header hgroup h2 { font-size: 0.8em; }
   .container_24 nav ul { width: 100%; }
-  .container_24 nav ul li { width: 13.7%; }
-  .container_24 nav ul li a { font-size: 0.75em; }
+  .container_24 nav ul li { width: 14.285714%; }
+  .container_24 nav ul li a { font-size: 0.70em; }
   .slider-caption h2 { font-size: 2em; letter-spacing: 0.1em; }
   .grid_24 #content .contentbox h2 { font-size: 1.1em; text-align: left; text-indent: 1%; }
   .grid_24 #content .contentbox p { letter-spacing: 0.1em; font-size: 0.95em; }
@@ -248,6 +248,9 @@ body { font-family: 'Harabara', Arial, sans-serif; margin: 0; line-height: 1; ba
   .grid_24 #content .contentbox .contentbox_image { height: 70%; margin: 11% 1% 0px; }
   .grid_24 #content .text h1 { font-size: 2em; }
   .grid_24 #content .text h2 { font-size: 1.6em; }
-  .grid_24 #content .text p { font-size: 0.9em; } }
+  .grid_24 #content .text p { font-size: 0.9em; }
+  .grid_24 #content .text .recycle_img { width: 17%; }
+  .grid_24 footer ul li { width: 14.285714%; }
+  .grid_24 footer ul li a { font-size: 0.75em; } }
 
 /*# sourceMappingURL=style.css.map */

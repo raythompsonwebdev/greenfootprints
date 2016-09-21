@@ -87,7 +87,7 @@
 
 <h3 >Recycling and rubbish bin in a German railway station.</h3>
 
-<p >  A number of different systems have been implemented to collect recyclates from the general waste stream. These systems lie along the spectrum of trade-off between public convenience and government ease and expense. The three main categories of collection are "drop-off centres", "buy-back centres" and "curbside collection".</p>
+<p>  A number of different systems have been implemented to collect recyclates from the general waste stream. These systems lie along the spectrum of trade-off between public convenience and government ease and expense. The three main categories of collection are "drop-off centres", "buy-back centres" and "curbside collection".</p>
 
 <h3>Drop-off centres</h3>
 
@@ -182,9 +182,24 @@
 <script type='text/javascript'>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js">\x3C/script>')
 </script>
 
-<script>
+
+<script >
+
+jQuery(document).ready(function($){
   
-  
+   
+ $('.text h3').click(
+
+  function(){
+        
+      $('p').slideToggle();
+ 
+  })
+
+
+ 
+});
+
 </script>
 
 </body>
