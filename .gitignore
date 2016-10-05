@@ -57,3 +57,4 @@ grunt.js
 ie.css
 css/
 js/
+bower_components/
