@@ -22,8 +22,10 @@
     <link href="Fonts/fontawesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="Fonts/Harabara_Bold/stylesheet.css" rel="stylesheet">
     <!--favicon-->
-	<link rel="icon" href="favicon.ico">
-
+    <link rel="icon" href="favicon.ico">
+    <style>
+        
+    </style>
     <!--[if IE]>
  <link rel="stylesheet" type="text/css" href="css/ie.css"/>
  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -89,32 +91,31 @@
 
                     <h1>Feedback</h1>
 
+                    <div id="summary"> </div>
 
-                    <form action="" method="get">
+
+                    <form action="" id="feedback-form" method="post">
                         <ul>
 
-                            <li><label for="">Name</label>
-                                <input type="text"></li>
+                            <li><label for="name">Name</label>
+                                <input type="text" name="name"></li>
 
-                            <li><label for="">Email</label>
-                                <input type="text"></li>
+                            <li><label for="email">Email</label>
+                                <input type="email" name="email"></li>
 
-                            <li><label for="">Subject</label>
-                                <input type="text"></li>
+                            <li><label for="subject">Subject</label>
+                                <input type="text" name="subject"></li>
 
-                            <li><label for="">Message</label>
-                                <textarea name="textarea" rows="10"></textarea></li>
+                            <li><label for="message">Message</label>
+                                <textarea name="message" rows="10"></textarea></li>
 
-                            <li><label for=""></label><br/>
-                                <input type="submit" name="Submit" id="Submit" value="Submit" />
+                            <li><label for="submit"></label><br/>
+                                <input type="submit" name="submit" id="Submit" value="Submit" />
                             </li>
                             <li></li>
 
                         </ul>
                     </form>
-
-
-
 
 
                     <br/>
@@ -158,11 +159,47 @@
     <!-- end .container_24 -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-     <script type="text/javascript">
-        window.jQuery || document.write("<script src=\"bower_components/jquery.min.js\"><\/script>");
+
+    <script type="text/javascript">
+        window.jQuery || document.write("<script src=\"bower_components/jquery/jquery.min.js\"><\/script>");
     </script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            // Registration Form Validation - using jquery.validate.min.js
+
+            $("#feedback-form").validate({
+                rules: {
+                    name: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    subject: {
+                        required: true
+                    }
+                },
+                messages: {
+                    name: "Name is required.",
+                    email: "Email is required."
+                },
+                showErrors: function(errorMap, errorList) {
+                    $("#summary").html("Your form contains " +
+                        this.numberOfInvalids() +
+                        " errors, see details below.").addClass('error');
+                    this.defaultShowErrors();
+                }
+
+            });
+
+
+        });
+    </script>
+
     <script src="bower_components/modernizr/modernizr.js"></script>
-    <script src="js/custom.js"></script>
+
+
 
 </body>
 
