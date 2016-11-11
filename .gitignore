@@ -58,3 +58,4 @@ ie.css
 css/
 js/
 bower_components/
+/nbproject/private/
