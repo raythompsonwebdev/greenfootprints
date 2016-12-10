@@ -58,4 +58,6 @@ ie.css
 css/
 js/
 bower_components/
-/nbproject/private/
+nbproject/
+css/.sass-cache/
+css/style.css.map

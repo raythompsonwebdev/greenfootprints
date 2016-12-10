@@ -1,17 +1,11 @@
 $(document).ready(function() {
-	
-	$("body").css("display", "none");
 
-    $("body").fadeIn(1000);
-    
-	$("a.transition").click(function(event){
-		event.preventDefault();
-		linkLocation = this.href;
-		$("body").fadeOut(1000, redirectPage);		
+	$('button#mobile-toggle').bind('click', function(){
+
+		$('nav ul#mobile-nav').slideToggle(250).css('display', 'block');
+
 	});
-		
-	function redirectPage() {
-		window.location = linkLocation;
-	}
-	
+
+
+
 });
