@@ -2,9 +2,22 @@
   "name": "greenfoot-prints",
   "version": "0.0.1",
   "dependencies": {
-    
     "modernizr": "~2.6.2",
     "jquery": "~1.10.2"
   },
-  "private": true
+  "private": true,
+  "homepage": "https://github.com/DigbyCeaser/greenfootprints-project",
+  "authors": [
+    "DigbyCeaser <4f7baea1@opayq.com>"
+  ],
+  "description": "recycling website",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
