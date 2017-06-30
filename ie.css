@@ -1,8 +1,16 @@
 @font-face {
   font-family: 'Harabara_Bold';
-  src: url("fonts/Harabara_Bold/Harabara.eot");
+  src: url("Fonts/Harabara_Bold/Harabara.eot");
   /* IE9 Compat Modes */
-  src: url("fonts/Harabara_Bold/Harabara.eot?#iefix") format("embedded-opentype"), url("fonts/Harabara_Bold/Harabara.woff") format("woff"), url("fonts/Harabara_Bold/Harabara.ttf") format("truetype"), url("sfonts/Harabara_Bold/Harabara.svg#svgFontName") format("svg");
+  src: url("Fonts/Harabara_Bold/Harabara.eot?#iefix") format("embedded-opentype"), url("Fonts/Harabara_Bold/Harabara.woff") format("woff"), url("Fonts/Harabara_Bold/Harabara.ttf") format("truetype"), url("Fonts/Harabara_Bold/Harabara.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'viro-webfont';
+  src: url("Fonts/Viro/viro-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("Fonts/Viro/viro-webfont.eot?#iefix") format("embedded-opentype"), url("Fonts/Viro/viro-webfont.woff") format("woff"), url("Fonts/Viro/viro-webfont.ttf") format("truetype"), url("Fonts/Viro/viro-webfont.svg#svgFontName") format("svg");
   /* Legacy iOS */
   font-weight: normal;
 }
@@ -93,7 +101,7 @@ button#mobile-toggle {
 .container_24 header hgroup h1 {
   color: #ccffbb;
   font-size: 2em;
-  font-family: "Harabara_Bold", Candara, Arial, sans-serif;
+  font-family: "viro-webfont", Candara, Arial, sans-serif;
   text-align: left;
   letter-spacing: 0.15em;
   line-height: 40px;
@@ -110,7 +118,7 @@ button#mobile-toggle {
   padding: 1%;
   background-color: #297F10;
   font-size: 0.9em;
-  font-family: "Harabara_Bold", Candara, Arial, sans-serif;
+  font-family: "viro-webfont", Candara, Arial, sans-serif;
   line-height: 20px;
   width: 100%;
   text-align: left;
@@ -221,7 +229,7 @@ button#mobile-toggle {
   height: 350px;
   overflow: hidden;
   margin: 0;
-  font-family: "Harabara_Bold", Candara, Arial, sans-serif;
+  font-family: "viro-webfont", Candara, Arial, sans-serif;
 }
 .container_24 div.grid_24 #slider div.main-slider .flexslider img {
   position: relative;
