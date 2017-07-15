@@ -1,0 +1,84 @@
+  Yoast SEO
+
+about-page**************
+Learn about how I started in web development, also details of web developer training I have received , current web development skill level and experience.
+
+SEO Title***********
+About Page - raythompsonwebdev - webdeveloper
+
+Focus key Word************
+Web Developer
+
+
+
+websites-page**************
+Learn about how I started in web development, also details of web developer training I have received , current web development skill level and experience.
+
+SEO Title***********
+About Page - raythompsonwebdev - webdeveloper
+
+Focus key Word************
+Web Developer
+
+
+Home-page**************
+I am a web developer from London. I love to use wordpress along with HTML ,CSS and Javscript to create themes, websites, web apps and other digital content.
+
+SEO Title***********
+Home Page - raythompsonwebdev- web developer - london
+
+Focus key Word************
+web developer from london
+
+contact**************
+Complete recaptcha contact form with any question you have about any current or upcoming web development project you need help with and I reply with 48 hrs. 
+
+SEO Title***********
+Contact - raythompsonwebdev
+
+Focus key Word************
+contact
+
+Privacy**************
+Short overview of privacy policy governing use of this website when submitting personal information including data protection and use of cookies. 
+
+SEO Title***********
+Privacy Policy Page - raythompsonwebdev
+
+Focus key Word************
+privacy policy
+
+
+terms**************
+Terms and conditions set out regarding use of this website. We try to ensure a great user experience when visiting this site.  
+
+SEO Title***********
+Terms and Conditions Page - raythompsonwebdev 
+
+Focus key Word************
+terms and conditions
+
+
+graphic design**************
+Copyright free article giving breif overview of five graphic design principles ; contrast, repetition, alignment, typograhy and proximity.  
+
+SEO Title***********
+Five Graphic Design Principles - raythompsonwebdev
+
+Focus key Word************
+five-graphic-design-principles
+
+
+
+
+
+blog**************
+Upcoming web design and web development blog giving my opinion on latest industry news and tutorials on latest coding standards, wordpress and more..  
+
+SEO Title***********
+web development blog - raythompsonwebdev - wordpress  
+
+Focus key Word************
+web development blog
+
+
