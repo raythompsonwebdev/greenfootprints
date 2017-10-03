@@ -46,14 +46,13 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-TEXT/
-SQL files/
+Files/
+
+
 img/
-HTML files/
+
 Fonts
 npm-debug.log
-package.json
-gruntfile.js
 ie.css.map
 ie-min.css.map
 css/
@@ -70,14 +69,9 @@ browserconfig.xml
 
 apple-touch-icon.png
 
-
-svg-style-3-min.css
-svg-style-3-min.css.map
-svg-style-3.css
-svg-style-3.css.map
-
+ie.min-css.map
+ie.css.map
 style-min.css.map
-
 style.css.map
 style.css
 
