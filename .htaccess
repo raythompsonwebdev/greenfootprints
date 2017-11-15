@@ -11,6 +11,8 @@
 # # CROSS-ORIGIN                                                       #
 # ######################################################################
 
+
+
 # ----------------------------------------------------------------------
 # | Cross-origin requests                                              |
 # ----------------------------------------------------------------------
@@ -190,6 +192,7 @@ Options -MultiViews
     AddType application/manifest+json                   webmanifest
     AddType application/x-web-app-manifest+json         webapp
     AddType text/cache-manifest                         appcache
+    AddType text/cache-manifest .appcache
 
 
   # Media files
