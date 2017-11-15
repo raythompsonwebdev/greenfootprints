@@ -46,6 +46,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+Files/
 TEXT/
 SQL files/
 img/
@@ -65,7 +66,8 @@ css/.sass-cache/
 css/style.css.map
 
 .sass-cache/
-
+crossdomain.xml
+gruntfile.js
 browserconfig.xml
 
 apple-touch-icon.png
