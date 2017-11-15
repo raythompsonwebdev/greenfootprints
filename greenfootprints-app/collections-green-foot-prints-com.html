@@ -24,7 +24,7 @@
         <link href="Fonts/Harabara_Bold/stylesheet.css" rel="stylesheet">
 
           <!-- Place favicon.ico in the root directory -->
-    
+
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -82,16 +82,18 @@
 
             <nav role="navigation">
                 <ul>
-                    <li><a href="index.html" title="Home">Home</a></li>
-                    <li><a href="recycling-green-foot-prints-com.html" title="Recycling">Recycling</a></li>
-                    <li><a href="collections-green-foot-prints-com.html" title="Collections">Collections</a></li>
-                    <li><a href="ten-ways-to-recycle-green-foot-prints-com.html" title="10 Ways">10 Ways</a></li>
-                    <li><a href="recycling-facts-green-foot-prints-com.html" title="Recyling Facts">Recyling Facts</a></li>
-                    <li><a href="feedback-green-foot-prints-com.html" title="Feedback">Feedback</a></li>
-                    <li><a href="contact-us-green-foot-prints-com.html" title="Contact">Contact</a></li>
-                </ul>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="recycling-ettiquette-green-foot-prints-com.html" title="ettiquette">Ettiquette</a></li>
+                <li><a href="recycling-green-foot-prints-com.html" title="Recycling">Recycling</a></li>
+                <li><a href="collections-green-foot-prints-com.html" title="Collections">Collections</a></li>
+                <li><a href="ten-ways-to-recycle-green-foot-prints-com.html" title="10 Ways">10 Ways</a></li>
+                <li><a href="recycling-facts-green-foot-prints-com.html" title="Recyling Facts">Recyling Facts</a></li>
+                <li><a href="feedback-green-foot-prints-com.html" title="Feedback">Feedback</a></li>
+                <li><a href="contact-us-green-foot-prints-com.html" title="Contact">Contact</a></li>
+            </ul>
                 <ul id="mobile-nav">
                     <li><a href="index.html" title="Home">Home</a></li>
+                    <li><a href="recycling-ettiquette-green-foot-prints-com.html" title="ettiquette">Ettiquette</a></li>
                     <li><a href="recycling-green-foot-prints-com.html" title="Recycling">Recycling</a></li>
                     <li><a href="collections-green-foot-prints-com.html" title="Collections">Collections</a></li>
                     <li><a href="ten-ways-to-recycle-green-foot-prints-com.html" title="10 Ways">10 Ways</a></li>
@@ -107,15 +109,10 @@
 
             <!-- end .grid_6 -->
             <div class="grid_24">
-
-
-
-                <div id="content" role="main">
-
+                <main id="content" role="main">
+						
                     <article class="text">
-
-
-                        <h1>Collections</h1>
+                   <h1>Collections</h1>
 
                         <h3>Recycling and rubbish bin in a German railway station.</h3>
 
@@ -203,7 +200,7 @@
 
                     <div class="clear"> </div>
 
-                </div>
+                </main>
 
                 <div class="clear"> </div>
 
@@ -239,23 +236,30 @@
         <script type="text/javascript">
                     window.jQuery || document.write("<script src=\"bower_components/jquery/jquery.js\"><\/script>");
         </script>
-       
+         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
         <script>
-                    jQuery(document).ready(function ($) {
+        jQuery(document).ready(function ($) {
 
 
-                        $('.text h3').click(
-                                function () {
+            $('.text h3').click(
+                    function () {
 
-                                    var element = $(this);
+                        var element = $(this);
 
-                                    $(element).next("p.collection-text").slideToggle(250);
-
-                                });
-
-
+                        $(element).next("p.collection-text").animate({
+                          'height':'toggle'
+                        }, 'slow', 'easeOutBounce');
+                      });
 
                     });
+
+                    $('#bio h3').click(function() {
+
+
+
+
+        });
         </script>
         <script src="js/custom.js"></script>
         <script src="js/modernizr-2.6.2.min.js"></script>

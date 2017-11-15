@@ -11,6 +11,8 @@
 # # CROSS-ORIGIN                                                       #
 # ######################################################################
 
+
+
 # ----------------------------------------------------------------------
 # | Cross-origin requests                                              |
 # ----------------------------------------------------------------------
@@ -87,6 +89,7 @@
 
 ErrorDocument 404 /404.html
 ErrorDocument 500 /500.html
+ErrorDocument 500 /401.html
 
 # ----------------------------------------------------------------------
 # | Error prevention                                                   |
@@ -189,6 +192,7 @@ Options -MultiViews
     AddType application/manifest+json                   webmanifest
     AddType application/x-web-app-manifest+json         webapp
     AddType text/cache-manifest                         appcache
+    AddType text/cache-manifest .appcache
 
 
   # Media files

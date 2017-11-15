@@ -1,0 +1,29 @@
+{
+  "name": "greenfootprints-com",
+  "version": "1.0.0",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+
+  },
+  "author": "raymond thompson",
+  "license": "MIT",
+  "directories": {
+    "doc": "doc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DigbyCeaser/greenfootprints-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DigbyCeaser/greenfootprints-project/issues"
+  },
+  "homepage": "https://github.com/DigbyCeaser/greenfootprints-project#readme",
+  "description": "Recycling website",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "recycling"
+  ]
+}
