@@ -6,22 +6,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="minimum-scale=0">
         <meta name="viewport" content="user-scalable=yes">
-        <meta name="viewport" content="target-densitydpi=device-dpi">
+        
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content=" Recycling website GreenFootprints Collections page. Website built by raythompwebdesign.com" />
         <meta name="keywords" content="Recyling, green, enviroment, waste recycling, garbage disposal, garbage collection, waste collection" />
         <meta name="author" content="RayThompsonWebdev" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="copyright" content="&copy;raymondthompson" />
 
         <title>Greenfoot-Prints-Collections-Page</title>
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/960_24_col.css" />
         <link rel="stylesheet" href="style-min.css" />
-        <link rel="stylesheet" href="css/misc.css" />
         <link href="Fonts//fontawesome/css/font-awesome.min.css" rel="stylesheet">
-        <link href="Fonts/Harabara_Bold/stylesheet.css" rel="stylesheet">
+        <link rel="stylesheet" href="Fonts/Viro/webfont/stylesheet.css" />
 
           <!-- Place favicon.ico in the root directory -->
 
@@ -57,11 +54,16 @@
         <!--[if lt IE 8]>
                 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
-        <button id="mobile-toggle" title="menu">Menu</button>
+        
         <div class="container_24">
 
             <header role="banner">
-
+                
+                <figure id="logo"><img src="img/logo-green-foot-prints.gif" alt="logo-green-foot-prints"></figure>
+                <hgroup>
+                    <h1> GreenFootPrints</h1>
+                    <h2>UK's leading Recycling website</h2>
+                </hgroup>
                 <section class="socials">
 
                     <ul>
@@ -72,26 +74,10 @@
                     </ul>
 
                 </section>
-                <figure id="logo"><img src="img/logo-green-foot-prints.gif" alt="logo-green-foot-prints"></figure>
-                <hgroup>
-                    <h1> GreenFootPrints</h1>
-                    <h2>UK's leading Recycling website</h2>
-                </hgroup>
             </header>
 
 
-            <nav role="navigation">
-                <ul>
-                <li><a href="index.html" title="Home">Home</a></li>
-                <li><a href="recycling-ettiquette-green-foot-prints-com.html" title="ettiquette">Ettiquette</a></li>
-                <li><a href="recycling-green-foot-prints-com.html" title="Recycling">Recycling</a></li>
-                <li><a href="collections-green-foot-prints-com.html" title="Collections">Collections</a></li>
-                <li><a href="ten-ways-to-recycle-green-foot-prints-com.html" title="10 Ways">10 Ways</a></li>
-                <li><a href="recycling-facts-green-foot-prints-com.html" title="Recyling Facts">Recyling Facts</a></li>
-                <li><a href="feedback-green-foot-prints-com.html" title="Feedback">Feedback</a></li>
-                <li><a href="contact-us-green-foot-prints-com.html" title="Contact">Contact</a></li>
-            </ul>
-                <ul id="mobile-nav">
+             <ul id="mobile-nav">
                     <li><a href="index.html" title="Home">Home</a></li>
                     <li><a href="recycling-ettiquette-green-foot-prints-com.html" title="ettiquette">Ettiquette</a></li>
                     <li><a href="recycling-green-foot-prints-com.html" title="Recycling">Recycling</a></li>
@@ -101,6 +87,18 @@
                     <li><a href="feedback-green-foot-prints-com.html" title="Feedback">Feedback</a></li>
                     <li><a href="contact-us-green-foot-prints-com.html" title="Contact">Contact</a></li>
                 </ul>
+            <nav role="navigation">
+               <ul>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="recycling-ettiquette-green-foot-prints-com.html" title="ettiquette">Ettiquette</a></li>
+                <li><a href="recycling-green-foot-prints-com.html" title="Recycling">Recycling</a></li>
+                <li><a href="collections-green-foot-prints-com.html" title="Collections">Collections</a></li>
+                <li><a href="ten-ways-to-recycle-green-foot-prints-com.html" title="10 Ways">10 Ways</a></li>
+                <li><a href="recycling-facts-green-foot-prints-com.html" title="Recyling Facts">Recyling Facts</a></li>
+                <li><a href="feedback-green-foot-prints-com.html" title="Feedback">Feedback</a></li>
+                <li><a href="contact-us-green-foot-prints-com.html" title="Contact">Contact</a></li>
+            </ul>
+              <button id="mobile-toggle" title="menu">Menu</button>
             </nav>
 
             <!-- end .grid_24 -->
@@ -232,11 +230,11 @@
         </div>
         <!-- end .container_24 -->
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script type="text/javascript">
-                    window.jQuery || document.write("<script src=\"bower_components/jquery/jquery.js\"><\/script>");
+                    window.jQuery || document.write("<script src=\"../bower_components/jquery/jquery.js\"><\/script>");
         </script>
-         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+         <script type="text/javascript" src="js/jquery.easing.1.3.js" async></script>
 
         <script>
         jQuery(document).ready(function ($) {
@@ -261,7 +259,7 @@
 
         });
         </script>
-        <script src="js/custom.js"></script>
+        <script src="js/custom.js" async></script>
         <script src="js/modernizr-2.6.2.min.js"></script>
     </body>
 

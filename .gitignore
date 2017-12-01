@@ -64,10 +64,13 @@ greenfootprints-app/css/style.css.map
 test/
 .sass-cache/
 
+node_modules/
+
 browserconfig.xml
 crossdomain.xml
 apple-touch-icon.png
 gruntfile.js
+package.json
 
 greenfootprints-app/ie.min-css.map
 greenfootprints-app/ie.css.map

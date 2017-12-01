@@ -44,8 +44,8 @@ module.exports = function(grunt){
                     },
 
                     files:{
-                            'style.css':'css/style.scss',                           
-                            'ie.css':'css/ie.scss'
+                            'greenfootprints-app/style.css':'greenfootprints-app/css/style.scss',                           
+                            'greenfootprints-app/ie.css':'greenfootprints-app/css/ie.scss'
                             /*where file goes-----/where file from*/
                     }
                 },
@@ -56,7 +56,7 @@ module.exports = function(grunt){
                                 sourcemap:'auto'
                         },
                         files:{
-                            'style-min.css':'css/style.scss',                                                   'ie-min.css':'css/ie.scss'
+                            'greenfootprints-app/style-min.css':'greenfootprints-app/css/style.scss',                                                   'greenfootprints-app/ie-min.css':'greenfootprints-app/css/ie.scss'
                                 /*where file goes-----/where file from*/
                         }
                     }
@@ -90,7 +90,7 @@ module.exports = function(grunt){
             watch:{
 
                 css:{
-                        files:'**/*.scss',
+                        files:'greenfootprints-app/**/*.scss',
                         tasks:['sass']
                 }
             }
