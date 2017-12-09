@@ -1,13 +1,13 @@
 {
   "name": "Greenfootprints",
-  "short_name": "🐉🐉🐉",
+  "short_name": "Greenfootprints",
   "display": "minimal-ui",
-  "start_url": "/",
+  "start_url": "index.html",
   "theme_color": "#297F10",
   "background_color": "#92cd00",
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "favicons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     }

@@ -72,7 +72,10 @@ css/style.css.map
 _assets/
 Files/
 
+
+greenfootprints-app/dist/
 greenfootprints-app/img/
+greenfootprints-app/images/
 greenfootprints-app/Fonts
 greenfootprints-app/ie.css.map
 greenfootprints-app/ie-min.css.map
