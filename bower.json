@@ -6,9 +6,9 @@
     "jquery": "~1.10.2"
   },
   "private": true,
-  "homepage": "https://github.com/DigbyCeaser/greenfootprints-project",
+  "homepage": "https://github.com/raythompsonwebdev/greenfootprints-project",
   "authors": [
-    "DigbyCeaser <4f7baea1@opayq.com>"
+    "raythompsonwebdev <ray_thomp@hushmail.com>"
   ],
   "description": "recycling website",
   "main": "index.html",

@@ -46,7 +46,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-<<<<<<< HEAD
+
 Files/
 TEXT/
 SQL files/
@@ -65,8 +65,6 @@ node_modules/
 nbproject/
 css/.sass-cache/
 css/style.css.map
-=======
->>>>>>> 00746848e0c29b22940f4def42504eab360750e1
 
 .git/
 _assets/
@@ -87,20 +85,20 @@ greenfootprints-app/css/.sass-cache/
 greenfootprints-app/css/style.css.map
 test/
 .sass-cache/
-<<<<<<< HEAD
+.settings/
 
 node_modules/
 
-=======
+
 crossdomain.xml
 gruntfile.js
->>>>>>> origin/master
+
 browserconfig.xml
 crossdomain.xml
 apple-touch-icon.png
 gruntfile.js
 package.json
-
+.vscode/
 greenfootprints-app/ie.min-css.map
 greenfootprints-app/ie.css.map
 greenfootprints-app/style-min.css.map
