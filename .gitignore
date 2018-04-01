@@ -46,63 +46,44 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-
 Files/
-TEXT/
-SQL files/
-img/
-HTML files/
-Fonts
 npm-debug.log
-package.json
-gruntfile.js
-ie.css.map
-ie-min.css.map
-css/
-js/
-bower_components/
-node_modules/
-nbproject/
-css/.sass-cache/
-css/style.css.map
 
 .git/
 _assets/
-Files/
+.sass-cache/
+.settings/
+node_modules/
 
+crossdomain.xml
+gruntfile.js
+browserconfig.xml
+crossdomain.xml
+apple-touch-icon.png
+.vscode/
+bower_components/
 
 greenfootprints-app/dist/
 greenfootprints-app/img/
 greenfootprints-app/images/
-greenfootprints-app/Fonts
+greenfootprints-app/images/New Folder/
+greenfootprints-app/Fonts/
 greenfootprints-app/ie.css.map
 greenfootprints-app/ie-min.css.map
-greenfootprints-app/css/
+
 greenfootprints-app/js/
-bower_components/
+greenfootprints-app/js/deps/
+greenfootprints-app/js/sw.js
+greenfootprints-app/js/site.js
+
 greenfootprints-app/nbproject/
+
 greenfootprints-app/css/.sass-cache/
-greenfootprints-app/css/style.css.map
-test/
-.sass-cache/
-.settings/
+greenfootprints-app/css/min/
 
-node_modules/
-
-
-crossdomain.xml
-gruntfile.js
-
-browserconfig.xml
-crossdomain.xml
-apple-touch-icon.png
-gruntfile.js
-package.json
-.vscode/
 greenfootprints-app/ie.min-css.map
 greenfootprints-app/ie.css.map
 greenfootprints-app/style-min.css.map
 greenfootprints-app/style.css.map
 greenfootprints-app/style.css
-
 greenfootprints-app/favicons/
