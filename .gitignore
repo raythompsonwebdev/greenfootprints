@@ -65,9 +65,8 @@ node_modules/
 nbproject/
 css/.sass-cache/
 css/style.css.map
-
+browserconfig.xml
 .git/
-_assets/
 Files/
 
 

@@ -1,8 +1,12 @@
-GreenFootPrints
+![https://www.greenfootprints.raythompsonwebdev.co.uk](/_assets/www-greenfootprints-home-page-large.jpg)
 
-# Creating a Website
+# GreenFootPrints
 
-## Scenario
+## Synopsis
+
+## Creating a Website
+
+### Scenario
 
 You are a member of a local recycling company "Green FootPrints " based in Essex and you have
 been asked to set up a simple website consisting of 3 pages to advertise what the company has to
@@ -65,17 +69,64 @@ link to the words Click here using the e-mail address provided above.
 7. At the bottom of your web page add your name and today's date left aligned in a smaller
 font size.
 
-### Answer Following questions
 
-1 Describe different types of information that need to be considered when designing a website.
-2 Give four examples of elements of a website that may be restricted by copyright and describe how
-this affects their use.
-3 Give six different file formats that could be included in a web.
-4 Write a detailed reflective account of your process of creating this website detailing
-* Resources and Skills Required
-* Planning stages: What and Why
-* Strengths and Weaknesses of your website
-* Evaluation and review of your website
-* lmprovements
-When you have finished working:
-o Print and Sign each document above your name
+## Installation
+
+
+
+## API Reference
+
+
+
+## Tests
+
+Describe and show how to run the tests with code examples.
+
+## Contributors
+
+Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+
+## License
+
+## Credits
+
+* jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
+ 
+  - Uses the built in easing capabilities added In jQuery 1.1 - to offer multiple easing options
+ 
+  - TERMS OF USE - jQuery Easing
+  
+  - Open source under the BSD License. 
+  
+  - Copyright Â© 2008 George McGinley Smith   All rights reserved.
+
+
+ * jQuery FlexSlider v2.2.2   Copyright 2012 WooThemes   Contributing Author: Tyler Smith
+
+ * jQuery validation plug-in 1.7
+ 
+ - http://bassistance.de/jquery-plugins/jquery-plugin-validation/
+ -  http://docs.jquery.com/Plugins/Validation
+ 
+ - Copyright (c) 2006 - 2008 Jörn Zaefferer
+ 
+ - $Id: jquery.validate.js 6403 2009-06-17 14:27:16Z joern.zaefferer $
+ 
+ - Dual licensed under the MIT and GPL licenses:
+ - http://www.opensource.org/licenses/mit-license.php
+ - http://www.gnu.org/licenses/gpl.html
+
+ * jQuery v1.11.0 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license 
+
+ * HTML5 Shiv 3.7.2 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
+
+ * Modernizr 2.6.2 (Custom Build) | MIT & BSD
+
+ * selectivizr v1.0.2 - (c) Keith Clark, freely distributable under the terms of the MIT license.
+
+ * 960 Grid System ~ Core CSS.  Learn more ~ http://960.gs/   Licensed under GPL and MIT.
+
+
+
+
+ 

@@ -4,14 +4,14 @@ module.exports = function(grunt){
     grunt.initConfig({
 
             pkg: grunt.file.readJSON('package.json'),
-		
-		
+
+
 		responsive_images: {
 		  dev: {
 			options: {
 			  engine: 'im',
 			  sizes: [
-				  
+
 				{
 				  name:'quantamsmall',
 				  width: 80,
@@ -29,11 +29,11 @@ module.exports = function(grunt){
 				  width: 500,
 				},
 				{
-				  name:'medium',	
+				  name:'medium',
 				  width: 980,
 				},
 			  	{
-				  name:'large',	
+				  name:'large',
 				  width: 1200,
 				}]
 			},
@@ -66,8 +66,8 @@ module.exports = function(grunt){
 			},
 		  },
 		},
-		
-		
+
+
 		htmlmin: {                                     // Task
 			dist: {                                      // Target
 			  options: {                                 // Target options
@@ -77,16 +77,16 @@ module.exports = function(grunt){
 			  files: {                                   // Dictionary of files
 				'greenfootprints-app/dist/index.html': 'greenfootprints-app/index.html',     // 'destination': 'source'
 				'greenfootprints-app/dist/recycling-green-foot-prints-com.html': 'greenfootprints-app/recycling-green-foot-prints-com.html',
-				'greenfootprints-app/dist/recycling-facts-green-foot-prints-com.html': 'greenfootprints-app/recycling-facts-green-foot-prints-com.html',   
-				'greenfootprints-app/dist/recycling-ettiquette-green-foot-prints-com.html': 'greenfootprints-app/recycling-ettiquette-green-foot-prints-com.html',   
-				'greenfootprints-app/dist/feedback-green-foot-prints-com.html': 'greenfootprints-app/feedback-green-foot-prints-com.html',  
-				'greenfootprints-app/dist/contact-us-green-foot-prints-com.html': 'greenfootprints-app/contact-us-green-foot-prints-com.html',  
-				'greenfootprints-app/dist/collections-green-foot-prints-com.html': 'greenfootprints-app/collections-green-foot-prints-com.html',   
-				'greenfootprints-app/dist/500.html': 'greenfootprints-app/500.html',   
-				'greenfootprints-app/dist/404.html': 'greenfootprints-app/404.html',  
-				'greenfootprints-app/dist/401.html': 'greenfootprints-app/401.html',   
-				'greenfootprints-app/dist/ten-ways-to-recycle-green-foot-prints-com.html': 'greenfootprints-app/ten-ways-to-recycle-green-foot-prints-com.html',     
-				  
+				'greenfootprints-app/dist/recycling-facts-green-foot-prints-com.html': 'greenfootprints-app/recycling-facts-green-foot-prints-com.html',
+				'greenfootprints-app/dist/recycling-ettiquette-green-foot-prints-com.html': 'greenfootprints-app/recycling-ettiquette-green-foot-prints-com.html',
+				'greenfootprints-app/dist/feedback-green-foot-prints-com.html': 'greenfootprints-app/feedback-green-foot-prints-com.html',
+				'greenfootprints-app/dist/contact-us-green-foot-prints-com.html': 'greenfootprints-app/contact-us-green-foot-prints-com.html',
+				'greenfootprints-app/dist/collections-green-foot-prints-com.html': 'greenfootprints-app/collections-green-foot-prints-com.html',
+				'greenfootprints-app/dist/500.html': 'greenfootprints-app/500.html',
+				'greenfootprints-app/dist/404.html': 'greenfootprints-app/404.html',
+				'greenfootprints-app/dist/401.html': 'greenfootprints-app/401.html',
+				'greenfootprints-app/dist/ten-ways-to-recycle-green-foot-prints-com.html': 'greenfootprints-app/ten-ways-to-recycle-green-foot-prints-com.html',
+
 			  }
 			}
 		  },
@@ -100,10 +100,10 @@ module.exports = function(grunt){
             },
             dist: {
                 src: ['greenfootprints-app/js/**/*.js'],
-                dest: 'greenfootprints-app/dist/<%= pkg.name %>.js'
+                dest: 'greenfootprints-app/js/<%= pkg.name %>.js'
             }
         },
-        
+
         /**
          * Uglify
          */
@@ -111,14 +111,14 @@ module.exports = function(grunt){
             options: {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
             },
-			
+
 			my_target: {
 			  files: {
-				'greenfootprints-app/dist/output.min.js': ['greenfootprints-app/js/custom.js', 'greenfootprints-app/js/jquery.easing.1.3.js', 'greenfootprints-app/js/jquery.flexslider.js']
+				'greenfootprints-app/dist/greenfootprints.min.js': ['greenfootprints-app/js/custom.js', 'greenfootprints-app/js/jquery.easing.1.3.js', 'greenfootprints-app/js/jquery.flexslider.js']
 			  }
 			},
-			
-            
+
+
         },
 
 		/**
@@ -133,7 +133,7 @@ module.exports = function(grunt){
                     },
 
                     files:{
-                            'greenfootprints-app/style.css':'greenfootprints-app/css/style.scss',                           
+                            'greenfootprints-app/style.css':'greenfootprints-app/css/style.scss',
                             'greenfootprints-app/ie.css':'greenfootprints-app/css/ie.scss'
                             /*where file goes-----/where file from*/
                     }
@@ -145,12 +145,12 @@ module.exports = function(grunt){
                                 sourcemap:'auto'
                         },
                         files:{
-                            'greenfootprints-app/style-min.css':'greenfootprints-app/css/style.scss',                                                   'greenfootprints-app/ie-min.css':'greenfootprints-app/css/ie.scss'
+                            'greenfootprints-app/dist/style-min.css':'greenfootprints-app/css/style.scss',                                                   'greenfootprints-app/dist/ie-min.css':'greenfootprints-app/css/ie.scss'
                                 /*where file goes-----/where file from*/
                         }
                     }
                 },
-		
+
          /**
          * QUnit
          */
@@ -166,7 +166,7 @@ module.exports = function(grunt){
             files: ['Gruntfile.js', 'js/**/*.js', 'test/**/*.js'],
             options: {
                 // options here to override JSHint defaults
-                
+
                 globals: {
                     jQuery: true,
                     console: true,
@@ -206,8 +206,8 @@ grunt.registerTask('test', ['jshint', 'qunit']);
 
 grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify', 'clean', 'mkdir', 'htmlmin']);
 grunt.registerTask('default', ['sass', 'watch' ,'responsive_images']);
-	
-	
+
+
 
 
 };
