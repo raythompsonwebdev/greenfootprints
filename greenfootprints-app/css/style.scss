@@ -42,13 +42,10 @@ button#mobile-toggle {
             -webkit-flex-flow: row ;
             -ms-flex-flow: row ;
             flex-flow: row ;
-            -webkit-align-items: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-justify-content: flex-start;
-            -ms-flex-pack: start;
-            justify-content: flex-start;
-
+            -webkit-align-items: flex-start;
+            
+            -ms-flex-align: start;
+            align-items: flex-start;
             hgroup {
                 width: 68%;
                 display: inline-block;
@@ -97,7 +94,7 @@ button#mobile-toggle {
                 flex: 0 0 auto;
                 height: 100%;
                 img {
-                    height: auto;
+                    min-height: 100%;
                     display: block;
                 }
             }
@@ -1332,7 +1329,7 @@ button#mobile-toggle {
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 325px;
                             li {
@@ -1688,7 +1685,7 @@ button#mobile-toggle {
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 300px;
                             li{
@@ -2043,7 +2040,7 @@ button#mobile-toggle {
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             li{
                                 img {
@@ -3107,7 +3104,7 @@ button#mobile-toggle {
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 260px;
                             li{
@@ -3449,7 +3446,7 @@ button#mobile-toggle {
                                 font-size: 1em;
                                 line-height: 44.75px;
                             }
-                        } 
+                        }
                     }
                 }
             }
@@ -3499,7 +3496,7 @@ button#mobile-toggle {
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 250px;
                             li{
@@ -3821,7 +3818,7 @@ button#mobile-toggle {
                                 font-size: 1em;
                             }
 
-                        } 
+                        }
                     }
                 }
             }
@@ -3851,7 +3848,7 @@ button#mobile-toggle {
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 240px;
                             li{
@@ -4163,7 +4160,7 @@ button#mobile-toggle {
                             i {
                                 font-size: 1em;
                             }
-                        } 
+                        }
                     }
                 }
             }
@@ -4503,7 +4500,7 @@ button#mobile-toggle {
                                 font-size: 1em;
                             }
 
-                        } 
+                        }
                     }
                 }
             }
@@ -4533,7 +4530,7 @@ button#mobile-toggle {
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 225px;
                             li{
@@ -4837,7 +4834,7 @@ button#mobile-toggle {
                             i {
                                 font-size: 1em;
                             }
-                        } 
+                        }
                     }
                 }
             }
@@ -4891,7 +4888,7 @@ button#mobile-toggle {
                                             cursor: pointer;
                                         }
                                     }
-                                   
+
                                 }
                             }
                         }
@@ -5204,7 +5201,7 @@ button#mobile-toggle {
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 210px;
                             li{
@@ -5549,7 +5546,7 @@ button#mobile-toggle {
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 215px;
                             li{
@@ -5575,7 +5572,7 @@ button#mobile-toggle {
                                             cursor: pointer;
                                         }
                                     }
-                                    
+
                                 }
                             }
                         }
@@ -5893,7 +5890,7 @@ button#mobile-toggle {
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 200px;
                             li{
@@ -6232,7 +6229,7 @@ button#mobile-toggle {
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 190px;
                             img {
