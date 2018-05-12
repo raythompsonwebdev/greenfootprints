@@ -69,24 +69,21 @@ link to the words Click here using the e-mail address provided above.
 7. At the bottom of your web page add your name and today's date left aligned in a smaller
 font size.
 
-
 ## Installation
-
 
 
 ## API Reference
 
 
-
 ## Tests
 
-Describe and show how to run the tests with code examples.
 
 ## Contributors
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
 
 ## License
+
+MIT/GPL2 Licensed
 
 ## Credits
 
