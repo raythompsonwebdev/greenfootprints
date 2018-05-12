@@ -1,10 +1,10 @@
 ![https://www.greenfootprints.raythompsonwebdev.co.uk](/_assets/www-greenfootprints-home-page-large.jpg)
 
-# GreenFootPrints
+# GreenFootPrints-project
 
-## Synopsis
+## History
 
-## Creating a Website
+This website is a html css website template built using 960grid. This website is based on a project I completed from a web design exam I took at East London Technology Training. See full website breif below:
 
 ### Scenario
 
@@ -69,21 +69,40 @@ link to the words Click here using the e-mail address provided above.
 7. At the bottom of your web page add your name and today's date left aligned in a smaller
 font size.
 
+
 ## Installation
 
+## Usage
 
 ## API Reference
 
-
 ## Tests
 
-
-## Contributors
-
+## Contributing
 
 ## License
 
-MIT/GPL2 Licensed
+MIT License
+
+Copyright (c) [2017] [Raymond Thompson]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ## Credits
 
@@ -122,6 +141,12 @@ MIT/GPL2 Licensed
  * selectivizr v1.0.2 - (c) Keith Clark, freely distributable under the terms of the MIT license.
 
  * 960 Grid System ~ Core CSS.  Learn more ~ http://960.gs/   Licensed under GPL and MIT.
+
+
+
+
+ 
+
 
 
 
