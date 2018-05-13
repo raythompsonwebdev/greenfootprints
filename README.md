@@ -121,16 +121,14 @@ SOFTWARE.
 
  * jQuery validation plug-in 1.7
  
- - http://bassistance.de/jquery-plugins/jquery-plugin-validation/
- -  http://docs.jquery.com/Plugins/Validation
+    http://bassistance.de/jquery-plugins/jquery-plugin-validation/
+    http://docs.jquery.com/Plugins/Validation
  
- - Copyright (c) 2006 - 2008 Jörn Zaefferer
+    Copyright (c) 2006 - 2008 Jörn Zaefferer $Id: jquery.validate.js 6403 2009-06-17 14:27:16Z joern.zaefferer $
  
- - $Id: jquery.validate.js 6403 2009-06-17 14:27:16Z joern.zaefferer $
- 
- - Dual licensed under the MIT and GPL licenses:
- - http://www.opensource.org/licenses/mit-license.php
- - http://www.gnu.org/licenses/gpl.html
+    Dual licensed under the MIT and GPL licenses:
+    http://www.opensource.org/licenses/mit-license.php
+    http://www.gnu.org/licenses/gpl.html
 
  * jQuery v1.11.0 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license 
 
