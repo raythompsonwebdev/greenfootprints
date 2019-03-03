@@ -81,6 +81,7 @@ public/style-min.css.map
 public/style.css.map
 
 public/js/deps/
+public/js/old-browser-scripts/
 public/js/jquery.easing.1.3.js
 public/js/jquery.validate.min.js
 public/js/sw.js

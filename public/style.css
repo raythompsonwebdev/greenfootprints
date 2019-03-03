@@ -354,11 +354,19 @@ button#mobile-toggle :focus {
     z-index: 10;
   }
   div.container_24 nav div.nav-title {
-    width: 19%;
+    width: 6%;
     display: inline-block;
     float: left;
     position: unset;
     margin-right: 0.5em;
+    background-color: #297F10;
+    height: 100%;
+  }
+  div.container_24 nav div.nav-title img {
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    vertical-align: middle;
   }
   div.container_24 nav div.nav-title h1 {
     color: #ccffbb;
@@ -379,7 +387,7 @@ button#mobile-toggle :focus {
     margin: 0;
     padding: 0;
     height: 50px;
-    width: 80%;
+    width: 84%;
     display: block;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1171,7 +1179,7 @@ button#mobile-toggle :focus {
     margin: 0.2em 0;
   }
   div.container_24 nav div.nav-title {
-    width: 18%;
+    width: 8%;
   }
   div.container_24 nav div.nav-title h1 {
     font-size: 1.7rem;
@@ -1481,7 +1489,7 @@ button#mobile-toggle :focus {
     margin: 0.2em 0;
   }
   div.container_24 nav div.nav-title {
-    width: 18%;
+    width: 9%;
   }
   div.container_24 nav div.nav-title h1 {
     font-size: 1.4rem;
@@ -1789,7 +1797,7 @@ button#mobile-toggle :focus {
     height: 50px;
   }
   div.container_24 nav div.nav-title {
-    width: 18%;
+    width: 10%;
   }
   div.container_24 nav div.nav-title h1 {
     font-size: 1.1rem;
@@ -2099,7 +2107,7 @@ button#mobile-toggle :focus {
     margin: 0.2em 0;
   }
   div.container_24 nav div.nav-title {
-    width: 18%;
+    width: 11%;
   }
   div.container_24 nav div.nav-title h1 {
     font-size: 1rem;
@@ -2413,7 +2421,7 @@ button#mobile-toggle :focus {
     height: 50px;
   }
   div.container_24 nav div.nav-title {
-    width: 18%;
+    width: 10%;
   }
   div.container_24 nav div.nav-title h1 {
     font-size: 0.9rem;
@@ -2726,7 +2734,7 @@ button#mobile-toggle :focus {
     height: 50px;
   }
   div.container_24 nav div.nav-title {
-    width: 18%;
+    width: 10%;
   }
   div.container_24 nav div.nav-title h1 {
     font-size: 0.85rem;
@@ -3026,7 +3034,8 @@ button#mobile-toggle :focus {
     height: 50px;
   }
   div.container_24 nav div.nav-title {
-    width: 18%;
+    width: 10%;
+    margin-right: 0.25em;
   }
   div.container_24 nav div.nav-title h1 {
     font-size: 0.8rem;
@@ -3283,104 +3292,99 @@ button#mobile-toggle :focus {
   }
 }
 @media only screen and (max-width: 667px) {
-  button#mobile-toggle {
-    display: block;
-    height: 45px;
-    width: 45px;
-    color: #ccffbb;
-    background-color: #3ea514;
-    position: fixed;
-    top: 8vh;
-    left: calc(99% - 3.3em);
-    z-index: 150;
-    outline: none;
-    border: none;
-    font-size: 0.9em;
-    letter-spacing: 0.05em;
-    text-align: center;
-    padding: 0;
-    -webkit-transition: all 0.2s linear 0s, color 0.2s linear 0s;
-    -moz-transition: all 0.2s linear 0s, color 0.2s linear 0s;
-    -o-transition: all 0.2s linear 0s, color 0.2s linear 0s;
-    transition: all 0.2s linear 0s, color 0.2s linear 0s;
+   /* button#mobile-toggle {
+        display: block;
+        height: 45px;
+        width: 45px;
+        color: $colortxtbg;
+        background-color: $contentbg; 
+        //font-family: "FontAwesome";
+        //content:"\f0c9";
+        position: fixed;
+        top: 8vh;
+        left: calc(99% - 3.3em);
+        z-index: 150;
+        outline: none;
+        border: none;
+        font-size: 0.9em;
+        letter-spacing: 0.05em;
+        text-align: center;
+        padding: 0;
+        @include transitioner(all 0.2s linear 0s, color 0.2s linear 0s);
+        i.fa-bars {
+            font-size: 250%;
+            line-height: 50px;
+            display: block;
+        }
+        &:hover {
+            background-color: $colorslidebg;
+            color: $colorsocmedhov;
+        }
+        &:active,
+         :focus {
+            background-color: $colorslidebg;
+            color: $colorsocmedhov;
+        }
+    }
+*/
+  div.container_24 {
+    /*Navigation*/
   }
-  button#mobile-toggle i.fa-bars {
-    font-size: 250%;
-    line-height: 50px;
-    display: block;
-  }
-  button#mobile-toggle:hover {
-    background-color: #82b602;
-    color: #ffffff;
-  }
-  button#mobile-toggle:active,
-  button#mobile-toggle :focus {
-    background-color: #82b602;
-    color: #ffffff;
-  }
-
-  div.container_24 header figure#logo {
-    width: 13%;
+  div.container_24 header {
+    padding: 0.2em;
+    /*social media icons*/
   }
   div.container_24 header hgroup {
-    width: 34%;
+    width: 54%;
   }
   div.container_24 header hgroup h1 {
-    font-size: 1.4em;
-    line-height: 25px;
+    font-size: 1.3em;
   }
   div.container_24 header hgroup h2 {
     font-size: 0.6em;
   }
+  div.container_24 header figure#logo {
+    width: 13%;
+  }
   div.container_24 header .socials {
-    width: 50%;
-    position: relative;
-    z-index: 10;
-    top: 3.3em;
-    height: 100%;
-    left: calc(100% - 150%);
+    width: 30%;
   }
-  div.container_24 header .socials ul li a i {
-    font-size: 1em;
-    line-height: 44.75px;
-  }
-  div.container_24 nav div.nav-title {
-    visibility: hidden;
-  }
-  div.container_24 nav ul {
-    display: none;
-  }
-  div.container_24 ul#mobile-nav {
-    top: 7.5em;
-    position: fixed;
-    z-index: 151;
-    width: 94%;
-    list-style: none;
+  div.container_24 header .socials ul {
     margin: 0;
     padding: 0;
-    height: auto;
-    background-color: #297F10;
   }
-  div.container_24 ul#mobile-nav li {
-    float: none;
-    height: 100%;
+  div.container_24 header .socials ul li {
+    width: 25%;
+  }
+  div.container_24 header .socials ul li a {
     width: 100%;
-    margin: 0;
-    display: block;
   }
-  div.container_24 ul#mobile-nav li a {
-    color: #ccffbb;
-    background-color: #297F10;
-    display: block;
-    line-height: 45px;
-    font-size: 1.1em;
-    letter-spacing: 0.1em;
-    height: 100%;
-    text-align: center;
+  div.container_24 header .socials ul li a i {
+    font-size: 0.8em;
   }
-  div.container_24 ul#mobile-nav li a:hover {
-    color: #297F10;
-    background-color: #ccffbb;
+  div.container_24 ul#mobile-nav {
+    display: none;
+  }
+  div.container_24 nav {
+    height: 50px;
+  }
+  div.container_24 nav div.nav-title {
+    width: 15%;
+  }
+  div.container_24 nav div.nav-title h1 {
+    font-size: 0.8rem;
+  }
+  div.container_24 nav ul {
+    height: 50px;
+  }
+  div.container_24 nav ul li {
+    width: 12%;
+  }
+  div.container_24 nav ul li a {
+    font-size: 0.6em;
+  }
+  div.container_24 nav ul li a:hover {
+    text-shadow: none;
   }
   div.container_24 div.grid_24 {
     /*content end*/
@@ -3642,58 +3646,77 @@ button#mobile-toggle :focus {
   }
 }
 @media only screen and (max-width: 640px) {
-  button#mobile-toggle {
-    top: 9vh;
-    font-size: 0.9em;
+ /* button#mobile-toggle {
+        top: 9vh;
+        font-size: 0.9em;
+        &:hover {
+            background-color: $colorslidebg;
+        }
+        &:active,
+         :focus {
+            color: $colorsocmedhov;
+        }
+    }
+*/
+  div.container_24 {
+    /*Navigation*/
   }
-  button#mobile-toggle:hover {
-    background-color: #82b602;
-  }
-  button#mobile-toggle:active,
-  button#mobile-toggle :focus {
-    color: #ffffff;
-  }
-
   div.container_24 header {
-    height: auto;
-  }
-  div.container_24 header figure#logo {
-    width: 15.5%;
+    padding: 0.2em;
+    /*social media icons*/
   }
   div.container_24 header hgroup {
-    width: 33%;
-  }
-  div.container_24 header hgroup h1 {
-    font-size: 1.3em;
-    line-height: 25px;
-  }
-  div.container_24 header hgroup h2 {
-    font-size: 0.6em;
-  }
-  div.container_24 header .socials {
-    top: 3.7em;
-    left: calc(100% - 150.6%);
     width: 50%;
   }
-  div.container_24 header .socials ul li a i {
-    font-size: 1em;
+  div.container_24 header hgroup h1 {
+    font-size: 1.2em;
   }
-  div.container_24 nav ul {
-    display: none;
+  div.container_24 header hgroup h2 {
+    font-size: 0.65em;
+  }
+  div.container_24 header figure#logo {
+    width: 16%;
+  }
+  div.container_24 header .socials {
+    width: 30%;
+  }
+  div.container_24 header .socials ul {
+    margin: 0;
+    padding: 0;
+  }
+  div.container_24 header .socials ul li {
+    width: 25%;
+  }
+  div.container_24 header .socials ul li a {
+    width: 100%;
+  }
+  div.container_24 header .socials ul li a i {
+    font-size: 0.85em;
   }
   div.container_24 ul#mobile-nav {
-    top: 7.7em;
-    width: 94%;
+    display: none;
   }
-  div.container_24 ul#mobile-nav li {
-    float: none;
+  div.container_24 nav {
+    height: 50px;
   }
-  div.container_24 ul#mobile-nav li a {
-    display: block;
-    font-size: 0.9em;
+  div.container_24 nav div.nav-title {
+    width: 15%;
+    margin-right: 0.2em;
   }
-  div.container_24 ul#mobile-nav li a:hover {
-    color: #297F10;
+  div.container_24 nav div.nav-title h1 {
+    font-size: 0.8rem;
+  }
+  div.container_24 nav ul {
+    height: 50px;
+  }
+  div.container_24 nav ul li {
+    width: 12%;
+  }
+  div.container_24 nav ul li a {
+    font-size: 0.6em;
+  }
+  div.container_24 nav ul li a:hover {
+    text-shadow: none;
   }
   div.container_24 div.grid_24 {
     /*content end*/
@@ -3935,59 +3958,80 @@ button#mobile-toggle :focus {
   }
 }
 @media only screen and (max-width: 600px) {
-  button#mobile-toggle {
-    top: 8.5vh;
-    left: calc(97% - 3.3em);
-    font-size: 0.9em;
+  /* button#mobile-toggle {
+      top: 8.5vh;
+      left: calc(97% - 3.3em);
+      font-size: 0.9em;
+      &:hover {
+          background-color: $colorslidebg;
+      }
+      &:active,
+       :focus {
+          color: $colorsocmedhov;
+      }
   }
-  button#mobile-toggle:hover {
-    background-color: #82b602;
+  */
+  div.container_24 {
+    /*Navigation*/
   }
-  button#mobile-toggle:active,
-  button#mobile-toggle :focus {
-    color: #ffffff;
-  }
-
   div.container_24 header {
-    height: auto;
-  }
-  div.container_24 header figure#logo {
-    width: 16%;
+    padding: 0.2em;
+    /*social media icons*/
   }
   div.container_24 header hgroup {
-    width: 34%;
+    width: 50%;
   }
   div.container_24 header hgroup h1 {
     font-size: 1.2em;
-    line-height: 25px;
   }
   div.container_24 header hgroup h2 {
     font-size: 0.6em;
   }
+  div.container_24 header figure#logo {
+    width: 16%;
+    margin: 0 0.25em 0 0;
+  }
   div.container_24 header .socials {
-    top: 3.6em;
-    left: calc(98% - 151.6%);
-    width: 44%;
+    width: 30%;
+  }
+  div.container_24 header .socials ul {
+    margin: 0;
+    padding: 0;
+  }
+  div.container_24 header .socials ul li {
+    width: 25%;
+  }
+  div.container_24 header .socials ul li a {
+    width: 100%;
   }
   div.container_24 header .socials ul li a i {
-    font-size: 1em;
-  }
-  div.container_24 nav ul {
-    display: none;
+    font-size: 0.85em;
   }
   div.container_24 ul#mobile-nav {
-    top: 7.6em;
-    width: 94%;
+    display: none;
   }
-  div.container_24 ul#mobile-nav li {
-    float: none;
+  div.container_24 nav {
+    height: 50px;
   }
-  div.container_24 ul#mobile-nav li a {
-    display: block;
-    font-size: 1em;
+  div.container_24 nav div.nav-title {
+    width: 15%;
+    margin-right: 0.2em;
   }
-  div.container_24 ul#mobile-nav li a:hover {
-    color: #297F10;
+  div.container_24 nav div.nav-title h1 {
+    font-size: 0.75rem;
+    text-indent: 0.25em;
+  }
+  div.container_24 nav ul {
+    height: 50px;
+  }
+  div.container_24 nav ul li {
+    width: 12%;
+  }
+  div.container_24 nav ul li a {
+    font-size: 0.6em;
+  }
+  div.container_24 nav ul li a:hover {
+    text-shadow: none;
   }
   div.container_24 div.grid_24 {
     /*content end*/
@@ -4230,57 +4274,79 @@ button#mobile-toggle :focus {
   }
 }
 @media only screen and (max-width: 536px) {
-  button#mobile-toggle {
-    font-size: 0.85em;
-  }
-  button#mobile-toggle:hover {
-    background-color: #82b602;
-  }
-  button#mobile-toggle:active,
-  button#mobile-toggle :focus {
-    color: #ffffff;
-  }
-
+  /*    button#mobile-toggle {
+          
+          font-size: 0.85em;
+          &:hover {
+              background-color: $colorslidebg;
+          }
+          &:active,
+           :focus {
+              color: $colorsocmedhov;
+          }
+      }
+  */
   div.container_24 {
-    width: 96%;
+    width: 98%;
+    /*Navigation*/
   }
-  div.container_24 header figure#logo {
-    width: 18%;
+  div.container_24 header {
+    padding: 0.2em;
+    /*social media icons*/
   }
   div.container_24 header hgroup {
-    width: 40%;
+    width: 50%;
   }
   div.container_24 header hgroup h1 {
     font-size: 1.1em;
-    line-height: 25px;
   }
   div.container_24 header hgroup h2 {
     font-size: 0.55em;
   }
+  div.container_24 header figure#logo {
+    width: 16%;
+  }
   div.container_24 header .socials {
-    top: 3.6em;
-    width: 50%;
-    left: calc(100% - 161.9%);
+    width: 30%;
+  }
+  div.container_24 header .socials ul {
+    margin: 0;
+    padding: 0;
+  }
+  div.container_24 header .socials ul li {
+    width: 25%;
+  }
+  div.container_24 header .socials ul li a {
+    width: 100%;
   }
   div.container_24 header .socials ul li a i {
-    font-size: 1em;
-  }
-  div.container_24 nav ul {
-    display: none;
+    font-size: 0.85em;
   }
   div.container_24 ul#mobile-nav {
-    top: 7.5em;
-    width: 96%;
+    display: none;
   }
-  div.container_24 ul#mobile-nav li {
-    float: none;
+  div.container_24 nav {
+    height: 50px;
   }
-  div.container_24 ul#mobile-nav li a {
-    display: block;
-    font-size: 0.95em;
+  div.container_24 nav div.nav-title {
+    width: 15%;
+    margin-right: 0.2em;
   }
-  div.container_24 ul#mobile-nav li a:hover {
-    color: #297F10;
+  div.container_24 nav div.nav-title h1 {
+    font-size: 0.7rem;
+    text-indent: 0.2em;
+  }
+  div.container_24 nav ul {
+    height: 50px;
+  }
+  div.container_24 nav ul li {
+    width: 12%;
+  }
+  div.container_24 nav ul li a {
+    font-size: 0.55em;
+  }
+  div.container_24 nav ul li a:hover {
+    text-shadow: none;
   }
   div.container_24 div.grid_24 {
     /*content end*/
@@ -4305,7 +4371,7 @@ button#mobile-toggle :focus {
     top: 0;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
-    font-size: 1.4em;
+    font-size: 1.55em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
     font-size: 0.65em;
@@ -4526,56 +4592,79 @@ button#mobile-toggle :focus {
   }
 }
 @media only screen and (max-width: 480px) {
-  button#mobile-toggle {
-    font-size: 0.85em;
-  }
-  button#mobile-toggle:hover {
-    background-color: #82b602;
-  }
-  button#mobile-toggle:active,
-  button#mobile-toggle :focus {
-    color: #ffffff;
-  }
-
+  /*    button#mobile-toggle {
+          
+          font-size: 0.85em;
+          &:hover {
+              background-color: $colorslidebg;
+          }
+          &:active,
+           :focus {
+              color: $colorsocmedhov;
+          }
+      }
+  */
   div.container_24 {
-    width: 96%;
+    /*Navigation*/
   }
-  div.container_24 header figure#logo {
-    width: 20%;
+  div.container_24 header {
+    padding: 0.2em;
+    /*social media icons*/
   }
   div.container_24 header hgroup {
-    width: 40%;
+    width: 45%;
   }
   div.container_24 header hgroup h1 {
     font-size: 1.1em;
-    line-height: 23px;
   }
   div.container_24 header hgroup h2 {
     font-size: 0.5em;
   }
+  div.container_24 header figure#logo {
+    width: 18%;
+  }
   div.container_24 header .socials {
-    top: 3.6em;
-    width: 60%;
-    left: calc(100% - 163.9%);
+    width: 34%;
+  }
+  div.container_24 header .socials ul {
+    margin: 0;
+    padding: 0;
+  }
+  div.container_24 header .socials ul li {
+    width: 25%;
+  }
+  div.container_24 header .socials ul li a {
+    width: 100%;
   }
   div.container_24 header .socials ul li a i {
-    font-size: 1em;
-  }
-  div.container_24 nav ul {
-    display: none;
+    font-size: 0.85em;
   }
   div.container_24 ul#mobile-nav {
-    top: 7.4em;
+    display: none;
   }
-  div.container_24 ul#mobile-nav li {
-    float: none;
+  div.container_24 nav {
+    height: 50px;
   }
-  div.container_24 ul#mobile-nav li a {
-    display: block;
-    font-size: 0.9em;
+  div.container_24 nav div.nav-title {
+    width: 13%;
+    margin-right: 0.2em;
   }
-  div.container_24 ul#mobile-nav li a:hover {
-    color: #297F10;
+  div.container_24 nav div.nav-title h1 {
+    font-size: 0.5rem;
+    text-indent: 0.2em;
+  }
+  div.container_24 nav ul {
+    width: 86%;
+    height: 50px;
+  }
+  div.container_24 nav ul li {
+    width: 12%;
+  }
+  div.container_24 nav ul li a {
+    font-size: 0.5em;
+  }
+  div.container_24 nav ul li a:hover {
+    text-shadow: none;
   }
   div.container_24 div.grid_24 {
     /*content end*/
@@ -4600,10 +4689,10 @@ button#mobile-toggle :focus {
     top: 0;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
-    font-size: 0.6em;
+    font-size: 0.65em;
     width: 94%;
     margin: 0 auto 15px auto;
   }
@@ -4816,62 +4905,75 @@ button#mobile-toggle :focus {
   }
 }
 @media only screen and (max-width: 414px) {
-  button#mobile-toggle {
-    font-size: 0.85em;
+  /*    button#mobile-toggle {
+  
+          font-size: 0.85em;
+  
+          &:hover {
+              background-color: $colorslidebg;
+          }
+          &:active,
+           :focus {
+              color: $colorsocmedhov;
+          }
+      }
+  */
+  div.container_24 {
+    /*Navigation*/
   }
-  button#mobile-toggle:hover {
-    background-color: #82b602;
-  }
-  button#mobile-toggle:active,
-  button#mobile-toggle :focus {
-    color: #ffffff;
-  }
-
-  div.container_24 header figure#logo {
-    width: 23%;
+  div.container_24 header {
+    padding: 0.2em;
+    /*social media icons*/
   }
   div.container_24 header hgroup {
-    width: 44.5%;
+    width: 43%;
   }
   div.container_24 header hgroup h1 {
-    font-size: 1.1em;
-    line-height: 23px;
+    font-size: 1em;
   }
   div.container_24 header hgroup h2 {
     font-size: 0.5em;
   }
-  div.container_24 header .socials {
-    width: 60%;
-    left: calc(100% - 172%);
+  div.container_24 header figure#logo {
+    width: 21%;
   }
-  div.container_24 header .socials ul {
-    height: auto;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: flex-start;
-    justify-content: flex-start;
+  div.container_24 header .socials {
+    width: 34%;
   }
   div.container_24 header .socials ul li {
     width: 25%;
   }
-  div.container_24 header .socials ul li a i {
-    font-size: 0.9em;
+  div.container_24 header .socials ul li a {
+    width: 100%;
   }
-  div.container_24 nav ul {
-    display: none;
+  div.container_24 header .socials ul li a i {
+    font-size: 0.8em;
   }
   div.container_24 ul#mobile-nav {
-    top: 7.7em;
-    width: 96%;
+    display: none;
   }
-  div.container_24 ul#mobile-nav li {
-    float: none;
+  div.container_24 nav {
+    height: 50px;
   }
-  div.container_24 ul#mobile-nav li a {
-    display: block;
-    font-size: 0.9em;
+  div.container_24 nav div.nav-title {
+    width: 13%;
+    margin-right: 0.2em;
   }
-  div.container_24 ul#mobile-nav li a:hover {
-    color: #297F10;
+  div.container_24 nav div.nav-title h1 {
+    font-size: 0.5rem;
+    text-indent: 0.1em;
+  }
+  div.container_24 nav ul {
+    height: 50px;
+  }
+  div.container_24 nav ul li {
+    width: 12%;
+  }
+  div.container_24 nav ul li a {
+    font-size: 0.5em;
+  }
+  div.container_24 nav ul li a:hover {
+    text-shadow: none;
   }
   div.container_24 div#collections,
   div.container_24 div#ettiquette {
@@ -5130,52 +5232,66 @@ button#mobile-toggle :focus {
     color: #ffffff;
   }
 
-  div.container_24 header figure#logo {
-    width: 26%;
+  div.container_24 {
+    /*Navigation*/
+  }
+  div.container_24 header {
+    padding: 0.2em;
+    /*social media icons*/
   }
   div.container_24 header hgroup {
-    width: 51%;
+    width: 42%;
   }
   div.container_24 header hgroup h1 {
-    font-size: 1.1em;
-    line-height: 23px;
+    font-size: 1em;
   }
   div.container_24 header hgroup h2 {
-    font-size: 0.55em;
-    line-height: 15px;
+    font-size: 0.5em;
+  }
+  div.container_24 header figure#logo {
+    width: 22%;
   }
   div.container_24 header .socials {
-    left: calc(100% - 182%);
+    width: 32%;
   }
   div.container_24 header .socials ul {
-    height: auto;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: flex-start;
-    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
   }
   div.container_24 header .socials ul li {
     width: 25%;
   }
-  div.container_24 header .socials ul li a i {
-    font-size: 1em;
+  div.container_24 header .socials ul li a {
+    width: 100%;
   }
-  div.container_24 nav ul {
-    display: none;
+  div.container_24 header .socials ul li a i {
+    font-size: 0.75em;
   }
   div.container_24 ul#mobile-nav {
-    top: 7.7em;
-    width: 96%;
+    display: none;
   }
-  div.container_24 ul#mobile-nav li {
-    float: none;
+  div.container_24 nav {
+    height: 50px;
   }
-  div.container_24 ul#mobile-nav li a {
-    display: block;
-    font-size: 0.9em;
-    line-height: 45px;
+  div.container_24 nav div.nav-title {
+    width: 13%;
+    margin-right: 0.2em;
   }
-  div.container_24 ul#mobile-nav li a:hover {
-    color: #297F10;
+  div.container_24 nav div.nav-title h1 {
+    font-size: 0.4rem;
+    text-indent: 0.1em;
+  }
+  div.container_24 nav ul {
+    height: 50px;
+  }
+  div.container_24 nav ul li {
+    width: 11.9%;
+  }
+  div.container_24 nav ul li a {
+    font-size: 0.4em;
+  }
+  div.container_24 nav ul li a:hover {
+    text-shadow: none;
   }
   div.container_24 div.grid_24 {
     /*content end*/
@@ -5425,55 +5541,65 @@ button#mobile-toggle :focus {
 
   div.container_24 {
     width: 98%;
+    /*Navigation*/
   }
-  div.container_24 header figure#logo {
-    width: 26%;
+  div.container_24 header {
+    padding: 0.2em;
+    /*social media icons*/
   }
   div.container_24 header hgroup {
-    width: 50%;
+    width: 42%;
   }
   div.container_24 header hgroup h1 {
-    font-size: 1em;
-    line-height: 22px;
+    font-size: 0.9em;
   }
   div.container_24 header hgroup h2 {
-    font-size: 0.5em;
-    line-height: 15px;
+    font-size: 0.45em;
+  }
+  div.container_24 header figure#logo {
+    width: 23%;
   }
   div.container_24 header .socials {
-    left: calc(100% - 182%);
-    height: 100%;
-    width: 70%;
+    width: 32%;
   }
   div.container_24 header .socials ul {
-    height: auto;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: flex-start;
-    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
   }
   div.container_24 header .socials ul li {
     width: 25%;
   }
-  div.container_24 header .socials ul li a i {
-    font-size: 1em;
+  div.container_24 header .socials ul li a {
+    width: 100%;
   }
-  div.container_24 nav ul {
-    display: none;
+  div.container_24 header .socials ul li a i {
+    font-size: 0.7em;
   }
   div.container_24 ul#mobile-nav {
-    top: 7.5em;
-    width: 98%;
+    display: none;
   }
-  div.container_24 ul#mobile-nav li {
-    float: none;
+  div.container_24 nav {
+    height: 50px;
   }
-  div.container_24 ul#mobile-nav li a {
-    display: block;
-    font-size: 0.9em;
-    line-height: 45px;
+  div.container_24 nav div.nav-title {
+    width: 13%;
+    margin-right: 0.2em;
   }
-  div.container_24 ul#mobile-nav li a:hover {
-    color: #297F10;
+  div.container_24 nav div.nav-title h1 {
+    font-size: 0.4rem;
+    text-indent: 0.1em;
+  }
+  div.container_24 nav ul {
+    height: 50px;
+  }
+  div.container_24 nav ul li {
+    width: 11.9%;
+  }
+  div.container_24 nav ul li a {
+    font-size: 0.4em;
+  }
+  div.container_24 nav ul li a:hover {
+    text-shadow: none;
   }
   div.container_24 div.grid_24 {
     /*content end*/
@@ -5710,64 +5836,80 @@ button#mobile-toggle :focus {
   }
 }
 @media only screen and (max-width: 320px) {
-  button#mobile-toggle {
-    font-size: 0.8em;
+  /*    button#mobile-toggle {
+          
+          font-size: 0.8em;
+          &:hover {
+              background-color: $colorslidebg;
+          }
+          &:active,
+           :focus {
+              color: $colorsocmedhov;
+          }
+      }
+  */
+  div.container_24 {
+    width: 98%;
+    /*Navigation*/
   }
-  button#mobile-toggle:hover {
-    background-color: #82b602;
-  }
-  button#mobile-toggle:active,
-  button#mobile-toggle :focus {
-    color: #ffffff;
-  }
-
-  div.container_24 header figure#logo {
-    width: 29%;
-    margin: 0 0.25em 0 0;
+  div.container_24 header {
+    padding: 0.2em;
+    /*social media icons*/
   }
   div.container_24 header hgroup {
-    width: 49%;
+    width: 42%;
   }
   div.container_24 header hgroup h1 {
-    font-size: 0.95em;
-    line-height: 22px;
+    font-size: 0.9em;
   }
   div.container_24 header hgroup h2 {
     font-size: 0.45em;
-    line-height: 15px;
+  }
+  div.container_24 header figure#logo {
+    width: 23%;
   }
   div.container_24 header .socials {
-    width: 70%;
+    width: 32%;
   }
   div.container_24 header .socials ul {
-    height: auto;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: flex-start;
-    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
   }
   div.container_24 header .socials ul li {
     width: 25%;
   }
-  div.container_24 header .socials ul li a i {
-    font-size: 1em;
+  div.container_24 header .socials ul li a {
+    width: 100%;
   }
-  div.container_24 nav ul {
-    display: none;
+  div.container_24 header .socials ul li a i {
+    font-size: 0.7em;
   }
   div.container_24 ul#mobile-nav {
-    top: 7.6em;
-    width: 98%;
+    display: none;
   }
-  div.container_24 ul#mobile-nav li {
-    float: none;
+  div.container_24 nav {
+    height: 50px;
   }
-  div.container_24 ul#mobile-nav li a {
-    display: block;
-    font-size: 0.9em;
-    line-height: 45px;
+  div.container_24 nav div.nav-title {
+    width: 12%;
+    margin-right: 0.1em;
   }
-  div.container_24 ul#mobile-nav li a:hover {
-    color: #297F10;
+  div.container_24 nav div.nav-title h1 {
+    font-size: 0.3rem;
+    text-indent: 0.1em;
+  }
+  div.container_24 nav ul {
+    height: 50px;
+  }
+  div.container_24 nav ul li {
+    width: 11.9%;
+    margin-right: 0.09em;
+  }
+  div.container_24 nav ul li a {
+    font-size: 0.4em;
+  }
+  div.container_24 nav ul li a:hover {
+    text-shadow: none;
   }
   div.container_24 div.grid_24 {
     /*content end*/
