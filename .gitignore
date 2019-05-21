@@ -59,3 +59,51 @@ typings/
 
 # next.js build output
 .next
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+Files/
+npm-debug.log
+node_modules/
+bower_components/
+nbproject/
+.git/
+_assets/
+Files/
+test/
+.sass-cache/
+.settings/
+crossdomain.xml
+browserconfig.xml
+apple-touch-icon.png
+package.json
+
+
+public/dist/
+public/img/
+public/images/
+public/fonts
+public/favicons
+
+public/css/.sass-cache/
+public/css/min/
+public/css/style.css.map
+public/css/ie.css.map
+public/ie-min.css.map
+
+public/ie.min-css.map
+public/ie.css.map
+public/style-min.css.map
+public/style.css.map
+
+public/js/deps/
+public/js/old-browser-scripts/
+public/js/jquery.easing.1.3.js
+public/js/sw.js
+public/js/site.js

@@ -1,0 +1,168 @@
+/* remember to define focus styles! */
+
+figure {
+  margin: 0;
+  padding:0;
+}
+
+div.clearfix {
+  clear: both;
+}
+
+.seperator{
+  height:65px;
+  display:block;
+  
+}
+
+:focus {
+  outline: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+
+/* tables still need 'cellspacing="0"' in the markup */
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+blockquote,
+q {
+  quotes: "" "";
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.box-set:before,
+.box-set:after {
+  content: "";
+  display: table;
+}
+
+.box-set:after {
+  clear: both;
+}
+
+#title,
+#glyphs p {
+  font-family: $fontList;
+}
+
+a {
+  text-decoration: none;
+  &:link {
+      color: $colortxtbg;
+  }
+  &:visited {
+      color: $colorsocmedhov;
+  }
+  &:focus {
+      color: $colorsocmedhov;
+  }
+  &:active {
+      color: $colorsocmedhov;
+  }
+}
+
+h1 {
+  width: 100%;
+  font-weight: normal;
+}
+
+h2 {
+  width: 100%;
+  font-weight: normal;
+}
+
+h3 {
+  width: 100%;
+  font-weight: normal;
+}
+
+p {
+  overflow: hidden;
+  font-weight: normal;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border: none;
+}
+
+/*Container*/
+
+body {
+  font-family: $fontList;
+  margin: 0;
+  line-height: 1;
+  background-color: $bgcolor;
+  font-size: 1em;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+select,
+textarea:focus {
+  border-color: $colortxt;
+  -moz-box-shadow: rgba(0, 0, 0, .1) 0 0 0 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, .1) 0 0 0 3px;
+  box-shadow: rgba(0, 0, 0, .1) 0 0 0 3px;
+  background-color: $colorsocmed;
+  outline: none;
+  display: block;
+}
+
+button#mobile-toggle {
+  display: none;
+  height: 45px;
+  width: 45px;
+  color: $colortxtbg;
+  background-color: $contentbg;
+  z-index: 150;
+  outline: none;
+  border: none;
+  @include transitioner(all 0.2s ease-in 0s);
+  &:hover {
+      background-color: $colorslidebg;
+      color: $colorsocmedhov;
+  }
+  &:active,
+   :focus {
+      background-color: $colorslidebg;
+      color: $colorsocmedhov;
+  }
+}

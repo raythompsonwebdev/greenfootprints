@@ -1,0 +1,438 @@
+@import "partials/fonts";
+@import "partials/variables";
+@import "partials/mixins";
+
+#title,#glyphs p{ }
+
+a {
+  text-decoration: none;
+  &:link{ }
+  &:visited{  }
+  &:focus{  }
+  &:active{ }
+}
+
+h1 { letter-spacing:0.10em; font-weight:normal;  }
+h2 { letter-spacing:0.11em; font-weight:normal;}
+h3 {letter-spacing:0.12em; font-weight:normal;}
+
+p { overflow: hidden; text-align: left; font-weight:normal;}
+
+img{width:100%; height:100%; max-width:100%; display: block;}
+
+input:hover, textarea:hover, input:focus,select, textarea:focus{ border-color:$colortxt;  background-color:#c9e7ac; outline:none; display:block; }
+
+/*Container*/
+body {  margin:0; line-height: 1;  background-color:$bgcolor;  font-size: 1em;  height: auto;  padding-bottom: 20px; }
+button#mobile-toggle{
+  display:none;
+  height:45px;
+  width:45px;
+  
+  top: 5.188em;
+  left:3%;
+  z-index:150;
+  outline:none;
+  border:none;
+  &:hover{}
+}
+.container_24{
+
+    height:auto;
+    .copyr{margin: 0;  font-size:10px; width:100%; display:block; height:50px;}
+
+    /*header*/
+    header{
+
+        height:80px;
+        background-color:$headbg;
+        padding: 0.5%;
+        hgroup{
+            width:37%;
+            display:inline-block;
+            float:left;
+            h1 {  color: $colortxtbg; font-size:2em; font-family:$fontList; text-align:left; letter-spacing:0.15em; line-height:40px; margin:0;   background-color:$colornav; padding:1%; width: 100%; text-shadow:1px 1px 1px $header-shadow;}
+            h2 {display:inline-block; float:left;  color: $colortxtbg; padding:1%;   background-color:$colornav; font-size:0.9em; font-family:$fontList; line-height:20px; width:100%; text-align:left; letter-spacing:0.15em; margin:0; width: 100%; }
+        }
+
+        figure#logo{display:inline-block; margin:0 0.5% 0 0; width:13%; float:left;}
+        .socials{
+            width:16%;
+            height: 46%;
+            display:inline-block;
+            float:right;
+            margin:0;
+            background-color:$headbg;
+            ul{
+                margin:0;
+                padding:0;
+                height:100%;
+               
+                
+                li{
+                    display:inline-block;
+                    width:23%;
+                    height:100%;
+                   
+
+                    a{
+                        height:100%;
+                        width:100%;
+                        text-align:center;
+                        display:block;
+                        
+
+                        i {
+                            display: block;
+                            width:100%;
+                            height:100%;
+                            text-align: center;
+                            line-height: 36px;
+                            font-size: 1.2em;
+                            color:$colorsocmed;
+                            
+                            &:hover{ transform: scale(1.1); color:$colorsocmedhov; line-height: 36px; }
+                        }
+                    }
+                }
+            }
+        }/*social media icons*/
+
+    }
+
+    ul#mobile-nav{display:none;}
+    /*Navigation*/
+    nav{
+
+        height:50px;
+        text-align:center;
+        margin:0.5% 0;
+        background-color:$colornav;
+        ul{
+            list-style:none;
+            margin:0 auto;
+            padding:0;
+            height:50px;
+            width:90%;
+            background-color:$colornav;
+          
+            li{
+                float:left;
+                height:100%;
+                width:14.285714%;
+                margin:0 ;
+                  
+                a{
+                    color:$colortxtbg;
+                    background-color:$colornav;
+                    display:block;
+                    line-height:50px;
+                    font-size:1em;
+                    letter-spacing:0.1em;
+                    height:100%;
+                                        
+                    &:hover {font-size:102%; color:$colornav; background-color:$colortxtbg; }
+
+                }
+            }
+        }
+    }
+
+
+    div.grid_24{
+        margin:0 auto;
+        display:block;
+        width:100%;
+        float:none;
+
+        #slider{ /*slider*/
+            width:100%;
+            height:368px;
+            margin:1% 0;
+            div.main-slider {
+                width: 100%;
+                height: 350px;
+                .flexslider {
+                    height: 350px;
+                    overflow: hidden;
+                    margin: 0;
+                    font-family:$fontList;
+                    img { position: relative; opacity: 0.95; width: 100%; z-index: 7; background-color:$colorslidebg;}
+                    .slides {
+                        height: 350px;
+
+                        .slider-caption {
+                            position: absolute;
+                            vertical-align: middle;
+                            width: 100%;
+                            text-align: center;
+                            height: auto;
+                            z-index: 8;
+                            color: white;
+                            top: 0%;
+                            h1 { font-size: 2.8em; text-transform: uppercase; font-weight: 800; margin-bottom: 30px; color:$colortxtbg; text-shadow:1px 1px 1px $header-shadow; }
+                            p { font-size: 1em; text-transform: uppercase; letter-spacing: 2px; width: 50%; margin: 0 auto 30px auto; line-height: 1.8em; color:colorsocmedhov;background-color:$colorsildertxtbg; padding:1%;opacity: 0.9; }
+                            a.largeButton.homeBgColor {
+                                display:block;
+                                color:$colorsildertxt;
+                                width:10%;
+                                margin:auto;;
+                                padding:1%;
+                                background-color:$colorsildertxtbg;
+                                line-height:34px;
+                                &:hover{color:$colorsildertxtbg; background-color:$colorsildertxt; cursor: pointer;}
+                            }
+
+                            a.largeButton.portfolioBgColor { border-color: #169f60; }
+
+                            a.largeButton.contactBgColor { border-color: #9f164d; }
+
+                        }
+                    }
+                    .flex-control-nav, .flex-control-paging {
+
+                        width:86%;
+
+                        li {
+                            a {  border: 2px solid black; opacity: 0.6; }
+                            &:hover { opacity: 1; background: $colorsocmedhov; }
+                            a.flex-active { opacity: 1; background: $colorsocmedhov; }
+                        }
+                    }
+                }
+            }
+        }
+
+        #content{/*Content*/
+            background-color:$contentbg;
+            display:block;
+            margin:0;
+            padding:1%;
+                                 
+            &:after{content:"."; color:$contentbg;}
+            
+            h1{color:$colorblk; padding:0; height:50px;  margin: 0 0 1% 0; text-align:center; font-size:2.5em; line-height:50px; text-shadow:1px 2px 1px $header-shadow;}
+
+            #summary {
+                width: 80%;
+                margin: 0 auto;
+                display: block;
+                height: 50px;
+                line-height: 1.5em;
+                color:$colorsocmedhov;
+
+            }
+
+            .text{
+                float:left;
+                width:98%;
+                height:auto;
+                background-color:$contenttxtbg;
+                font-size:1em;
+                padding:1%;
+          
+                h1{color:$colortxtbg; padding:0; height:50px;  margin: 0 0 0.5% 0; text-align:center; font-size:2em; line-height:50px; background-color:$honecolor;}
+
+                h2{color:$colortxt;background-color:$bgcolor; padding:0; height:50px;  margin:0 0 0.5% 0; text-align:center; font-size:1.5em; line-height:50px; display:block; clear: both;}
+                h3{background-color:$colortxt; color:$colortxtbg; padding:0; height:50px;  margin:1% auto; text-align:center; font-size:1.2em; line-height:50px; width:100%;}
+                h3:hover{ cursor:pointer; color:$colortxt; background-color:$bgcolor;}
+
+                p{ letter-spacing:0.1em; padding:2%; max-width:100%; width:auto; margin: 0 0 1% 0; color:$colorblk; background-color:$colortxtbg; line-height:1.5em; font-size:1em; }
+                
+                /*Drop Cap*/
+                
+
+                p.collection-text{ letter-spacing:0.1em; padding:2%; max-width:100%; width:auto; margin: 0 0 1% 0; color:$colorblk; background-color:$colortxtbg; line-height:1.5em; font-size:1em; display:none; }
+                ul.recycle-contact{
+                  width:80%;
+                  display: inline-block;
+                  &::before{font-family: 'FontAwesome'; content: "\f015";font-style: normal;  padding:1.5%; line-height:1.5em;text-indent:0; font-size:1.5em; }
+                  li{text-indent:0; width:97%;}
+                }
+                ul.recycle-contact:nth-of-type(2){
+                  &::before{font-family: 'FontAwesome'; content: "\f098"; }
+                }
+                ul.recycle-contact:nth-of-type(3){
+                  &::before{font-family: 'FontAwesome'; content: "\f0e0";}
+                }
+                ul.recycle-contact:nth-of-type(4){
+                  &::before{font-family: 'FontAwesome'; content: "\f1ad"; }
+                }
+                ul.recycle-contact:nth-of-type(5){
+                  &::before{font-family: 'FontAwesome'; content: "\f0ac"; }
+                }
+
+
+                ul.recycle-facts, ul.recycle-contact{
+                    list-style:none;
+                    padding:1%;
+                    background-color:$colortxtbg;
+                    width:98%;
+                    margin:1% auto;
+                    clear:both;
+                    li{
+                        list-style:none;
+                        background-color:$colortxtbg;
+                        margin:1% auto;
+                        line-height: 2em;
+                        display:block;
+                        width:95%;
+                        text-align:left;
+                        letter-spacing:0.1em;
+                        font-size:0.95em;
+                        span::before{font-family: 'FontAwesome'; content: "\f1b8";font-style: normal;  padding:1.5%; line-height:1.5em; color:$headbg;display: block;padding: 0;float: left;text-align: center;font-size: 1.3em; width: 5%;}
+
+                        a{
+                            font-size:1.5em;
+                            width:100%;
+                            text-align:center;
+                            &:hover{ width:100%; text-align:center; color:$colorsocmedhov;}
+                        }
+                    }
+                }
+
+
+                .audio{ background-color:$colorsocmedhov;  margin: 2% auto; width:20%; }
+
+                .recycle_img{ margin: 0 1% 0 0; float:left; display:block;width: 10%; }
+
+                form#feedback-form{
+                    width:50%;
+                    margin:auto;
+                    ul{
+                        margin:1% auto;
+                        background-color:$contentbg;
+                        padding:0;
+                        li{
+                            width:100%;
+                            padding:0;
+                            background-color:$contentbg;
+                            label{width:100%; color:$colorsocmedhov; font-size:1.3em; height:30px; margin:1% 0; display:block; line-height:30px; text-align:left; letter-spacing:0.2em;}
+                            input[type="text"], input[type="email"]{ border:0; width:100%; height:50px; padding:0; margin:0; display:block; letter-spacing:0.1em; line-height:1.5em;}
+                            textarea{width:100%; border:0; display:block; letter-spacing:0.1em;}
+                            input[type="submit"]{letter-spacing:0.2em; height: 35px;padding: 3%;width: 30%; margin:0; line-height: 0px; background-color:$colornav; border:0; color:$colortxtbg; display:block;}
+                            input[type="submit"]:hover{ background-color:$colornav; color:$colorsocmedhov; font-weight:bold;}
+                            .error,
+                            .notice,
+                            .success {
+                                padding: .8em;
+                                margin-bottom: 1em;
+                                border: 2px solid #ddd;
+                            }
+
+                            .error {
+                                background: $colorsocmedhov;
+                                color: #297F10;
+                                border-color: #297F10;
+                                width:80%;
+                            }
+
+                            .notice {
+                                background: #FFF6BF;
+                                color: #514721;
+                                border-color: #FFD324;
+                                width:80%;
+                            }
+
+                            .success {
+                                background: #E6EFC2;
+                                color: #264409;
+                                border-color: #C6D880;
+                                width:80%;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            /*Content boxes*/
+            #contentboxes{
+                height:auto;
+                display:block;
+                                            
+                .contentbox{
+                    width: 48%;
+                    height:auto;
+                    background-color:$colorsildertxtbg;
+                    float: left;
+                    margin: 0.5em;
+                    padding: 0.9em;
+                    font-size:0.8em;
+                    display:block;
+                  
+                    
+                    h2{text-indent:0; height:40px; line-height:40px; font-size:1.5em; color:$colortxt; background-color: $bgcolor; text-align:left; margin:0 0 2% 0; padding:0 2%;}
+                    p{ letter-spacing:0.1em; font-size:0.9em; margin:0 0 1% 0; padding:2%; background-color:$colortxtbg; line-height:1.6em; width: auto; display:block;}
+                    .contentbox_image{float:right; width:27%; min-height: 150px; margin: 0 0 0 1%;}
+                    .news{width:18%;}
+                    a.content-button{
+                        height: 35px;
+                        padding: 0;
+                        width: 30%;
+                        margin:0;
+                        line-height: 35px;
+                        text-align: center;
+                        background-color:$colornav;
+                        border:0;
+                        color:$colortxtbg;
+                        display:block;
+                        letter-spacing: 0.12em;
+                        text-transform:uppercase;
+                                                
+                        &:hover{background-color:$colortxtbg; color:$colornav; cursor: pointer; letter-spacing: 0.12em;width: 30%; text-shadow:none;}
+                    }
+            }/*contentbox end*/
+            }
+        }/*content end*/
+
+        /*Footer*/
+        footer {
+            height:50px;
+            text-align:center;
+            font-size:1em;
+            margin-top:10px;
+            background-color:$colornav;
+
+            ul{
+                list-style:none;
+                margin:auto 0;
+                padding:0;
+                height:50px;
+                width:80%;
+                margin:auto;
+                background-color:$colornav;
+                
+                li{
+                    float:left;
+                    height:50px;
+                    width: 16.285714%;
+                    line-height:50px;
+                    margin:0 ;
+                    
+                    &:hover{background-color:$colortxtbg; color:$colorsocmedhov;}
+                    a{
+                        color:$colortxtbg;
+                        background-color:$colornav;
+                        display:block;
+                        font-size:1em;
+                        
+                        &:hover{ color:$colornav; background-color:$colortxtbg; text-decoration:none; }
+                    }
+                }
+            }
+        }
+    }/*grid_24 end*/
+
+
+    .copyr {
+        color: $colorblk;
+        font-size: 0.6em;
+        width: 100%;
+        letter-spacing: 0.1em;
+        margin: 2% auto;
+    }
+
+}
+
+
