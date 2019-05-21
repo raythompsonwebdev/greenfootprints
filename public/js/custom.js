@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
-    
-    /* ========================================== 
+
+    /* ==========================================
     scrollTop() >= 100
     Should be equal the the height of the header
     ========================================== */
@@ -53,7 +53,7 @@ $(document).ready(function () {
     var position, direction, previous;
 
     $(window).scroll(function(){
-            
+
         if( $(this).scrollTop() >= position ){
             direction = 'down';
             if(direction !== previous){
@@ -72,29 +72,43 @@ $(document).ready(function () {
         position = $(this).scrollTop();
     });
 
-    // sliding menu mobile 
+    // sliding menu mobile
 	$('button#mobile-toggle').on('click', function(event){
-    
+
 		event.preventDefault();
-	
+
 		// create menu variables
 		var slideoutMenu = $('div.container_24 ul#mobile-nav ');
 		var slideoutMenuWidth = $('div.container_24 ul#mobile-nav ').width();
-	
+
 		// toggle open class
 		slideoutMenu.toggleClass("open");
-	
+
 		// slide menu
 		if (slideoutMenu.hasClass("open")) {
 			slideoutMenu.animate({
 				left: "0.5em"
-			});	
+			});
 		} else {
 			slideoutMenu.animate({
 				left: -slideoutMenuWidth
-			}, 500);	
+			}, 500);
 		}
-	});
+    });
+
+
+    //headings
+    $('.text h3').click(
+        function () {
+
+            var element = $(this);
+            $(element).next("p.collection-text").animate({
+            'height':'toggle' }, 'slow', 'easeOutBounce');
+        }
+    );
+
+
+    $('#bio h3').click(function() {    });
 
 });
 

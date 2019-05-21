@@ -125,7 +125,8 @@ module.exports = function (grunt) {
 
                 files: {
                     'public/style.css': 'public/css/style.scss',
-                    'public/ie.css': 'public/css/ie.scss'
+                    'public/ie.css': 'public/css/ie.scss',
+                    'public/normalize.css': 'public/css/normalize.scss'
                     /*where file goes-----/where file from*/
                 }
             },
@@ -137,7 +138,8 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'public/style-min.css': 'public/css/style.scss',
-                    'public/ie-min.css': 'public/css/ie.scss'
+                    'public/ie-min.css': 'public/css/ie.scss',
+                    'public/normalize-min.css': 'public/css/normalize.scss'
                     /*where file goes-----/where file from*/
                 }
             }
@@ -159,7 +161,7 @@ module.exports = function (grunt) {
 
             css: {
                 files: 'public/**/*.scss',
-                tasks: ['sass', 'jshint', 'htmlmin', 'uglify', 'concat', 'responsive_images']
+                tasks: ['sass', 'htmlmin', 'uglify', 'concat', 'responsive_images']
             }
         }
 

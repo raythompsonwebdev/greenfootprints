@@ -16,12 +16,12 @@
     .nav-title {
         visibility: visible;
     }
-    
+
     .fixed-header {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%; 
+        width: 100%;
     }
 
     div.container_24 {
@@ -91,9 +91,9 @@
                 -webkit-flex: 0 1 auto;
                 -ms-flex: 0 1 auto;
                 flex: 0 1 auto;
-                
+
                 img {
-                    
+
                     display: block;
                     height:100%;
                 }
@@ -121,7 +121,7 @@
                     -webkit-align-items: flex-start;
                     -ms-flex-align: start;
                     align-items: flex-start;
-                    
+
                     li {
                         display: block;
                         width: 25%;
@@ -164,7 +164,7 @@
         nav {
             height: 50px;
             text-align: center;
-            margin: 0.5em 0; 
+            margin: 0.5em 0;
             z-index:10;
             div.nav-title{
                 width:19%;
@@ -192,7 +192,7 @@
                 margin: 0;
                 padding: 0;
                 height: 50px;
-                width: 80%; 
+                width: 80%;
                 //background-color: $colornav;
                 display: block;
                 display: -webkit-flex;
@@ -205,9 +205,9 @@
                 -ms-flex-pack: justify;
                 justify-content: space-between;
                 li {
-                    
+
                     height: 100%;
-                    
+
                     display: inline-block;
                     width: 12%;
                     -webkit-flex: 0 1 auto;
@@ -366,28 +366,28 @@
                     content: ".";
                     color: $contentbg;
                 }
-               
+
                 h1 {
                     color: $colortxtbg;
                     width: 100%;
                     background-color: $honecolor;
                     letter-spacing: 0.05em;
-                    
-                    
+
+
                 }
                 h2 {
-                    
+
                     color: $colortxt;
                     background-color: $bgcolor;
                     letter-spacing: 0.02em;
-                   
+
                 }
                 h3 {
-                    
+
                     background-color: $colortxt;
                     color: $colortxtbg;
                     letter-spacing: 0.02em;
-                    
+
                     &:hover {
                         cursor: pointer;
                         color: $colortxt;
@@ -401,7 +401,7 @@
                     padding: 0.5em;
                     line-height: 1.6em;
                 }
-               
+
                 #summary {
                     width: 80%;
                     margin: 0 auto;
@@ -425,9 +425,9 @@
                     -webkit-justify-content: space-around;
                     -ms-flex-pack: justify;
                     justify-content: space-around;
-                    
+
                     h1 {
-                        
+
                         padding: 0;
                         height: 50px;
                         margin: 0 0 0.5% 0;
@@ -471,7 +471,7 @@
                         -webkit-flex: 1 0 auto;
                         -ms-flex: 1 0 auto;
                         flex: 1 0 auto;
-                        
+
                         padding: 1em;
                         width: 84%;
                         margin-bottom: 0.5em;
@@ -774,7 +774,7 @@
                     @include box-sizing($type: border-box);
                     .contentbox {
                         width: 23.9%;
-                        
+
                         height: auto;
                         background-color: $colorsildertxtbg;
                         margin: 0.5em;
@@ -796,11 +796,11 @@
                             padding: 0;
                             font-weight: bold;
                             width: 100%;
-                            
+
                         }
 
                         figure.contentbox_image {
-                            
+
                             margin: 0 auto;
                             width:100%;
                             img {
@@ -808,9 +808,9 @@
                                 width: 80%;
                                 margin:0.5em auto;
                             }
-                            
+
                         }
-                        
+
                         figcaption{
                             p {
                                 letter-spacing: 0.05em;
@@ -823,7 +823,7 @@
                                 display: block;
                                 clear:both;
                             }
-       
+
                             a.content-button {
                                 font-size: 0.95em;
                                 height: 35px;
@@ -850,13 +850,13 @@
                             }
                         }
 
-                        
+
                     }
                     /*contentbox end*/
                 }
-                
+
             }
-            
+
 
             /*Footer*/
             footer {
@@ -941,7 +941,7 @@
             border-radius: 10px; /* Rounded corners */
             font-size: 18px; /* Increase font size */
         }
-        
+
         button#myBtn:hover {
         background-color: $colorsildertxtbg; /* Add a dark-grey background on hover */
         }
@@ -961,11 +961,11 @@
                 width: 68%;
                 h1 {
                     font-size: 1.8em;
-                    
+
                 }
                 h2 {
                     font-size: 0.8em;
-                    
+
                 }
             }
             figure#logo {
@@ -977,15 +977,15 @@
                     margin: 0;
                     padding: 0;
                     li {
-                        
+
                         width: 25%;
-                        
+
                         a {
                             height: 100%;
                             width: 100%;
                             i {
                                 font-size: 1.1em;
-                                
+
                                 &:hover {
                                     transform: scale(1.2);
                                 }
@@ -1015,7 +1015,7 @@
                     width: 12%;
 
                     a {
- 
+
                         font-size: 0.85em;
                         &:hover {
                             text-shadow: none;
@@ -1040,7 +1040,7 @@
                             li {
                                 img {
                                     position: relative;
-                                    
+
                                 }
                                 div.slider-caption {
                                     top: 0;
@@ -1067,7 +1067,7 @@
                             //width: calc(100% - 10%);
                             width:100%;
                             li {
-                                
+
                                 width: 5%;
                                 a {
 
@@ -1093,50 +1093,50 @@
                     color: $contentbg;
                 }
                 h1 {
-                    
+
                     font-size: 2.4em;
-                    
+
                 }
                 #summary {
                     width: 80%;
-                    
+
                 }
                 .text {
 
                     padding: 0.5em;
                     h1 {
-                        
+
                         font-size: 1.9em;
-                        
+
                     }
                     h2 {
-                        
+
                         font-size: 1.4em;
 
                     }
                     h3 {
-                        
+
                         font-size: 1.1em;
-                        
+
                         &:hover {
                             cursor: pointer;
                         }
                     }
                     p {
-                        
-                        
-                        
+
+
+
                         font-size: 0.95em;
                     }
                     /*Drop Cap*/
                     p.collection-text {
                         font-size: 0.95em;
-                        
+
                     }
                     ul.recycle-contact {
                         display: inline-block;
                         &::before {
-                            
+
                             padding: 1.5%;
                             font-size: 1.4em;
                         }
@@ -1171,14 +1171,14 @@
                     }
                     ul.recycle-facts {
                         width: 98%;
-                        
+
                         li {
-                           
+
                             font-size: 0.85em;
                             span {
-                                
+
                                 &::before {
-                                    
+
                                     font-size: 1.15em;
                                 }
                             }
@@ -1206,18 +1206,18 @@
                                 width: 100%;
                                 label {
                                     font-size: 1.1em;
-                                    
+
                                 }
                                 input[type="text"],
                                 input[type="email"] {
-                                                                        
+
                                     line-height: 1.5em;
                                 }
                                 textarea {
                                     letter-spacing: 0.1em;
                                 }
                                 input[type="submit"] {
-                                    
+
                                     width: 30%;
                                 }
                                 input[type="submit"]:hover {
@@ -1248,36 +1248,36 @@
                     height: auto;
                     .contentbox {
                         width: 23.7%;
-                        
-                        
+
+
                         h2 {
                             font-size: 1.1em;
-                            
+
                         }
                         figure.contentbox_image {
-                            
+
                             margin: 0 auto;
-                            
+
                             img {
                                 display: block;
-                                
+
                             }
-                            
+
                         }
-                        
+
                         figcaption{
                             p {
-                                
-                                                                
+
+
                                 line-height: 1.6em;
-                                
+
                             }
-       
+
                             a.content-button {
-                                                                
+
                                 &:hover {
                                     background-color: $colortxtbg;
-                                    
+
                                 }
                             }
                         }
@@ -1295,7 +1295,7 @@
                     width: 80%;
                     li {
                         height: 50px;
-                        
+
                         line-height: 50px;
                         &:hover {
                             background-color: $colortxtbg;
@@ -1335,7 +1335,7 @@
                 width: 67%;
                 h1 {
                     font-size: 1.7em;
-                    
+
                 }
                 h2 {
                     font-size: 0.75em;
@@ -1343,7 +1343,7 @@
             }
             figure#logo {
                 width: 10%;
-                
+
             }
             .socials {
                 width: 20%;
@@ -1351,12 +1351,12 @@
                     margin: 0;
                     padding: 0;
                     li {
-                        
+
                         a {
                             width: 100%;
                             i {
                                 font-size: 1em;
-                                
+
                             }
                         }
                     }
@@ -1368,14 +1368,14 @@
             display: none;
         }
 
-        
+
         /*Navigation*/
         nav {
             height: 50px;
             margin: 0.2em 0;
             div.nav-title{
                 width:18%;
-    
+
                 h1 {
                     font-size: 1.4rem;
                 }
@@ -1383,7 +1383,7 @@
             ul {
                 height: 50px;
                 li {
-                    
+
                     a {
                         font-size: 0.8em;
                         &:hover {
@@ -1402,7 +1402,7 @@
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 285px;
                             li {
@@ -1417,7 +1417,7 @@
                                     }
                                     p {
                                         font-size: 0.8em;
-                                        
+
                                     }
                                     a.largeButton.homeBgColor {
                                         width: 15%;
@@ -1435,8 +1435,8 @@
                             li {
                                 width: 5%;
                                 a {
-                                    
-                                    
+
+
                                     margin: 12% auto;
                                 }
                                 &:hover {
@@ -1458,26 +1458,26 @@
                     color: $contentbg;
                 }
                 h1 {
-                    
+
                     font-size: 2.3em;
                 }
                 #summary {
                     width: 80%;
-                    
+
                 }
                 .text {
-                                        
+
                     h1 {
-                        
+
                         font-size: 1.8em;
                     }
                     h2 {
-                        
+
                         font-size: 1.3em;
-                        
+
                     }
                     h3 {
-                        
+
                         font-size: 1em;
                         &:hover {
                             cursor: pointer;
@@ -1533,14 +1533,14 @@
                     }
                     ul.recycle-facts {
                         width: 98%;
-                        
+
                         li {
-                            
+
                             font-size: 0.8em;
                             span {
-                                
+
                                 &::before {
-                                    
+
                                     font-size: 1.1em;
                                 }
                             }
@@ -1568,18 +1568,18 @@
                                 width: 100%;
                                 label {
                                     font-size: 1.05em;
-                                   
+
                                 }
                                 input[type="text"],
                                 input[type="email"] {
-                                    
+
                                     line-height: 1.5em;
                                 }
                                 textarea {
                                     letter-spacing: 0.1em;
                                 }
                                 input[type="submit"] {
-                                    
+
                                     width: 30%;
                                 }
                                 input[type="submit"]:hover {
@@ -1610,35 +1610,35 @@
                     height: auto;
                     .contentbox {
                         width: 23.4%;
-                        
-                        
+
+
                         h2 {
                             font-size: 1em;
                         }
                         figure.contentbox_image {
-                            
+
                             margin: 0 auto;
-                            
+
                             img {
                                 display: block;
                                 width:70%;
                             }
-                            
+
                         }
-                        
+
                         figcaption{
                             p {
-                                
-                                                               
+
+
                                 line-height: 1.6em;
-                                
+
                             }
-       
+
                             a.content-button {
-                                                                
+
                                 &:hover {
                                     background-color: $colortxtbg;
-                                    
+
                                 }
                             }
                         }
@@ -1656,7 +1656,7 @@
                     width: 80%;
                     li {
                         height: 50px;
-                        
+
                         line-height: 50px;
                         &:hover {
                             background-color: $colortxtbg;
@@ -1706,12 +1706,12 @@
                     padding: 0;
                     li {
                         width: 25%;
-                        
+
                         a {
                             width: 100%;
                             i {
                                 font-size: 0.9em;
-                                
+
                             }
                         }
                     }
@@ -1732,13 +1732,13 @@
                     font-size: 1.1rem;
                 }
             }
-            
+
             ul {
                 height: 50px;
-                
+
                 li {
                     width: 12%;
-                    
+
                     a {
                         font-size: 0.8em;
                         &:hover {
@@ -1758,7 +1758,7 @@
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 260px;
                             li{
@@ -1787,11 +1787,11 @@
                         }
                         .flex-control-nav,
                         .flex-control-paging {
-                            
+
                             li {
                                 width: 5%;
                                 a {
-                                    
+
                                     margin: 12% auto;
                                 }
                                 &:hover {
@@ -1813,7 +1813,7 @@
                     color: $contentbg;
                 }
                 h1 {
-                    
+
                     font-size: 2.3em;
                 }
                 #summary {
@@ -1821,18 +1821,18 @@
                     line-height: 1.5em;
                 }
                 .text {
-                                        
+
                     h1 {
-                        
+
                         font-size: 1.65em;
                     }
                     h2 {
-                        
+
                         font-size: 1.2em;
-                        
+
                     }
                     h3 {
-                        
+
                         font-size: 0.95em;
                         &:hover {
                             cursor: pointer;
@@ -1886,14 +1886,14 @@
                     }
                     ul.recycle-facts {
                         width: 98%;
-                        
+
                         li {
-                            
+
                             font-size: 0.75em;
                             span {
-                                
+
                                 &::before {
-                                    
+
                                     font-size: 1.1em;
                                 }
                             }
@@ -1921,18 +1921,18 @@
                                 width: 100%;
                                 label {
                                     font-size: 1em;
-                                    
+
                                 }
                                 input[type="text"],
                                 input[type="email"] {
-                                   
+
                                     line-height: 1.5em;
                                 }
                                 textarea {
                                     letter-spacing: 0.1em;
                                 }
                                 input[type="submit"] {
-                                    
+
                                     width: 35%;
                                 }
                                 input[type="submit"]:hover {
@@ -1963,37 +1963,37 @@
                     height: auto;
                     .contentbox {
                         width: 24.15%;
-                        
+
                         margin: 0.25em;
                         h2 {
                             font-size: 1em;
 
                         }
                         figure.contentbox_image {
-                            
+
                             margin: 0 auto;
-                            
+
                             img {
                                 display: block;
-                                
+
                             }
-                            
+
                         }
-                        
+
                         figcaption{
                             p {
-                                
-                                
-                                
+
+
+
                                 line-height: 1.6em;
-                                
+
                             }
-       
+
                             a.content-button {
-                                                                
+
                                 &:hover {
                                     background-color: $colortxtbg;
-                                    
+
                                 }
                             }
                         }
@@ -2011,7 +2011,7 @@
                     width: 80%;
                     li {
                         height: 50px;
-                        
+
                         line-height: 50px;
                         &:hover {
                             background-color: $colortxtbg;
@@ -2045,7 +2045,7 @@
                 width: 66%;
                 h1 {
                     font-size: 1.55em;
-                    
+
                 }
                 h2 {
                     font-size: 0.7em;
@@ -2061,12 +2061,12 @@
                     padding: 0;
                     li {
                         width: 25%;
-                        
+
                         a {
                             width: 100%;
                             i {
                                 font-size: 0.85em;
-                                
+
                             }
                         }
                     }
@@ -2111,13 +2111,13 @@
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 250px;
                             li{
                                 img {
                                     position: relative;
-                                   
+
                                 }
 
                                 div.slider-caption {
@@ -2146,7 +2146,7 @@
                             li {
                                 width: 5%;
                                 a {
-                                    
+
                                     margin: 14% auto;
                                 }
                                 &:hover {
@@ -2168,7 +2168,7 @@
                     color: $contentbg;
                 }
                 h1 {
-                    
+
                     font-size: 2.3em;
                 }
                 #summary {
@@ -2176,18 +2176,18 @@
                     line-height: 1.5em;
                 }
                 .text {
-                                        
+
                     h1 {
-                        
+
                         font-size: 1.6em;
                     }
                     h2 {
-                        
+
                         font-size: 1.2em;
-                        
+
                     }
                     h3 {
-                        
+
                         font-size: 0.95em;
                         &:hover {
                             cursor: pointer;
@@ -2199,7 +2199,7 @@
                     }
                     /*Drop Cap*/
                     p.collection-text {
-                        
+
                         font-size: 0.85em;
                     }
                     ul.recycle-contact {
@@ -2243,14 +2243,14 @@
                     }
                     ul.recycle-facts {
                         width: 98%;
-                        
+
                         li {
-                            
+
                             font-size: 0.7em;
                             span {
-                                
+
                                 &::before {
-                                    
+
                                     font-size: 1.1em;
                                 }
                             }
@@ -2278,18 +2278,18 @@
                                 width: 100%;
                                 label {
                                     font-size: 0.95em;
-                                    
+
                                 }
                                 input[type="text"],
                                 input[type="email"] {
-                                    
+
                                     line-height: 1.5em;
                                 }
                                 textarea {
                                     letter-spacing: 0.1em;
                                 }
                                 input[type="submit"] {
-                                    
+
                                     width: 35%;
                                 }
                                 input[type="submit"]:hover {
@@ -2320,37 +2320,37 @@
                     height: auto;
                     .contentbox {
                         width: 24%;
-                        
-                        
+
+
                         h2 {
                             font-size: 0.9em;
                         }
                         figure.contentbox_image {
-                            
+
                             margin: 0 auto;
-                            
+
                             img {
                                 display: block;
-                                
+
                             }
-                            
+
                         }
-                        
+
                         figcaption{
                             p {
-                                
+
                                 font-size: 0.95em;
-                                
+
                                 line-height: 1.6em;
-                                
+
                             }
-       
+
                             a.content-button {
                                 font-size: 0.95em;
-                                
+
                                 &:hover {
                                     background-color: $colortxtbg;
-                                    
+
                                 }
                             }
                         }
@@ -2368,7 +2368,7 @@
                     width: 80%;
                     li {
                         height: 50px;
-                        
+
                         line-height: 50px;
                         &:hover {
                             background-color: $colortxtbg;
@@ -2394,7 +2394,7 @@
 
 @media only screen and (max-width: 800px) {
     div.container_24 {
-        
+
         height: auto;
         /*header*/
         header {
@@ -2402,7 +2402,7 @@
             hgroup {
                 width: 60%;
                 h1 {
-                    
+
                     font-size: 1.55em;
                 }
                 h2 {
@@ -2419,12 +2419,12 @@
                     padding: 0;
                     li {
                         width: 25%;
-                        
+
                         a {
                             width: 100%;
                             i {
                                 font-size: 0.85em;
-                                
+
                             }
                         }
                     }
@@ -2474,10 +2474,10 @@
                             li{
                                 img {
                                     position: relative;
-                                   
+
                                 }
                                 div.slider-caption {
-                                    
+
                                     top: 0%;
                                     h1 {
                                         font-size: 1.9em;
@@ -2488,7 +2488,7 @@
                                     }
                                     a.largeButton.homeBgColor {
                                         width: 20%;
-                                        
+
                                         &:hover {
                                             cursor: pointer;
                                         }
@@ -2498,12 +2498,12 @@
                         }
                         .flex-control-nav,
                         .flex-control-paging {
-                            
+
                             height: 30px;
                             li {
                                 width: 5%;
                                 a {
-                                    
+
                                     margin: 17% auto;
                                 }
                                 &:hover {
@@ -2525,7 +2525,7 @@
                     color: $contentbg;
                 }
                 h1 {
-                    
+
                     font-size: 2.3em;
                 }
                 #summary {
@@ -2533,18 +2533,18 @@
                     line-height: 1.5em;
                 }
                 .text {
-                                        
+
                     h1 {
-                        
+
                         font-size: 1.45em;
                     }
                     h2 {
-                        
+
                         font-size: 1.1em;
-                        
+
                     }
                     h3 {
-                        
+
                         font-size: 0.9em;
                         &:hover {
                             cursor: pointer;
@@ -2555,7 +2555,7 @@
                     }
                     /*Drop Cap*/
                     p.collection-text {
-                        
+
                         font-size: 0.8em;
                     }
                     ul.recycle-contact {
@@ -2598,14 +2598,14 @@
                     }
                     ul.recycle-facts {
                         width: 98%;
-                        
+
                         li {
-                            
+
                             font-size: 0.7em;
                             span {
-                                
+
                                 &::before {
-                                    
+
                                     font-size: 1.1em;
                                 }
                             }
@@ -2641,18 +2641,18 @@
                                 width: 100%;
                                 label {
                                     font-size: 0.9em;
-                                    
+
                                 }
                                 input[type="text"],
                                 input[type="email"] {
-                                    
+
                                     line-height: 1.5em;
                                 }
                                 textarea {
                                     letter-spacing: 0.1em;
                                 }
                                 input[type="submit"] {
-                                    
+
                                     width: 30%;
                                 }
                                 input[type="submit"]:hover {
@@ -2683,36 +2683,36 @@
                     height: auto;
                     .contentbox {
                         width: 49%;
-                        
+
                         h2 {
                             font-size: 1.1em;
                         }
                         figure.contentbox_image {
-                            
+
                             margin: 0 auto;
-                            
+
                             img {
                                 display: block;
                                 width:60%;
                             }
-                            
+
                         }
-                        
+
                         figcaption{
                             p {
-                                
+
                                 font-size: 1em;
-                                
+
                                 line-height: 1.6em;
-                                
+
                             }
-       
+
                             a.content-button {
                                 font-size: 1em;
-                                
+
                                 &:hover {
                                     background-color: $colortxtbg;
-                                    
+
                                 }
                             }
                         }
@@ -2730,7 +2730,7 @@
                     width: 80%;
                     li {
                         height: 50px;
-                        
+
                         line-height: 50px;
                         &:hover {
                             background-color: $colortxtbg;
@@ -2756,7 +2756,7 @@
 
 @media only screen and (max-width: 768px) {
     div.container_24 {
-        
+
         height: auto;
 
         /*header*/
@@ -2807,7 +2807,7 @@
                 }
             }
             ul {
-                
+
                 li {
                     width: 12%;
 
@@ -2836,7 +2836,7 @@
                                     z-index: 2;
                                 }
                                 div.slider-caption {
-                                    
+
                                     top: 0;
                                     h1 {
                                         font-size: 1.8em;
@@ -2846,8 +2846,8 @@
 
                                     }
                                     a.largeButton.homeBgColor {
-                                        
-                                        
+
+
                                         &:hover {
                                             cursor: pointer;
                                         }
@@ -2861,7 +2861,7 @@
                             li {
                                 width: 5%;
                                 a {
-                                    
+
                                 }
                                 &:hover {
                                     opacity: 1;
@@ -2882,15 +2882,15 @@
                     color: $contentbg;
                 }
                 h1 {
-                    
+
                     font-size: 2.3em;
                 }
                 #summary {
-                    
+
                     line-height: 1.5em;
                 }
                 .text {
-                                        
+
                     h1 {
                         font-size: 1.3em;
                     }
@@ -2904,12 +2904,12 @@
                         }
                     }
                     p {
-                        
+
                         font-size: 0.75em;
                     }
                     /*Drop Cap*/
                     p.collection-text {
-                        
+
                         font-size: 0.75em;
                     }
                     ul.recycle-contact {
@@ -2954,12 +2954,12 @@
                         width: 98%;
                         clear: both;
                         li {
-                            
+
                             font-size: 0.65em;
                             span {
-                                
+
                                 &::before {
-                                    
+
                                     font-size: 1.2em;
                                 }
                             }
@@ -2987,18 +2987,18 @@
                                 width: 100%;
                                 label {
                                     font-size: 0.9em;
-                                    
+
                                 }
                                 input[type="text"],
                                 input[type="email"] {
-                                    
+
                                     line-height: 1.5em;
                                 }
                                 textarea {
                                     letter-spacing: 0.1em;
                                 }
                                 input[type="submit"] {
-                                    
+
                                     width: 35%;
                                 }
                                 input[type="submit"]:hover {
@@ -3028,36 +3028,36 @@
                     height: auto;
                     .contentbox {
                         width: 49%;
-                                                
+
                         h2 {
                             font-size: 1.1em;
                         }
                         figure.contentbox_image {
-                            
+
                             margin: 0 auto;
-                            
+
                             img {
                                 display: block;
                                 width: 50%;
-                                
+
                             }
-                            
+
                         }
-                        
+
                         figcaption{
                             p {
-                                
-                                                                
+
+
                                 line-height: 1.6em;
-                                
+
                             }
-       
+
                             a.content-button {
                                 font-size: 0.95em;
-                                
+
                                 &:hover {
                                     background-color: $colortxtbg;
-                                    
+
                                 }
                             }
                         }
@@ -3075,7 +3075,7 @@
                     width: 80%;
                     li {
                         height: 50px;
-                        
+
                         line-height: 50px;
                         &:hover {
                             background-color: $colortxtbg;
@@ -3124,7 +3124,7 @@
             }
             figure#logo {
                 width: 13%;
-                
+
             }
             .socials {
                 width: 30%;
@@ -3133,7 +3133,7 @@
                     padding: 0;
                     li {
                         width: 25%;
-                        
+
                         a {
                             width: 100%;
                             i {
@@ -3182,7 +3182,7 @@
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 260px;
                             li{
@@ -3190,7 +3190,7 @@
                                     z-index: 2;
                                 }
                                 div.slider-caption {
-                                    
+
                                     top: 0;
                                     h1 {
                                         font-size: 1.8em;
@@ -3199,8 +3199,8 @@
                                         font-size: 0.75em;
                                     }
                                     a.largeButton.homeBgColor {
-                                        
-                                        
+
+
                                         &:hover {
                                             cursor: pointer;
                                         }
@@ -3210,12 +3210,12 @@
                         }
                         .flex-control-nav,
                         .flex-control-paging {
-                            
+
                             height: 30px;
                             li {
                                 width: 5%;
                                 a {
-                                    
+
                                     margin: 17% auto;
                                 }
                                 &:hover {
@@ -3237,15 +3237,15 @@
                     color: $contentbg;
                 }
                 h1 {
-                    
+
                     font-size: 2.3em;
                 }
                 #summary {
                     width: 80%;
-                    
+
                 }
                 .text {
-                                        
+
                     h1 {
                         font-size: 1.3em;
                     }
@@ -3253,21 +3253,21 @@
                         font-size: 1em;
                     }
                     h3 {
-                        
+
                         font-size: 1em;
                         &:hover {
                             cursor: pointer;
                         }
                     }
                     p {
-                        
+
                         font-size: 0.75em;
                         width: 70%;
 
                     }
                     /*Drop Cap*/
                     p.collection-text {
-                                                
+
                         font-size: 0.75em;
                     }
                     ul.recycle-contact {
@@ -3311,14 +3311,14 @@
                     }
                     ul.recycle-facts {
                         width: 98%;
-                        
+
                         li {
-                            
+
                             font-size: 0.65em;
                             span {
-                                
+
                                 &::before {
-                                    
+
                                     font-size: 1.2em;
                                 }
                             }
@@ -3346,18 +3346,18 @@
                                 width: 100%;
                                 label {
                                     font-size: 0.9em;
-                                    
+
                                 }
                                 input[type="text"],
                                 input[type="email"] {
-                                    
+
                                     line-height: 1.5em;
                                 }
                                 textarea {
                                     letter-spacing: 0.1em;
                                 }
                                 input[type="submit"] {
-                                    
+
                                     width: 35%;
                                 }
                                 input[type="submit"]:hover {
@@ -3386,36 +3386,36 @@
                 #contentboxes {
                     height: auto;
                     .contentbox {
-                                                
+
                         margin: 0.2em;
                         h2 {
                             font-size: 1.1em;
                         }
                         figure.contentbox_image {
-                            
+
                             margin: 0 auto;
-                            
+
                             img {
                                 display: block;
-                                
+
                             }
-                            
+
                         }
-                        
+
                         figcaption{
                             p {
-                                
-                                                                
+
+
                                 line-height: 1.6em;
-                                
+
                             }
-       
+
                             a.content-button {
                                 font-size: 0.95em;
-                                
+
                                 &:hover {
                                     background-color: $colortxtbg;
-                                    
+
                                 }
                             }
                         }
@@ -3433,7 +3433,7 @@
                     width: 80%;
                     li {
                         height: 50px;
-                        
+
                         line-height: 50px;
                         &:hover {
                             background-color: $colortxtbg;
@@ -3466,7 +3466,7 @@
         height: 50px;
         width: 50px;
         color: $colortxtbg;
-        background-color: $contentbg; 
+        background-color: $contentbg;
         //font-family: "FontAwesome";
         //content:"\f0c9";
         position: fixed;
@@ -3497,8 +3497,8 @@
         }
     }
 
-    
-    
+
+
 
     div.container_24 {
 
@@ -3522,31 +3522,31 @@
                 width: 70%;
                 h1 {
                     font-size: 1.5em;
-                    
+
                 }
                 h2 {
                     font-size: 0.6em;
                 }
             }
             .socials {
-                height:auto;                
+                height:auto;
                 width: 100%;
                 position: absolute;
                 z-index:100;
                 top: 16vh;
                 left: 0;
-                
+
                 ul {
-                                                            
-                    
+
+
                     li {
-                        
+
                         a{
                             i {
                                 font-size: 1.1em;
                                 line-height: 40px;
                             }
-                        } 
+                        }
                     }
                 }
             }
@@ -3594,7 +3594,7 @@
                 }
             }
         }
-        
+
 
         div.grid_24 {
             #slider {
@@ -3604,7 +3604,7 @@
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 250px;
                             li{
@@ -3612,7 +3612,7 @@
                                     z-index: 2;
                                 }
                                 div.slider-caption {
-                                    
+
                                     top: 0;
                                     h1 {
                                         font-size: 1.8em;
@@ -3623,7 +3623,7 @@
 
                                     }
                                     a.largeButton.homeBgColor {
-                                                                                
+
                                         &:hover {
                                             width: 20%;
                                             cursor: pointer;
@@ -3634,12 +3634,12 @@
                         }
                         .flex-control-nav,
                         .flex-control-paging {
-                            
+
                             height: 30px;
                             li {
                                 width: 5%;
                                 a {
-                                   
+
                                     margin: 21% auto;
                                 }
                                 &:hover {
@@ -3661,16 +3661,16 @@
                     color: $contentbg;
                 }
                 h1 {
-                    
+
                     font-size: 2.3em;
                 }
                 #summary {
                     width: 80%;
-                    
+
                 }
                 .text {
-                    
-                    
+
+
                     h1 {
                         font-size: 1.3em;
                     }
@@ -3678,20 +3678,20 @@
                         font-size: 1em;
                     }
                     h3 {
-                        
+
                         font-size: 1em;
                         &:hover {
                             cursor: pointer;
                         }
                     }
                     p {
-                        
+
                         font-size: 0.8em;
                         width:70%;
                     }
                     /*Drop Cap*/
                     p.collection-text {
-                        padding:1%;                        
+                        padding:1%;
                         font-size: 0.8em;
                     }
                     ul.recycle-contact {
@@ -3738,16 +3738,16 @@
                     }
                     ul.recycle-facts {
                         width: 98%;
-                        
+
                         li {
-                            
+
                             font-size: 0.65em;
                             line-height: 20px;
                             span {
                                 width: 30px;
                                 height: 30px;
                                 &::before {
-                                    
+
                                     font-size: 1.3em;
                                     line-height: 25px;
                                 }
@@ -3775,18 +3775,18 @@
                                 width: 100%;
                                 label {
                                     font-size: 0.9em;
-                                    
+
                                 }
                                 input[type="text"],
                                 input[type="email"] {
-                                    
+
                                     line-height: 1.5em;
                                 }
                                 textarea {
                                     letter-spacing: 0.1em;
                                 }
                                 input[type="submit"] {
-                                    
+
                                     width: 35%;
                                 }
                                 input[type="submit"]:hover {
@@ -3816,36 +3816,36 @@
                     height: auto;
                     .contentbox {
                         width: 48.5%;
-                        
+
                         h2 {
                             font-size: 1em;
                             height: auto;
                         }
                         figure.contentbox_image {
-                            
+
                             margin: 0 auto;
-                            
+
                             img {
                                 display: block;
                                 width: 40%;
                             }
-                            
+
                         }
-                        
+
                         figcaption{
                             p {
-                                
-                                                                
+
+
                                 line-height: 1.6em;
-                                
+
                             }
-       
+
                             a.content-button {
                                 font-size: 0.95em;
-                                
+
                                 &:hover {
                                     background-color: $colortxtbg;
-                                    
+
                                 }
                             }
                         }
@@ -3888,7 +3888,7 @@
 @media only screen and (max-width: 640px) {
     button#mobile-toggle {
         top: 2.5vh;
-        
+
         font-size: 0.9em;
         &:hover {
             background-color: $colorslidebg;
@@ -3908,7 +3908,7 @@
                 width: 33%;
                 h1 {
                     font-size: 1.5em;
-                    
+
                 }
                 h2 {
                     font-size: 0.6em;
@@ -3923,7 +3923,7 @@
                                 font-size: 1em;
                             }
 
-                        } 
+                        }
                     }
                 }
             }
@@ -3934,7 +3934,7 @@
         ul#mobile-nav {
             top: 15vh;
 
-            
+
             li {
                 float: none;
                 a {
@@ -3954,7 +3954,7 @@
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 225px;
                             li{
@@ -3962,18 +3962,18 @@
                                     z-index: 2;
                                 }
                                 div.slider-caption {
-                                    
+
                                     top: 0%;
                                     h1 {
                                         font-size: 1.8em;
                                     }
                                     p {
-                                        
+
                                         width: 95%;
                                     }
                                     a.largeButton.homeBgColor {
-                                        
-                                        
+
+
                                         &:hover {
                                             width: 20%;
                                             cursor: pointer;
@@ -4015,40 +4015,40 @@
                     color: $contentbg;
                 }
                 h1 {
-                    
+
                     font-size: 2.2em;
                 }
 
-                
+
                 #summary {
-                    
+
                     line-height: 1.5em;
                 }
                 .text {
-                    
-                    
+
+
                     h1 {
-                        
+
                         font-size: 1.15em;
                     }
                     h2 {
-                        
+
                         font-size: 1.05em;
                     }
                     h3 {
-                        
+
                         font-size: 1em;
                         &:hover {
                             cursor: pointer;
                         }
                     }
                     p {
-                        
+
                         font-size: 0.85em;
                     }
                     /*Drop Cap*/
                     p.collection-text {
-                        
+
                         font-size: 0.85em;
                     }
                     ul.recycle-contact {
@@ -4091,14 +4091,14 @@
                     }
                     ul.recycle-facts {
                         width: 98%;
-                        
+
                         li {
-                            
+
                             font-size: 0.6em;
                             span {
-                                
+
                                 &::before {
-                                    
+
                                     font-size: 1.4em;
                                 }
                             }
@@ -4126,18 +4126,18 @@
                                 width: 100%;
                                 label {
                                     font-size: 0.9em;
-                                    
+
                                 }
                                 input[type="text"],
                                 input[type="email"] {
-                                    
+
                                     line-height: 1.5em;
                                 }
                                 textarea {
                                     letter-spacing: 0.1em;
                                 }
                                 input[type="submit"] {
-                                    
+
                                     width: 35%;
                                 }
                                 input[type="submit"]:hover {
@@ -4166,36 +4166,36 @@
                     height: auto;
                     .contentbox {
                         width: 98.7%;
-                        
+
                         h2 {
                             font-size: 1.3em;
                             font-weight: bold;
                         }
                         figure.contentbox_image {
-                            
+
                             margin: 0 auto;
-                            
+
                             img {
                                 display: block;
                                 width: 30%;
-                                
+
                             }
-                            
+
                         }
-                        
+
                         figcaption{
                             p {
-                                
-                                                                
+
+
                                 line-height: 1.6em;
-                                
+
                             }
-       
+
                             a.content-button {
-                                                                
+
                                 &:hover {
                                     background-color: $colortxtbg;
-                                    
+
                                 }
                             }
                         }
@@ -4211,7 +4211,7 @@
                     width: 100%;
                     li {
                         height: 50px;
-                        
+
                         &:hover {
                             color: $colorsocmedhov;
                         }
@@ -4234,7 +4234,7 @@
 
 @media only screen and (max-width: 600px) {
     button#mobile-toggle {
-                
+
         font-size: 0.9em;
         &:hover {
             background-color: $colorslidebg;
@@ -4246,14 +4246,14 @@
     }
     div.container_24 {
         header {
-            
+
             figure#logo {
                 width: 16%;
             }
             hgroup {
                 width: 34%;
                 h1 {
-                    
+
                     line-height: 30px;
                 }
                 h2 {
@@ -4261,14 +4261,14 @@
                 }
             }
             .socials {
-                
+
                 ul {
                     li {
                         a{
                             i {
                                 font-size: 1em;
                             }
-                        } 
+                        }
                     }
                 }
             }
@@ -4277,7 +4277,7 @@
             display: none;
         }
         ul#mobile-nav {
-            
+
             li {
                 float: none;
                 a {
@@ -4304,7 +4304,7 @@
                                     z-index: 2;
                                 }
                                 div.slider-caption {
-                                    
+
                                     top: 0;
                                     h1 {
                                         font-size: 1.8em;
@@ -4314,7 +4314,7 @@
                                     }
                                     a.largeButton.homeBgColor {
                                         width: 25%;
-                                        
+
                                         &:hover {
                                             width: 20%;
                                             cursor: pointer;
@@ -4335,7 +4335,7 @@
                             li {
                                 width: 5%;
                                 a {
-                                    
+
                                     margin: 23% auto;
                                 }
                                 &:hover {
@@ -4357,37 +4357,37 @@
                     color: $contentbg;
                 }
                 h1 {
-                    
+
                     font-size: 2.2em;
                 }
                 #summary {
-                    
+
                     line-height: 1.5em;
                 }
                 .text {
-                                        
+
                     h1 {
-                        
+
                         font-size: 1.25em;
                     }
                     h2 {
-                        
+
                         font-size: 1.05em;
                     }
                     h3 {
-                        
+
                         font-size: 0.85em;
                         &:hover {
                             cursor: pointer;
                         }
                     }
                     p {
-                        
+
                         font-size: 0.75em;
                     }
                     /*Drop Cap*/
                     p.collection-text {
-                        
+
                         font-size: 0.75em;
                     }
                     ul.recycle-contact {
@@ -4430,14 +4430,14 @@
                     }
                     ul.recycle-facts {
                         width: 98%;
-                        
+
                         li {
-                            
+
                             font-size: 0.58em;
                             span {
-                                
+
                                 &::before {
-                                    
+
                                     font-size: 1.5em;
                                 }
                             }
@@ -4465,18 +4465,18 @@
                                 width: 100%;
                                 label {
                                     font-size: 0.9em;
-                                    
+
                                 }
                                 input[type="text"],
                                 input[type="email"] {
-                                    
+
                                     line-height: 1.5em;
                                 }
                                 textarea {
                                     letter-spacing: 0.1em;
                                 }
                                 input[type="submit"] {
-                                    
+
                                     width: 35%;
                                 }
                                 input[type="submit"]:hover {
@@ -4505,34 +4505,34 @@
                     height: auto;
                     .contentbox {
                         width: 98.7%;
-                        
+
                         h2 {
                             font-size: 1.25em;
                         }
                         figure.contentbox_image {
                             float:none;
                             margin: 0 auto;
-                            
+
                             img {
                                 display: block;
                                 width: 30%;
                             }
-                            
+
                         }
-                        
+
                         figcaption{
                             p {
-                                
-                                                                
+
+
                                 line-height: 1.6em;
-                                
+
                             }
-       
+
                             a.content-button {
-                                                                
+
                                 &:hover {
                                     background-color: $colortxtbg;
-                                    
+
                                 }
                             }
                         }
@@ -4547,7 +4547,7 @@
                     height: 50px;
                     li {
                         height: 50px;
-                        
+
                         &:hover {
                             color: $colorsocmedhov;
                         }
@@ -4590,7 +4590,7 @@
                 width: 40%;
                 h1 {
                     font-size: 1.5em;
-                    
+
                 }
                 h2 {
                     font-size: 0.7em;
@@ -4605,7 +4605,7 @@
                                 font-size: 1em;
                             }
 
-                        } 
+                        }
                     }
                 }
             }
@@ -4634,7 +4634,7 @@
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 225px;
                             li{
@@ -4642,18 +4642,18 @@
                                     z-index: 2;
                                 }
                                 div.slider-caption {
-                                    
+
                                     top: 0;
                                     h1 {
                                         font-size: 1.8em;
                                     }
                                     p {
-                                        
+
                                         width: 95%;
                                     }
                                     a.largeButton.homeBgColor {
                                         width: 30%;
-                                        
+
                                         &:hover {
                                             width: 30%;
                                             cursor: pointer;
@@ -4664,7 +4664,7 @@
                         }
                         .flex-control-nav,
                         .flex-control-paging {
-                            
+
                             height: 30px;
                             li {
                                 width: 5%;
@@ -4690,36 +4690,36 @@
                     color: $contentbg;
                 }
                 h1 {
-                    
+
                     font-size: 2.2em;
                 }
                 #summary {
-                    
+
                     line-height: 1.5em;
                 }
                 .text {
-                                       
+
                     h1 {
                         font-size: 1.2em;
                     }
                     h2 {
-                        
+
                         font-size: 1.1em;
                     }
                     h3 {
-                        
+
                         font-size: 0.8em;
                         &:hover {
                             cursor: pointer;
                         }
                     }
                     p {
-                        
+
                         font-size: 0.7em;
                     }
                     /*Drop Cap*/
                     p.collection-text {
-                        
+
                         font-size: 0.7em;
                     }
                     ul.recycle-contact {
@@ -4763,18 +4763,18 @@
                     }
                     ul.recycle-facts {
                         width: 98%;
-                        
+
                         li {
-                            
+
                             font-size: 0.55em;
                             line-height: 25px;
                             span {
                                 width: 25px;
                                 height: 25px;
                                 &::before {
-                                    
+
                                     font-size: 1.5em;
-                                    
+
                                 }
                             }
                             a {
@@ -4804,14 +4804,14 @@
                                 }
                                 input[type="text"],
                                 input[type="email"] {
-                                    
+
                                     line-height: 1.5em;
                                 }
                                 textarea {
                                     letter-spacing: 0.1em;
                                 }
                                 input[type="submit"] {
-                                    
+
                                     width: 35%;
                                 }
                                 input[type="submit"]:hover {
@@ -4840,35 +4840,35 @@
                     height: auto;
                     .contentbox {
                         width: 98.7%;
-                        
+
                         h2 {
                             font-size: 1.25em;
                         }
                         figure.contentbox_image {
-                            
+
                             margin: 0 auto;
-                            
+
                             img {
                                 display: block;
-                                
+
                             }
-                            
+
                         }
-                        
+
                         figcaption{
                             p {
-                                
-                                                                
+
+
                                 line-height: 1.6em;
-                                
+
                             }
-       
+
                             a.content-button {
-                                
-                                
+
+
                                 &:hover {
                                     background-color: $colortxtbg;
-                                    
+
                                 }
                             }
                         }
@@ -4899,14 +4899,14 @@
         }
         .copyr {
             font-size: 0.5em;
-          
+
         }
     }
 }
 
 @media only screen and (max-width: 480px) {
     button#mobile-toggle {
-        
+
         font-size: 0.85em;
         &:hover {
             background-color: $colorslidebg;
@@ -4926,21 +4926,21 @@
                 width: 40%;
                 h1 {
                     font-size: 1.5em;
-                    
+
                 }
                 h2 {
                     font-size: 0.7em;
                 }
             }
             .socials {
-                
+
                 ul {
                     li {
                         a{
                             i {
                                 font-size: 1em;
                             }
-                        } 
+                        }
                     }
                 }
             }
@@ -4976,7 +4976,7 @@
                                     z-index: 2;
                                 }
                                 div.slider-caption {
-                                    
+
                                     top: 0;
                                     h1 {
                                         font-size: 1.8em;
@@ -4987,19 +4987,19 @@
                                         margin: 0 auto 10px auto;
                                     }
                                     a.largeButton.homeBgColor {
-                                                                                
+
                                         &:hover {
                                             width: 30%;
                                             cursor: pointer;
                                         }
                                     }
-                                   
+
                                 }
                             }
                         }
                         .flex-control-nav,
                         .flex-control-paging {
-                            
+
                             height: 30px;
                             li {
                                 width: 5%;
@@ -5025,36 +5025,36 @@
                     color: $contentbg;
                 }
                 h1 {
-                    
+
                     font-size: 2.2em;
                 }
                 #summary {
-                    
+
                     line-height: 1.5em;
                 }
                 .text {
-                    padding: 0;                    
+                    padding: 0;
                     h1 {
                         font-size: 1.1em;
                     }
                     h2 {
-                        
+
                         font-size: 0.95em;
                     }
                     h3 {
-                        
+
                         font-size: 0.8em;
                         &:hover {
                             cursor: pointer;
                         }
                     }
                     p {
-                        
+
                         font-size: 0.7em;
                     }
                     /*Drop Cap*/
                     p.collection-text {
-                        
+
                         font-size: 0.7em;
                     }
                     ul.recycle-contact {
@@ -5098,15 +5098,15 @@
                     }
                     ul.recycle-facts {
                         width: 98%;
-                        
+
                         li {
-                            
+
                             font-size: 0.6em;
                             line-height: 25px;
                             span {
-                                
+
                                 &::before {
-                                    
+
                                     font-size: 1.5em;
                                     line-height: 25px;
                                 }
@@ -5138,14 +5138,14 @@
                                 }
                                 input[type="text"],
                                 input[type="email"] {
-                                    
+
                                     line-height: 1.5em;
                                 }
                                 textarea {
                                     letter-spacing: 0.1em;
                                 }
                                 input[type="submit"] {
-                                    
+
                                     width: 35%;
                                 }
                                 input[type="submit"]:hover {
@@ -5174,34 +5174,34 @@
                     height: auto;
                     .contentbox {
                         width: 98.7%;
-                        
+
                         h2 {
                             font-size: 1.2em;
                         }
                         figure.contentbox_image {
-                            
+
                             margin: 0 auto;
-                            
+
                             img {
                                 display: block;
-                                
+
                             }
-                            
+
                         }
-                        
+
                         figcaption{
                             p {
-                                
+
                                 font-size: 0.95em;
-                                                                                                
+
                             }
-       
+
                             a.content-button {
                                 font-size: 0.95em;
-                                
+
                                 &:hover {
                                     background-color: $colortxtbg;
-                                    
+
                                 }
                             }
                         }
@@ -5232,7 +5232,7 @@
         }
         .copyr {
             font-size: 0.5em;
-            
+
         }
     }
 }
@@ -5259,7 +5259,7 @@
                 width: 44.5%;
                 h1 {
                     font-size: 1.45em;
-                    
+
                 }
                 h2 {
                     font-size: 0.65em;
@@ -5287,7 +5287,7 @@
             display: none;
         }
         ul#mobile-nav {
-            
+
             li {
                 float: none;
                 a {
@@ -5312,7 +5312,7 @@
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 190px;
                             li{
@@ -5320,18 +5320,18 @@
                                     z-index: 2;
                                 }
                                 div.slider-caption {
-                                    
+
                                     top: 0;
                                     h1 {
                                         font-size: 1.7em;
                                     }
                                     p {
-                                        
+
                                         width: 92%;
                                     }
                                     a.largeButton.homeBgColor {
-                                        
-                                        
+
+
                                         &:hover {
                                             width: 30%;
                                             cursor: pointer;
@@ -5342,7 +5342,7 @@
                         }
                         .flex-control-nav,
                         .flex-control-paging {
-                            
+
                             height: 30px;
                             li {
                                 width: 5%;
@@ -5368,36 +5368,36 @@
                     color: $contentbg;
                 }
                 h1 {
-                    
+
                     font-size: 2.2em;
                 }
                 #summary {
-                    
+
                     line-height: 1.5em;
                 }
                 .text {
-                                        
+
                     h1 {
                         font-size: 1em;
                     }
                     h2 {
-                        
+
                         font-size: 1.05em;
                     }
                     h3 {
-                        
+
                         font-size: 0.85em;
                         &:hover {
                             cursor: pointer;
                         }
                     }
                     p {
-                        
+
                         font-size: 0.7em;
                     }
                     /*Drop Cap*/
                     p.collection-text {
-                        
+
                         font-size: 0.7em;
                     }
                     ul.recycle-contact {
@@ -5438,15 +5438,15 @@
                     }
                     ul.recycle-facts {
                         width: 98%;
-                        
+
                         li {
-                            
+
                             font-size: 0.55em;
                             line-height: 25px;
                             span {
-                                
+
                                 &::before {
-                                    
+
                                     font-size: 1.5em;
                                     line-height: 25px;
                                 }
@@ -5478,14 +5478,14 @@
                                 }
                                 input[type="text"],
                                 input[type="email"] {
-                                    
+
                                     line-height: 1.5em;
                                 }
                                 textarea {
                                     letter-spacing: 0.1em;
                                 }
                                 input[type="submit"] {
-                                    
+
                                     width: 35%;
                                 }
                                 input[type="submit"]:hover {
@@ -5522,33 +5522,33 @@
                     justify-content: space-around;
                     .contentbox {
                         width: 98.7%;
-                       
+
                         h2 {
                             font-size: 1.1em;
                         }
                         figure.contentbox_image {
-                            
+
                             margin: 0 auto;
-                            
+
                             img {
                                 display: block;
-                                
+
                             }
-                            
+
                         }
-                        
+
                         figcaption{
                             p {
-                                
+
                                 font-size: 0.95em;
-                                                                                                
+
                             }
-       
+
                             a.content-button {
-                                                                
+
                                 &:hover {
                                     background-color: $colortxtbg;
-                                    
+
                                 }
                             }
                         }
@@ -5579,14 +5579,14 @@
         }
         .copyr {
             font-size: 0.5em;
-            
+
         }
     }
 }
 
 @media only screen and (max-width: 375px) {
     button#mobile-toggle {
-        
+
         font-size: 0.85em;
         &:hover {
             background-color: $colorslidebg;
@@ -5605,18 +5605,18 @@
                 width: 51%;
                 h1 {
                     font-size: 1.4em;
-                    
+
                 }
                 h2 {
                     font-size: 0.7em;
-                    
+
                 }
             }
             .socials {
-                
+
                 ul {
                     height: auto;
-                    
+
                     li {
                         width: 25%;
                         a {
@@ -5632,7 +5632,7 @@
             display: none;
         }
         ul#mobile-nav {
-            
+
             li {
                 float: none;
                 a {
@@ -5653,7 +5653,7 @@
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 190px;
                             li{
@@ -5661,30 +5661,30 @@
                                     z-index: 2;
                                 }
                                 div.slider-caption {
-                                    
+
                                     top: 0;
                                     h1 {
                                         font-size: 1.7em;
-                                        
+
                                     }
                                     p {
-                                        
+
                                         width: 92%;
                                     }
                                     a.largeButton.homeBgColor {
-                                        font-size:0.9em;                                        
+                                        font-size:0.9em;
                                         &:hover {
                                             width: 30%;
                                             cursor: pointer;
                                         }
                                     }
-                                    
+
                                 }
                             }
                         }
                         .flex-control-nav,
                         .flex-control-paging {
-                            
+
                             height: 30px;
                             li {
                                 width: 5%;
@@ -5710,37 +5710,37 @@
                     color: $contentbg;
                 }
                 h1 {
-                    
+
                     font-size: 2.2em;
                 }
                 #summary {
-                    
+
                     line-height: 1.5em;
                 }
                 .text {
-                    
-                    
+
+
                     h1 {
                         font-size: 1em;
                     }
                     h2 {
-                        
+
                         font-size: 1.05em;
                     }
                     h3 {
-                        
+
                         font-size: 0.8em;
                         &:hover {
                             cursor: pointer;
                         }
                     }
                     p {
-                        
+
                         font-size: 0.7em;
                     }
                     /*Drop Cap*/
                     p.collection-text {
-                        
+
                         font-size: 0.7em;
                     }
                     ul.recycle-contact {
@@ -5783,17 +5783,17 @@
                     }
                     ul.recycle-facts {
                         width: 98%;
-                        
+
                         li {
-                            
+
                             font-size: 0.6em;
                             line-height: 25px;
                             span {
-                                
+
                                 &::before {
-                                    
+
                                     font-size: 1.5em;
-                                    
+
                                 }
                             }
                             a {
@@ -5824,14 +5824,14 @@
                                 }
                                 input[type="text"],
                                 input[type="email"] {
-                                    
+
                                     line-height: 1.5em;
                                 }
                                 textarea {
                                     letter-spacing: 0.1em;
                                 }
                                 input[type="submit"] {
-                                    
+
                                     width: 35%;
                                 }
                                 input[type="submit"]:hover {
@@ -5859,34 +5859,34 @@
                 #contentboxes {
                     height: auto;
                     .contentbox {
-                        
+
                         h2 {
                             font-size: 1em;
                         }
                         figure.contentbox_image {
-                            
+
                             margin: 0 auto;
-                            
+
                             img {
                                 display: block;
-                                
+
                             }
-                            
+
                         }
-                        
+
                         figcaption{
                             p {
-                                
+
                                 font-size: 0.95em;
-                                
-                                
+
+
                             }
-       
+
                             a.content-button {
-                                                                
+
                                 &:hover {
                                     background-color: $colortxtbg;
-                                    
+
                                 }
                             }
                         }
@@ -5917,14 +5917,14 @@
         }
         .copyr {
             font-size: 0.5em;
-            
+
         }
     }
 }
 
 @media only screen and (max-width: 360px) {
     button#mobile-toggle {
-        
+
         font-size: 0.85em;
         &:hover {
             background-color: $colorslidebg;
@@ -5944,18 +5944,18 @@
                 width: 50%;
                 h1 {
                     font-size: 1.4em;
-                    
+
                 }
                 h2 {
                     font-size: 0.65em;
-                    
+
                 }
             }
             .socials {
-                
+
                 ul {
                     height: auto;
-                    
+
                     li {
                         width: 25%;
                         a {
@@ -5971,7 +5971,7 @@
             display: none;
         }
         ul#mobile-nav {
-            
+
             li {
                 float: none;
                 a {
@@ -5992,7 +5992,7 @@
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 200px;
                             li{
@@ -6000,18 +6000,18 @@
                                     z-index: 2;
                                 }
                                 div.slider-caption {
-                                    
+
                                     top: 0;
                                     h1 {
                                         font-size: 1.6em;
                                     }
                                     p {
-                                        
+
                                         width: 92%;
                                     }
                                     a.largeButton.homeBgColor {
                                         width: 35%;
-                                        
+
                                         &:hover {
                                             width: 30%;
                                             cursor: pointer;
@@ -6047,36 +6047,36 @@
                     color: $contentbg;
                 }
                 h1 {
-                    
+
                     font-size: 2.2em;
                 }
                 #summary {
-                    
+
                     line-height: 1.5em;
                 }
                 .text {
-                                        
+
                     h1 {
                         font-size: 1em;
                     }
                     h2 {
-                        
+
                         font-size: 1em;
                     }
                     h3 {
-                        
+
                         font-size: 0.75em;
                         &:hover {
                             cursor: pointer;
                         }
                     }
                     p {
-                        
+
                         font-size: 0.7em;
                     }
                     /*Drop Cap*/
                     p.collection-text {
-                        
+
                         font-size: 0.7em;
                     }
                     ul.recycle-contact {
@@ -6118,17 +6118,17 @@
                     }
                     ul.recycle-facts {
                         width: 98%;
-                        
+
                         li {
-                            
+
                             font-size: 0.6em;
-                            
+
                             span {
-                                
+
                                 &::before {
-                                    
+
                                     font-size: 1.5em;
-                                    
+
                                 }
                             }
                             a {
@@ -6159,14 +6159,14 @@
                                 }
                                 input[type="text"],
                                 input[type="email"] {
-                                    
+
                                     line-height: 1.5em;
                                 }
                                 textarea {
                                     letter-spacing: 0.1em;
                                 }
                                 input[type="submit"] {
-                                    
+
                                     width: 40%;
                                 }
                                 input[type="submit"]:hover {
@@ -6194,34 +6194,34 @@
                 #contentboxes {
                     height: auto;
                     .contentbox {
-                        
+
                         h2 {
                             font-size: 1em;
                         }
                         figure.contentbox_image {
-                            
+
                             margin: 0 auto;
-                            
+
                             img {
                                 display: block;
-                                
+
                             }
-                            
+
                         }
-                        
+
                         figcaption{
                             p {
-                                
+
                                 font-size: 0.95em;
-                                
-                                
+
+
                             }
-       
+
                             a.content-button {
-                                                                
+
                                 &:hover {
                                     background-color: $colortxtbg;
-                                    
+
                                 }
                             }
                         }
@@ -6254,14 +6254,14 @@
         }
         .copyr {
             font-size: 0.5em;
-            
+
         }
     }
 }
 
 @media only screen and (max-width: 320px) {
     button#mobile-toggle {
-        
+
         font-size: 0.8em;
         &:hover {
             background-color: $colorslidebg;
@@ -6275,24 +6275,24 @@
         header {
             figure#logo {
                 width: 29%;
-                
+
             }
             hgroup {
                 width: 49%;
                 h1 {
                     font-size: 1.4em;
-                    
+
                 }
                 h2 {
                     font-size: 0.65em;
-                    
+
                 }
             }
             .socials {
-                
+
                 ul {
                     height: auto;
-                    
+
                     li {
                         width: 25%;
                         a {
@@ -6308,7 +6308,7 @@
             display: none;
         }
         ul#mobile-nav {
-            
+
             li {
                 float: none;
                 a {
@@ -6329,7 +6329,7 @@
                     height: 100%;
                     div.flexslider {
                         height: 100%;
-                        
+
                         ul.slides {
                             height: 190px;
                             img {
@@ -6337,19 +6337,19 @@
                             }
                             li{
                                 div.slider-caption {
-                                    
+
                                     top: 0;
                                     h1 {
                                         font-size: 1.5em;
-                                        
+
                                     }
                                     p {
                                         font-size: 0.6em;
-                                        
+
                                     }
                                     a.largeButton.homeBgColor {
-                                        
-                                        
+
+
                                         &:hover {
                                             width: 30%;
                                             cursor: pointer;
@@ -6386,37 +6386,37 @@
                     color: $contentbg;
                 }
                 h1 {
-                    
+
                     font-size: 2.2em;
                 }
                 #summary {
-                    
+
                     line-height: 1.5em;
                 }
                 .text {
-                    
-                    
+
+
                     h1 {
                         font-size: 1em;
                     }
                     h2 {
-                        
+
                         font-size: 1em;
                     }
                     h3 {
-                        
+
                         font-size: 0.75em;
                         &:hover {
                             cursor: pointer;
                         }
                     }
                     p {
-                        
+
                         font-size: 0.7em;
                     }
                     /*Drop Cap*/
                     p.collection-text {
-                        
+
                         font-size: 0.7em;
                     }
                     ul.recycle-contact {
@@ -6458,17 +6458,17 @@
                     }
                     ul.recycle-facts {
                         width: 98%;
-                        
+
                         li {
-                            
+
                             font-size: 0.6em;
-                            
+
                             span {
-                                
+
                                 &::before {
-                                    
+
                                     font-size: 1.5em;
-                                    
+
                                 }
                             }
                             a {
@@ -6485,7 +6485,7 @@
                     }
                     .recycle_img {
                         width: 35%;
-                        
+
                     }
                     form#feedback-form {
                         width: 85%;
@@ -6506,7 +6506,7 @@
                                     letter-spacing: 0.1em;
                                 }
                                 input[type="submit"] {
-                                   
+
                                     width: 40%;
                                 }
                                 input[type="submit"]:hover {
@@ -6535,34 +6535,34 @@
                     height: auto;
                     .contentbox {
                         width: 98.5%;
-                        
+
                         h2 {
                             font-size: 1em;
                         }
                         figure.contentbox_image {
-                            
+
                             margin: 0 auto;
-                            
+
                             img {
                                 display: block;
-                                
+
                             }
-                            
+
                         }
-                        
+
                         figcaption{
                             p {
-                                
+
                                 font-size: 0.95em;
-                                
-                                
+
+
                             }
-       
+
                             a.content-button {
-                                                                
+
                                 &:hover {
                                     background-color: $colortxtbg;
-                                    
+
                                 }
                             }
                         }
@@ -6595,7 +6595,7 @@
         }
         .copyr {
             font-size: 0.5em;
-            
+
         }
     }
 }

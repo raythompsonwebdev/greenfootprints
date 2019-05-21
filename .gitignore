@@ -74,7 +74,7 @@ node_modules/
 bower_components/
 nbproject/
 .git/
-_assets/
+
 Files/
 test/
 .sass-cache/
@@ -85,7 +85,6 @@ apple-touch-icon.png
 package.json
 
 
-public/dist/
 public/img/
 public/images/
 public/fonts
@@ -96,6 +95,8 @@ public/css/min/
 public/css/style.css.map
 public/css/ie.css.map
 public/ie-min.css.map
+public/normalize-min.css.map
+public/normalize.css.map
 
 public/ie.min-css.map
 public/ie.css.map
