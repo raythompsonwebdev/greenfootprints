@@ -97,18 +97,6 @@ $(document).ready(function () {
     });
 
 
-    //headings
-    $('.text h3').click(
-        function () {
-
-            var element = $(this);
-            $(element).next("p.collection-text").animate({
-            'height':'toggle' }, 'slow', 'easeOutBounce');
-        }
-    );
-
-
-    $('#bio h3').click(function() {    });
 
 });
 

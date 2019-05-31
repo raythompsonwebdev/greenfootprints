@@ -270,6 +270,8 @@
                         background-color: $contenttxtbg;
                         ul.slides {
                             height: 350px;
+                            margin:0;
+                            padding:0;
                             li {
                                 img {
                                     position: relative;
@@ -292,6 +294,7 @@
                                         font-weight: bold;
                                         color: $colortxtbg;
                                         text-shadow: 1px 1px 1px $header-shadow;
+                                        letter-spacing: 0.1em;
                                     }
                                     p {
                                         font-size: 1em;
@@ -326,20 +329,24 @@
                         }
                         .flex-control-nav,
                         .flex-control-paging {
-                            //width: calc(100% - 15%);
+
                             width:100%;
                             position:relative;
-                            height: 35px;
+                            height: auto;
+                            padding: 0;
+                            margin: 0;
                             li {
                                 display: inline-block;
-                                height: 100%;
+                                height: auto;
                                 width: 5%;
                                 a {
-                                    border: 2px solid black;
+
                                     opacity: 0.6;
-                                    display: block;
-                                    margin: 11% auto;
                                     line-height: 35px;
+                                    display: block;
+                                    margin: 0;
+                                    text-align:center;
+
                                     &:hover {
                                         opacity: 1;
                                     }
@@ -1046,11 +1053,11 @@
                                     top: 0;
                                     h1 {
                                         font-size: 2.2em;
-                                        margin-bottom: 30px;
+
                                     }
                                     p {
                                         font-size: 0.9em;
-                                        width: 50%;
+
                                     }
                                     a.largeButton.homeBgColor {
                                         width: 15%;
@@ -1068,10 +1075,10 @@
                             width:100%;
                             li {
 
-                                width: 5%;
+                                width: 6%;
                                 a {
 
-                                    margin: 12% auto;
+                                    margin: 0;
                                 }
                                 &:hover {
                                     opacity: 1;
@@ -1413,7 +1420,7 @@
                                     top: 0;
                                     h1 {
                                         font-size: 2.1em;
-                                        margin-bottom: 30px;
+
                                     }
                                     p {
                                         font-size: 0.8em;
@@ -1433,11 +1440,11 @@
                         .flex-control-paging {
                             width:100%;
                             li {
-                                width: 5%;
+                                width: 7%;
                                 a {
 
 
-                                    margin: 12% auto;
+                                    margin: 0;
                                 }
                                 &:hover {
                                     opacity: 1;
@@ -1769,7 +1776,7 @@
                                     top: 0;
                                     h1 {
                                         font-size: 2em;
-                                        margin-bottom: 30px;
+
                                     }
                                     p {
                                         font-size: 0.75em;
@@ -1777,7 +1784,7 @@
                                     }
                                     a.largeButton.homeBgColor {
                                         width: 15%;
-                                        font-size: 1em;
+
                                         &:hover {
                                             cursor: pointer;
                                         }
@@ -1789,10 +1796,10 @@
                         .flex-control-paging {
 
                             li {
-                                width: 5%;
+                                width: 8%;
                                 a {
 
-                                    margin: 12% auto;
+                                    margin: 0;
                                 }
                                 &:hover {
                                     opacity: 1;
@@ -2124,14 +2131,14 @@
                                     z-index: 10;
                                     h1 {
                                         font-size: 2em;
-                                        margin-bottom: 30px;
+
                                     }
                                     p {
                                         font-size: 0.75em;
                                         width: 80%;
                                     }
                                     a.largeButton.homeBgColor {
-                                        width: 15%;
+
                                         font-size: 1em;
                                         &:hover {
                                             cursor: pointer;
@@ -2142,12 +2149,12 @@
                         }
                         .flex-control-nav,
                         .flex-control-paging {
-                            height: 30px;
+                            height: auto;
                             li {
-                                width: 5%;
+                                width: 9%;
                                 a {
 
-                                    margin: 14% auto;
+                                    margin: 0;
                                 }
                                 &:hover {
                                     opacity: 1;
@@ -2499,12 +2506,12 @@
                         .flex-control-nav,
                         .flex-control-paging {
 
-                            height: 30px;
+
                             li {
-                                width: 5%;
+                                width: 10%;
                                 a {
 
-                                    margin: 17% auto;
+                                    margin: 0;
                                 }
                                 &:hover {
                                     opacity: 1;
@@ -2857,15 +2864,16 @@
                         }
                         .flex-control-nav,
                         .flex-control-paging {
-                            height: 30px;
+
                             li {
-                                width: 5%;
+
                                 a {
+                                    &:hover {
+                                        opacity: 1;
+                                    }
 
                                 }
-                                &:hover {
-                                    opacity: 1;
-                                }
+
                                 a.flex-active {
                                     opacity: 1;
                                 }
@@ -3193,7 +3201,7 @@
 
                                     top: 0;
                                     h1 {
-                                        font-size: 1.8em;
+                                        font-size: 1.7em;
                                     }
                                     p {
                                         font-size: 0.75em;
@@ -3211,16 +3219,16 @@
                         .flex-control-nav,
                         .flex-control-paging {
 
-                            height: 30px;
+
                             li {
-                                width: 5%;
+
                                 a {
 
-                                    margin: 17% auto;
+                                    &:hover {
+                                        opacity: 1;
+                                    }
                                 }
-                                &:hover {
-                                    opacity: 1;
-                                }
+
                                 a.flex-active {
                                     opacity: 1;
                                 }
@@ -3463,15 +3471,15 @@
 
     button#mobile-toggle {
         display: block;
-        height: 50px;
-        width: 50px;
+        height: 60px;
+        width: 60px;
         color: $colortxtbg;
         background-color: $contentbg;
         //font-family: "FontAwesome";
         //content:"\f0c9";
         position: fixed;
-        top: 3vh;
-        left: calc(92% - 1em);
+        top: 0.8em;
+        left: calc(92% - 2vw);
         z-index: 150;
         outline: none;
         border: none;
@@ -3533,12 +3541,16 @@
                 width: 100%;
                 position: absolute;
                 z-index:100;
-                top: 16vh;
+                top: 5em;
                 left: 0;
+                background-color: $bgcolor;
 
                 ul {
 
-
+                    margin: 0 auto;
+                    padding: 0;
+                    width: 75%;
+                    background-color:$colornav;
                     li {
 
                         a{
@@ -3615,7 +3627,7 @@
 
                                     top: 0;
                                     h1 {
-                                        font-size: 1.8em;
+                                        font-size: 1.7em;
                                     }
                                     p {
                                         font-size: 0.75em;
@@ -3635,16 +3647,16 @@
                         .flex-control-nav,
                         .flex-control-paging {
 
-                            height: 30px;
+
                             li {
-                                width: 5%;
+
                                 a {
 
-                                    margin: 21% auto;
+                                    &:hover {
+                                        opacity: 1;
+                                    }
                                 }
-                                &:hover {
-                                    opacity: 1;
-                                }
+
                                 a.flex-active {
                                     opacity: 1;
                                 }
@@ -3887,8 +3899,8 @@
 
 @media only screen and (max-width: 640px) {
     button#mobile-toggle {
-        top: 2.5vh;
-
+        top: 0.8em;
+        left: calc(91% - 2vw);
         font-size: 0.9em;
         &:hover {
             background-color: $colorslidebg;
@@ -3915,7 +3927,7 @@
                 }
             }
             .socials {
-                top: 15vh;
+                top: 5em;
                 ul {
                     li {
                         a{
@@ -3932,13 +3944,13 @@
             display: none;
         }
         ul#mobile-nav {
-            top: 15vh;
+            top: 4.5em;
 
 
             li {
                 float: none;
                 a {
-                    display: block;
+
                     font-size: 0.9em;
                     &:hover {
                         color: $colornav;
@@ -3965,7 +3977,7 @@
 
                                     top: 0%;
                                     h1 {
-                                        font-size: 1.8em;
+                                        font-size: 1.7em;
                                     }
                                     p {
 
@@ -3990,15 +4002,15 @@
                         }
                         .flex-control-nav,
                         .flex-control-paging {
-                            height: 30px;
+
                             li {
-                                width: 5%;
+
                                 a {
-                                    border: 2px solid black;
+                                    &:hover {
+                                        opacity: 1;
+                                    }
                                 }
-                                &:hover {
-                                    opacity: 1;
-                                }
+
                                 a.flex-active {
                                     opacity: 1;
                                 }
@@ -4234,7 +4246,7 @@
 
 @media only screen and (max-width: 600px) {
     button#mobile-toggle {
-
+        left: calc(90% - 2vw);
         font-size: 0.9em;
         &:hover {
             background-color: $colorslidebg;
@@ -4281,7 +4293,7 @@
             li {
                 float: none;
                 a {
-                    display: block;
+
                     font-size: 1em;
                     &:hover {
                         color: $colornav;
@@ -4307,7 +4319,7 @@
 
                                     top: 0;
                                     h1 {
-                                        font-size: 1.8em;
+                                        font-size: 1.7em;
                                     }
                                     p {
                                         font-size: 0.7em;
@@ -4331,16 +4343,16 @@
                         }
                         .flex-control-nav,
                         .flex-control-paging {
-                            height: 30px;
+
                             li {
-                                width: 5%;
+
                                 a {
 
-                                    margin: 23% auto;
+                                    &:hover {
+                                        opacity: 1;
+                                    }
                                 }
-                                &:hover {
-                                    opacity: 1;
-                                }
+
                                 a.flex-active {
                                     opacity: 1;
                                 }
@@ -4570,7 +4582,7 @@
 
 @media only screen and (max-width: 536px) {
     button#mobile-toggle {
-        left: calc(92% - 2em);
+        left: calc(89% - 2vw);
         font-size: 0.85em;
         &:hover {
             background-color: $colorslidebg;
@@ -4597,7 +4609,7 @@
                 }
             }
             .socials {
-                top: 14vh;
+                top: 4.7em;
                 ul {
                     li {
                         a{
@@ -4614,11 +4626,11 @@
             display: none;
         }
         ul#mobile-nav {
-            top: 14vh;
+
             li {
                 float: none;
                 a {
-                    display: block;
+
                     font-size: 0.95em;
                     &:hover {
                         color: $colornav;
@@ -4645,7 +4657,7 @@
 
                                     top: 0;
                                     h1 {
-                                        font-size: 1.8em;
+                                        font-size: 1.7em;
                                     }
                                     p {
 
@@ -4665,15 +4677,15 @@
                         .flex-control-nav,
                         .flex-control-paging {
 
-                            height: 30px;
+
                             li {
-                                width: 5%;
+
                                 a {
-                                    margin: 30% auto;
+                                    &:hover {
+                                        opacity: 1;
+                                    }
                                 }
-                                &:hover {
-                                    opacity: 1;
-                                }
+
                                 a.flex-active {
                                     opacity: 1;
                                 }
@@ -4906,7 +4918,7 @@
 
 @media only screen and (max-width: 480px) {
     button#mobile-toggle {
-
+        left: calc(87% - 2vw);
         font-size: 0.85em;
         &:hover {
             background-color: $colorslidebg;
@@ -4949,11 +4961,11 @@
             display: none;
         }
         ul#mobile-nav {
-            top: 14vh;
+
             li {
                 float: none;
                 a {
-                    display: block;
+
                     font-size: 0.9em;
                     &:hover {
                         color: $colornav;
@@ -4979,7 +4991,7 @@
 
                                     top: 0;
                                     h1 {
-                                        font-size: 1.8em;
+                                        font-size: 1.7em;
                                     }
                                     p {
                                         font-size: 0.65em;
@@ -5000,15 +5012,15 @@
                         .flex-control-nav,
                         .flex-control-paging {
 
-                            height: 30px;
+
                             li {
-                                width: 5%;
+
                                 a {
-                                    margin: 30% auto;
+                                    &:hover {
+                                        opacity: 1;
+                                    }
                                 }
-                                &:hover {
-                                    opacity: 1;
-                                }
+
                                 a.flex-active {
                                     opacity: 1;
                                 }
@@ -5239,7 +5251,7 @@
 
 @media only screen and (max-width: 414px) {
     button#mobile-toggle {
-        left: calc(92% - 2.3em);
+        left: calc(86% - 2vw);
         font-size: 0.85em;
 
         &:hover {
@@ -5266,7 +5278,7 @@
                 }
             }
             .socials {
-                top: 14vh;
+
                 ul {
                     height: auto;
                     -webkit-justify-content: flex-start;
@@ -5291,7 +5303,7 @@
             li {
                 float: none;
                 a {
-                    display: block;
+
                     font-size: 0.9em;
                     &:hover {
                         color: $colornav;
@@ -5323,7 +5335,7 @@
 
                                     top: 0;
                                     h1 {
-                                        font-size: 1.7em;
+                                        font-size: 1.6em;
                                     }
                                     p {
 
@@ -5343,15 +5355,15 @@
                         .flex-control-nav,
                         .flex-control-paging {
 
-                            height: 30px;
+
                             li {
-                                width: 5%;
+                                width:12%;
                                 a {
-                                    margin: 30% auto;
+                                    &:hover {
+                                        opacity: 1;
+                                    }
                                 }
-                                &:hover {
-                                    opacity: 1;
-                                }
+
                                 a.flex-active {
                                     opacity: 1;
                                 }
@@ -5586,7 +5598,7 @@
 
 @media only screen and (max-width: 375px) {
     button#mobile-toggle {
-
+        left: calc(85% - 2vw);
         font-size: 0.85em;
         &:hover {
             background-color: $colorslidebg;
@@ -5636,8 +5648,8 @@
             li {
                 float: none;
                 a {
-                    display: block;
-                    font-size: 0.9em;
+
+
                     line-height: 45px;
                     &:hover {
                         color: $colornav;
@@ -5664,7 +5676,7 @@
 
                                     top: 0;
                                     h1 {
-                                        font-size: 1.7em;
+                                        font-size: 1.6em;
 
                                     }
                                     p {
@@ -5685,15 +5697,15 @@
                         .flex-control-nav,
                         .flex-control-paging {
 
-                            height: 30px;
+
                             li {
-                                width: 5%;
+                                width:13%;
                                 a {
-                                    margin: 35% auto;
+                                    &:hover {
+                                        opacity: 1;
+                                    }
                                 }
-                                &:hover {
-                                    opacity: 1;
-                                }
+
                                 a.flex-active {
                                     opacity: 1;
                                 }
@@ -5924,7 +5936,7 @@
 
 @media only screen and (max-width: 360px) {
     button#mobile-toggle {
-
+        left: calc(83% - 2vw);
         font-size: 0.85em;
         &:hover {
             background-color: $colorslidebg;
@@ -5975,8 +5987,7 @@
             li {
                 float: none;
                 a {
-                    display: block;
-                    font-size: 0.9em;
+
                     line-height: 45px;
                     &:hover {
                         color: $colornav;
@@ -6022,15 +6033,15 @@
                         }
                         .flex-control-nav,
                         .flex-control-paging {
-                            height: 30px;
+
                             li {
-                                width: 5%;
+                                width:14%;
                                 a {
-                                    margin: 35% auto;
+                                    &:hover {
+                                        opacity: 1;
+                                    }
                                 }
-                                &:hover {
-                                    opacity: 1;
-                                }
+
                                 a.flex-active {
                                     opacity: 1;
                                 }
@@ -6312,8 +6323,7 @@
             li {
                 float: none;
                 a {
-                    display: block;
-                    font-size: 0.9em;
+
                     line-height: 45px;
                     &:hover {
                         color: $colornav;
@@ -6361,15 +6371,15 @@
                         .flex-control-nav,
                         .flex-control-paging {
                             width: 100%;
-                            height: 30px;
+
                             li {
-                                width: 5%;
+
                                 a {
-                                    margin: 35% auto;
+                                    &:hover {
+                                        opacity: 1;
+                                    }
                                 }
-                                &:hover {
-                                    opacity: 1;
-                                }
+
                                 a.flex-active {
                                     opacity: 1;
                                 }
