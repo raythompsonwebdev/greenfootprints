@@ -58,33 +58,30 @@ Files/
 test/
 .sass-cache/
 .settings/
-crossdomain.xml
-browserconfig.xml
-apple-touch-icon.png
 package.json
 .vscode/
 
-public/dist/
-public/img/
-public/images/
-public/fonts
-public/favicons
+src/dist/
+src/img/
+src/images/
+src/fonts
+src/favicons
 
-public/css/.sass-cache/
-public/css/min/
-public/css/style.css.map
-public/css/ie.css.map
+src/css/.sass-cache/
+src/css/min/
+src/css/style.css.map
+src/css/ie.css.map
 
-public/ie.min-css.map
-public/ie.css.map
-public/style-min.css.map
-public/style.css.map
+src/ie.min-css.map
+src/ie.css.map
+src/style-min.css.map
+src/style.css.map
 
-public/js/deps/
-public/js/old-browser-scripts/
-public/js/jquery.easing.1.3.js
-public/js/jquery.validate.min.js
-public/js/sw.js
-public/js/site.js
+src/js/deps/
+src/js/old-browser-scripts/
+src/js/jquery.easing.1.3.js
+src/js/jquery.validate.min.js
+src/js/sw.js
+src/js/site.js
 
 

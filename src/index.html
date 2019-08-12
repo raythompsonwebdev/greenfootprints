@@ -2,6 +2,7 @@
 <html lang="en" class="no-js"  >
 
 <head>
+        
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="user-scalable=yes">
@@ -11,32 +12,10 @@
     <meta name="author" content="RayThompWeb" />
     <meta name="copyright" content="&copy;raymondthompson" />
     <meta name="robots" content="noindex,nofollow">
+      
  
     <title>Greenfoot-Prints-Home-Page</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="style-min.css" />
-    <link rel="stylesheet" href="css/misc.css" />
-    
-    <link href="fonts/fontawesome/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/Viro/webfont/stylesheet.css" />
-    
-    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+
 
 <!--[if lte IE 9]>
     <link rel="stylesheet" type="text/css" href="ie-min.css"/>
@@ -59,7 +38,7 @@
             
             <figure id="logo">
                 
-                <img src="images/logo-green-foot-prints-large.gif" 
+                <img src="./images/challenge-award-2011-green-foot-prints-com-large.gif" 
                      alt="logo-green-foot-prints" >
             
             </figure>
@@ -115,8 +94,9 @@
         <div class="grid_24" id="home">
 
             <section id="slider">
+
                 <div class="main-slider">
-                    <div class="flexslider">
+                    <!--<div class="flexslider">
                         <ul class="slides">
 
                             <li>
@@ -153,11 +133,13 @@
                             </li>
 
                         </ul>
-                    </div>
+                    </div>-->
                 </div>
+
+
             </section>
             <!--end of slider-->
-
+    
             <div class="clear"> </div>
            
             <main id="content" role="main">
@@ -784,85 +766,10 @@
         <button id="myBtn" title="Go to top">Top</button>
     </div>
     <!-- end .container_24 -->
-
-    <!--- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-     <script type="text/javascript">
-        window.jQuery || document.write("<script src=\"../bower_components/jquery/jquery.js\"><\/script>");
-    </script>
-
-    <!--font-page-slider-->
-    <script src="js/jquery.flexslider.js"></script>
-    <script>
-       		   
-        $('.flexslider').flexslider({
-            animation: "fade",
-            directionNav: false
-        });
-		
-	 
-    </script>
-
-    <!--form validation-->
-    <script src="js/jquery.validate.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-
-            // Registration Form Validation - using jquery.validate.min.js
-
-            $("#feedback-form").validate({
-                rules: {
-                    name: "required",
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    subject: {
-                        required: true
-                    }
-                },
-                messages: {
-                    name: "Name is required.",
-                    email: "Email is required."
-                },
-                showErrors: function (errorMap, errorList) {
-                    $("#summary").html("Your form contains " +
-                            this.numberOfInvalids() +
-                            " errors, see details below.").addClass('error');
-                    this.defaultShowErrors();
-                }
-
-            });
-
-
-        });
-    </script>
-
-    <!--collections tabs-->
-    <script type="text/javascript" src="js/jquery.easing.1.3.js" async></script>
-    <script>
-        jQuery(document).ready(function ($) {
-
-
-            $('.text h3').click(
-                    function () {
-
-                        var element = $(this);
-
-                        $(element).next("p.collection-text").animate({
-                        'height':'toggle'
-                        }, 'slow', 'easeOutBounce');
-                    });
-
-                    });
-
-                    $('#bio h3').click(function() {
-
-        });
-    </script>
+     
     
     <!--custom code-->
-    <script src="js/custom.js"></script>
+
 
      
 </body>

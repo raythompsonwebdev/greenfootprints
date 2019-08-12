@@ -1,19 +1,12 @@
 @font-face {
-  font-family: 'Harabara_Bold';
-  src: url("Fonts/Harabara_Bold/Harabara.eot");
-  /* IE9 Compat Modes */
-  src: url("Fonts/Harabara_Bold/Harabara.eot?#iefix") format("embedded-opentype"), url("Fonts/Harabara_Bold/Harabara.woff") format("woff"), url("Fonts/Harabara_Bold/Harabara.ttf") format("truetype"), url("Fonts/Harabara_Bold/Harabara.svg#svgFontName") format("svg");
-  /* Legacy iOS */
-  font-weight: normal;
-}
-@font-face {
   font-family: 'viro-webfont';
-  src: url("Fonts/Viro/viro-webfont.eot");
+  src: url("./src/fonts/Viro/viro-webfont.eot");
   /* IE9 Compat Modes */
-  src: url("Fonts/Viro/viro-webfont.eot?#iefix") format("embedded-opentype"), url("Fonts/Viro/viro-webfont.woff") format("woff"), url("Fonts/Viro/viro-webfont.ttf") format("truetype"), url("Fonts/Viro/viro-webfont.svg#svgFontName") format("svg");
+  src: url("./src/fonts/Viro/viro-webfont.eot?#iefix") format("embedded-opentype"), url("./src/fonts/Viro/viro-webfont.woff") format("woff"), url("./src/fonts/Viro/viro-webfont.ttf") format("truetype"), url("./src/fonts/Viro/viro-webfont.svg#svgFontName") format("svg");
   /* Legacy iOS */
   font-weight: normal;
 }
+
 nav div {
   position: absolute;
   top: 0;
@@ -44,17 +37,20 @@ div.container_24 {
   /*Wrapper*/
   /*Wrapper end*/
 }
+
 div.container_24 header {
   height: auto;
   background-color: #297F10;
   padding: 0.25em;
   /*social media icons*/
 }
+
 div.container_24 header hgroup {
   width: 68%;
   display: inline-block;
   float: left;
 }
+
 div.container_24 header hgroup h1 {
   color: #ccffbb;
   font-size: 2em;
@@ -68,6 +64,7 @@ div.container_24 header hgroup h1 {
   width: 100%;
   text-shadow: 1px 1px 1px #165404;
 }
+
 div.container_24 header hgroup h2 {
   display: inline-block;
   float: left;
@@ -84,21 +81,24 @@ div.container_24 header hgroup h2 {
   width: 100%;
   text-shadow: 2px 1px 1px #165404;
 }
+
 div.container_24 header figure#logo {
   display: inline-block;
   margin: 0 0.5em 0 0;
   width: 10%;
   float: left;
   border: 3px solid #2c6700;
-  -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
+  -webkit-box-flex: 0;
+          flex: 0 0 auto;
   height: 100%;
 }
+
 div.container_24 header figure#logo img {
   height: auto;
   display: block;
 }
+
 div.container_24 header .socials {
   width: 20%;
   height: auto;
@@ -106,21 +106,24 @@ div.container_24 header .socials {
   float: right;
   margin: 0;
   background-color: #297F10;
-  -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
+  -webkit-box-flex: 0;
+          flex: 0 0 auto;
 }
+
 div.container_24 header .socials ul {
   margin: 0;
   padding: 0;
   height: 100%;
   display: block;
 }
+
 div.container_24 header .socials ul li {
   display: block;
   width: 25%;
   height: 100%;
 }
+
 div.container_24 header .socials ul li a {
   height: 100%;
   width: 100%;
@@ -128,6 +131,7 @@ div.container_24 header .socials ul li a {
   display: block;
   text-shadow: 1px 2px 1px #165404;
 }
+
 div.container_24 header .socials ul li a i {
   display: block;
   width: 100%;
@@ -137,25 +141,28 @@ div.container_24 header .socials ul li a i {
   font-size: 1.25em;
   color: #ccffbb;
   -webkit-transition: all 0.2s ease-in 0s;
-  -moz-transition: all 0.2s ease-in 0s;
-  -o-transition: all 0.2s ease-in 0s;
   transition: all 0.2s ease-in 0s;
 }
+
 div.container_24 header .socials ul li a i:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   color: #ffffff;
   line-height: 41.75px;
   text-shadow: 0 0 0 #165404;
 }
+
 div.container_24 ul#mobile-nav {
   display: none;
 }
+
 div.container_24 nav {
   height: 50px;
   text-align: center;
   margin: 0.5em 0;
   z-index: 10;
 }
+
 div.container_24 nav div.nav-title {
   width: 19%;
   display: inline-block;
@@ -163,6 +170,7 @@ div.container_24 nav div.nav-title {
   position: unset;
   margin-right: 0.5em;
 }
+
 div.container_24 nav div.nav-title h1 {
   color: #ccffbb;
   text-indent: 0.5em;
@@ -177,6 +185,7 @@ div.container_24 nav div.nav-title h1 {
   width: 100%;
   text-shadow: 1px 1px 1px #165404;
 }
+
 div.container_24 nav ul {
   list-style: none;
   margin: 0;
@@ -185,6 +194,7 @@ div.container_24 nav ul {
   width: 80%;
   display: block;
 }
+
 div.container_24 nav ul li {
   float: left;
   height: 100%;
@@ -192,6 +202,7 @@ div.container_24 nav ul li {
   display: inline-block;
   width: 12%;
 }
+
 div.container_24 nav ul li a {
   color: #ccffbb;
   background-color: #297F10;
@@ -202,20 +213,21 @@ div.container_24 nav ul li a {
   height: 100%;
   text-shadow: 1px 2px 1px #165404;
   -webkit-transition: all 0.2s ease-in 0s;
-  -moz-transition: all 0.2s ease-in 0s;
-  -o-transition: all 0.2s ease-in 0s;
   transition: all 0.2s ease-in 0s;
 }
+
 div.container_24 nav ul li a:hover {
   font-weight: bold;
   color: #297F10;
   background-color: #ccffbb;
   text-shadow: none;
 }
+
 div.container_24 div#collections,
 div.container_24 div#ettiquette {
   height: 100vh;
 }
+
 div.container_24 div.grid_24 {
   margin-left: auto;
   margin-right: auto;
@@ -228,18 +240,21 @@ div.container_24 div.grid_24 {
   /*Content*/
   /*Footer*/
 }
+
 div.container_24 div.grid_24 #slider {
   background-color: #3ea514;
   width: 100%;
   height: 380px;
   margin: 0.5em 0;
 }
+
 div.container_24 div.grid_24 #slider div.main-slider {
   width: 100%;
   height: 100%;
   display: block;
   background-color: #3ea514;
 }
+
 div.container_24 div.grid_24 #slider div.main-slider div.flexslider {
   height: auto;
   overflow: hidden;
@@ -248,15 +263,18 @@ div.container_24 div.grid_24 #slider div.main-slider div.flexslider {
   font-family: "viro-webfont", Candara, Arial, sans-serif;
   background-color: #3ea514;
 }
+
 div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides {
   height: 350px;
 }
+
 div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li img {
   position: relative;
   opacity: 0.95;
   min-width: 100%;
   z-index: 2;
 }
+
 div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption {
   position: absolute;
   vertical-align: middle;
@@ -267,6 +285,7 @@ div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li
   color: white;
   top: 0;
 }
+
 div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
   font-size: 2.3em;
   text-transform: uppercase;
@@ -274,6 +293,7 @@ div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li
   color: #ccffbb;
   text-shadow: 1px 1px 1px #165404;
 }
+
 div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
   font-size: 1em;
   text-transform: uppercase;
@@ -286,6 +306,7 @@ div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li
   padding: 0.5em;
   opacity: 0.9;
 }
+
 div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption a.largeButton.homeBgColor {
   display: block;
   color: #2c6700;
@@ -297,23 +318,27 @@ div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li
   font-size: 1.2em;
   letter-spacing: 0.1em;
 }
+
 div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption a.largeButton.homeBgColor:hover {
   color: #e6fbb3;
   background-color: #2c6700;
   cursor: pointer;
 }
+
 div.container_24 div.grid_24 #slider div.main-slider div.flexslider .flex-control-nav,
 div.container_24 div.grid_24 #slider div.main-slider div.flexslider .flex-control-paging {
   width: 100%;
   position: relative;
   height: 35px;
 }
+
 div.container_24 div.grid_24 #slider div.main-slider div.flexslider .flex-control-nav li,
 div.container_24 div.grid_24 #slider div.main-slider div.flexslider .flex-control-paging li {
   display: inline-block;
   height: 100%;
   width: 5%;
 }
+
 div.container_24 div.grid_24 #slider div.main-slider div.flexslider .flex-control-nav li a,
 div.container_24 div.grid_24 #slider div.main-slider div.flexslider .flex-control-paging li a {
   border: 2px solid black;
@@ -322,15 +347,18 @@ div.container_24 div.grid_24 #slider div.main-slider div.flexslider .flex-contro
   margin: 11% auto;
   line-height: 35px;
 }
+
 div.container_24 div.grid_24 #slider div.main-slider div.flexslider .flex-control-nav li a:hover,
 div.container_24 div.grid_24 #slider div.main-slider div.flexslider .flex-control-paging li a:hover {
   opacity: 1;
 }
+
 div.container_24 div.grid_24 #slider div.main-slider div.flexslider .flex-control-nav li a.flex-active,
 div.container_24 div.grid_24 #slider div.main-slider div.flexslider .flex-control-paging li a.flex-active {
   opacity: 1;
   background: #ffffff;
 }
+
 div.container_24 div.grid_24 #content {
   background-color: #3ea514;
   display: block;
@@ -340,10 +368,12 @@ div.container_24 div.grid_24 #content {
   height: auto;
   /*Content boxes*/
 }
+
 div.container_24 div.grid_24 #content:after {
   content: ".";
   color: #3ea514;
 }
+
 div.container_24 div.grid_24 #content h1 {
   color: #ffffff;
   padding: 0;
@@ -354,6 +384,7 @@ div.container_24 div.grid_24 #content h1 {
   line-height: 50px;
   text-shadow: 1px 2px 1px #165404;
 }
+
 div.container_24 div.grid_24 #content #summary {
   width: 80%;
   margin: 0 auto;
@@ -362,6 +393,7 @@ div.container_24 div.grid_24 #content #summary {
   line-height: 1.5em;
   color: #ffffff;
 }
+
 div.container_24 div.grid_24 #content .text {
   width: 99%;
   height: auto;
@@ -370,6 +402,7 @@ div.container_24 div.grid_24 #content .text {
   padding: 0.5em;
   /*Drop Cap*/
 }
+
 div.container_24 div.grid_24 #content .text h1 {
   color: #ccffbb;
   padding: 0;
@@ -382,6 +415,7 @@ div.container_24 div.grid_24 #content .text h1 {
   background-color: #348C0F;
   font-weight: bold;
 }
+
 div.container_24 div.grid_24 #content .text h2 {
   color: #3a5f0b;
   background-color: #92cd00;
@@ -396,6 +430,7 @@ div.container_24 div.grid_24 #content .text h2 {
   width: 100%;
   font-weight: bold;
 }
+
 div.container_24 div.grid_24 #content .text h3 {
   background-color: #3a5f0b;
   color: #ccffbb;
@@ -407,11 +442,13 @@ div.container_24 div.grid_24 #content .text h3 {
   line-height: 50px;
   width: 100%;
 }
+
 div.container_24 div.grid_24 #content .text h3:hover {
   cursor: pointer;
   color: #3a5f0b;
   background-color: #92cd00;
 }
+
 div.container_24 div.grid_24 #content .text p {
   letter-spacing: 0.1em;
   padding: 1em;
@@ -423,6 +460,7 @@ div.container_24 div.grid_24 #content .text p {
   font-size: 0.95em;
   display: block;
 }
+
 div.container_24 div.grid_24 #content .text p.collection-text {
   letter-spacing: 0.1em;
   padding: 2%;
@@ -435,6 +473,7 @@ div.container_24 div.grid_24 #content .text p.collection-text {
   font-size: 1em;
   display: none;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-facts {
   list-style: none;
   padding: 0.5em;
@@ -443,6 +482,7 @@ div.container_24 div.grid_24 #content .text ul.recycle-facts {
   margin: 0.5em auto;
   clear: both;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-facts li {
   list-style: none;
   background-color: #ccffbb;
@@ -456,12 +496,14 @@ div.container_24 div.grid_24 #content .text ul.recycle-facts li {
   height: 40px;
   clear: left;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-facts li span {
   display: block;
   width: 40px;
   height: 40px;
   float: left;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-facts li span::before {
   font-family: 'FontAwesome';
   content: "\f1b8";
@@ -476,14 +518,17 @@ div.container_24 div.grid_24 #content .text ul.recycle-facts li span::before {
   width: 100%;
   height: 100%;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-facts li span:last-of-type {
   width: 90%;
   height: auto;
   display: inline-block;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-facts li span:last-of-type::before {
   display: none;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-facts li a {
   font-size: 1em;
   width: 100%;
@@ -491,12 +536,14 @@ div.container_24 div.grid_24 #content .text ul.recycle-facts li a {
   color: #000;
   height: auto;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-facts li a:hover {
   width: 100%;
   text-align: left;
   font-weight: bold;
   color: #ffffff;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-contact {
   list-style: none;
   padding: 0.5em;
@@ -506,6 +553,7 @@ div.container_24 div.grid_24 #content .text ul.recycle-contact {
   clear: both;
   display: inline-block;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-contact::before {
   font-family: 'FontAwesome';
   content: "\f015";
@@ -517,6 +565,7 @@ div.container_24 div.grid_24 #content .text ul.recycle-contact::before {
   display: block;
   width: 100%;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-contact li {
   list-style: none;
   background-color: #ccffbb;
@@ -531,12 +580,14 @@ div.container_24 div.grid_24 #content .text ul.recycle-contact li {
   height: 40px;
   clear: left;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-contact li span {
   display: block;
   width: 40px;
   height: 40px;
   float: left;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-contact li span::before {
   font-family: 'FontAwesome';
   content: "\f1b8";
@@ -551,14 +602,17 @@ div.container_24 div.grid_24 #content .text ul.recycle-contact li span::before {
   width: 100%;
   height: 100%;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-contact li span:last-of-type {
   width: 90%;
   height: auto;
   display: inline-block;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-contact li span:last-of-type::before {
   display: none;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-contact li a {
   font-size: 1em;
   width: 100%;
@@ -566,64 +620,79 @@ div.container_24 div.grid_24 #content .text ul.recycle-contact li a {
   color: #000;
   height: auto;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-contact li a:hover {
   width: 100%;
   text-align: left;
   font-weight: bold;
   color: #ffffff;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(2) {
   width: 40%;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(2)::before {
   font-family: 'FontAwesome';
   content: "\f098";
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3) {
   width: 35%;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3)::before {
   font-family: 'FontAwesome';
   content: "\f0e0";
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4) {
   width: 60%;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4)::before {
   font-family: 'FontAwesome';
   content: "\f1ad";
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5) {
   width: 100%;
 }
+
 div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5)::before {
   font-family: 'FontAwesome';
   content: "\f0ac";
 }
+
 div.container_24 div.grid_24 #content .text .audio {
   background-color: #ffffff;
   margin: 2% auto;
   width: 20%;
 }
+
 div.container_24 div.grid_24 #content .text .recycle_img {
   margin: 0.5em;
   width: 10%;
   height: auto;
 }
+
 div.container_24 div.grid_24 #content .text form#feedback-form {
   width: 40%;
   margin: auto;
 }
+
 div.container_24 div.grid_24 #content .text form#feedback-form ul {
   margin: 1% auto;
   background-color: #3ea514;
   padding: 0;
 }
+
 div.container_24 div.grid_24 #content .text form#feedback-form ul li {
   width: 100%;
   padding: 0;
   background-color: #3ea514;
 }
+
 div.container_24 div.grid_24 #content .text form#feedback-form ul li label {
   width: 100%;
   color: #ffffff;
@@ -635,6 +704,7 @@ div.container_24 div.grid_24 #content .text form#feedback-form ul li label {
   text-align: left;
   letter-spacing: 0.2em;
 }
+
 div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="text"],
 div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="email"] {
   border: 0;
@@ -647,12 +717,14 @@ div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type=
   letter-spacing: 0.1em;
   line-height: 1.5em;
 }
+
 div.container_24 div.grid_24 #content .text form#feedback-form ul li textarea {
   width: 100%;
   border: 0;
   display: block;
   letter-spacing: 0.1em;
 }
+
 div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="submit"] {
   letter-spacing: 0.2em;
   height: 35px;
@@ -665,11 +737,13 @@ div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type=
   color: #ccffbb;
   display: block;
 }
+
 div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="submit"]:hover {
   background-color: #297F10;
   color: #ffffff;
   font-weight: bold;
 }
+
 div.container_24 div.grid_24 #content .text form#feedback-form ul li .error,
 div.container_24 div.grid_24 #content .text form#feedback-form ul li .notice,
 div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
@@ -677,31 +751,35 @@ div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
   margin-bottom: 1em;
   border: 2px solid #ddd;
 }
+
 div.container_24 div.grid_24 #content .text form#feedback-form ul li .error {
   background: #ffffff;
   color: #297F10;
   border-color: #297F10;
   width: 80%;
 }
+
 div.container_24 div.grid_24 #content .text form#feedback-form ul li .notice {
   background: #FFF6BF;
   color: #514721;
   border-color: #FFD324;
   width: 80%;
 }
+
 div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
   background: #E6EFC2;
   color: #264409;
   border-color: #C6D880;
   width: 80%;
 }
+
 div.container_24 div.grid_24 #content #contentboxes {
   height: auto;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   /*contentbox end*/
 }
+
 div.container_24 div.grid_24 #content #contentboxes .contentbox {
   width: 23.9%;
   min-height: 225px;
@@ -709,10 +787,12 @@ div.container_24 div.grid_24 #content #contentboxes .contentbox {
   background-color: #2c6700;
   float: left;
   margin: 0.5em;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0.9em;
   font-size: 0.8em;
 }
+
 div.container_24 div.grid_24 #content #contentboxes .contentbox h2 {
   text-indent: 0;
   height: auto;
@@ -726,6 +806,7 @@ div.container_24 div.grid_24 #content #contentboxes .contentbox h2 {
   font-weight: bold;
   width: 100%;
 }
+
 div.container_24 div.grid_24 #content #contentboxes .contentbox p {
   letter-spacing: 0.05em;
   font-size: 0.95em;
@@ -736,14 +817,17 @@ div.container_24 div.grid_24 #content #contentboxes .contentbox p {
   width: auto;
   display: block;
 }
+
 div.container_24 div.grid_24 #content #contentboxes .contentbox .contentbox_image {
   float: left;
   margin: 0 0.25em 0 0;
   width: 30%;
 }
+
 div.container_24 div.grid_24 #content #contentboxes .contentbox .contentbox_image img {
   display: block;
 }
+
 div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button {
   font-size: 0.95em;
   height: 35px;
@@ -760,10 +844,9 @@ div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button
   text-transform: uppercase;
   text-shadow: 1px 2px 1px #165404;
   -webkit-transition: all 0.2s ease-in 0s;
-  -moz-transition: all 0.2s ease-in 0s;
-  -o-transition: all 0.2s ease-in 0s;
   transition: all 0.2s ease-in 0s;
 }
+
 div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button:hover {
   background-color: #ccffbb;
   color: #297F10;
@@ -772,6 +855,7 @@ div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button
   width: 50%;
   text-shadow: none;
 }
+
 div.container_24 div.grid_24 footer {
   height: 50px;
   text-align: center;
@@ -779,6 +863,7 @@ div.container_24 div.grid_24 footer {
   margin-top: 10px;
   background-color: #297F10;
 }
+
 div.container_24 div.grid_24 footer ul {
   list-style: none;
   margin: auto 0;
@@ -788,6 +873,7 @@ div.container_24 div.grid_24 footer ul {
   margin: auto;
   background-color: #297F10;
 }
+
 div.container_24 div.grid_24 footer ul li {
   float: left;
   height: 50px;
@@ -795,10 +881,12 @@ div.container_24 div.grid_24 footer ul li {
   line-height: 50px;
   margin: 0;
 }
+
 div.container_24 div.grid_24 footer ul li:hover {
   background-color: #ccffbb;
   color: #ffffff;
 }
+
 div.container_24 div.grid_24 footer ul li a {
   color: #ccffbb;
   background-color: #297F10;
@@ -806,12 +894,14 @@ div.container_24 div.grid_24 footer ul li a {
   font-size: 1em;
   text-shadow: 1px 2px 1px #165404;
 }
+
 div.container_24 div.grid_24 footer ul li a:hover {
   color: #297F10;
   background-color: #ccffbb;
   text-decoration: none;
   text-shadow: 1px 2px 1px #ccffbb;
 }
+
 div.container_24 p.copyr {
   color: #000;
   font-size: 0.6em;
@@ -819,6 +909,7 @@ div.container_24 p.copyr {
   letter-spacing: 0.1em;
   margin: 1em auto;
 }
+
 div.container_24 button#myBtn {
   display: none;
   /* Hidden by default */
@@ -847,9 +938,9 @@ div.container_24 button#myBtn {
   font-size: 18px;
   /* Increase font size */
 }
+
 div.container_24 button#myBtn:hover {
   background-color: #2c6700;
   /* Add a dark-grey background on hover */
 }
-
 /*# sourceMappingURL=ie.css.map */

@@ -1,4 +1,4 @@
-@import "partials/fonts";
+//@import "partials/fonts";
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/base";
@@ -72,7 +72,7 @@ button#mobile-toggle {
 
             hgroup {
                 width: 68%;
-                display: inline-block;
+                display: block;
                 float: left;
                 -webkit-flex: 0 0 auto;
                 -ms-flex: 0 0 auto;
@@ -91,7 +91,7 @@ button#mobile-toggle {
                     text-shadow: 1px 1px 1px $header-shadow;
                 }
                 h2 {
-                    display: inline-block;
+                    display: block;
                     float: left;
                     color: $colortxtbg;
                     padding: 0;
@@ -108,7 +108,7 @@ button#mobile-toggle {
                 }
             }
             figure#logo {
-                display: inline-block;
+                display: block;
                 margin: 0 0.5em 0 0;
                 width: 10%;
                 float: left;
@@ -125,7 +125,7 @@ button#mobile-toggle {
             .socials {
                 width: 20%;
                 height: auto;
-                display: inline-block;
+                display: block;
                 float: right;
                 margin: 0;
                 background-color: $headbg;
@@ -195,7 +195,7 @@ button#mobile-toggle {
             z-index:10;
             div.nav-title{
                 width:6%;
-                display: inline-block;
+                display: block;
                 float:left;
                 position:unset;
                 margin-right:0.5em;
@@ -204,7 +204,7 @@ button#mobile-toggle {
                 img{
                     max-width:100%;
                     height:100%;
-                    display:block;
+                    
                     vertical-align: middle;
                 }
                 h1 {
@@ -246,7 +246,7 @@ button#mobile-toggle {
                     float: left;
                     height: 100%;
                     margin-right: 0.1em;
-                    display: inline-block;
+                    display: block;
                     width: 12%;
                     -webkit-flex: 0 0 auto;
                     -ms-flex: 0 0 auto;
@@ -892,7 +892,7 @@ button#mobile-toggle {
                     display: -ms-flexbox;
                     display: flex;
                     -webkit-flex-flow: row wrap;
-                    -ms-flex-wrap: row wrap;
+                    -ms-flex-flow: row wrap;
                     flex-flow: row wrap;
                     -webkit-justify-content: center;
                     -ms-flex-pack: center;
@@ -2836,11 +2836,11 @@ button#mobile-toggle {
                             li {
                                 width: 5%;
                                 a {
-                                    
+                                    &:hover {
+                                        opacity: 1;
+                                    }
                                 }
-                                &:hover {
-                                    opacity: 1;
-                                }
+                                
                                 a.flex-active {
                                     opacity: 1;
                                 }
