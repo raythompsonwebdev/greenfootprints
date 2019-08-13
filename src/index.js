@@ -1,11 +1,10 @@
 import './css/style.css';
 import $ from 'jquery';
 import scrollFunction from './js/custom.js'
+import showSlides from './js/slideShoes.js'
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction};
-
-$.getScript("js/jquery.flexslider.js");
 
 $(document).ready(function () {
 
@@ -63,26 +62,14 @@ $(document).ready(function () {
 
     $("#myBtn").on('click', function (event) {
 
+        event.preventDefault;
+
         $('html,body').animate({scrollTop:0},800);
 
     });
 
-    $('.flexslider').flexslider({
-        animation: "fade",
-        directionNav: false
-    });
-
-    $('.text h3').click(
-        function () {
-
-            var element = $(this);
-
-            $(element).next("p.collection-text").animate({
-            'height':'toggle'
-            }, 'slow', 'easeOutBounce');
-    });
-
-
+     
 
 });
 	   
+showSlides()
