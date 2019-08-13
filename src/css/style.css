@@ -143,6 +143,15 @@ body {
   padding-bottom: 20px;
 }
 
+@font-face {
+  font-family: 'viro-webfont';
+  src: url("../fonts/Viro/viro-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Viro/viro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Viro/viro-webfont.woff") format("woff"), url("../fonts/Viro/viro-webfont.ttf") format("truetype"), url("../fonts/Viro/viro-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+}
+
 button#mobile-toggle {
   display: none;
   height: 45px;
@@ -260,7 +269,8 @@ button#mobile-toggle :focus {
     -ms-flex: 0 0 auto;
     -webkit-box-flex: 0;
             flex: 0 0 auto;
-    height: 100%;
+    height: 50px;
+    background-image: url("../images/logo-green-foot-prints-medium.gif");
   }
   div.container_24 header figure#logo img {
     height: auto;
@@ -346,6 +356,8 @@ button#mobile-toggle :focus {
     margin-right: 0.5em;
     background-color: #297F10;
     height: 100%;
+    background-image: url("../images/logo-green-foot-prints-medium.gif");
+    background-size: cover;
   }
   div.container_24 nav div.nav-title img {
     max-width: 100%;
