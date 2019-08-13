@@ -1,5 +1,7 @@
 import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+//import StyleLintPlugin from 'stylelint-webpack-plugin';
+//const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 export default {
     mode: "development",
@@ -20,9 +22,31 @@ export default {
         // Create HTML file that includes reference to bundled JS.
         new HtmlWebpackPlugin({
             inject: true,
-            template: "./src/index.html",
-            filename: "index.html"
-        })
+            hash: true,
+            template: './src/index.html',
+            filename: 'index.html',
+            minify: {
+              removeComments: true,
+              collapseWhitespace: true,
+              removeRedundantAttributes: true,
+              useShortDoctype: true,
+              removeEmptyAttributes: true,
+              removeStyleLinkTypeAttributes: true,
+              keepClosingSlash: true,
+              minifyJS: true,
+              minifyCSS: true,
+              minifyURLs: true
+            },
+      
+            // Properties you define here are available in index.html
+            // using htmlWebpackPlugin.options.varName
+            //trackJSToken: '43ad216f57d94259968435894490a5c7'
+          }),
+          //new StyleLintPlugin({
+    //  configFile: './stylelintrc.json',
+    //  files: './src/css/*.scss',
+    //  syntax: 'scss'
+   // })
     ],
 
     module: {
