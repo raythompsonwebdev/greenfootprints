@@ -336,7 +336,7 @@ button#mobile-toggle {
                                     vertical-align: middle;
                                     width: 100%;
                                     left:0;
-                                    z-index:10;
+                                    z-index:5;
                                     text-align: center;
                                     height: auto;
                                     
@@ -348,6 +348,7 @@ button#mobile-toggle {
                                         font-weight: bold;
                                         color: $colortxtbg;
                                         text-shadow: 1px 1px 1px $header-shadow;
+                                        margin-bottom: 30px;
                                     }
                                     p {
                                         font-size: 1em;
@@ -1076,10 +1077,10 @@ button#mobile-toggle {
                                     
                                 }
                                 div.slider-caption {
-                                    top: 0;
+                                    
                                     h1 {
                                         font-size: 2.2em;
-                                        margin-bottom: 30px;
+                                        
                                     }
                                     p {
                                         font-size: 0.9em;
@@ -1437,10 +1438,10 @@ button#mobile-toggle {
                                     opacity: 0.95;
                                 }
                                 div.slider-caption {
-                                    top: 0;
+                                    
                                     h1 {
                                         font-size: 2.1em;
-                                        margin-bottom: 30px;
+                                        
                                     }
                                     p {
                                         font-size: 0.8em;
@@ -1783,10 +1784,10 @@ button#mobile-toggle {
                                     opacity: 0.95;
                                 }
                                 div.slider-caption {
-                                    top: 0;
+                                    
                                     h1 {
                                         font-size: 2em;
-                                        margin-bottom: 30px;
+                                        
                                     }
                                     p {
                                         font-size: 0.75em;
@@ -2132,10 +2133,10 @@ button#mobile-toggle {
                                 }
 
                                 div.slider-caption {
-                                    z-index: 10;
+                                    
                                     h1 {
                                         font-size: 2em;
-                                        margin-bottom: 30px;
+                                        
                                     }
                                     p {
                                         font-size: 0.75em;
@@ -2481,7 +2482,7 @@ button#mobile-toggle {
                                 }
                                 div.slider-caption {
                                     
-                                    top: 0%;
+                                    
                                     h1 {
                                         font-size: 1.4em;
                                     }
@@ -2830,7 +2831,7 @@ button#mobile-toggle {
                                 }
                                 div.slider-caption {
                                     
-                                    top: 0;
+                                    
                                     h1 {
                                         font-size: 1.5em;
                                     }
@@ -3174,7 +3175,8 @@ button#mobile-toggle {
                                 }
                                 div.slider-caption {
                                     
-                                    top: 0;
+                                  
+
                                     h1 {
                                         font-size: 1.8em;
                                     }
@@ -3555,7 +3557,7 @@ button#mobile-toggle {
                                 }
                                 div.slider-caption {
                                     
-                                    top: 0;
+                                    
                                     h1 {
                                         font-size: 1.7em;
                                     }
@@ -3725,6 +3727,7 @@ button#mobile-toggle {
                                     
                                     line-height: 1.5em;
                                 }
+
                                 textarea {
                                     letter-spacing: 0.1em;
                                 }
@@ -3917,7 +3920,7 @@ button#mobile-toggle {
                                 }
                                 div.slider-caption {
                                     
-                                    top: 0%;
+                                    
                                     h1 {
                                         font-size: 1.6em;
                                     }
@@ -4273,7 +4276,7 @@ button#mobile-toggle {
                                 }
                                 div.slider-caption {
                                     
-                                    top: 0;
+                                    
                                     h1 {
                                         font-size: 1.55em;
                                     }
@@ -4625,13 +4628,13 @@ button#mobile-toggle {
                                 }
                                 div.slider-caption {
                                     
-                                    top: 0;
+                                   
                                     h1 {
                                         font-size: 1.55em;
                                     }
                                     p {
                                         font-size: 0.65em;
-                                        width: 95%;
+                                        
                                     }
                                     a.largeButton.homeBgColor {
                                         width: 30%;
@@ -4973,7 +4976,7 @@ button#mobile-toggle {
                                 }
                                 div.slider-caption {
                                     
-                                    top: 0;
+                                    
                                     h1 {
                                         font-size: 1.5em;
                                     }
@@ -5327,7 +5330,7 @@ button#mobile-toggle {
                                 }
                                 div.slider-caption {
                                     
-                                    top: 0;
+                                    
                                     h1 {
                                         font-size: 1.2em;
                                     }
@@ -5678,14 +5681,14 @@ button#mobile-toggle {
                                 }
                                 div.slider-caption {
                                     
-                                    top: 0;
+                                   
                                     h1 {
                                         font-size: 1.1em;
                                         
                                     }
                                     p {
                                         font-size: 0.6em;
-                                        width: 92%;
+                                        
                                     }
                                     a.largeButton.homeBgColor {
                                         font-size:0.9em;                                        
@@ -6025,13 +6028,13 @@ button#mobile-toggle {
                                 }
                                 div.slider-caption {
                                     
-                                    top: 0;
+                                    
                                     h1 {
                                         font-size: 1.1em;
                                     }
                                     p {
                                         font-size: 0.55em;
-                                        width: 92%;
+                                        
                                     }
                                     a.largeButton.homeBgColor {
                                         width: 35%;
@@ -6370,14 +6373,14 @@ button#mobile-toggle {
                             li{
                                 div.slider-caption {
                                     
-                                    top: 0;
+                                    
                                     h1 {
                                         font-size: 1em;
                                         
                                     }
                                     p {
                                         font-size: 0.55em;
-                                        width: 92%;
+                                        
                                     }
                                     a.largeButton.homeBgColor {
                                         

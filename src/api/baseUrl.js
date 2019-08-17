@@ -1,5 +1,5 @@
 
-//URL link to API hosted on heroku. https://blooming-woodland-96328.herokuapp.com
+//replace '/' with link to api i.e. - heroku. https://myApi.herokuapp.com
 export default function getBaseUrl() {
   return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : '/';
 }

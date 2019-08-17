@@ -1,6 +1,6 @@
 import "./css/style.scss";
 import $ from "jquery";
-import scrollFunction from "./js/custom.js";
+
 import showSlides from "./js/slideShoes.js";
 
 //header image
@@ -63,12 +63,9 @@ ImageThree.src = mainImageThree;
 var ImageFour = document.getElementById("mainImageFour");
 ImageFour.src = mainImageFour;
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {
-    scrollFunction;
-};
 
 $(document).ready(function() {
+    
     $("button#mobile-toggle").bind("click", function(event) {
         event.preventDefault();
 
@@ -77,6 +74,7 @@ $(document).ready(function() {
             .css("display", "block");
     });
 
+    
     /* ========================================== 
     scrollTop() >= 100
     Should be equal the the height of the header
@@ -94,6 +92,7 @@ $(document).ready(function() {
         }
     });
 
+    
     // Add smooth scrolling to all links
     $(".nav-links").on("click", function(event) {
         // Make sure this.hash has a value before overriding default behavior
@@ -119,11 +118,32 @@ $(document).ready(function() {
         } // End if
     });
 
-    $("#myBtn").on("click", function(event) {
-        event.preventDefault;
-
+    $("button#myBtn").on("click", function() {
+        
         $("html,body").animate({ scrollTop: 0 }, 800);
+
     });
+
+                
 });
+
+
+function scrollFunction() {
+    
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+
+        document.getElementById("myBtn").style.display = "block";
+
+    } else {
+
+        document.getElementById("myBtn").style.display = "none";
+
+    }
+}
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+    scrollFunction();
+};
 
 showSlides();

@@ -270,10 +270,9 @@ button#mobile-toggle :focus {
     -webkit-box-flex: 0;
             flex: 0 0 auto;
     height: 50px;
-    background-image: url("../images/logo-green-foot-prints-medium.gif");
   }
-  div.container_24 header figure#logo img {
-    height: auto;
+  div.container_24 header figure#logo img#home {
+    height: 50px;
     display: block;
   }
   div.container_24 header .socials {
@@ -465,6 +464,8 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides {
     height: 350px;
+    margin: 0;
+    padding: 0;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li img {
     position: relative;
@@ -473,14 +474,14 @@ button#mobile-toggle :focus {
     z-index: 2;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption {
-    position: relative;
+    position: absolute;
     vertical-align: middle;
     width: 100%;
+    left: 0;
+    z-index: 5;
     text-align: center;
     height: auto;
-    z-index: 10;
     color: white;
-    top: 0;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
     font-size: 2.3em;
@@ -488,6 +489,7 @@ button#mobile-toggle :focus {
     font-weight: bold;
     color: #ccffbb;
     text-shadow: 1px 1px 1px #165404;
+    margin-bottom: 30px;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
     font-size: 1em;
@@ -1218,12 +1220,8 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li img {
     position: relative;
   }
-  div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption {
-    top: 0;
-  }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
     font-size: 2.2em;
-    margin-bottom: 30px;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
     font-size: 0.9em;
@@ -1526,12 +1524,8 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li img {
     opacity: 0.95;
   }
-  div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption {
-    top: 0;
-  }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
     font-size: 2.1em;
-    margin-bottom: 30px;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
     font-size: 0.8em;
@@ -1839,12 +1833,8 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li img {
     opacity: 0.95;
   }
-  div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption {
-    top: 0;
-  }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
     font-size: 2em;
-    margin-bottom: 30px;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
     font-size: 0.75em;
@@ -2149,12 +2139,8 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li img {
     position: relative;
   }
-  div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption {
-    z-index: 10;
-  }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
     font-size: 2em;
-    margin-bottom: 30px;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
     font-size: 0.75em;
@@ -2464,9 +2450,6 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li img {
     position: relative;
   }
-  div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption {
-    top: 0%;
-  }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
     font-size: 1.4em;
   }
@@ -2775,9 +2758,6 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li img {
     z-index: 2;
   }
-  div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption {
-    top: 0;
-  }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
     font-size: 1.5em;
   }
@@ -3078,9 +3058,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li img {
     z-index: 2;
-  }
-  div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption {
-    top: 0;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
     font-size: 1.8em;
@@ -3412,9 +3389,6 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li img {
     z-index: 2;
   }
-  div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption {
-    top: 0;
-  }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
     font-size: 1.7em;
   }
@@ -3745,9 +3719,6 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li img {
     z-index: 2;
   }
-  div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption {
-    top: 0%;
-  }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
     font-size: 1.6em;
   }
@@ -4060,9 +4031,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li img {
     z-index: 2;
-  }
-  div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption {
-    top: 0;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
     font-size: 1.55em;
@@ -4377,15 +4345,11 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li img {
     z-index: 2;
   }
-  div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption {
-    top: 0;
-  }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
     font-size: 1.55em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
     font-size: 0.65em;
-    width: 95%;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption a.largeButton.homeBgColor {
     width: 30%;
@@ -4695,9 +4659,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li img {
     z-index: 2;
-  }
-  div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption {
-    top: 0;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
     font-size: 1.5em;
@@ -5010,9 +4971,6 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li img {
     z-index: 2;
   }
-  div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption {
-    top: 0;
-  }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
     font-size: 1.2em;
   }
@@ -5324,15 +5282,11 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li img {
     z-index: 2;
   }
-  div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption {
-    top: 0;
-  }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
     font-size: 0.6em;
-    width: 92%;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption a.largeButton.homeBgColor {
     font-size: 0.9em;
@@ -5632,15 +5586,11 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li img {
     z-index: 2;
   }
-  div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption {
-    top: 0;
-  }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
     font-size: 0.55em;
-    width: 92%;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption a.largeButton.homeBgColor {
     width: 35%;
@@ -5943,15 +5893,11 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides img {
     z-index: 2;
   }
-  div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption {
-    top: 0;
-  }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
     font-size: 1em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
     font-size: 0.55em;
-    width: 92%;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption a.largeButton.homeBgColor:hover {
     width: 30%;
