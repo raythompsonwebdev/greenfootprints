@@ -63,9 +63,19 @@ ImageThree.src = mainImageThree;
 var ImageFour = document.getElementById("mainImageFour");
 ImageFour.src = mainImageFour;
 
+function toggle() {
+    var ele = document.querySelector(".collection-text");
+
+    if (ele.style.display == "block") {
+        ele.style.display = "none";
+    } else {
+        ele.style.display = "block";
+    }
+}
 
 $(document).ready(function() {
-    
+    $(".text h3").on("click", toggle);
+
     $("button#mobile-toggle").bind("click", function(event) {
         event.preventDefault();
 
@@ -74,7 +84,6 @@ $(document).ready(function() {
             .css("display", "block");
     });
 
-    
     /* ========================================== 
     scrollTop() >= 100
     Should be equal the the height of the header
@@ -92,7 +101,6 @@ $(document).ready(function() {
         }
     });
 
-    
     // Add smooth scrolling to all links
     $(".nav-links").on("click", function(event) {
         // Make sure this.hash has a value before overriding default behavior
@@ -119,25 +127,18 @@ $(document).ready(function() {
     });
 
     $("button#myBtn").on("click", function() {
-        
         $("html,body").animate({ scrollTop: 0 }, 800);
-
     });
-
-                
 });
 
-
 function scrollFunction() {
-    
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-
+    if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+    ) {
         document.getElementById("myBtn").style.display = "block";
-
     } else {
-
         document.getElementById("myBtn").style.display = "none";
-
     }
 }
 
