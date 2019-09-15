@@ -1,6 +1,6 @@
 
 
-export default function scrollFunction() {
+const toTopBtn = () => {
     
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 
@@ -12,5 +12,7 @@ export default function scrollFunction() {
 
     }
 }
+
+export default {toTopBtn}
 
 

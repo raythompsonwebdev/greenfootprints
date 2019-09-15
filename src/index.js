@@ -4,24 +4,24 @@ import $ from "jquery";
 import showSlides from "./js/slideShoes.js";
 
 //header image
-import homeIcon from "./images/logo-green-foot-prints-small.gif";
+import homeIcon from "./images/small/logo-green-foot-prints-small.gif";
 
 //slider images
-import sliderImgOne from "./images/slider-image-recyling-green-foot-prints-com.png";
-import sliderImgTwo from "./images/slider-image-1-recyling-green-foot-prints-com.png";
-import sliderImgThree from "./images/slider-image-2-recyling-green-foot-prints-com.png";
+import sliderImgOne from "./images/slider/slider-image-recyling-green-foot-prints-com.png";
+import sliderImgTwo from "./images/slider/slider-image-1-recyling-green-foot-prints-com.png";
+import sliderImgThree from "./images/slider/slider-image-2-recyling-green-foot-prints-com.png";
 
 //banner images
-import paperBottles from "./images/paper-bottles-can-guide-green-foot-prints-com-large.gif";
-import flowChart from "./images/recycling-flowchart-green-foot-prints-com-large.gif";
-import wordSearch from "./images/wordsearch-green-foot-prints-com-large.gif";
-import RecycleCircle from "./images/recyling-circle-2-green-foot-prints-com-large.png";
+import paperBottles from "./images/Large/paper-bottles-can-guide-green-foot-prints-com-large.gif";
+import flowChart from "./images/Large/recycling-flowchart-green-foot-prints-com-large.gif";
+import wordSearch from "./images/Large/wordsearch-green-foot-prints-com-large.gif";
+import RecycleCircle from "./images/Large/recyling-circle-2-green-foot-prints-com-large.png";
 
 //main page images
-import mainImageOne from "./images/family-recyling-green-foot-prints-com-large.png";
-import mainImageTwo from "./images/recyling-bins-green-foot-prints-com-large.png";
-import mainImageThree from "./images/recycle-image-green-foot-prints-com-large.png";
-import mainImageFour from "./images/challenge-award-2011-green-foot-prints-com-large.gif";
+import mainImageOne from "./images/Large/family-recyling-green-foot-prints-com-large.png";
+import mainImageTwo from "./images/Large/recyling-bins-green-foot-prints-com-large.png";
+import mainImageThree from "./images/Large/recycle-image-green-foot-prints-com-large.png";
+import mainImageFour from "./images/Large/challenge-award-2011-green-foot-prints-com-large.gif";
 
 //header image
 var homeImg = document.getElementById("home");
@@ -63,75 +63,118 @@ ImageThree.src = mainImageThree;
 var ImageFour = document.getElementById("mainImageFour");
 ImageFour.src = mainImageFour;
 
-function toggle() {
-    var ele = document.querySelector(".collection-text");
+(function() {
 
-    if (ele.style.display == "block") {
-        ele.style.display = "none";
-    } else {
-        ele.style.display = "block";
+  /* ========================================== 
+  scrollTop() >= 100
+  Should be equal the the height of the header
+  ========================================== */
+
+  $(window).scroll(function() {
+
+      if ($(window).scrollTop() >= 90) {
+          $("nav").addClass("fixed-header");
+          $("div.grid_24").css("padding-top", "65px");
+          $("nav div").addClass("nav-title");
+      } else {
+          $("nav").removeClass("fixed-header");
+          $("div.grid_24").css("padding-top", "0");
+          $("nav div").removeClass("nav-title");
+      }
+  });
+
+  // Add smooth scrolling to all links
+  $(".nav-links").on("click", function(event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $("html, body").animate(
+              {
+                  scrollTop: $(hash).offset().top
+              },
+              800,
+              function() {
+                  // Add hash (#) to URL when done scrolling (default click behavior)
+                  window.location.hash = hash;
+              }
+          );
+      } // End if
+  });
+
+})();
+
+
+
+//H3 Title Toggle
+function headerToggle() {
+
+   var collectionText = document.getElementsByClassName("collection-text");
+
+    
+    for (let i = 0; i < collectionText.length; i++){
+
+        console.log(collectionText[i])
+
+
+             
+           
+    
     }
+
 }
 
-$(document).ready(function() {
-    $(".text h3").on("click", toggle);
+var collectionsTitle = document.getElementsByClassName("collections_title");
 
-    $("button#mobile-toggle").bind("click", function(event) {
-        event.preventDefault();
+for (let i = 0; i < collectionsTitle.length; i++){
 
-        $("ul#mobile-nav")
-            .slideToggle(250)
-            .css("display", "block");
-    });
+  collectionsTitle[i].addEventListener("click", headerToggle);
 
-    /* ========================================== 
-    scrollTop() >= 100
-    Should be equal the the height of the header
-    ========================================== */
+}
 
-    $(window).scroll(function() {
-        if ($(window).scrollTop() >= 90) {
-            $("nav").addClass("fixed-header");
-            $("div.grid_24").css("padding-top", "65px");
-            $("nav div").addClass("nav-title");
-        } else {
-            $("nav").removeClass("fixed-header");
-            $("div.grid_24").css("padding-top", "0");
-            $("nav div").removeClass("nav-title");
-        }
-    });
 
-    // Add smooth scrolling to all links
-    $(".nav-links").on("click", function(event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
+//Mobile Nav
+function mobileNav(event) {
 
-            // Store hash
-            var hash = this.hash;
+    event.preventDefault();
 
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $("html, body").animate(
-                {
-                    scrollTop: $(hash).offset().top
-                },
-                800,
-                function() {
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                }
-            );
-        } // End if
-    });
+    let mobileToggle = document.getElementById("mobile-nav");
 
-    $("button#myBtn").on("click", function() {
-        $("html,body").animate({ scrollTop: 0 }, 800);
-    });
-});
+    mobileToggle.slideToggle.style.display = "block";
+}
 
-function scrollFunction() {
+var mobileToggle = document.getElementById("mobile-toggle");
+
+mobileToggle.addEventListener("click", mobileNav);
+
+//scroll window function
+function myBtnFunc() {
+
+    var bodyHtml = document.querySelector("html");
+
+    bodyHtml.scrollTo(
+        {
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        },
+        800
+    );
+}
+
+//scroll to top button
+var myBtn = document.getElementById("myBtn");
+
+myBtn.addEventListener("click", myBtnFunc);
+
+//show scroll to top button function
+function toTopBtn() {
     if (
         document.body.scrollTop > 20 ||
         document.documentElement.scrollTop > 20
@@ -141,10 +184,10 @@ function scrollFunction() {
         document.getElementById("myBtn").style.display = "none";
     }
 }
-
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {
-    scrollFunction();
+    toTopBtn();
 };
 
+//slideshow
 showSlides();
