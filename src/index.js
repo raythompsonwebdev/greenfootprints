@@ -3,6 +3,9 @@ import "./css/style.scss";
 import $ from "jquery";
 
 import showSlides from "./js/slideShoes.js";
+import sliderSlider from "./js/sliderSlider.js";
+
+
 
 //header image
 import homeIcon from "./images/small/logo-green-foot-prints-small.gif";
@@ -178,7 +181,20 @@ function toTopBtn() {
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {toTopBtn()};
 
+
+//slideshow
+sliderSlider();
+
 //slideshow
 showSlides();
+
+
+
+
+
+
+
+
+
 
 
