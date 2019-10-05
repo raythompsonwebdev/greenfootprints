@@ -156,6 +156,32 @@ html {
   font-weight: normal;
 }
 
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 button#mobile-toggle {
   display: none;
   height: 45px;
@@ -559,6 +585,7 @@ button#mobile-toggle :focus {
     margin: 0;
     padding: 1%;
     height: auto;
+    /* The dots/bullets/indicators */
     /*Content boxes*/
     /*Content boxes*/
   }
@@ -825,8 +852,7 @@ button#mobile-toggle :focus {
     text-align: left;
     letter-spacing: 0.2em;
   }
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="text"],
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="email"] {
+  div.container_24 div.grid_24 #content .text form#feedback-form ul li input {
     border: 0;
     width: 100%;
     height: 50px;
@@ -886,76 +912,9 @@ button#mobile-toggle :focus {
     width: 80%;
   }
   div.container_24 div.grid_24 #content #facts_box {
-    height: 450px;
+    height: 60vh;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    /* Fading animation */
-    /* The dots/bullets/indicators */
-    /* Next & previous buttons */
-  }
-  div.container_24 div.grid_24 #content #facts_box .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  @-webkit-keyframes fade {
-    from {
-      opacity: .4;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes fade {
-    from {
-      opacity: .4;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  div.container_24 div.grid_24 #content #facts_box .recycle-facts__dots {
-    text-align: center;
-  }
-  div.container_24 div.grid_24 #content #facts_box .recycle-facts__dots--dot {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    -webkit-transition: background-color 0.6s ease;
-    transition: background-color 0.6s ease;
-  }
-  div.container_24 div.grid_24 #content #facts_box .active,
-  div.container_24 div.grid_24 #content #facts_box .recycle-facts__dots--dot:hover {
-    background-color: #717171;
-  }
-  div.container_24 div.grid_24 #content #facts_box #prev,
-  div.container_24 div.grid_24 #content #facts_box #next {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    -webkit-transition: 0.6s ease;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-  }
-  div.container_24 div.grid_24 #content #facts_box #next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  div.container_24 div.grid_24 #content #facts_box #prev:hover,
-  div.container_24 div.grid_24 #content #facts_box #next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
   }
   div.container_24 div.grid_24 #content #facts_box article.recycle-facts {
     padding: 0.5em;
@@ -965,14 +924,20 @@ button#mobile-toggle :focus {
     position: absolute;
     z-index: 1;
   }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 35px;
+    display: block;
+  }
   div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul {
     list-style: none;
-    margin: 0.5em auto;
+    margin: 0;
+    padding: 0;
   }
   div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li {
     list-style: none;
     background-color: #ccffbb;
-    margin: 0.5em auto;
     line-height: 40px;
     display: block;
     width: 100%;
@@ -1040,6 +1005,59 @@ button#mobile-toggle :focus {
     -ms-flex-align: start;
     -webkit-box-align: start;
             align-items: flex-start;
+    /* Next & previous buttons */
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots {
+    text-align: center;
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: background-color 0.6s ease;
+    transition: background-color 0.6s ease;
+  }
+  div.container_24 div.grid_24 #content #mask .active,
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 #content #mask_two .active,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot:hover {
+    background-color: #717171;
+  }
+  div.container_24 div.grid_24 #content #mask .prev,
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .prev,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    z-index: 10;
+  }
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  div.container_24 div.grid_24 #content #mask .prev:hover,
+  div.container_24 div.grid_24 #content #mask .next:hover,
+  div.container_24 div.grid_24 #content #mask_two .prev:hover,
+  div.container_24 div.grid_24 #content #mask_two .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
   div.container_24 div.grid_24 #content #contentboxes {
     position: relative;
@@ -1438,6 +1456,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content {
     /*Content*/
     background-color: #3ea514;
+    /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 #content:after {
@@ -1536,8 +1555,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li label {
     font-size: 1.1em;
   }
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="text"],
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="email"] {
+  div.container_24 div.grid_24 #content .text form#feedback-form ul li input {
     line-height: 1.5em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li textarea {
@@ -1564,6 +1582,76 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
     width: 80%;
+  }
+  div.container_24 div.grid_24 #content #facts_box {
+    height: 60vh;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts {
+    padding: 0.5em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts h2 {
+    line-height: 35px;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span {
+    display: block;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type {
+    width: 90%;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a:hover {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #mask,
+  div.container_24 div.grid_24 #content #mask_two {
+    width: 100%;
+    /* Next & previous buttons */
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots {
+    text-align: center;
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 #content #mask .active,
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 #content #mask_two .active,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot:hover {
+    background-color: #717171;
+  }
+  div.container_24 div.grid_24 #content #mask .prev,
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .prev,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    top: 50%;
+    margin-top: -22px;
+    font-size: 18px;
+  }
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    right: 0;
+  }
+  div.container_24 div.grid_24 #content #mask .prev:hover,
+  div.container_24 div.grid_24 #content #mask .next:hover,
+  div.container_24 div.grid_24 #content #mask_two .prev:hover,
+  div.container_24 div.grid_24 #content #mask_two .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
   div.container_24 div.grid_24 #content #contentboxes {
     /*contentbox end*/
@@ -1738,6 +1826,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content {
     /*Content*/
     background-color: #3ea514;
+    /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 #content:after {
@@ -1749,6 +1838,76 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content #summary {
     width: 80%;
+  }
+  div.container_24 div.grid_24 #content #facts_box {
+    height: 60vh;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts {
+    padding: 0.5em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts h2 {
+    line-height: 35px;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span {
+    display: block;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type {
+    width: 90%;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a:hover {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #mask,
+  div.container_24 div.grid_24 #content #mask_two {
+    width: 100%;
+    /* Next & previous buttons */
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots {
+    text-align: center;
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 #content #mask .active,
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 #content #mask_two .active,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot:hover {
+    background-color: #717171;
+  }
+  div.container_24 div.grid_24 #content #mask .prev,
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .prev,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    top: 50%;
+    margin-top: -22px;
+    font-size: 18px;
+  }
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    right: 0;
+  }
+  div.container_24 div.grid_24 #content #mask .prev:hover,
+  div.container_24 div.grid_24 #content #mask .next:hover,
+  div.container_24 div.grid_24 #content #mask_two .prev:hover,
+  div.container_24 div.grid_24 #content #mask_two .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
   div.container_24 div.grid_24 #content .text {
     /*Drop Cap*/
@@ -1841,8 +2000,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li label {
     font-size: 1.05em;
   }
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="text"],
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="email"] {
+  div.container_24 div.grid_24 #content .text form#feedback-form ul li input {
     line-height: 1.5em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li textarea {
@@ -2042,6 +2200,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content {
     /*Content*/
     background-color: #3ea514;
+    /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 #content:after {
@@ -2141,8 +2300,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li label {
     font-size: 1em;
   }
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="text"],
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="email"] {
+  div.container_24 div.grid_24 #content .text form#feedback-form ul li input {
     line-height: 1.5em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li textarea {
@@ -2169,6 +2327,76 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
     width: 80%;
+  }
+  div.container_24 div.grid_24 #content #facts_box {
+    height: 60vh;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts {
+    padding: 0.5em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts h2 {
+    line-height: 35px;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span {
+    display: block;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type {
+    width: 90%;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a:hover {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #mask,
+  div.container_24 div.grid_24 #content #mask_two {
+    width: 100%;
+    /* Next & previous buttons */
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots {
+    text-align: center;
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 #content #mask .active,
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 #content #mask_two .active,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot:hover {
+    background-color: #717171;
+  }
+  div.container_24 div.grid_24 #content #mask .prev,
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .prev,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    top: 50%;
+    margin-top: -22px;
+    font-size: 18px;
+  }
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    right: 0;
+  }
+  div.container_24 div.grid_24 #content #mask .prev:hover,
+  div.container_24 div.grid_24 #content #mask .next:hover,
+  div.container_24 div.grid_24 #content #mask_two .prev:hover,
+  div.container_24 div.grid_24 #content #mask_two .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
   div.container_24 div.grid_24 #content #contentboxes {
     /*contentbox end*/
@@ -2350,6 +2578,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content {
     /*Content*/
     background-color: #3ea514;
+    /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 #content:after {
@@ -2454,8 +2683,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li label {
     font-size: 0.95em;
   }
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="text"],
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="email"] {
+  div.container_24 div.grid_24 #content .text form#feedback-form ul li input {
     line-height: 1.5em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li textarea {
@@ -2482,6 +2710,76 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
     width: 80%;
+  }
+  div.container_24 div.grid_24 #content #facts_box {
+    height: 60vh;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts {
+    padding: 0.5em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts h2 {
+    line-height: 35px;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span {
+    display: block;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type {
+    width: 90%;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a:hover {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #mask,
+  div.container_24 div.grid_24 #content #mask_two {
+    width: 100%;
+    /* Next & previous buttons */
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots {
+    text-align: center;
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 #content #mask .active,
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 #content #mask_two .active,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot:hover {
+    background-color: #717171;
+  }
+  div.container_24 div.grid_24 #content #mask .prev,
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .prev,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    top: 50%;
+    margin-top: -22px;
+    font-size: 18px;
+  }
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    right: 0;
+  }
+  div.container_24 div.grid_24 #content #mask .prev:hover,
+  div.container_24 div.grid_24 #content #mask .next:hover,
+  div.container_24 div.grid_24 #content #mask_two .prev:hover,
+  div.container_24 div.grid_24 #content #mask_two .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
   div.container_24 div.grid_24 #content #contentboxes {
     /*contentbox end*/
@@ -2656,6 +2954,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content {
     /*Content*/
     background-color: #3ea514;
+    /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 #content:after {
@@ -2766,8 +3065,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li label {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="text"],
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="email"] {
+  div.container_24 div.grid_24 #content .text form#feedback-form ul li input {
     line-height: 1.5em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li textarea {
@@ -2794,6 +3092,76 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
     width: 80%;
+  }
+  div.container_24 div.grid_24 #content #facts_box {
+    height: 60vh;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts {
+    padding: 0.5em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts h2 {
+    line-height: 35px;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span {
+    display: block;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type {
+    width: 90%;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a:hover {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #mask,
+  div.container_24 div.grid_24 #content #mask_two {
+    width: 100%;
+    /* Next & previous buttons */
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots {
+    text-align: center;
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 #content #mask .active,
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 #content #mask_two .active,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot:hover {
+    background-color: #717171;
+  }
+  div.container_24 div.grid_24 #content #mask .prev,
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .prev,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    top: 50%;
+    margin-top: -22px;
+    font-size: 18px;
+  }
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    right: 0;
+  }
+  div.container_24 div.grid_24 #content #mask .prev:hover,
+  div.container_24 div.grid_24 #content #mask .next:hover,
+  div.container_24 div.grid_24 #content #mask_two .prev:hover,
+  div.container_24 div.grid_24 #content #mask_two .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
   div.container_24 div.grid_24 #content #contentboxes {
     height: auto;
@@ -2956,6 +3324,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content {
     /*Content*/
     background-color: #3ea514;
+    /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 #content:after {
@@ -3059,8 +3428,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li label {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="text"],
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="email"] {
+  div.container_24 div.grid_24 #content .text form#feedback-form ul li input {
     line-height: 1.5em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li textarea {
@@ -3086,6 +3454,76 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
     width: 80%;
+  }
+  div.container_24 div.grid_24 #content #facts_box {
+    height: 60vh;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts {
+    padding: 0.5em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts h2 {
+    line-height: 35px;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span {
+    display: block;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type {
+    width: 90%;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a:hover {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #mask,
+  div.container_24 div.grid_24 #content #mask_two {
+    width: 100%;
+    /* Next & previous buttons */
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots {
+    text-align: center;
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 #content #mask .active,
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 #content #mask_two .active,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot:hover {
+    background-color: #717171;
+  }
+  div.container_24 div.grid_24 #content #mask .prev,
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .prev,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    top: 50%;
+    margin-top: -22px;
+    font-size: 18px;
+  }
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    right: 0;
+  }
+  div.container_24 div.grid_24 #content #mask .prev:hover,
+  div.container_24 div.grid_24 #content #mask .next:hover,
+  div.container_24 div.grid_24 #content #mask_two .prev:hover,
+  div.container_24 div.grid_24 #content #mask_two .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
   div.container_24 div.grid_24 #content #contentboxes {
     height: auto;
@@ -3261,6 +3699,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content {
     /*Content*/
     background-color: #3ea514;
+    /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 #content:after {
@@ -3366,8 +3805,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li label {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="text"],
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="email"] {
+  div.container_24 div.grid_24 #content .text form#feedback-form ul li input {
     line-height: 1.5em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li textarea {
@@ -3393,6 +3831,76 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
     width: 80%;
+  }
+  div.container_24 div.grid_24 #content #facts_box {
+    height: 60vh;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts {
+    padding: 0.5em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts h2 {
+    line-height: 35px;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span {
+    display: block;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type {
+    width: 90%;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a:hover {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #mask,
+  div.container_24 div.grid_24 #content #mask_two {
+    width: 100%;
+    /* Next & previous buttons */
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots {
+    text-align: center;
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 #content #mask .active,
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 #content #mask_two .active,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot:hover {
+    background-color: #717171;
+  }
+  div.container_24 div.grid_24 #content #mask .prev,
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .prev,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    top: 50%;
+    margin-top: -22px;
+    font-size: 18px;
+  }
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    right: 0;
+  }
+  div.container_24 div.grid_24 #content #mask .prev:hover,
+  div.container_24 div.grid_24 #content #mask .next:hover,
+  div.container_24 div.grid_24 #content #mask_two .prev:hover,
+  div.container_24 div.grid_24 #content #mask_two .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
   div.container_24 div.grid_24 #content #contentboxes {
     height: auto;
@@ -3593,6 +4101,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content {
     /*Content*/
     background-color: #3ea514;
+    /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 #content:after {
@@ -3712,8 +4221,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li label {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="text"],
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="email"] {
+  div.container_24 div.grid_24 #content .text form#feedback-form ul li input {
     line-height: 1.5em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li textarea {
@@ -3739,6 +4247,76 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
     width: 80%;
+  }
+  div.container_24 div.grid_24 #content #facts_box {
+    height: 60vh;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts {
+    padding: 0.5em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts h2 {
+    line-height: 35px;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span {
+    display: block;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type {
+    width: 90%;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a:hover {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #mask,
+  div.container_24 div.grid_24 #content #mask_two {
+    width: 100%;
+    /* Next & previous buttons */
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots {
+    text-align: center;
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 #content #mask .active,
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 #content #mask_two .active,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot:hover {
+    background-color: #717171;
+  }
+  div.container_24 div.grid_24 #content #mask .prev,
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .prev,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    top: 50%;
+    margin-top: -22px;
+    font-size: 18px;
+  }
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    right: 0;
+  }
+  div.container_24 div.grid_24 #content #mask .prev:hover,
+  div.container_24 div.grid_24 #content #mask .next:hover,
+  div.container_24 div.grid_24 #content #mask_two .prev:hover,
+  div.container_24 div.grid_24 #content #mask_two .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
   div.container_24 div.grid_24 #content #contentboxes {
     height: auto;
@@ -3929,6 +4507,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content {
     /*Content*/
     background-color: #3ea514;
+    /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 #content:after {
@@ -4029,8 +4608,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li label {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="text"],
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="email"] {
+  div.container_24 div.grid_24 #content .text form#feedback-form ul li input {
     line-height: 1.5em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li textarea {
@@ -4055,6 +4633,76 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
     width: 80%;
+  }
+  div.container_24 div.grid_24 #content #facts_box {
+    height: 60vh;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts {
+    padding: 0.5em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts h2 {
+    line-height: 35px;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span {
+    display: block;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type {
+    width: 90%;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a:hover {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #mask,
+  div.container_24 div.grid_24 #content #mask_two {
+    width: 100%;
+    /* Next & previous buttons */
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots {
+    text-align: center;
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 #content #mask .active,
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 #content #mask_two .active,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot:hover {
+    background-color: #717171;
+  }
+  div.container_24 div.grid_24 #content #mask .prev,
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .prev,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    top: 50%;
+    margin-top: -22px;
+    font-size: 18px;
+  }
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    right: 0;
+  }
+  div.container_24 div.grid_24 #content #mask .prev:hover,
+  div.container_24 div.grid_24 #content #mask .next:hover,
+  div.container_24 div.grid_24 #content #mask_two .prev:hover,
+  div.container_24 div.grid_24 #content #mask_two .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
   div.container_24 div.grid_24 #content #contentboxes {
     height: auto;
@@ -4244,6 +4892,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content {
     /*Content*/
     background-color: #3ea514;
+    /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 #content:after {
@@ -4344,8 +4993,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li label {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="text"],
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="email"] {
+  div.container_24 div.grid_24 #content .text form#feedback-form ul li input {
     line-height: 1.5em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li textarea {
@@ -4370,6 +5018,76 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
     width: 80%;
+  }
+  div.container_24 div.grid_24 #content #facts_box {
+    height: 60vh;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts {
+    padding: 0.5em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts h2 {
+    line-height: 35px;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span {
+    display: block;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type {
+    width: 90%;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a:hover {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #mask,
+  div.container_24 div.grid_24 #content #mask_two {
+    width: 100%;
+    /* Next & previous buttons */
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots {
+    text-align: center;
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 #content #mask .active,
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 #content #mask_two .active,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot:hover {
+    background-color: #717171;
+  }
+  div.container_24 div.grid_24 #content #mask .prev,
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .prev,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    top: 50%;
+    margin-top: -22px;
+    font-size: 18px;
+  }
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    right: 0;
+  }
+  div.container_24 div.grid_24 #content #mask .prev:hover,
+  div.container_24 div.grid_24 #content #mask .next:hover,
+  div.container_24 div.grid_24 #content #mask_two .prev:hover,
+  div.container_24 div.grid_24 #content #mask_two .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
   div.container_24 div.grid_24 #content #contentboxes {
     height: auto;
@@ -4551,6 +5269,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content {
     /*Content*/
     background-color: #3ea514;
+    /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 #content:after {
@@ -4659,8 +5378,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li label {
     font-size: 0.8em;
   }
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="text"],
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="email"] {
+  div.container_24 div.grid_24 #content .text form#feedback-form ul li input {
     line-height: 1.5em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li textarea {
@@ -4685,6 +5403,76 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
     width: 80%;
+  }
+  div.container_24 div.grid_24 #content #facts_box {
+    height: 60vh;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts {
+    padding: 0.5em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts h2 {
+    line-height: 35px;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span {
+    display: block;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type {
+    width: 90%;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a:hover {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #mask,
+  div.container_24 div.grid_24 #content #mask_two {
+    width: 100%;
+    /* Next & previous buttons */
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots {
+    text-align: center;
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 #content #mask .active,
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 #content #mask_two .active,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot:hover {
+    background-color: #717171;
+  }
+  div.container_24 div.grid_24 #content #mask .prev,
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .prev,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    top: 50%;
+    margin-top: -22px;
+    font-size: 18px;
+  }
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    right: 0;
+  }
+  div.container_24 div.grid_24 #content #mask .prev:hover,
+  div.container_24 div.grid_24 #content #mask .next:hover,
+  div.container_24 div.grid_24 #content #mask_two .prev:hover,
+  div.container_24 div.grid_24 #content #mask_two .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
   div.container_24 div.grid_24 #content #contentboxes {
     height: auto;
@@ -4865,6 +5653,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content {
     /*Content*/
     background-color: #3ea514;
+    /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 #content:after {
@@ -4973,8 +5762,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li label {
     font-size: 0.8em;
   }
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="text"],
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="email"] {
+  div.container_24 div.grid_24 #content .text form#feedback-form ul li input {
     line-height: 1.5em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li textarea {
@@ -4999,6 +5787,76 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
     width: 80%;
+  }
+  div.container_24 div.grid_24 #content #facts_box {
+    height: 60vh;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts {
+    padding: 0.5em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts h2 {
+    line-height: 35px;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span {
+    display: block;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type {
+    width: 90%;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a:hover {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #mask,
+  div.container_24 div.grid_24 #content #mask_two {
+    width: 100%;
+    /* Next & previous buttons */
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots {
+    text-align: center;
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 #content #mask .active,
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 #content #mask_two .active,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot:hover {
+    background-color: #717171;
+  }
+  div.container_24 div.grid_24 #content #mask .prev,
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .prev,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    top: 50%;
+    margin-top: -22px;
+    font-size: 18px;
+  }
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    right: 0;
+  }
+  div.container_24 div.grid_24 #content #mask .prev:hover,
+  div.container_24 div.grid_24 #content #mask .next:hover,
+  div.container_24 div.grid_24 #content #mask_two .prev:hover,
+  div.container_24 div.grid_24 #content #mask_two .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
   div.container_24 div.grid_24 #content #contentboxes {
     height: auto;
@@ -5175,6 +6033,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content {
     /*Content*/
     background-color: #3ea514;
+    /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 #content:after {
@@ -5275,8 +6134,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li label {
     font-size: 0.8em;
   }
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="text"],
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="email"] {
+  div.container_24 div.grid_24 #content .text form#feedback-form ul li input {
     line-height: 1.5em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li textarea {
@@ -5301,6 +6159,76 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
     width: 80%;
+  }
+  div.container_24 div.grid_24 #content #facts_box {
+    height: 60vh;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts {
+    padding: 0.5em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts h2 {
+    line-height: 35px;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span {
+    display: block;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type {
+    width: 90%;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a:hover {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #mask,
+  div.container_24 div.grid_24 #content #mask_two {
+    width: 100%;
+    /* Next & previous buttons */
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots {
+    text-align: center;
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 #content #mask .active,
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 #content #mask_two .active,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot:hover {
+    background-color: #717171;
+  }
+  div.container_24 div.grid_24 #content #mask .prev,
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .prev,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    top: 50%;
+    margin-top: -22px;
+    font-size: 18px;
+  }
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    right: 0;
+  }
+  div.container_24 div.grid_24 #content #mask .prev:hover,
+  div.container_24 div.grid_24 #content #mask .next:hover,
+  div.container_24 div.grid_24 #content #mask_two .prev:hover,
+  div.container_24 div.grid_24 #content #mask_two .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
   div.container_24 div.grid_24 #content #contentboxes {
     height: auto;
@@ -5488,6 +6416,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content {
     /*Content*/
     background-color: #3ea514;
+    /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 #content:after {
@@ -5590,8 +6519,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li label {
     font-size: 0.8em;
   }
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="text"],
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="email"] {
+  div.container_24 div.grid_24 #content .text form#feedback-form ul li input {
     line-height: 1.5em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li textarea {
@@ -5616,6 +6544,76 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
     width: 80%;
+  }
+  div.container_24 div.grid_24 #content #facts_box {
+    height: 60vh;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts {
+    padding: 0.5em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts h2 {
+    line-height: 35px;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span {
+    display: block;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type {
+    width: 90%;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a:hover {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #mask,
+  div.container_24 div.grid_24 #content #mask_two {
+    width: 100%;
+    /* Next & previous buttons */
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots {
+    text-align: center;
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 #content #mask .active,
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 #content #mask_two .active,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot:hover {
+    background-color: #717171;
+  }
+  div.container_24 div.grid_24 #content #mask .prev,
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .prev,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    top: 50%;
+    margin-top: -22px;
+    font-size: 18px;
+  }
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    right: 0;
+  }
+  div.container_24 div.grid_24 #content #mask .prev:hover,
+  div.container_24 div.grid_24 #content #mask .next:hover,
+  div.container_24 div.grid_24 #content #mask_two .prev:hover,
+  div.container_24 div.grid_24 #content #mask_two .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
   div.container_24 div.grid_24 #content #contentboxes {
     height: auto;
@@ -5792,6 +6790,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content {
     /*Content*/
     background-color: #3ea514;
+    /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 #content:after {
@@ -5892,8 +6891,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li label {
     font-size: 0.8em;
   }
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="text"],
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="email"] {
+  div.container_24 div.grid_24 #content .text form#feedback-form ul li input {
     line-height: 1.5em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li textarea {
@@ -5918,6 +6916,76 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
     width: 80%;
+  }
+  div.container_24 div.grid_24 #content #facts_box {
+    height: 60vh;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts {
+    padding: 0.5em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts h2 {
+    line-height: 35px;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span {
+    display: block;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type {
+    width: 90%;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a:hover {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #mask,
+  div.container_24 div.grid_24 #content #mask_two {
+    width: 100%;
+    /* Next & previous buttons */
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots {
+    text-align: center;
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 #content #mask .active,
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 #content #mask_two .active,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot:hover {
+    background-color: #717171;
+  }
+  div.container_24 div.grid_24 #content #mask .prev,
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .prev,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    top: 50%;
+    margin-top: -22px;
+    font-size: 18px;
+  }
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    right: 0;
+  }
+  div.container_24 div.grid_24 #content #mask .prev:hover,
+  div.container_24 div.grid_24 #content #mask .next:hover,
+  div.container_24 div.grid_24 #content #mask_two .prev:hover,
+  div.container_24 div.grid_24 #content #mask_two .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
   div.container_24 div.grid_24 #content #contentboxes {
     height: auto;
@@ -6097,6 +7165,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content {
     /*Content*/
     background-color: #3ea514;
+    /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 #content:after {
@@ -6196,8 +7265,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li label {
     font-size: 0.8em;
   }
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="text"],
-  div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="email"] {
+  div.container_24 div.grid_24 #content .text form#feedback-form ul li input {
     height: 50px;
     line-height: 1.5em;
   }
@@ -6223,6 +7291,76 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
     width: 80%;
+  }
+  div.container_24 div.grid_24 #content #facts_box {
+    height: 60vh;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts {
+    padding: 0.5em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts h2 {
+    line-height: 35px;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span {
+    display: block;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type {
+    width: 90%;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li a:hover {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #mask,
+  div.container_24 div.grid_24 #content #mask_two {
+    width: 100%;
+    /* Next & previous buttons */
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots {
+    text-align: center;
+  }
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 #content #mask .active,
+  div.container_24 div.grid_24 #content #mask .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 #content #mask_two .active,
+  div.container_24 div.grid_24 #content #mask_two .recycle-facts__dots--dot:hover {
+    background-color: #717171;
+  }
+  div.container_24 div.grid_24 #content #mask .prev,
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .prev,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    top: 50%;
+    margin-top: -22px;
+    font-size: 18px;
+  }
+  div.container_24 div.grid_24 #content #mask .next,
+  div.container_24 div.grid_24 #content #mask_two .next {
+    right: 0;
+  }
+  div.container_24 div.grid_24 #content #mask .prev:hover,
+  div.container_24 div.grid_24 #content #mask .next:hover,
+  div.container_24 div.grid_24 #content #mask_two .prev:hover,
+  div.container_24 div.grid_24 #content #mask_two .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
   div.container_24 div.grid_24 #content #contentboxes {
     height: auto;

@@ -3,7 +3,6 @@ import "./css/style.scss";
 import $ from "jquery";
 
 import showSlides from "./js/slideShoes.js";
-import sliderSlider from "./js/sliderSlider.js";
 
 
 
@@ -22,10 +21,12 @@ import wordSearch from "./images/Large/wordsearch-green-foot-prints-com-large.gi
 
 
 //main page images
-import mainImageOne from "./images/Large/family-recyling-green-foot-prints-com-large.png";
+import mainImageOne from "./images/small/recyling-materials-green-foot-prints-com-small.gif";
 import mainImageTwo from "./images/Large/recyling-bins-green-foot-prints-com-large.png";
 import mainImageThree from "./images/Large/recycle-image-green-foot-prints-com-large.png";
-import mainImageFour from "./images/Large/challenge-award-2011-green-foot-prints-com-large.gif";
+import mainImageFour from "./images/Large/types-of-recyling-waste-guide-green-foot-prints-com-large.png";
+
+
 
 //header image
 var homeImg = document.getElementById("home");
@@ -64,6 +65,10 @@ ImageThree.src = mainImageThree;
 
 var ImageFour = document.getElementById("mainImageFour");
 ImageFour.src = mainImageFour;
+
+//10 Ways images
+
+
 
 (function() {
     /* ========================================== 
@@ -181,9 +186,7 @@ function toTopBtn() {
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {toTopBtn()};
 
-
 //slideshow
-sliderSlider();
 
 //slideshow
 showSlides();
