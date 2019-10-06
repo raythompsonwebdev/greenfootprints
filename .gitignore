@@ -51,9 +51,15 @@ Files/
 npm-debug.log
 node_modules/
 bower_components/
-nbproject/
+_assets/household-recycling-guide.gif
+_assets/household-recycling-guide.pdf
+_assets/household-recycling-flowchart-poster.gif
+_assets/household-recycling-flowchart-poster.pdf
+_assets/reduce-reuse-recycle-poster.gif
+_assets/reduce-reuse-recycle-poster.pdf
+_assets/wordsearch.gif
+_assets/wordsearch.pdf
 .git/
-_assets/
 Files/
 test/
 .sass-cache/
