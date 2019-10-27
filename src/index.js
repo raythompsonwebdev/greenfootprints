@@ -1,10 +1,9 @@
 
 import "./css/style.scss";
+
 import $ from "jquery";
 
 import showSlides from "./js/slideShoes.js";
-
-
 
 //header image
 import homeIcon from "./images/small/logo-green-foot-prints-small.gif";
@@ -25,7 +24,6 @@ import mainImageOne from "./images/small/recyling-materials-green-foot-prints-co
 import mainImageTwo from "./images/Large/recyling-bins-green-foot-prints-com-large.png";
 import mainImageThree from "./images/Large/recycle-image-green-foot-prints-com-large.png";
 import mainImageFour from "./images/Large/types-of-recyling-waste-guide-green-foot-prints-com-large.png";
-
 
 
 //header image

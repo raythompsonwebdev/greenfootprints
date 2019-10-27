@@ -148,7 +148,7 @@ html {
 }
 
 @font-face {
-  font-family: 'viro-webfont';
+  font-family: "viro-webfont";
   src: url("../fonts/Viro/viro-webfont.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/Viro/viro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Viro/viro-webfont.woff") format("woff"), url("../fonts/Viro/viro-webfont.ttf") format("truetype"), url("../fonts/Viro/viro-webfont.svg#svgFontName") format("svg");
@@ -166,7 +166,7 @@ html {
 
 @-webkit-keyframes fade {
   from {
-    opacity: .4;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
@@ -175,7 +175,7 @@ html {
 
 @keyframes fade {
   from {
-    opacity: .4;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
@@ -307,7 +307,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 header .socials {
     width: 20%;
-    height: auto;
+    height: 50px;
     display: block;
     float: right;
     margin: 0;
@@ -367,6 +367,7 @@ button#mobile-toggle :focus {
     color: #ffffff;
     line-height: 41.75px;
     text-shadow: 0 0 0 #165404;
+    cursor: pointer;
   }
   div.container_24 ul#mobile-nav {
     display: none;
@@ -721,7 +722,7 @@ button#mobile-toggle :focus {
     display: inline-block;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f015";
     font-style: normal;
     padding: 0.2em;
@@ -751,7 +752,7 @@ button#mobile-toggle :focus {
     float: left;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact li span::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f1b8";
     font-style: normal;
     padding: 1.5%;
@@ -789,28 +790,28 @@ button#mobile-toggle :focus {
     width: 40%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(2)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f098";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3) {
     width: 35%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0e0";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4) {
     width: 60%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f1ad";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5) {
     width: 100%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0ac";
   }
   div.container_24 div.grid_24 #content .text .audio {
@@ -889,26 +890,26 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
-    padding: .8em;
+    padding: 0.8em;
     margin-bottom: 1em;
     border: 2px solid #ddd;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error {
     background: #ffffff;
-    color: #297F10;
-    border-color: #297F10;
+    color: #297f10;
+    border-color: #297f10;
     width: 80%;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .notice {
-    background: #FFF6BF;
+    background: #fff6bf;
     color: #514721;
-    border-color: #FFD324;
+    border-color: #ffd324;
     width: 80%;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
-    background: #E6EFC2;
+    background: #e6efc2;
     color: #264409;
-    border-color: #C6D880;
+    border-color: #c6d880;
     width: 80%;
   }
   div.container_24 div.grid_24 #content #facts_box {
@@ -932,8 +933,9 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul {
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    width: 90%;
   }
   div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li {
     list-style: none;
@@ -954,7 +956,7 @@ button#mobile-toggle :focus {
     float: left;
   }
   div.container_24 div.grid_24 #content #facts_box article.recycle-facts ul li span::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f1b8";
     font-style: normal;
     padding: 1em;
@@ -1002,9 +1004,10 @@ button#mobile-toggle :focus {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-flow: row;
-    -ms-flex-align: start;
-    -webkit-box-align: start;
-            align-items: flex-start;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+            align-items: center;
+    background-color: #3a5f0b;
     /* Next & previous buttons */
   }
   div.container_24 div.grid_24 #content #mask .recycle-facts__dots,
@@ -1458,6 +1461,7 @@ button#mobile-toggle :focus {
     background-color: #3ea514;
     /* The dots/bullets/indicators */
     /*Content boxes*/
+    /*Content boxes*/
   }
   div.container_24 div.grid_24 #content:after {
     content: ".";
@@ -1495,7 +1499,7 @@ button#mobile-toggle :focus {
     display: inline-block;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f015";
     padding: 1.5%;
     font-size: 1.4em;
@@ -1505,19 +1509,19 @@ button#mobile-toggle :focus {
     width: 97%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(2)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f098";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0e0";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f1ad";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0ac";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-facts {
@@ -1570,7 +1574,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
-    padding: .8em;
+    padding: 0.8em;
     margin-bottom: 1em;
     border: 2px solid #ddd;
   }
@@ -1676,6 +1680,39 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button:hover {
     width: 55%;
     text-shadow: none;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes {
+    /*contentbox*/
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox {
+    width: 31.5%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox h2 {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
+    width: 53%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
+    width: 45%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
+    margin: 0;
+    padding: 0;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption p {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button {
+    font-size: 0.95em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button:hover {
+    background-color: #ccffbb;
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
@@ -1937,7 +1974,7 @@ button#mobile-toggle :focus {
     display: inline-block;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f015";
     font-size: 1.3em;
   }
@@ -1947,22 +1984,22 @@ button#mobile-toggle :focus {
     font-size: 0.8em;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(2)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f098";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3) {
     width: 33%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0e0";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f1ad";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0ac";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-facts {
@@ -2015,7 +2052,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
-    padding: .8em;
+    padding: 0.8em;
     margin-bottom: 1em;
     border: 2px solid #ddd;
   }
@@ -2052,6 +2089,39 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button:hover {
     width: 60%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes {
+    /*contentbox*/
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox {
+    width: 31.3%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox h2 {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
+    width: 53%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
+    width: 45%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
+    margin: 0;
+    padding: 0;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption p {
+    font-size: 0.85em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button {
+    font-size: 0.95em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button:hover {
+    background-color: #ccffbb;
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
@@ -2240,7 +2310,7 @@ button#mobile-toggle :focus {
     display: inline-block;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f015";
     font-size: 1.2em;
   }
@@ -2250,19 +2320,19 @@ button#mobile-toggle :focus {
     font-size: 0.75em;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(2)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f098";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0e0";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f1ad";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0ac";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-facts {
@@ -2315,7 +2385,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
-    padding: .8em;
+    padding: 0.8em;
     margin-bottom: 1em;
     border: 2px solid #ddd;
   }
@@ -2427,6 +2497,39 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes {
+    /*contentbox*/
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox {
+    width: 31.3%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox h2 {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
+    width: 60%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
+    width: 45%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
+    margin: 0;
+    padding: 0;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption p {
+    font-size: 0.8em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button {
+    font-size: 0.95em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button:hover {
+    background-color: #ccffbb;
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
@@ -2620,7 +2723,7 @@ button#mobile-toggle :focus {
     display: inline-block;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f015";
     font-size: 1.1em;
   }
@@ -2630,22 +2733,22 @@ button#mobile-toggle :focus {
     line-height: 20px;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(2)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f098";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3) {
     width: 32%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0e0";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f1ad";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0ac";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-facts {
@@ -2698,7 +2801,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
-    padding: .8em;
+    padding: 0.8em;
     margin-bottom: 1em;
     border: 2px solid #ddd;
   }
@@ -2804,6 +2907,42 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes {
+    /*contentbox*/
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox {
+    width: 31%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox h2 {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
+    width: 60%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
+    float: none;
+    display: block;
+    margin: 0.5em auto;
+    width: 50%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
+    margin: 0;
+    padding: 0;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption p {
+    font-size: 0.8em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button {
+    font-size: 0.95em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button:hover {
+    background-color: #ccffbb;
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
@@ -2995,7 +3134,7 @@ button#mobile-toggle :focus {
     display: inline-block;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f015";
     font-size: 1.1em;
   }
@@ -3004,22 +3143,22 @@ button#mobile-toggle :focus {
     width: 97%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(2)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f098";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3) {
     width: 31%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0e0";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f1ad";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0ac";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-facts {
@@ -3080,7 +3219,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
-    padding: .8em;
+    padding: 0.8em;
     margin-bottom: 1em;
     border: 2px solid #ddd;
   }
@@ -3186,6 +3325,43 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes {
+    /*contentbox*/
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox {
+    width: 31%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox h2 {
+    font-size: 1em;
+    line-height: 30px;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
+    width: 60%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
+    float: none;
+    display: block;
+    margin: 0.5em auto;
+    width: 50%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
+    margin: 0;
+    padding: 0;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption p {
+    font-size: 0.8em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button {
+    font-size: 0.95em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button:hover {
+    background-color: #ccffbb;
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
@@ -3365,7 +3541,7 @@ button#mobile-toggle :focus {
     display: inline-block;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f015";
     font-size: 1.1em;
   }
@@ -3374,22 +3550,22 @@ button#mobile-toggle :focus {
     width: 97%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(2)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f098";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3) {
     width: 31%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0e0";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f1ad";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0ac";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-facts {
@@ -3443,7 +3619,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
-    padding: .8em;
+    padding: 0.8em;
     border: 2px solid #ddd;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error {
@@ -3548,6 +3724,39 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes {
+    /*contentbox*/
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox {
+    width: 31%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox h2 {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
+    width: 60%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
+    width: 50%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
+    margin: 0;
+    padding: 0;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption p {
+    font-size: 0.75em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button:hover {
+    background-color: #ccffbb;
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
@@ -3742,7 +3951,7 @@ button#mobile-toggle :focus {
     display: inline-block;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f015";
     font-size: 1.1em;
   }
@@ -3752,22 +3961,22 @@ button#mobile-toggle :focus {
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(2)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f098";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3) {
     width: 30%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0e0";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f1ad";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0ac";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-facts {
@@ -3820,7 +4029,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
-    padding: .8em;
+    padding: 0.8em;
     border: 2px solid #ddd;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error {
@@ -3924,6 +4133,39 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes {
+    /*contentbox*/
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox {
+    width: 31.5%;
+    margin: 0.25em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox h2 {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
+    width: 70%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
+    width: 60%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
+    margin: 0;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption p {
+    font-size: 0.75em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button:hover {
+    background-color: #ccffbb;
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
@@ -4144,7 +4386,7 @@ button#mobile-toggle :focus {
     display: inline-block;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f015";
     font-size: 1.1em;
   }
@@ -4157,28 +4399,28 @@ button#mobile-toggle :focus {
     width: 45%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(2)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f098";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3) {
     width: 44%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0e0";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4) {
     width: 100%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f1ad";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5) {
     width: 100%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0ac";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-facts {
@@ -4236,7 +4478,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
-    padding: .8em;
+    padding: 0.8em;
     border: 2px solid #ddd;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error {
@@ -4344,6 +4586,38 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes {
+    /*contentbox*/
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox {
+    width: 31.5%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox h2 {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
+    width: 70%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
+    width: 60%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
+    margin: 0;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption p {
+    font-size: 0.75em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button:hover {
+    background-color: #ccffbb;
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
@@ -4548,29 +4822,29 @@ button#mobile-toggle :focus {
     display: inline-block;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f015";
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact li {
     text-indent: 0;
     width: 97%;
-    font-size: 0.80em;
+    font-size: 0.8em;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(2)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f098";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0e0";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f1ad";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0ac";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-facts {
@@ -4623,7 +4897,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
-    padding: .8em;
+    padding: 0.8em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error {
     width: 80%;
@@ -4729,6 +5003,39 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes {
+    /*contentbox*/
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox {
+    width: 31.5%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox h2 {
+    font-size: 1em;
+    line-height: 25px;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
+    width: 70%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
+    width: 60%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
+    margin: 0;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption p {
+    font-size: 0.75em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button:hover {
+    background-color: #ccffbb;
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
@@ -4933,7 +5240,7 @@ button#mobile-toggle :focus {
     display: inline-block;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f015";
     font-size: 1.1em;
   }
@@ -4943,19 +5250,19 @@ button#mobile-toggle :focus {
     font-size: 0.75em;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(2)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f098";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0e0";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f1ad";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0ac";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-facts {
@@ -5008,7 +5315,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
-    padding: .8em;
+    padding: 0.8em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error {
     width: 80%;
@@ -5113,6 +5420,46 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes {
+    -ms-flex-flow: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-flow: column;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    /*contentbox*/
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox {
+    width: 98%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox h2 {
+    font-size: 1em;
+    line-height: 30px;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
+    width: 35%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
+    width: 30%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
+    margin: 0;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption p {
+    font-size: 0.85em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button:hover {
+    background-color: #ccffbb;
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
@@ -5310,7 +5657,7 @@ button#mobile-toggle :focus {
     display: inline-block;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f015";
     font-size: 1.1em;
   }
@@ -5323,19 +5670,19 @@ button#mobile-toggle :focus {
     width: 43%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(2)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f098";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0e0";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f1ad";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0ac";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-facts {
@@ -5393,7 +5740,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
-    padding: .8em;
+    padding: 0.8em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error {
     width: 80%;
@@ -5498,6 +5845,36 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes {
+    /*contentbox*/
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox h2 {
+    font-size: 1em;
+    line-height: 30px;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
+    width: 35%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
+    width: 20%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
+    margin: 0;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption p {
+    font-size: 0.85em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button:hover {
+    background-color: #ccffbb;
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
@@ -5695,7 +6072,7 @@ button#mobile-toggle :focus {
     display: block;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f015";
     font-size: 1.1em;
   }
@@ -5707,22 +6084,22 @@ button#mobile-toggle :focus {
     width: 100%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(2)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f098";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3) {
     width: 100%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0e0";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f1ad";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0ac";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-facts {
@@ -5777,7 +6154,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
-    padding: .8em;
+    padding: 0.8em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error {
     width: 80%;
@@ -5879,6 +6256,36 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes {
+    /*contentbox*/
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox h2 {
+    font-size: 1em;
+    line-height: 30px;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
+    width: 30%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
+    width: 20%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
+    margin: 0;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption p {
+    font-size: 0.85em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button:hover {
+    background-color: #ccffbb;
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
@@ -6073,7 +6480,7 @@ button#mobile-toggle :focus {
     display: block;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f015";
     font-size: 1.1em;
   }
@@ -6082,19 +6489,19 @@ button#mobile-toggle :focus {
     width: 97%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(2)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f098";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0e0";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f1ad";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0ac";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-facts {
@@ -6149,7 +6556,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
-    padding: .8em;
+    padding: 0.8em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error {
     width: 80%;
@@ -6263,6 +6670,36 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes {
+    /*contentbox*/
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox h2 {
+    font-size: 1em;
+    line-height: 30px;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
+    width: 30%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
+    width: 20%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
+    margin: 0;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption p {
+    font-size: 0.85em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button:hover {
+    background-color: #ccffbb;
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
@@ -6457,7 +6894,7 @@ button#mobile-toggle :focus {
     display: block;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f015";
     font-size: 1.1em;
   }
@@ -6467,19 +6904,19 @@ button#mobile-toggle :focus {
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(2)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f098";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0e0";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f1ad";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0ac";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-facts {
@@ -6534,7 +6971,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
-    padding: .8em;
+    padding: 0.8em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error {
     width: 80%;
@@ -6636,6 +7073,36 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes {
+    /*contentbox*/
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox h2 {
+    font-size: 1em;
+    line-height: 30px;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
+    width: 30%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
+    width: 20%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
+    margin: 0;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption p {
+    font-size: 0.85em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button:hover {
+    background-color: #ccffbb;
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
@@ -6831,7 +7298,7 @@ button#mobile-toggle :focus {
     display: block;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f015";
     font-size: 1.1em;
   }
@@ -6840,19 +7307,19 @@ button#mobile-toggle :focus {
     width: 97%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(2)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f098";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0e0";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f1ad";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0ac";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-facts {
@@ -6906,7 +7373,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
-    padding: .8em;
+    padding: 0.8em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error {
     width: 80%;
@@ -7008,6 +7475,36 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes {
+    /*contentbox*/
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox h2 {
+    font-size: 1em;
+    line-height: 30px;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
+    width: 30%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
+    width: 20%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
+    margin: 0;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption p {
+    font-size: 0.85em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button:hover {
+    background-color: #ccffbb;
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
@@ -7206,7 +7703,7 @@ button#mobile-toggle :focus {
     display: block;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f015";
     font-size: 1.1em;
   }
@@ -7215,19 +7712,19 @@ button#mobile-toggle :focus {
     width: 97%;
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(2)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f098";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(3)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0e0";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(4)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f1ad";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-contact:nth-of-type(5)::before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: "\f0ac";
   }
   div.container_24 div.grid_24 #content .text ul.recycle-facts {
@@ -7281,7 +7778,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .success {
-    padding: .8em;
+    padding: 0.8em;
   }
   div.container_24 div.grid_24 #content .text form#feedback-form ul li .error {
     width: 80%;
@@ -7384,6 +7881,36 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes {
+    /*contentbox*/
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox h2 {
+    font-size: 1em;
+    line-height: 30px;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
+    width: 30%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
+    width: 20%;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
+    margin: 0;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption p {
+    font-size: 0.85em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 #content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button:hover {
+    background-color: #ccffbb;
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
