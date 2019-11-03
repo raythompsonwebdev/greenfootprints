@@ -478,7 +478,7 @@ button#mobile-toggle {
             }
 
             /*Content*/
-            #content {
+            main.content {
                 background-color: $contentbg;
                 display: block;
                 width: 98%;
@@ -767,9 +767,8 @@ button#mobile-toggle {
                                     width: 100%;
                                     color: $colorsocmedhov;
                                     font-size: 1.2em;
-                                    height: 30px;
-                                    margin: 1% 0;
-                                    display: block;
+                                    height: auto;
+                                    margin: 0.5em 0;                                    display: block;
                                     line-height: 30px;
                                     text-align: left;
                                     letter-spacing: 0.2em;
@@ -784,7 +783,7 @@ button#mobile-toggle {
                                     margin: 0;
                                     display: block;
                                     letter-spacing: 0.1em;
-                                    line-height: 1.5em;
+      
                                 }
 
                                 textarea {
@@ -797,10 +796,9 @@ button#mobile-toggle {
                                 input[type="submit"] {
                                     letter-spacing: 0.2em;
                                     height: 35px;
-                                    padding: 3%;
                                     width: 30%;
                                     margin: 0;
-                                    line-height: 0px;
+                                    line-height: 35px;
                                     background-color: $colornav;
                                     border: 0;
                                     color: $colortxtbg;
@@ -810,6 +808,7 @@ button#mobile-toggle {
                                         background-color: $colornav;
                                         color: $colorsocmedhov;
                                         font-weight: bold;
+                                        cursor:pointer;
                                     }
                                 }
 
@@ -1459,7 +1458,7 @@ button#mobile-toggle {
                 }
             }
 
-            #content {
+            main.content {
                 /*Content*/
                 background-color: $contentbg;
 
@@ -1998,7 +1997,7 @@ button#mobile-toggle {
                 }
             }
 
-            #content {
+            main.content {
                 /*Content*/
                 background-color: $contentbg;
 
@@ -2537,7 +2536,7 @@ button#mobile-toggle {
                 }
             }
 
-            #content {
+            main.content {
                 /*Content*/
                 background-color: $contentbg;
 
@@ -3078,7 +3077,7 @@ button#mobile-toggle {
                 }
             }
 
-            #content {
+            main.content {
                 /*Content*/
                 background-color: $contentbg;
 
@@ -3619,7 +3618,7 @@ button#mobile-toggle {
                 }
             }
 
-            #content {
+            main.content {
                 /*Content*/
                 background-color: $contentbg;
 
@@ -4162,7 +4161,7 @@ button#mobile-toggle {
                 }
             }
 
-            #content {
+            main.content {
                 /*Content*/
                 background-color: $contentbg;
 
@@ -4705,7 +4704,7 @@ button#mobile-toggle {
                 }
             }
 
-            #content {
+            main.content {
                 /*Content*/
                 background-color: $contentbg;
 
@@ -5273,7 +5272,7 @@ button#mobile-toggle {
                 }
             }
 
-            #content {
+            main.content {
                 /*Content*/
                 background-color: $contentbg;
 
@@ -5837,7 +5836,7 @@ button#mobile-toggle {
                 }
             }
 
-            #content {
+            main.content {
                 /*Content*/
                 background-color: $contentbg;
 
@@ -6386,7 +6385,7 @@ button#mobile-toggle {
                 }
             }
 
-            #content {
+            main.content {
                 /*Content*/
                 background-color: $contentbg;
 
@@ -6931,7 +6930,7 @@ button#mobile-toggle {
                 }
             }
 
-            #content {
+            main.content {
                 /*Content*/
                 background-color: $contentbg;
 
@@ -7473,7 +7472,7 @@ button#mobile-toggle {
                 }
             }
 
-            #content {
+            main.content {
                 /*Content*/
                 background-color: $contentbg;
 
@@ -8015,7 +8014,7 @@ button#mobile-toggle {
                 }
             }
 
-            #content {
+            main.content {
                 /*Content*/
                 background-color: $contentbg;
 
@@ -8560,7 +8559,7 @@ button#mobile-toggle {
                 }
             }
 
-            #content {
+            main.content {
                 /*Content*/
                 background-color: $contentbg;
 
@@ -9098,7 +9097,7 @@ button#mobile-toggle {
                 }
             }
 
-            #content {
+            main.content {
                 /*Content*/
                 background-color: $contentbg;
 
@@ -9635,7 +9634,7 @@ button#mobile-toggle {
                 }
             }
 
-            #content {
+            main.content {
                 /*Content*/
                 background-color: $contentbg;
 

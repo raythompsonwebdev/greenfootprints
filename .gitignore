@@ -67,6 +67,8 @@ test/
 package.json
 .vscode/
 
+.htaccess
+
 src/dist/
 src/img/
 src/images/

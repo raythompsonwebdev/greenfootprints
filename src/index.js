@@ -27,7 +27,7 @@ import mainImageFour from "./images/Large/types-of-recyling-waste-guide-green-fo
 
 
 //header image
-var homeImg = document.getElementById("home");
+var homeImg = document.getElementById("homeImage");
 homeImg.src = homeIcon;
 
 //slider images
