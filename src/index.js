@@ -1,9 +1,12 @@
 
 import "./css/style.scss";
-
 import $ from "jquery";
 
+import "jquery-validation/dist/jquery.validate.js"
+import "jquery-validation/dist/additional-methods.js"
+
 import showSlides from "./js/slideShoes.js";
+
 
 //header image
 import homeIcon from "./images/small/logo-green-foot-prints-small.gif";
@@ -160,6 +163,35 @@ function mobileNav(event) {
 var mobileToggle = document.getElementById("mobile-toggle");
 mobileToggle.addEventListener("click", mobileNav);
 
+
+
+//Validation
+(function() {
+
+    $("#feedback-form").validate({
+        rules: {
+            name: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            subject: {
+                required: true
+            }
+        },
+        messages: {
+            name: "Name is required.",
+            email: "Email is required."
+        },
+        /*showErrors: function (errorMap, errorList) {
+            $("#summary").html("Your form contains " +
+                    this.numberOfInvalids() +
+                    " errors, see details below.").addClass('error');
+            this.defaultShowErrors();
+        }*/
+    });
+})();
+
 //scroll to top button function
 $("#myBtn").on('click', function (event) {
         
@@ -188,14 +220,4 @@ window.onscroll = function() {toTopBtn()};
 
 //slideshow
 showSlides();
-
-
-
-
-
-
-
-
-
-
 

@@ -154,6 +154,8 @@ html {
   src: url("../fonts/Viro/viro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Viro/viro-webfont.woff") format("woff"), url("../fonts/Viro/viro-webfont.ttf") format("truetype"), url("../fonts/Viro/viro-webfont.svg#svgFontName") format("svg");
   /* Legacy iOS */
   font-weight: normal;
+  font-style: normal;
+  font-display: auto;
 }
 
 /* Fading animation */
@@ -262,7 +264,7 @@ button#mobile-toggle :focus {
             flex: 0 0 auto;
   }
   div.container_24 header hgroup h1 {
-    color: #ccffbb;
+    color: #ffffff;
     font-size: 2em;
     font-family: "viro-webfont", Candara, Arial, sans-serif;
     text-align: left;
@@ -277,7 +279,7 @@ button#mobile-toggle :focus {
   div.container_24 header hgroup h2 {
     display: block;
     float: left;
-    color: #ccffbb;
+    color: #ffffff;
     padding: 0;
     background-color: #297F10;
     font-size: 0.85em;
@@ -301,9 +303,9 @@ button#mobile-toggle :focus {
             flex: 0 0 auto;
     height: 50px;
   }
-  div.container_24 header figure#logo img#home {
-    height: 50px;
+  div.container_24 header figure#logo img#homeImage {
     display: block;
+    height: 100%;
   }
   div.container_24 header .socials {
     width: 20%;
@@ -413,7 +415,7 @@ button#mobile-toggle :focus {
     margin: 0;
     padding: 0;
     height: 50px;
-    width: 84%;
+    width: 90%;
     display: block;
     display: -ms-flexbox;
     display: -webkit-box;
@@ -440,11 +442,11 @@ button#mobile-toggle :focus {
             flex: 0 0 auto;
   }
   div.container_24 nav ul li a {
-    color: #ccffbb;
+    color: #ffffff;
     background-color: #297F10;
     display: block;
     line-height: 50px;
-    font-size: 0.9em;
+    font-size: 1em;
     letter-spacing: 0.1em;
     height: 100%;
     text-shadow: 1px 2px 1px #165404;
@@ -454,7 +456,7 @@ button#mobile-toggle :focus {
   div.container_24 nav ul li a:hover {
     font-weight: bold;
     color: #297F10;
-    background-color: #ccffbb;
+    background-color: #ffffff;
     text-shadow: none;
   }
   div.container_24 div#collections,
@@ -608,7 +610,6 @@ button#mobile-toggle :focus {
     width: 80%;
     margin: 0 auto;
     display: block;
-    height: 50px;
     line-height: 1.5em;
     color: #ffffff;
   }
@@ -794,14 +795,14 @@ button#mobile-toggle :focus {
     content: "\f098";
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(3) {
-    width: 35%;
+    width: 45%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(3)::before {
     font-family: "FontAwesome";
     content: "\f0e0";
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(4) {
-    width: 60%;
+    width: 53%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(4)::before {
     font-family: "FontAwesome";
@@ -830,7 +831,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 40%;
-    margin: auto;
+    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -845,36 +846,35 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li label {
     width: 100%;
     color: #ffffff;
-    font-size: 1.2em;
     height: auto;
     margin: 0.5em 0;
     display: block;
-    line-height: 30px;
     text-align: left;
     letter-spacing: 0.2em;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input {
     border: 0;
     width: 100%;
-    height: 50px;
-    line-height: 50px;
+    height: 35px;
+    line-height: 35px;
     padding: 0;
-    margin: 0;
+    margin: 0.5em 0 0 0;
     display: block;
     letter-spacing: 0.1em;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li textarea {
     width: 100%;
     border: 0;
+    margin: 0.5em 0 0 0;
     display: block;
     letter-spacing: 0.1em;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input[type="submit"] {
     letter-spacing: 0.2em;
-    height: 35px;
+    height: 30px;
     width: 30%;
     margin: 0;
-    line-height: 35px;
+    line-height: 30px;
     background-color: #297F10;
     border: 0;
     color: #ccffbb;
@@ -889,27 +889,29 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    padding: 0.8em;
-    margin-bottom: 1em;
-    border: 2px solid #ddd;
+    line-height: 35px;
+    display: block;
+    margin-bottom: 0.5em;
+    text-indent: 0.5em;
+    padding: 0;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error {
     background: #ffffff;
     color: #297f10;
     border-color: #297f10;
-    width: 80%;
+    width: 100%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice {
     background: #fff6bf;
     color: #514721;
     border-color: #ffd324;
-    width: 80%;
+    width: 100%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
     background: #e6efc2;
     color: #264409;
     border-color: #c6d880;
-    width: 80%;
+    width: 100%;
   }
   div.container_24 div.grid_24 main.content #facts_box {
     height: 60vh;
@@ -917,7 +919,7 @@ button#mobile-toggle :focus {
     box-sizing: border-box;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0.5em;
+    padding: 0;
     background-color: #ccffbb;
     width: 100%;
     float: left;
@@ -925,20 +927,20 @@ button#mobile-toggle :focus {
     z-index: 1;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
-    margin: 0;
+    margin: 0.5em 0;
     padding: 0;
     line-height: 35px;
     display: block;
+    text-align: center;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul {
     list-style: none;
-    margin: 0 auto;
+    margin: 1em auto;
     padding: 0;
-    width: 90%;
+    width: 85%;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
     list-style: none;
-    background-color: #ccffbb;
     line-height: 40px;
     display: block;
     width: 100%;
@@ -948,13 +950,7 @@ button#mobile-toggle :focus {
     height: 40px;
     clear: left;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span {
-    display: block;
-    width: 40px;
-    height: 40px;
-    float: left;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span::before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
     font-family: "FontAwesome";
     content: "\f1b8";
     font-style: normal;
@@ -965,29 +961,16 @@ button#mobile-toggle :focus {
     padding: 0;
     text-align: center;
     font-size: 1.3em;
-    width: 100%;
-    height: 100%;
+    width: 50px;
+    height: auto;
+    float: left;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type {
-    width: 90%;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
     height: auto;
     display: inline-block;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type::before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
     display: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a {
-    font-size: 1em;
-    width: 100%;
-    text-align: center;
-    color: #000;
-    height: auto;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a:hover {
-    width: 100%;
-    text-align: left;
-    font-weight: bold;
-    color: #ffffff;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
@@ -1006,7 +989,6 @@ button#mobile-toggle :focus {
     -ms-flex-align: center;
     -webkit-box-align: center;
             align-items: center;
-    background-color: #3a5f0b;
     /* Next & previous buttons */
   }
   div.container_24 div.grid_24 main.content #mask .recycle-facts__dots,
@@ -1078,7 +1060,7 @@ button#mobile-toggle :focus {
     margin: 0.5em;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 0.5em;
+    padding: 2.5em;
     -ms-flex: 1 0 auto;
     -webkit-box-flex: 1;
             flex: 1 0 auto;
@@ -1089,7 +1071,7 @@ button#mobile-toggle :focus {
     line-height: 35px;
     font-size: 1.1em;
     color: #3a5f0b;
-    background-color: #92cd00;
+    background-color: #ffffff;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -1167,7 +1149,7 @@ button#mobile-toggle :focus {
     line-height: 35px;
     font-size: 1.1em;
     color: #3a5f0b;
-    background-color: #92cd00;
+    background-color: #ffffff;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -1187,10 +1169,9 @@ button#mobile-toggle :focus {
     margin: 0.5em auto;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
-    float: left;
     display: block;
-    width: 45%;
-    margin: 0 0.5em 0 0;
+    width: 32%;
+    margin: 0.5em auto;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
     margin: 0;
@@ -1394,7 +1375,7 @@ button#mobile-toggle :focus {
     width: 12%;
   }
   div.container_24 nav ul li a {
-    font-size: 0.85em;
+    font-size: 0.9em;
   }
   div.container_24 nav ul li a:hover {
     text-shadow: none;
@@ -1489,7 +1470,7 @@ button#mobile-toggle :focus {
     cursor: pointer;
   }
   div.container_24 div.grid_24 main.content .text p {
-    font-size: 0.85em;
+    font-size: 0.9em;
   }
   div.container_24 div.grid_24 main.content .text p.collection-text {
     font-size: 0.9em;
@@ -1547,7 +1528,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 50%;
-    margin: auto;
+    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -1559,7 +1540,7 @@ button#mobile-toggle :focus {
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input {
-    line-height: 1.5em;
+    display: block;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li textarea {
     letter-spacing: 0.1em;
@@ -1573,24 +1554,13 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    padding: 0.8em;
-    margin-bottom: 1em;
-    border: 2px solid #ddd;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    width: 80%;
+    margin-bottom: 0.5em;
   }
   div.container_24 div.grid_24 main.content #facts_box {
     height: 60vh;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0.5em;
+    padding: 0;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
     line-height: 35px;
@@ -1601,23 +1571,14 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span {
-    display: block;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
     font-size: 1.3em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type {
-    width: 90%;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
+    height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type::before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
     display: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a {
-    font-size: 1em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a:hover {
-    width: 100%;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
@@ -1698,7 +1659,7 @@ button#mobile-toggle :focus {
     width: 53%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
-    width: 45%;
+    width: 32%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
     margin: 0;
@@ -1800,7 +1761,7 @@ button#mobile-toggle :focus {
     height: 50px;
   }
   div.container_24 nav ul li a {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
   div.container_24 nav ul li a:hover {
     text-shadow: none;
@@ -1879,34 +1840,27 @@ button#mobile-toggle :focus {
     height: 60vh;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0.5em;
+    padding: 0;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
     line-height: 35px;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul {
     list-style: none;
+    width: 89%;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.9em;
+    font-size: 0.85em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span {
-    display: block;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
+    width: 40px;
+    font-size: 1.2em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:before {
-    font-size: 1.3em;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
+    height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type {
-    width: 90%;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type::before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
     display: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a {
-    font-size: 1em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a:hover {
-    width: 100%;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
@@ -1987,7 +1941,7 @@ button#mobile-toggle :focus {
     content: "\f098";
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(3) {
-    width: 33%;
+    width: 45%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(3)::before {
     font-family: "FontAwesome";
@@ -2025,7 +1979,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 60%;
-    margin: auto;
+    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -2037,7 +1991,7 @@ button#mobile-toggle :focus {
     font-size: 1.05em;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input {
-    line-height: 1.5em;
+    display: block;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li textarea {
     letter-spacing: 0.1em;
@@ -2051,18 +2005,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    padding: 0.8em;
-    margin-bottom: 1em;
-    border: 2px solid #ddd;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    width: 80%;
+    margin-bottom: 0.5em;
   }
   div.container_24 div.grid_24 main.content #contentboxes {
     /*contentbox end*/
@@ -2107,7 +2050,7 @@ button#mobile-toggle :focus {
     width: 53%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
-    width: 45%;
+    width: 32%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
     margin: 0;
@@ -2197,7 +2140,7 @@ button#mobile-toggle :focus {
     height: 50px;
   }
   div.container_24 nav div.nav-title {
-    width: 10%;
+    width: 9%;
   }
   div.container_24 nav div.nav-title h1 {
     font-size: 1.1rem;
@@ -2209,7 +2152,7 @@ button#mobile-toggle :focus {
     width: 12%;
   }
   div.container_24 nav ul li a {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
   div.container_24 nav ul li a:hover {
     text-shadow: none;
@@ -2299,7 +2242,7 @@ button#mobile-toggle :focus {
     cursor: pointer;
   }
   div.container_24 div.grid_24 main.content .text p {
-    font-size: 0.8em;
+    font-size: 0.85em;
     width: 78%;
   }
   div.container_24 div.grid_24 main.content .text p.collection-text {
@@ -2358,7 +2301,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 70%;
-    margin: auto;
+    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -2370,7 +2313,7 @@ button#mobile-toggle :focus {
     font-size: 1em;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input {
-    line-height: 1.5em;
+    display: block;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li textarea {
     letter-spacing: 0.1em;
@@ -2384,24 +2327,13 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    padding: 0.8em;
-    margin-bottom: 1em;
-    border: 2px solid #ddd;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    width: 80%;
+    margin-bottom: 0.5em;
   }
   div.container_24 div.grid_24 main.content #facts_box {
     height: 60vh;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0.5em;
+    padding: 0;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
     line-height: 35px;
@@ -2410,25 +2342,16 @@ button#mobile-toggle :focus {
     list-style: none;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.9em;
+    font-size: 0.85em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span {
-    display: block;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
+    font-size: 1.2em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:before {
-    font-size: 1.3em;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
+    height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type {
-    width: 90%;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type::before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
     display: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a {
-    font-size: 1em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a:hover {
-    width: 100%;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
@@ -2475,10 +2398,10 @@ button#mobile-toggle :focus {
     margin: 0.25em;
   }
   div.container_24 div.grid_24 main.content #contentboxes .contentbox h2 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content #contentboxes .contentbox p {
-    font-size: 0.75em;
+    font-size: 0.85em;
   }
   div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image {
     float: none;
@@ -2515,7 +2438,7 @@ button#mobile-toggle :focus {
     width: 60%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
-    width: 45%;
+    width: 32%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
     margin: 0;
@@ -2605,7 +2528,7 @@ button#mobile-toggle :focus {
     margin: 0.2em 0;
   }
   div.container_24 nav div.nav-title {
-    width: 11%;
+    width: 9%;
   }
   div.container_24 nav div.nav-title h1 {
     font-size: 1rem;
@@ -2617,7 +2540,7 @@ button#mobile-toggle :focus {
     width: 12%;
   }
   div.container_24 nav ul li a {
-    font-size: 0.75em;
+    font-size: 0.85em;
   }
   div.container_24 nav ul li a:hover {
     text-shadow: none;
@@ -2736,7 +2659,7 @@ button#mobile-toggle :focus {
     content: "\f098";
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(3) {
-    width: 32%;
+    width: 42%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(3)::before {
     font-family: "FontAwesome";
@@ -2774,7 +2697,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 80%;
-    margin: auto;
+    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -2786,7 +2709,7 @@ button#mobile-toggle :focus {
     font-size: 0.95em;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input {
-    line-height: 1.5em;
+    display: block;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li textarea {
     letter-spacing: 0.1em;
@@ -2800,24 +2723,13 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    padding: 0.8em;
-    margin-bottom: 1em;
-    border: 2px solid #ddd;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    width: 80%;
+    margin-bottom: 0.5em;
   }
   div.container_24 div.grid_24 main.content #facts_box {
     height: 60vh;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0.5em;
+    padding: 0;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
     line-height: 35px;
@@ -2826,25 +2738,16 @@ button#mobile-toggle :focus {
     list-style: none;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span {
-    display: block;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
+    font-size: 1.2em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:before {
-    font-size: 1.3em;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
+    height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type {
-    width: 90%;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type::before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
     display: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a {
-    font-size: 1em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a:hover {
-    width: 100%;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
@@ -2887,10 +2790,10 @@ button#mobile-toggle :focus {
     /*contentbox end*/
   }
   div.container_24 div.grid_24 main.content #contentboxes .contentbox h2 {
-    font-size: 0.9em;
+    font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content #contentboxes .contentbox p {
-    font-size: 0.75em;
+    font-size: 0.85em;
   }
   div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image {
     margin: 0.5em auto;
@@ -2925,9 +2828,6 @@ button#mobile-toggle :focus {
     width: 60%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
-    float: none;
-    display: block;
-    margin: 0.5em auto;
     width: 50%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
@@ -3018,7 +2918,8 @@ button#mobile-toggle :focus {
     height: 50px;
   }
   div.container_24 nav div.nav-title {
-    width: 10%;
+    width: 9%;
+    margin-right: 0.25em;
   }
   div.container_24 nav div.nav-title h1 {
     font-size: 0.9rem;
@@ -3030,7 +2931,7 @@ button#mobile-toggle :focus {
     width: 12%;
   }
   div.container_24 nav ul li a {
-    font-size: 0.65em;
+    font-size: 0.8em;
   }
   div.container_24 nav ul li a:hover {
     text-shadow: none;
@@ -3146,11 +3047,14 @@ button#mobile-toggle :focus {
     content: "\f098";
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(3) {
-    width: 31%;
+    width: 41%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(3)::before {
     font-family: "FontAwesome";
     content: "\f0e0";
+  }
+  div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(4) {
+    width: 49%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(4)::before {
     font-family: "FontAwesome";
@@ -3192,7 +3096,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
-    margin: auto;
+    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -3204,7 +3108,7 @@ button#mobile-toggle :focus {
     font-size: 0.9em;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input {
-    line-height: 1.5em;
+    display: block;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li textarea {
     letter-spacing: 0.1em;
@@ -3215,21 +3119,19 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input[type="submit"]:hover {
     font-weight: bold;
   }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error,
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice,
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    padding: 0.8em;
-    margin-bottom: 1em;
-    border: 2px solid #ddd;
+  div.container_24 div.grid_24 main.content .text form#feedback-form ul li label.error,
+  div.container_24 div.grid_24 main.content .text form#feedback-form ul li label.notice,
+  div.container_24 div.grid_24 main.content .text form#feedback-form ul li label.success {
+    margin-bottom: 0.5em;
   }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error {
-    width: 80%;
+  div.container_24 div.grid_24 main.content .text form#feedback-form ul li label.error {
+    width: 100%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice {
-    width: 80%;
+    width: 100%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    width: 80%;
+    width: 100%;
   }
   div.container_24 div.grid_24 main.content #facts_box {
     height: 60vh;
@@ -3244,25 +3146,16 @@ button#mobile-toggle :focus {
     list-style: none;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span {
-    display: block;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
+    font-size: 1.1em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:before {
-    font-size: 1.3em;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
+    height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type {
-    width: 90%;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type::before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
     display: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a {
-    font-size: 1em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a:hover {
-    width: 100%;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
@@ -3344,9 +3237,6 @@ button#mobile-toggle :focus {
     width: 60%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
-    float: none;
-    display: block;
-    margin: 0.5em auto;
     width: 50%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
@@ -3436,7 +3326,7 @@ button#mobile-toggle :focus {
     height: 50px;
   }
   div.container_24 nav div.nav-title {
-    width: 10%;
+    width: 9%;
   }
   div.container_24 nav div.nav-title h1 {
     font-size: 0.85rem;
@@ -3445,7 +3335,7 @@ button#mobile-toggle :focus {
     width: 12%;
   }
   div.container_24 nav ul li a {
-    font-size: 0.6em;
+    font-size: 0.8em;
   }
   div.container_24 nav ul li a:hover {
     text-shadow: none;
@@ -3553,7 +3443,7 @@ button#mobile-toggle :focus {
     content: "\f098";
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(3) {
-    width: 31%;
+    width: 41%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(3)::before {
     font-family: "FontAwesome";
@@ -3592,7 +3482,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
-    margin: auto;
+    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -3604,7 +3494,7 @@ button#mobile-toggle :focus {
     font-size: 0.9em;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input {
-    line-height: 1.5em;
+    display: block;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li textarea {
     letter-spacing: 0.1em;
@@ -3618,17 +3508,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    padding: 0.8em;
-    border: 2px solid #ddd;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    width: 80%;
+    margin-bottom: 1em;
   }
   div.container_24 div.grid_24 main.content #facts_box {
     height: 60vh;
@@ -3643,25 +3523,16 @@ button#mobile-toggle :focus {
     list-style: none;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.9em;
+    font-size: 0.75em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span {
-    display: block;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
+    font-size: 1.1em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:before {
-    font-size: 1.3em;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
+    height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type {
-    width: 90%;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type::before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
     display: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a {
-    font-size: 1em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a:hover {
-    width: 100%;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
@@ -3836,8 +3707,7 @@ button#mobile-toggle :focus {
     height: 50px;
   }
   div.container_24 nav div.nav-title {
-    width: 10%;
-    margin-right: 0.25em;
+    width: 9%;
   }
   div.container_24 nav div.nav-title h1 {
     font-size: 0.8rem;
@@ -3849,7 +3719,7 @@ button#mobile-toggle :focus {
     width: 12%;
   }
   div.container_24 nav ul li a {
-    font-size: 0.6em;
+    font-size: 0.75em;
   }
   div.container_24 nav ul li a:hover {
     text-shadow: none;
@@ -3957,14 +3827,14 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
     text-indent: 0;
     width: 97%;
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(2)::before {
     font-family: "FontAwesome";
     content: "\f098";
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(3) {
-    width: 30%;
+    width: 41%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(3)::before {
     font-family: "FontAwesome";
@@ -4002,7 +3872,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
-    margin: auto;
+    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -4014,7 +3884,7 @@ button#mobile-toggle :focus {
     font-size: 0.9em;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input {
-    line-height: 1.5em;
+    display: block;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li textarea {
     letter-spacing: 0.1em;
@@ -4024,21 +3894,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input[type="submit"]:hover {
     font-weight: bold;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error,
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice,
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    padding: 0.8em;
-    border: 2px solid #ddd;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    width: 80%;
   }
   div.container_24 div.grid_24 main.content #facts_box {
     height: 60vh;
@@ -4051,27 +3906,21 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul {
     list-style: none;
+    width: 88%;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.9em;
+    font-size: 0.75em;
+    line-height: 15px;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span {
-    display: block;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
+    line-height: 20px;
+    font-size: 1.1em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:before {
-    font-size: 1.3em;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
+    height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type {
-    width: 90%;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type::before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
     display: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a {
-    font-size: 1em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a:hover {
-    width: 100%;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
@@ -4171,8 +4020,7 @@ button#mobile-toggle :focus {
     margin-top: 10px;
   }
   div.container_24 div.grid_24 footer ul {
-    height: 50px;
-    width: 80%;
+    width: 96%;
   }
   div.container_24 div.grid_24 footer ul li {
     height: 50px;
@@ -4180,7 +4028,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 footer ul li:hover {
     background-color: #ccffbb;
-    color: #ffffff;
   }
   div.container_24 div.grid_24 footer ul li a {
     font-size: 0.7em;
@@ -4190,7 +4037,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 p.copyr {
     font-size: 0.6em;
-    letter-spacing: 0.1em;
   }
 }
 
@@ -4272,7 +4118,7 @@ button#mobile-toggle :focus {
     height: 50px;
   }
   div.container_24 nav div.nav-title {
-    width: 15%;
+    width: 9%;
   }
   div.container_24 nav div.nav-title h1 {
     font-size: 0.8rem;
@@ -4284,7 +4130,7 @@ button#mobile-toggle :focus {
     width: 12%;
   }
   div.container_24 nav ul li a {
-    font-size: 0.6em;
+    font-size: 0.75em;
   }
   div.container_24 nav ul li a:hover {
     text-shadow: none;
@@ -4392,7 +4238,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
     text-indent: 0;
     width: 97%;
-    font-size: 0.85em;
+    font-size: 0.75em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(2) {
     width: 45%;
@@ -4409,7 +4255,7 @@ button#mobile-toggle :focus {
     content: "\f0e0";
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(4) {
-    width: 100%;
+    width: 96%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(4)::before {
     font-family: "FontAwesome";
@@ -4451,7 +4297,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
-    margin: auto;
+    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -4463,7 +4309,7 @@ button#mobile-toggle :focus {
     font-size: 0.9em;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input {
-    line-height: 1.5em;
+    display: block;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li textarea {
     letter-spacing: 0.1em;
@@ -4473,21 +4319,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input[type="submit"]:hover {
     font-weight: bold;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error,
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice,
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    padding: 0.8em;
-    border: 2px solid #ddd;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    width: 80%;
   }
   div.container_24 div.grid_24 main.content #facts_box {
     height: 60vh;
@@ -4502,25 +4333,16 @@ button#mobile-toggle :focus {
     list-style: none;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span {
-    display: block;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
+    font-size: 1.2em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:before {
-    font-size: 1.3em;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
+    height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type {
-    width: 90%;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type::before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
     display: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a {
-    font-size: 1em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a:hover {
-    width: 100%;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
@@ -4624,11 +4446,11 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 footer ul {
     height: 50px;
-    width: 90%;
+    width: 100%;
   }
   div.container_24 div.grid_24 footer ul li {
     height: 50px;
-    width: 16.285714%;
+    width: 12.285714%;
     line-height: 50px;
   }
   div.container_24 div.grid_24 footer ul li:hover {
@@ -4703,7 +4525,7 @@ button#mobile-toggle :focus {
     height: 50px;
   }
   div.container_24 nav div.nav-title {
-    width: 15%;
+    width: 9%;
     margin-right: 0.2em;
   }
   div.container_24 nav div.nav-title h1 {
@@ -4716,7 +4538,7 @@ button#mobile-toggle :focus {
     width: 12%;
   }
   div.container_24 nav ul li a {
-    font-size: 0.6em;
+    font-size: 0.75em;
   }
   div.container_24 nav ul li a:hover {
     text-shadow: none;
@@ -4744,8 +4566,7 @@ button#mobile-toggle :focus {
     font-size: 1.6em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
-    font-size: 0.7em;
-    width: 95%;
+    font-size: 0.75em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption a.largeButton.homeBgColor:hover {
     width: 20%;
@@ -4827,8 +4648,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
     text-indent: 0;
-    width: 97%;
-    font-size: 0.8em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(2)::before {
     font-family: "FontAwesome";
@@ -4870,7 +4689,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
-    margin: auto;
+    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -4882,7 +4701,7 @@ button#mobile-toggle :focus {
     font-size: 0.9em;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input {
-    line-height: 1.5em;
+    display: block;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li textarea {
     letter-spacing: 0.1em;
@@ -4892,20 +4711,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input[type="submit"]:hover {
     font-weight: bold;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error,
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice,
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    padding: 0.8em;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    width: 80%;
   }
   div.container_24 div.grid_24 main.content #facts_box {
     height: 60vh;
@@ -4920,25 +4725,16 @@ button#mobile-toggle :focus {
     list-style: none;
   }
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span {
-    display: block;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
+    font-size: 1.2em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:before {
-    font-size: 1.3em;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
+    height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type {
-    width: 90%;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type::before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
     display: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a {
-    font-size: 1em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a:hover {
-    width: 100%;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
@@ -5118,7 +4914,7 @@ button#mobile-toggle :focus {
     height: 50px;
   }
   div.container_24 nav div.nav-title {
-    width: 15%;
+    width: 9%;
     margin-right: 0.2em;
   }
   div.container_24 nav div.nav-title h1 {
@@ -5132,7 +4928,7 @@ button#mobile-toggle :focus {
     width: 12%;
   }
   div.container_24 nav ul li a {
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
   div.container_24 nav ul li a:hover {
     text-shadow: none;
@@ -5160,7 +4956,7 @@ button#mobile-toggle :focus {
     font-size: 1.55em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
-    font-size: 0.7em;
+    font-size: 0.75em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption a.largeButton.homeBgColor {
     width: 25%;
@@ -5245,8 +5041,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
     text-indent: 0;
-    width: 97%;
-    font-size: 0.75em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(2)::before {
     font-family: "FontAwesome";
@@ -5288,7 +5082,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
-    margin: auto;
+    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -5300,7 +5094,7 @@ button#mobile-toggle :focus {
     font-size: 0.9em;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input {
-    line-height: 1.5em;
+    display: block;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li textarea {
     letter-spacing: 0.1em;
@@ -5314,16 +5108,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    padding: 0.8em;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    width: 80%;
+    padding: 0;
   }
   div.container_24 div.grid_24 main.content #facts_box {
     height: 60vh;
@@ -5340,23 +5125,14 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span {
-    display: block;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
     font-size: 1.3em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type {
-    width: 90%;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
+    height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type::before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
     display: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a {
-    font-size: 1em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a:hover {
-    width: 100%;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
@@ -5443,10 +5219,10 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
-    width: 35%;
+    width: 25%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
-    width: 30%;
+    width: 20%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
     margin: 0;
@@ -5541,7 +5317,7 @@ button#mobile-toggle :focus {
     height: 50px;
   }
   div.container_24 nav div.nav-title {
-    width: 15%;
+    width: 9%;
     margin-right: 0.2em;
   }
   div.container_24 nav div.nav-title h1 {
@@ -5583,7 +5359,7 @@ button#mobile-toggle :focus {
     font-size: 1.55em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
-    font-size: 0.65em;
+    font-size: 0.75em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption a.largeButton.homeBgColor {
     width: 30%;
@@ -5661,8 +5437,6 @@ button#mobile-toggle :focus {
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
-    text-indent: 0;
-    width: 97%;
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(2) {
@@ -5713,7 +5487,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
-    margin: auto;
+    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -5725,7 +5499,7 @@ button#mobile-toggle :focus {
     font-size: 0.8em;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input {
-    line-height: 1.5em;
+    display: block;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li textarea {
     letter-spacing: 0.1em;
@@ -5739,16 +5513,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    padding: 0.8em;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    width: 80%;
+    padding: 0;
   }
   div.container_24 div.grid_24 main.content #facts_box {
     height: 60vh;
@@ -5765,23 +5530,14 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span {
-    display: block;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
     font-size: 1.3em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type {
-    width: 90%;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
+    height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type::before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
     display: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a {
-    font-size: 1em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a:hover {
-    width: 100%;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
@@ -5858,7 +5614,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
-    width: 35%;
+    width: 25%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
     width: 20%;
@@ -5998,8 +5754,8 @@ button#mobile-toggle :focus {
     font-size: 1.5em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
-    font-size: 0.65em;
-    width: 94%;
+    font-size: 0.75em;
+    width: 80%;
     margin: 0 auto 15px auto;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption a.largeButton.homeBgColor:hover {
@@ -6077,7 +5833,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
     text-indent: 0;
-    width: 97%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(2) {
     width: 100%;
@@ -6093,9 +5848,15 @@ button#mobile-toggle :focus {
     font-family: "FontAwesome";
     content: "\f0e0";
   }
+  div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(4) {
+    width: 100%;
+  }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(4)::before {
     font-family: "FontAwesome";
     content: "\f1ad";
+  }
+  div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(5) {
+    width: 100%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(5)::before {
     font-family: "FontAwesome";
@@ -6127,7 +5888,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
-    margin: auto;
+    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -6139,7 +5900,7 @@ button#mobile-toggle :focus {
     font-size: 0.8em;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input {
-    line-height: 1.5em;
+    display: block;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li textarea {
     letter-spacing: 0.1em;
@@ -6153,16 +5914,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    padding: 0.8em;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    width: 80%;
+    padding: 0;
   }
   div.container_24 div.grid_24 main.content #facts_box {
     height: 60vh;
@@ -6179,23 +5931,14 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span {
-    display: block;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
     font-size: 1.3em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type {
-    width: 90%;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
+    height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type::before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
     display: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a {
-    font-size: 1em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a:hover {
-    width: 100%;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
@@ -6269,7 +6012,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
-    width: 30%;
+    width: 25%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
     width: 20%;
@@ -6409,8 +6152,7 @@ button#mobile-toggle :focus {
     font-size: 1.2em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
-    font-size: 0.55em;
-    width: 92%;
+    font-size: 0.7em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption a.largeButton.homeBgColor:hover {
     width: 30%;
@@ -6485,7 +6227,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
     text-indent: 0;
-    width: 97%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(2)::before {
     font-family: "FontAwesome";
@@ -6529,7 +6270,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
-    margin: auto;
+    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -6541,7 +6282,7 @@ button#mobile-toggle :focus {
     font-size: 0.8em;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input {
-    line-height: 1.5em;
+    display: block;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li textarea {
     letter-spacing: 0.1em;
@@ -6555,7 +6296,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    padding: 0.8em;
+    padding: 0;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error {
     width: 80%;
@@ -6581,23 +6322,14 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span {
-    display: block;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
     font-size: 1.3em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type {
-    width: 90%;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
+    height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type::before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
     display: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a {
-    font-size: 1em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a:hover {
-    width: 100%;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
@@ -6683,7 +6415,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
-    width: 30%;
+    width: 25%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
     width: 20%;
@@ -6820,7 +6552,7 @@ button#mobile-toggle :focus {
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption a.largeButton.homeBgColor {
     font-size: 0.9em;
@@ -6899,8 +6631,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
     text-indent: 0;
-    width: 97%;
-    font-size: 0.7em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(2)::before {
     font-family: "FontAwesome";
@@ -6944,7 +6674,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
-    margin: auto;
+    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -6956,7 +6686,7 @@ button#mobile-toggle :focus {
     font-size: 0.8em;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input {
-    line-height: 1.5em;
+    display: block;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li textarea {
     letter-spacing: 0.1em;
@@ -6970,16 +6700,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    padding: 0.8em;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    width: 80%;
+    padding: 0;
   }
   div.container_24 div.grid_24 main.content #facts_box {
     height: 60vh;
@@ -6996,23 +6717,14 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span {
-    display: block;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
     font-size: 1.3em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type {
-    width: 90%;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
+    height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type::before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
     display: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a {
-    font-size: 1em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a:hover {
-    width: 100%;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
@@ -7086,7 +6798,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
-    width: 30%;
+    width: 25%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
     width: 20%;
@@ -7224,7 +6936,7 @@ button#mobile-toggle :focus {
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
-    font-size: 0.55em;
+    font-size: 0.7em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption a.largeButton.homeBgColor {
     width: 35%;
@@ -7303,7 +7015,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
     text-indent: 0;
-    width: 97%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(2)::before {
     font-family: "FontAwesome";
@@ -7346,7 +7057,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
-    margin: auto;
+    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -7358,7 +7069,7 @@ button#mobile-toggle :focus {
     font-size: 0.8em;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input {
-    line-height: 1.5em;
+    display: block;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li textarea {
     letter-spacing: 0.1em;
@@ -7373,15 +7084,6 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
     padding: 0.8em;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    width: 80%;
   }
   div.container_24 div.grid_24 main.content #facts_box {
     height: 60vh;
@@ -7398,23 +7100,14 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span {
-    display: block;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
     font-size: 1.3em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type {
-    width: 90%;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
+    height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type::before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
     display: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a {
-    font-size: 1em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a:hover {
-    width: 100%;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
@@ -7491,7 +7184,7 @@ button#mobile-toggle :focus {
     width: 30%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
-    width: 20%;
+    width: 25%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
     margin: 0;
@@ -7631,7 +7324,7 @@ button#mobile-toggle :focus {
     font-size: 1em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
-    font-size: 0.55em;
+    font-size: 0.7em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption a.largeButton.homeBgColor:hover {
     width: 30%;
@@ -7708,7 +7401,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
     text-indent: 0;
-    width: 97%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(2)::before {
     font-family: "FontAwesome";
@@ -7750,7 +7442,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
-    margin: auto;
+    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -7762,8 +7454,8 @@ button#mobile-toggle :focus {
     font-size: 0.8em;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input {
-    height: 50px;
-    line-height: 1.5em;
+    height: 30px;
+    display: block;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li textarea {
     letter-spacing: 0.1em;
@@ -7778,15 +7470,6 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
     padding: 0.8em;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice {
-    width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    width: 80%;
   }
   div.container_24 div.grid_24 main.content #facts_box {
     height: 60vh;
@@ -7803,23 +7486,14 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span {
-    display: block;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
     font-size: 1.3em;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type {
-    width: 90%;
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
+    height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li span:last-of-type::before {
+  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
     display: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a {
-    font-size: 1em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li a:hover {
-    width: 100%;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
@@ -7897,7 +7571,7 @@ button#mobile-toggle :focus {
     width: 30%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
-    width: 20%;
+    width: 25%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
     margin: 0;
