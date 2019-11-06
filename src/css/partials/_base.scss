@@ -21,6 +21,8 @@ figure {
 ol,
 ul {
   list-style: none;
+  padding:0;
+  margin:0;
 }
 
 
@@ -98,12 +100,12 @@ h1 {
 }
 
 h2 {
-  letter-spacing: 0.07em;
+  letter-spacing: 0.05em;
   font-weight: normal;
 }
 
 h3 {
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   font-weight: normal;
 }
 
@@ -136,16 +138,6 @@ textarea:focus {
 
 /*Container*/
 
-body {
-  font-family: $fontList;
-  margin: 0;
-  line-height: 1;
-  background-color: $bgcolor;
-  font-size: 1em;
-  height: auto;
-  padding-bottom: 20px;
-}
-
-html {
-  scroll-behavior: smooth;
+*,*:before,*:after {
+	box-sizing: inherit;
 }

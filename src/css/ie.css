@@ -7,6 +7,17 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'viroregular';
+  src: url("../fonts/Viro/viro-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Viro/viro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Viro/viro-webfont.woff") format("woff"), url("../fonts/Viro/viro-webfont.ttf") format("truetype"), url("../fonts/Viro/viro-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
 nav div {
   position: absolute;
   top: 0;
@@ -54,7 +65,7 @@ div.container_24 header hgroup {
 div.container_24 header hgroup h1 {
   color: #ccffbb;
   font-size: 2em;
-  font-family: "viro-webfont", Candara, Arial, sans-serif;
+  font-family: "viroregular", Candara, Arial, sans-serif;
   text-align: left;
   letter-spacing: 0.15em;
   line-height: 40px;
@@ -72,7 +83,7 @@ div.container_24 header hgroup h2 {
   padding: 0;
   background-color: #297F10;
   font-size: 0.85em;
-  font-family: "viro-webfont", Candara, Arial, sans-serif;
+  font-family: "viroregular", Candara, Arial, sans-serif;
   line-height: 20px;
   width: 100%;
   text-align: left;
@@ -175,7 +186,7 @@ div.container_24 nav div.nav-title h1 {
   color: #ccffbb;
   text-indent: 0.5em;
   font-size: 2rem;
-  font-family: "viro-webfont", Candara, Arial, sans-serif;
+  font-family: "viroregular", Candara, Arial, sans-serif;
   text-align: left;
   letter-spacing: 0.05em;
   line-height: 50px;
@@ -260,7 +271,7 @@ div.container_24 div.grid_24 #slider div.main-slider div.flexslider {
   overflow: hidden;
   padding: 0;
   margin: 0;
-  font-family: "viro-webfont", Candara, Arial, sans-serif;
+  font-family: "viroregular", Candara, Arial, sans-serif;
   background-color: #3ea514;
 }
 

@@ -2,24 +2,20 @@
 @import "partials/mixins";
 @import "partials/base";
 
-@font-face {
-    font-family: "viro-webfont";
-    src: url("../fonts/Viro/viro-webfont.eot");
-    /* IE9 Compat Modes */
-    src: url("../fonts/Viro/viro-webfont.eot?#iefix")
-            format("embedded-opentype"),
-        /* IE6-IE8 */ url("../fonts/Viro/viro-webfont.woff") format("woff"),
-        /* Modern Browsers */ url("../fonts/Viro/viro-webfont.ttf")
-            format("truetype"),
-        /* Safari, Android, iOS */
-            url("../fonts/Viro/viro-webfont.svg#svgFontName") format("svg");
-    /* Legacy iOS */
-    font-weight: normal;
-    font-style: normal;
-    font-display: auto;
+html {
+	@include box-sizing($type: border-box);
+	scroll-behavior: smooth;
 }
 
-
+body {
+    font-family: $fontList;
+    margin: 0;
+    line-height: 1;
+    background-color: $bgcolor;
+    font-size: 1em;
+    height: auto;
+    padding-bottom: 20px;
+}
 /* Fading animation */
 
 .fade {
@@ -121,9 +117,9 @@ button#mobile-toggle {
                 width: 68%;
                 display: block;
                 float: left;
-                -webkit-flex: 0 0 auto;
-                -ms-flex: 0 0 auto;
-                flex: 0 0 auto;
+                -webkit-flex: 0 1 auto;
+                -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
 
                 h1 {
                     color: $colorsocmedhov;
@@ -163,9 +159,9 @@ button#mobile-toggle {
                 width: 10%;
                 float: left;
                 border: 3px solid $colorsildertxtbg;
-                -webkit-flex: 0 0 auto;
-                -ms-flex: 0 0 auto;
-                flex: 0 0 auto;
+                -webkit-flex: 1 0 auto;
+                -ms-flex: 1 0 auto;
+                flex: 1 0 auto;
                 height: 50px;
 
                 img#homeImage {
@@ -181,9 +177,9 @@ button#mobile-toggle {
                 float: right;
                 margin: 0;
                 background-color: $headbg;
-                -webkit-flex: 0 0 auto;
-                -ms-flex: 0 0 auto;
-                flex: 0 0 auto;
+                -webkit-flex: 1 0 auto;
+                -ms-flex: 1 0 auto;
+                flex: 1 0 auto;
 
                 ul {
                     margin: 0;
@@ -193,23 +189,25 @@ button#mobile-toggle {
                     display: -webkit-flex;
                     display: -ms-flexbox;
                     display: flex;
-                    -webkit-flex-flow: row wrap;
-                    -ms-flex-flow: row wrap;
-                    flex-flow: row wrap;
-                    -webkit-align-items: stretch;
-                    -ms-flex-align: stretch;
-                    align-items: stretch;
-                    -webkit-justify-content: center;
-                    -ms-flex-pack: center;
-                    justify-content: center;
+                    -webkit-flex-flow: row;
+                    -ms-flex-flow: row;
+                    flex-flow: row;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-justify-content: space-around;
+                    -ms-flex-pack: space-around;
+                    justify-content: space-around;
 
                     li {
                         display: block;
-                        width: 25%;
+                        width: 23%;
                         height: 100%;
+                        margin: 0.1em;
                         -webkit-flex: 0 0 auto;
                         -ms-flex: 0 0 auto;
                         flex: 0 0 auto;
+                        background-color: #000;
 
                         a {
                             height: 100%;
@@ -296,13 +294,13 @@ button#mobile-toggle {
                 height: 50px;
                 width: 90%;
                 //background-color: $colornav;
-                display: block;
+                
                 display: -webkit-flex;
                 display: -ms-flexbox;
                 display: flex;
-                -webkit-flex-flow: row wrap;
-                -ms-flex-flow: row wrap;
-                flex-flow: row wrap;
+                -webkit-flex-flow: row;
+                -ms-flex-flow: row;
+                flex-flow: row;
                 -webkit-align-items: center;
                 -ms-flex-align: center;
                 align-items: center;
@@ -316,9 +314,9 @@ button#mobile-toggle {
                     margin-right: 0.1em;
                     display: block;
                     width: 12%;
-                    -webkit-flex: 0 0 auto;
-                    -ms-flex: 0 0 auto;
-                    flex: 0 0 auto;
+                    -webkit-flex: 1 0 auto;
+                    -ms-flex: 1 0 auto;
+                    flex: 1 0 auto;
 
                     a {
                         color: $colorsocmedhov;
@@ -483,9 +481,9 @@ button#mobile-toggle {
             main.content {
                 background-color: $contentbg;
                 display: block;
-                width: 98%;
+                width: 100%;
                 margin: 0;
-                padding: 1%;
+                padding: 0.5em;
                 height: auto;
 
                 &:after {
@@ -527,9 +525,9 @@ button#mobile-toggle {
                     -webkit-justify-content: space-around;
                     -ms-flex-pack: justify;
                     justify-content: space-around;
-                    -webkit-align-items: flex-start;
-                    -ms-flex-align: start;
-                    align-items: flex-start;
+                    -webkit-align-items: stretch;
+                    -ms-flex-align: stretch;
+                    align-items: stretch;
 
                     h1 {
                         color: $colortxtbg;
@@ -709,7 +707,7 @@ button#mobile-toggle {
                     }
 
                     ul.recycle-contact:nth-of-type(3) {
-                        width: 45%;
+                        width: 55%;
 
                         &::before {
                             font-family: "FontAwesome";
@@ -849,8 +847,7 @@ button#mobile-toggle {
 
                 #facts_box {
                     height: 60vh;
-                    @include box-sizing($type: border-box);
-
+                    
                     article.recycle-facts {
                         padding: 0;
                         background-color: $colortxtbg;
@@ -989,8 +986,7 @@ button#mobile-toggle {
                     position: relative;
                     z-index: 1;
                     height: 370px;
-                    @include box-sizing($type: border-box);
-
+                    
                     .contentbox {
                         width: 32%;
                         min-height: 225px;
@@ -1074,21 +1070,32 @@ button#mobile-toggle {
                 /*Content boxes*/
                 #home_contentboxes {
                     height: 370px;
-                    @include box-sizing($type: border-box);
-
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-flex-flow: row;
+                    -ms-flex-flow: row;
+                    flex-flow: row;
+                    -webkit-align-items: stretch;
+                    -ms-flex-align: stretch;
+                    align-items: stretch;
+                    -webkit-justify-content: flex-start;
+                    -ms-flex-pack: flex-start;
+                    justify-content: flex-start;
+                    
                     /*contentbox*/
                     article.home_contentbox {
-                        width: 31.8%;
+                        width: 31.5%;
                         min-height: 225px;
                         height: auto;
                         background-color: $colorsildertxtbg;
                         float: left;
                         margin: 0.5em;
-                        box-sizing: border-box;
+                        @include box-sizing($type: border-box);
                         padding: 0.5em;
-                        -webkit-flex: 0 1 auto;
-                        -ms-flex: 0 1 auto;
-                        flex: 0 1 auto;
+                        -webkit-flex: 1 0 auto;
+                        -ms-flex: 1 0 auto;
+                        flex: 1 0 auto;
 
                         h2 {
                             text-indent: 0;
@@ -1120,7 +1127,7 @@ button#mobile-toggle {
                             img#wordSearch {
                                 
                                 display: block;
-                                width: 32%;
+                                width: 26%;
                                 margin: 0.5em auto;
                             }
 
@@ -1190,9 +1197,9 @@ button#mobile-toggle {
                     display: -webkit-flex;
                     display: -ms-flexbox;
                     display: flex;
-                    -webkit-flex-flow: row wrap;
-                    -ms-flex-flow: row wrap;
-                    flex-flow: row wrap;
+                    -webkit-flex-flow: row;
+                    -ms-flex-flow: row;
+                    flex-flow: row;
                     -webkit-justify-content: center;
                     -ms-flex-pack: center;
                     justify-content: center;
@@ -1203,9 +1210,9 @@ button#mobile-toggle {
                         width: 12%;
                         line-height: 50px;
                         margin: 0;
-                        -webkit-flex: 1 1 auto;
-                        -ms-flex: 1 1 auto;
-                        flex: 1 1 auto;
+                        -webkit-flex: 1 0 auto;
+                        -ms-flex: 1 0 auto;
+                        flex: 1 0 auto;
                         -webkit-align-items: center;
                         -ms-flex-align: center;
                         align-items: center;
@@ -1315,7 +1322,7 @@ button#mobile-toggle {
                     padding: 0;
 
                     li {
-                        width: 25%;
+                        width: 23%;
 
                         a {
                             height: 100%;
@@ -1741,7 +1748,7 @@ button#mobile-toggle {
 
                             img#wordSearch {
                                 
-                                width: 32%;
+                                width: 26%;
                                 
                             }
 
@@ -1825,7 +1832,7 @@ button#mobile-toggle {
             padding: 0.25em;
 
             hgroup {
-                width: 67%;
+                width: 69%;
 
                 h1 {
                     font-size: 1.7em;
@@ -2107,8 +2114,7 @@ button#mobile-toggle {
                     }
 
                     ul.recycle-contact:nth-of-type(3) {
-                        width: 45%;
-
+                        
                         &::before {
                             font-family: "FontAwesome";
                             content: "\f0e0";
@@ -2265,7 +2271,7 @@ button#mobile-toggle {
 
                             img#wordSearch {
                                 
-                                width: 32%;
+                                width: 26%;
                                 
                             }
 
@@ -2366,7 +2372,7 @@ button#mobile-toggle {
                     padding: 0;
 
                     li {
-                        width: 25%;
+                        width: 23%;
 
                         a {
                             width: 100%;
@@ -2787,7 +2793,7 @@ button#mobile-toggle {
 
                             img#wordSearch {
                                 
-                                width: 32%;
+                                width: 26%;
                                 
                             }
 
@@ -2888,7 +2894,7 @@ button#mobile-toggle {
                     padding: 0;
 
                     li {
-                        width: 25%;
+                        width: 23%;
 
                         a {
                             width: 100%;
@@ -3075,8 +3081,7 @@ button#mobile-toggle {
                     }
 
                     ul.recycle-contact:nth-of-type(3) {
-                        width: 42%;
-
+                        
                         &::before {
                             font-family: "FontAwesome";
                             content: "\f0e0";
@@ -3179,6 +3184,7 @@ button#mobile-toggle {
 
                         h2 {
                             line-height: 35px;
+                            
                         }
 
                         ul {
@@ -3309,7 +3315,7 @@ button#mobile-toggle {
 
                             img#wordSearch {
 
-                                width: 50%;
+                                width: 30%;
                                 
                             }
 
@@ -3410,7 +3416,7 @@ button#mobile-toggle {
                     padding: 0;
 
                     li {
-                        width: 25%;
+                        width: 23%;
 
                         a {
                             width: 100%;
@@ -3594,8 +3600,7 @@ button#mobile-toggle {
                     }
 
                     ul.recycle-contact:nth-of-type(3) {
-                        width: 41%;
-
+                        
                         &::before {
                             font-family: "FontAwesome";
                             content: "\f0e0";
@@ -3851,7 +3856,7 @@ button#mobile-toggle {
 
                             img#wordSearch {
   
-                                width: 50%;
+                                width: 30%;
                                 
                             }
 
@@ -3951,7 +3956,7 @@ button#mobile-toggle {
                     padding: 0;
 
                     li {
-                        width: 25%;
+                        width: 23%;
 
                         a {
                             width: 100%;
@@ -4128,7 +4133,7 @@ button#mobile-toggle {
                     }
 
                     ul.recycle-contact:nth-of-type(3) {
-                        width: 41%;
+                        
 
                         &::before {
                             font-family: "FontAwesome";
@@ -4365,7 +4370,7 @@ button#mobile-toggle {
 
                             img#wordSearch {
      
-                                width: 50%;
+                                width: 30%;
                                 
                             }
 
@@ -4472,7 +4477,7 @@ button#mobile-toggle {
                     padding: 0;
 
                     li {
-                        width: 25%;
+                        width: 23%;
 
                         a {
                             width: 100%;
@@ -4657,8 +4662,7 @@ button#mobile-toggle {
                     }
 
                     ul.recycle-contact:nth-of-type(3) {
-                        width: 41%;
-
+                        
                         &::before {
                             font-family: "FontAwesome";
                             content: "\f0e0";
@@ -4886,7 +4890,7 @@ button#mobile-toggle {
 
                             img#wordSearch {
      
-                                width: 60%;
+                                width: 30%;
                                 
                             }
 
@@ -5020,7 +5024,7 @@ button#mobile-toggle {
                     padding: 0;
 
                     li {
-                        width: 25%;
+                        width: 23%;
 
                         a {
                             width: 100%;
@@ -5197,7 +5201,7 @@ button#mobile-toggle {
                     }
 
                     ul.recycle-contact:nth-of-type(2) {
-                        width: 45%;
+                        width: 35%;
 
                         &::before {
                             font-family: "FontAwesome";
@@ -5206,7 +5210,7 @@ button#mobile-toggle {
                     }
 
                     ul.recycle-contact:nth-of-type(3) {
-                        width: 44%;
+                        width: 60%;
 
                         &::before {
                             font-family: "FontAwesome";
@@ -5444,7 +5448,7 @@ button#mobile-toggle {
 
                             img#wordSearch {
      
-                                width: 60%;
+                                width: 30%;
                                 
                             }
 
@@ -5553,7 +5557,7 @@ button#mobile-toggle {
                     padding: 0;
 
                     li {
-                        width: 25%;
+                        width: 23%;
 
                         a {
                             width: 100%;
@@ -5604,6 +5608,7 @@ button#mobile-toggle {
         }
 
         div.grid_24 {
+            height: auto;
             #slider {
                 /*slider*/
                 height: 265px;
@@ -5971,7 +5976,7 @@ button#mobile-toggle {
 
                             img#wordSearch {
      
-                                width: 60%;
+                                width: 30%;
                                 
                             }
 
@@ -6034,20 +6039,7 @@ button#mobile-toggle {
 }
 
 @media only screen and (max-width: 600px) {
-    /* button#mobile-toggle {
-        top: 8.5vh;
-        left: calc(97% - 3.3em);
-        font-size: 0.9em;
-        &:hover {
-            background-color: $colorslidebg;
-        }
-        &:active,
-         :focus {
-            color: $colorsocmedhov;
-        }
-    }
-    */
-
+    
     div.container_24 {
         header {
             padding: 0.2em;
@@ -6077,7 +6069,7 @@ button#mobile-toggle {
                     padding: 0;
 
                     li {
-                        width: 25%;
+                        width: 23%;
 
                         a {
                             width: 100%;
@@ -6097,13 +6089,57 @@ button#mobile-toggle {
             display: none;
         }
 
+        button#mobile-toggle,
+        nav.toggled ul {
+            display: block;
+        }
+        
+        button#mobile-toggle {
+            position: fixed;
+            z-index: 100;
+            top: 4em;
+            left: 87%;
+            padding: 0.7em;
+            font-size: 1em;
+            text-transform: uppercase;
+            background-color: $honecolor;
+            color:  $colorsocmedhov;
+            border:none;
+            @include transitioner(all ease-out 400ms);
+            
+            height:60px;
+            width:70px;
+        }
+    
+        button#mobile-toggle.hide {
+            left: 100vw;
+        }
+    
+        /* Make sure the button doesn't hide when menu is open. */
+    
+        button#toggled #mobile-toggle.hide {
+            bottom: 1em;
+        }
+    
+        button#mobile-toggle:hover,
+        button#mobile-toggle:focus {
+            text-decoration: underline;
+            border: solid 2px $colorsocmedhov;
+            cursor:pointer;
+        }
+
         /*Navigation*/
         nav {
-            height: 50px;
+            position: fixed;
+            top: 4em;
+            z-index: 100;
+            left: -250px;
+            width: 250px;
+            height: auto;
 
+            
             div.nav-title {
-                width: 9%;
-                margin-right: 0.2em;
+                display:none;
 
                 h1 {
                     font-size: 0.75rem;
@@ -6112,23 +6148,43 @@ button#mobile-toggle {
             }
 
             ul {
-                height: 50px;
+                height: 15.5em;
+                -webkit-flex-flow: column ;
+                -ms-flex-flow: column ;
+                flex-flow: column ;
 
                 li {
-                    width: 12%;
+                    height: 45px;
+                    list-style: none;
+                    width: 100%;
+                    display: block;
+                    
+                    height: 45px;
+                    margin-bottom: 0.25em;
 
                     a {
-                        font-size: 0.7em;
+                        line-height: 45px;
+                        margin: 0;
+                        letter-spacing: 0.1em;
+                        font-size: 1em;
+                        text-align: center;
+                        display: block;
 
                         &:hover {
                             text-shadow: none;
+                            letter-spacing: 0.2em;
+                            font-weight: bold;
                         }
                     }
                 }
             }
         }
+        nav.hide {
+            left: -5.5em;
+        }
 
         div.grid_24 {
+            height: auto;
             #slider {
                 /*slider*/
                 height: 265px;
@@ -6321,9 +6377,10 @@ button#mobile-toggle {
                     }
 
                     form#feedback-form {
+                        display:block;
                         width: 85%;
                         margin: 1em auto;
-
+                        height: 67vh;
                         ul {
                             margin: 1% auto;
 
@@ -6377,7 +6434,7 @@ button#mobile-toggle {
 
                             li {
 
-                                font-size: 0.9em;
+                                font-size: 0.75em;
 
                                 &:before {
   
@@ -6473,7 +6530,7 @@ button#mobile-toggle {
                     }
                 }
                 #home_contentboxes {
-                    
+                    height:auto;
                     -webkit-flex-flow: column;
                     -ms-flex-flow: column;
                     flex-flow: column;
@@ -6506,7 +6563,7 @@ button#mobile-toggle {
 
                             img#wordSearch {
      
-                                width: 20%;
+                                width: 25%;
                                 
                             }
 
@@ -6612,7 +6669,7 @@ button#mobile-toggle {
                     padding: 0;
 
                     li {
-                        width: 25%;
+                        width: 22%;
 
                         a {
                             width: 100%;
@@ -6634,33 +6691,34 @@ button#mobile-toggle {
 
         /*Navigation*/
         nav {
-            height: 50px;
-
-            div.nav-title {
-                width: 9%;
-                margin-right: 0.2em;
-
-                h1 {
-                    font-size: 0.7rem;
-                    text-indent: 0.2em;
-                }
-            }
-
+            
+            top: 4em;
+            
+            
+            
             ul {
-                height: 50px;
+                height: 15.5em;
+                ;
 
                 li {
-                    width: 12%;
-
+                    height: 45px;
+                    
                     a {
-                        font-size: 0.55em;
+                        line-height: 45px;
+                        
+                        font-size: 1em;
+                        
 
                         &:hover {
                             text-shadow: none;
+                            
                         }
                     }
                 }
             }
+        }
+        nav.hide {
+            left: -5.5em;
         }
 
         div.grid_24 {
@@ -6789,8 +6847,7 @@ button#mobile-toggle {
                     }
 
                     ul.recycle-contact:nth-of-type(2) {
-                        width: 43%;
-
+                        
                         &::before {
                             font-family: "FontAwesome";
                             content: "\f098";
@@ -6910,7 +6967,7 @@ button#mobile-toggle {
 
                             li {
 
-                                font-size: 0.9em;
+                                font-size: 0.75em;
 
                                 &:before {
   
@@ -7006,9 +7063,10 @@ button#mobile-toggle {
                     }
                 }
                 #home_contentboxes {
-                    
+                    height:auto;
                     /*contentbox*/
                     article.home_contentbox {
+                     
                                              
                         h2 {
                             
@@ -7069,7 +7127,7 @@ button#mobile-toggle {
 
                     li {
                         height: 50px;
-                        width: 16.285714%;
+                        width: 12.285714%;
 
                         &:hover {
                             color: $colorsocmedhov;
@@ -7135,7 +7193,7 @@ button#mobile-toggle {
                     padding: 0;
 
                     li {
-                        width: 25%;
+                        width: 22%;
 
                         a {
                             width: 100%;
@@ -7157,34 +7215,34 @@ button#mobile-toggle {
 
         /*Navigation*/
         nav {
-            height: 50px;
-
-            div.nav-title {
-                width: 13%;
-                margin-right: 0.2em;
-
-                h1 {
-                    font-size: 0.5rem;
-                    text-indent: 0.2em;
-                }
-            }
-
+            
+            top: 4em;
+            
+            
+            
             ul {
-                width: 86%;
-                height: 50px;
+                height: 15.5em;
+                ;
 
                 li {
-                    width: 12%;
-
+                    height: 45px;
+                    
                     a {
-                        font-size: 0.5em;
+                        line-height: 45px;
+                        
+                        font-size: 1em;
+                        
 
                         &:hover {
                             text-shadow: none;
+                            
                         }
                     }
                 }
             }
+        }
+        nav.hide {
+            left: -5.5em;
         }
 
         div.grid_24 {
@@ -7438,7 +7496,7 @@ button#mobile-toggle {
 
                             li {
 
-                                font-size: 0.9em;
+                                font-size: 0.7em;
 
                                 &:before {
   
@@ -7595,7 +7653,7 @@ button#mobile-toggle {
 
                     li {
                         height: 50px;
-                        width: 16.285714%;
+                
 
                         &:hover {
                             color: $colorsocmedhov;
@@ -7659,7 +7717,7 @@ button#mobile-toggle {
 
                 ul {
                     li {
-                        width: 25%;
+                        width: 22%;
 
                         a {
                             width: 100%;
@@ -7681,33 +7739,34 @@ button#mobile-toggle {
 
         /*Navigation*/
         nav {
-            height: 50px;
-
-            div.nav-title {
-                width: 13%;
-                margin-right: 0.2em;
-
-                h1 {
-                    font-size: 0.5rem;
-                    text-indent: 0.1em;
-                }
-            }
-
+            
+            top: 4em;
+            
+            
+            
             ul {
-                height: 50px;
+                height: 15.5em;
+                ;
 
                 li {
-                    width: 12%;
-
+                    height: 45px;
+                    
                     a {
-                        font-size: 0.5em;
+                        line-height: 45px;
+                        
+                        font-size: 1em;
+                        
 
                         &:hover {
                             text-shadow: none;
+                            
                         }
                     }
                 }
             }
+        }
+        nav.hide {
+            left: -5.5em;
         }
 
         div#collections,
@@ -7958,6 +8017,7 @@ button#mobile-toggle {
 
                         h2 {
                             line-height: 35px;
+                            font-size:0.9em;
                         }
 
                         ul {
@@ -7965,7 +8025,7 @@ button#mobile-toggle {
 
                             li {
 
-                                font-size: 0.9em;
+                                font-size: 0.7em;
 
                                 &:before {
   
@@ -8134,7 +8194,7 @@ button#mobile-toggle {
 
                     li {
                         height: 50px;
-                        width: 16.285714%;
+                        width: 11.285714%;
 
                         &:hover {
                             color: $colorsocmedhov;
@@ -8200,7 +8260,7 @@ button#mobile-toggle {
                     padding: 0;
 
                     li {
-                        width: 25%;
+                        width: 22%;
 
                         a {
                             width: 100%;
@@ -8222,33 +8282,34 @@ button#mobile-toggle {
 
         /*Navigation*/
         nav {
-            height: 50px;
-
-            div.nav-title {
-                width: 13%;
-                margin-right: 0.2em;
-
-                h1 {
-                    font-size: 0.4rem;
-                    text-indent: 0.1em;
-                }
-            }
-
+            
+            top: 4em;
+            
+            
+            
             ul {
-                height: 50px;
+                height: 15.5em;
+                ;
 
                 li {
-                    width: 11.9%;
-
+                    height: 45px;
+                    
                     a {
-                        font-size: 0.4em;
+                        line-height: 45px;
+                        
+                        font-size: 1em;
+                        
 
                         &:hover {
                             text-shadow: none;
+                            
                         }
                     }
                 }
             }
+        }
+        nav.hide {
+            left: -5.5em;
         }
 
         div.grid_24 {
@@ -8494,11 +8555,11 @@ button#mobile-toggle {
 
                             li {
 
-                                font-size: 0.9em;
+                                font-size: 0.7em;
 
                                 &:before {
   
-                                    font-size: 1.3em;
+                                    font-size: 1.2em;
 
                                 }
    
@@ -8645,21 +8706,19 @@ button#mobile-toggle {
             /*content end*/
             footer {
                 height: 50px;
-                margin-top: 10px;
 
                 ul {
                     height: 50px;
 
                     li {
                         height: 50px;
-                        width: 16.285714%;
 
                         &:hover {
                             color: $colorsocmedhov;
                         }
 
                         a {
-                            font-size: 0.55em;
+                            font-size: 0.6em;
 
                             &:hover {
                                 text-decoration: none;
@@ -8720,7 +8779,7 @@ button#mobile-toggle {
                     padding: 0;
 
                     li {
-                        width: 25%;
+                        width: 22%;
 
                         a {
                             width: 100%;
@@ -8742,33 +8801,34 @@ button#mobile-toggle {
 
         /*Navigation*/
         nav {
-            height: 50px;
-
-            div.nav-title {
-                width: 13%;
-                margin-right: 0.2em;
-
-                h1 {
-                    font-size: 0.4rem;
-                    text-indent: 0.1em;
-                }
-            }
-
+            
+            top: 4em;
+            
+            
+            
             ul {
-                height: 50px;
+                height: 15.5em;
+                ;
 
                 li {
-                    width: 11.9%;
-
+                    height: 45px;
+                    
                     a {
-                        font-size: 0.4em;
+                        line-height: 45px;
+                        
+                        font-size: 1em;
+                        
 
                         &:hover {
                             text-shadow: none;
+                            
                         }
                     }
                 }
             }
+        }
+        nav.hide {
+            left: -5.5em;
         }
 
         div.grid_24 {
@@ -9013,11 +9073,11 @@ button#mobile-toggle {
 
                             li {
 
-                                font-size: 0.9em;
+                                font-size: 0.7em;
 
                                 &:before {
   
-                                    font-size: 1.3em;
+                                    font-size: 1.15em;
 
                                 }
    
@@ -9170,7 +9230,7 @@ button#mobile-toggle {
 
                     li {
                         height: 50px;
-                        width: 16.285714%;
+                        
 
                         &:hover {
                             color: $colorsocmedhov;
@@ -9240,7 +9300,7 @@ button#mobile-toggle {
                     padding: 0;
 
                     li {
-                        width: 25%;
+                        width: 22%;
 
                         a {
                             width: 100%;
@@ -9262,34 +9322,34 @@ button#mobile-toggle {
 
         /*Navigation*/
         nav {
-            height: 50px;
-
-            div.nav-title {
-                width: 12%;
-                margin-right: 0.1em;
-
-                h1 {
-                    font-size: 0.3rem;
-                    text-indent: 0.1em;
-                }
-            }
-
+            
+            top: 4em;
+            
+            
+            
             ul {
-                height: 50px;
+                height: 15.5em;
+                ;
 
                 li {
-                    width: 11.9%;
-                    margin-right: 0.09em;
-
+                    height: 45px;
+                    
                     a {
-                        font-size: 0.4em;
+                        line-height: 45px;
+                        
+                        font-size: 1em;
+                        
 
                         &:hover {
                             text-shadow: none;
+                            
                         }
                     }
                 }
             }
+        }
+        nav.hide {
+            left: -5.5em;
         }
 
         div.grid_24 {
@@ -9533,11 +9593,11 @@ button#mobile-toggle {
 
                             li {
 
-                                font-size: 0.9em;
+                                font-size: 0.7em;
 
                                 &:before {
   
-                                    font-size: 1.3em;
+                                    font-size: 1.1em;
 
                                 }
    
@@ -9684,14 +9744,13 @@ button#mobile-toggle {
             /*content end*/
             footer {
                 height: 50px;
-                margin-top: 10px;
-
+                
                 ul {
                     height: 50px;
 
                     li {
                         height: 50px;
-                        width: 16.285714%;
+                        
 
                         &:hover {
                             color: $colorsocmedhov;
@@ -9699,11 +9758,11 @@ button#mobile-toggle {
 
                         a {
                             font-size: 0.7em;
-                            line-height: 25px;
+                            
 
                             &:hover {
                                 text-decoration: none;
-                                line-height: 25px;
+                                
                             }
                         }
                     }

@@ -70,7 +70,7 @@ ImageFour.src = mainImageFour;
 //10 Ways images
 
 
-
+//Scroll
 (function() {
     /* ========================================== 
   scrollTop() >= 100
@@ -124,46 +124,6 @@ ImageFour.src = mainImageFour;
   });
 })();
 
-/*
-function headerToggle() {
-
-   var collectionText = document.getElementsByClassName("collection-text");
-
-    
-    for (let i = 0; i < collectionText.length; i++){
-
-        console.log(collectionText[i])
-
-
-             
-           
-    
-    }
-
-}
-
-var collectionsTitle = document.getElementsByClassName("collections_title");
-
-for (let i = 0; i < collectionsTitle.length; i++){
-
-  collectionsTitle[i].addEventListener("click", headerToggle);
-
-}
-*/
-
-//Mobile Nav
-function mobileNav(event) {
-
-    event.preventDefault();
-
-    let mobileToggle = document.getElementById("mobile-nav");
-
-    mobileToggle.slideToggle.style.display = "block";
-}
-var mobileToggle = document.getElementById("mobile-toggle");
-mobileToggle.addEventListener("click", mobileNav);
-
-
 
 //Validation
 (function() {
@@ -216,7 +176,54 @@ function toTopBtn() {
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {toTopBtn()};
 
-//slideshow
+//mobile nav
+(function(){
+
+   // var position, direction, previous;
+
+/*	$(window).scroll(function(){
+			
+		if( $(this).scrollTop() >= position ){
+			direction = 'down';
+			if(direction !== previous){
+				$('button#mobile-toggle').addClass('hide');
+				previous = direction;
+			}
+		} else {
+			direction = 'up';
+			if(direction !== previous){
+				$('button#mobile-toggle').removeClass('hide');
+				previous = direction;
+			}
+		}
+		position = $(this).scrollTop();
+	});*/
+
+	// sliding menu mobile 
+	$('button#mobile-toggle').on('click', function(event){
+    
+		event.preventDefault();
+	
+		// create menu variables
+		var slideoutMenu = $('nav ');
+		var slideoutMenuWidth = $('nav').width();
+	
+		// toggle open class
+		slideoutMenu.toggleClass("open");
+	
+		// slide menu
+		if (slideoutMenu.hasClass("open")) {
+			slideoutMenu.animate({
+				left: "0px"
+			});	
+		} else {
+			slideoutMenu.animate({
+				left: -slideoutMenuWidth
+			}, 500);	
+		}
+	});
+
+})()
 
 //slideshow
 showSlides();

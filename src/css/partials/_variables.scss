@@ -1,4 +1,19 @@
-
+@font-face {
+    font-family: 'viroregular';
+    src: url("../fonts/Viro/viro-webfont.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/Viro/viro-webfont.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */ url("../fonts/Viro/viro-webfont.woff") format("woff"),
+        /* Modern Browsers */ url("../fonts/Viro/viro-webfont.ttf")
+            format("truetype"),
+        /* Safari, Android, iOS */
+            url("../fonts/Viro/viro-webfont.svg#svgFontName") format("svg");
+    /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+    font-display: auto;
+}
 
 $colorblk:#000; //black
 $bgcolor:#92cd00; //green
@@ -18,4 +33,4 @@ $contenttxtbg:#3ea514;
 
 $formboxbg :#136899;
 
-$fontList: 'viro-webfont', Candara , Arial,  sans-serif;
+$fontList: 'viroregular', Candara , Arial,  sans-serif;
