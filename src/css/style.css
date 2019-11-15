@@ -9,6 +9,56 @@
   font-display: auto;
 }
 
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  src: url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+  src: url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "viroregular", Candara, Arial, sans-serif;
+  margin: 0;
+  line-height: 1;
+  background-color: #92cd00;
+  font-size: 1em;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* remember to define focus styles! */
 figure {
   margin: 0;
@@ -90,7 +140,7 @@ a {
 }
 
 a:link {
-  color: #ccffbb;
+  color: #3a5f0b;
 }
 
 a:visited {
@@ -98,38 +148,42 @@ a:visited {
 }
 
 a:focus {
-  color: #ffffff;
+  outline: 1px dotted #3a5f0b;
 }
 
 a:active {
-  color: #ffffff;
+  color: #ccffbb;
 }
 
 h1 {
-  letter-spacing: 0.05em;
+  letter-spacing: 0.10em;
   font-weight: normal;
+  width: 100%;
 }
 
 h2 {
-  letter-spacing: 0.05em;
+  letter-spacing: 0.10em;
   font-weight: normal;
+  width: 100%;
 }
 
 h3 {
-  letter-spacing: 0.05em;
+  letter-spacing: 0.10em;
   font-weight: normal;
+  width: 100%;
 }
 
 p {
   overflow: hidden;
   font-weight: normal;
+  width: 100%;
 }
 
 img {
-  width: 100%;
   height: auto;
   max-width: 100%;
   border: none;
+  outline: none;
 }
 
 input:hover,
@@ -148,49 +202,7 @@ textarea:focus {
 /*Container*/
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "viroregular", Candara, Arial, sans-serif;
-  margin: 0;
-  line-height: 1;
-  background-color: #92cd00;
-  font-size: 1em;
-  height: auto;
-  padding-bottom: 20px;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+  box-sizing: inherit;
 }
 
 button#mobile-toggle {
@@ -315,6 +327,7 @@ button#mobile-toggle :focus {
   div.container_24 header figure#logo img#homeImage {
     display: block;
     height: 100%;
+    width: 100%;
   }
   div.container_24 header .socials {
     width: 20%;
@@ -350,10 +363,10 @@ button#mobile-toggle :focus {
     width: 23%;
     height: 100%;
     margin: 0.1em;
-    -ms-flex: 0 0 auto;
-    -webkit-box-flex: 0;
-            flex: 0 0 auto;
-    background-color: #000;
+    -ms-flex: 1 0 auto;
+    -webkit-box-flex: 1;
+            flex: 1 0 auto;
+    font-family: "FontAwesome";
   }
   div.container_24 header .socials ul li a {
     height: 100%;
@@ -597,8 +610,8 @@ button#mobile-toggle :focus {
     margin: 0;
     padding: 0.5em;
     height: auto;
-    /* The dots/bullets/indicators */
     /*Content boxes*/
+    /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 main.content:after {
@@ -609,7 +622,7 @@ button#mobile-toggle :focus {
     color: #ffffff;
     padding: 0;
     height: 50px;
-    margin: 0 0 1% 0;
+    margin: 0 0 0.5em 0;
     text-align: center;
     font-size: 2.5em;
     line-height: 50px;
@@ -623,7 +636,7 @@ button#mobile-toggle :focus {
     color: #ffffff;
   }
   div.container_24 div.grid_24 main.content .text {
-    width: 99%;
+    width: 100%;
     height: auto;
     background-color: #3ea514;
     font-size: 1em;
@@ -635,22 +648,20 @@ button#mobile-toggle :focus {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-flow: row wrap;
-    -ms-flex-pack: justify;
-    justify-content: space-around;
+    -ms-flex-pack: space-between;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     -ms-flex-align: stretch;
     -webkit-box-align: stretch;
             align-items: stretch;
-    /*Drop Cap*/
   }
   div.container_24 div.grid_24 main.content .text h1 {
     color: #ccffbb;
-    padding: 0;
     height: 50px;
-    margin: 0 0 0.5% 0;
+    margin: 0 0 0.5em 0;
     text-align: center;
     font-size: 2em;
     line-height: 50px;
-    width: 100%;
     background-color: #348C0F;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
@@ -665,36 +676,14 @@ button#mobile-toggle :focus {
         align-self: center;
     color: #3a5f0b;
     background-color: #92cd00;
-    padding: 0;
-    height: 50px;
-    margin: 0 0 0.5% 0;
+    height: 45px;
+    margin: 0 0 0.5em 0;
     text-align: center;
     font-size: 1.5em;
-    line-height: 50px;
+    line-height: 45px;
     display: block;
     clear: both;
-    width: 100%;
     font-weight: bold;
-  }
-  div.container_24 div.grid_24 main.content .text h3 {
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-        align-self: center;
-    background-color: #3a5f0b;
-    color: #ccffbb;
-    padding: 0;
-    height: 50px;
-    margin: 0.5em auto;
-    text-align: center;
-    font-size: 1.2em;
-    line-height: 50px;
-    width: 100%;
-  }
-  div.container_24 div.grid_24 main.content .text h3:hover {
-    cursor: pointer;
-    color: #3a5f0b;
-    background-color: #92cd00;
   }
   div.container_24 div.grid_24 main.content .text p {
     -ms-flex: 1 1 auto;
@@ -706,21 +695,9 @@ button#mobile-toggle :focus {
     margin-bottom: 0.5em;
     color: #000;
     background-color: #ccffbb;
-    line-height: 1.8em;
+    line-height: 1.7;
     font-size: 0.95em;
     display: block;
-  }
-  div.container_24 div.grid_24 main.content .text p.collection-text {
-    letter-spacing: 0.1em;
-    padding: 2%;
-    max-width: 100%;
-    width: auto;
-    margin: 0 0 0.5em 0;
-    color: #000;
-    background-color: #ccffbb;
-    line-height: 1.5em;
-    font-size: 1em;
-    display: none;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact {
     list-style: none;
@@ -797,21 +774,21 @@ button#mobile-toggle :focus {
     color: #ffffff;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(2) {
-    width: 40%;
+    width: 45%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(2)::before {
     font-family: "FontAwesome";
     content: "\f098";
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(3) {
-    width: 55%;
+    width: 54%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(3)::before {
     font-family: "FontAwesome";
     content: "\f0e0";
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(4) {
-    width: 53%;
+    width: 44%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(4)::before {
     font-family: "FontAwesome";
@@ -823,11 +800,6 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(5)::before {
     font-family: "FontAwesome";
     content: "\f0ac";
-  }
-  div.container_24 div.grid_24 main.content .text .audio {
-    background-color: #ffffff;
-    margin: 2% auto;
-    width: 20%;
   }
   div.container_24 div.grid_24 main.content .text .recycle_img {
     -webkit-align-self: center;
@@ -923,30 +895,116 @@ button#mobile-toggle :focus {
     width: 100%;
   }
   div.container_24 div.grid_24 main.content #facts_box {
-    height: 60vh;
+    height: auto;
+    position: relative;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
+  div.container_24 div.grid_24 main.content #contentboxes,
+  div.container_24 div.grid_24 main.content #collection-boxes {
+    position: relative;
+    z-index: 1;
+    min-height: 400px;
+  }
+  div.container_24 div.grid_24 main.content #mask,
+  div.container_24 div.grid_24 main.content #mask_two,
+  div.container_24 div.grid_24 main.content #mask3 {
+    width: 100%;
+    min-height: 650px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -ms-flex-flow: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row;
+    -ms-flex-pack: flex-start;
+    -webkit-box-pack: start;
+            justify-content: flex-start;
+    -ms-flex-align: stretch;
+    -webkit-box-align: stretch;
+            align-items: stretch;
+    /* Next & previous buttons */
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0 3em;
+    overflow: auto;
+    /*Drop Cap*/
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+    display: block;
+    background-color: #3a5f0b;
+    color: #ffffff;
+    height: auto;
+    line-height: 1.5;
+    margin: 0.5em auto;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
     padding: 0;
+    line-height: 50px;
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+    cursor: pointer;
+    color: #3a5f0b;
+    background-color: #92cd00;
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+    letter-spacing: 0.1em;
+    padding: 1em;
+    max-width: 100%;
+    width: auto;
+    margin: 0.5em;
+    color: #000;
+    background-color: #ccffbb;
+    line-height: 1.5em;
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts {
+    padding: 3em;
     background-color: #ccffbb;
     width: 100%;
-    float: left;
+    height: 100%;
     position: absolute;
     z-index: 1;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
     margin: 0.5em 0;
     padding: 0;
-    line-height: 35px;
+    height: 40px;
     display: block;
     text-align: center;
+    line-height: 1.4;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul {
     list-style: none;
     margin: 1em auto;
     padding: 0;
     width: 85%;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li {
     list-style: none;
     line-height: 40px;
     display: block;
@@ -957,7 +1015,9 @@ button#mobile-toggle :focus {
     height: 40px;
     clear: left;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:before {
     font-family: "FontAwesome";
     content: "\f1b8";
     font-style: normal;
@@ -972,38 +1032,25 @@ button#mobile-toggle :focus {
     height: auto;
     float: left;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:last-of-type {
     height: auto;
     display: inline-block;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:last-of-type::before {
     display: none;
   }
-  div.container_24 div.grid_24 main.content #mask,
-  div.container_24 div.grid_24 main.content #mask_two {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    z-index: 2;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -ms-flex-flow: row;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-flow: row;
-    -ms-flex-align: center;
-    -webkit-box-align: center;
-            align-items: center;
-    /* Next & previous buttons */
-  }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts__dots {
     text-align: center;
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts__dots--dot {
     cursor: pointer;
     height: 10px;
     width: 10px;
@@ -1017,13 +1064,17 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask .active,
   div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot:hover,
   div.container_24 div.grid_24 main.content #mask_two .active,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot:hover {
+  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 main.content #mask3 .active,
+  div.container_24 div.grid_24 main.content #mask3 .recycle-facts__dots--dot:hover {
     background-color: #717171;
   }
   div.container_24 div.grid_24 main.content #mask .prev,
   div.container_24 div.grid_24 main.content #mask .next,
   div.container_24 div.grid_24 main.content #mask_two .prev,
-  div.container_24 div.grid_24 main.content #mask_two .next {
+  div.container_24 div.grid_24 main.content #mask_two .next,
+  div.container_24 div.grid_24 main.content #mask3 .prev,
+  div.container_24 div.grid_24 main.content #mask3 .next {
     cursor: pointer;
     position: absolute;
     top: 0;
@@ -1040,37 +1091,34 @@ button#mobile-toggle :focus {
     z-index: 10;
   }
   div.container_24 div.grid_24 main.content #mask .next,
-  div.container_24 div.grid_24 main.content #mask_two .next {
+  div.container_24 div.grid_24 main.content #mask_two .next,
+  div.container_24 div.grid_24 main.content #mask3 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
   }
   div.container_24 div.grid_24 main.content #mask .prev:hover,
   div.container_24 div.grid_24 main.content #mask .next:hover,
   div.container_24 div.grid_24 main.content #mask_two .prev:hover,
-  div.container_24 div.grid_24 main.content #mask_two .next:hover {
+  div.container_24 div.grid_24 main.content #mask_two .next:hover,
+  div.container_24 div.grid_24 main.content #mask3 .prev:hover,
+  div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #contentboxes {
-    position: relative;
-    z-index: 1;
-    height: 370px;
-    /*contentbox end*/
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox {
-    width: 32%;
+  div.container_24 div.grid_24 main.content #mask .contentbox,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox {
+    width: 100%;
     min-height: 225px;
     height: auto;
     background-color: #2c6700;
-    float: left;
     margin: 0.5em;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 2.5em;
-    -ms-flex: 1 0 auto;
-    -webkit-box-flex: 1;
-            flex: 1 0 auto;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
     text-indent: 0;
     height: auto;
     line-height: 35px;
@@ -1084,7 +1132,9 @@ button#mobile-toggle :focus {
     width: 100%;
     border-bottom: 5px #2c6700 solid;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox p {
+  div.container_24 div.grid_24 main.content #mask .contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
     letter-spacing: 0.05em;
     font-size: 1em;
     margin: 0 0 0.25em 0;
@@ -1094,15 +1144,21 @@ button#mobile-toggle :focus {
     width: auto;
     display: block;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image {
     float: left;
     margin: 0 0.25em 0 0;
     width: 30%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
     font-size: 0.95em;
     height: 35px;
     padding: 0;
@@ -1120,7 +1176,9 @@ button#mobile-toggle :focus {
     -webkit-transition: all 0.2s ease-in 0s;
     transition: all 0.2s ease-in 0s;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
     background-color: #ccffbb;
     color: #297F10;
     cursor: pointer;
@@ -1181,12 +1239,12 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
     display: block;
-    width: 45%;
+    width: 40%;
     margin: 0.5em auto;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
     display: block;
-    width: 26%;
+    width: 20%;
     margin: 0.5em auto;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
@@ -1391,7 +1449,7 @@ button#mobile-toggle :focus {
     width: 12%;
   }
   div.container_24 nav ul li a {
-    font-size: 0.9em;
+    font-size: 1em;
   }
   div.container_24 nav ul li a:hover {
     text-shadow: none;
@@ -1457,7 +1515,6 @@ button#mobile-toggle :focus {
     background-color: #3ea514;
     /* The dots/bullets/indicators */
     /*Content boxes*/
-    /*Content boxes*/
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
@@ -1471,7 +1528,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text {
     padding: 0.5em;
-    /*Drop Cap*/
   }
   div.container_24 div.grid_24 main.content .text h1 {
     font-size: 1.9em;
@@ -1479,25 +1535,13 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text h2 {
     font-size: 1.4em;
   }
-  div.container_24 div.grid_24 main.content .text h3 {
-    font-size: 1.1em;
-  }
-  div.container_24 div.grid_24 main.content .text h3:hover {
-    cursor: pointer;
-  }
   div.container_24 div.grid_24 main.content .text p {
-    font-size: 0.9em;
-  }
-  div.container_24 div.grid_24 main.content .text p.collection-text {
     font-size: 0.9em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact {
     display: inline-block;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact::before {
-    font-family: "FontAwesome";
-    content: "\f015";
-    padding: 1.5%;
     font-size: 1.4em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
@@ -1526,18 +1570,14 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text ul.recycle-facts li {
     font-size: 0.85em;
   }
-  div.container_24 div.grid_24 main.content .text ul.recycle-facts li span::before {
-    font-size: 1.15em;
+  div.container_24 div.grid_24 main.content .text ul.recycle-facts li span:before {
+    font-size: 1.5em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-facts li a {
     font-size: 1em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-facts li a:hover {
     color: #ffffff;
-  }
-  div.container_24 div.grid_24 main.content .text .audio {
-    margin: 2% auto;
-    width: 20%;
   }
   div.container_24 div.grid_24 main.content .text .recycle_img {
     width: 10%;
@@ -1573,87 +1613,135 @@ button#mobile-toggle :focus {
     margin-bottom: 0.5em;
   }
   div.container_24 div.grid_24 main.content #facts_box {
-    height: 60vh;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
-    line-height: 35px;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul {
-    list-style: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.9em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
-    font-size: 1.3em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
     height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
-    display: none;
-  }
   div.container_24 div.grid_24 main.content #mask,
-  div.container_24 div.grid_24 main.content #mask_two {
+  div.container_24 div.grid_24 main.content #mask_two,
+  div.container_24 div.grid_24 main.content #mask3 {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots {
+  div.container_24 div.grid_24 main.content #mask div.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+    /*Drop Cap*/
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+    font-size: 1.2em;
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+    line-height: 1.5;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li {
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:last-of-type {
+    height: auto;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts__dots {
     text-align: center;
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts__dots--dot {
     cursor: pointer;
   }
   div.container_24 div.grid_24 main.content #mask .active,
   div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot:hover,
   div.container_24 div.grid_24 main.content #mask_two .active,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot:hover {
+  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 main.content #mask3 .active,
+  div.container_24 div.grid_24 main.content #mask3 .recycle-facts__dots--dot:hover {
     background-color: #717171;
   }
   div.container_24 div.grid_24 main.content #mask .prev,
   div.container_24 div.grid_24 main.content #mask .next,
   div.container_24 div.grid_24 main.content #mask_two .prev,
-  div.container_24 div.grid_24 main.content #mask_two .next {
+  div.container_24 div.grid_24 main.content #mask_two .next,
+  div.container_24 div.grid_24 main.content #mask3 .prev,
+  div.container_24 div.grid_24 main.content #mask3 .next {
     top: 50%;
     margin-top: -22px;
     font-size: 18px;
   }
   div.container_24 div.grid_24 main.content #mask .next,
-  div.container_24 div.grid_24 main.content #mask_two .next {
+  div.container_24 div.grid_24 main.content #mask_two .next,
+  div.container_24 div.grid_24 main.content #mask3 .next {
     right: 0;
   }
   div.container_24 div.grid_24 main.content #mask .prev:hover,
   div.container_24 div.grid_24 main.content #mask .next:hover,
   div.container_24 div.grid_24 main.content #mask_two .prev:hover,
-  div.container_24 div.grid_24 main.content #mask_two .next:hover {
+  div.container_24 div.grid_24 main.content #mask_two .next:hover,
+  div.container_24 div.grid_24 main.content #mask3 .prev:hover,
+  div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #contentboxes {
-    /*contentbox end*/
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox {
+  div.container_24 div.grid_24 main.content #mask .contentbox,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox {
     min-height: 225px;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
     font-size: 1.1em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox p {
+  div.container_24 div.grid_24 main.content #mask .contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
     font-size: 0.9em;
     width: 55%;
     letter-spacing: 0.12em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
     width: 55%;
     text-shadow: none;
   }
@@ -1672,10 +1760,10 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
-    width: 53%;
+    width: 40%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
-    width: 26%;
+    width: 20%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
     margin: 0;
@@ -1777,7 +1865,7 @@ button#mobile-toggle :focus {
     height: 50px;
   }
   div.container_24 nav ul li a {
-    font-size: 0.9em;
+    font-size: 1em;
   }
   div.container_24 nav ul li a:hover {
     text-shadow: none;
@@ -1840,7 +1928,6 @@ button#mobile-toggle :focus {
     /*Content*/
     background-color: #3ea514;
     /* The dots/bullets/indicators */
-    /*Content boxes*/
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
@@ -1853,70 +1940,142 @@ button#mobile-toggle :focus {
     width: 80%;
   }
   div.container_24 div.grid_24 main.content #facts_box {
-    height: 60vh;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
-    line-height: 35px;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul {
-    list-style: none;
-    width: 89%;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.85em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
-    width: 40px;
-    font-size: 1.2em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
     height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
-    display: none;
-  }
   div.container_24 div.grid_24 main.content #mask,
-  div.container_24 div.grid_24 main.content #mask_two {
+  div.container_24 div.grid_24 main.content #mask_two,
+  div.container_24 div.grid_24 main.content #mask3 {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots {
+  div.container_24 div.grid_24 main.content #mask div.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+    /*Drop Cap*/
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+    font-size: 1.2em;
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+    line-height: 1.5;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul {
+    list-style: none;
+    width: 89%;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li {
+    font-size: 0.85em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:before {
+    width: 40px;
+    font-size: 1.2em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:last-of-type {
+    height: auto;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts__dots {
     text-align: center;
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts__dots--dot {
     cursor: pointer;
   }
   div.container_24 div.grid_24 main.content #mask .active,
   div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot:hover,
   div.container_24 div.grid_24 main.content #mask_two .active,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot:hover {
+  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 main.content #mask3 .active,
+  div.container_24 div.grid_24 main.content #mask3 .recycle-facts__dots--dot:hover {
     background-color: #717171;
   }
   div.container_24 div.grid_24 main.content #mask .prev,
   div.container_24 div.grid_24 main.content #mask .next,
   div.container_24 div.grid_24 main.content #mask_two .prev,
-  div.container_24 div.grid_24 main.content #mask_two .next {
+  div.container_24 div.grid_24 main.content #mask_two .next,
+  div.container_24 div.grid_24 main.content #mask3 .prev,
+  div.container_24 div.grid_24 main.content #mask3 .next {
     top: 50%;
     margin-top: -22px;
     font-size: 18px;
   }
   div.container_24 div.grid_24 main.content #mask .next,
-  div.container_24 div.grid_24 main.content #mask_two .next {
+  div.container_24 div.grid_24 main.content #mask_two .next,
+  div.container_24 div.grid_24 main.content #mask3 .next {
     right: 0;
   }
   div.container_24 div.grid_24 main.content #mask .prev:hover,
   div.container_24 div.grid_24 main.content #mask .next:hover,
   div.container_24 div.grid_24 main.content #mask_two .prev:hover,
-  div.container_24 div.grid_24 main.content #mask_two .next:hover {
+  div.container_24 div.grid_24 main.content #mask_two .next:hover,
+  div.container_24 div.grid_24 main.content #mask3 .prev:hover,
+  div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content .text {
-    /*Drop Cap*/
+  div.container_24 div.grid_24 main.content #mask .contentbox,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox {
+    min-height: 200px;
+  }
+  div.container_24 div.grid_24 main.content #mask .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 main.content #mask .contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
+    font-size: 0.85em;
+  }
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image {
+    width: 40%;
+  }
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
+    display: block;
+  }
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
+    font-size: 0.85em;
+    width: 60%;
+  }
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
+    width: 60%;
   }
   div.container_24 div.grid_24 main.content .text h1 {
     font-size: 1.8em;
@@ -1924,27 +2083,15 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text h2 {
     font-size: 1.3em;
   }
-  div.container_24 div.grid_24 main.content .text h3 {
-    font-size: 1em;
-  }
-  div.container_24 div.grid_24 main.content .text h3:hover {
-    cursor: pointer;
-  }
   div.container_24 div.grid_24 main.content .text p {
     font-size: 0.9em;
     width: 80%;
-  }
-  div.container_24 div.grid_24 main.content .text p.collection-text {
-    line-height: 1.5em;
-    font-size: 0.85em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact {
     width: 53%;
     display: inline-block;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact::before {
-    font-family: "FontAwesome";
-    content: "\f015";
     font-size: 1.3em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
@@ -1975,7 +2122,7 @@ button#mobile-toggle :focus {
     font-size: 0.8em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-facts li span::before {
-    font-size: 1.1em;
+    font-size: 1.5em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-facts li a {
     font-size: 1em;
@@ -2020,31 +2167,6 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
     margin-bottom: 0.5em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes {
-    /*contentbox end*/
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox {
-    min-height: 200px;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox h2 {
-    font-size: 1em;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox p {
-    font-size: 0.85em;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image {
-    width: 40%;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image img {
-    display: block;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button {
-    font-size: 0.85em;
-    width: 60%;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button:hover {
-    width: 60%;
-  }
   div.container_24 div.grid_24 main.content #home_contentboxes {
     /*contentbox*/
   }
@@ -2060,10 +2182,10 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
-    width: 53%;
+    width: 40%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
-    width: 26%;
+    width: 20%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
     margin: 0;
@@ -2165,7 +2287,7 @@ button#mobile-toggle :focus {
     width: 12%;
   }
   div.container_24 nav ul li a {
-    font-size: 0.9em;
+    font-size: 1em;
   }
   div.container_24 nav ul li a:hover {
     text-shadow: none;
@@ -2226,7 +2348,6 @@ button#mobile-toggle :focus {
     /*Content*/
     background-color: #3ea514;
     /* The dots/bullets/indicators */
-    /*Content boxes*/
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
@@ -2239,34 +2360,20 @@ button#mobile-toggle :focus {
     width: 80%;
     line-height: 1.5em;
   }
-  div.container_24 div.grid_24 main.content .text {
-    /*Drop Cap*/
-  }
   div.container_24 div.grid_24 main.content .text h1 {
     font-size: 1.65em;
   }
   div.container_24 div.grid_24 main.content .text h2 {
     font-size: 1.2em;
   }
-  div.container_24 div.grid_24 main.content .text h3 {
-    font-size: 0.95em;
-  }
-  div.container_24 div.grid_24 main.content .text h3:hover {
-    cursor: pointer;
-  }
   div.container_24 div.grid_24 main.content .text p {
     font-size: 0.85em;
     width: 78%;
-  }
-  div.container_24 div.grid_24 main.content .text p.collection-text {
-    font-size: 0.8em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact {
     display: inline-block;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact::before {
-    font-family: "FontAwesome";
-    content: "\f015";
     font-size: 1.2em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
@@ -2296,8 +2403,8 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text ul.recycle-facts li {
     font-size: 0.75em;
   }
-  div.container_24 div.grid_24 main.content .text ul.recycle-facts li span::before {
-    font-size: 1.1em;
+  div.container_24 div.grid_24 main.content .text ul.recycle-facts li span:before {
+    font-size: 1.5em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-facts li a {
     font-size: 1em;
@@ -2343,94 +2450,149 @@ button#mobile-toggle :focus {
     margin-bottom: 0.5em;
   }
   div.container_24 div.grid_24 main.content #facts_box {
-    height: 60vh;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
-    line-height: 35px;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul {
-    list-style: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.85em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
-    font-size: 1.2em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
     height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
-    display: none;
-  }
   div.container_24 div.grid_24 main.content #mask,
-  div.container_24 div.grid_24 main.content #mask_two {
+  div.container_24 div.grid_24 main.content #mask_two,
+  div.container_24 div.grid_24 main.content #mask3 {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots {
+  div.container_24 div.grid_24 main.content #mask div.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+    /*Drop Cap*/
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+    font-size: 1.2em;
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts {
+    padding: 3em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+    line-height: 1.5;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li {
+    font-size: 0.85em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:before {
+    font-size: 1.2em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:last-of-type {
+    height: auto;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts__dots {
     text-align: center;
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts__dots--dot {
     cursor: pointer;
   }
   div.container_24 div.grid_24 main.content #mask .active,
   div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot:hover,
   div.container_24 div.grid_24 main.content #mask_two .active,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot:hover {
+  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 main.content #mask3 .active,
+  div.container_24 div.grid_24 main.content #mask3 .recycle-facts__dots--dot:hover {
     background-color: #717171;
   }
   div.container_24 div.grid_24 main.content #mask .prev,
   div.container_24 div.grid_24 main.content #mask .next,
   div.container_24 div.grid_24 main.content #mask_two .prev,
-  div.container_24 div.grid_24 main.content #mask_two .next {
+  div.container_24 div.grid_24 main.content #mask_two .next,
+  div.container_24 div.grid_24 main.content #mask3 .prev,
+  div.container_24 div.grid_24 main.content #mask3 .next {
     top: 50%;
     margin-top: -22px;
     font-size: 18px;
   }
   div.container_24 div.grid_24 main.content #mask .next,
-  div.container_24 div.grid_24 main.content #mask_two .next {
+  div.container_24 div.grid_24 main.content #mask_two .next,
+  div.container_24 div.grid_24 main.content #mask3 .next {
     right: 0;
   }
   div.container_24 div.grid_24 main.content #mask .prev:hover,
   div.container_24 div.grid_24 main.content #mask .next:hover,
   div.container_24 div.grid_24 main.content #mask_two .prev:hover,
-  div.container_24 div.grid_24 main.content #mask_two .next:hover {
+  div.container_24 div.grid_24 main.content #mask_two .next:hover,
+  div.container_24 div.grid_24 main.content #mask3 .prev:hover,
+  div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #contentboxes {
-    /*contentbox end*/
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox {
+  div.container_24 div.grid_24 main.content #mask .contentbox,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox {
     min-height: 180px;
     margin: 0.25em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
     font-size: 1.1em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox p {
+  div.container_24 div.grid_24 main.content #mask .contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
     font-size: 0.85em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image {
     float: none;
     display: block;
     margin: 0.5em auto;
     width: 55%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
     font-size: 0.8em;
     width: 100%;
     letter-spacing: 0.12em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
     width: 100%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes {
@@ -2448,10 +2610,10 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
-    width: 60%;
+    width: 40%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
-    width: 26%;
+    width: 20%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
     margin: 0;
@@ -2617,7 +2779,6 @@ button#mobile-toggle :focus {
     /*Content*/
     background-color: #3ea514;
     /* The dots/bullets/indicators */
-    /*Content boxes*/
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
@@ -2630,36 +2791,21 @@ button#mobile-toggle :focus {
     width: 80%;
     line-height: 1.5em;
   }
-  div.container_24 div.grid_24 main.content .text {
-    /*Drop Cap*/
-  }
   div.container_24 div.grid_24 main.content .text h1 {
     font-size: 1.6em;
   }
   div.container_24 div.grid_24 main.content .text h2 {
     font-size: 1.2em;
   }
-  div.container_24 div.grid_24 main.content .text h3 {
-    font-size: 0.95em;
-  }
-  div.container_24 div.grid_24 main.content .text h3:hover {
-    cursor: pointer;
-  }
   div.container_24 div.grid_24 main.content .text p {
     font-size: 0.8em;
     width: 75%;
-  }
-  div.container_24 div.grid_24 main.content .text p.collection-text {
-    line-height: 1.5em;
-    font-size: 0.75em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact {
     width: 51%;
     display: inline-block;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact::before {
-    font-family: "FontAwesome";
-    content: "\f015";
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
@@ -2687,10 +2833,10 @@ button#mobile-toggle :focus {
     width: 98%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-facts li {
-    font-size: 0.7em;
+    font-size: 0.75em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-facts li span::before {
-    font-size: 1.1em;
+    font-size: 1.5em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-facts li a {
     font-size: 1em;
@@ -2736,88 +2882,141 @@ button#mobile-toggle :focus {
     margin-bottom: 0.5em;
   }
   div.container_24 div.grid_24 main.content #facts_box {
-    height: 60vh;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
-    line-height: 35px;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul {
-    list-style: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.8em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
-    font-size: 1.2em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
     height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
-    display: none;
-  }
   div.container_24 div.grid_24 main.content #mask,
-  div.container_24 div.grid_24 main.content #mask_two {
+  div.container_24 div.grid_24 main.content #mask_two,
+  div.container_24 div.grid_24 main.content #mask3 {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots {
+  div.container_24 div.grid_24 main.content #mask div.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+    /*Drop Cap*/
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+    font-size: 1.2em;
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts {
+    padding: 3em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+    line-height: 1.5;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li {
+    font-size: 0.8em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:before {
+    font-size: 1.2em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:last-of-type {
+    height: auto;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts__dots {
     text-align: center;
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts__dots--dot {
     cursor: pointer;
   }
   div.container_24 div.grid_24 main.content #mask .active,
   div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot:hover,
   div.container_24 div.grid_24 main.content #mask_two .active,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot:hover {
+  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 main.content #mask3 .active,
+  div.container_24 div.grid_24 main.content #mask3 .recycle-facts__dots--dot:hover {
     background-color: #717171;
   }
   div.container_24 div.grid_24 main.content #mask .prev,
   div.container_24 div.grid_24 main.content #mask .next,
   div.container_24 div.grid_24 main.content #mask_two .prev,
-  div.container_24 div.grid_24 main.content #mask_two .next {
+  div.container_24 div.grid_24 main.content #mask_two .next,
+  div.container_24 div.grid_24 main.content #mask3 .prev,
+  div.container_24 div.grid_24 main.content #mask3 .next {
     top: 50%;
     margin-top: -22px;
     font-size: 18px;
   }
   div.container_24 div.grid_24 main.content #mask .next,
-  div.container_24 div.grid_24 main.content #mask_two .next {
+  div.container_24 div.grid_24 main.content #mask_two .next,
+  div.container_24 div.grid_24 main.content #mask3 .next {
     right: 0;
   }
   div.container_24 div.grid_24 main.content #mask .prev:hover,
   div.container_24 div.grid_24 main.content #mask .next:hover,
   div.container_24 div.grid_24 main.content #mask_two .prev:hover,
-  div.container_24 div.grid_24 main.content #mask_two .next:hover {
+  div.container_24 div.grid_24 main.content #mask_two .next:hover,
+  div.container_24 div.grid_24 main.content #mask3 .prev:hover,
+  div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #contentboxes {
-    /*contentbox end*/
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
     font-size: 1.1em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox p {
+  div.container_24 div.grid_24 main.content #mask .contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
     font-size: 0.85em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image {
     margin: 0.5em auto;
     width: 35%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
     font-size: 0.8em;
     width: 100%;
     letter-spacing: 0.12em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
     width: 100%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes {
@@ -2835,10 +3034,10 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
-    width: 60%;
+    width: 40%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
-    width: 30%;
+    width: 20%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
     margin: 0;
@@ -3036,7 +3235,6 @@ button#mobile-toggle :focus {
     font-size: 0.8em;
   }
   div.container_24 div.grid_24 main.content .text p.collection-text {
-    line-height: 1.5em;
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact {
@@ -3044,8 +3242,6 @@ button#mobile-toggle :focus {
     display: inline-block;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact::before {
-    font-family: "FontAwesome";
-    content: "\f015";
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
@@ -3141,89 +3337,145 @@ button#mobile-toggle :focus {
     width: 100%;
   }
   div.container_24 div.grid_24 main.content #facts_box {
-    height: 60vh;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0.5em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
-    line-height: 35px;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul {
-    list-style: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.8em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
-    font-size: 1.1em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
     height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
-    display: none;
-  }
   div.container_24 div.grid_24 main.content #mask,
-  div.container_24 div.grid_24 main.content #mask_two {
+  div.container_24 div.grid_24 main.content #mask_two,
+  div.container_24 div.grid_24 main.content #mask3 {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots {
+  div.container_24 div.grid_24 main.content #mask div.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+    /*Drop Cap*/
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+    font-size: 1.2em;
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts {
+    padding: 2em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+    line-height: 1.5;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li {
+    font-size: 0.8em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:before {
+    font-size: 1.1em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:last-of-type {
+    height: auto;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts__dots {
     text-align: center;
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts__dots--dot {
     cursor: pointer;
   }
   div.container_24 div.grid_24 main.content #mask .active,
   div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot:hover,
   div.container_24 div.grid_24 main.content #mask_two .active,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot:hover {
+  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 main.content #mask3 .active,
+  div.container_24 div.grid_24 main.content #mask3 .recycle-facts__dots--dot:hover {
     background-color: #717171;
   }
   div.container_24 div.grid_24 main.content #mask .prev,
   div.container_24 div.grid_24 main.content #mask .next,
   div.container_24 div.grid_24 main.content #mask_two .prev,
-  div.container_24 div.grid_24 main.content #mask_two .next {
+  div.container_24 div.grid_24 main.content #mask_two .next,
+  div.container_24 div.grid_24 main.content #mask3 .prev,
+  div.container_24 div.grid_24 main.content #mask3 .next {
     top: 50%;
     margin-top: -22px;
     font-size: 18px;
   }
   div.container_24 div.grid_24 main.content #mask .next,
-  div.container_24 div.grid_24 main.content #mask_two .next {
+  div.container_24 div.grid_24 main.content #mask_two .next,
+  div.container_24 div.grid_24 main.content #mask3 .next {
     right: 0;
   }
   div.container_24 div.grid_24 main.content #mask .prev:hover,
   div.container_24 div.grid_24 main.content #mask .next:hover,
   div.container_24 div.grid_24 main.content #mask_two .prev:hover,
-  div.container_24 div.grid_24 main.content #mask_two .next:hover {
+  div.container_24 div.grid_24 main.content #mask_two .next:hover,
+  div.container_24 div.grid_24 main.content #mask3 .prev:hover,
+  div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #contentboxes {
-    height: auto;
-    /*contentbox end*/
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox {
+  div.container_24 div.grid_24 main.content #mask .contentbox,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox {
     width: 49%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
     font-size: 1.1em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox p {
+  div.container_24 div.grid_24 main.content #mask .contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
     font-size: 0.85em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
     font-size: 1em;
     width: 100%;
     letter-spacing: 0.12em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 main.content #contentboxes,
+  div.container_24 div.grid_24 main.content #collection-boxes {
+    height: auto;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes {
     /*contentbox*/
@@ -3241,10 +3493,10 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
-    width: 60%;
+    width: 40%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
-    width: 30%;
+    width: 20%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
     margin: 0;
@@ -3429,7 +3681,6 @@ button#mobile-toggle :focus {
     font-size: 0.75em;
   }
   div.container_24 div.grid_24 main.content .text p.collection-text {
-    letter-spacing: 0.1em;
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact {
@@ -3437,8 +3688,6 @@ button#mobile-toggle :focus {
     display: inline-block;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact::before {
-    font-family: "FontAwesome";
-    content: "\f015";
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
@@ -3515,89 +3764,140 @@ button#mobile-toggle :focus {
     margin-bottom: 1em;
   }
   div.container_24 div.grid_24 main.content #facts_box {
-    height: 60vh;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0.5em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
-    line-height: 35px;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul {
-    list-style: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.75em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
-    font-size: 1.1em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
     height: auto;
   }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
-    display: none;
-  }
   div.container_24 div.grid_24 main.content #mask,
-  div.container_24 div.grid_24 main.content #mask_two {
+  div.container_24 div.grid_24 main.content #mask_two,
+  div.container_24 div.grid_24 main.content #mask3 {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots {
+  div.container_24 div.grid_24 main.content #mask div.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+    /*Drop Cap*/
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+    font-size: 1.2em;
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+    cursor: pointer;
+  }
+  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+    font-size: 1em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+    line-height: 1.5;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li {
+    font-size: 0.75em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:before {
+    font-size: 1.1em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:last-of-type {
+    height: auto;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts__dots {
     text-align: center;
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts__dots--dot {
     cursor: pointer;
   }
   div.container_24 div.grid_24 main.content #mask .active,
   div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot:hover,
   div.container_24 div.grid_24 main.content #mask_two .active,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot:hover {
+  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot:hover,
+  div.container_24 div.grid_24 main.content #mask3 .active,
+  div.container_24 div.grid_24 main.content #mask3 .recycle-facts__dots--dot:hover {
     background-color: #717171;
   }
   div.container_24 div.grid_24 main.content #mask .prev,
   div.container_24 div.grid_24 main.content #mask .next,
   div.container_24 div.grid_24 main.content #mask_two .prev,
-  div.container_24 div.grid_24 main.content #mask_two .next {
+  div.container_24 div.grid_24 main.content #mask_two .next,
+  div.container_24 div.grid_24 main.content #mask3 .prev,
+  div.container_24 div.grid_24 main.content #mask3 .next {
     top: 50%;
     margin-top: -22px;
     font-size: 18px;
   }
   div.container_24 div.grid_24 main.content #mask .next,
-  div.container_24 div.grid_24 main.content #mask_two .next {
+  div.container_24 div.grid_24 main.content #mask_two .next,
+  div.container_24 div.grid_24 main.content #mask3 .next {
     right: 0;
   }
   div.container_24 div.grid_24 main.content #mask .prev:hover,
   div.container_24 div.grid_24 main.content #mask .next:hover,
   div.container_24 div.grid_24 main.content #mask_two .prev:hover,
-  div.container_24 div.grid_24 main.content #mask_two .next:hover {
+  div.container_24 div.grid_24 main.content #mask_two .next:hover,
+  div.container_24 div.grid_24 main.content #mask3 .prev:hover,
+  div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #contentboxes {
-    height: auto;
-    /*contentbox end*/
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox {
+  div.container_24 div.grid_24 main.content #mask .contentbox,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox {
     width: 49%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
     font-size: 1.1em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox p {
+  div.container_24 div.grid_24 main.content #mask .contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
     font-size: 0.85em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
     font-size: 1em;
     width: 100%;
     letter-spacing: 0.12em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 main.content #contentboxes,
+  div.container_24 div.grid_24 main.content #collection-boxes {
+    height: auto;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes {
     /*contentbox*/
@@ -3614,10 +3914,10 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
-    width: 60%;
+    width: 40%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
-    width: 30%;
+    width: 20%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
     margin: 0;
@@ -3815,8 +4115,6 @@ button#mobile-toggle :focus {
     width: 70%;
   }
   div.container_24 div.grid_24 main.content .text p.collection-text {
-    letter-spacing: 0.1em;
-    padding: 2%;
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact {
@@ -3824,8 +4122,6 @@ button#mobile-toggle :focus {
     display: inline-block;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact::before {
-    font-family: "FontAwesome";
-    content: "\f015";
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
@@ -3897,43 +4193,46 @@ button#mobile-toggle :focus {
     font-weight: bold;
   }
   div.container_24 div.grid_24 main.content #facts_box {
-    height: 60vh;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0.5em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
-    line-height: 35px;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul {
-    list-style: none;
-    width: 88%;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.75em;
-    line-height: 15px;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
-    line-height: 20px;
-    font-size: 1.1em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
     height: auto;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
-    display: none;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2 {
+    line-height: 1.5;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul {
+    list-style: none;
+    width: 88%;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li {
+    font-size: 0.75em;
+    line-height: 15px;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:before {
+    line-height: 20px;
+    font-size: 1.1em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type {
+    height: auto;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots {
     text-align: center;
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots--dot {
     cursor: pointer;
   }
   div.container_24 div.grid_24 main.content #mask .active,
@@ -3960,28 +4259,34 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #contentboxes {
-    height: auto;
-    /*contentbox end*/
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox {
+  div.container_24 div.grid_24 main.content #mask .contentbox,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox {
     margin: 0.2em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox h2 {
     font-size: 1.1em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox p {
+  div.container_24 div.grid_24 main.content #mask .contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox p {
     font-size: 0.85em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button {
     font-size: 0.95em;
     letter-spacing: 0.12em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 main.content #contentboxes,
+  div.container_24 div.grid_24 main.content #collection-boxes {
+    height: auto;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes {
     /*contentbox*/
@@ -3999,10 +4304,10 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
-    width: 70%;
+    width: 40%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
-    width: 30%;
+    width: 20%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
     margin: 0;
@@ -4223,8 +4528,6 @@ button#mobile-toggle :focus {
     width: 70%;
   }
   div.container_24 div.grid_24 main.content .text p.collection-text {
-    letter-spacing: 0.1em;
-    padding: 2%;
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact {
@@ -4232,8 +4535,6 @@ button#mobile-toggle :focus {
     display: inline-block;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact::before {
-    font-family: "FontAwesome";
-    content: "\f015";
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
@@ -4242,14 +4543,14 @@ button#mobile-toggle :focus {
     font-size: 0.75em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(2) {
-    width: 35%;
+    width: 40%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(2)::before {
     font-family: "FontAwesome";
     content: "\f098";
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(3) {
-    width: 60%;
+    width: 55%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact:nth-of-type(3)::before {
     font-family: "FontAwesome";
@@ -4322,40 +4623,43 @@ button#mobile-toggle :focus {
     font-weight: bold;
   }
   div.container_24 div.grid_24 main.content #facts_box {
-    height: 60vh;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0.5em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
-    line-height: 35px;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul {
-    list-style: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.8em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
-    font-size: 1.2em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
     height: auto;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
-    display: none;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2 {
+    line-height: 1.5;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li {
+    font-size: 0.8em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:before {
+    font-size: 1.2em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type {
+    height: auto;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots {
     text-align: center;
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots--dot {
     cursor: pointer;
   }
   div.container_24 div.grid_24 main.content #mask .active,
@@ -4382,32 +4686,40 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #contentboxes {
-    height: auto;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox {
+  div.container_24 div.grid_24 main.content #mask .contentbox,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox {
     width: 48.5%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox h2 {
     font-size: 1em;
     height: auto;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox p {
+  div.container_24 div.grid_24 main.content #mask .contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox p {
     font-size: 0.85em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image {
     width: 40%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button {
     font-size: 0.9em;
     width: 100%;
     letter-spacing: 0.12em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 main.content #contentboxes,
+  div.container_24 div.grid_24 main.content #collection-boxes {
+    height: auto;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes {
     /*contentbox*/
@@ -4424,10 +4736,10 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
-    width: 70%;
+    width: 40%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
-    width: 30%;
+    width: 20%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
     margin: 0;
@@ -4636,7 +4948,6 @@ button#mobile-toggle :focus {
     font-size: 0.75em;
   }
   div.container_24 div.grid_24 main.content .text p.collection-text {
-    padding: 2%;
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact {
@@ -4644,8 +4955,6 @@ button#mobile-toggle :focus {
     display: inline-block;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact::before {
-    font-family: "FontAwesome";
-    content: "\f015";
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
@@ -4715,40 +5024,43 @@ button#mobile-toggle :focus {
     font-weight: bold;
   }
   div.container_24 div.grid_24 main.content #facts_box {
-    height: 60vh;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0.5em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
-    line-height: 35px;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul {
-    list-style: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.8em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
-    font-size: 1.2em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
     height: auto;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
-    display: none;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2 {
+    line-height: 1.5;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li {
+    font-size: 0.8em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:before {
+    font-size: 1.2em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type {
+    height: auto;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots {
     text-align: center;
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots--dot {
     cursor: pointer;
   }
   div.container_24 div.grid_24 main.content #mask .active,
@@ -4775,37 +5087,42 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #contentboxes {
-    height: auto;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox {
+  div.container_24 div.grid_24 main.content #mask .contentbox,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox {
     width: 98.7%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox h2 {
     font-size: 1.3em;
     font-weight: bold;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox p {
+  div.container_24 div.grid_24 main.content #mask .contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox p {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image {
     width: 25%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button {
     font-size: 0.95em;
     width: 100%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 main.content #contentboxes,
+  div.container_24 div.grid_24 main.content #collection-boxes {
+    height: auto;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes {
     /*contentbox*/
-  }
-  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox {
-    width: 31.5%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h2 {
     font-size: 1em;
@@ -4817,10 +5134,10 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#paperBottles,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#flowChart,
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#RecycleCircle {
-    width: 70%;
+    width: 40%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
-    width: 30%;
+    width: 20%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
     margin: 0;
@@ -5073,7 +5390,6 @@ button#mobile-toggle :focus {
     font-size: 0.75em;
   }
   div.container_24 div.grid_24 main.content .text p.collection-text {
-    padding: 2%;
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact {
@@ -5081,8 +5397,6 @@ button#mobile-toggle :focus {
     display: inline-block;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact::before {
-    font-family: "FontAwesome";
-    content: "\f015";
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
@@ -5159,40 +5473,43 @@ button#mobile-toggle :focus {
     padding: 0;
   }
   div.container_24 div.grid_24 main.content #facts_box {
-    height: 60vh;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0.5em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
-    line-height: 35px;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul {
-    list-style: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.75em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
-    font-size: 1.3em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
     height: auto;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
-    display: none;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2 {
+    line-height: 1.5;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li {
+    font-size: 0.75em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type {
+    height: auto;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots {
     text-align: center;
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots--dot {
     cursor: pointer;
   }
   div.container_24 div.grid_24 main.content #mask .active,
@@ -5219,30 +5536,38 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #contentboxes {
-    height: auto;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox {
+  div.container_24 div.grid_24 main.content #mask .contentbox,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox {
     width: 98.7%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox h2 {
     font-size: 1.25em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox p {
+  div.container_24 div.grid_24 main.content #mask .contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox p {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image {
     width: 25%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button {
     font-size: 1em;
     width: 100%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 main.content #contentboxes,
+  div.container_24 div.grid_24 main.content #collection-boxes {
+    height: auto;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes {
     height: auto;
@@ -5253,10 +5578,13 @@ button#mobile-toggle :focus {
     -ms-flex-pack: center;
     -webkit-box-pack: center;
             justify-content: center;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+            align-items: center;
     /*contentbox*/
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox {
-    width: 98%;
+    width: 78%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h2 {
     font-size: 1em;
@@ -5311,18 +5639,6 @@ button#mobile-toggle :focus {
 }
 
 @media only screen and (max-width: 536px) {
-  /*    button#mobile-toggle {
-        
-        font-size: 0.85em;
-        &:hover {
-            background-color: $colorslidebg;
-        }
-        &:active,
-         :focus {
-            color: $colorsocmedhov;
-        }
-    }
-*/
   div.container_24 {
     width: 98%;
     /*Navigation*/
@@ -5358,6 +5674,16 @@ button#mobile-toggle :focus {
   }
   div.container_24 header .socials ul li a i {
     font-size: 0.85em;
+  }
+  div.container_24 button#mobile-toggle,
+  div.container_24 nav.toggled ul {
+    display: block;
+  }
+  div.container_24 button#mobile-toggle {
+    left: 87%;
+  }
+  div.container_24 button#mobile-toggle.hide {
+    left: 100vw;
   }
   div.container_24 ul#mobile-nav {
     display: none;
@@ -5469,7 +5795,6 @@ button#mobile-toggle :focus {
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 main.content .text p.collection-text {
-    padding: 2%;
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact {
@@ -5477,8 +5802,6 @@ button#mobile-toggle :focus {
     display: inline-block;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact::before {
-    font-family: "FontAwesome";
-    content: "\f015";
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
@@ -5558,40 +5881,43 @@ button#mobile-toggle :focus {
     padding: 0;
   }
   div.container_24 div.grid_24 main.content #facts_box {
-    height: 60vh;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0.5em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
-    line-height: 35px;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul {
-    list-style: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.75em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
-    font-size: 1.3em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
     height: auto;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
-    display: none;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2 {
+    line-height: 1.5;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li {
+    font-size: 0.75em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type {
+    height: auto;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots {
     text-align: center;
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots--dot {
     cursor: pointer;
   }
   div.container_24 div.grid_24 main.content #mask .active,
@@ -5618,30 +5944,38 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #contentboxes {
-    height: auto;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox {
+  div.container_24 div.grid_24 main.content #mask .contentbox,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox {
     width: 98.7%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox h2 {
     font-size: 1.25em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox p {
+  div.container_24 div.grid_24 main.content #mask .contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox p {
     font-size: 0.95em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image {
     width: 30%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button {
     font-size: 1em;
     width: 100%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 main.content #contentboxes,
+  div.container_24 div.grid_24 main.content #collection-boxes {
+    height: auto;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes {
     height: auto;
@@ -5700,18 +6034,6 @@ button#mobile-toggle :focus {
 }
 
 @media only screen and (max-width: 480px) {
-  /*    button#mobile-toggle {
-        
-        font-size: 0.85em;
-        &:hover {
-            background-color: $colorslidebg;
-        }
-        &:active,
-         :focus {
-            color: $colorsocmedhov;
-        }
-    }
-*/
   div.container_24 {
     /*Navigation*/
   }
@@ -5746,6 +6068,16 @@ button#mobile-toggle :focus {
   }
   div.container_24 header .socials ul li a i {
     font-size: 0.85em;
+  }
+  div.container_24 button#mobile-toggle,
+  div.container_24 nav.toggled ul {
+    display: block;
+  }
+  div.container_24 button#mobile-toggle {
+    left: 87%;
+  }
+  div.container_24 button#mobile-toggle.hide {
+    left: 100vw;
   }
   div.container_24 ul#mobile-nav {
     display: none;
@@ -5857,7 +6189,6 @@ button#mobile-toggle :focus {
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 main.content .text p.collection-text {
-    padding: 2%;
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact {
@@ -5865,8 +6196,6 @@ button#mobile-toggle :focus {
     display: block;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact::before {
-    font-family: "FontAwesome";
-    content: "\f015";
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
@@ -5955,40 +6284,43 @@ button#mobile-toggle :focus {
     padding: 0;
   }
   div.container_24 div.grid_24 main.content #facts_box {
-    height: 60vh;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0.5em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
-    line-height: 35px;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul {
-    list-style: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.7em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
-    font-size: 1.3em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
     height: auto;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
-    display: none;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2 {
+    line-height: 1.5;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li {
+    font-size: 0.7em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type {
+    height: auto;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots {
     text-align: center;
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots--dot {
     cursor: pointer;
   }
   div.container_24 div.grid_24 main.content #mask .active,
@@ -6015,27 +6347,34 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #contentboxes {
-    height: auto;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox {
+  div.container_24 div.grid_24 main.content #mask .contentbox,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox {
     width: 98.7%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox h2 {
     font-size: 1.2em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox p {
+  div.container_24 div.grid_24 main.content #mask .contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox p {
     font-size: 0.95em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button {
     font-size: 1em;
     width: 100%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 main.content #contentboxes,
+  div.container_24 div.grid_24 main.content #collection-boxes {
+    height: auto;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes {
     /*contentbox*/
@@ -6092,19 +6431,6 @@ button#mobile-toggle :focus {
 }
 
 @media only screen and (max-width: 414px) {
-  /*    button#mobile-toggle {
-
-        font-size: 0.85em;
-
-        &:hover {
-            background-color: $colorslidebg;
-        }
-        &:active,
-         :focus {
-            color: $colorsocmedhov;
-        }
-    }
-*/
   div.container_24 {
     /*Navigation*/
   }
@@ -6135,6 +6461,16 @@ button#mobile-toggle :focus {
   }
   div.container_24 header .socials ul li a i {
     font-size: 0.8em;
+  }
+  div.container_24 button#mobile-toggle,
+  div.container_24 nav.toggled ul {
+    display: block;
+  }
+  div.container_24 button#mobile-toggle {
+    left: 87%;
+  }
+  div.container_24 button#mobile-toggle.hide {
+    left: 100vw;
   }
   div.container_24 ul#mobile-nav {
     display: none;
@@ -6247,15 +6583,12 @@ button#mobile-toggle :focus {
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 main.content .text p.collection-text {
-    padding: 2%;
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact {
     display: block;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact::before {
-    font-family: "FontAwesome";
-    content: "\f015";
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
@@ -6341,41 +6674,44 @@ button#mobile-toggle :focus {
     width: 80%;
   }
   div.container_24 div.grid_24 main.content #facts_box {
-    height: 60vh;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0.5em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
-    line-height: 35px;
-    font-size: 0.9em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul {
-    list-style: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.7em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
-    font-size: 1.3em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
     height: auto;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
-    display: none;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2 {
+    line-height: 1.5;
+    font-size: 0.9em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li {
+    font-size: 0.7em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:before {
+    font-size: 1.3em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type {
+    height: auto;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots {
     text-align: center;
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots--dot {
     cursor: pointer;
   }
   div.container_24 div.grid_24 main.content #mask .active,
@@ -6402,7 +6738,38 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #contentboxes {
+  div.container_24 div.grid_24 main.content #mask .contentbox,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox {
+    width: 98.7%;
+    min-height: 180px;
+  }
+  div.container_24 div.grid_24 main.content #mask .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox h2 {
+    font-size: 1.1em;
+  }
+  div.container_24 div.grid_24 main.content #mask .contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox p {
+    font-size: 0.85em;
+  }
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image {
+    width: 30%;
+  }
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img {
+    display: block;
+  }
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button {
+    font-size: 0.9em;
+    width: 100%;
+  }
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover {
+    width: 100%;
+  }
+  div.container_24 div.grid_24 main.content #contentboxes,
+  div.container_24 div.grid_24 main.content #collection-boxes {
     height: auto;
     float: none;
     display: block;
@@ -6412,29 +6779,6 @@ button#mobile-toggle :focus {
             flex-flow: column;
     -ms-flex-pack: justify;
     justify-content: space-around;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox {
-    width: 98.7%;
-    min-height: 180px;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox h2 {
-    font-size: 1.1em;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox p {
-    font-size: 0.85em;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image {
-    width: 30%;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image img {
-    display: block;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button {
-    font-size: 0.9em;
-    width: 100%;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button:hover {
-    width: 100%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes {
     /*contentbox*/
@@ -6492,16 +6836,6 @@ button#mobile-toggle :focus {
 }
 
 @media only screen and (max-width: 375px) {
-  button#mobile-toggle {
-    font-size: 0.85em;
-  }
-  button#mobile-toggle:hover {
-    background-color: #82b602;
-  }
-  button#mobile-toggle:active,
-  button#mobile-toggle :focus {
-    color: #ffffff;
-  }
   div.container_24 {
     /*Navigation*/
   }
@@ -6536,6 +6870,16 @@ button#mobile-toggle :focus {
   }
   div.container_24 header .socials ul li a i {
     font-size: 0.75em;
+  }
+  div.container_24 button#mobile-toggle,
+  div.container_24 nav.toggled ul {
+    display: block;
+  }
+  div.container_24 button#mobile-toggle {
+    left: 87%;
+  }
+  div.container_24 button#mobile-toggle.hide {
+    left: 100vw;
   }
   div.container_24 ul#mobile-nav {
     display: none;
@@ -6647,7 +6991,6 @@ button#mobile-toggle :focus {
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 main.content .text p.collection-text {
-    padding: 2%;
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact {
@@ -6655,8 +6998,6 @@ button#mobile-toggle :focus {
     display: block;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact::before {
-    font-family: "FontAwesome";
-    content: "\f015";
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
@@ -6733,40 +7074,47 @@ button#mobile-toggle :focus {
     padding: 0;
   }
   div.container_24 div.grid_24 main.content #facts_box {
-    height: 60vh;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0.5em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
-    line-height: 35px;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul {
-    list-style: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.7em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
-    font-size: 1.2em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
     height: auto;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
-    display: none;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts {
+    padding: 1em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2 {
+    line-height: 1.5;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li {
+    font-size: 0.7em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:before {
+    font-size: 1.2em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type {
+    height: auto;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots {
     text-align: center;
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots--dot {
     cursor: pointer;
   }
   div.container_24 div.grid_24 main.content #mask .active,
@@ -6793,27 +7141,34 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #contentboxes {
-    height: auto;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox {
+  div.container_24 div.grid_24 main.content #mask .contentbox,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox {
     min-height: 180px;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox h2 {
     font-size: 1em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox p {
+  div.container_24 div.grid_24 main.content #mask .contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox p {
     font-size: 0.85em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button {
     font-size: 0.9em;
     width: 100%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 main.content #contentboxes,
+  div.container_24 div.grid_24 main.content #collection-boxes {
+    height: auto;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes {
     /*contentbox*/
@@ -6869,16 +7224,6 @@ button#mobile-toggle :focus {
 }
 
 @media only screen and (max-width: 360px) {
-  button#mobile-toggle {
-    font-size: 0.85em;
-  }
-  button#mobile-toggle:hover {
-    background-color: #82b602;
-  }
-  button#mobile-toggle:active,
-  button#mobile-toggle :focus {
-    color: #ffffff;
-  }
   div.container_24 {
     width: 98%;
     /*Navigation*/
@@ -6914,6 +7259,16 @@ button#mobile-toggle :focus {
   }
   div.container_24 header .socials ul li a i {
     font-size: 0.7em;
+  }
+  div.container_24 button#mobile-toggle,
+  div.container_24 nav.toggled ul {
+    display: block;
+  }
+  div.container_24 button#mobile-toggle {
+    left: 87%;
+  }
+  div.container_24 button#mobile-toggle.hide {
+    left: 100vw;
   }
   div.container_24 ul#mobile-nav {
     display: none;
@@ -7025,7 +7380,6 @@ button#mobile-toggle :focus {
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 main.content .text p.collection-text {
-    padding: 2%;
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact {
@@ -7033,8 +7387,6 @@ button#mobile-toggle :focus {
     display: block;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact::before {
-    font-family: "FontAwesome";
-    content: "\f015";
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
@@ -7110,40 +7462,47 @@ button#mobile-toggle :focus {
     padding: 0.8em;
   }
   div.container_24 div.grid_24 main.content #facts_box {
-    height: 60vh;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0.5em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
-    line-height: 35px;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul {
-    list-style: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.7em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
-    font-size: 1.15em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
     height: auto;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
-    display: none;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts {
+    padding: 0.5em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2 {
+    line-height: 1.5;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li {
+    font-size: 0.7em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:before {
+    font-size: 1.15em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type {
+    height: auto;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots {
     text-align: center;
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots--dot {
     cursor: pointer;
   }
   div.container_24 div.grid_24 main.content #mask .active,
@@ -7170,27 +7529,34 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #contentboxes {
-    height: auto;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox {
+  div.container_24 div.grid_24 main.content #mask .contentbox,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox {
     min-height: 180px;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox h2 {
     font-size: 1em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox p {
+  div.container_24 div.grid_24 main.content #mask .contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox p {
     font-size: 0.8em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button {
     font-size: 0.9em;
     width: 100%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 main.content #contentboxes,
+  div.container_24 div.grid_24 main.content #collection-boxes {
+    height: auto;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes {
     /*contentbox*/
@@ -7249,18 +7615,6 @@ button#mobile-toggle :focus {
 }
 
 @media only screen and (max-width: 320px) {
-  /*    button#mobile-toggle {
-        
-        font-size: 0.8em;
-        &:hover {
-            background-color: $colorslidebg;
-        }
-        &:active,
-         :focus {
-            color: $colorsocmedhov;
-        }
-    }
-*/
   div.container_24 {
     width: 98%;
     /*Navigation*/
@@ -7296,6 +7650,16 @@ button#mobile-toggle :focus {
   }
   div.container_24 header .socials ul li a i {
     font-size: 0.7em;
+  }
+  div.container_24 button#mobile-toggle,
+  div.container_24 nav.toggled ul {
+    display: block;
+  }
+  div.container_24 button#mobile-toggle {
+    left: 87%;
+  }
+  div.container_24 button#mobile-toggle.hide {
+    left: 100vw;
   }
   div.container_24 ul#mobile-nav {
     display: none;
@@ -7405,7 +7769,6 @@ button#mobile-toggle :focus {
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 main.content .text p.collection-text {
-    padding: 2%;
     font-size: 0.7em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact {
@@ -7413,8 +7776,6 @@ button#mobile-toggle :focus {
     display: block;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact::before {
-    font-family: "FontAwesome";
-    content: "\f015";
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li {
@@ -7490,40 +7851,47 @@ button#mobile-toggle :focus {
     padding: 0.8em;
   }
   div.container_24 div.grid_24 main.content #facts_box {
-    height: 60vh;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts {
-    padding: 0.5em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts h2 {
-    line-height: 35px;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul {
-    list-style: none;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li {
-    font-size: 0.7em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:before {
-    font-size: 1.1em;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type {
     height: auto;
-  }
-  div.container_24 div.grid_24 main.content #facts_box article.recycle-facts ul li:last-of-type::before {
-    display: none;
   }
   div.container_24 div.grid_24 main.content #mask,
   div.container_24 div.grid_24 main.content #mask_two {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts {
+    padding: 0.5em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2 {
+    line-height: 1.5;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul {
+    list-style: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li {
+    font-size: 0.7em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:before {
+    font-size: 1.1em;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type {
+    height: auto;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type::before,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:last-of-type::before {
+    display: none;
+  }
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots {
     text-align: center;
   }
-  div.container_24 div.grid_24 main.content #mask .recycle-facts__dots--dot,
-  div.container_24 div.grid_24 main.content #mask_two .recycle-facts__dots--dot {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts__dots--dot,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts__dots--dot {
     cursor: pointer;
   }
   div.container_24 div.grid_24 main.content #mask .active,
@@ -7550,28 +7918,35 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #contentboxes {
-    height: auto;
-  }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox {
+  div.container_24 div.grid_24 main.content #mask .contentbox,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox {
     width: 98.5%;
     min-height: 180px;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask .contentbox h2,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox h2 {
     font-size: 1em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox p {
+  div.container_24 div.grid_24 main.content #mask .contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox p {
     font-size: 0.8em;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button {
     font-size: 0.9em;
     width: 100%;
   }
-  div.container_24 div.grid_24 main.content #contentboxes .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover {
     width: 100%;
+  }
+  div.container_24 div.grid_24 main.content #contentboxes,
+  div.container_24 div.grid_24 main.content #collection-boxes {
+    height: auto;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes {
     /*contentbox*/

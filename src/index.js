@@ -1,4 +1,4 @@
-
+import "./css/normalize.scss";
 import "./css/style.scss";
 import $ from "jquery";
 
@@ -115,7 +115,7 @@ ImageFour.src = mainImageFour;
     });
 })();
 
-//H3 Title Toggle
+/*//H3 Title Toggle
 (function () {
 //headings
   $(".collections_title").on('click',function() {
@@ -123,7 +123,7 @@ ImageFour.src = mainImageFour;
       $(element).next(".collection-text").animate({ height: "toggle" }, "slow" );
   });
 })();
-
+*/
 
 //Validation
 (function() {

@@ -2,49 +2,6 @@
 @import "partials/mixins";
 @import "partials/base";
 
-html {
-	@include box-sizing($type: border-box);
-	scroll-behavior: smooth;
-}
-
-body {
-    font-family: $fontList;
-    margin: 0;
-    line-height: 1;
-    background-color: $bgcolor;
-    font-size: 1em;
-    height: auto;
-    padding-bottom: 20px;
-}
-/* Fading animation */
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: 0.4;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: 0.4;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
 button#mobile-toggle {
     display: none;
     height: 45px;
@@ -55,6 +12,7 @@ button#mobile-toggle {
     outline: none;
     border: none;
     @include transitioner(all 0.2s ease-in 0s);
+    
 
     &:hover {
         background-color: $colorslidebg;
@@ -167,6 +125,7 @@ button#mobile-toggle {
                 img#homeImage {
                     display: block;
                     height:100%;
+                    width: 100%;
                 }
             }
 
@@ -200,16 +159,19 @@ button#mobile-toggle {
                     justify-content: space-around;
 
                     li {
+                        
                         display: block;
                         width: 23%;
                         height: 100%;
                         margin: 0.1em;
-                        -webkit-flex: 0 0 auto;
-                        -ms-flex: 0 0 auto;
-                        flex: 0 0 auto;
-                        background-color: #000;
+                        -webkit-flex: 1 0 auto;
+                        -ms-flex: 1 0 auto;
+                        flex: 1 0 auto;
+                        font-family: "FontAwesome";
+ 
 
                         a {
+                            
                             height: 100%;
                             width: 100%;
                             text-align: center;
@@ -217,6 +179,7 @@ button#mobile-toggle {
                             text-shadow: 1px 2px 1px $header-shadow;
 
                             i {
+                                
                                 display: block;
                                 width: 100%;
                                 height: 100%;
@@ -293,8 +256,7 @@ button#mobile-toggle {
                 padding: 0;
                 height: 50px;
                 width: 90%;
-                //background-color: $colornav;
-                
+              
                 display: -webkit-flex;
                 display: -ms-flexbox;
                 display: flex;
@@ -495,7 +457,7 @@ button#mobile-toggle {
                     color: $colorsocmedhov;
                     padding: 0;
                     height: 50px;
-                    margin: 0 0 1% 0;
+                    margin: 0 0 0.5em 0;
                     text-align: center;
                     font-size: 2.5em;
                     line-height: 50px;
@@ -511,7 +473,7 @@ button#mobile-toggle {
                 }
 
                 .text {
-                    width: 99%;
+                    width: 100%;
                     height: auto;
                     background-color: $contenttxtbg;
                     font-size: 1em;
@@ -522,22 +484,20 @@ button#mobile-toggle {
                     -webkit-flex-flow: row wrap;
                     -ms-flex-flow: row wrap;
                     flex-flow: row wrap;
-                    -webkit-justify-content: space-around;
-                    -ms-flex-pack: justify;
-                    justify-content: space-around;
+                    -webkit-justify-content: space-between;
+                    -ms-flex-pack: space-between;
+                    justify-content: space-between;
                     -webkit-align-items: stretch;
                     -ms-flex-align: stretch;
                     align-items: stretch;
 
                     h1 {
                         color: $colortxtbg;
-                        padding: 0;
                         height: 50px;
-                        margin: 0 0 0.5% 0;
+                        margin: 0 0 0.5em 0;
                         text-align: center;
                         font-size: 2em;
                         line-height: 50px;
-                        width: 100%;
                         background-color: $honecolor;
                         -webkit-align-self: center;
                         -ms-flex-item-align: center;
@@ -551,38 +511,18 @@ button#mobile-toggle {
                         align-self: center;
                         color: $colortxt;
                         background-color: $bgcolor;
-                        padding: 0;
-                        height: 50px;
-                        margin: 0 0 0.5% 0;
+                        height: 45px;
+                        margin: 0 0 0.5em 0;
                         text-align: center;
                         font-size: 1.5em;
-                        line-height: 50px;
+                        line-height: 45px;
                         display: block;
                         clear: both;
-                        width: 100%;
+
                         font-weight: bold;
                     }
 
-                    h3 {
-                        -webkit-align-self: center;
-                        -ms-flex-item-align: center;
-                        align-self: center;
-                        background-color: $colortxt;
-                        color: $colortxtbg;
-                        padding: 0;
-                        height: 50px;
-                        margin: 0.5em auto;
-                        text-align: center;
-                        font-size: 1.2em;
-                        line-height: 50px;
-                        width: 100%;
-
-                        &:hover {
-                            cursor: pointer;
-                            color: $colortxt;
-                            background-color: $bgcolor;
-                        }
-                    }
+                    
 
                     p {
                         -webkit-flex: 1 1 auto;
@@ -594,25 +534,11 @@ button#mobile-toggle {
                         margin-bottom: 0.5em;
                         color: $colorblk;
                         background-color: $colortxtbg;
-                        line-height: 1.8em;
+                        line-height: 1.7;
                         font-size: 0.95em;
                         display: block;
                     }
-
-                    /*Drop Cap*/
-                    p.collection-text {
-                        letter-spacing: 0.1em;
-                        padding: 2%;
-                        max-width: 100%;
-                        width: auto;
-                        margin: 0 0 0.5em 0;
-                        color: $colorblk;
-                        background-color: $colortxtbg;
-                        line-height: 1.5em;
-                        font-size: 1em;
-                        display: none;
-                    }
-
+                    
                     ul.recycle-contact {
                         list-style: none;
                         padding: 0.5em;
@@ -698,7 +624,7 @@ button#mobile-toggle {
                     }
 
                     ul.recycle-contact:nth-of-type(2) {
-                        width: 40%;
+                        width: 45%;
 
                         &::before {
                             font-family: "FontAwesome";
@@ -707,7 +633,7 @@ button#mobile-toggle {
                     }
 
                     ul.recycle-contact:nth-of-type(3) {
-                        width: 55%;
+                        width: 54%;
 
                         &::before {
                             font-family: "FontAwesome";
@@ -716,7 +642,7 @@ button#mobile-toggle {
                     }
 
                     ul.recycle-contact:nth-of-type(4) {
-                        width: 53%;
+                        width: 44%;
 
                         &::before {
                             font-family: "FontAwesome";
@@ -733,12 +659,7 @@ button#mobile-toggle {
                         }
                     }
 
-                    .audio {
-                        background-color: $colorsocmedhov;
-                        margin: 2% auto;
-                        width: 20%;
-                    }
-
+                    
                     .recycle_img {
                         -webkit-align-self: center;
                         -ms-flex-item-align: center;
@@ -846,22 +767,102 @@ button#mobile-toggle {
                 }
 
                 #facts_box {
-                    height: 60vh;
+                    height: auto;
+                    position: relative;
                     
+                }
+
+                /*Content boxes*/
+                #contentboxes,
+                #collection-boxes {
+                    position: relative;
+                    z-index: 1;
+                    min-height: 400px;
+                }
+
+                /* The dots/bullets/indicators */
+
+                #mask,
+                #mask_two,
+                #mask3 {
+                    width: 100%;
+                    min-height: 650px;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 2;
+                    display: -webkit-inline-flex;
+                    display: -ms-inline-flexbox;
+                    display: inline-flex;
+                    -webkit-flex-flow: row;
+                    -ms-flex-flow: row;
+                    flex-flow: row;
+                    -webkit-justify-content: flex-start;
+                    -ms-flex-pack: flex-start;
+                    justify-content: flex-start;
+                    -webkit-align-items: stretch;
+                    -ms-flex-align: stretch;
+                    align-items: stretch;
+
+                    div.collection-box{
+                        position: absolute;
+                        z-index: 1;
+                        width:100%;
+                        height: auto;
+                        margin:0;
+                        padding: 0 3em;
+                        overflow:auto;
+
+                        h2 {
+                            display:block;
+                            background-color: $colortxt;
+                            color: $colorsocmedhov;
+                            height: auto;
+                            line-height:1.5;
+                            margin: 0.5em auto;
+                            text-align: center;
+                            font-size: 1.5em;
+                            margin: 0;
+                            padding:0;
+                            line-height:50px;
+        
+    
+                            &:hover {
+                                cursor: pointer;
+                                color: $colortxt;
+                                background-color: $bgcolor;
+                            }
+                        }
+                    
+                        /*Drop Cap*/
+                        p.collection-text {
+                            letter-spacing: 0.1em;
+                            padding: 1em;
+                            max-width: 100%;
+                            width: auto;
+                            margin: 0.5em;
+                            color: $colorblk;
+                            background-color: $colortxtbg;
+                            line-height: 1.5em;
+                            font-size: 1em;
+                            
+                        }
+                    }
+
                     article.recycle-facts {
-                        padding: 0;
+                        padding: 3em;
                         background-color: $colortxtbg;
                         width: 100%;
-                        float: left;
+                        height: 100%;
                         position: absolute;
                         z-index: 1;
 
                         h2 {
                             margin: 0.5em 0 ;
                             padding: 0;
-                            line-height: 35px;
+                            height: 40px;
                             display: block;
                             text-align: center;
+                            line-height:1.4;
                         }
 
                         ul {
@@ -869,7 +870,6 @@ button#mobile-toggle {
                             margin: 1em auto;
                             padding: 0;
                             width:85%;
-
 
                             li {
                                 list-style: none;
@@ -910,28 +910,8 @@ button#mobile-toggle {
                             }
                         }
                     }
-                }
-
-                /* The dots/bullets/indicators */
-
-                #mask,
-                #mask_two {
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
-                    overflow: hidden;
-                    z-index: 2;
-                    display: -webkit-flex;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-flex-flow: row;
-                    -ms-flex-flow: row;
-                    flex-flow: row;
-                    -webkit-align-items: center;
-                    -ms-flex-align: center;
-                    align-items: center;
                     
-                    .recycle-facts__dots {
+                    article.recycle-facts__dots {
                         text-align: center;
 
                         &--dot {
@@ -979,26 +959,16 @@ button#mobile-toggle {
                     .next:hover {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
-                }
 
-                /*Content boxes*/
-                #contentboxes {
-                    position: relative;
-                    z-index: 1;
-                    height: 370px;
-                    
                     .contentbox {
-                        width: 32%;
+                        width: 100%;
                         min-height: 225px;
                         height: auto;
                         background-color: $colorsildertxtbg;
-                        float: left;
                         margin: 0.5em;
                         box-sizing: border-box;
                         padding: 2.5em;
-                        -webkit-flex: 1 0 auto;
-                        -ms-flex: 1 0 auto;
-                        flex: 1 0 auto;
+
 
                         h2 {
                             text-indent: 0;
@@ -1064,9 +1034,9 @@ button#mobile-toggle {
                         }
                     }
 
-                    /*contentbox end*/
-                }
 
+                }
+                
                 /*Content boxes*/
                 #home_contentboxes {
                     height: 370px;
@@ -1120,14 +1090,14 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 display: block;
-                                width: 45%;
+                                width: 40%;
                                 margin: 0.5em auto;
                             }
 
                             img#wordSearch {
                                 
                                 display: block;
-                                width: 26%;
+                                width: 20%;
                                 margin: 0.5em auto;
                             }
 
@@ -1366,7 +1336,7 @@ button#mobile-toggle {
                     width: 12%;
 
                     a {
-                        font-size: 0.9em;
+                        font-size: 1em;
 
                         &:hover {
                             text-shadow: none;
@@ -1467,36 +1437,26 @@ button#mobile-toggle {
 
                     h1 {
                         font-size: 1.9em;
+                        
                     }
 
                     h2 {
                         font-size: 1.4em;
+                        
                     }
 
-                    h3 {
-                        font-size: 1.1em;
-
-                        &:hover {
-                            cursor: pointer;
-                        }
-                    }
-
+                    
                     p {
                         font-size: 0.9em;
                     }
 
-                    /*Drop Cap*/
-                    p.collection-text {
-                        font-size: 0.9em;
-                    }
+                                       
 
                     ul.recycle-contact {
                         display: inline-block;
 
                         &::before {
-                            font-family: "FontAwesome";
-                            content: "\f015";
-                            padding: 1.5%;
+  
                             font-size: 1.4em;
                         }
 
@@ -1541,8 +1501,8 @@ button#mobile-toggle {
                             font-size: 0.85em;
 
                             span {
-                                &::before {
-                                    font-size: 1.15em;
+                                &:before {
+                                    font-size: 1.5em;
                                 }
                             }
 
@@ -1555,11 +1515,7 @@ button#mobile-toggle {
                             }
                         }
                     }
-
-                    .audio {
-                        margin: 2% auto;
-                        width: 20%;
-                    }
+                    
 
                     .recycle_img {
                         width: 10%;
@@ -1610,13 +1566,44 @@ button#mobile-toggle {
                 }
 
                 #facts_box {
-                    height: 60vh;
+                    height: auto;
+
+                   
+                }
+
+                /* The dots/bullets/indicators */
+
+                #mask,
+                #mask_two,
+                #mask3 {
+                    width: 100%;
+
+                    div.collection-box{
+                                                
+                        h2 {
+                            
+                            font-size: 1.2em;
+                           
+        
+    
+                            &:hover {
+                                cursor: pointer;
+                         
+                            }
+                        }
+                    
+                        /*Drop Cap*/
+                        p.collection-text {
+                            
+                            font-size: 1em;
+                            
+                        }
+                    }
 
                     article.recycle-facts {
-                        padding: 0;
-
+                        
                         h2 {
-                            line-height: 35px;
+                            line-height: 1.5;
                         }
 
                         ul {
@@ -1644,15 +1631,8 @@ button#mobile-toggle {
                             }
                         }
                     }
-                }
 
-                /* The dots/bullets/indicators */
-
-                #mask,
-                #mask_two {
-                    width: 100%;
-
-                    .recycle-facts__dots {
+                    article.recycle-facts__dots {
                         text-align: center;
 
                         &--dot {
@@ -1684,10 +1664,7 @@ button#mobile-toggle {
                     .next:hover {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
-                }
 
-                /*Content boxes*/
-                #contentboxes {
                     .contentbox {
                         min-height: 225px;
 
@@ -1716,11 +1693,9 @@ button#mobile-toggle {
                             }
                         }
                     }
-
-                    /*contentbox end*/
-                    
                 }
 
+               
                 /*Content boxes*/
                 #home_contentboxes {
                     /*contentbox*/
@@ -1742,13 +1717,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 53%;
+                                width: 40%;
                                 
                             }
 
                             img#wordSearch {
                                 
-                                width: 26%;
+                                width: 20%;
                                 
                             }
 
@@ -1891,7 +1866,7 @@ button#mobile-toggle {
 
                 li {
                     a {
-                        font-size: 0.9em;
+                        font-size: 1em;
 
                         &:hover {
                             text-shadow: none;
@@ -1985,13 +1960,44 @@ button#mobile-toggle {
                 }
 
                 #facts_box {
-                    height: 60vh;
+                    height: auto;
+
+                    
+                }
+
+                /* The dots/bullets/indicators */
+
+                #mask,
+                #mask_two,
+                #mask3 {
+                    width: 100%;
+                    div.collection-box{
+                                                
+                        h2 {
+                            
+                            font-size: 1.2em;
+                           
+        
+    
+                            &:hover {
+                                cursor: pointer;
+                         
+                            }
+                        }
+                    
+                        /*Drop Cap*/
+                        p.collection-text {
+                            
+                            font-size: 1em;
+                            
+                        }
+                    }
 
                     article.recycle-facts {
-                        padding: 0;
+                        
 
                         h2 {
-                            line-height: 35px;
+                            line-height: 1.5;
                         }
 
                         ul {
@@ -2019,15 +2025,8 @@ button#mobile-toggle {
                             }
                         }
                     }
-                }
 
-                /* The dots/bullets/indicators */
-
-                #mask,
-                #mask_two {
-                    width: 100%;
-
-                    .recycle-facts__dots {
+                    article.recycle-facts__dots {
                         text-align: center;
 
                         &--dot {
@@ -2059,43 +2058,62 @@ button#mobile-toggle {
                     .next:hover {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
+
+                    .contentbox {
+                        min-height: 200px;
+
+                        h2 {
+                            font-size: 1em;
+                        }
+
+                        p {
+                            font-size: 0.85em;
+                        }
+
+                        .contentbox_image {
+                            width: 40%;
+
+                            img {
+                                display: block;
+                            }
+                        }
+
+                        a.content-button {
+                            font-size: 0.85em;
+                            width: 60%;
+
+                            &:hover {
+                                width: 60%;
+                            }
+                        }
+                    }
+
+
                 }
 
                 .text {
                     h1 {
                         font-size: 1.8em;
+                        
                     }
 
                     h2 {
                         font-size: 1.3em;
                     }
 
-                    h3 {
-                        font-size: 1em;
-
-                        &:hover {
-                            cursor: pointer;
-                        }
-                    }
-
+                   
                     p {
                         font-size: 0.9em;
                         width: 80%;
                     }
 
-                    /*Drop Cap*/
-                    p.collection-text {
-                        line-height: 1.5em;
-                        font-size: 0.85em;
-                    }
-
+                    
                     ul.recycle-contact {
                         width: 53%;
                         display: inline-block;
 
                         &::before {
-                            font-family: "FontAwesome";
-                            content: "\f015";
+
                             font-size: 1.3em;
                         }
 
@@ -2143,7 +2161,7 @@ button#mobile-toggle {
 
                             span {
                                 &::before {
-                                    font-size: 1.1em;
+                                    font-size: 1.5em;
                                 }
                             }
 
@@ -2209,40 +2227,7 @@ button#mobile-toggle {
                     }
                 }
 
-                /*Content boxes*/
-                #contentboxes {
-                    .contentbox {
-                        min-height: 200px;
-
-                        h2 {
-                            font-size: 1em;
-                        }
-
-                        p {
-                            font-size: 0.85em;
-                        }
-
-                        .contentbox_image {
-                            width: 40%;
-
-                            img {
-                                display: block;
-                            }
-                        }
-
-                        a.content-button {
-                            font-size: 0.85em;
-                            width: 60%;
-
-                            &:hover {
-                                width: 60%;
-                            }
-                        }
-                    }
-                    /*contentbox end*/
-                    
-                }
-
+                
                 #home_contentboxes {
                     
                     /*contentbox*/
@@ -2265,13 +2250,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 53%;
+                                width: 40%;
                                 
                             }
 
                             img#wordSearch {
                                 
-                                width: 26%;
+                                width: 20%;
                                 
                             }
 
@@ -2411,7 +2396,7 @@ button#mobile-toggle {
                     width: 12%;
 
                     a {
-                        font-size: 0.9em;
+                        font-size: 1em;
 
                         &:hover {
                             text-shadow: none;
@@ -2508,36 +2493,26 @@ button#mobile-toggle {
                 .text {
                     h1 {
                         font-size: 1.65em;
+                        
                     }
 
                     h2 {
                         font-size: 1.2em;
                     }
 
-                    h3 {
-                        font-size: 0.95em;
-
-                        &:hover {
-                            cursor: pointer;
-                        }
-                    }
-
+                    
                     p {
                         font-size: 0.85em;
                         width: 78%;
                     }
 
-                    /*Drop Cap*/
-                    p.collection-text {
-                        font-size: 0.8em;
-                    }
+                    
 
                     ul.recycle-contact {
                         display: inline-block;
 
                         &::before {
-                            font-family: "FontAwesome";
-                            content: "\f015";
+
                             font-size: 1.2em;
                         }
 
@@ -2583,8 +2558,8 @@ button#mobile-toggle {
                             font-size: 0.75em;
 
                             span {
-                                &::before {
-                                    font-size: 1.1em;
+                                &:before {
+                                    font-size: 1.5em;
                                 }
                             }
 
@@ -2651,13 +2626,46 @@ button#mobile-toggle {
                 }
 
                 #facts_box {
-                    height: 60vh;
+                    height: auto;
+
+                   
+                }
+
+                /* The dots/bullets/indicators */
+
+                #mask,
+                #mask_two,
+                #mask3 {
+                    width: 100%;
+
+                    div.collection-box{
+                        
+                        
+                        h2 {
+                            
+                            font-size: 1.2em;
+                           
+        
+    
+                            &:hover {
+                                cursor: pointer;
+                         
+                            }
+                        }
+                    
+                        /*Drop Cap*/
+                        p.collection-text {
+                            
+                            font-size: 1em;
+                            
+                        }
+                    }
 
                     article.recycle-facts {
-                        padding: 0;
+                        padding: 3em;
 
                         h2 {
-                            line-height: 35px;
+                            line-height: 1.5;
                         }
 
                         ul {
@@ -2685,15 +2693,8 @@ button#mobile-toggle {
                             }
                         }
                     }
-                }
 
-                /* The dots/bullets/indicators */
-
-                #mask,
-                #mask_two {
-                    width: 100%;
-
-                    .recycle-facts__dots {
+                    article.recycle-facts__dots {
                         text-align: center;
 
                         &--dot {
@@ -2725,10 +2726,7 @@ button#mobile-toggle {
                     .next:hover {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
-                }
 
-                /*Content boxes*/
-                #contentboxes {
                     .contentbox {
                         min-height:180px;
                         margin: 0.25em;
@@ -2762,9 +2760,9 @@ button#mobile-toggle {
                             }
                         }
                     }
-
-                    /*contentbox end*/
                 }
+
+                
                 #home_contentboxes {
                     
                     /*contentbox*/
@@ -2787,13 +2785,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 60%;
+                                width: 40%;
                                 
                             }
 
                             img#wordSearch {
                                 
-                                width: 26%;
+                                width: 20%;
                                 
                             }
 
@@ -3037,32 +3035,20 @@ button#mobile-toggle {
                         font-size: 1.2em;
                     }
 
-                    h3 {
-                        font-size: 0.95em;
-
-                        &:hover {
-                            cursor: pointer;
-                        }
-                    }
-
+                    
                     p {
                         font-size: 0.8em;
                         width: 75%;
                     }
 
-                    /*Drop Cap*/
-                    p.collection-text {
-                        line-height: 1.5em;
-                        font-size: 0.75em;
-                    }
+                                      
 
                     ul.recycle-contact {
                         width: 51%;
                         display: inline-block;
 
                         &::before {
-                            font-family: "FontAwesome";
-                            content: "\f015";
+
                             font-size: 1.1em;
                         }
 
@@ -3106,11 +3092,11 @@ button#mobile-toggle {
                         width: 98%;
 
                         li {
-                            font-size: 0.7em;
+                            font-size: 0.75em;
 
                             span {
                                 &::before {
-                                    font-size: 1.1em;
+                                    font-size: 1.5em;
                                 }
                             }
 
@@ -3177,13 +3163,45 @@ button#mobile-toggle {
                 }
 
                 #facts_box {
-                    height: 60vh;
+                    height: auto;
+
+                    
+                }
+
+                /* The dots/bullets/indicators */
+
+                #mask,
+                #mask_two,
+                #mask3 {
+                    width: 100%;
+
+                    div.collection-box{
+                                                
+                        h2 {
+                            
+                            font-size: 1.2em;
+                           
+        
+    
+                            &:hover {
+                                cursor: pointer;
+                         
+                            }
+                        }
+                    
+                        /*Drop Cap*/
+                        p.collection-text {
+                            
+                            font-size: 1em;
+                            
+                        }
+                    }
 
                     article.recycle-facts {
-                        padding: 0;
+                        padding: 3em;
 
                         h2 {
-                            line-height: 35px;
+                            line-height: 1.5;
                             
                         }
 
@@ -3212,15 +3230,8 @@ button#mobile-toggle {
                             }
                         }
                     }
-                }
 
-                /* The dots/bullets/indicators */
-
-                #mask,
-                #mask_two {
-                    width: 100%;
-
-                    .recycle-facts__dots {
+                    article.recycle-facts__dots {
                         text-align: center;
 
                         &--dot {
@@ -3252,10 +3263,7 @@ button#mobile-toggle {
                     .next:hover {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
-                }
 
-                /*Content boxes*/
-                #contentboxes {
                     .contentbox {
                         h2 {
                             font-size: 1.1em;
@@ -3284,9 +3292,9 @@ button#mobile-toggle {
                             }
                         }
                     }
-
-                    /*contentbox end*/
                 }
+
+                
                 #home_contentboxes {
                     
                     /*contentbox*/
@@ -3309,13 +3317,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 60%;
+                                width: 40%;
                                 
                             }
 
                             img#wordSearch {
 
-                                width: 30%;
+                                width: 20%;
                                 
                             }
 
@@ -3572,7 +3580,7 @@ button#mobile-toggle {
 
                     /*Drop Cap*/
                     p.collection-text {
-                        line-height: 1.5em;
+
                         font-size: 0.7em;
                     }
 
@@ -3581,8 +3589,7 @@ button#mobile-toggle {
                         display: inline-block;
 
                         &::before {
-                            font-family: "FontAwesome";
-                            content: "\f015";
+
                             font-size: 1.1em;
                         }
 
@@ -3717,13 +3724,44 @@ button#mobile-toggle {
                 }
 
                 #facts_box {
-                    height: 60vh;
+                    height: auto;
+
+                   
+                }
+
+                /* The dots/bullets/indicators */
+
+                #mask,
+                #mask_two,
+                #mask3 {
+                    width: 100%;
+                    div.collection-box{
+                                                
+                        h2 {
+                            
+                            font-size: 1.2em;
+                           
+        
+    
+                            &:hover {
+                                cursor: pointer;
+                         
+                            }
+                        }
+                    
+                        /*Drop Cap*/
+                        p.collection-text {
+                            
+                            font-size: 1em;
+                            
+                        }
+                    }
 
                     article.recycle-facts {
-                        padding: 0.5em;
+                        padding: 2em;
 
                         h2 {
-                            line-height: 35px;
+                            line-height: 1.5;
                         }
 
                         ul {
@@ -3751,15 +3789,8 @@ button#mobile-toggle {
                             }
                         }
                     }
-                }
 
-                /* The dots/bullets/indicators */
-
-                #mask,
-                #mask_two {
-                    width: 100%;
-
-                    .recycle-facts__dots {
+                    article.recycle-facts__dots {
                         text-align: center;
 
                         &--dot {
@@ -3791,11 +3822,6 @@ button#mobile-toggle {
                     .next:hover {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
-                }
-
-                /*Content boxes*/
-                #contentboxes {
-                    height: auto;
 
                     .contentbox {
                         width: 49%;
@@ -3825,7 +3851,13 @@ button#mobile-toggle {
                         }
                     }
 
-                    /*contentbox end*/
+                }
+
+                /*Content boxes*/
+                #contentboxes,
+                #collection-boxes {
+                    height: auto;
+
                 }
                 #home_contentboxes {
 
@@ -3850,13 +3882,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 60%;
+                                width: 40%;
                                 
                             }
 
                             img#wordSearch {
   
-                                width: 30%;
+                                width: 20%;
                                 
                             }
 
@@ -4105,7 +4137,7 @@ button#mobile-toggle {
 
                     /*Drop Cap*/
                     p.collection-text {
-                        letter-spacing: 0.1em;
+
                         font-size: 0.7em;
                     }
 
@@ -4114,8 +4146,7 @@ button#mobile-toggle {
                         display: inline-block;
 
                         &::before {
-                            font-family: "FontAwesome";
-                            content: "\f015";
+
                             font-size: 1.1em;
                         }
 
@@ -4231,13 +4262,45 @@ button#mobile-toggle {
                 }
 
                 #facts_box {
-                    height: 60vh;
+                    height: auto;
+
+                    
+                }
+
+                /* The dots/bullets/indicators */
+
+                #mask,
+                #mask_two,
+                #mask3 {
+                    width: 100%;
+                    div.collection-box{
+                        
+                        
+                        h2 {
+                            
+                            font-size: 1.2em;
+                           
+        
+    
+                            &:hover {
+                                cursor: pointer;
+                         
+                            }
+                        }
+                    
+                        /*Drop Cap*/
+                        p.collection-text {
+                            
+                            font-size: 1em;
+                            
+                        }
+                    }
 
                     article.recycle-facts {
-                        padding: 0.5em;
+                       
 
                         h2 {
-                            line-height: 35px;
+                            line-height: 1.5;
                         }
 
                         ul {
@@ -4265,15 +4328,8 @@ button#mobile-toggle {
                             }
                         }
                     }
-                }
 
-                /* The dots/bullets/indicators */
-
-                #mask,
-                #mask_two {
-                    width: 100%;
-
-                    .recycle-facts__dots {
+                    article.recycle-facts__dots {
                         text-align: center;
 
                         &--dot {
@@ -4305,11 +4361,6 @@ button#mobile-toggle {
                     .next:hover {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
-                }
-
-                /*Content boxes*/
-                #contentboxes {
-                    height: auto;
 
                     .contentbox {
                         width: 49%;
@@ -4339,7 +4390,14 @@ button#mobile-toggle {
                         }
                     }
 
-                    /*contentbox end*/
+
+                }
+
+                /*Content boxes*/
+                #contentboxes,
+                #collection-boxes {
+                    height: auto;
+    
                 }
 
                 #home_contentboxes {
@@ -4364,13 +4422,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 60%;
+                                width: 40%;
                                 
                             }
 
                             img#wordSearch {
      
-                                width: 30%;
+                                width: 20%;
                                 
                             }
 
@@ -4632,9 +4690,7 @@ button#mobile-toggle {
 
                     /*Drop Cap*/
                     p.collection-text {
-                        letter-spacing: 0.1em;
-                        padding: 2%;
-                        font-size: 0.7em;
+                         font-size: 0.7em;
                     }
 
                     ul.recycle-contact {
@@ -4642,8 +4698,7 @@ button#mobile-toggle {
                         display: inline-block;
 
                         &::before {
-                            font-family: "FontAwesome";
-                            content: "\f015";
+      
                             font-size: 1.1em;
                         }
 
@@ -4753,13 +4808,22 @@ button#mobile-toggle {
                 }
 
                 #facts_box {
-                    height: 60vh;
+                    height: auto;
+
+                    
+                }
+
+                /* The dots/bullets/indicators */
+
+                #mask,
+                #mask_two {
+                    width: 100%;
 
                     article.recycle-facts {
-                        padding: 0.5em;
+                        
 
                         h2 {
-                            line-height: 35px;
+                            line-height: 1.5;
                         }
 
                         ul {
@@ -4788,15 +4852,8 @@ button#mobile-toggle {
                             }
                         }
                     }
-                }
 
-                /* The dots/bullets/indicators */
-
-                #mask,
-                #mask_two {
-                    width: 100%;
-
-                    .recycle-facts__dots {
+                    article.recycle-facts__dots {
                         text-align: center;
 
                         &--dot {
@@ -4828,11 +4885,6 @@ button#mobile-toggle {
                     .next:hover {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
-                }
-
-                /*Content boxes*/
-                #contentboxes {
-                    height: auto;
 
                     .contentbox {
                         margin: 0.2em;
@@ -4860,8 +4912,13 @@ button#mobile-toggle {
                             }
                         }
                     }
+                }
 
-                    /*contentbox end*/
+                /*Content boxes*/
+                #contentboxes,
+                #collection-boxes {
+                    height: auto;
+
                 }
                 #home_contentboxes {
                     
@@ -4884,13 +4941,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 70%;
+                                width: 40%;
                                 
                             }
 
                             img#wordSearch {
      
-                                width: 30%;
+                                width: 20%;
                                 
                             }
 
@@ -5178,8 +5235,7 @@ button#mobile-toggle {
 
                     /*Drop Cap*/
                     p.collection-text {
-                        letter-spacing: 0.1em;
-                        padding: 2%;
+
                         font-size: 0.7em;
                     }
 
@@ -5188,8 +5244,7 @@ button#mobile-toggle {
                         display: inline-block;
 
                         &::before {
-                            font-family: "FontAwesome";
-                            content: "\f015";
+
                             font-size: 1.1em;
                         }
 
@@ -5201,7 +5256,7 @@ button#mobile-toggle {
                     }
 
                     ul.recycle-contact:nth-of-type(2) {
-                        width: 35%;
+                        width: 40%;
 
                         &::before {
                             font-family: "FontAwesome";
@@ -5210,7 +5265,7 @@ button#mobile-toggle {
                     }
 
                     ul.recycle-contact:nth-of-type(3) {
-                        width: 60%;
+                        width: 55%;
 
                         &::before {
                             font-family: "FontAwesome";
@@ -5310,13 +5365,22 @@ button#mobile-toggle {
                 }
 
                 #facts_box {
-                    height: 60vh;
+                    height: auto;
+
+                    
+                }
+
+                /* The dots/bullets/indicators */
+
+                #mask,
+                #mask_two {
+                    width: 100%;
 
                     article.recycle-facts {
-                        padding: 0.5em;
+                        
 
                         h2 {
-                            line-height: 35px;
+                            line-height: 1.5;
                         }
 
                         ul {
@@ -5344,15 +5408,8 @@ button#mobile-toggle {
                             }
                         }
                     }
-                }
 
-                /* The dots/bullets/indicators */
-
-                #mask,
-                #mask_two {
-                    width: 100%;
-
-                    .recycle-facts__dots {
+                    article.recycle-facts__dots {
                         text-align: center;
 
                         &--dot {
@@ -5384,11 +5441,6 @@ button#mobile-toggle {
                     .next:hover {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
-                }
-
-                /*Content boxes*/
-                #contentboxes {
-                    height: auto;
 
                     .contentbox {
                         width: 48.5%;
@@ -5421,6 +5473,14 @@ button#mobile-toggle {
                         }
                     }
                 }
+
+                /*Content boxes*/
+                #contentboxes,
+                #collection-boxes {
+                    height: auto;
+
+                   
+                }
                 #home_contentboxes {
                     
                     /*contentbox*/
@@ -5442,13 +5502,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 70%;
+                                width: 40%;
                                 
                             }
 
                             img#wordSearch {
      
-                                width: 30%;
+                                width: 20%;
                                 
                             }
 
@@ -5720,7 +5780,7 @@ button#mobile-toggle {
 
                     /*Drop Cap*/
                     p.collection-text {
-                        padding: 2%;
+
                         font-size: 0.7em;
                     }
 
@@ -5729,8 +5789,7 @@ button#mobile-toggle {
                         display: inline-block;
 
                         &::before {
-                            font-family: "FontAwesome";
-                            content: "\f015";
+           
                             font-size: 1.1em;
                         }
 
@@ -5837,13 +5896,22 @@ button#mobile-toggle {
                 }
 
                 #facts_box {
-                    height: 60vh;
+                    height: auto;
+
+                    
+                }
+
+                /* The dots/bullets/indicators */
+
+                #mask,
+                #mask_two {
+                    width: 100%;
 
                     article.recycle-facts {
-                        padding: 0.5em;
+                        
 
                         h2 {
-                            line-height: 35px;
+                            line-height: 1.5;
                         }
 
                         ul {
@@ -5871,15 +5939,8 @@ button#mobile-toggle {
                             }
                         }
                     }
-                }
 
-                /* The dots/bullets/indicators */
-
-                #mask,
-                #mask_two {
-                    width: 100%;
-
-                    .recycle-facts__dots {
+                    article.recycle-facts__dots {
                         text-align: center;
 
                         &--dot {
@@ -5911,11 +5972,6 @@ button#mobile-toggle {
                     .next:hover {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
-                }
-
-                /*Content boxes*/
-                #contentboxes {
-                    height: auto;
 
                     .contentbox {
                         width: 98.7%;
@@ -5947,11 +6003,20 @@ button#mobile-toggle {
                         }
                     }
                 }
+
+                /*Content boxes*/
+                #contentboxes,
+                #collection-boxes {
+                    height: auto;
+
+                   
+                }
                 #home_contentboxes {
                     
                     /*contentbox*/
                     article.home_contentbox {
-                        width: 31.5%;
+                        
+                        
                         
                                                
 
@@ -5970,13 +6035,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 70%;
+                                width: 40%;
                                 
                             }
 
                             img#wordSearch {
      
-                                width: 30%;
+                                width: 20%;
                                 
                             }
 
@@ -6297,7 +6362,7 @@ button#mobile-toggle {
 
                     /*Drop Cap*/
                     p.collection-text {
-                        padding: 2%;
+
                         font-size: 0.7em;
                     }
 
@@ -6306,8 +6371,7 @@ button#mobile-toggle {
                         display: inline-block;
 
                         &::before {
-                            font-family: "FontAwesome";
-                            content: "\f015";
+
                             font-size: 1.1em;
                         }
 
@@ -6420,13 +6484,22 @@ button#mobile-toggle {
                 }
 
                 #facts_box {
-                    height: 60vh;
+                    height: auto;
+
+                    
+                }
+
+                /* The dots/bullets/indicators */
+
+                #mask,
+                #mask_two {
+                    width: 100%;
 
                     article.recycle-facts {
-                        padding: 0.5em;
+                        
 
                         h2 {
-                            line-height: 35px;
+                            line-height: 1.5;
                         }
 
                         ul {
@@ -6454,15 +6527,8 @@ button#mobile-toggle {
                             }
                         }
                     }
-                }
 
-                /* The dots/bullets/indicators */
-
-                #mask,
-                #mask_two {
-                    width: 100%;
-
-                    .recycle-facts__dots {
+                    article.recycle-facts__dots {
                         text-align: center;
 
                         &--dot {
@@ -6494,11 +6560,6 @@ button#mobile-toggle {
                     .next:hover {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
-                }
-
-                /*Content boxes*/
-                #contentboxes {
-                    height: auto;
 
                     .contentbox {
                         width: 98.7%;
@@ -6529,6 +6590,14 @@ button#mobile-toggle {
                         }
                     }
                 }
+
+                /*Content boxes*/
+                #contentboxes,
+                #collection-boxes {
+                    height: auto;
+
+                    
+                }
                 #home_contentboxes {
                     height:auto;
                     -webkit-flex-flow: column;
@@ -6537,10 +6606,13 @@ button#mobile-toggle {
                     -webkit-justify-content: center;
                     -ms-flex-pack: center;
                     justify-content: center;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
                     /*contentbox*/
                     article.home_contentbox {
 
-                        width: 98%;
+                        width: 78%;
                      
                         h2 {
                             
@@ -6626,18 +6698,7 @@ button#mobile-toggle {
 }
 
 @media only screen and (max-width: 536px) {
-    /*    button#mobile-toggle {
-        
-        font-size: 0.85em;
-        &:hover {
-            background-color: $colorslidebg;
-        }
-        &:active,
-         :focus {
-            color: $colorsocmedhov;
-        }
-    }
-*/
+
 
     div.container_24 {
         width: 98%;
@@ -6685,6 +6746,22 @@ button#mobile-toggle {
             /*social media icons*/
         }
 
+        button#mobile-toggle,
+        nav.toggled ul {
+            display: block;
+        }
+        
+        button#mobile-toggle {
+            
+            left: 87%;
+            
+        }
+    
+        button#mobile-toggle.hide {
+            left: 100vw;
+        }
+    
+    
         ul#mobile-nav {
             display: none;
         }
@@ -6826,7 +6903,7 @@ button#mobile-toggle {
 
                     /*Drop Cap*/
                     p.collection-text {
-                        padding: 2%;
+       
                         font-size: 0.7em;
                     }
 
@@ -6835,8 +6912,7 @@ button#mobile-toggle {
                         display: inline-block;
 
                         &::before {
-                            font-family: "FontAwesome";
-                            content: "\f015";
+
                             font-size: 1.1em;
                         }
 
@@ -6953,13 +7029,22 @@ button#mobile-toggle {
                 }
 
                 #facts_box {
-                    height: 60vh;
+                    height: auto;
+
+                    
+                }
+
+                /* The dots/bullets/indicators */
+
+                #mask,
+                #mask_two {
+                    width: 100%;
 
                     article.recycle-facts {
-                        padding: 0.5em;
+                        
 
                         h2 {
-                            line-height: 35px;
+                            line-height: 1.5;
                         }
 
                         ul {
@@ -6987,15 +7072,8 @@ button#mobile-toggle {
                             }
                         }
                     }
-                }
 
-                /* The dots/bullets/indicators */
-
-                #mask,
-                #mask_two {
-                    width: 100%;
-
-                    .recycle-facts__dots {
+                    article.recycle-facts__dots {
                         text-align: center;
 
                         &--dot {
@@ -7027,11 +7105,6 @@ button#mobile-toggle {
                     .next:hover {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
-                }
-
-                /*Content boxes*/
-                #contentboxes {
-                    height: auto;
 
                     .contentbox {
                         width: 98.7%;
@@ -7061,6 +7134,16 @@ button#mobile-toggle {
                             }
                         }
                     }
+
+
+                }
+
+                /*Content boxes*/
+                #contentboxes,
+                #collection-boxes {
+                    height: auto;
+
+                    
                 }
                 #home_contentboxes {
                     height:auto;
@@ -7152,18 +7235,7 @@ button#mobile-toggle {
 }
 
 @media only screen and (max-width: 480px) {
-    /*    button#mobile-toggle {
-        
-        font-size: 0.85em;
-        &:hover {
-            background-color: $colorslidebg;
-        }
-        &:active,
-         :focus {
-            color: $colorsocmedhov;
-        }
-    }
-*/
+ 
 
     div.container_24 {
         header {
@@ -7207,6 +7279,21 @@ button#mobile-toggle {
             }
 
             /*social media icons*/
+        }
+
+        button#mobile-toggle,
+        nav.toggled ul {
+            display: block;
+        }
+        
+        button#mobile-toggle {
+            
+            left: 87%;
+            
+        }
+    
+        button#mobile-toggle.hide {
+            left: 100vw;
         }
 
         ul#mobile-nav {
@@ -7352,7 +7439,7 @@ button#mobile-toggle {
 
                     /*Drop Cap*/
                     p.collection-text {
-                        padding: 2%;
+
                         font-size: 0.7em;
                     }
 
@@ -7361,8 +7448,7 @@ button#mobile-toggle {
                         display: block;
 
                         &::before {
-                            font-family: "FontAwesome";
-                            content: "\f015";
+         
                             font-size: 1.1em;
                         }
 
@@ -7482,13 +7568,22 @@ button#mobile-toggle {
                 }
 
                 #facts_box {
-                    height: 60vh;
+                    height: auto;
+
+                    
+                }
+
+                /* The dots/bullets/indicators */
+
+                #mask,
+                #mask_two {
+                    width: 100%;
 
                     article.recycle-facts {
-                        padding: 0.5em;
+                        
 
                         h2 {
-                            line-height: 35px;
+                            line-height: 1.5;
                         }
 
                         ul {
@@ -7516,15 +7611,8 @@ button#mobile-toggle {
                             }
                         }
                     }
-                }
 
-                /* The dots/bullets/indicators */
-
-                #mask,
-                #mask_two {
-                    width: 100%;
-
-                    .recycle-facts__dots {
+                    article.recycle-facts__dots {
                         text-align: center;
 
                         &--dot {
@@ -7556,11 +7644,6 @@ button#mobile-toggle {
                     .next:hover {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
-                }
-
-                /*Content boxes*/
-                #contentboxes {
-                    height: auto;
 
                     .contentbox {
                         width: 98.7%;
@@ -7588,6 +7671,15 @@ button#mobile-toggle {
                             }
                         }
                     }
+
+                }
+
+                /*Content boxes*/
+                #contentboxes,
+                #collection-boxes {
+                    height: auto;
+
+                   
                 }
                 #home_contentboxes {
                     
@@ -7678,19 +7770,7 @@ button#mobile-toggle {
 }
 
 @media only screen and (max-width: 414px) {
-    /*    button#mobile-toggle {
 
-        font-size: 0.85em;
-
-        &:hover {
-            background-color: $colorslidebg;
-        }
-        &:active,
-         :focus {
-            color: $colorsocmedhov;
-        }
-    }
-*/
 
     div.container_24 {
         header {
@@ -7731,6 +7811,21 @@ button#mobile-toggle {
             }
 
             /*social media icons*/
+        }
+
+        button#mobile-toggle,
+        nav.toggled ul {
+            display: block;
+        }
+        
+        button#mobile-toggle {
+            
+            left: 87%;
+            
+        }
+    
+        button#mobile-toggle.hide {
+            left: 100vw;
         }
 
         ul#mobile-nav {
@@ -7877,7 +7972,7 @@ button#mobile-toggle {
 
                     /*Drop Cap*/
                     p.collection-text {
-                        padding: 2%;
+    
                         font-size: 0.7em;
                     }
 
@@ -7885,8 +7980,7 @@ button#mobile-toggle {
                         display: block;
 
                         &::before {
-                            font-family: "FontAwesome";
-                            content: "\f015";
+      
                             font-size: 1.1em;
                         }
 
@@ -8010,13 +8104,22 @@ button#mobile-toggle {
                 }
 
                 #facts_box {
-                    height: 60vh;
+                    height: auto;
+
+                    
+                }
+
+                /* The dots/bullets/indicators */
+
+                #mask,
+                #mask_two {
+                    width: 100%;
 
                     article.recycle-facts {
-                        padding: 0.5em;
+                        
 
                         h2 {
-                            line-height: 35px;
+                            line-height: 1.5;
                             font-size:0.9em;
                         }
 
@@ -8045,15 +8148,8 @@ button#mobile-toggle {
                             }
                         }
                     }
-                }
 
-                /* The dots/bullets/indicators */
-
-                #mask,
-                #mask_two {
-                    width: 100%;
-
-                    .recycle-facts__dots {
+                    article.recycle-facts__dots {
                         text-align: center;
 
                         &--dot {
@@ -8085,19 +8181,6 @@ button#mobile-toggle {
                     .next:hover {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
-                }
-
-                /*Content boxes*/
-                #contentboxes {
-                    height: auto;
-                    float: none;
-                    display: block;
-                    -webkit-flex-flow: column;
-                    -ms-flex-flow: column;
-                    flex-flow: column;
-                    -webkit-justify-content: space-around;
-                    -ms-flex-pack: justify;
-                    justify-content: space-around;
 
                     .contentbox {
                         width: 98.7%;
@@ -8128,6 +8211,22 @@ button#mobile-toggle {
                             }
                         }
                     }
+                }
+
+                /*Content boxes*/
+                #contentboxes,
+                #collection-boxes {
+                    height: auto;
+                    float: none;
+                    display: block;
+                    -webkit-flex-flow: column;
+                    -ms-flex-flow: column;
+                    flex-flow: column;
+                    -webkit-justify-content: space-around;
+                    -ms-flex-pack: justify;
+                    justify-content: space-around;
+
+                   
                 }
                 #home_contentboxes {
                     
@@ -8219,18 +8318,7 @@ button#mobile-toggle {
 }
 
 @media only screen and (max-width: 375px) {
-    button#mobile-toggle {
-        font-size: 0.85em;
-
-        &:hover {
-            background-color: $colorslidebg;
-        }
-
-        &:active,
-        :focus {
-            color: $colorsocmedhov;
-        }
-    }
+  
 
     div.container_24 {
         header {
@@ -8274,6 +8362,21 @@ button#mobile-toggle {
             }
 
             /*social media icons*/
+        }
+
+        button#mobile-toggle,
+        nav.toggled ul {
+            display: block;
+        }
+        
+        button#mobile-toggle {
+            
+            left: 87%;
+            
+        }
+    
+        button#mobile-toggle.hide {
+            left: 100vw;
         }
 
         ul#mobile-nav {
@@ -8417,7 +8520,7 @@ button#mobile-toggle {
 
                     /*Drop Cap*/
                     p.collection-text {
-                        padding: 2%;
+
                         font-size: 0.7em;
                     }
 
@@ -8426,8 +8529,7 @@ button#mobile-toggle {
                         display: block;
 
                         &::before {
-                            font-family: "FontAwesome";
-                            content: "\f015";
+ 
                             font-size: 1.1em;
                         }
 
@@ -8541,13 +8643,22 @@ button#mobile-toggle {
                 }
 
                 #facts_box {
-                    height: 60vh;
+                    height: auto;
+
+                    
+                }
+
+                /* The dots/bullets/indicators */
+
+                #mask,
+                #mask_two {
+                    width: 100%;
 
                     article.recycle-facts {
-                        padding: 0.5em;
+                        padding: 1em;
 
                         h2 {
-                            line-height: 35px;
+                            line-height: 1.5;
                         }
 
                         ul {
@@ -8575,15 +8686,8 @@ button#mobile-toggle {
                             }
                         }
                     }
-                }
 
-                /* The dots/bullets/indicators */
-
-                #mask,
-                #mask_two {
-                    width: 100%;
-
-                    .recycle-facts__dots {
+                    article.recycle-facts__dots {
                         text-align: center;
 
                         &--dot {
@@ -8615,11 +8719,6 @@ button#mobile-toggle {
                     .next:hover {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
-                }
-
-                /*Content boxes*/
-                #contentboxes {
-                    height: auto;
 
                     .contentbox {
                         min-height: 180px;
@@ -8647,6 +8746,15 @@ button#mobile-toggle {
                             }
                         }
                     }
+
+                }
+
+                /*Content boxes*/
+                #contentboxes,
+                #collection-boxes {
+                    height: auto;
+
+                    
                 }
                 #home_contentboxes {
                     
@@ -8736,19 +8844,7 @@ button#mobile-toggle {
 }
 
 @media only screen and (max-width: 360px) {
-    button#mobile-toggle {
-        font-size: 0.85em;
-
-        &:hover {
-            background-color: $colorslidebg;
-        }
-
-        &:active,
-        :focus {
-            color: $colorsocmedhov;
-        }
-    }
-
+    
     div.container_24 {
         width: 98%;
 
@@ -8793,6 +8889,21 @@ button#mobile-toggle {
             }
 
             /*social media icons*/
+        }
+
+        button#mobile-toggle,
+        nav.toggled ul {
+            display: block;
+        }
+        
+        button#mobile-toggle {
+            
+            left: 87%;
+            
+        }
+    
+        button#mobile-toggle.hide {
+            left: 100vw;
         }
 
         ul#mobile-nav {
@@ -8936,7 +9047,7 @@ button#mobile-toggle {
 
                     /*Drop Cap*/
                     p.collection-text {
-                        padding: 2%;
+   
                         font-size: 0.7em;
                     }
 
@@ -8945,8 +9056,7 @@ button#mobile-toggle {
                         display: block;
 
                         &::before {
-                            font-family: "FontAwesome";
-                            content: "\f015";
+         
                             font-size: 1.1em;
                         }
 
@@ -9059,13 +9169,22 @@ button#mobile-toggle {
                 }
 
                 #facts_box {
-                    height: 60vh;
+                    height: auto;
+
+                    
+                }
+
+                /* The dots/bullets/indicators */
+
+                #mask,
+                #mask_two {
+                    width: 100%;
 
                     article.recycle-facts {
                         padding: 0.5em;
 
                         h2 {
-                            line-height: 35px;
+                            line-height: 1.5;
                         }
 
                         ul {
@@ -9093,15 +9212,8 @@ button#mobile-toggle {
                             }
                         }
                     }
-                }
 
-                /* The dots/bullets/indicators */
-
-                #mask,
-                #mask_two {
-                    width: 100%;
-
-                    .recycle-facts__dots {
+                    article.recycle-facts__dots {
                         text-align: center;
 
                         &--dot {
@@ -9133,11 +9245,6 @@ button#mobile-toggle {
                     .next:hover {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
-                }
-
-                /*Content boxes*/
-                #contentboxes {
-                    height: auto;
 
                     .contentbox {
                         min-height: 180px;
@@ -9165,6 +9272,14 @@ button#mobile-toggle {
                             }
                         }
                     }
+                }
+
+                /*Content boxes*/
+                #contentboxes,
+                #collection-boxes {
+                    height: auto;
+
+                    
                 }
                 #home_contentboxes {
                     
@@ -9257,19 +9372,7 @@ button#mobile-toggle {
 }
 
 @media only screen and (max-width: 320px) {
-    /*    button#mobile-toggle {
-        
-        font-size: 0.8em;
-        &:hover {
-            background-color: $colorslidebg;
-        }
-        &:active,
-         :focus {
-            color: $colorsocmedhov;
-        }
-    }
-*/
-
+ 
     div.container_24 {
         width: 98%;
 
@@ -9314,6 +9417,21 @@ button#mobile-toggle {
             }
 
             /*social media icons*/
+        }
+
+        button#mobile-toggle,
+        nav.toggled ul {
+            display: block;
+        }
+        
+        button#mobile-toggle {
+            
+            left: 87%;
+            
+        }
+    
+        button#mobile-toggle.hide {
+            left: 100vw;
         }
 
         ul#mobile-nav {
@@ -9456,7 +9574,7 @@ button#mobile-toggle {
 
                     /*Drop Cap*/
                     p.collection-text {
-                        padding: 2%;
+
                         font-size: 0.7em;
                     }
 
@@ -9465,8 +9583,7 @@ button#mobile-toggle {
                         display: block;
 
                         &::before {
-                            font-family: "FontAwesome";
-                            content: "\f015";
+                      
                             font-size: 1.1em;
                         }
 
@@ -9579,13 +9696,22 @@ button#mobile-toggle {
                 }
 
                 #facts_box {
-                    height: 60vh;
+                    height: auto;
+
+                    
+                }
+
+                /* The dots/bullets/indicators */
+
+                #mask,
+                #mask_two {
+                    width: 100%;
 
                     article.recycle-facts {
                         padding: 0.5em;
 
                         h2 {
-                            line-height: 35px;
+                            line-height: 1.5;
                         }
 
                         ul {
@@ -9613,15 +9739,8 @@ button#mobile-toggle {
                             }
                         }
                     }
-                }
 
-                /* The dots/bullets/indicators */
-
-                #mask,
-                #mask_two {
-                    width: 100%;
-
-                    .recycle-facts__dots {
+                    article.recycle-facts__dots {
                         text-align: center;
 
                         &--dot {
@@ -9653,11 +9772,6 @@ button#mobile-toggle {
                     .next:hover {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
-                }
-
-                /*Content boxes*/
-                #contentboxes {
-                    height: auto;
 
                     .contentbox {
                         width: 98.5%;
@@ -9686,6 +9800,15 @@ button#mobile-toggle {
                             }
                         }
                     }
+
+                }
+
+                /*Content boxes*/
+                #contentboxes,
+                #collection-boxes {
+                    height: auto;
+
+                    
                 }
                 #home_contentboxes {
                     
