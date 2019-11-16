@@ -100,8 +100,6 @@ var twImageSix = document.getElementById("tenImageSix");
 twImageSix.src = tenImageSix;
 
 
-
-
 //Scroll ******************************************
 (function() {
     /* ========================================== 
@@ -146,16 +144,6 @@ twImageSix.src = tenImageSix;
         } // End if
     });
 })();
-
-/*//H3 Title Toggle
-(function () {
-//headings
-  $(".collections_title").on('click',function() {
-      var element = $(this);
-      $(element).next(".collection-text").animate({ height: "toggle" }, "slow" );
-  });
-})();
-*/
 
 //Validation ******************************************
 (function() {
