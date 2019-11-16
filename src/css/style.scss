@@ -21,8 +21,8 @@ button#mobile-toggle {
 
     &:active,
     :focus {
-        background-color: $colorslidebg;
-        color: $colorsocmedhov;
+        color: $colorslidebg;
+        background-color: $colorsocmedhov;
     }
 }
 
@@ -59,7 +59,7 @@ button#mobile-toggle {
             display: -ms-flexbox;
             display: flex;
             height: auto;
-            background-color: $headbg;
+            background-color: $honecolor;
             padding: 0.25em;
             -webkit-flex-flow: row;
             -ms-flex-flow: row;
@@ -87,7 +87,7 @@ button#mobile-toggle {
                     letter-spacing: 0.15em;
                     line-height: 40px;
                     margin: 0;
-                    background-color: $colornav;
+                    
                     padding: 0;
                     width: 100%;
                     text-shadow: 1px 1px 1px $header-shadow;
@@ -98,7 +98,7 @@ button#mobile-toggle {
                     float: left;
                     color: $colorsocmedhov;
                     padding: 0;
-                    background-color: $colornav;
+                    
                     font-size: 0.85em;
                     font-family: $fontList;
                     line-height: 20px;
@@ -135,7 +135,7 @@ button#mobile-toggle {
                 display: block;
                 float: right;
                 margin: 0;
-                background-color: $headbg;
+                
                 -webkit-flex: 1 0 auto;
                 -ms-flex: 1 0 auto;
                 flex: 1 0 auto;
@@ -177,22 +177,26 @@ button#mobile-toggle {
                             text-align: center;
                             display: block;
                             text-shadow: 1px 2px 1px $header-shadow;
+                            background-color: $headbg;
 
-                            i {
+                            
+                            i.fa-twitter,
+                            i.fa-facebook,
+                            i.fa-google,
+                            i.fa-instagram {
                                 
                                 display: block;
                                 width: 100%;
                                 height: 100%;
                                 text-align: center;
-                                line-height: 40.75px;
+                                line-height: 50px;
                                 font-size: 1.25em;
-                                color: $colorsocmed;
+                                color: $colortxtbg;
                                 @include transitioner(all 0.2s ease-in 0s);
 
                                 &:hover {
                                     transform: scale(1.2);
                                     color: $colorsocmedhov;
-                                    line-height: 41.75px;
                                     text-shadow: 0 0 0 $header-shadow;
                                     cursor:pointer;
                                 }
@@ -282,7 +286,7 @@ button#mobile-toggle {
 
                     a {
                         color: $colorsocmedhov;
-                        background-color: $colornav;
+                        background-color: $honecolor;
                         display: block;
                         line-height: 50px;
                         font-size: 1em;
@@ -293,8 +297,8 @@ button#mobile-toggle {
 
                         &:hover {
                             font-weight: bold;
-                            color: $colornav;
                             background-color: $colorsocmedhov;
+                            color:$honecolor ;
                             text-shadow: none;
                         }
                     }
@@ -319,7 +323,7 @@ button#mobile-toggle {
 
             /*Slider*/
             #slider {
-                background-color: $contenttxtbg;
+                background-color: $honecolor;
                 width: 100%;
                 height: 380px;
                 margin: 0.5em 0;
@@ -328,7 +332,7 @@ button#mobile-toggle {
                     width: 100%;
                     height: 100%;
                     display: block;
-                    background-color: $contenttxtbg;
+                   
 
                     div.flexslider {
                         height: auto;
@@ -336,10 +340,10 @@ button#mobile-toggle {
                         padding: 0;
                         margin: 0;
                         font-family: $fontList;
-                        background-color: $contenttxtbg;
+                        
 
                         ul.slides {
-                            height: 350px;
+                            height: 100%;
                             margin: 0;
                             padding: 0;
 
@@ -475,7 +479,7 @@ button#mobile-toggle {
                 .text {
                     width: 100%;
                     height: auto;
-                    background-color: $contenttxtbg;
+                    background-color: $colorsocmedhov;
                     font-size: 1em;
                     padding: 0.5em;
                     display: -webkit-flex;
@@ -675,13 +679,15 @@ button#mobile-toggle {
 
                         ul {
                             margin: 1% auto;
-                            background-color: $contentbg;
+                            background-color: $headbg;
                             padding: 0;
+                            
+                            padding: 1em;
 
                             li {
                                 width: 100%;
                                 padding: 0;
-                                background-color: $contentbg;
+                                background-color: $headbg;
 
                                 label {
                                     width: 100%;
@@ -802,6 +808,7 @@ button#mobile-toggle {
                     -webkit-align-items: stretch;
                     -ms-flex-align: stretch;
                     align-items: stretch;
+                    background-color:$colorsocmedhov;
 
                     div.collection-box{
                         position: absolute;
@@ -873,25 +880,25 @@ button#mobile-toggle {
 
                             li {
                                 list-style: none;
-                                line-height: 40px;
+                                line-height: 50px;
                                 display: block;
                                 width: 100%;
                                 text-align: left;
                                 letter-spacing: 0.1em;
                                 font-size: 0.9em;
-                                height: 40px;
+                                height: 50px;
                                 clear: left;
                                 &:before {
                                     font-family: "FontAwesome";
                                     content: "\f1b8";
                                     font-style: normal;
-                                    padding: 1em;
-                                    line-height: 40px;
+                                    
+                                    line-height: 50px;
                                     color: $headbg;
                                     display: block;
                                     padding: 0;
                                     text-align: center;
-                                    font-size: 1.3em;
+                                    font-size: 1.5em;
                                     width: 50px;
                                     height: auto;
                                     float:left;
@@ -942,9 +949,9 @@ button#mobile-toggle {
                         width: auto;
                         margin-top: -22px;
                         padding: 16px;
-                        color: white;
+                        color: black;
                         font-weight: bold;
-                        font-size: 18px;
+                        font-size: 20px;
                         transition: 0.6s ease;
                         border-radius: 0 3px 3px 0;
                         z-index: 10;
@@ -958,13 +965,19 @@ button#mobile-toggle {
                     .prev:hover,
                     .next:hover {
                         background-color: rgba(0, 0, 0, 0.8);
+                        color:#fff;
+                    }
+
+                    .contentbox > img{
+                        display:block;
+                        margin:2em auto;
                     }
 
                     .contentbox {
                         width: 100%;
                         min-height: 225px;
                         height: auto;
-                        background-color: $colorsildertxtbg;
+                        background-color: $bgcolor;
                         margin: 0.5em;
                         box-sizing: border-box;
                         padding: 2.5em;
@@ -973,8 +986,8 @@ button#mobile-toggle {
                         h2 {
                             text-indent: 0;
                             height: auto;
-                            line-height: 35px;
-                            font-size: 1.1em;
+                            line-height: 60px;
+                            font-size: 1.3em;
                             color: $colortxt;
                             background-color: $colorsocmedhov;
                             text-align: center;
@@ -995,10 +1008,11 @@ button#mobile-toggle {
                             width: auto;
                             display: block;
                         }
+                        
 
                         .contentbox_image {
                             float: left;
-                            margin: 0 0.25em 0 0;
+                            margin: 0 auto;
                             width: 30%;
 
                             img {
@@ -1052,7 +1066,7 @@ button#mobile-toggle {
                     -webkit-justify-content: flex-start;
                     -ms-flex-pack: flex-start;
                     justify-content: flex-start;
-                    
+                    background-color:$colorsocmedhov;
                     /*contentbox*/
                     article.home_contentbox {
                         width: 31.5%;
@@ -1298,7 +1312,10 @@ button#mobile-toggle {
                             height: 100%;
                             width: 100%;
 
-                            i {
+                            i.fa-twitter,
+                            i.fa-facebook,
+                            i.fa-google,
+                            i.fa-instagram {
                                 font-size: 1.1em;
 
                                 &:hover {
@@ -1360,7 +1377,7 @@ button#mobile-toggle {
                         height: 100%;
 
                         ul.slides {
-                            height: 300px;
+                            height: 100%;
 
                             li {
                                 img {
@@ -1373,8 +1390,8 @@ button#mobile-toggle {
                                     }
 
                                     p {
-                                        font-size: 0.9em;
-                                        width: 50%;
+                                        font-size: 1em;
+                                        width: 60%;
                                     }
 
                                     a.largeButton.homeBgColor {
@@ -1615,7 +1632,7 @@ button#mobile-toggle {
 
                                 &:before {
   
-                                    font-size: 1.3em;
+                                    font-size: 1.5em;
 
                                 }
    
@@ -1669,7 +1686,7 @@ button#mobile-toggle {
                         min-height: 225px;
 
                         h2 {
-                            font-size: 1.1em;
+                            font-size: 1.3em;
                         }
 
                         p {
@@ -1705,7 +1722,7 @@ button#mobile-toggle {
 
                         h2 {
                             
-                            font-size: 1em;
+                            font-size: 1.1em;
                             
                         }
 
@@ -1833,7 +1850,10 @@ button#mobile-toggle {
                         a {
                             width: 100%;
 
-                            i {
+                            i.fa-twitter,
+                            i.fa-facebook,
+                            i.fa-google,
+                            i.fa-instagram {
                                 font-size: 1em;
                             }
                         }
@@ -1881,7 +1901,7 @@ button#mobile-toggle {
 
             #slider {
                 /*slider*/
-                height: 325px;
+                height: 280px;
 
                 div.main-slider {
                     height: 100%;
@@ -1890,7 +1910,7 @@ button#mobile-toggle {
                         height: 100%;
 
                         ul.slides {
-                            height: 285px;
+                            height: 100%;
 
                             li {
                                 img {
@@ -1903,7 +1923,7 @@ button#mobile-toggle {
                                     }
 
                                     p {
-                                        font-size: 0.8em;
+                                        font-size: 0.9em;
                                     }
 
                                     a.largeButton.homeBgColor {
@@ -2002,14 +2022,14 @@ button#mobile-toggle {
 
                         ul {
                             list-style: none;
-                            width: 89%;
+                            width: 94%;
                             li {
 
                                 font-size: 0.85em;
-
+                                
                                 &:before {
                                     width:40px;
-                                    font-size: 1.2em;
+                                    font-size: 1.5em;
 
                                 }
    
@@ -2175,10 +2195,7 @@ button#mobile-toggle {
                         }
                     }
 
-                    .audio {
-                        margin: 2% auto;
-                        width: 20%;
-                    }
+                    
 
                     .recycle_img {
                         width: 12%;
@@ -2238,7 +2255,7 @@ button#mobile-toggle {
 
                         h2 {
                             
-                            font-size: 1em;
+                            font-size: 1.1em;
                             
                         }
 
@@ -2250,13 +2267,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 40%;
+                                width: 65%;
                                 
                             }
 
                             img#wordSearch {
                                 
-                                width: 20%;
+                                width: 27%;
                                 
                             }
 
@@ -2362,7 +2379,10 @@ button#mobile-toggle {
                         a {
                             width: 100%;
 
-                            i {
+                            i.fa-twitter,
+                            i.fa-facebook,
+                            i.fa-google,
+                            i.fa-instagram {
                                 font-size: 0.9em;
                             }
                         }
@@ -2411,7 +2431,7 @@ button#mobile-toggle {
 
             #slider {
                 /*slider*/
-                height: 300px;
+              
                 margin: 1% 0;
 
                 div.main-slider {
@@ -2421,7 +2441,7 @@ button#mobile-toggle {
                         height: 100%;
 
                         ul.slides {
-                            height: 260px;
+                            height: 100%;
 
                             li {
                                 img {
@@ -2434,7 +2454,7 @@ button#mobile-toggle {
                                     }
 
                                     p {
-                                        font-size: 0.75em;
+                                        font-size: 0.9em;
                                         width: 70%;
                                     }
 
@@ -2639,7 +2659,7 @@ button#mobile-toggle {
                     width: 100%;
 
                     div.collection-box{
-                        
+                        padding: 0 2.5em;
                         
                         h2 {
                             
@@ -2656,7 +2676,7 @@ button#mobile-toggle {
                         /*Drop Cap*/
                         p.collection-text {
                             
-                            font-size: 1em;
+                            font-size: 0.9em;
                             
                         }
                     }
@@ -2773,7 +2793,7 @@ button#mobile-toggle {
 
                         h2 {
                             
-                            font-size: 1em;
+                            font-size: 1.1em;
                             
                         }
 
@@ -2785,13 +2805,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 40%;
+                                width: 65%;
                                 
                             }
 
                             img#wordSearch {
                                 
-                                width: 20%;
+                                width: 27%;
                                 
                             }
 
@@ -2897,7 +2917,10 @@ button#mobile-toggle {
                         a {
                             width: 100%;
 
-                            i {
+                            i.fa-twitter,
+                            i.fa-facebook,
+                            i.fa-google,
+                            i.fa-instagram {
                                 font-size: 0.85em;
                             }
                         }
@@ -2946,7 +2969,7 @@ button#mobile-toggle {
 
             #slider {
                 /*slider*/
-                height: 290px;
+                height: 260px;
 
                 div.main-slider {
                     height: 100%;
@@ -2955,7 +2978,7 @@ button#mobile-toggle {
                         height: 100%;
 
                         ul.slides {
-                            height: 250px;
+                            height: 100%;
 
                             li {
                                 img {
@@ -2968,7 +2991,7 @@ button#mobile-toggle {
                                     }
 
                                     p {
-                                        font-size: 0.75em;
+                                        font-size: 0.85em;
                                         width: 80%;
                                     }
 
@@ -3192,7 +3215,7 @@ button#mobile-toggle {
                         /*Drop Cap*/
                         p.collection-text {
                             
-                            font-size: 1em;
+                            font-size: 0.8em;
                             
                         }
                     }
@@ -3210,11 +3233,16 @@ button#mobile-toggle {
 
                             li {
 
+                                line-height: 25px;
+
                                 font-size: 0.8em;
+                                height:60px;
 
                                 &:before {
   
-                                    font-size: 1.2em;
+                                    font-size: 1.3em;
+
+                                    line-height: 25px;
 
                                 }
    
@@ -3317,13 +3345,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 40%;
+                                width: 70%;
                                 
                             }
 
                             img#wordSearch {
 
-                                width: 20%;
+                                width: 30%;
                                 
                             }
 
@@ -3429,7 +3457,10 @@ button#mobile-toggle {
                         a {
                             width: 100%;
 
-                            i {
+                            i.fa-twitter,
+                            i.fa-facebook,
+                            i.fa-google,
+                            i.fa-instagram{
                                 font-size: 0.85em;
                             }
                         }
@@ -3478,7 +3509,7 @@ button#mobile-toggle {
 
             #slider {
                 /*slider*/
-                height: 280px;
+                height: 260px;
 
                 div.main-slider {
                     height: 100%;
@@ -3496,11 +3527,11 @@ button#mobile-toggle {
 
                                 div.slider-caption {
                                     h1 {
-                                        font-size: 1.4em;
+                                        font-size: 2em;
                                     }
 
                                     p {
-                                        font-size: 0.75em;
+                                        font-size: 0.85em;
                                         width: 85%;
                                     }
 
@@ -3752,7 +3783,7 @@ button#mobile-toggle {
                         /*Drop Cap*/
                         p.collection-text {
                             
-                            font-size: 1em;
+                            font-size: 0.75em;
                             
                         }
                     }
@@ -3824,7 +3855,7 @@ button#mobile-toggle {
                     }
 
                     .contentbox {
-                        width: 49%;
+                        
 
                         h2 {
                             font-size: 1.1em;
@@ -3869,8 +3900,8 @@ button#mobile-toggle {
 
                         h2 {
                             
-                            font-size: 1em;
-                            line-height: 30px;
+                            font-size: 0.9em;
+                            
                             
                         }
 
@@ -3882,13 +3913,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 40%;
+                                width: 75%;
                                 
                             }
 
                             img#wordSearch {
   
-                                width: 20%;
+                                width: 30%;
                                 
                             }
 
@@ -3993,7 +4024,10 @@ button#mobile-toggle {
                         a {
                             width: 100%;
 
-                            i {
+                            i.fa-twitter,
+                            i.fa-facebook,
+                            i.fa-google,
+                            i.fa-instagram {
                                 font-size: 0.85em;
                             }
                         }
@@ -4040,7 +4074,7 @@ button#mobile-toggle {
 
             #slider {
                 /*slider*/
-                height: 270px;
+                height: 260px;
 
                 div.main-slider {
                     height: 100%;
@@ -4058,11 +4092,11 @@ button#mobile-toggle {
 
                                 div.slider-caption {
                                     h1 {
-                                        font-size: 1.5em;
+                                        font-size: 1.9em;
                                     }
 
                                     p {
-                                        font-size: 0.7em;
+                                        font-size: 0.85em;
                                     }
 
                                     a.largeButton.homeBgColor {
@@ -4273,8 +4307,9 @@ button#mobile-toggle {
                 #mask_two,
                 #mask3 {
                     width: 100%;
+                    min-height: 700px;
                     div.collection-box{
-                        
+                        padding: 0 1em;
                         
                         h2 {
                             
@@ -4291,7 +4326,7 @@ button#mobile-toggle {
                         /*Drop Cap*/
                         p.collection-text {
                             
-                            font-size: 1em;
+                            font-size: 0.75em;
                             
                         }
                     }
@@ -4363,7 +4398,7 @@ button#mobile-toggle {
                     }
 
                     .contentbox {
-                        width: 49%;
+                        
 
                         h2 {
                             font-size: 1.1em;
@@ -4409,7 +4444,7 @@ button#mobile-toggle {
 
                         h2 {
                             
-                            font-size: 1em;
+                            font-size: 0.9em;
                             
                             
                         }
@@ -4422,13 +4457,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 40%;
+                                width: 80%;
                                 
                             }
 
                             img#wordSearch {
      
-                                width: 20%;
+                                width: 30%;
                                 
                             }
 
@@ -4540,7 +4575,10 @@ button#mobile-toggle {
                         a {
                             width: 100%;
 
-                            i {
+                            i.fa-twitter,
+                            i.fa-facebook,
+                            i.fa-google,
+                            i.fa-instagram {
                                 font-size: 0.85em;
                             }
                         }
@@ -4590,7 +4628,7 @@ button#mobile-toggle {
 
             #slider {
                 /*slider*/
-                height: 300px;
+                height: 240px;
 
                 div.main-slider {
                     height: 100%;
@@ -4612,7 +4650,7 @@ button#mobile-toggle {
                                     }
 
                                     p {
-                                        font-size: 0.75em;
+                                        font-size: 0.85em;
                                     }
 
                                     a.largeButton.homeBgColor {
@@ -4717,7 +4755,7 @@ button#mobile-toggle {
                     }
 
                     ul.recycle-contact:nth-of-type(3) {
-                        
+                        width: 47%;
                         &::before {
                             font-family: "FontAwesome";
                             content: "\f0e0";
@@ -4816,8 +4854,32 @@ button#mobile-toggle {
                 /* The dots/bullets/indicators */
 
                 #mask,
-                #mask_two {
+                #mask_two,
+                #mask3 {
                     width: 100%;
+
+                    div.collection-box{
+                        padding: 0 1em;
+                        
+                        h2 {
+                            
+                            font-size: 1.2em;
+                           
+        
+    
+                            &:hover {
+                                cursor: pointer;
+                         
+                            }
+                        }
+                    
+                        /*Drop Cap*/
+                        p.collection-text {
+                            
+                            font-size: 0.75em;
+                            
+                        }
+                    }
 
                     article.recycle-facts {
                         
@@ -4929,7 +4991,8 @@ button#mobile-toggle {
 
                         h2 {
                             
-                            font-size: 1em;
+                            font-size: 0.85em;
+                            
                             
                         }
 
@@ -4941,13 +5004,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 40%;
+                                width: 80%;
                                 
                             }
 
                             img#wordSearch {
      
-                                width: 20%;
+                                width: 40%;
                                 
                             }
 
@@ -5086,7 +5149,10 @@ button#mobile-toggle {
                         a {
                             width: 100%;
 
-                            i {
+                            i.fa-twitter,
+                            i.fa-facebook,
+                            i.fa-google,
+                            i.fa-instagram {
                                 font-size: 0.8em;
                             }
                         }
@@ -5133,7 +5199,7 @@ button#mobile-toggle {
         div.grid_24 {
             #slider {
                 /*slider*/
-                height: 300px;
+                height: 240px;
 
                 div.main-slider {
                     height: 100%;
@@ -5373,8 +5439,32 @@ button#mobile-toggle {
                 /* The dots/bullets/indicators */
 
                 #mask,
-                #mask_two {
+                #mask_two,
+                #mask3 {
                     width: 100%;
+
+                    div.collection-box{
+                        padding: 0 1em;
+                        
+                        h2 {
+                            
+                            font-size: 1.1em;
+                           
+        
+    
+                            &:hover {
+                                cursor: pointer;
+                         
+                            }
+                        }
+                    
+                        /*Drop Cap*/
+                        p.collection-text {
+                            
+                            font-size: 0.75em;
+                            
+                        }
+                    }
 
                     article.recycle-facts {
                         
@@ -5443,10 +5533,10 @@ button#mobile-toggle {
                     }
 
                     .contentbox {
-                        width: 48.5%;
+                        
 
                         h2 {
-                            font-size: 1em;
+                            font-size: 1.1em;
                             height: auto;
                         }
 
@@ -5490,7 +5580,9 @@ button#mobile-toggle {
 
                         h2 {
                             
-                            font-size: 1em;
+                            font-size: 0.85em;
+                            line-height: 20px;
+                            padding:0.2em 0;
                             
                         }
 
@@ -5502,13 +5594,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 40%;
+                                width: 85%;
                                 
                             }
 
                             img#wordSearch {
      
-                                width: 20%;
+                                width: 45%;
                                 
                             }
 
@@ -5622,7 +5714,10 @@ button#mobile-toggle {
                         a {
                             width: 100%;
 
-                            i {
+                            i.fa-twitter,
+                            i.fa-facebook,
+                            i.fa-google,
+                            i.fa-instagram {
                                 font-size: 0.85em;
                             }
                         }
@@ -5671,7 +5766,7 @@ button#mobile-toggle {
             height: auto;
             #slider {
                 /*slider*/
-                height: 265px;
+                height: 230px;
 
                 div.main-slider {
                     height: 100%;
@@ -5904,8 +5999,32 @@ button#mobile-toggle {
                 /* The dots/bullets/indicators */
 
                 #mask,
-                #mask_two {
+                #mask_two,
+                #mask3 {
                     width: 100%;
+
+                    div.collection-box{
+                        padding: 0 1em;
+                        
+                        h2 {
+                            
+                            font-size: 1.1em;
+                           
+        
+    
+                            &:hover {
+                                cursor: pointer;
+                         
+                            }
+                        }
+                    
+                        /*Drop Cap*/
+                        p.collection-text {
+                            
+                            font-size: 0.75em;
+                            
+                        }
+                    }
 
                     article.recycle-facts {
                         
@@ -5977,12 +6096,12 @@ button#mobile-toggle {
                         width: 98.7%;
 
                         h2 {
-                            font-size: 1.3em;
+                            font-size: 1.2em;
                             font-weight: bold;
                         }
 
                         p {
-                            font-size: 0.9em;
+                            font-size: 0.8em;
                         }
 
                         .contentbox_image {
@@ -6015,15 +6134,13 @@ button#mobile-toggle {
                     
                     /*contentbox*/
                     article.home_contentbox {
-                        
-                        
-                        
-                                               
+                                              
+                                                                       
 
                         h2 {
                             
-                            font-size: 1em;
-                            line-height: 25px;
+                            font-size: 0.85em;
+                            
                             
                         }
 
@@ -6035,13 +6152,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 40%;
+                                width: 90%;
                                 
                             }
 
                             img#wordSearch {
      
-                                width: 20%;
+                                width: 40%;
                                 
                             }
 
@@ -6139,7 +6256,10 @@ button#mobile-toggle {
                         a {
                             width: 100%;
 
-                            i {
+                            i.fa-twitter,
+                            i.fa-facebook,
+                            i.fa-google,
+                            i.fa-instagram{
                                 font-size: 0.85em;
                             }
                         }
@@ -6162,12 +6282,12 @@ button#mobile-toggle {
         button#mobile-toggle {
             position: fixed;
             z-index: 100;
-            top: 4em;
+            top: 3em;
             left: 87%;
             padding: 0.7em;
-            font-size: 1em;
+            font-size: 1.5em;
             text-transform: uppercase;
-            background-color: $honecolor;
+            background-color: $headbg;
             color:  $colorsocmedhov;
             border:none;
             @include transitioner(all ease-out 400ms);
@@ -6252,7 +6372,7 @@ button#mobile-toggle {
             height: auto;
             #slider {
                 /*slider*/
-                height: 265px;
+                height: 230px;
 
                 div.main-slider {
                     height: 100%;
@@ -6492,8 +6612,32 @@ button#mobile-toggle {
                 /* The dots/bullets/indicators */
 
                 #mask,
-                #mask_two {
+                #mask_two,
+                #mask3 {
                     width: 100%;
+
+                    div.collection-box{
+                        padding: 0 1em;
+                        
+                        h2 {
+                            
+                            font-size: 1.1em;
+                           
+        
+    
+                            &:hover {
+                                cursor: pointer;
+                         
+                            }
+                        }
+                    
+                        /*Drop Cap*/
+                        p.collection-text {
+                            
+                            font-size: 0.75em;
+                            
+                        }
+                    }
 
                     article.recycle-facts {
                         
@@ -6565,11 +6709,11 @@ button#mobile-toggle {
                         width: 98.7%;
 
                         h2 {
-                            font-size: 1.25em;
+                            font-size: 1.3em;
                         }
 
                         p {
-                            font-size: 0.9em;
+                            font-size: 0.8em;
                         }
 
                         .contentbox_image {
@@ -6629,13 +6773,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 25%;
+                                width: 40%;
                                 
                             }
 
                             img#wordSearch {
      
-                                width: 25%;
+                                width: 35%;
                                 
                             }
 
@@ -6735,7 +6879,10 @@ button#mobile-toggle {
                         a {
                             width: 100%;
 
-                            i {
+                            i.fa-twitter,
+                            i.fa-facebook,
+                            i.fa-google,
+                            i.fa-instagram {
                                 font-size: 0.85em;
                             }
                         }
@@ -6753,7 +6900,7 @@ button#mobile-toggle {
         
         button#mobile-toggle {
             
-            left: 87%;
+            left: 85%;
             
         }
     
@@ -6801,7 +6948,7 @@ button#mobile-toggle {
         div.grid_24 {
             #slider {
                 /*slider*/
-                height: 260px;
+                height: 240px;
 
                 div.main-slider {
                     height: 100%;
@@ -6977,10 +7124,7 @@ button#mobile-toggle {
                         }
                     }
 
-                    .audio {
-                        margin: 2% auto;
-                        width: 20%;
-                    }
+                    
 
                     .recycle_img {
                         width: 25%;
@@ -7037,8 +7181,31 @@ button#mobile-toggle {
                 /* The dots/bullets/indicators */
 
                 #mask,
-                #mask_two {
+                #mask_two,
+                #mask3 {
                     width: 100%;
+                    div.collection-box{
+                        padding: 0 1em;
+                        
+                        h2 {
+                            
+                            font-size: 1.1em;
+                           
+        
+    
+                            &:hover {
+                                cursor: pointer;
+                         
+                            }
+                        }
+                    
+                        /*Drop Cap*/
+                        p.collection-text {
+                            
+                            font-size: 0.75em;
+                            
+                        }
+                    }
 
                     article.recycle-facts {
                         
@@ -7049,7 +7216,7 @@ button#mobile-toggle {
 
                         ul {
                             list-style: none;
-
+                            width: 96%;
                             li {
 
                                 font-size: 0.75em;
@@ -7070,6 +7237,10 @@ button#mobile-toggle {
                                     display: none;
                                 }
                             }
+                        }
+
+                        p{
+                            font-size:0.8em;
                         }
                     }
 
@@ -7110,11 +7281,11 @@ button#mobile-toggle {
                         width: 98.7%;
 
                         h2 {
-                            font-size: 1.25em;
+                            font-size: 1.1em;
                         }
 
                         p {
-                            font-size: 0.95em;
+                            font-size: 0.8em;
                         }
 
                         .contentbox_image {
@@ -7166,13 +7337,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 25%;
+                                width: 40%;
                                 
                             }
 
                             img#wordSearch {
      
-                                width: 20%;
+                                width: 30%;
                                 
                             }
 
@@ -7258,7 +7429,7 @@ button#mobile-toggle {
             }
 
             .socials {
-                width: 34%;
+                width: 30%;
 
                 ul {
                     margin: 0;
@@ -7270,7 +7441,10 @@ button#mobile-toggle {
                         a {
                             width: 100%;
 
-                            i {
+                            i.fa-twitter,
+                            i.fa-facebook,
+                            i.fa-google,
+                            i.fa-instagram {
                                 font-size: 0.85em;
                             }
                         }
@@ -7288,7 +7462,7 @@ button#mobile-toggle {
         
         button#mobile-toggle {
             
-            left: 87%;
+            left: 84%;
             
         }
     
@@ -7335,7 +7509,7 @@ button#mobile-toggle {
         div.grid_24 {
             #slider {
                 /*slider*/
-                height: 250px;
+                height: 240px;
 
                 div.main-slider {
                     height: 100%;
@@ -7522,7 +7696,8 @@ button#mobile-toggle {
                     }
 
                     .recycle_img {
-                        width: 30%;
+                        width: 35%;
+                        margin: auto;
                     }
 
                     form#feedback-form {
@@ -7576,8 +7751,31 @@ button#mobile-toggle {
                 /* The dots/bullets/indicators */
 
                 #mask,
-                #mask_two {
+                #mask_two,
+                #mask3 {
                     width: 100%;
+                    div.collection-box{
+                        padding: 0 1em;
+                        
+                        h2 {
+                            
+                            font-size: 1em;
+                           
+        
+    
+                            &:hover {
+                                cursor: pointer;
+                         
+                            }
+                        }
+                    
+                        /*Drop Cap*/
+                        p.collection-text {
+                            
+                            font-size: 0.75em;
+                            
+                        }
+                    }
 
                     article.recycle-facts {
                         
@@ -7649,11 +7847,11 @@ button#mobile-toggle {
                         width: 98.7%;
 
                         h2 {
-                            font-size: 1.2em;
+                            font-size: 1em;
                         }
 
                         p {
-                            font-size: 0.95em;
+                            font-size: 0.8em;
                         }
 
                         .contentbox_image {
@@ -7701,13 +7899,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 25%;
+                                width: 45%;
                                 
                             }
 
                             img#wordSearch {
      
-                                width: 20%;
+                                width: 30%;;
                                 
                             }
 
@@ -7793,7 +7991,7 @@ button#mobile-toggle {
             }
 
             .socials {
-                width: 34%;
+                width: 30%;
 
                 ul {
                     li {
@@ -7802,7 +8000,10 @@ button#mobile-toggle {
                         a {
                             width: 100%;
 
-                            i {
+                            i.fa-twitter,
+                            i.fa-facebook,
+                            i.fa-google,
+                            i.fa-instagram {
                                 font-size: 0.8em;
                             }
                         }
@@ -7820,7 +8021,7 @@ button#mobile-toggle {
         
         button#mobile-toggle {
             
-            left: 87%;
+            left: 83%;
             
         }
     
@@ -7872,7 +8073,7 @@ button#mobile-toggle {
         div.grid_24 {
             #slider {
                 /*slider*/
-                height: 225px;
+                height: 230px;
 
                 div.main-slider {
                     height: 100%;
@@ -8112,8 +8313,31 @@ button#mobile-toggle {
                 /* The dots/bullets/indicators */
 
                 #mask,
-                #mask_two {
+                #mask_two,
+                #mask3 {
                     width: 100%;
+                    div.collection-box{
+                        padding: 0 1em;
+                        
+                        h2 {
+                            
+                            font-size: 1em;
+                           
+        
+    
+                            &:hover {
+                                cursor: pointer;
+                         
+                            }
+                        }
+                    
+                        /*Drop Cap*/
+                        p.collection-text {
+                            
+                            font-size: 0.75em;
+                            
+                        }
+                    }
 
                     article.recycle-facts {
                         
@@ -8184,14 +8408,14 @@ button#mobile-toggle {
 
                     .contentbox {
                         width: 98.7%;
-                        min-height: 180px;
+                       
 
                         h2 {
-                            font-size: 1.1em;
+                            font-size: 1em;
                         }
 
                         p {
-                            font-size: 0.85em;
+                            font-size: 0.8em;
                         }
 
                         .contentbox_image {
@@ -8249,13 +8473,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 25%;
+                                width: 45%;
                                 
                             }
 
                             img#wordSearch {
      
-                                width: 20%;
+                                width: 30%;
                                 
                             }
 
@@ -8341,7 +8565,7 @@ button#mobile-toggle {
             }
 
             .socials {
-                width: 32%;
+                width: 30%;
 
                 ul {
                     margin: 0;
@@ -8353,7 +8577,10 @@ button#mobile-toggle {
                         a {
                             width: 100%;
 
-                            i {
+                            i.fa-twitter,
+                            i.fa-facebook,
+                            i.fa-google,
+                            i.fa-instagram{
                                 font-size: 0.75em;
                             }
                         }
@@ -8371,7 +8598,7 @@ button#mobile-toggle {
         
         button#mobile-toggle {
             
-            left: 87%;
+            left: 82%;
             
         }
     
@@ -8418,7 +8645,7 @@ button#mobile-toggle {
         div.grid_24 {
             #slider {
                 /*slider*/
-                height: 225px;
+                height: 230px;
 
                 div.main-slider {
                     height: 100%;
@@ -8596,8 +8823,8 @@ button#mobile-toggle {
                     }
 
                     .recycle_img {
-                        width: 25%;
-                        margin-top: 5%;
+                        width: 50%;
+                        
                     }
 
                     form#feedback-form {
@@ -8651,8 +8878,31 @@ button#mobile-toggle {
                 /* The dots/bullets/indicators */
 
                 #mask,
-                #mask_two {
+                #mask_two,
+                #mask3 {
                     width: 100%;
+                    div.collection-box{
+                        padding: 0 1em;
+                        
+                        h2 {
+                            
+                            font-size: 1em;
+                           
+        
+    
+                            &:hover {
+                                cursor: pointer;
+                         
+                            }
+                        }
+                    
+                        /*Drop Cap*/
+                        p.collection-text {
+                            
+                            font-size: 0.75em;
+                            
+                        }
+                    }
 
                     article.recycle-facts {
                         padding: 1em;
@@ -8724,11 +8974,11 @@ button#mobile-toggle {
                         min-height: 180px;
 
                         h2 {
-                            font-size: 1em;
+                            font-size: 0.9em;
                         }
 
                         p {
-                            font-size: 0.85em;
+                            font-size: 0.75em;
                         }
 
                         .contentbox_image {
@@ -8777,13 +9027,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 25%;
+                                width: 55%;
                                 
                             }
 
                             img#wordSearch {
      
-                                width: 20%;
+                                width: 40%;
                                 
                             }
 
@@ -8868,7 +9118,7 @@ button#mobile-toggle {
             }
 
             .socials {
-                width: 32%;
+                width: 30%;
 
                 ul {
                     margin: 0;
@@ -8880,7 +9130,10 @@ button#mobile-toggle {
                         a {
                             width: 100%;
 
-                            i {
+                            i.fa-twitter,
+                            i.fa-facebook,
+                            i.fa-google,
+                            i.fa-instagram {
                                 font-size: 0.7em;
                             }
                         }
@@ -8898,7 +9151,7 @@ button#mobile-toggle {
         
         button#mobile-toggle {
             
-            left: 87%;
+            left: 80%;
             
         }
     
@@ -8945,7 +9198,7 @@ button#mobile-toggle {
         div.grid_24 {
             #slider {
                 /*slider*/
-                height: 235px;
+                height: 225px;
 
                 div.main-slider {
                     height: 100%;
@@ -9122,8 +9375,8 @@ button#mobile-toggle {
                     }
 
                     .recycle_img {
-                        width: 35%;
-                        margin-top: 6%;
+                        width: 50%;
+                        
                     }
 
                     form#feedback-form {
@@ -9177,8 +9430,32 @@ button#mobile-toggle {
                 /* The dots/bullets/indicators */
 
                 #mask,
-                #mask_two {
+                #mask_two,
+                #mask3 {
                     width: 100%;
+
+                    div.collection-box{
+                        padding: 0 1em;
+                        
+                        h2 {
+                            
+                            font-size: 1em;
+                           
+        
+    
+                            &:hover {
+                                cursor: pointer;
+                         
+                            }
+                        }
+                    
+                        /*Drop Cap*/
+                        p.collection-text {
+                            
+                            font-size: 0.75em;
+                            
+                        }
+                    }
 
                     article.recycle-facts {
                         padding: 0.5em;
@@ -9250,11 +9527,11 @@ button#mobile-toggle {
                         min-height: 180px;
 
                         h2 {
-                            font-size: 1em;
+                            font-size: 0.9em;
                         }
 
                         p {
-                            font-size: 0.8em;
+                            font-size: 0.75em;
                         }
 
                         .contentbox_image {
@@ -9301,13 +9578,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 30%;
+                                width: 60%;
                                 
                             }
 
                             img#wordSearch {
      
-                                width: 25%;
+                                width: 40%;
                                 
                             }
 
@@ -9396,7 +9673,7 @@ button#mobile-toggle {
             }
 
             .socials {
-                width: 32%;
+                width: 30%;
 
                 ul {
                     margin: 0;
@@ -9408,7 +9685,10 @@ button#mobile-toggle {
                         a {
                             width: 100%;
 
-                            i {
+                            i.fa-twitter,
+                            i.fa-facebook,
+                            i.fa-google,
+                            i.fa-instagram {
                                 font-size: 0.7em;
                             }
                         }
@@ -9426,7 +9706,7 @@ button#mobile-toggle {
         
         button#mobile-toggle {
             
-            left: 87%;
+            left: 77%;
             
         }
     
@@ -9643,13 +9923,9 @@ button#mobile-toggle {
                         }
                     }
 
-                    .audio {
-                        margin: 2% auto;
-                        width: 20%;
-                    }
-
+                    
                     .recycle_img {
-                        width: 35%;
+                        width: 50%;
                     }
 
                     form#feedback-form {
@@ -9704,7 +9980,8 @@ button#mobile-toggle {
                 /* The dots/bullets/indicators */
 
                 #mask,
-                #mask_two {
+                #mask_two,
+                #mask3 {
                     width: 100%;
 
                     article.recycle-facts {
@@ -9778,11 +10055,11 @@ button#mobile-toggle {
                         min-height: 180px;
 
                         h2 {
-                            font-size: 1em;
+                            font-size: 0.9em;
                         }
 
                         p {
-                            font-size: 0.8em;
+                            font-size: 0.75em;
                         }
 
                         .contentbox_image {
@@ -9830,13 +10107,13 @@ button#mobile-toggle {
                             img#flowChart,
                             img#RecycleCircle {
                                 
-                                width: 30%;
+                                width: 60%;
                                 
                             }
 
                             img#wordSearch {
      
-                                width: 25%;
+                                width: 45%;
                                 
                             }
 

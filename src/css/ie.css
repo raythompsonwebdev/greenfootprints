@@ -40,7 +40,7 @@ div.container_24 {
 
 div.container_24 header {
   height: auto;
-  background-color: #297F10;
+  background-color: #406136;
   padding: 0.25em;
   /*social media icons*/
 }
@@ -105,7 +105,7 @@ div.container_24 header .socials {
   display: inline-block;
   float: right;
   margin: 0;
-  background-color: #297F10;
+  background-color: #406136;
   -ms-flex: 0 0 auto;
   -webkit-box-flex: 0;
           flex: 0 0 auto;
@@ -418,7 +418,7 @@ div.container_24 div.grid_24 #content .text h1 {
 
 div.container_24 div.grid_24 #content .text h2 {
   color: #3a5f0b;
-  background-color: #92cd00;
+  background-color: #95E07E;
   padding: 0;
   height: 50px;
   margin: 0 0 0.5% 0;
@@ -446,7 +446,7 @@ div.container_24 div.grid_24 #content .text h3 {
 div.container_24 div.grid_24 #content .text h3:hover {
   cursor: pointer;
   color: #3a5f0b;
-  background-color: #92cd00;
+  background-color: #95E07E;
 }
 
 div.container_24 div.grid_24 #content .text p {
@@ -510,7 +510,7 @@ div.container_24 div.grid_24 #content .text ul.recycle-facts li span::before {
   font-style: normal;
   padding: 1em;
   line-height: 40px;
-  color: #297F10;
+  color: #406136;
   display: block;
   padding: 0;
   text-align: center;
@@ -594,7 +594,7 @@ div.container_24 div.grid_24 #content .text ul.recycle-contact li span::before {
   font-style: normal;
   padding: 1.5%;
   line-height: 40px;
-  color: #297F10;
+  color: #406136;
   display: block;
   padding: 0;
   text-align: center;
@@ -799,7 +799,7 @@ div.container_24 div.grid_24 #content #contentboxes .contentbox h2 {
   line-height: 20px;
   font-size: 1.2em;
   color: #3a5f0b;
-  background-color: #92cd00;
+  background-color: #95E07E;
   text-align: center;
   margin: 0 0 0.5em 0;
   padding: 2% 0.5%;

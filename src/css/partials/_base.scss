@@ -15,7 +15,7 @@
   font-style: normal;
   font-display: auto;
 }
-
+/*
 @font-face {
   font-family: "FontAwesome";
   font-weight: normal;
@@ -27,7 +27,7 @@
           url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
           url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
 }
-
+*/
 html {
 	@include box-sizing($type: border-box);
   scroll-behavior: smooth;
@@ -193,6 +193,7 @@ p {
   overflow: hidden;
   font-weight: normal;
   width:100%;
+  line-height: 1.5;
 }
 
 img {
