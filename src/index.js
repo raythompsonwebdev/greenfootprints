@@ -39,64 +39,64 @@ import tenImageSix from "./images/Large/house-in-leaf-green-foot-prints-com-larg
 
 //header image ******************************************
 
-var homeImg = document.getElementById("homeImage");
+var homeImg = document.querySelector("#homeImage");
 homeImg.src = homeIcon;
 
 //slider images ******************************************
 
-var sliderOneImg = document.getElementById("sliderOneImg");
+var sliderOneImg = document.querySelector("#sliderOneImg");
 sliderOneImg.src = sliderImgOne;
 
-var sliderTwoImg = document.getElementById("sliderTwoImg");
+var sliderTwoImg = document.querySelector("#sliderTwoImg");
 sliderTwoImg.src = sliderImgTwo;
 
-var sliderThreeImg = document.getElementById("sliderThreeImg");
+var sliderThreeImg = document.querySelector("#sliderThreeImg");
 sliderThreeImg.src = sliderImgThree;
 
 //banner images ******************************************
 
-var imageOne = document.getElementById("paperBottles");
+var imageOne = document.querySelector("#paperBottles");
 imageOne.src = paperBottles;
 
-var imageTwo = document.getElementById("flowChart");
+var imageTwo = document.querySelector("#flowChart");
 imageTwo.src = flowChart;
 
-var imageThree = document.getElementById("wordSearch");
+var imageThree = document.querySelector("#wordSearch");
 imageThree.src = wordSearch;
 
 
 //main page images ******************************************
 
-var ImageOne = document.getElementById("mainImageOne");
+var ImageOne = document.querySelector("#mainImageOne");
 ImageOne.src = mainImageOne;
 
-var ImageTwo = document.getElementById("mainImageTwo");
+var ImageTwo = document.querySelector("#mainImageTwo");
 ImageTwo.src = mainImageTwo;
 
-var ImageThree = document.getElementById("mainImageThree");
+var ImageThree = document.querySelector("#mainImageThree");
 ImageThree.src = mainImageThree;
 
-var ImageFour = document.getElementById("mainImageFour");
+var ImageFour = document.querySelector("#mainImageFour");
 ImageFour.src = mainImageFour;
 
 //10 Ways images ******************************************
 
-var twImageOne = document.getElementById("tenImageOne");
+var twImageOne = document.querySelector("#tenImageOne");
 twImageOne.src = tenImageOne;
 
-var twImageTwo = document.getElementById("tenImageTwo");
+var twImageTwo = document.querySelector("#tenImageTwo");
 twImageTwo.src = tenImageTwo;
 
-var twImageThree = document.getElementById("tenImageThree");
+var twImageThree = document.querySelector("#tenImageThree");
 twImageThree.src = tenImageThree;
 
-var twImageFour = document.getElementById("tenImageFour");
+var twImageFour = document.querySelector("#tenImageFour");
 twImageFour.src = tenImageFour;
 
-var twImageFive = document.getElementById("tenImageFive");
+var twImageFive = document.querySelector("#tenImageFive");
 twImageFive.src = tenImageFive;
 
-var twImageSix = document.getElementById("tenImageSix");
+var twImageSix = document.querySelector("#tenImageSix");
 twImageSix.src = tenImageSix;
 
 
@@ -187,9 +187,9 @@ function toTopBtn() {
         document.body.scrollTop > 20 ||
         document.documentElement.scrollTop > 20
     ) {
-        document.getElementById("myBtn").style.display = "block";
+        document.querySelector("#myBtn").style.display = "block";
     } else {
-        document.getElementById("myBtn").style.display = "none";
+        document.querySelector("#myBtn").style.display = "none";
     }
 }
 
@@ -198,27 +198,7 @@ window.onscroll = function() {toTopBtn()};
 
 //mobile nav ******************************************
 (function(){
-
-   // var position, direction, previous;
-
-/*	$(window).scroll(function(){
-			
-		if( $(this).scrollTop() >= position ){
-			direction = 'down';
-			if(direction !== previous){
-				$('button#mobile-toggle').addClass('hide');
-				previous = direction;
-			}
-		} else {
-			direction = 'up';
-			if(direction !== previous){
-				$('button#mobile-toggle').removeClass('hide');
-				previous = direction;
-			}
-		}
-		position = $(this).scrollTop();
-	});*/
-
+ 
 	// sliding menu mobile 
 	$('button#mobile-toggle').on('click', function(event){
     
