@@ -59,7 +59,7 @@ div.container_24 header hgroup h1 {
   letter-spacing: 0.15em;
   line-height: 40px;
   margin: 0;
-  background-color: #297F10;
+  background-color: #3fa63a;
   padding: 0;
   width: 100%;
   text-shadow: 1px 1px 1px #165404;
@@ -70,7 +70,7 @@ div.container_24 header hgroup h2 {
   float: left;
   color: #ccffbb;
   padding: 0;
-  background-color: #297F10;
+  background-color: #3fa63a;
   font-size: 0.85em;
   font-family: "viroregular", Candara, Arial, sans-serif;
   line-height: 20px;
@@ -180,7 +180,7 @@ div.container_24 nav div.nav-title h1 {
   letter-spacing: 0.05em;
   line-height: 50px;
   margin: 0;
-  background-color: #297F10;
+  background-color: #3fa63a;
   padding: 0;
   width: 100%;
   text-shadow: 1px 1px 1px #165404;
@@ -205,7 +205,7 @@ div.container_24 nav ul li {
 
 div.container_24 nav ul li a {
   color: #ccffbb;
-  background-color: #297F10;
+  background-color: #3fa63a;
   display: block;
   line-height: 50px;
   font-size: 0.9em;
@@ -218,7 +218,7 @@ div.container_24 nav ul li a {
 
 div.container_24 nav ul li a:hover {
   font-weight: bold;
-  color: #297F10;
+  color: #3fa63a;
   background-color: #ccffbb;
   text-shadow: none;
 }
@@ -360,7 +360,7 @@ div.container_24 div.grid_24 #slider div.main-slider div.flexslider .flex-contro
 }
 
 div.container_24 div.grid_24 #content {
-  background-color: #3ea514;
+  background-color: #678b3f;
   display: block;
   width: 98%;
   margin: 0;
@@ -371,7 +371,7 @@ div.container_24 div.grid_24 #content {
 
 div.container_24 div.grid_24 #content:after {
   content: ".";
-  color: #3ea514;
+  color: #678b3f;
 }
 
 div.container_24 div.grid_24 #content h1 {
@@ -412,13 +412,13 @@ div.container_24 div.grid_24 #content .text h1 {
   font-size: 2em;
   line-height: 50px;
   width: 100%;
-  background-color: #348C0F;
+  background-color: #5e8b33;
   font-weight: bold;
 }
 
 div.container_24 div.grid_24 #content .text h2 {
   color: #3a5f0b;
-  background-color: #95E07E;
+  background-color: #cad996;
   padding: 0;
   height: 50px;
   margin: 0 0 0.5% 0;
@@ -446,7 +446,7 @@ div.container_24 div.grid_24 #content .text h3 {
 div.container_24 div.grid_24 #content .text h3:hover {
   cursor: pointer;
   color: #3a5f0b;
-  background-color: #95E07E;
+  background-color: #cad996;
 }
 
 div.container_24 div.grid_24 #content .text p {
@@ -683,14 +683,14 @@ div.container_24 div.grid_24 #content .text form#feedback-form {
 
 div.container_24 div.grid_24 #content .text form#feedback-form ul {
   margin: 1% auto;
-  background-color: #3ea514;
+  background-color: #678b3f;
   padding: 0;
 }
 
 div.container_24 div.grid_24 #content .text form#feedback-form ul li {
   width: 100%;
   padding: 0;
-  background-color: #3ea514;
+  background-color: #678b3f;
 }
 
 div.container_24 div.grid_24 #content .text form#feedback-form ul li label {
@@ -732,14 +732,14 @@ div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type=
   width: 30%;
   margin: 0;
   line-height: 0px;
-  background-color: #297F10;
+  background-color: #3fa63a;
   border: 0;
   color: #ccffbb;
   display: block;
 }
 
 div.container_24 div.grid_24 #content .text form#feedback-form ul li input[type="submit"]:hover {
-  background-color: #297F10;
+  background-color: #3fa63a;
   color: #ffffff;
   font-weight: bold;
 }
@@ -799,7 +799,7 @@ div.container_24 div.grid_24 #content #contentboxes .contentbox h2 {
   line-height: 20px;
   font-size: 1.2em;
   color: #3a5f0b;
-  background-color: #95E07E;
+  background-color: #cad996;
   text-align: center;
   margin: 0 0 0.5em 0;
   padding: 2% 0.5%;
@@ -836,7 +836,7 @@ div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button
   margin: 0;
   line-height: 35px;
   text-align: center;
-  background-color: #297F10;
+  background-color: #3fa63a;
   border: 0;
   color: #ccffbb;
   display: block;
@@ -849,7 +849,7 @@ div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button
 
 div.container_24 div.grid_24 #content #contentboxes .contentbox a.content-button:hover {
   background-color: #ccffbb;
-  color: #297F10;
+  color: #3fa63a;
   cursor: pointer;
   letter-spacing: 0.12em;
   width: 50%;
@@ -861,7 +861,7 @@ div.container_24 div.grid_24 footer {
   text-align: center;
   font-size: 1em;
   margin-top: 10px;
-  background-color: #297F10;
+  background-color: #3fa63a;
 }
 
 div.container_24 div.grid_24 footer ul {
@@ -871,7 +871,7 @@ div.container_24 div.grid_24 footer ul {
   height: 50px;
   width: 80%;
   margin: auto;
-  background-color: #297F10;
+  background-color: #3fa63a;
 }
 
 div.container_24 div.grid_24 footer ul li {
@@ -889,14 +889,14 @@ div.container_24 div.grid_24 footer ul li:hover {
 
 div.container_24 div.grid_24 footer ul li a {
   color: #ccffbb;
-  background-color: #297F10;
+  background-color: #3fa63a;
   display: block;
   font-size: 1em;
   text-shadow: 1px 2px 1px #165404;
 }
 
 div.container_24 div.grid_24 footer ul li a:hover {
-  color: #297F10;
+  color: #3fa63a;
   background-color: #ccffbb;
   text-decoration: none;
   text-shadow: 1px 2px 1px #ccffbb;
@@ -925,7 +925,7 @@ div.container_24 button#myBtn {
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: #3ea514;
+  background-color: #678b3f;
   /* Set a background color */
   color: #ffffff;
   /* Text color */

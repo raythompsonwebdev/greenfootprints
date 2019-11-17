@@ -32,7 +32,7 @@ body {
   font-family: "viroregular", Candara, Arial, sans-serif;
   margin: 0;
   line-height: 1;
-  background-color: #95E07E;
+  background-color: #cad996;
   font-size: 1em;
   height: auto;
   padding-bottom: 20px;
@@ -216,7 +216,7 @@ button#mobile-toggle {
   height: 45px;
   width: 45px;
   color: #ccffbb;
-  background-color: #3ea514;
+  background-color: #406136;
   z-index: 150;
   outline: none;
   border: none;
@@ -225,13 +225,13 @@ button#mobile-toggle {
 }
 
 button#mobile-toggle:hover {
-  background-color: #82b602;
+  background-color: #406136;
   color: #ffffff;
 }
 
 button#mobile-toggle:active,
 button#mobile-toggle :focus {
-  color: #82b602;
+  color: #406136;
   background-color: #ffffff;
 }
 
@@ -268,7 +268,7 @@ button#mobile-toggle :focus {
     display: -webkit-box;
     display: flex;
     height: auto;
-    background-color: #348C0F;
+    background-color: #5e8b33;
     padding: 0.25em;
     -ms-flex-flow: row;
     -webkit-box-orient: horizontal;
@@ -389,7 +389,7 @@ button#mobile-toggle :focus {
     text-align: center;
     line-height: 50px;
     font-size: 1.25em;
-    color: #ccffbb;
+    color: #ffffff;
     -webkit-transition: all 0.2s ease-in 0s;
     transition: all 0.2s ease-in 0s;
   }
@@ -399,7 +399,7 @@ button#mobile-toggle :focus {
   div.container_24 header .socials ul li a i.fa-instagram:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
-    color: #ffffff;
+    font-weight: bold;
     text-shadow: 0 0 0 #165404;
     cursor: pointer;
   }
@@ -418,7 +418,7 @@ button#mobile-toggle :focus {
     float: left;
     position: unset;
     margin-right: 0.5em;
-    background-color: #297F10;
+    background-color: #3fa63a;
     height: 100%;
     background-image: url("../images/medium/logo-green-foot-prints-medium.gif");
     background-size: cover;
@@ -437,7 +437,7 @@ button#mobile-toggle :focus {
     letter-spacing: 0.05em;
     line-height: 50px;
     margin: 0;
-    background-color: #297F10;
+    background-color: #3fa63a;
     padding: 0;
     width: 100%;
     text-shadow: 1px 1px 1px #165404;
@@ -474,7 +474,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 nav ul li a {
     color: #ffffff;
-    background-color: #348C0F;
+    background-color: #406136;
     display: block;
     line-height: 50px;
     font-size: 1em;
@@ -487,7 +487,7 @@ button#mobile-toggle :focus {
   div.container_24 nav ul li a:hover {
     font-weight: bold;
     background-color: #ffffff;
-    color: #348C0F;
+    color: #5e8b33;
     text-shadow: none;
   }
   div.container_24 div#collections,
@@ -507,7 +507,7 @@ button#mobile-toggle :focus {
     /*Footer*/
   }
   div.container_24 div.grid_24 #slider {
-    background-color: #348C0F;
+    background-color: #5e8b33;
     width: 100%;
     height: 380px;
     margin: 0.5em 0;
@@ -543,13 +543,13 @@ button#mobile-toggle :focus {
     z-index: 5;
     text-align: center;
     height: auto;
-    color: white;
+    color: #ffffff;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption h1 {
     font-size: 2.3em;
     text-transform: uppercase;
     font-weight: bold;
-    color: #ccffbb;
+    color: #ffffff;
     text-shadow: 1px 1px 1px #165404;
     margin-bottom: 30px;
   }
@@ -561,24 +561,25 @@ button#mobile-toggle :focus {
     margin: 0 auto 30px auto;
     line-height: 1.8em;
     color: #ffffff;
-    background-color: #2c6700;
+    background-color: #406136;
     padding: 0.5em;
     opacity: 0.9;
+    font-weight: bold;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption a.largeButton.homeBgColor {
     display: block;
-    color: #2c6700;
+    color: #ffffff;
     width: 10%;
     margin: auto;
     padding: 1%;
-    background-color: #e6fbb3;
+    background-color: #406136;
     line-height: 34px;
     font-size: 1.2em;
     letter-spacing: 0.1em;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption a.largeButton.homeBgColor:hover {
-    color: #e6fbb3;
-    background-color: #2c6700;
+    color: #406136;
+    background-color: #ffffff;
     cursor: pointer;
   }
   div.container_24 div.grid_24 #slider div.main-slider div.flexslider .flex-control-nav,
@@ -611,7 +612,7 @@ button#mobile-toggle :focus {
     background: #ffffff;
   }
   div.container_24 div.grid_24 main.content {
-    background-color: #3ea514;
+    background-color: #678b3f;
     display: block;
     width: 100%;
     margin: 0;
@@ -623,13 +624,11 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
-    color: #3ea514;
+    color: #678b3f;
   }
   div.container_24 div.grid_24 main.content h1 {
-    color: #ffffff;
     padding: 0;
     height: 50px;
-    margin: 0 0 0.5em 0;
     text-align: center;
     font-size: 2.5em;
     line-height: 50px;
@@ -663,18 +662,18 @@ button#mobile-toggle :focus {
             align-items: stretch;
   }
   div.container_24 div.grid_24 main.content .text h1 {
-    color: #ccffbb;
     height: 50px;
     margin: 0 0 0.5em 0;
     text-align: center;
     font-size: 2em;
     line-height: 50px;
-    background-color: #348C0F;
+    background-color: #5e8b33;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
         align-self: center;
     font-weight: bold;
+    color: #ffffff;
   }
   div.container_24 div.grid_24 main.content .text h2 {
     -webkit-align-self: center;
@@ -682,7 +681,7 @@ button#mobile-toggle :focus {
     -ms-grid-row-align: center;
         align-self: center;
     color: #3a5f0b;
-    background-color: #95E07E;
+    background-color: #cad996;
     height: 45px;
     margin: 0 0 0.5em 0;
     text-align: center;
@@ -864,13 +863,13 @@ button#mobile-toggle :focus {
     width: 30%;
     margin: 0;
     line-height: 30px;
-    background-color: #297F10;
+    background-color: #5e8b33;
     border: 0;
-    color: #ccffbb;
+    color: #ffffff;
     display: block;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li input[type="submit"]:hover {
-    background-color: #297F10;
+    background-color: #5e8b33;
     color: #ffffff;
     font-weight: bold;
     cursor: pointer;
@@ -952,8 +951,8 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
   div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
     display: block;
-    background-color: #3a5f0b;
-    color: #ffffff;
+    background-color: #cad996;
+    color: #3a5f0b;
     height: auto;
     line-height: 1.5;
     margin: 0.5em auto;
@@ -968,7 +967,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
     cursor: pointer;
     color: #3a5f0b;
-    background-color: #95E07E;
+    background-color: #cad996;
   }
   div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
   div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
@@ -987,7 +986,6 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts {
     padding: 3em;
-    background-color: #ccffbb;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1125,7 +1123,6 @@ button#mobile-toggle :focus {
     width: 100%;
     min-height: 225px;
     height: auto;
-    background-color: #95E07E;
     margin: 0.5em;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1139,13 +1136,12 @@ button#mobile-toggle :focus {
     line-height: 60px;
     font-size: 1.3em;
     color: #3a5f0b;
-    background-color: #ffffff;
+    background-color: #cad996;
     text-align: center;
     margin: 0;
     padding: 0;
     font-weight: bold;
     width: 100%;
-    border-bottom: 5px #2c6700 solid;
   }
   div.container_24 div.grid_24 main.content #mask .contentbox p,
   div.container_24 div.grid_24 main.content #mask_two .contentbox p,
@@ -1181,7 +1177,7 @@ button#mobile-toggle :focus {
     margin: 0;
     line-height: 35px;
     text-align: center;
-    background-color: #297F10;
+    background-color: #3fa63a;
     border: 0;
     color: #ccffbb;
     display: block;
@@ -1195,7 +1191,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
   div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
     background-color: #ccffbb;
-    color: #297F10;
+    color: #3fa63a;
     cursor: pointer;
     letter-spacing: 0.12em;
     width: 50%;
@@ -1223,7 +1219,7 @@ button#mobile-toggle :focus {
     width: 31.5%;
     min-height: 225px;
     height: auto;
-    background-color: #2c6700;
+    background-color: #5e8b33;
     float: left;
     margin: 0.5em;
     -webkit-box-sizing: border-box;
@@ -1239,13 +1235,12 @@ button#mobile-toggle :focus {
     line-height: 35px;
     font-size: 1.1em;
     color: #3a5f0b;
-    background-color: #ffffff;
+    background-color: #cad996;
     text-align: center;
     margin: 0;
     padding: 0;
     font-weight: bold;
     width: 100%;
-    border-bottom: 5px #2c6700 solid;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image {
     margin: 0 0.25em 0 0;
@@ -1285,19 +1280,19 @@ button#mobile-toggle :focus {
     margin: 0;
     line-height: 35px;
     text-align: center;
-    background-color: #297F10;
+    background-color: #406136;
     border: 0;
-    color: #ccffbb;
+    color: #ffffff;
     display: block;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    text-shadow: 1px 2px 1px #165404;
+    text-shadow: 1px 2px 1px #406136;
     -webkit-transition: all 0.2s ease-in 0s;
     transition: all 0.2s ease-in 0s;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button:hover {
-    background-color: #ccffbb;
-    color: #297F10;
+    background-color: #ffffff;
+    color: #406136;
     cursor: pointer;
     letter-spacing: 0.12em;
     text-shadow: none;
@@ -1307,16 +1302,15 @@ button#mobile-toggle :focus {
     text-align: center;
     font-size: 1em;
     margin-top: 10px;
-    background-color: #297F10;
+    background-color: #406136;
   }
   div.container_24 div.grid_24 footer ul {
     list-style: none;
     margin: auto 0;
     padding: 0;
-    height: 50px;
+    height: 100%;
     width: 80%;
     margin: auto;
-    background-color: #297F10;
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
@@ -1332,7 +1326,6 @@ button#mobile-toggle :focus {
     float: left;
     height: 50px;
     width: 12%;
-    line-height: 50px;
     margin: 0;
     -ms-flex: 1 0 auto;
     -webkit-box-flex: 1;
@@ -1341,20 +1334,19 @@ button#mobile-toggle :focus {
     -webkit-box-align: center;
             align-items: center;
   }
-  div.container_24 div.grid_24 footer ul li:hover {
-    background-color: #ccffbb;
-    color: #ffffff;
-  }
   div.container_24 div.grid_24 footer ul li a {
-    color: #ccffbb;
-    background-color: #297F10;
+    line-height: 50px;
+    color: #ffffff;
+    background-color: #406136;
     display: block;
     font-size: 1em;
     text-shadow: 1px 2px 1px #165404;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
   }
   div.container_24 div.grid_24 footer ul li a:hover {
-    color: #297F10;
-    background-color: #ccffbb;
+    color: #406136;
+    background-color: #ffffff;
     text-decoration: none;
     text-shadow: 1px 2px 1px #ccffbb;
   }
@@ -1380,7 +1372,7 @@ button#mobile-toggle :focus {
     /* Remove borders */
     outline: none;
     /* Remove outline */
-    background-color: #3ea514;
+    background-color: #678b3f;
     /* Set a background color */
     color: #ffffff;
     /* Text color */
@@ -1534,13 +1526,13 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content {
     /*Content*/
-    background-color: #3ea514;
+    background-color: #678b3f;
     /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
-    color: #3ea514;
+    color: #678b3f;
   }
   div.container_24 div.grid_24 main.content h1 {
     font-size: 2.4em;
@@ -1802,15 +1794,9 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
-    margin-top: 10px;
   }
   div.container_24 div.grid_24 footer ul {
-    height: 50px;
-    width: 80%;
-  }
-  div.container_24 div.grid_24 footer ul li {
-    height: 50px;
-    line-height: 50px;
+    height: 100%;
   }
   div.container_24 div.grid_24 footer ul li:hover {
     background-color: #ccffbb;
@@ -1835,7 +1821,7 @@ button#mobile-toggle :focus {
 
 @media only screen and (max-width: 1280px) {
   div.container_24 {
-    width: 90%;
+    width: 92%;
     height: auto;
     /*header*/
     /*Navigation*/
@@ -1951,12 +1937,12 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content {
     /*Content*/
-    background-color: #3ea514;
+    background-color: #678b3f;
     /* The dots/bullets/indicators */
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
-    color: #3ea514;
+    color: #678b3f;
   }
   div.container_24 div.grid_24 main.content h1 {
     font-size: 2.3em;
@@ -2223,15 +2209,9 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
-    margin-top: 10px;
-  }
-  div.container_24 div.grid_24 footer ul {
-    height: 50px;
-    width: 80%;
   }
   div.container_24 div.grid_24 footer ul li {
     height: 50px;
-    line-height: 50px;
   }
   div.container_24 div.grid_24 footer ul li:hover {
     background-color: #ccffbb;
@@ -2250,7 +2230,7 @@ button#mobile-toggle :focus {
 
 @media only screen and (max-width: 1024px) {
   div.container_24 {
-    width: 90%;
+    width: 94%;
     height: auto;
     /*header*/
     /*Navigation*/
@@ -2369,12 +2349,12 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content {
     /*Content*/
-    background-color: #3ea514;
+    background-color: #678b3f;
     /* The dots/bullets/indicators */
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
-    color: #3ea514;
+    color: #678b3f;
   }
   div.container_24 div.grid_24 main.content h1 {
     font-size: 2.3em;
@@ -2440,7 +2420,7 @@ button#mobile-toggle :focus {
     width: 20%;
   }
   div.container_24 div.grid_24 main.content .text .recycle_img {
-    width: 13%;
+    width: 18%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 70%;
@@ -2654,15 +2634,9 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
-    margin-top: 10px;
-  }
-  div.container_24 div.grid_24 footer ul {
-    height: 50px;
-    width: 80%;
   }
   div.container_24 div.grid_24 footer ul li {
     height: 50px;
-    line-height: 50px;
   }
   div.container_24 div.grid_24 footer ul li:hover {
     background-color: #ccffbb;
@@ -2681,7 +2655,7 @@ button#mobile-toggle :focus {
 
 @media only screen and (max-width: 980px) {
   div.container_24 {
-    width: 90%;
+    width: 96%;
     height: auto;
     /*header*/
     /*Navigation*/
@@ -2804,12 +2778,12 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content {
     /*Content*/
-    background-color: #3ea514;
+    background-color: #678b3f;
     /* The dots/bullets/indicators */
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
-    color: #3ea514;
+    color: #678b3f;
   }
   div.container_24 div.grid_24 main.content h1 {
     font-size: 2.3em;
@@ -2876,7 +2850,7 @@ button#mobile-toggle :focus {
     width: 20%;
   }
   div.container_24 div.grid_24 main.content .text .recycle_img {
-    width: 15%;
+    width: 18%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 80%;
@@ -3084,15 +3058,12 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
-    margin-top: 10px;
   }
   div.container_24 div.grid_24 footer ul {
-    height: 50px;
-    width: 80%;
+    width: 100%;
   }
   div.container_24 div.grid_24 footer ul li {
     height: 50px;
-    line-height: 50px;
   }
   div.container_24 div.grid_24 footer ul li:hover {
     background-color: #ccffbb;
@@ -3111,7 +3082,7 @@ button#mobile-toggle :focus {
 
 @media only screen and (max-width: 800px) {
   div.container_24 {
-    width: 94%;
+    width: 96%;
     height: auto;
     /*header*/
     /*Navigation*/
@@ -3234,13 +3205,13 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content {
     /*Content*/
-    background-color: #3ea514;
+    background-color: #678b3f;
     /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
-    color: #3ea514;
+    color: #678b3f;
   }
   div.container_24 div.grid_24 main.content h1 {
     font-size: 2.3em;
@@ -3328,7 +3299,7 @@ button#mobile-toggle :focus {
     width: 20%;
   }
   div.container_24 div.grid_24 main.content .text .recycle_img {
-    width: 16%;
+    width: 18%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
@@ -3540,15 +3511,12 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
-    margin-top: 10px;
   }
   div.container_24 div.grid_24 footer ul {
     height: 50px;
-    width: 80%;
   }
   div.container_24 div.grid_24 footer ul li {
     height: 50px;
-    line-height: 50px;
   }
   div.container_24 div.grid_24 footer ul li:hover {
     background-color: #ccffbb;
@@ -3567,7 +3535,7 @@ button#mobile-toggle :focus {
 
 @media only screen and (max-width: 768px) {
   div.container_24 {
-    width: 94%;
+    width: 96%;
     height: auto;
     /*header*/
     /*Navigation*/
@@ -3677,13 +3645,13 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content {
     /*Content*/
-    background-color: #3ea514;
+    background-color: #678b3f;
     /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
-    color: #3ea514;
+    color: #678b3f;
   }
   div.container_24 div.grid_24 main.content h1 {
     font-size: 2.3em;
@@ -3761,7 +3729,7 @@ button#mobile-toggle :focus {
     width: 20%;
   }
   div.container_24 div.grid_24 main.content .text .recycle_img {
-    width: 17%;
+    width: 18%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
@@ -3961,19 +3929,15 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
-    margin-top: 10px;
   }
   div.container_24 div.grid_24 footer ul {
     height: 50px;
-    width: 80%;
   }
   div.container_24 div.grid_24 footer ul li {
     height: 50px;
-    line-height: 50px;
   }
   div.container_24 div.grid_24 footer ul li:hover {
     background-color: #ccffbb;
-    color: #ffffff;
   }
   div.container_24 div.grid_24 footer ul li a {
     font-size: 0.7em;
@@ -4110,13 +4074,13 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content {
     /*Content*/
-    background-color: #3ea514;
+    background-color: #678b3f;
     /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
-    color: #3ea514;
+    color: #678b3f;
   }
   div.container_24 div.grid_24 main.content h1 {
     font-size: 2.3em;
@@ -4198,7 +4162,7 @@ button#mobile-toggle :focus {
     width: 20%;
   }
   div.container_24 div.grid_24 main.content .text .recycle_img {
-    width: 19%;
+    width: 18%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
@@ -4399,14 +4363,12 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 footer {
     height: 50px;
-    margin-top: 10px;
   }
   div.container_24 div.grid_24 footer ul {
     width: 96%;
   }
   div.container_24 div.grid_24 footer ul li {
     height: 50px;
-    line-height: 50px;
   }
   div.container_24 div.grid_24 footer ul li:hover {
     background-color: #ccffbb;
@@ -4572,13 +4534,13 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content {
     /*Content*/
-    background-color: #3ea514;
+    background-color: #678b3f;
     /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
-    color: #3ea514;
+    color: #678b3f;
   }
   div.container_24 div.grid_24 main.content h1 {
     font-size: 2.3em;
@@ -4674,7 +4636,7 @@ button#mobile-toggle :focus {
     width: 20%;
   }
   div.container_24 div.grid_24 main.content .text .recycle_img {
-    width: 20%;
+    width: 18%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
@@ -5037,13 +4999,13 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content {
     /*Content*/
-    background-color: #3ea514;
+    background-color: #678b3f;
     /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
-    color: #3ea514;
+    color: #678b3f;
   }
   div.container_24 div.grid_24 main.content h1 {
     font-size: 2.2em;
@@ -5119,7 +5081,7 @@ button#mobile-toggle :focus {
     width: 20%;
   }
   div.container_24 div.grid_24 main.content .text .recycle_img {
-    width: 20%;
+    width: 18%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
@@ -5525,13 +5487,13 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content {
     /*Content*/
-    background-color: #3ea514;
+    background-color: #678b3f;
     /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
-    color: #3ea514;
+    color: #678b3f;
   }
   div.container_24 div.grid_24 main.content h1 {
     font-size: 2.2em;
@@ -5977,13 +5939,13 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content {
     /*Content*/
-    background-color: #3ea514;
+    background-color: #678b3f;
     /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
-    color: #3ea514;
+    color: #678b3f;
   }
   div.container_24 div.grid_24 main.content h1 {
     font-size: 2.2em;
@@ -6060,7 +6022,7 @@ button#mobile-toggle :focus {
     color: #ffffff;
   }
   div.container_24 div.grid_24 main.content .text .recycle_img {
-    width: 25%;
+    width: 20%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
@@ -6419,13 +6381,13 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content {
     /*Content*/
-    background-color: #3ea514;
+    background-color: #678b3f;
     /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
-    color: #3ea514;
+    color: #678b3f;
   }
   div.container_24 div.grid_24 main.content h1 {
     font-size: 2.2em;
@@ -6516,7 +6478,7 @@ button#mobile-toggle :focus {
     width: 20%;
   }
   div.container_24 div.grid_24 main.content .text .recycle_img {
-    width: 35%;
+    width: 25%;
     margin: auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
@@ -6861,13 +6823,13 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content {
     /*Content*/
-    background-color: #3ea514;
+    background-color: #678b3f;
     /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
-    color: #3ea514;
+    color: #678b3f;
   }
   div.container_24 div.grid_24 main.content h1 {
     font-size: 2.2em;
@@ -6944,7 +6906,7 @@ button#mobile-toggle :focus {
     width: 20%;
   }
   div.container_24 div.grid_24 main.content .text .recycle_img {
-    width: 40%;
+    width: 25%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
@@ -7315,13 +7277,13 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content {
     /*Content*/
-    background-color: #3ea514;
+    background-color: #678b3f;
     /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
-    color: #3ea514;
+    color: #678b3f;
   }
   div.container_24 div.grid_24 main.content h1 {
     font-size: 2.2em;
@@ -7398,7 +7360,7 @@ button#mobile-toggle :focus {
     width: 20%;
   }
   div.container_24 div.grid_24 main.content .text .recycle_img {
-    width: 50%;
+    width: 25%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
@@ -7750,13 +7712,13 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content {
     /*Content*/
-    background-color: #3ea514;
+    background-color: #678b3f;
     /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
-    color: #3ea514;
+    color: #678b3f;
   }
   div.container_24 div.grid_24 main.content h1 {
     font-size: 2.2em;
@@ -8185,13 +8147,13 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content {
     /*Content*/
-    background-color: #3ea514;
+    background-color: #678b3f;
     /* The dots/bullets/indicators */
     /*Content boxes*/
   }
   div.container_24 div.grid_24 main.content:after {
     content: ".";
-    color: #3ea514;
+    color: #678b3f;
   }
   div.container_24 div.grid_24 main.content h1 {
     font-size: 2.2em;
