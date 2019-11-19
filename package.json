@@ -31,6 +31,7 @@
   "author": "Raymond Thompson",
   "license": "MIT",
   "dependencies": {
+    "cache-base": "^4.0.0",
     "diff": "^4.0.1",
     "jquery-validation": "^1.19.1",
     "lodash": "^4.17.15",
