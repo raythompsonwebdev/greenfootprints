@@ -5360,7 +5360,7 @@ button#mobile-toggle :focus {
     padding: 0.7em;
     font-size: 1.5em;
     text-transform: uppercase;
-    background-color: #406136;
+    background-color: #678b3f;
     color: #ffffff;
     border: none;
     -webkit-transition: all ease-out 400ms;
@@ -5382,11 +5382,11 @@ button#mobile-toggle :focus {
   }
   div.container_24 nav {
     position: fixed;
-    top: 4em;
-    z-index: 100;
-    left: -250px;
-    width: 250px;
-    height: auto;
+    top: -365px;
+    left: 0;
+    z-index: 98;
+    width: 100%;
+    height: 360px;
   }
   div.container_24 nav div.nav-title {
     display: none;
@@ -5396,19 +5396,20 @@ button#mobile-toggle :focus {
     text-indent: 0.25em;
   }
   div.container_24 nav ul {
-    height: 15.5em;
+    height: 100%;
     -ms-flex-flow: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-flow: column;
+    margin-right: 0;
+    margin: 0;
+    width: 100%;
   }
   div.container_24 nav ul li {
     height: 45px;
     list-style: none;
     width: 100%;
     display: block;
-    height: 45px;
-    margin-bottom: 0.25em;
   }
   div.container_24 nav ul li a {
     line-height: 45px;
@@ -5826,7 +5827,7 @@ button#mobile-toggle :focus {
     width: 50%;
   }
   div.container_24 header hgroup h1 {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
   div.container_24 header hgroup h2 {
     font-size: 0.55em;
@@ -5866,11 +5867,8 @@ button#mobile-toggle :focus {
   div.container_24 ul#mobile-nav {
     display: none;
   }
-  div.container_24 nav {
-    top: 4em;
-  }
   div.container_24 nav ul {
-    height: 15.5em;
+    height: 360px;
   }
   div.container_24 nav ul li {
     height: 45px;
@@ -6269,7 +6267,7 @@ button#mobile-toggle :focus {
     width: 45%;
   }
   div.container_24 header hgroup h1 {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
   div.container_24 header hgroup h2 {
     font-size: 0.5em;
@@ -6279,6 +6277,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 header .socials {
     width: 30%;
+    visibility: hidden;
   }
   div.container_24 header .socials ul {
     margin: 0;
@@ -6296,24 +6295,15 @@ button#mobile-toggle :focus {
   div.container_24 header .socials ul li a i.fa-instagram {
     font-size: 0.85em;
   }
-  div.container_24 button#mobile-toggle,
-  div.container_24 nav.toggled ul {
-    display: block;
-  }
   div.container_24 button#mobile-toggle {
-    left: 84%;
+    top: 0.25em;
+    left: 85%;
   }
   div.container_24 button#mobile-toggle.hide {
     left: 100vw;
   }
   div.container_24 ul#mobile-nav {
     display: none;
-  }
-  div.container_24 nav {
-    top: 4em;
-  }
-  div.container_24 nav ul {
-    height: 15.5em;
   }
   div.container_24 nav ul li {
     height: 45px;
@@ -6713,7 +6703,7 @@ button#mobile-toggle :focus {
     width: 43%;
   }
   div.container_24 header hgroup h1 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
   div.container_24 header hgroup h2 {
     font-size: 0.5em;
@@ -6736,24 +6726,14 @@ button#mobile-toggle :focus {
   div.container_24 header .socials ul li a i.fa-instagram {
     font-size: 0.8em;
   }
-  div.container_24 button#mobile-toggle,
-  div.container_24 nav.toggled ul {
-    display: block;
-  }
   div.container_24 button#mobile-toggle {
-    left: 83%;
+    left: 84%;
   }
   div.container_24 button#mobile-toggle.hide {
     left: 100vw;
   }
   div.container_24 ul#mobile-nav {
     display: none;
-  }
-  div.container_24 nav {
-    top: 4em;
-  }
-  div.container_24 nav ul {
-    height: 15.5em;
   }
   div.container_24 nav ul li {
     height: 45px;
@@ -7164,7 +7144,7 @@ button#mobile-toggle :focus {
     width: 42%;
   }
   div.container_24 header hgroup h1 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
   div.container_24 header hgroup h2 {
     font-size: 0.5em;
@@ -7191,24 +7171,14 @@ button#mobile-toggle :focus {
   div.container_24 header .socials ul li a i.fa-instagram {
     font-size: 0.75em;
   }
-  div.container_24 button#mobile-toggle,
-  div.container_24 nav.toggled ul {
-    display: block;
-  }
   div.container_24 button#mobile-toggle {
-    left: 82%;
+    left: 83%;
   }
   div.container_24 button#mobile-toggle.hide {
     left: 100vw;
   }
   div.container_24 ul#mobile-nav {
     display: none;
-  }
-  div.container_24 nav {
-    top: 4em;
-  }
-  div.container_24 nav ul {
-    height: 15.5em;
   }
   div.container_24 nav ul li {
     height: 45px;
@@ -7599,10 +7569,10 @@ button#mobile-toggle :focus {
     width: 42%;
   }
   div.container_24 header hgroup h1 {
-    font-size: 0.9em;
+    font-size: 1.1em;
   }
   div.container_24 header hgroup h2 {
-    font-size: 0.45em;
+    font-size: 0.5em;
   }
   div.container_24 header figure#logo {
     width: 23%;
@@ -7626,24 +7596,14 @@ button#mobile-toggle :focus {
   div.container_24 header .socials ul li a i.fa-instagram {
     font-size: 0.7em;
   }
-  div.container_24 button#mobile-toggle,
-  div.container_24 nav.toggled ul {
-    display: block;
-  }
   div.container_24 button#mobile-toggle {
-    left: 80%;
+    left: 82%;
   }
   div.container_24 button#mobile-toggle.hide {
     left: 100vw;
   }
   div.container_24 ul#mobile-nav {
     display: none;
-  }
-  div.container_24 nav {
-    top: 4em;
-  }
-  div.container_24 nav ul {
-    height: 15.5em;
   }
   div.container_24 nav ul li {
     height: 45px;
@@ -8036,10 +7996,10 @@ button#mobile-toggle :focus {
     width: 42%;
   }
   div.container_24 header hgroup h1 {
-    font-size: 0.9em;
+    font-size: 1.1em;
   }
   div.container_24 header hgroup h2 {
-    font-size: 0.45em;
+    font-size: 0.5em;
   }
   div.container_24 header figure#logo {
     width: 23%;
@@ -8063,10 +8023,6 @@ button#mobile-toggle :focus {
   div.container_24 header .socials ul li a i.fa-instagram {
     font-size: 0.7em;
   }
-  div.container_24 button#mobile-toggle,
-  div.container_24 nav.toggled ul {
-    display: block;
-  }
   div.container_24 button#mobile-toggle {
     left: 77%;
   }
@@ -8075,12 +8031,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 ul#mobile-nav {
     display: none;
-  }
-  div.container_24 nav {
-    top: 4em;
-  }
-  div.container_24 nav ul {
-    height: 15.5em;
   }
   div.container_24 nav ul li {
     height: 45px;

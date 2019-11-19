@@ -6280,7 +6280,7 @@ button#mobile-toggle {
             padding: 0.7em;
             font-size: 1.5em;
             text-transform: uppercase;
-            background-color: $headbg;
+            background-color: $contentbg;
             color:  $colorsocmedhov;
             border:none;
             @include transitioner(all ease-out 400ms);
@@ -6309,11 +6309,11 @@ button#mobile-toggle {
         /*Navigation*/
         nav {
             position: fixed;
-            top: 4em;
-            z-index: 100;
-            left: -250px;
-            width: 250px;
-            height: auto;
+            top: -365px;
+            left: 0;
+            z-index: 98;
+            width: 100%;
+            height: 360px;
 
             
             div.nav-title {
@@ -6326,10 +6326,13 @@ button#mobile-toggle {
             }
 
             ul {
-                height: 15.5em;
+                height: 100%;
                 -webkit-flex-flow: column ;
                 -ms-flex-flow: column ;
                 flex-flow: column ;
+                margin-right: 0;
+                margin:0;
+                width:100%;
 
                 li {
                     height: 45px;
@@ -6337,8 +6340,6 @@ button#mobile-toggle {
                     width: 100%;
                     display: block;
                     
-                    height: 45px;
-                    margin-bottom: 0.25em;
 
                     a {
                         line-height: 45px;
@@ -6847,7 +6848,7 @@ button#mobile-toggle {
                 width: 50%;
 
                 h1 {
-                    font-size: 1.1em;
+                    font-size: 1.2em;
                 }
 
                 h2 {
@@ -6908,13 +6909,9 @@ button#mobile-toggle {
 
         /*Navigation*/
         nav {
-            
-            top: 4em;
-            
-            
-            
+                        
             ul {
-                height: 15.5em;
+                height: 360px;
                 ;
 
                 li {
@@ -7409,7 +7406,7 @@ button#mobile-toggle {
                 width: 45%;
 
                 h1 {
-                    font-size: 1.1em;
+                    font-size: 1.2em;
                 }
 
                 h2 {
@@ -7423,6 +7420,7 @@ button#mobile-toggle {
 
             .socials {
                 width: 30%;
+                visibility:hidden;
 
                 ul {
                     margin: 0;
@@ -7448,14 +7446,10 @@ button#mobile-toggle {
             /*social media icons*/
         }
 
-        button#mobile-toggle,
-        nav.toggled ul {
-            display: block;
-        }
-        
+                
         button#mobile-toggle {
-            
-            left: 84%;
+            top: 0.25em;
+            left: 85%;
             
         }
     
@@ -7469,15 +7463,9 @@ button#mobile-toggle {
 
         /*Navigation*/
         nav {
-            
-            top: 4em;
-            
-            
-            
+                        
             ul {
-                height: 15.5em;
-                ;
-
+               
                 li {
                     height: 45px;
                     
@@ -7971,7 +7959,7 @@ button#mobile-toggle {
                 width: 43%;
 
                 h1 {
-                    font-size: 1em;
+                    font-size: 1.1em;
                 }
 
                 h2 {
@@ -8007,14 +7995,10 @@ button#mobile-toggle {
             /*social media icons*/
         }
 
-        button#mobile-toggle,
-        nav.toggled ul {
-            display: block;
-        }
-        
+                
         button#mobile-toggle {
             
-            left: 83%;
+            left: 84%;
             
         }
     
@@ -8029,14 +8013,8 @@ button#mobile-toggle {
         /*Navigation*/
         nav {
             
-            top: 4em;
-            
-            
-            
             ul {
-                height: 15.5em;
-                ;
-
+              
                 li {
                     height: 45px;
                     
@@ -8545,7 +8523,7 @@ button#mobile-toggle {
                 width: 42%;
 
                 h1 {
-                    font-size: 1em;
+                    font-size: 1.1em;
                 }
 
                 h2 {
@@ -8584,14 +8562,10 @@ button#mobile-toggle {
             /*social media icons*/
         }
 
-        button#mobile-toggle,
-        nav.toggled ul {
-            display: block;
-        }
-        
+                
         button#mobile-toggle {
             
-            left: 82%;
+            left: 83%;
             
         }
     
@@ -8606,14 +8580,9 @@ button#mobile-toggle {
         /*Navigation*/
         nav {
             
-            top: 4em;
-            
-            
             
             ul {
-                height: 15.5em;
-                ;
-
+               
                 li {
                     height: 45px;
                     
@@ -9098,11 +9067,11 @@ button#mobile-toggle {
                 width: 42%;
 
                 h1 {
-                    font-size: 0.9em;
+                    font-size: 1.1em;
                 }
 
                 h2 {
-                    font-size: 0.45em;
+                    font-size: 0.5em;
                 }
             }
 
@@ -9137,14 +9106,10 @@ button#mobile-toggle {
             /*social media icons*/
         }
 
-        button#mobile-toggle,
-        nav.toggled ul {
-            display: block;
-        }
-        
+                
         button#mobile-toggle {
             
-            left: 80%;
+            left: 82%;
             
         }
     
@@ -9158,15 +9123,9 @@ button#mobile-toggle {
 
         /*Navigation*/
         nav {
-            
-            top: 4em;
-            
-            
-            
+                        
             ul {
-                height: 15.5em;
-                ;
-
+                
                 li {
                     height: 45px;
                     
@@ -9653,11 +9612,11 @@ button#mobile-toggle {
                 width: 42%;
 
                 h1 {
-                    font-size: 0.9em;
+                    font-size: 1.1em;
                 }
 
                 h2 {
-                    font-size: 0.45em;
+                    font-size: 0.5em;
                 }
             }
 
@@ -9691,11 +9650,6 @@ button#mobile-toggle {
 
             /*social media icons*/
         }
-
-        button#mobile-toggle,
-        nav.toggled ul {
-            display: block;
-        }
         
         button#mobile-toggle {
             
@@ -9713,15 +9667,9 @@ button#mobile-toggle {
 
         /*Navigation*/
         nav {
-            
-            top: 4em;
-            
-            
-            
+                       
             ul {
-                height: 15.5em;
-                ;
-
+                
                 li {
                     height: 45px;
                     
