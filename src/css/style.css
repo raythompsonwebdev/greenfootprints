@@ -74,7 +74,7 @@ figure {
 }
 
 .seperator {
-  height: 65px;
+  height: 1px;
   display: block;
 }
 
@@ -663,7 +663,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text h1 {
     height: 50px;
-    margin: 0 0 0.5em 0;
+    margin: 0;
     text-align: center;
     font-size: 2em;
     line-height: 50px;
@@ -735,13 +735,13 @@ button#mobile-toggle :focus {
     text-align: left;
     letter-spacing: 0.1em;
     font-size: 0.85em;
-    height: 40px;
+    height: 30px;
     clear: left;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li span {
     display: block;
     width: 40px;
-    height: 40px;
+    height: 30px;
     float: left;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-contact li span::before {
@@ -749,7 +749,7 @@ button#mobile-toggle :focus {
     content: "\f1b8";
     font-style: normal;
     padding: 1.5%;
-    line-height: 40px;
+    line-height: 30px;
     color: #406136;
     display: block;
     padding: 0;
@@ -1035,7 +1035,7 @@ button#mobile-toggle :focus {
     text-align: center;
     font-size: 1.5em;
     width: 50px;
-    height: auto;
+    height: 50px;
     float: left;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type,
@@ -1148,10 +1148,10 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 .contentbox p {
     letter-spacing: 0.05em;
     font-size: 1em;
-    margin: 0 0 0.25em 0;
+    margin: 0 0 0.2em 0;
     padding: 0.5em;
     background-color: #ccffbb;
-    line-height: 1.8em;
+    line-height: 1.5em;
     width: auto;
     display: block;
   }
@@ -1268,7 +1268,7 @@ button#mobile-toggle :focus {
     margin: 0 0 0.25em 0;
     padding: 0.5em;
     background-color: #ccffbb;
-    line-height: 1.8em;
+    line-height: 1.5em;
     width: auto;
     display: block;
   }
@@ -2889,6 +2889,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two,
   div.container_24 div.grid_24 main.content #mask3 {
     width: 100%;
+    min-height: 620px;
     /* Next & previous buttons */
   }
   div.container_24 div.grid_24 main.content #mask div.collection-box,
@@ -2931,7 +2932,6 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li {
     line-height: 25px;
     font-size: 0.8em;
-    height: 60px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:before,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:before,
@@ -3768,7 +3768,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two,
   div.container_24 div.grid_24 main.content #mask3 {
     width: 100%;
-    min-height: 700px;
+    min-height: 580px;
     /* Next & previous buttons */
   }
   div.container_24 div.grid_24 main.content #mask div.collection-box,
@@ -4670,6 +4670,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two,
   div.container_24 div.grid_24 main.content #mask3 {
     width: 100%;
+    min-height: 550px;
     /* Next & previous buttons */
   }
   div.container_24 div.grid_24 main.content #mask div.collection-box,
@@ -5115,6 +5116,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two,
   div.container_24 div.grid_24 main.content #mask3 {
     width: 100%;
+    min-height: 550px;
     /* Next & previous buttons */
   }
   div.container_24 div.grid_24 main.content #mask div.collection-box,
@@ -7754,7 +7756,7 @@ button#mobile-toggle :focus {
     width: 20%;
   }
   div.container_24 div.grid_24 main.content .text .recycle_img {
-    width: 50%;
+    width: 25%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
@@ -8175,7 +8177,7 @@ button#mobile-toggle :focus {
     color: #ffffff;
   }
   div.container_24 div.grid_24 main.content .text .recycle_img {
-    width: 50%;
+    width: 25%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;

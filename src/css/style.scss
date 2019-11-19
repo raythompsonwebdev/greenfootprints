@@ -26,6 +26,8 @@ button#mobile-toggle {
     }
 }
 
+
+
 @media only screen and (max-width: 1920px) {
     nav div {
         position: absolute;
@@ -499,7 +501,7 @@ button#mobile-toggle {
                     h1 {
                         
                         height: 50px;
-                        margin: 0 0 0.5em 0;
+                        margin: 0;
                         text-align: center;
                         font-size: 2em;
                         line-height: 50px;
@@ -577,13 +579,13 @@ button#mobile-toggle {
                             text-align: left;
                             letter-spacing: 0.1em;
                             font-size: 0.85em;
-                            height: 40px;
+                            height: 30px;
                             clear: left;
 
                             span {
                                 display: block;
                                 width: 40px;
-                                height: 40px;
+                                height: 30px;
                                 float: left;
 
                                 &::before {
@@ -591,7 +593,7 @@ button#mobile-toggle {
                                     content: "\f1b8";
                                     font-style: normal;
                                     padding: 1.5%;
-                                    line-height: 40px;
+                                    line-height: 30px;
                                     color: $headbg;
                                     display: block;
                                     padding: 0;
@@ -902,7 +904,7 @@ button#mobile-toggle {
                                     text-align: center;
                                     font-size: 1.5em;
                                     width: 50px;
-                                    height: auto;
+                                    height: 50px;
                                     float:left;
                                 }
    
@@ -1002,10 +1004,10 @@ button#mobile-toggle {
                         p {
                             letter-spacing: 0.05em;
                             font-size: 1em;
-                            margin: 0 0 0.25em 0;
+                            margin: 0 0 0.2em 0;
                             padding: 0.5em;
                             background-color: $colortxtbg;
-                            line-height: 1.8em;
+                            line-height: 1.5em;
                             width: auto;
                             display: block;
                         }
@@ -1126,7 +1128,7 @@ button#mobile-toggle {
                                     margin: 0 0 0.25em 0;
                                     padding: 0.5em;
                                     background-color: $colortxtbg;
-                                    line-height: 1.8em;
+                                    line-height: 1.5em;
                                     width: auto;
                                     display: block;
                                 }
@@ -3192,7 +3194,7 @@ button#mobile-toggle {
                 #mask_two,
                 #mask3 {
                     width: 100%;
-
+                    min-height: 620px;
                     div.collection-box{
                                                 
                         h2 {
@@ -3229,10 +3231,8 @@ button#mobile-toggle {
                             li {
 
                                 line-height: 25px;
-
                                 font-size: 0.8em;
-                                height:60px;
-
+                               
                                 &:before {
   
                                     font-size: 1.3em;
@@ -4302,7 +4302,7 @@ button#mobile-toggle {
                 #mask_two,
                 #mask3 {
                     width: 100%;
-                    min-height: 700px;
+                    min-height: 580px;
                     div.collection-box{
                         padding: 0 1em;
                         
@@ -5435,7 +5435,7 @@ button#mobile-toggle {
                 #mask_two,
                 #mask3 {
                     width: 100%;
-
+                    min-height: 550px;
                     div.collection-box{
                         padding: 0 1em;
                         
@@ -5995,7 +5995,7 @@ button#mobile-toggle {
                 #mask_two,
                 #mask3 {
                     width: 100%;
-
+                    min-height: 550px;
                     div.collection-box{
                         padding: 0 1em;
                         
@@ -6836,7 +6836,7 @@ button#mobile-toggle {
 }
 
 @media only screen and (max-width: 536px) {
-
+    
 
     div.container_24 {
         width: 98%;
@@ -7174,6 +7174,7 @@ button#mobile-toggle {
                 #mask_two,
                 #mask3 {
                     width: 100%;
+                    
                     div.collection-box{
                         padding: 0 1em;
                         
@@ -7396,7 +7397,7 @@ button#mobile-toggle {
 }
 
 @media only screen and (max-width: 480px) {
- 
+    
 
     div.container_24 {
         header {
@@ -8843,6 +8844,7 @@ button#mobile-toggle {
                 #mask_two,
                 #mask3 {
                     width: 100%;
+                    
                     div.collection-box{
                         padding: 0 1em;
                         
@@ -9327,7 +9329,7 @@ button#mobile-toggle {
                     }
 
                     .recycle_img {
-                        width: 50%;
+                        width: 25%;
                         
                     }
 
@@ -9866,7 +9868,7 @@ button#mobile-toggle {
 
                     
                     .recycle_img {
-                        width: 50%;
+                        width: 25%;
                     }
 
                     form#feedback-form {
@@ -9924,7 +9926,7 @@ button#mobile-toggle {
                 #mask_two,
                 #mask3 {
                     width: 100%;
-
+                    
                     article.recycle-facts {
                         padding: 0.5em;
 
