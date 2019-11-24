@@ -234,7 +234,7 @@ menuToggle.addEventListener('click', function(event){
 	event.preventDefault();
 
 	// create menu variables
-	var slideoutMenu = document.querySelector('nav');
+	var slideoutMenu = document.querySelector('#mobile-nav');
 
 	var slideoutMenuHeight = slideoutMenu.offsetHeight;
 	
@@ -257,7 +257,7 @@ menuToggle.addEventListener('click', function(event){
 	}
 
 
-});
+}, false);
 
 
 //slideshow ******************************************

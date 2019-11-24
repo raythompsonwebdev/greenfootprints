@@ -403,7 +403,7 @@ button#mobile-toggle :focus {
     text-shadow: 0 0 0 #165404;
     cursor: pointer;
   }
-  div.container_24 ul#mobile-nav {
+  div.container_24 nav#mobile-nav {
     display: none;
   }
   div.container_24 nav {
@@ -958,7 +958,7 @@ button#mobile-toggle :focus {
     margin: 0.5em auto;
     text-align: center;
     font-size: 1.5em;
-    margin: 0;
+    margin: 0.25em 0 0 0;
     padding: 0;
     line-height: 50px;
   }
@@ -985,7 +985,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask article.recycle-facts,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts {
-    padding: 3em;
+    padding: 0 3em;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -994,12 +994,13 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
-    margin: 0.5em 0;
+    margin: 0;
     padding: 0;
     height: 40px;
     display: block;
     text-align: center;
-    line-height: 1.4;
+    line-height: 40px;
+    font-size: 1.2em;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
@@ -1126,7 +1127,7 @@ button#mobile-toggle :focus {
     margin: 0.5em;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 2.5em;
+    padding: 0 2.5em;
   }
   div.container_24 div.grid_24 main.content #mask .contentbox h2,
   div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
@@ -1444,7 +1445,7 @@ button#mobile-toggle :focus {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
-  div.container_24 ul#mobile-nav {
+  div.container_24 nav#mobile-nav {
     display: none;
   }
   div.container_24 nav {
@@ -1581,6 +1582,9 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text ul.recycle-facts {
     width: 98%;
   }
+  div.container_24 div.grid_24 main.content .text ul.recycle-facts p {
+    margin: 0;
+  }
   div.container_24 div.grid_24 main.content .text ul.recycle-facts li {
     font-size: 0.85em;
   }
@@ -1598,7 +1602,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 50%;
-    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -1658,7 +1661,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
-    line-height: 1.5;
+    line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
@@ -1859,7 +1862,7 @@ button#mobile-toggle :focus {
   div.container_24 header .socials ul li a i.fa-instagram {
     font-size: 1em;
   }
-  div.container_24 ul#mobile-nav {
+  div.container_24 nav#mobile-nav {
     display: none;
   }
   div.container_24 nav {
@@ -1982,7 +1985,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
-    line-height: 1.5;
+    line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
@@ -2146,7 +2149,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 60%;
-    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -2272,7 +2274,7 @@ button#mobile-toggle :focus {
   div.container_24 header .socials ul li a i.fa-instagram {
     font-size: 0.9em;
   }
-  div.container_24 ul#mobile-nav {
+  div.container_24 nav#mobile-nav {
     display: none;
   }
   div.container_24 nav {
@@ -2424,7 +2426,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 70%;
-    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -2482,15 +2483,11 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 main.content #mask article.recycle-facts,
-  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts,
-  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts {
-    padding: 3em;
-  }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
-    line-height: 1.5;
+    line-height: 40px;
+    font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
@@ -2697,7 +2694,7 @@ button#mobile-toggle :focus {
   div.container_24 header .socials ul li a i.fa-instagram {
     font-size: 0.85em;
   }
-  div.container_24 ul#mobile-nav {
+  div.container_24 nav#mobile-nav {
     display: none;
   }
   div.container_24 nav {
@@ -2854,7 +2851,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 80%;
-    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -2912,15 +2908,10 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
     font-size: 0.8em;
   }
-  div.container_24 div.grid_24 main.content #mask article.recycle-facts,
-  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts,
-  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts {
-    padding: 3em;
-  }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
-    line-height: 1.5;
+    line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
@@ -3124,7 +3115,7 @@ button#mobile-toggle :focus {
   div.container_24 header .socials ul li a i.fa-instagram {
     font-size: 0.85em;
   }
-  div.container_24 ul#mobile-nav {
+  div.container_24 nav#mobile-nav {
     display: none;
   }
   div.container_24 nav {
@@ -3303,7 +3294,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
-    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -3369,15 +3359,10 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
     font-size: 0.75em;
   }
-  div.container_24 div.grid_24 main.content #mask article.recycle-facts,
-  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts,
-  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts {
-    padding: 2em;
-  }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
-    line-height: 1.5;
+    line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
@@ -3454,6 +3439,20 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two .contentbox p,
   div.container_24 div.grid_24 main.content #mask3 .contentbox p {
     font-size: 0.85em;
+  }
+  div.container_24 div.grid_24 main.content #mask .contentbox #tenImageTwo,
+  div.container_24 div.grid_24 main.content #mask .contentbox #tenImageThree,
+  div.container_24 div.grid_24 main.content #mask .contentbox #tenImageFour,
+  div.container_24 div.grid_24 main.content #mask .contentbox #tenImageSix,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox #tenImageTwo,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox #tenImageThree,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox #tenImageFour,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox #tenImageSix,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox #tenImageTwo,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox #tenImageThree,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox #tenImageFour,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox #tenImageSix {
+    width: 25%;
   }
   div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
   div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
@@ -3576,7 +3575,7 @@ button#mobile-toggle :focus {
   div.container_24 header .socials ul li a i.fa-instagram {
     font-size: 0.85em;
   }
-  div.container_24 ul#mobile-nav {
+  div.container_24 nav#mobile-nav {
     display: none;
   }
   div.container_24 nav {
@@ -3733,7 +3732,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
-    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -3759,7 +3757,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
   }
   div.container_24 div.grid_24 main.content #facts_box {
     height: auto;
@@ -3795,7 +3793,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
-    line-height: 1.5;
+    line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
@@ -3998,7 +3996,7 @@ button#mobile-toggle :focus {
   div.container_24 header .socials ul li a i.fa-instagram {
     font-size: 0.85em;
   }
-  div.container_24 ul#mobile-nav {
+  div.container_24 nav#mobile-nav {
     display: none;
   }
   div.container_24 nav {
@@ -4166,7 +4164,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
-    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -4208,6 +4205,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
   div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
     font-size: 1.2em;
+    line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
   div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
@@ -4222,7 +4220,8 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
-    line-height: 1.5;
+    line-height: 40px;
+    font-size: 1em;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
@@ -4385,41 +4384,6 @@ button#mobile-toggle :focus {
 }
 
 @media only screen and (max-width: 667px) {
-  /* button#mobile-toggle {
-        display: block;
-        height: 45px;
-        width: 45px;
-        color: $colortxtbg;
-        background-color: $contentbg; 
-        //font-family: "FontAwesome";
-        //content:"\f0c9";
-        position: fixed;
-        top: 8vh;
-        left: calc(99% - 3.3em);
-        z-index: 150;
-        outline: none;
-        border: none;
-        font-size: 0.9em;
-        letter-spacing: 0.05em;
-        text-align: center;
-        padding: 0;
-        @include transitioner(all 0.2s linear 0s, color 0.2s linear 0s);
-        i.fa-bars {
-            font-size: 250%;
-            line-height: 50px;
-            display: block;
-        }
-        &:hover {
-            background-color: $colorslidebg;
-            color: $colorsocmedhov;
-        }
-        &:active,
-         :focus {
-            background-color: $colorslidebg;
-            color: $colorsocmedhov;
-        }
-    }
-*/
   div.container_24 {
     /*Navigation*/
   }
@@ -4458,7 +4422,7 @@ button#mobile-toggle :focus {
   div.container_24 header .socials ul li a i.fa-instagram {
     font-size: 0.8em;
   }
-  div.container_24 ul#mobile-nav {
+  div.container_24 nav#mobile-nav {
     display: none;
   }
   div.container_24 nav {
@@ -4640,7 +4604,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
-    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -4670,7 +4633,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two,
   div.container_24 div.grid_24 main.content #mask3 {
     width: 100%;
-    min-height: 550px;
+    min-height: 565px;
     /* Next & previous buttons */
   }
   div.container_24 div.grid_24 main.content #mask div.collection-box,
@@ -4697,7 +4660,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
-    line-height: 1.5;
+    line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
@@ -4822,7 +4785,7 @@ button#mobile-toggle :focus {
     width: 85%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
-    width: 45%;
+    width: 40%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
     margin: 0;
@@ -4867,18 +4830,6 @@ button#mobile-toggle :focus {
 }
 
 @media only screen and (max-width: 640px) {
-  /* button#mobile-toggle {
-        top: 9vh;
-        font-size: 0.9em;
-        &:hover {
-            background-color: $colorslidebg;
-        }
-        &:active,
-         :focus {
-            color: $colorsocmedhov;
-        }
-    }
-*/
   div.container_24 {
     /*Navigation*/
   }
@@ -4917,7 +4868,7 @@ button#mobile-toggle :focus {
   div.container_24 header .socials ul li a i.fa-instagram {
     font-size: 0.85em;
   }
-  div.container_24 ul#mobile-nav {
+  div.container_24 nav#mobile-nav {
     display: none;
   }
   div.container_24 nav {
@@ -5086,7 +5037,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
-    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -5116,7 +5066,6 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two,
   div.container_24 div.grid_24 main.content #mask3 {
     width: 100%;
-    min-height: 550px;
     /* Next & previous buttons */
   }
   div.container_24 div.grid_24 main.content #mask div.collection-box,
@@ -5143,7 +5092,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
-    line-height: 1.5;
+    line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
@@ -5253,6 +5202,7 @@ button#mobile-toggle :focus {
     height: auto;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes {
+    height: 340px;
     /*contentbox*/
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h2 {
@@ -5347,9 +5297,6 @@ button#mobile-toggle :focus {
   div.container_24 header .socials ul li a i.fa-instagram {
     font-size: 0.85em;
   }
-  div.container_24 ul#mobile-nav {
-    display: none;
-  }
   div.container_24 button#mobile-toggle,
   div.container_24 nav.toggled ul {
     display: block;
@@ -5382,13 +5329,47 @@ button#mobile-toggle :focus {
     border: solid 2px #ffffff;
     cursor: pointer;
   }
-  div.container_24 nav {
+  div.container_24 nav#mobile-nav {
+    display: block;
     position: fixed;
     top: -365px;
     left: 0;
     z-index: 98;
     width: 100%;
     height: 360px;
+    margin: 0;
+  }
+  div.container_24 nav#mobile-nav ul {
+    height: 100%;
+    -ms-flex-flow: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-flow: column;
+    margin-right: 0;
+    margin: 0;
+    width: 100%;
+  }
+  div.container_24 nav#mobile-nav ul li {
+    height: 45px;
+    list-style: none;
+    width: 100%;
+    display: block;
+  }
+  div.container_24 nav#mobile-nav ul li a {
+    line-height: 45px;
+    margin: 0;
+    letter-spacing: 0.1em;
+    font-size: 1em;
+    text-align: center;
+    display: block;
+  }
+  div.container_24 nav#mobile-nav ul li a:hover {
+    text-shadow: none;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+  }
+  div.container_24 nav {
+    display: none;
   }
   div.container_24 nav div.nav-title {
     display: none;
@@ -5577,8 +5558,6 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     display: block;
     width: 85%;
-    margin: 1em auto;
-    height: 67vh;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -5639,7 +5618,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
-    line-height: 1.5;
+    line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
@@ -5716,6 +5695,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
   div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
     font-size: 1.3em;
+    line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask .contentbox p,
   div.container_24 div.grid_24 main.content #mask_two .contentbox p,
@@ -5777,7 +5757,7 @@ button#mobile-toggle :focus {
     width: 40%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image img#wordSearch {
-    width: 35%;
+    width: 30%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption {
     margin: 0;
@@ -5797,6 +5777,7 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 footer ul {
     height: 50px;
+    display: none;
   }
   div.container_24 div.grid_24 footer ul li {
     height: 50px;
@@ -5832,7 +5813,7 @@ button#mobile-toggle :focus {
     font-size: 1.2em;
   }
   div.container_24 header hgroup h2 {
-    font-size: 0.55em;
+    font-size: 0.6em;
   }
   div.container_24 header figure#logo {
     width: 16%;
@@ -5866,24 +5847,21 @@ button#mobile-toggle :focus {
   div.container_24 button#mobile-toggle.hide {
     left: 100vw;
   }
-  div.container_24 ul#mobile-nav {
-    display: none;
-  }
-  div.container_24 nav ul {
+  div.container_24 nav#mobile-nav ul {
     height: 360px;
   }
-  div.container_24 nav ul li {
+  div.container_24 nav#mobile-nav ul li {
     height: 45px;
   }
-  div.container_24 nav ul li a {
+  div.container_24 nav#mobile-nav ul li a {
     line-height: 45px;
     font-size: 1em;
   }
-  div.container_24 nav ul li a:hover {
+  div.container_24 nav#mobile-nav ul li a:hover {
     text-shadow: none;
   }
-  div.container_24 nav.hide {
-    left: -5.5em;
+  div.container_24 nav {
+    display: none;
   }
   div.container_24 div.grid_24 {
     /*content end*/
@@ -6026,7 +6004,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
-    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -6053,6 +6030,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
     padding: 0;
+    line-height: 25px;
   }
   div.container_24 div.grid_24 main.content #facts_box {
     height: auto;
@@ -6073,6 +6051,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
   div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
     font-size: 1.1em;
+    line-height: 25px;
   }
   div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
   div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
@@ -6087,7 +6066,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
-    line-height: 1.5;
+    line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
@@ -6272,7 +6251,7 @@ button#mobile-toggle :focus {
     font-size: 1.2em;
   }
   div.container_24 header hgroup h2 {
-    font-size: 0.5em;
+    font-size: 0.6em;
   }
   div.container_24 header figure#logo {
     width: 18%;
@@ -6304,21 +6283,18 @@ button#mobile-toggle :focus {
   div.container_24 button#mobile-toggle.hide {
     left: 100vw;
   }
-  div.container_24 ul#mobile-nav {
-    display: none;
-  }
-  div.container_24 nav ul li {
+  div.container_24 nav#mobile-nav ul li {
     height: 45px;
   }
-  div.container_24 nav ul li a {
+  div.container_24 nav#mobile-nav ul li a {
     line-height: 45px;
     font-size: 1em;
   }
-  div.container_24 nav ul li a:hover {
+  div.container_24 nav#mobile-nav ul li a:hover {
     text-shadow: none;
   }
-  div.container_24 nav.hide {
-    left: -5.5em;
+  div.container_24 nav {
+    display: none;
   }
   div.container_24 div.grid_24 {
     /*content end*/
@@ -6388,7 +6364,7 @@ button#mobile-toggle :focus {
     line-height: 1.5em;
   }
   div.container_24 div.grid_24 main.content .text {
-    padding: 0;
+    padding: 0.25em;
     /*Drop Cap*/
   }
   div.container_24 div.grid_24 main.content .text h1 {
@@ -6475,7 +6451,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
-    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -6532,11 +6507,13 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
   div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
     font-size: 0.75em;
+    margin: 0.5em 0 0 0;
+    padding: 0.5em;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
-    line-height: 1.5;
+    line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
@@ -6683,7 +6660,7 @@ button#mobile-toggle :focus {
     color: #ffffff;
   }
   div.container_24 div.grid_24 footer ul li a {
-    font-size: 0.7em;
+    font-size: 0.65em;
   }
   div.container_24 div.grid_24 footer ul li a:hover {
     text-decoration: none;
@@ -6708,7 +6685,7 @@ button#mobile-toggle :focus {
     font-size: 1.1em;
   }
   div.container_24 header hgroup h2 {
-    font-size: 0.5em;
+    font-size: 0.6em;
   }
   div.container_24 header figure#logo {
     width: 21%;
@@ -6734,18 +6711,18 @@ button#mobile-toggle :focus {
   div.container_24 button#mobile-toggle.hide {
     left: 100vw;
   }
-  div.container_24 ul#mobile-nav {
-    display: none;
-  }
-  div.container_24 nav ul li {
+  div.container_24 nav#mobile-nav ul li {
     height: 45px;
   }
-  div.container_24 nav ul li a {
+  div.container_24 nav#mobile-nav ul li a {
     line-height: 45px;
     font-size: 1em;
   }
-  div.container_24 nav ul li a:hover {
+  div.container_24 nav#mobile-nav ul li a:hover {
     text-shadow: none;
+  }
+  div.container_24 nav {
+    display: none;
   }
   div.container_24 nav.hide {
     left: -5.5em;
@@ -6823,7 +6800,9 @@ button#mobile-toggle :focus {
     /*Drop Cap*/
   }
   div.container_24 div.grid_24 main.content .text h1 {
-    font-size: 1em;
+    font-size: 1.1em;
+    height: 40px;
+    line-height: 40px;
   }
   div.container_24 div.grid_24 main.content .text h2 {
     font-size: 1.05em;
@@ -6867,7 +6846,7 @@ button#mobile-toggle :focus {
     content: "\f0ac";
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-facts {
-    width: 98%;
+    width: 96%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-facts li {
     font-size: 0.55em;
@@ -6892,7 +6871,6 @@ button#mobile-toggle :focus {
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
     width: 85%;
-    margin: 1em auto;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -6919,15 +6897,16 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice,
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
     padding: 0;
+    line-height: 20px;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .error {
-    width: 80%;
+    width: 100%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .notice {
-    width: 80%;
+    width: 100%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul li .success {
-    width: 80%;
+    width: 100%;
   }
   div.container_24 div.grid_24 main.content #facts_box {
     height: auto;
@@ -6962,8 +6941,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
-    line-height: 1.5;
-    font-size: 0.9em;
+    line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
@@ -7143,13 +7121,13 @@ button#mobile-toggle :focus {
     /*social media icons*/
   }
   div.container_24 header hgroup {
-    width: 42%;
+    width: 44%;
   }
   div.container_24 header hgroup h1 {
     font-size: 1.1em;
   }
   div.container_24 header hgroup h2 {
-    font-size: 0.5em;
+    font-size: 0.6em;
   }
   div.container_24 header figure#logo {
     width: 22%;
@@ -7179,18 +7157,18 @@ button#mobile-toggle :focus {
   div.container_24 button#mobile-toggle.hide {
     left: 100vw;
   }
-  div.container_24 ul#mobile-nav {
-    display: none;
-  }
-  div.container_24 nav ul li {
+  div.container_24 nav#mobile-nav ul li {
     height: 45px;
   }
-  div.container_24 nav ul li a {
+  div.container_24 nav#mobile-nav ul li a {
     line-height: 45px;
     font-size: 1em;
   }
-  div.container_24 nav ul li a:hover {
+  div.container_24 nav#mobile-nav ul li a:hover {
     text-shadow: none;
+  }
+  div.container_24 nav {
+    display: none;
   }
   div.container_24 nav.hide {
     left: -5.5em;
@@ -7267,7 +7245,7 @@ button#mobile-toggle :focus {
     /*Drop Cap*/
   }
   div.container_24 div.grid_24 main.content .text h1 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content .text h2 {
     font-size: 1.05em;
@@ -7312,7 +7290,7 @@ button#mobile-toggle :focus {
     content: "\f0ac";
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-facts {
-    width: 98%;
+    width: 94%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-facts li {
     font-size: 0.6em;
@@ -7335,8 +7313,7 @@ button#mobile-toggle :focus {
     width: 25%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
-    width: 85%;
-    margin: 1em auto;
+    width: 90%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -7402,7 +7379,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
-    line-height: 1.5;
+    line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
@@ -7474,6 +7451,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two .contentbox,
   div.container_24 div.grid_24 main.content #mask3 .contentbox {
     min-height: 180px;
+    padding: 0 1.5em;
   }
   div.container_24 div.grid_24 main.content #mask .contentbox h2,
   div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
@@ -7484,6 +7462,20 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two .contentbox p,
   div.container_24 div.grid_24 main.content #mask3 .contentbox p {
     font-size: 0.75em;
+  }
+  div.container_24 div.grid_24 main.content #mask .contentbox #tenImageTwo,
+  div.container_24 div.grid_24 main.content #mask .contentbox #tenImageThree,
+  div.container_24 div.grid_24 main.content #mask .contentbox #tenImageFour,
+  div.container_24 div.grid_24 main.content #mask .contentbox #tenImageSix,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox #tenImageTwo,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox #tenImageThree,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox #tenImageFour,
+  div.container_24 div.grid_24 main.content #mask_two .contentbox #tenImageSix,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox #tenImageTwo,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox #tenImageThree,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox #tenImageFour,
+  div.container_24 div.grid_24 main.content #mask3 .contentbox #tenImageSix {
+    width: 45%;
   }
   div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
   div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
@@ -7568,13 +7560,13 @@ button#mobile-toggle :focus {
     /*social media icons*/
   }
   div.container_24 header hgroup {
-    width: 42%;
+    width: 45%;
   }
   div.container_24 header hgroup h1 {
     font-size: 1.1em;
   }
   div.container_24 header hgroup h2 {
-    font-size: 0.5em;
+    font-size: 0.55em;
   }
   div.container_24 header figure#logo {
     width: 23%;
@@ -7604,18 +7596,18 @@ button#mobile-toggle :focus {
   div.container_24 button#mobile-toggle.hide {
     left: 100vw;
   }
-  div.container_24 ul#mobile-nav {
-    display: none;
-  }
-  div.container_24 nav ul li {
+  div.container_24 nav#mobile-nav ul li {
     height: 45px;
   }
-  div.container_24 nav ul li a {
+  div.container_24 nav#mobile-nav ul li a {
     line-height: 45px;
     font-size: 1em;
   }
-  div.container_24 nav ul li a:hover {
+  div.container_24 nav#mobile-nav ul li a:hover {
     text-shadow: none;
+  }
+  div.container_24 nav {
+    display: none;
   }
   div.container_24 nav.hide {
     left: -5.5em;
@@ -7692,7 +7684,7 @@ button#mobile-toggle :focus {
     /*Drop Cap*/
   }
   div.container_24 div.grid_24 main.content .text h1 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content .text h2 {
     font-size: 1em;
@@ -7759,8 +7751,7 @@ button#mobile-toggle :focus {
     width: 25%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
-    width: 85%;
-    margin: 1em auto;
+    width: 90%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -7826,12 +7817,13 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
-    line-height: 1.5;
+    line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul {
     list-style: none;
+    width: 76%;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li,
@@ -7841,6 +7833,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:before,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:before,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li:before {
+    width: 35px;
     font-size: 1.15em;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:last-of-type,
@@ -7903,6 +7896,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
   div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
     font-size: 0.9em;
+    line-height: 30px;
   }
   div.container_24 div.grid_24 main.content #mask .contentbox p,
   div.container_24 div.grid_24 main.content #mask_two .contentbox p,
@@ -7995,13 +7989,13 @@ button#mobile-toggle :focus {
     /*social media icons*/
   }
   div.container_24 header hgroup {
-    width: 42%;
+    width: 45%;
   }
   div.container_24 header hgroup h1 {
     font-size: 1.1em;
   }
   div.container_24 header hgroup h2 {
-    font-size: 0.5em;
+    font-size: 0.53em;
   }
   div.container_24 header figure#logo {
     width: 23%;
@@ -8031,18 +8025,18 @@ button#mobile-toggle :focus {
   div.container_24 button#mobile-toggle.hide {
     left: 100vw;
   }
-  div.container_24 ul#mobile-nav {
-    display: none;
-  }
-  div.container_24 nav ul li {
+  div.container_24 nav#mobile-nav ul li {
     height: 45px;
   }
-  div.container_24 nav ul li a {
+  div.container_24 nav#mobile-nav ul li a {
     line-height: 45px;
     font-size: 1em;
   }
-  div.container_24 nav ul li a:hover {
+  div.container_24 nav#mobile-nav ul li a:hover {
     text-shadow: none;
+  }
+  div.container_24 nav {
+    display: none;
   }
   div.container_24 nav.hide {
     left: -5.5em;
@@ -8117,7 +8111,7 @@ button#mobile-toggle :focus {
     /*Drop Cap*/
   }
   div.container_24 div.grid_24 main.content .text h1 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content .text h2 {
     font-size: 1em;
@@ -8162,7 +8156,7 @@ button#mobile-toggle :focus {
     content: "\f0ac";
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-facts {
-    width: 98%;
+    width: 94%;
   }
   div.container_24 div.grid_24 main.content .text ul.recycle-facts li {
     font-size: 0.6em;
@@ -8180,8 +8174,7 @@ button#mobile-toggle :focus {
     width: 25%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form {
-    width: 85%;
-    margin: 1em auto;
+    width: 96%;
   }
   div.container_24 div.grid_24 main.content .text form#feedback-form ul {
     margin: 1% auto;
@@ -8227,7 +8220,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
-    line-height: 1.5;
+    line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
@@ -8238,6 +8231,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li,
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts ul li {
     font-size: 0.7em;
+    height: 60px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul li:before,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul li:before,
