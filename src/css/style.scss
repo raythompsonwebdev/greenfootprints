@@ -814,7 +814,7 @@ button#mobile-toggle {
                     align-items: stretch;
                     background-color:$colorsocmedhov;
 
-                    div.collection-box{
+                    article.collection-box{
                         position: absolute;
                         z-index: 1;
                         width:100%;
@@ -823,7 +823,7 @@ button#mobile-toggle {
                         padding: 0 3em;
                         overflow:auto;
 
-                        h2 {
+                        h1 {
                             display:block;
                             background-color: $bgcolor;
                             color: $colortxt;
@@ -835,6 +835,7 @@ button#mobile-toggle {
                             margin: 0.25em 0 0 0;
                             padding:0;
                             line-height:50px;
+                            text-shadow:unset;
         
     
                             &:hover {
@@ -867,7 +868,7 @@ button#mobile-toggle {
                         position: absolute;
                         z-index: 1;
 
-                        h2 {
+                        h1 {
                             margin: 0 ;
                             padding: 0;
                             height: 40px;
@@ -875,6 +876,7 @@ button#mobile-toggle {
                             text-align: center;
                             line-height:40px;
                             font-size: 1.2em;
+                            text-shadow:unset;
                         }
 
                         ul {
@@ -882,6 +884,7 @@ button#mobile-toggle {
                             margin: 1em auto;
                             padding: 0;
                             width:85%;
+                            
 
                             li {
                                 list-style: none;
@@ -973,12 +976,12 @@ button#mobile-toggle {
                         color:#fff;
                     }
 
-                    .contentbox > img{
+                    article.contentbox > img{
                         display:block;
                         margin:2em auto;
                     }
 
-                    .contentbox {
+                    article.contentbox {
                         width: 100%;
                         min-height: 225px;
                         height: auto;
@@ -987,7 +990,7 @@ button#mobile-toggle {
                         padding: 0 2.5em;
 
 
-                        h2 {
+                        h1 {
                             text-indent: 0;
                             height: auto;
                             line-height: 60px;
@@ -999,6 +1002,7 @@ button#mobile-toggle {
                             padding: 0;
                             font-weight: bold;
                             width: 100%;
+                            text-shadow:unset;
                         }
 
                         p {
@@ -1085,7 +1089,7 @@ button#mobile-toggle {
                         -ms-flex: 1 0 auto;
                         flex: 1 0 auto;
 
-                        h2 {
+                        h1 {
                             text-indent: 0;
                             height: auto;
                             line-height: 35px;
@@ -1097,6 +1101,7 @@ button#mobile-toggle {
                             padding: 0;
                             font-weight: bold;
                             width: 100%;
+                            text-shadow:unset;
                             
                         }
 
@@ -1603,9 +1608,9 @@ button#mobile-toggle {
                 #mask3 {
                     width: 100%;
 
-                    div.collection-box{
+                    article.collection-box{
                                                 
-                        h2 {
+                        h1 {
                             
                             font-size: 1.2em;
                            
@@ -1627,7 +1632,7 @@ button#mobile-toggle {
 
                     article.recycle-facts {
                         
-                        h2 {
+                        h1 {
                             line-height:40px;
                         }
 
@@ -1690,10 +1695,10 @@ button#mobile-toggle {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
 
-                    .contentbox {
+                    article.contentbox {
                         min-height: 225px;
 
-                        h2 {
+                        h1 {
                             font-size: 1.3em;
                         }
 
@@ -1728,7 +1733,7 @@ button#mobile-toggle {
                         width: 31.5%;
                                                 
 
-                        h2 {
+                        h1 {
                             
                             font-size: 1.1em;
                             
@@ -1997,9 +2002,9 @@ button#mobile-toggle {
                 #mask_two,
                 #mask3 {
                     width: 100%;
-                    div.collection-box{
+                    article.collection-box{
                                                 
-                        h2 {
+                        h1 {
                             
                             font-size: 1.2em;
                            
@@ -2022,7 +2027,7 @@ button#mobile-toggle {
                     article.recycle-facts {
                         
 
-                        h2 {
+                        h1 {
                             line-height:40px;
                         }
 
@@ -2085,11 +2090,11 @@ button#mobile-toggle {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
 
-                    .contentbox {
+                    article.contentbox {
                         min-height: 200px;
 
-                        h2 {
-                            font-size: 1em;
+                        h1 {
+                            font-size: 1.3em;
                         }
 
                         p {
@@ -2259,7 +2264,7 @@ button#mobile-toggle {
                         
                         
 
-                        h2 {
+                        h1 {
                             
                             font-size: 1.1em;
                             
@@ -2663,10 +2668,10 @@ button#mobile-toggle {
                 #mask3 {
                     width: 100%;
 
-                    div.collection-box{
+                    article.collection-box{
                         padding: 0 2.5em;
                         
-                        h2 {
+                        h1 {
                             
                             font-size: 1.2em;
                            
@@ -2688,7 +2693,7 @@ button#mobile-toggle {
 
                     article.recycle-facts {
                         
-                        h2 {
+                        h1 {
                             line-height:40px;
                             font-size: 1.1em;
                         }
@@ -2752,12 +2757,12 @@ button#mobile-toggle {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
 
-                    .contentbox {
+                    article.contentbox {
                         min-height:180px;
                         margin: 0.25em;
 
-                        h2 {
-                            font-size: 1.1em;
+                        h1 {
+                            font-size: 1.3em;
                         }
 
                         p {
@@ -2796,7 +2801,7 @@ button#mobile-toggle {
                         
                         
 
-                        h2 {
+                        h1 {
                             
                             font-size: 1.1em;
                             
@@ -3202,9 +3207,9 @@ button#mobile-toggle {
                 #mask3 {
                     width: 100%;
                     min-height: 620px;
-                    div.collection-box{
+                    article.collection-box{
                                                 
-                        h2 {
+                        h1 {
                             
                             font-size: 1.2em;
                            
@@ -3226,7 +3231,7 @@ button#mobile-toggle {
 
                     article.recycle-facts {
                         
-                        h2 {
+                        h1 {
                             line-height:40px;
                             
                         }
@@ -3293,9 +3298,9 @@ button#mobile-toggle {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
 
-                    .contentbox {
-                        h2 {
-                            font-size: 1.1em;
+                    article.contentbox {
+                        h1 {
+                            font-size: 1.2em;
                         }
 
                         p {
@@ -3332,7 +3337,7 @@ button#mobile-toggle {
                         
                         
 
-                        h2 {
+                        h1 {
                             
                             font-size: 1em;
                             
@@ -3767,9 +3772,9 @@ button#mobile-toggle {
                 #mask_two,
                 #mask3 {
                     width: 100%;
-                    div.collection-box{
+                    article.collection-box{
                                                 
-                        h2 {
+                        h1 {
                             
                             font-size: 1.2em;
                            
@@ -3792,7 +3797,7 @@ button#mobile-toggle {
                     article.recycle-facts {
                         
 
-                        h2 {
+                        h1 {
                             line-height:40px;
                         }
 
@@ -3855,11 +3860,11 @@ button#mobile-toggle {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
 
-                    .contentbox {
+                    article.contentbox {
                         
 
-                        h2 {
-                            font-size: 1.1em;
+                        h1 {
+                            font-size: 1.2em;
                         }
 
                         p {
@@ -3908,7 +3913,7 @@ button#mobile-toggle {
                         
                         
 
-                        h2 {
+                        h1 {
                             
                             font-size: 0.9em;
                             
@@ -4318,10 +4323,10 @@ button#mobile-toggle {
                 #mask3 {
                     width: 100%;
                     min-height: 580px;
-                    div.collection-box{
+                    article.collection-box{
                         padding: 0 1em;
                         
-                        h2 {
+                        h1 {
                             
                             font-size: 1.2em;
                            
@@ -4344,7 +4349,7 @@ button#mobile-toggle {
                     article.recycle-facts {
                        
 
-                        h2 {
+                        h1 {
                             line-height:40px;
                         }
 
@@ -4407,11 +4412,11 @@ button#mobile-toggle {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
 
-                    .contentbox {
+                    article.contentbox {
                         
 
-                        h2 {
-                            font-size: 1.1em;
+                        h1 {
+                            font-size: 1.2em;
                         }
 
                         p {
@@ -4452,7 +4457,7 @@ button#mobile-toggle {
                         width: 31%;
                                                
 
-                        h2 {
+                        h1 {
                             
                             font-size: 0.9em;
                             
@@ -4867,10 +4872,10 @@ button#mobile-toggle {
                 #mask3 {
                     width: 100%;
 
-                    div.collection-box{
+                    article.collection-box{
                         padding: 0 1em;
                         
-                        h2 {
+                        h1 {
                             
                             font-size: 1.2em;
                            
@@ -4893,7 +4898,7 @@ button#mobile-toggle {
                     article.recycle-facts {
                         
 
-                        h2 {
+                        h1 {
                             line-height:40px;
                             font-size: 1em;
                         }
@@ -4958,11 +4963,11 @@ button#mobile-toggle {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
 
-                    .contentbox {
+                    article.contentbox {
                         margin: 0.2em;
 
-                        h2 {
-                            font-size: 1.1em;
+                        h1 {
+                            font-size: 1.2em;
                         }
 
                         p {
@@ -4999,7 +5004,7 @@ button#mobile-toggle {
                         width: 31.5%;
                         margin: 0.25em;                       
 
-                        h2 {
+                        h1 {
                             
                             font-size: 0.85em;
                             
@@ -5417,10 +5422,10 @@ button#mobile-toggle {
                 #mask3 {
                     width: 100%;
                     min-height: 565px;
-                    div.collection-box{
+                    article.collection-box{
                         padding: 0 1em;
                         
-                        h2 {
+                        h1 {
                             
                             font-size: 1.1em;
                            
@@ -5443,7 +5448,7 @@ button#mobile-toggle {
                     article.recycle-facts {
                         
 
-                        h2 {
+                        h1 {
                             line-height:40px;
                         }
 
@@ -5506,11 +5511,11 @@ button#mobile-toggle {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
 
-                    .contentbox {
+                    article.contentbox {
                         
 
-                        h2 {
-                            font-size: 1.1em;
+                        h1 {
+                            font-size: 1.2em;
                             height: auto;
                         }
 
@@ -5552,7 +5557,7 @@ button#mobile-toggle {
                         width: 31.5%;
                                                
 
-                        h2 {
+                        h1 {
                             
                             font-size: 0.85em;
                             line-height: 20px;
@@ -5964,10 +5969,10 @@ button#mobile-toggle {
                 #mask3 {
                     width: 100%;
                     
-                    div.collection-box{
+                    article.collection-box{
                         padding: 0 1em;
                         
-                        h2 {
+                        h1 {
                             
                             font-size: 1.1em;
                            
@@ -5990,7 +5995,7 @@ button#mobile-toggle {
                     article.recycle-facts {
                         
 
-                        h2 {
+                        h1 {
                             line-height:40px;
                         }
 
@@ -6053,10 +6058,10 @@ button#mobile-toggle {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
 
-                    .contentbox {
+                    article.contentbox {
                         width: 98.7%;
 
-                        h2 {
+                        h1 {
                             font-size: 1.2em;
                             font-weight: bold;
                         }
@@ -6098,7 +6103,7 @@ button#mobile-toggle {
                                               
                                                                        
 
-                        h2 {
+                        h1 {
                             
                             font-size: 0.85em;                            
                             
@@ -6610,10 +6615,10 @@ button#mobile-toggle {
                 #mask3 {
                     width: 100%;
                     
-                    div.collection-box{
+                    article.collection-box{
                         padding: 0 1em;
                         
-                        h2 {
+                        h1 {
                             
                             font-size: 1.1em;
                            
@@ -6636,7 +6641,7 @@ button#mobile-toggle {
                     article.recycle-facts {
                         
 
-                        h2 {
+                        h1 {
                             line-height:40px;
                         }
 
@@ -6699,10 +6704,10 @@ button#mobile-toggle {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
 
-                    .contentbox {
+                    article.contentbox {
                         width: 98.7%;
 
-                        h2 {
+                        h1 {
                             font-size: 1.3em;
                             line-height: 40px;
                         }
@@ -6754,7 +6759,7 @@ button#mobile-toggle {
 
                         width: 78%;
                      
-                        h2 {
+                        h1 {
                             
                             font-size: 1em;
                             line-height: 30px;
@@ -7179,10 +7184,10 @@ button#mobile-toggle {
                 #mask3 {
                     width: 100%;
                     
-                    div.collection-box{
+                    article.collection-box{
                         padding: 0 1em;
                         
-                        h2 {
+                        h1 {
                             
                             font-size: 1.1em;
                             line-height:25px;
@@ -7206,7 +7211,7 @@ button#mobile-toggle {
                     article.recycle-facts {
                         
 
-                        h2 {
+                        h1 {
                             line-height:40px;
                         }
 
@@ -7273,10 +7278,10 @@ button#mobile-toggle {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
 
-                    .contentbox {
+                    article.contentbox {
                         width: 98.7%;
 
-                        h2 {
+                        h1 {
                             font-size: 1.1em;
                         }
 
@@ -7318,7 +7323,7 @@ button#mobile-toggle {
                     article.home_contentbox {
                      
                                              
-                        h2 {
+                        h1 {
                             
                             font-size: 1em;
                             line-height: 30px;
@@ -7739,10 +7744,10 @@ button#mobile-toggle {
                 #mask_two,
                 #mask3 {
                     width: 100%;
-                    div.collection-box{
+                    article.collection-box{
                         padding: 0 1em;
                         
-                        h2 {
+                        h1 {
                             
                             font-size: 1em;
                            
@@ -7766,7 +7771,7 @@ button#mobile-toggle {
 
                     article.recycle-facts {
                        
-                        h2 {
+                        h1 {
                             line-height:40px;
                         }
 
@@ -7829,10 +7834,10 @@ button#mobile-toggle {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
 
-                    .contentbox {
+                    article.contentbox {
                         width: 98.7%;
 
-                        h2 {
+                        h1 {
                             font-size: 1em;
                         }
 
@@ -7870,7 +7875,7 @@ button#mobile-toggle {
                     /*contentbox*/
                     article.home_contentbox {
                                              
-                        h2 {
+                        h1 {
                             
                             font-size: 1em;
                             line-height: 30px;
@@ -8296,10 +8301,10 @@ button#mobile-toggle {
                 #mask3 {
                     width: 100%;
                    
-                    div.collection-box{
+                    article.collection-box{
                         padding: 0 1em;
                         
-                        h2 {
+                        h1 {
                             
                             font-size: 1em;
                            
@@ -8322,7 +8327,7 @@ button#mobile-toggle {
                     article.recycle-facts {
                         
 
-                        h2 {
+                        h1 {
                             line-height:40px;
                             
                         }
@@ -8386,11 +8391,11 @@ button#mobile-toggle {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
 
-                    .contentbox {
+                    article.contentbox {
                         width: 98.7%;
                        
 
-                        h2 {
+                        h1{
                             font-size: 1em;
                         }
 
@@ -8438,7 +8443,7 @@ button#mobile-toggle {
                     /*contentbox*/
                     article.home_contentbox {
                                              
-                        h2 {
+                        h1 {
                             
                             font-size: 1em;
                             line-height: 30px;
@@ -8853,10 +8858,10 @@ button#mobile-toggle {
                 #mask3 {
                     width: 100%;
                     
-                    div.collection-box{
+                    article.collection-box{
                         padding: 0 1em;
                         
-                        h2 {
+                        h1 {
                             
                             font-size: 1em;
                            
@@ -8879,7 +8884,7 @@ button#mobile-toggle {
                     article.recycle-facts {
                         padding: 1em;
 
-                        h2 {
+                        h1 {
                             line-height:40px;
                         }
 
@@ -8943,11 +8948,11 @@ button#mobile-toggle {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
 
-                    .contentbox {
+                    article.contentbox {
                         min-height: 180px;
                         padding: 0 1.5em;
 
-                        h2 {
+                        h1 {
                             font-size: 0.9em;
                         }
 
@@ -8994,7 +8999,7 @@ button#mobile-toggle {
                     article.home_contentbox {
                         
                      
-                        h2 {
+                        h1 {
                             
                             font-size: 1em;
                             line-height: 30px;
@@ -9405,10 +9410,10 @@ button#mobile-toggle {
                 #mask3 {
                     width: 100%;
 
-                    div.collection-box{
+                    article.collection-box{
                         padding: 0 1em;
                         
-                        h2 {
+                        h1 {
                             
                             font-size: 1em;
                            
@@ -9431,7 +9436,7 @@ button#mobile-toggle {
                     article.recycle-facts {
                         padding: 0.5em;
 
-                        h2 {
+                        h1 {
                             line-height:40px;
                         }
 
@@ -9495,10 +9500,10 @@ button#mobile-toggle {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
 
-                    .contentbox {
+                    article.contentbox {
                         min-height: 180px;
 
-                        h2 {
+                        h1 {
                             font-size: 0.9em;
                             line-height: 30px;
                         }
@@ -9536,7 +9541,7 @@ button#mobile-toggle {
                     /*contentbox*/
                     article.home_contentbox {
                                              
-                        h2 {
+                        h1 {
                             
                             font-size: 1em;
                             line-height: 30px;
@@ -9949,7 +9954,7 @@ button#mobile-toggle {
                     article.recycle-facts {
                         padding: 0.5em;
 
-                        h2 {
+                        h1 {
                             line-height:40px;
                         }
 
@@ -10013,11 +10018,11 @@ button#mobile-toggle {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
 
-                    .contentbox {
+                    article.contentbox {
                         width: 98.5%;
                         min-height: 180px;
 
-                        h2 {
+                        h1 {
                             font-size: 0.9em;
                         }
 
@@ -10055,7 +10060,7 @@ button#mobile-toggle {
                     /*contentbox*/
                     article.home_contentbox {
                                              
-                        h2 {
+                        h1 {
                             
                             font-size: 1em;
                             line-height: 30px;

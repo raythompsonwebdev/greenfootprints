@@ -935,9 +935,9 @@ button#mobile-toggle :focus {
     background-color: #ffffff;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+  div.container_24 div.grid_24 main.content #mask article.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box {
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -947,9 +947,9 @@ button#mobile-toggle :focus {
     overflow: auto;
     /*Drop Cap*/
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1 {
     display: block;
     background-color: #cad996;
     color: #3a5f0b;
@@ -961,17 +961,18 @@ button#mobile-toggle :focus {
     margin: 0.25em 0 0 0;
     padding: 0;
     line-height: 50px;
+    text-shadow: unset;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1:hover {
     cursor: pointer;
     color: #3a5f0b;
     background-color: #cad996;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+  div.container_24 div.grid_24 main.content #mask article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box p.collection-text {
     letter-spacing: 0.1em;
     padding: 1em;
     max-width: 100%;
@@ -991,9 +992,9 @@ button#mobile-toggle :focus {
     position: absolute;
     z-index: 1;
   }
-  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h1 {
     margin: 0;
     padding: 0;
     height: 40px;
@@ -1001,6 +1002,7 @@ button#mobile-toggle :focus {
     text-align: center;
     line-height: 40px;
     font-size: 1.2em;
+    text-shadow: unset;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
   div.container_24 div.grid_24 main.content #mask_two article.recycle-facts ul,
@@ -1112,15 +1114,15 @@ button#mobile-toggle :focus {
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox > img,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox > img,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox > img {
+  div.container_24 div.grid_24 main.content #mask article.contentbox > img,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox > img,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox > img {
     display: block;
     margin: 2em auto;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox {
+  div.container_24 div.grid_24 main.content #mask article.contentbox,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox {
     width: 100%;
     min-height: 225px;
     height: auto;
@@ -1129,9 +1131,9 @@ button#mobile-toggle :focus {
             box-sizing: border-box;
     padding: 0 2.5em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox h1 {
     text-indent: 0;
     height: auto;
     line-height: 60px;
@@ -1143,10 +1145,11 @@ button#mobile-toggle :focus {
     padding: 0;
     font-weight: bold;
     width: 100%;
+    text-shadow: unset;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox p,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
+  div.container_24 div.grid_24 main.content #mask article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox p {
     letter-spacing: 0.05em;
     font-size: 1em;
     margin: 0 0 0.2em 0;
@@ -1156,21 +1159,21 @@ button#mobile-toggle :focus {
     width: auto;
     display: block;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image {
     float: left;
     margin: 0 auto;
     width: 30%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button {
     font-size: 0.95em;
     height: 35px;
     padding: 0;
@@ -1188,9 +1191,9 @@ button#mobile-toggle :focus {
     -webkit-transition: all 0.2s ease-in 0s;
     transition: all 0.2s ease-in 0s;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button:hover {
     background-color: #ccffbb;
     color: #3fa63a;
     cursor: pointer;
@@ -1230,7 +1233,7 @@ button#mobile-toggle :focus {
     -webkit-box-flex: 1;
             flex: 1 0 auto;
   }
-  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h2 {
+  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h1 {
     text-indent: 0;
     height: auto;
     line-height: 35px;
@@ -1242,6 +1245,7 @@ button#mobile-toggle :focus {
     padding: 0;
     font-weight: bold;
     width: 100%;
+    text-shadow: unset;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image {
     margin: 0 0.25em 0 0;
@@ -1638,29 +1642,29 @@ button#mobile-toggle :focus {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+  div.container_24 div.grid_24 main.content #mask article.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box {
     /*Drop Cap*/
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1 {
     font-size: 1.2em;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1:hover {
     cursor: pointer;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+  div.container_24 div.grid_24 main.content #mask article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box p.collection-text {
     font-size: 1em;
   }
-  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h1 {
     line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
@@ -1729,36 +1733,36 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox {
+  div.container_24 div.grid_24 main.content #mask article.contentbox,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox {
     min-height: 225px;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox h1 {
     font-size: 1.3em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox p,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
+  div.container_24 div.grid_24 main.content #mask article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox p {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button {
     font-size: 0.9em;
     width: 55%;
     letter-spacing: 0.12em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button:hover {
     width: 55%;
     text-shadow: none;
   }
@@ -1768,7 +1772,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox {
     width: 31.5%;
   }
-  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h2 {
+  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h1 {
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image {
@@ -1962,29 +1966,29 @@ button#mobile-toggle :focus {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+  div.container_24 div.grid_24 main.content #mask article.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box {
     /*Drop Cap*/
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1 {
     font-size: 1.2em;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1:hover {
     cursor: pointer;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+  div.container_24 div.grid_24 main.content #mask article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box p.collection-text {
     font-size: 1em;
   }
-  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h1 {
     line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
@@ -2055,40 +2059,40 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox {
+  div.container_24 div.grid_24 main.content #mask article.contentbox,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox {
     min-height: 200px;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
-    font-size: 1em;
+  div.container_24 div.grid_24 main.content #mask article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox h1 {
+    font-size: 1.3em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox p,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
+  div.container_24 div.grid_24 main.content #mask article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox p {
     font-size: 0.85em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image {
     width: 40%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button {
     font-size: 0.85em;
     width: 60%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button:hover {
     width: 60%;
   }
   div.container_24 div.grid_24 main.content .text h1 {
@@ -2182,7 +2186,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox {
     width: 31.3%;
   }
-  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h2 {
+  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h1 {
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image {
@@ -2462,30 +2466,30 @@ button#mobile-toggle :focus {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+  div.container_24 div.grid_24 main.content #mask article.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box {
     padding: 0 2.5em;
     /*Drop Cap*/
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1 {
     font-size: 1.2em;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1:hover {
     cursor: pointer;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+  div.container_24 div.grid_24 main.content #mask article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box p.collection-text {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h1 {
     line-height: 40px;
     font-size: 1.1em;
   }
@@ -2555,45 +2559,45 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox {
+  div.container_24 div.grid_24 main.content #mask article.contentbox,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox {
     min-height: 180px;
     margin: 0.25em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
-    font-size: 1.1em;
+  div.container_24 div.grid_24 main.content #mask article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox h1 {
+    font-size: 1.3em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox p,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
+  div.container_24 div.grid_24 main.content #mask article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox p {
     font-size: 0.85em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image {
     float: none;
     display: block;
     margin: 0.5em auto;
     width: 55%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button {
     font-size: 0.8em;
     width: 100%;
     letter-spacing: 0.12em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button:hover {
     width: 100%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes {
@@ -2602,7 +2606,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox {
     width: 31.3%;
   }
-  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h2 {
+  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h1 {
     font-size: 1.1em;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image {
@@ -2888,29 +2892,29 @@ button#mobile-toggle :focus {
     min-height: 620px;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+  div.container_24 div.grid_24 main.content #mask article.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box {
     /*Drop Cap*/
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1 {
     font-size: 1.2em;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1:hover {
     cursor: pointer;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+  div.container_24 div.grid_24 main.content #mask article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box p.collection-text {
     font-size: 0.8em;
   }
-  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h1 {
     line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
@@ -2981,37 +2985,37 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
-    font-size: 1.1em;
+  div.container_24 div.grid_24 main.content #mask article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox h1 {
+    font-size: 1.2em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox p,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
+  div.container_24 div.grid_24 main.content #mask article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox p {
     font-size: 0.85em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image {
     margin: 0.5em auto;
     width: 35%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button {
     font-size: 0.8em;
     width: 100%;
     letter-spacing: 0.12em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button:hover {
     width: 100%;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes {
@@ -3020,7 +3024,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox {
     width: 31%;
   }
-  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h2 {
+  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h1 {
     font-size: 1em;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image {
@@ -3339,29 +3343,29 @@ button#mobile-toggle :focus {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+  div.container_24 div.grid_24 main.content #mask article.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box {
     /*Drop Cap*/
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1 {
     font-size: 1.2em;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1:hover {
     cursor: pointer;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+  div.container_24 div.grid_24 main.content #mask article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box p.collection-text {
     font-size: 0.75em;
   }
-  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h1 {
     line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
@@ -3430,45 +3434,45 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
-    font-size: 1.1em;
+  div.container_24 div.grid_24 main.content #mask article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox h1 {
+    font-size: 1.2em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox p,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
+  div.container_24 div.grid_24 main.content #mask article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox p {
     font-size: 0.85em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox #tenImageTwo,
-  div.container_24 div.grid_24 main.content #mask .contentbox #tenImageThree,
-  div.container_24 div.grid_24 main.content #mask .contentbox #tenImageFour,
-  div.container_24 div.grid_24 main.content #mask .contentbox #tenImageSix,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox #tenImageTwo,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox #tenImageThree,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox #tenImageFour,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox #tenImageSix,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox #tenImageTwo,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox #tenImageThree,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox #tenImageFour,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox #tenImageSix {
+  div.container_24 div.grid_24 main.content #mask article.contentbox #tenImageTwo,
+  div.container_24 div.grid_24 main.content #mask article.contentbox #tenImageThree,
+  div.container_24 div.grid_24 main.content #mask article.contentbox #tenImageFour,
+  div.container_24 div.grid_24 main.content #mask article.contentbox #tenImageSix,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox #tenImageTwo,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox #tenImageThree,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox #tenImageFour,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox #tenImageSix,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox #tenImageTwo,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox #tenImageThree,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox #tenImageFour,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox #tenImageSix {
     width: 25%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button {
     font-size: 1em;
     width: 100%;
     letter-spacing: 0.12em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button:hover {
     width: 100%;
   }
   div.container_24 div.grid_24 main.content #contentboxes,
@@ -3481,7 +3485,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox {
     width: 31%;
   }
-  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h2 {
+  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h1 {
     font-size: 0.9em;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image {
@@ -3769,30 +3773,30 @@ button#mobile-toggle :focus {
     min-height: 580px;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+  div.container_24 div.grid_24 main.content #mask article.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box {
     padding: 0 1em;
     /*Drop Cap*/
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1 {
     font-size: 1.2em;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1:hover {
     cursor: pointer;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+  div.container_24 div.grid_24 main.content #mask article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box p.collection-text {
     font-size: 0.75em;
   }
-  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h1 {
     line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
@@ -3861,31 +3865,31 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
-    font-size: 1.1em;
+  div.container_24 div.grid_24 main.content #mask article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox h1 {
+    font-size: 1.2em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox p,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
+  div.container_24 div.grid_24 main.content #mask article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox p {
     font-size: 0.85em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button {
     font-size: 1em;
     width: 100%;
     letter-spacing: 0.12em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button:hover {
     width: 100%;
   }
   div.container_24 div.grid_24 main.content #contentboxes,
@@ -3898,7 +3902,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox {
     width: 31%;
   }
-  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h2 {
+  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h1 {
     font-size: 0.9em;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image {
@@ -4195,31 +4199,31 @@ button#mobile-toggle :focus {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+  div.container_24 div.grid_24 main.content #mask article.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box {
     padding: 0 1em;
     /*Drop Cap*/
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1 {
     font-size: 1.2em;
     line-height: 40px;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1:hover {
     cursor: pointer;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+  div.container_24 div.grid_24 main.content #mask article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box p.collection-text {
     font-size: 0.75em;
   }
-  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h1 {
     line-height: 40px;
     font-size: 1em;
   }
@@ -4292,35 +4296,35 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox {
+  div.container_24 div.grid_24 main.content #mask article.contentbox,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox {
     margin: 0.2em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
-    font-size: 1.1em;
+  div.container_24 div.grid_24 main.content #mask article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox h1 {
+    font-size: 1.2em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox p,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
+  div.container_24 div.grid_24 main.content #mask article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox p {
     font-size: 0.85em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button {
     font-size: 0.95em;
     letter-spacing: 0.12em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button:hover {
     width: 100%;
   }
   div.container_24 div.grid_24 main.content #contentboxes,
@@ -4334,7 +4338,7 @@ button#mobile-toggle :focus {
     width: 31.5%;
     margin: 0.25em;
   }
-  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h2 {
+  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h1 {
     font-size: 0.85em;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image {
@@ -4636,30 +4640,30 @@ button#mobile-toggle :focus {
     min-height: 565px;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+  div.container_24 div.grid_24 main.content #mask article.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box {
     padding: 0 1em;
     /*Drop Cap*/
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1 {
     font-size: 1.1em;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1:hover {
     cursor: pointer;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+  div.container_24 div.grid_24 main.content #mask article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box p.collection-text {
     font-size: 0.75em;
   }
-  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h1 {
     line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
@@ -4728,37 +4732,37 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
-    font-size: 1.1em;
+  div.container_24 div.grid_24 main.content #mask article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox h1 {
+    font-size: 1.2em;
     height: auto;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox p,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
+  div.container_24 div.grid_24 main.content #mask article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox p {
     font-size: 0.85em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image {
     width: 40%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button {
     font-size: 0.9em;
     width: 100%;
     letter-spacing: 0.12em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button:hover {
     width: 100%;
   }
   div.container_24 div.grid_24 main.content #contentboxes,
@@ -4771,7 +4775,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox {
     width: 31.5%;
   }
-  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h2 {
+  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h1 {
     font-size: 0.85em;
     line-height: 20px;
     padding: 0.2em 0;
@@ -5068,30 +5072,30 @@ button#mobile-toggle :focus {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+  div.container_24 div.grid_24 main.content #mask article.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box {
     padding: 0 1em;
     /*Drop Cap*/
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1 {
     font-size: 1.1em;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1:hover {
     cursor: pointer;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+  div.container_24 div.grid_24 main.content #mask article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box p.collection-text {
     font-size: 0.75em;
   }
-  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h1 {
     line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
@@ -5160,41 +5164,41 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox {
+  div.container_24 div.grid_24 main.content #mask article.contentbox,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox {
     width: 98.7%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox h1 {
     font-size: 1.2em;
     font-weight: bold;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox p,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
+  div.container_24 div.grid_24 main.content #mask article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox p {
     font-size: 0.8em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image {
     width: 25%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button {
     font-size: 0.95em;
     width: 100%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button:hover {
     width: 100%;
   }
   div.container_24 div.grid_24 main.content #contentboxes,
@@ -5205,7 +5209,7 @@ button#mobile-toggle :focus {
     height: 340px;
     /*contentbox*/
   }
-  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h2 {
+  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h1 {
     font-size: 0.85em;
   }
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image {
@@ -5594,30 +5598,30 @@ button#mobile-toggle :focus {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+  div.container_24 div.grid_24 main.content #mask article.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box {
     padding: 0 1em;
     /*Drop Cap*/
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1 {
     font-size: 1.1em;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1:hover {
     cursor: pointer;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+  div.container_24 div.grid_24 main.content #mask article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box p.collection-text {
     font-size: 0.75em;
   }
-  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h1 {
     line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
@@ -5686,41 +5690,41 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox {
+  div.container_24 div.grid_24 main.content #mask article.contentbox,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox {
     width: 98.7%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox h1 {
     font-size: 1.3em;
     line-height: 40px;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox p,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
+  div.container_24 div.grid_24 main.content #mask article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox p {
     font-size: 0.8em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image {
     width: 25%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button {
     font-size: 1em;
     width: 100%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button:hover {
     width: 100%;
   }
   div.container_24 div.grid_24 main.content #contentboxes,
@@ -5744,7 +5748,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox {
     width: 78%;
   }
-  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h2 {
+  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h1 {
     font-size: 1em;
     line-height: 30px;
   }
@@ -6041,31 +6045,31 @@ button#mobile-toggle :focus {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+  div.container_24 div.grid_24 main.content #mask article.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box {
     padding: 0 1em;
     /*Drop Cap*/
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1 {
     font-size: 1.1em;
     line-height: 25px;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1:hover {
     cursor: pointer;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+  div.container_24 div.grid_24 main.content #mask article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box p.collection-text {
     font-size: 0.75em;
   }
-  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h1 {
     line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
@@ -6140,40 +6144,40 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox {
+  div.container_24 div.grid_24 main.content #mask article.contentbox,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox {
     width: 98.7%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox h1 {
     font-size: 1.1em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox p,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
+  div.container_24 div.grid_24 main.content #mask article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox p {
     font-size: 0.8em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image {
     width: 30%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button {
     font-size: 1em;
     width: 100%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button:hover {
     width: 100%;
   }
   div.container_24 div.grid_24 main.content #contentboxes,
@@ -6184,7 +6188,7 @@ button#mobile-toggle :focus {
     height: auto;
     /*contentbox*/
   }
-  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h2 {
+  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h1 {
     font-size: 1em;
     line-height: 30px;
   }
@@ -6487,32 +6491,32 @@ button#mobile-toggle :focus {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+  div.container_24 div.grid_24 main.content #mask article.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box {
     padding: 0 1em;
     /*Drop Cap*/
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1 {
     font-size: 1em;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1:hover {
     cursor: pointer;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+  div.container_24 div.grid_24 main.content #mask article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box p.collection-text {
     font-size: 0.75em;
     margin: 0.5em 0 0 0;
     padding: 0.5em;
   }
-  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h1 {
     line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
@@ -6581,35 +6585,35 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox {
+  div.container_24 div.grid_24 main.content #mask article.contentbox,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox {
     width: 98.7%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox h1 {
     font-size: 1em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox p,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
+  div.container_24 div.grid_24 main.content #mask article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox p {
     font-size: 0.8em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button {
     font-size: 1em;
     width: 100%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button:hover {
     width: 100%;
   }
   div.container_24 div.grid_24 main.content #contentboxes,
@@ -6619,7 +6623,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes {
     /*contentbox*/
   }
-  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h2 {
+  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h1 {
     font-size: 1em;
     line-height: 30px;
   }
@@ -6917,30 +6921,30 @@ button#mobile-toggle :focus {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+  div.container_24 div.grid_24 main.content #mask article.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box {
     padding: 0 1em;
     /*Drop Cap*/
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1 {
     font-size: 1em;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1:hover {
     cursor: pointer;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+  div.container_24 div.grid_24 main.content #mask article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box p.collection-text {
     font-size: 0.75em;
   }
-  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h1 {
     line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
@@ -7009,40 +7013,40 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox {
+  div.container_24 div.grid_24 main.content #mask article.contentbox,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox {
     width: 98.7%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox h1 {
     font-size: 1em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox p,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
+  div.container_24 div.grid_24 main.content #mask article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox p {
     font-size: 0.8em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image {
     width: 30%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button {
     font-size: 0.9em;
     width: 100%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button:hover {
     width: 100%;
   }
   div.container_24 div.grid_24 main.content #contentboxes,
@@ -7060,7 +7064,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes {
     /*contentbox*/
   }
-  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h2 {
+  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h1 {
     font-size: 1em;
     line-height: 30px;
   }
@@ -7350,25 +7354,25 @@ button#mobile-toggle :focus {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+  div.container_24 div.grid_24 main.content #mask article.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box {
     padding: 0 1em;
     /*Drop Cap*/
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1 {
     font-size: 1em;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1:hover {
     cursor: pointer;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+  div.container_24 div.grid_24 main.content #mask article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box p.collection-text {
     font-size: 0.75em;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts,
@@ -7376,9 +7380,9 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts {
     padding: 1em;
   }
-  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h1 {
     line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
@@ -7447,50 +7451,50 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox {
+  div.container_24 div.grid_24 main.content #mask article.contentbox,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox {
     min-height: 180px;
     padding: 0 1.5em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox h1 {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox p,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
+  div.container_24 div.grid_24 main.content #mask article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox p {
     font-size: 0.75em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox #tenImageTwo,
-  div.container_24 div.grid_24 main.content #mask .contentbox #tenImageThree,
-  div.container_24 div.grid_24 main.content #mask .contentbox #tenImageFour,
-  div.container_24 div.grid_24 main.content #mask .contentbox #tenImageSix,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox #tenImageTwo,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox #tenImageThree,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox #tenImageFour,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox #tenImageSix,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox #tenImageTwo,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox #tenImageThree,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox #tenImageFour,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox #tenImageSix {
+  div.container_24 div.grid_24 main.content #mask article.contentbox #tenImageTwo,
+  div.container_24 div.grid_24 main.content #mask article.contentbox #tenImageThree,
+  div.container_24 div.grid_24 main.content #mask article.contentbox #tenImageFour,
+  div.container_24 div.grid_24 main.content #mask article.contentbox #tenImageSix,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox #tenImageTwo,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox #tenImageThree,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox #tenImageFour,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox #tenImageSix,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox #tenImageTwo,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox #tenImageThree,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox #tenImageFour,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox #tenImageSix {
     width: 45%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button {
     font-size: 0.9em;
     width: 100%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button:hover {
     width: 100%;
   }
   div.container_24 div.grid_24 main.content #contentboxes,
@@ -7500,7 +7504,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes {
     /*contentbox*/
   }
-  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h2 {
+  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h1 {
     font-size: 1em;
     line-height: 30px;
   }
@@ -7788,25 +7792,25 @@ button#mobile-toggle :focus {
     width: 100%;
     /* Next & previous buttons */
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box {
+  div.container_24 div.grid_24 main.content #mask article.collection-box,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box {
     padding: 0 1em;
     /*Drop Cap*/
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2 {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1 {
     font-size: 1em;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box h2:hover,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box h2:hover {
+  div.container_24 div.grid_24 main.content #mask article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box h1:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box h1:hover {
     cursor: pointer;
   }
-  div.container_24 div.grid_24 main.content #mask div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask_two div.collection-box p.collection-text,
-  div.container_24 div.grid_24 main.content #mask3 div.collection-box p.collection-text {
+  div.container_24 div.grid_24 main.content #mask article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask_two article.collection-box p.collection-text,
+  div.container_24 div.grid_24 main.content #mask3 article.collection-box p.collection-text {
     font-size: 0.75em;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts,
@@ -7814,9 +7818,9 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts {
     padding: 0.5em;
   }
-  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h1 {
     line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
@@ -7887,36 +7891,36 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox {
+  div.container_24 div.grid_24 main.content #mask article.contentbox,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox {
     min-height: 180px;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox h1 {
     font-size: 0.9em;
     line-height: 30px;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox p,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
+  div.container_24 div.grid_24 main.content #mask article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox p {
     font-size: 0.75em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button {
     font-size: 0.9em;
     width: 100%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button:hover {
     width: 100%;
   }
   div.container_24 div.grid_24 main.content #contentboxes,
@@ -7926,7 +7930,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes {
     /*contentbox*/
   }
-  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h2 {
+  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h1 {
     font-size: 1em;
     line-height: 30px;
   }
@@ -8217,9 +8221,9 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 article.recycle-facts {
     padding: 0.5em;
   }
-  div.container_24 div.grid_24 main.content #mask article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h2,
-  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h2 {
+  div.container_24 div.grid_24 main.content #mask article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask_two article.recycle-facts h1,
+  div.container_24 div.grid_24 main.content #mask3 article.recycle-facts h1 {
     line-height: 40px;
   }
   div.container_24 div.grid_24 main.content #mask article.recycle-facts ul,
@@ -8289,36 +8293,36 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #mask3 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox {
+  div.container_24 div.grid_24 main.content #mask article.contentbox,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox {
     width: 98.5%;
     min-height: 180px;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox h2,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox h2 {
+  div.container_24 div.grid_24 main.content #mask article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox h1,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox h1 {
     font-size: 0.9em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox p,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox p,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox p {
+  div.container_24 div.grid_24 main.content #mask article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox p,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox p {
     font-size: 0.75em;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox .contentbox_image img,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox .contentbox_image img {
+  div.container_24 div.grid_24 main.content #mask article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox .contentbox_image img,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox .contentbox_image img {
     display: block;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button {
     font-size: 0.9em;
     width: 100%;
   }
-  div.container_24 div.grid_24 main.content #mask .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask_two .contentbox a.content-button:hover,
-  div.container_24 div.grid_24 main.content #mask3 .contentbox a.content-button:hover {
+  div.container_24 div.grid_24 main.content #mask article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask_two article.contentbox a.content-button:hover,
+  div.container_24 div.grid_24 main.content #mask3 article.contentbox a.content-button:hover {
     width: 100%;
   }
   div.container_24 div.grid_24 main.content #contentboxes,
@@ -8328,7 +8332,7 @@ button#mobile-toggle :focus {
   div.container_24 div.grid_24 main.content #home_contentboxes {
     /*contentbox*/
   }
-  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h2 {
+  div.container_24 div.grid_24 main.content #home_contentboxes article.home_contentbox h1 {
     font-size: 1em;
     line-height: 30px;
   }
