@@ -1,4 +1,4 @@
-![https://www.greenfootprints.raythompsonwebdev.co.uk](/_assets/www-greenfootprints-home-page-large.jpg)
+![https://www.greenfootprints.raythompsonwebdev.co.uk](/_www-greenfootprints-home-page-large.jpg)
 
 # GreenFootPrints-project
 
@@ -138,4 +138,8 @@ SOFTWARE.
 
  * selectivizr v1.0.2 - (c) Keith Clark, freely distributable under the terms of the MIT license.
 
+<<<<<<< HEAD
  * 960 Grid System ~ Core CSS.  Learn more ~ http://960.gs/   Licensed under GPL and MIT.
+=======
+ * 960 Grid System ~ Core CSS.  Learn more ~ http://960.gs/   Licen
+>>>>>>> single-page-website

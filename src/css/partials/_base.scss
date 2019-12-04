@@ -1,0 +1,226 @@
+
+@font-face {
+  font-family: 'viroregular';
+  src: url("../fonts/Viro/viro-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Viro/viro-webfont.eot?#iefix")
+          format("embedded-opentype"),
+      /* IE6-IE8 */ url("../fonts/Viro/viro-webfont.woff") format("woff"),
+      /* Modern Browsers */ url("../fonts/Viro/viro-webfont.ttf")
+          format("truetype"),
+      /* Safari, Android, iOS */
+          url("../fonts/Viro/viro-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+/*
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style : normal;
+  src : url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+  src : url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+          url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+          url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+          url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+          url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+}
+*/
+html {
+	@include box-sizing($type: border-box);
+  scroll-behavior: smooth;
+  
+}
+
+body {
+    font-family: $fontList;
+    margin: 0;
+    line-height: 1;
+    background-color: $bgcolor;
+    font-size: 1em;
+    height: auto;
+    padding-bottom: 20px;
+}
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* remember to define focus styles! */
+
+figure {
+  margin: 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.seperator{
+  height:1px;
+  display:block;
+  
+}
+
+:focus {
+  outline: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
+
+/* tables still need 'cellspacing="0"' in the markup */
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+blockquote,
+q {
+  quotes: "" "";
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.box-set:before,
+.box-set:after {
+  content: "";
+  display: table;
+}
+
+.box-set:after {
+  clear: both;
+}
+
+#title,
+#glyphs p {
+  font-family: $fontList;
+}
+
+a {
+
+  text-decoration: none;
+
+  &:link {
+      color: $colortxt;
+  }
+  &:visited {
+      color: $colorsocmedhov;
+  }
+  &:focus {
+      outline:1px dotted $colortxt;
+  }
+  &:active {
+      color: $colortxtbg;
+  }
+
+}
+
+h1 {
+  letter-spacing: 0.10em;
+  font-weight: normal;
+  width:100%;
+}
+
+h2 {
+  letter-spacing: 0.10em;
+  font-weight: normal;
+  width:100%;
+}
+
+h3 {
+  letter-spacing: 0.10em;
+  font-weight: normal;
+  width:100%;
+}
+
+p {
+  overflow: hidden;
+  font-weight: normal;
+  width:100%;
+  line-height: 1.5;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  outline:none;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+select,
+textarea:focus {
+  border-color: $colortxt;
+  -moz-box-shadow: rgba(0, 0, 0, .1) 0 0 0 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, .1) 0 0 0 3px;
+  box-shadow: rgba(0, 0, 0, .1) 0 0 0 3px;
+  background-color: $colorsocmed;
+  outline: none;
+  display: block;
+  
+}
+
+
+/*Container*/
+
+*,*:before,*:after {
+	@include box-sizing($type: inherit);
+}
