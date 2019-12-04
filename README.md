@@ -1,4 +1,4 @@
-![https://www.greenfootprints.raythompsonwebdev.co.uk](/_www-greenfootprints-home-page-large.jpg)
+![https://www.greenfootprints.raythompsonwebdev.co.uk](/_assets/www-greenfootprints-home-page-large.jpg)
 
 # GreenFootPrints-project
 
