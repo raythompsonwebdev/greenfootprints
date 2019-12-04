@@ -67,6 +67,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+dist/
+
 
 Files/
 npm-debug.log
@@ -84,6 +86,7 @@ browserconfig.xml
 apple-touch-icon.png
 package.json
 
+src/
 
 public/img/
 public/images/
