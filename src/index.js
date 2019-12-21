@@ -12,9 +12,9 @@ import showSlides from "./js/slideShoes.js";
 import homeIcon from "./images/small/logo-green-foot-prints-small.gif";
 
 //slider images ******************************************
-import sliderImgOne from "./images/slider/slider-image-recyling-green-foot-prints-com.png";
-import sliderImgTwo from "./images/slider/slider-image-1-recyling-green-foot-prints-com.png";
-import sliderImgThree from "./images/slider/slider-image-2-recyling-green-foot-prints-com.png";
+import sliderImgOne from "./images/slider/slider-image-2-recyling-green-foot-prints-com.png";
+import sliderImgTwo from "./images/slider/slider-image-3-recyling-green-foot-prints-com.png";
+import sliderImgThree from "./images/slider/slider-image-4-recyling-green-foot-prints-com.png";
 
 //banner images ******************************************
 import paperBottles from "./images/Large/paper-bottles-can-guide-green-foot-prints-com-large.gif";
@@ -25,8 +25,9 @@ import wordSearch from "./images/Large/wordsearch-green-foot-prints-com-large.gi
 //main page images ******************************************
 import mainImageOne from "./images/small/recyling-materials-green-foot-prints-com-small.gif";
 import mainImageTwo from "./images/Large/recyling-bins-green-foot-prints-com-large.png";
-import mainImageThree from "./images/Large/recycle-image-green-foot-prints-com-large.png";
-import mainImageFour from "./images/Large/types-of-recyling-waste-guide-green-foot-prints-com-large.png";
+//import mainImageThree from "./images/Large/recycle-image-green-foot-prints-com-large.png";
+//import mainImageFour from "./images/Large/types-of-recyling-waste-guide-green-foot-prints-com-large.png";
+//import mainImageFive from "./images/Large/types-of-recyling-waste-guide-green-foot-prints-com-large.png";
 
 //Ten ways image ******************************************
 
@@ -73,11 +74,11 @@ ImageOne.src = mainImageOne;
 var ImageTwo = document.querySelector("#mainImageTwo");
 ImageTwo.src = mainImageTwo;
 
-var ImageThree = document.querySelector("#mainImageThree");
-ImageThree.src = mainImageThree;
+//var ImageThree = document.querySelector("#mainImageThree");
+//ImageThree.src = mainImageThree;
 
-var ImageFour = document.querySelector("#mainImageFour");
-ImageFour.src = mainImageFour;
+//var ImageFour = document.querySelector("#mainImageFour");
+//ImageFour.src = mainImageFour;
 
 //10 Ways images ******************************************
 

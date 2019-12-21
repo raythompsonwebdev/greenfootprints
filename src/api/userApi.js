@@ -11,6 +11,7 @@ export function deleteUser(id) {
   return del(`users/${id}`);
 }
 
+//get request to api
 function get(url) {
   return fetch(baseUrl + url).then(onSuccess, onError);
 }
@@ -24,6 +25,7 @@ function del(url) {
   return fetch(request).then(onSuccess, onError);
 }
 
+//response
 function onSuccess(response) {
   return response.json();
 }
