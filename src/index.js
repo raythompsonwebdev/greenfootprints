@@ -7,9 +7,15 @@ import "jquery-validation/dist/additional-methods.js"
 
 import showSlides from "./js/slideShoes.js";
 
+//reduce reuse recyle
+
+import reduceImage from "./images/Large/reduce-image-green-foot-prints-com-large.png";
+import recycleImage from "./images/Large/recycle-image-green-foot-prints-com-large.png";
+import reuseImage from "./images/Large/reuse-image-green-foot-prints-com-large.png";
+
 
 //header image
-import homeIcon from "./images/small/logo-green-foot-prints-small.gif";
+import homeIcon from "./images/Large/logo-green-foot-prints-large.gif";
 
 //slider images ******************************************
 import sliderImgOne from "./images/slider/slider-image-2-recyling-green-foot-prints-com.png";
@@ -23,7 +29,7 @@ import wordSearch from "./images/Large/wordsearch-green-foot-prints-com-large.gi
 
 
 //main page images ******************************************
-import mainImageOne from "./images/small/recyling-materials-green-foot-prints-com-small.gif";
+import mainImageOne from "./images/Large/recyling-materials-green-foot-prints-com-large.gif";
 import mainImageTwo from "./images/Large/recyling-bins-green-foot-prints-com-large.png";
 //import mainImageThree from "./images/Large/recycle-image-green-foot-prints-com-large.png";
 //import mainImageFour from "./images/Large/types-of-recyling-waste-guide-green-foot-prints-com-large.png";
@@ -31,7 +37,7 @@ import mainImageTwo from "./images/Large/recyling-bins-green-foot-prints-com-lar
 
 //Ten ways image ******************************************
 
-import tenImageOne from "./images/Large/reuse-image-green-foot-prints-com-large.png";
+import tenImageOne from "./images/Large/Image5.jpg";
 import tenImageTwo from "./images/Large/house-green-foot-prints-com-large.jpg";
 import tenImageThree from "./images/Large/contact-us-image-green-foot-prints-com-large.png";
 import tenImageFour from "./images/Large/recycle-continuous-circle-green-foot-prints-com-large.jpg";
@@ -79,6 +85,18 @@ ImageTwo.src = mainImageTwo;
 
 //var ImageFour = document.querySelector("#mainImageFour");
 //ImageFour.src = mainImageFour;
+
+//Reuse Recyle Reduce ******************************************
+
+var ReduceImage = document.querySelector("#reduceImage");
+ReduceImage.src = reduceImage;
+
+var RecycleImage = document.querySelector("#recycleImage");
+RecycleImage.src = recycleImage;
+
+var ReuseImage = document.querySelector("#reuseImage");
+ReuseImage.src = reuseImage;
+
 
 //10 Ways images ******************************************
 

@@ -21,9 +21,8 @@ app.get('/', (req, res) => {
 
   res.sendFile(path.join( __dirname, '../src/index.html'));
 
-
-
 });
+
 
 //error handling
 app.use(function (err, req, res) {

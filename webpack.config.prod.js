@@ -8,7 +8,6 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 
 
-
 export default {
 
   mode: 'production',
@@ -50,7 +49,7 @@ export default {
     }),
 
     new HtmlWebpackPlugin({
-      inject: true,
+      inject: true, //dynamically adds script tags
       hash: true,
       template: './src/index.html',
       filename: 'index.html',
