@@ -522,7 +522,6 @@ button#myBtn:hover {
         align-items: flex-start;
 
         h1 {
-          height: 50px;
           margin: 0 0 0.25em 0;
           text-align: center;
           font-size: 2em;
@@ -541,7 +540,6 @@ button#myBtn:hover {
           align-self: center;
           color: $colortxt;
           background-color: $bgcolor;
-          height: 45px;
           margin: 0 0 0.25em 0;
           text-align: center;
           font-size: 1.5em;
@@ -711,26 +709,25 @@ button#myBtn:hover {
           li {
             list-style: none;
             text-indent: 0;
-            line-height: 25px;
+            line-height: 30px;
             display: inline-block;
-            width: 100%;
+            width: 48%;
             text-align: left;
             letter-spacing: 0.05em;
-            font-size: 0.9em;
             height: auto;
             clear: left;
 
-            &::before {
+            &:before {
               font-family: "FontAwesome";
               content: "\f1b8";
               font-style: normal;
-              line-height: 25px;
+              line-height: 30px;
               color: $headbg;
               display: block;
               padding: 0;
               text-align: center;
               font-size: 1em;
-              width:6%;
+              width:10%;
               height: 100%;
               float:left;
             }
@@ -1507,7 +1504,7 @@ button#myBtn:hover {
       .text {
         
         h1 {
-          font-size: 1.9em;
+          font-size: 1.8em;
         }
 
         h2 {
@@ -1601,22 +1598,19 @@ button#myBtn:hover {
 
         }
 
-        ul#different-materials {
+        ul#different-materials {          
           
-          
-          width: 42%;
-          
+          width: 42%;         
           
 
           li {
             
-            font-size: 0.9em;
-            
+                        
 
             &:before {
               
               font-size: 1em;
-              width:6%;
+              width:10%;
               
             }
             
@@ -2156,7 +2150,7 @@ button#myBtn:hover {
       .text {
         padding: 0.25em;
         h1 {
-          font-size: 1.8em;
+          font-size: 1.7em;
         }
 
         h2 {
@@ -2177,7 +2171,7 @@ button#myBtn:hover {
 
           }
           figcaption{
-            width:51%;
+            width:53%;
 
             p{
 
@@ -2260,19 +2254,17 @@ button#myBtn:hover {
           
 
           li {
-            
-            font-size: 0.9em;
-            
+                                    
 
             &:before {
               
               font-size: 1em;
-              width:7%;
+              width:12%;
               
             }
             
             a {
-              font-size: 1em;
+              font-size: 0.9em;
               
 
               &:hover {
@@ -2285,7 +2277,7 @@ button#myBtn:hover {
         }
 
         .recycle_img {
-          width: 12%;
+          width: 10%;
         }
 
         form#feedback-form {
@@ -2347,6 +2339,7 @@ button#myBtn:hover {
 
             img#wordSearch {
               width: 35%;
+              margin: 0 0.25em 0.25em 0;
             }
 
             figcaption {
@@ -2365,7 +2358,7 @@ button#myBtn:hover {
                 }
               }
               a[title~="wordsearch.gif"]{
-                display: block;
+                display: inline-block;
                 width: 100%;
 
               }
@@ -2576,7 +2569,7 @@ button#myBtn:hover {
 
       .text {
         h1 {
-          font-size: 1.65em;
+          font-size: 1.6em;
         }
 
         h2 {
@@ -2680,19 +2673,17 @@ button#myBtn:hover {
           
 
           li {
-            
-            font-size: 0.9em;
-            
+                                 
 
             &:before {
               
               font-size: 1em;
-              width:6%;
+              width:14%;
               
             }
             
             a {
-              font-size: 1em;
+              font-size: 0.9em;
               
 
               &:hover {
@@ -2706,7 +2697,7 @@ button#myBtn:hover {
 
         
         .recycle_img {
-          width: 18%;
+          width: 12%;
         }
 
         form#feedback-form {
@@ -3117,11 +3108,11 @@ button#myBtn:hover {
 
       .text {
         h1 {
-          font-size: 1.6em;
+          font-size: 1.5em;
         }
 
         h2 {
-          font-size: 1.2em;
+          font-size: 1.1em;
         }
 
         p {
@@ -3222,18 +3213,17 @@ button#myBtn:hover {
 
           li {
             
-            font-size: 0.9em;
-            
+                        
 
             &:before {
-              width:8%;
+              width:17%;
               font-size: 1em;
              
               
             }
             
             a {
-              font-size: 1em;
+              font-size: 0.85em;
               
 
               &:hover {
@@ -3246,7 +3236,7 @@ button#myBtn:hover {
         }
 
         .recycle_img {
-          width: 18%;
+          width: 10%;
         }
 
         form#feedback-form {
@@ -3429,7 +3419,7 @@ button#myBtn:hover {
             }
 
             img#wordSearch {
-              width: 34%;
+              width: 30%;
             }
 
             figcaption {
@@ -3578,7 +3568,7 @@ button#myBtn:hover {
     margin: 0 auto;
 
     #slider {
-      height: 390px;
+      height: 360px;
 
       div.main-slider {
         height: 100%;
@@ -3604,7 +3594,7 @@ button#myBtn:hover {
                 }
 
                 a.largeButton.homeBgColor {
-                  width: 35%;
+                  width: 40%;
 
                   &:hover {
                     cursor: pointer;
@@ -3663,6 +3653,7 @@ button#myBtn:hover {
 
         h2 {
           font-size: 1.1em;
+          line-height: 35px;
         }
 
         h3 {
@@ -3687,6 +3678,7 @@ button#myBtn:hover {
 
           img{
             display:inline-block;
+            margin: 0 1.5em;
 
           }
           figcaption{
@@ -3774,8 +3766,7 @@ button#myBtn:hover {
 
           li {
             
-            font-size: 0.9em;
-            
+                        
 
             &:before {
               
@@ -3785,7 +3776,7 @@ button#myBtn:hover {
             }
             
             a {
-              font-size: 1em;
+              font-size: 0.85em;
               
 
               &:hover {
@@ -3798,7 +3789,7 @@ button#myBtn:hover {
         }
 
         .recycle_img {
-          width: 18%;
+          width: 10%;
         }
 
         form#feedback-form {
@@ -3994,7 +3985,7 @@ button#myBtn:hover {
             }
 
             img#wordSearch {
-              width: 34%;
+              width: 32%;
             }
 
             figcaption {
@@ -4128,6 +4119,9 @@ button#myBtn:hover {
             text-shadow: none;
           }
         }
+        a[href^="#whatcando"]{
+          font-size:60%;
+        }
       }
     }
   }
@@ -4240,10 +4234,11 @@ button#myBtn:hover {
 
           img{
             display:inline-block;
+            
 
           }
           figcaption{
-            width:59%;
+            width:56%;
 
             p{
 
@@ -4321,24 +4316,24 @@ button#myBtn:hover {
         ul#different-materials {
           
           
-          width: 40%;
+          width: 42%;
           
           
 
           li {
             
-            font-size: 0.9em;
-            
+                        
 
             &:before {
               
               font-size: 1em;
+              width:20%;
               
               
             }
             
             a {
-              font-size: 1em;
+              font-size: 0.85em;
               
 
               &:hover {
@@ -4351,7 +4346,7 @@ button#myBtn:hover {
         }
 
         .recycle_img {
-          width: 18%;
+          width: 12%;
         }
 
         form#feedback-form {
@@ -4528,11 +4523,11 @@ button#myBtn:hover {
             img#paperBottles,
             img#flowChart,
             img#RecycleCircle {
-              width: 80%;
+              width: 56%;
             }
 
             img#wordSearch {
-              width: 30%;
+              width: 33%;
             }
 
             figcaption {
@@ -4792,7 +4787,7 @@ button#myBtn:hover {
 
           }
           figcaption{
-            width:59%;
+            width:56%;
 
             p{
 
@@ -4870,14 +4865,13 @@ button#myBtn:hover {
         ul#different-materials {
           
           
-          width: 40%;
+          width: 42%;
           
           
 
           li {
             
-            font-size: 0.9em;
-            
+                        
 
             &:before {
               
@@ -4887,7 +4881,7 @@ button#myBtn:hover {
             }
             
             a {
-              font-size: 1em;
+              font-size: 0.85em;
               
 
               &:hover {
@@ -5077,7 +5071,7 @@ button#myBtn:hover {
             img#paperBottles,
             img#flowChart,
             img#RecycleCircle {
-              width: 80%;
+              width: 60%;
             }
 
             img#wordSearch {
@@ -5222,7 +5216,7 @@ button#myBtn:hover {
 
   div.grid_24 {
     #slider {
-
+      height: 340px;
       div.main-slider {
         height: 100%;
 
@@ -5248,7 +5242,7 @@ button#myBtn:hover {
 
                 a.largeButton.homeBgColor {
                   &:hover {
-                    width: 20%;
+
                     cursor: pointer;
                   }
                 }
@@ -5333,7 +5327,7 @@ button#myBtn:hover {
 
           }
           figcaption{
-            width:59%;
+            width:53%;
 
             p{
 
@@ -5412,14 +5406,13 @@ button#myBtn:hover {
         ul#different-materials {
           
           
-          width: 40%;
+          width: 42%;
           
           
 
           li {
             
-            font-size: 0.9em;
-            
+                        
 
             &:before {
               
@@ -5429,7 +5422,7 @@ button#myBtn:hover {
             }
             
             a {
-              font-size: 1em;
+              font-size: 0.85em;
               
 
               &:hover {
@@ -5617,7 +5610,7 @@ button#myBtn:hover {
             img#paperBottles,
             img#flowChart,
             img#RecycleCircle {
-              width: 85%;
+              width: 72%;
             }
 
             img#wordSearch {
@@ -5629,6 +5622,8 @@ button#myBtn:hover {
 
               p {
                 font-size: 0.75em;
+                padding: 0.25em;
+
               }
 
               a.content-button {
@@ -5759,6 +5754,9 @@ button#myBtn:hover {
             text-shadow: none;
           }
         }
+        a[href^="#whatcando"] {
+          font-size: 52%;
+        }
       }
     }
   }
@@ -5766,8 +5764,7 @@ button#myBtn:hover {
   div.grid_24 {
     height: auto;
     #slider {
-      /*slider*/
-      height: 230px;
+      height: 265px;
 
       div.main-slider {
         height: 100%;
@@ -5785,7 +5782,8 @@ button#myBtn:hover {
 
               div.slider-caption {
                 h1 {
-                  font-size: 1.8em;
+                  font-size: 1.5em;
+                  line-height: 35px;
                 }
 
                 p {
@@ -5794,7 +5792,7 @@ button#myBtn:hover {
 
                 a.largeButton.homeBgColor {
                   &:hover {
-                    width: 20%;
+  
                     cursor: pointer;
                   }
                 }
@@ -5883,10 +5881,11 @@ button#myBtn:hover {
 
           img{
             display:inline-block;
+            margin: 0 1.3em;
 
           }
           figcaption{
-            width:59%;
+            width:53%;
 
             p{
 
@@ -5971,8 +5970,7 @@ button#myBtn:hover {
 
           li {
             
-            font-size: 0.9em;
-            
+                        
 
             &:before {
               
@@ -5982,7 +5980,7 @@ button#myBtn:hover {
             }
             
             a {
-              font-size: 1em;
+              font-size: 0.80em;
               
 
               &:hover {
@@ -6169,11 +6167,11 @@ button#myBtn:hover {
             img#paperBottles,
             img#flowChart,
             img#RecycleCircle {
-              width: 90%;
+              width: 52%;
             }
 
             img#wordSearch {
-              width: 48%;
+              width: 35%;
             }
 
             figcaption {
@@ -6412,8 +6410,7 @@ button#myBtn:hover {
   div.grid_24 {
     height: auto;
     #slider {
-      /*slider*/
-      height: 230px;
+      height: 280px;
 
       div.main-slider {
         height: 100%;
@@ -6431,7 +6428,7 @@ button#myBtn:hover {
 
               div.slider-caption {
                 h1 {
-                  font-size: 1.55em;
+                  font-size: 1.5em;
                 }
 
                 p {
@@ -6439,10 +6436,9 @@ button#myBtn:hover {
                 }
 
                 a.largeButton.homeBgColor {
-                  width: 25%;
+                  width: 50%;
 
                   &:hover {
-                    width: 20%;
                     cursor: pointer;
                   }
                 }
@@ -6534,7 +6530,7 @@ button#myBtn:hover {
 
           }
           figcaption{
-            width:59%;
+            width:52%;
 
             p{
 
@@ -6619,8 +6615,7 @@ button#myBtn:hover {
 
           li {
             
-            font-size: 0.9em;
-            
+                        
 
             &:before {
               
@@ -6630,7 +6625,7 @@ button#myBtn:hover {
             }
             
             a {
-              font-size: 1em;
+              font-size: 0.80em;
               
 
               &:hover {
@@ -6839,7 +6834,7 @@ button#myBtn:hover {
             }
 
             img#wordSearch {
-              width: 30%;
+              width: 22%;
             }
 
             figcaption {
@@ -6984,8 +6979,7 @@ button#myBtn:hover {
 
   div.grid_24 {
     #slider {
-      /*slider*/
-      height: 240px;
+
 
       div.main-slider {
         height: 100%;
@@ -7002,7 +6996,7 @@ button#myBtn:hover {
 
               div.slider-caption {
                 h1 {
-                  font-size: 1.55em;
+                  font-size: 1.4em;
                 }
 
                 p {
@@ -7010,10 +7004,11 @@ button#myBtn:hover {
                 }
 
                 a.largeButton.homeBgColor {
-                  width: 30%;
+                  width: 50%;
+                  font-size: 0.9em;
 
                   &:hover {
-                    width: 30%;
+
                     cursor: pointer;
                   }
                 }
@@ -7097,7 +7092,7 @@ button#myBtn:hover {
 
           }
           figcaption{
-            width:59%;
+            width:51%;
 
             p{
 
@@ -7182,8 +7177,7 @@ button#myBtn:hover {
 
           li {
             
-            font-size: 0.9em;
-            
+                        
 
             &:before {
               
@@ -7193,7 +7187,7 @@ button#myBtn:hover {
             }
             
             a {
-              font-size: 1em;
+              font-size: 0.85em;
               
 
               &:hover {
@@ -7395,7 +7389,7 @@ button#myBtn:hover {
             }
 
             img#wordSearch {
-              width: 30%;
+              width: 22%;
             }
 
             figcaption {
@@ -7535,8 +7529,7 @@ button#myBtn:hover {
 
   div.grid_24 {
     #slider {
-      /*slider*/
-      height: 240px;
+      height: 280px;
 
       div.main-slider {
         height: 100%;
@@ -7553,7 +7546,7 @@ button#myBtn:hover {
 
               div.slider-caption {
                 h1 {
-                  font-size: 1.5em;
+                  font-size: 1.3em;
                 }
 
                 p {
@@ -7564,7 +7557,7 @@ button#myBtn:hover {
 
                 a.largeButton.homeBgColor {
                   &:hover {
-                    width: 30%;
+
                     cursor: pointer;
                   }
                 }
@@ -7735,7 +7728,7 @@ button#myBtn:hover {
 
           li {
             
-            font-size: 0.9em;
+            
             
 
             &:before {
@@ -7746,7 +7739,7 @@ button#myBtn:hover {
             }
             
             a {
-              font-size: 1em;
+              font-size: 0.85em;
               
 
               &:hover {
@@ -7941,7 +7934,7 @@ button#myBtn:hover {
             }
 
             img#wordSearch {
-              width: 30%;
+              width: 20%;
             }
 
             figcaption {
@@ -8083,8 +8076,7 @@ button#myBtn:hover {
 
   div.grid_24 {
     #slider {
-      /*slider*/
-      height: 230px;
+      height: 280px;
 
       div.main-slider {
         height: 100%;
@@ -8110,7 +8102,7 @@ button#myBtn:hover {
 
                 a.largeButton.homeBgColor {
                   &:hover {
-                    width: 30%;
+
                     cursor: pointer;
                   }
                 }
@@ -8281,8 +8273,7 @@ button#myBtn:hover {
 
           li {
             
-            font-size: 0.9em;
-            
+                        
 
             &:before {
               
@@ -8292,7 +8283,7 @@ button#myBtn:hover {
             }
             
             a {
-              font-size: 1em;
+              font-size: 0.85em;
               
 
               &:hover {
@@ -8508,7 +8499,7 @@ button#myBtn:hover {
             }
 
             img#wordSearch {
-              width: 30%;
+              width: 20%;
             }
 
             figcaption {
@@ -8649,8 +8640,7 @@ button#myBtn:hover {
 
   div.grid_24 {
     #slider {
-      /*slider*/
-      height: 230px;
+      height: 280px;
 
       div.main-slider {
         height: 100%;
@@ -8675,10 +8665,10 @@ button#myBtn:hover {
                 }
 
                 a.largeButton.homeBgColor {
-                  font-size: 0.9em;
+                  
 
                   &:hover {
-                    width: 30%;
+
                     cursor: pointer;
                   }
                 }
@@ -8847,8 +8837,7 @@ button#myBtn:hover {
 
           li {
             
-            font-size: 0.9em;
-            
+                        
 
             &:before {
               
@@ -8858,7 +8847,7 @@ button#myBtn:hover {
             }
             
             a {
-              font-size: 1em;
+              font-size: 0.8em;
               
 
               &:hover {
@@ -9200,8 +9189,7 @@ button#myBtn:hover {
 
   div.grid_24 {
     #slider {
-      /*slider*/
-      height: 225px;
+      height: 280px;
 
       div.main-slider {
         height: 100%;
@@ -9226,10 +9214,10 @@ button#myBtn:hover {
                 }
 
                 a.largeButton.homeBgColor {
-                  width: 35%;
+                  width: 55%;
 
                   &:hover {
-                    width: 30%;
+
                     cursor: pointer;
                   }
                 }
@@ -9398,8 +9386,7 @@ button#myBtn:hover {
 
           li {
             
-            font-size: 0.9em;
-            
+                        
 
             &:before {
               
@@ -9409,7 +9396,7 @@ button#myBtn:hover {
             }
             
             a {
-              font-size: 1em;
+              font-size: 0.8em;
               
 
               &:hover {
@@ -9749,8 +9736,7 @@ button#myBtn:hover {
 
   div.grid_24 {
     #slider {
-      /*slider*/
-      height: 225px;
+      height: 280px;
 
       div.main-slider {
         height: 100%;
@@ -9776,7 +9762,7 @@ button#myBtn:hover {
 
                 a.largeButton.homeBgColor {
                   &:hover {
-                    width: 30%;
+
                     cursor: pointer;
                   }
                 }
@@ -9946,8 +9932,7 @@ button#myBtn:hover {
 
           li {
             
-            font-size: 0.9em;
-            
+                       
 
             &:before {
               
@@ -9957,7 +9942,7 @@ button#myBtn:hover {
             }
             
             a {
-              font-size: 1em;
+              font-size: 0.8em;
               
 
               &:hover {
