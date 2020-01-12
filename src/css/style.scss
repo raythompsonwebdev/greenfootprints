@@ -2053,7 +2053,7 @@ button#myBtn:hover {
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 1em;
+            font-size: 0.9em;
             padding: 0.25em;
           }
         }
@@ -3300,7 +3300,7 @@ button#myBtn:hover {
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 0.8em;
+            font-size: 0.85em;
           }
         }
 
@@ -3665,12 +3665,12 @@ button#myBtn:hover {
         }
 
         p {
-          font-size: 0.8em;
+          font-size: 0.85em;
         }
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.7em;
+          font-size: 0.85em;
         }
 
         figure#threeRs{
@@ -3864,7 +3864,7 @@ button#myBtn:hover {
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 0.75em;
+            font-size: 0.85em;
           }
         }
 
@@ -4221,12 +4221,12 @@ button#myBtn:hover {
 
         p {
           letter-spacing: 0.1em;
-          font-size: 0.75em;
+          font-size: 0.85em;
         }
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.7em;
+          font-size: 0.85em;
         }
 
         figure#threeRs{
@@ -4412,7 +4412,7 @@ button#myBtn:hover {
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 0.75em;
+            font-size: 0.85em;
           }
         }
 
@@ -4770,13 +4770,13 @@ button#myBtn:hover {
 
         p {
           letter-spacing: 0.1em;
-          font-size: 0.75em;
+          font-size: 0.85em;
           width: 70%;
         }
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.7em;
+          font-size: 0.85em;
         }
 
         figure#threeRs{
@@ -4956,7 +4956,7 @@ button#myBtn:hover {
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 0.75em;
+            font-size: 0.85em;
           }
         }
 
@@ -5310,13 +5310,13 @@ button#myBtn:hover {
 
         p {
           letter-spacing: 0.1em;
-          font-size: 0.8em;
+          font-size: 0.85em;
           width: 70%;
         }
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.7em;
+          font-size: 0.85em;
         }
 
         figure#threeRs{
@@ -5495,7 +5495,7 @@ button#myBtn:hover {
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 0.75em;
+            font-size: 0.85em;
           }
         }
 
@@ -5868,12 +5868,12 @@ button#myBtn:hover {
 
         p {
           letter-spacing: 0.1em;
-          font-size: 0.75em;
+          font-size: 0.85em;
         }
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.7em;
+          font-size: 0.85em;
         }
 
         figure#threeRs{
@@ -6053,7 +6053,7 @@ button#myBtn:hover {
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 0.75em;
+            font-size: 0.85em;
           }
         }
 
@@ -6514,23 +6514,24 @@ button#myBtn:hover {
 
         p {
           letter-spacing: 0.1em;
-          font-size: 0.75em;
+          font-size: 0.85em;
         }
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.7em;
+          font-size: 0.85em;
         }
 
         figure#threeRs{
           width:100%;
 
           img{
-            display:inline-block;
+            width: 19%;
+            margin: 0.25em 2.2em;
 
           }
           figcaption{
-            width:52%;
+            width: 100%;
 
             p{
 
@@ -6543,6 +6544,7 @@ button#myBtn:hover {
         p#diff_mat_text
         {
           flex: 0 0 auto;
+          width: 100%;
         }
 
         address#recycle-contact {
@@ -6609,7 +6611,7 @@ button#myBtn:hover {
         ul#different-materials {
           
           
-          width: 40%;
+          width: 100%;
           
           
 
@@ -6705,7 +6707,7 @@ button#myBtn:hover {
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 0.75em;
+            font-size: 0.85em;
           }
         }
 
@@ -7076,12 +7078,12 @@ button#myBtn:hover {
 
         p {
           letter-spacing: 0.1em;
-          font-size: 0.7em;
+          font-size: 0.8em;
         }
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.7em;
+          font-size: 0.8em;
         }
 
         figure#threeRs{
@@ -7092,7 +7094,7 @@ button#myBtn:hover {
 
           }
           figcaption{
-            width:51%;
+            
 
             p{
 
@@ -7268,7 +7270,7 @@ button#myBtn:hover {
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 0.75em;
+            font-size: 0.8em;
           }
         }
 
@@ -7541,18 +7543,25 @@ button#myBtn:hover {
             
             li {
               img {
+                position:absolute;
+                left:18%;
+                width:50%;
                 z-index: 2;
               }
 
               div.slider-caption {
+                z-index: 7;
+                position: relative;
+                width:100%;
+
                 h1 {
                   font-size: 1.3em;
                 }
 
                 p {
                   font-size: 0.75em;
-                  width: 80%;
-                  margin: 0 auto 15px auto;
+                  width: 90%;
+                  margin: 0 auto 10px auto;
                 }
 
                 a.largeButton.homeBgColor {
@@ -7627,12 +7636,12 @@ button#myBtn:hover {
 
         p {
           letter-spacing: 0.1em;
-          font-size: 0.7em;
+          font-size: 0.75em;
         }
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.7em;
+          font-size: 0.75em;
         }
 
         figure#threeRs{
@@ -7643,8 +7652,7 @@ button#myBtn:hover {
 
           }
           figcaption{
-            width:59%;
-
+            
             p{
 
               width:100%;
@@ -8188,7 +8196,7 @@ button#myBtn:hover {
 
           }
           figcaption{
-            width:59%;
+            
 
             p{
 
@@ -8752,7 +8760,7 @@ button#myBtn:hover {
 
           }
           figcaption{
-            width:59%;
+            
 
             p{
 
@@ -9301,7 +9309,7 @@ button#myBtn:hover {
 
           }
           figcaption{
-            width:59%;
+            
 
             p{
 
@@ -9847,8 +9855,7 @@ button#myBtn:hover {
 
           }
           figcaption{
-            width:59%;
-
+            
             p{
 
               width:100%;
@@ -9863,8 +9870,7 @@ button#myBtn:hover {
         }
 
         address#recycle-contact {
-          padding: 0.5em;
-          
+          padding: 0.25em;          
           margin: 0.25em;
           
 

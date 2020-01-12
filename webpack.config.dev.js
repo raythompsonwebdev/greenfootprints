@@ -42,7 +42,7 @@ export default {
           }),
         // new StyleLintPlugin({
         //  configFile: './stylelintrc.json',
-        //  files: './src/css/*.scss',
+        //  files: './src/assets/css/*.scss',
         //  syntax: 'scss'
         // })
     ],
@@ -66,12 +66,13 @@ export default {
             //file loader for fonts
             {
                 test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-                use: ["file-loader"]
+                use: ['file-loader']
             },
+            //file loader for images
             {
                 test: /\.(gif|png|jpe?g|svg)$/i,
                 use: [
-                    "file-loader",
+                    'file-loader',                    
                     {
                         loader: "image-webpack-loader",
                         options: {
