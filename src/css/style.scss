@@ -375,6 +375,7 @@ button#myBtn:hover {
 
             li {
               padding:1em;
+              height:100%;
 
               img {                
                 width:20%;                
@@ -391,14 +392,16 @@ button#myBtn:hover {
                 text-align: center;
                 height: auto;
                 color: $colorsocmedhov;
+                margin:0;
 
                 h1 {
-                  font-size: 2.9em;
+                  font-size: 2.6em;
                   text-transform: uppercase;
                   font-weight: bold;
                   color: $colorsocmedhov;
                   text-shadow: 1px 1px 1px $header-shadow;
                   line-height: 55px;
+                  margin:0;
                 }
 
                 p {
@@ -581,6 +584,7 @@ button#myBtn:hover {
             p{
               flex: 0 0 auto;
               width:100%;
+              font-size: 1em;
             }
           }
 
@@ -589,6 +593,7 @@ button#myBtn:hover {
         p#diff_mat_text{
           width: 57%;
           flex: 0 0 auto;
+          font-size: 1em;
         }
 
         address#recycle-contact {
@@ -1419,7 +1424,7 @@ button#myBtn:hover {
 
     #slider {
       /*slider*/
-      height: 390px;
+      height: 380px;
 
       div.main-slider {
         height: 100%;
@@ -1438,7 +1443,7 @@ button#myBtn:hover {
 
               div.slider-caption {
                 h1 {
-                  font-size: 2.9em;
+                  font-size: 2.4em;
                 }
 
                 p {
@@ -1508,11 +1513,11 @@ button#myBtn:hover {
         }
 
         h2 {
-          font-size: 1.4em;
+          font-size: 1.3em;
         }
 
         p {
-          font-size: 0.9em;
+          font-size: 0.95em;
         }
 
         figure#threeRs{
@@ -1526,7 +1531,7 @@ button#myBtn:hover {
             width:56%;
 
             p{
-
+              font-size: 0.95em;
               width:100%;
             }
           }
@@ -1535,6 +1540,7 @@ button#myBtn:hover {
 
         p#diff_mat_text {
           flex: 0 0 auto;
+          font-size: 0.95em;
         }
 
         address#recycle-contact {
@@ -1953,7 +1959,7 @@ button#myBtn:hover {
 
     #slider {
       /*slider*/
-      height: 390px;
+      height: 350px;
 
       div.main-slider {
         height: 100%;
@@ -1971,7 +1977,7 @@ button#myBtn:hover {
 
               div.slider-caption {
                 h1 {
-                  font-size: 2.8em;
+                  font-size: 2.2em;
 
                 }
 
@@ -2154,11 +2160,10 @@ button#myBtn:hover {
         }
 
         h2 {
-          font-size: 1.3em;
+          font-size: 1.2em;
         }
 
         p {
-          font-size: 0.9em;
           width: 80%;
           padding: 0.25em;
         }
@@ -2504,7 +2509,7 @@ button#myBtn:hover {
               }
 
               div.slider-caption {
-                width: 60%;
+                width: 59%;
 
                 h1 {
                   font-size: 2.6em;
@@ -2516,9 +2521,7 @@ button#myBtn:hover {
                 }
 
                 a.largeButton.homeBgColor {
-                  
-                  font-size: 0.9em;
-
+                                    
                   &:hover {
                     cursor: pointer;
                   }
@@ -2573,11 +2576,11 @@ button#myBtn:hover {
         }
 
         h2 {
-          font-size: 1.2em;
+          font-size: 1.1em;
         }
 
         p {
-          font-size: 0.85em;
+          font-size: 0.9em;
           width: 78%;
         }
 
@@ -2593,7 +2596,7 @@ button#myBtn:hover {
             width: 50%;
 
             p{
-
+              font-size: 0.9em;
               width:100%;
             }
           }
@@ -2602,6 +2605,7 @@ button#myBtn:hover {
 
         p#diff_mat_text {
           flex: 0 0 auto;
+          font-size: 0.9em;
         }
 
         address#recycle-contact {
@@ -3027,7 +3031,7 @@ button#myBtn:hover {
     margin: 0 auto;
 
     #slider {
-
+      height:330px;
       div.main-slider {
         height: 100%;
 
@@ -3043,7 +3047,7 @@ button#myBtn:hover {
               }
 
               div.slider-caption {
-                width: 55%;
+                width: 59%;
                 h1 {
                   font-size: 2.2em;
                 }
@@ -3053,8 +3057,7 @@ button#myBtn:hover {
                 }
 
                 a.largeButton.homeBgColor {
-                  width: 35%;
-                  
+                  width: 35%;                  
 
                   &:hover {
                     cursor: pointer;
@@ -3112,11 +3115,11 @@ button#myBtn:hover {
         }
 
         h2 {
-          font-size: 1.1em;
+          font-size: 1em;
         }
 
         p {
-          font-size: 0.8em;
+
           width: 75%;
         }
 
@@ -3419,7 +3422,7 @@ button#myBtn:hover {
             }
 
             img#wordSearch {
-              width: 30%;
+              width: 33%;
             }
 
             figcaption {
@@ -3568,7 +3571,7 @@ button#myBtn:hover {
     margin: 0 auto;
 
     #slider {
-      height: 360px;
+      height: 300px;
 
       div.main-slider {
         height: 100%;
@@ -3665,12 +3668,12 @@ button#myBtn:hover {
         }
 
         p {
-          font-size: 0.85em;
+          font-size: 0.9em;
         }
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.85em;
+          font-size: 0.9em;
         }
 
         figure#threeRs{
@@ -3678,14 +3681,14 @@ button#myBtn:hover {
 
           img{
             display:inline-block;
-            margin: 0 1.5em;
+            margin: 0.5em 1.5em;
 
           }
           figcaption{
             width:56%;
 
             p{
-
+              font-size: 0.9em;
               width:100%;
             }
           }
@@ -4128,6 +4131,7 @@ button#myBtn:hover {
 
   div.grid_24 {
     margin: 0 auto;
+    height: auto;
 
     #slider {
       margin: 0.25em 0;
@@ -4143,11 +4147,13 @@ button#myBtn:hover {
             li {
               img {
                 z-index: 2;
+                width:33%;
               }
 
               div.slider-caption {
                 h1 {
-                  font-size: 1.8em;
+                  font-size: 1.6em;
+                  line-height:50px;
                 }
 
                 p {
@@ -4221,12 +4227,12 @@ button#myBtn:hover {
 
         p {
           letter-spacing: 0.1em;
-          font-size: 0.85em;
+          
         }
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.85em;
+          font-size: 0.9em;
         }
 
         figure#threeRs{
@@ -4688,13 +4694,18 @@ button#myBtn:hover {
           ul.slides {
             
             li {
+              padding: 1em 0.5em;
               img {
                 z-index: 2;
+                
+
               }
 
               div.slider-caption {
+
                 h1 {
-                  font-size: 2.1em;
+                  font-size: 1.6em;
+                  line-height:45px;
                 }
 
                 p {
@@ -4770,13 +4781,12 @@ button#myBtn:hover {
 
         p {
           letter-spacing: 0.1em;
-          font-size: 0.85em;
           width: 70%;
         }
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.85em;
+          font-size: 0.9em;
         }
 
         figure#threeRs{
@@ -4784,6 +4794,7 @@ button#myBtn:hover {
 
           img{
             display:inline-block;
+            margin: 0.5em 1.2em;
 
           }
           figcaption{
@@ -5063,6 +5074,7 @@ button#myBtn:hover {
 
           h1 {
             font-size: 0.85em;
+            line-height:25px;
           }
 
           figure.contentbox_image {
@@ -5071,11 +5083,11 @@ button#myBtn:hover {
             img#paperBottles,
             img#flowChart,
             img#RecycleCircle {
-              width: 60%;
+              width: 55%;
             }
 
             img#wordSearch {
-              width: 40%;
+              width: 35%;
             }
 
             figcaption {
@@ -5216,7 +5228,7 @@ button#myBtn:hover {
 
   div.grid_24 {
     #slider {
-      height: 340px;
+      height: 270px;
       div.main-slider {
         height: 100%;
 
@@ -5232,12 +5244,11 @@ button#myBtn:hover {
 
               div.slider-caption {
                 h1 {
-                  font-size: 2em;
+                  font-size: 1.5em;
                 }
 
                 p {
                   font-size: 0.75em;
-                  margin: 0 auto 20px auto;
                 }
 
                 a.largeButton.homeBgColor {
@@ -5310,13 +5321,12 @@ button#myBtn:hover {
 
         p {
           letter-spacing: 0.1em;
-          font-size: 0.85em;
           width: 70%;
         }
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.85em;
+          font-size: 0.9em;
         }
 
         figure#threeRs{
@@ -5324,10 +5334,11 @@ button#myBtn:hover {
 
           img{
             display:inline-block;
-
+            margin: 1em;
+            width: 8.5%;
           }
           figcaption{
-            width:53%;
+            width:56%;
 
             p{
 
@@ -5610,11 +5621,11 @@ button#myBtn:hover {
             img#paperBottles,
             img#flowChart,
             img#RecycleCircle {
-              width: 72%;
+              width: 55%;
             }
 
             img#wordSearch {
-              width: 40%;
+              width: 34%;
             }
 
             figcaption {
@@ -5764,7 +5775,7 @@ button#myBtn:hover {
   div.grid_24 {
     height: auto;
     #slider {
-      height: 265px;
+      height: 260px;
 
       div.main-slider {
         height: 100%;
@@ -5778,6 +5789,7 @@ button#myBtn:hover {
             li {
               img {
                 z-index: 2;
+                width:31%;
               }
 
               div.slider-caption {
@@ -5881,7 +5893,7 @@ button#myBtn:hover {
 
           img{
             display:inline-block;
-            margin: 0 1.3em;
+            
 
           }
           figcaption{
@@ -6171,7 +6183,7 @@ button#myBtn:hover {
             }
 
             img#wordSearch {
-              width: 35%;
+              width: 33%;
             }
 
             figcaption {
@@ -6410,7 +6422,7 @@ button#myBtn:hover {
   div.grid_24 {
     height: auto;
     #slider {
-      height: 280px;
+      height: 250px;
 
       div.main-slider {
         height: 100%;
@@ -6428,7 +6440,7 @@ button#myBtn:hover {
 
               div.slider-caption {
                 h1 {
-                  font-size: 1.5em;
+                  font-size: 1.4em;
                 }
 
                 p {
@@ -6514,7 +6526,7 @@ button#myBtn:hover {
 
         p {
           letter-spacing: 0.1em;
-          font-size: 0.85em;
+
         }
 
         /*Drop Cap*/
@@ -6527,7 +6539,7 @@ button#myBtn:hover {
 
           img{
             width: 19%;
-            margin: 0.25em 2.2em;
+            margin: 1em 2.25em;
 
           }
           figcaption{
@@ -6832,11 +6844,11 @@ button#myBtn:hover {
             img#paperBottles,
             img#flowChart,
             img#RecycleCircle {
-              width: 40%;
+              width: 35%;
             }
 
             img#wordSearch {
-              width: 22%;
+              width: 20%;
             }
 
             figcaption {
@@ -6994,15 +7006,19 @@ button#myBtn:hover {
             li {
               img {
                 z-index: 2;
+                width:33%;
               }
 
               div.slider-caption {
+                width: 56%;
                 h1 {
-                  font-size: 1.4em;
+                  font-size: 1.3em;
+                  line-height: 30px;
                 }
 
                 p {
                   font-size: 0.75em;
+                  line-height: 1.6em;
                 }
 
                 a.largeButton.homeBgColor {
@@ -7078,12 +7094,12 @@ button#myBtn:hover {
 
         p {
           letter-spacing: 0.1em;
-          font-size: 0.8em;
+          font-size: 0.85em;
         }
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.8em;
+          font-size: 0.85em;
         }
 
         figure#threeRs{
@@ -7091,6 +7107,7 @@ button#myBtn:hover {
 
           img{
             display:inline-block;
+            width: 16%;
 
           }
           figcaption{
@@ -7171,10 +7188,7 @@ button#myBtn:hover {
         }
 
         ul#different-materials {
-          
-          
-          width: 40%;
-          
+                 
           
 
           li {
@@ -7387,11 +7401,11 @@ button#myBtn:hover {
             img#paperBottles,
             img#flowChart,
             img#RecycleCircle {
-              width: 40%;
+              width: 35%;
             }
 
             img#wordSearch {
-              width: 22%;
+              width: 20%;
             }
 
             figcaption {
@@ -7531,7 +7545,7 @@ button#myBtn:hover {
 
   div.grid_24 {
     #slider {
-      height: 280px;
+      height: 250px;
 
       div.main-slider {
         height: 100%;
@@ -7556,12 +7570,15 @@ button#myBtn:hover {
 
                 h1 {
                   font-size: 1.3em;
+                  line-height: 30px;
                 }
 
                 p {
                   font-size: 0.75em;
                   width: 90%;
                   margin: 0 auto 10px auto;
+                  background-color:unset;
+                  text-shadow:1px 1px 1px #000;
                 }
 
                 a.largeButton.homeBgColor {
@@ -7636,25 +7653,26 @@ button#myBtn:hover {
 
         p {
           letter-spacing: 0.1em;
-          font-size: 0.75em;
+          font-size: 0.8em;
         }
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.75em;
+          font-size: 0.8em;
         }
 
         figure#threeRs{
           width:100%;
 
           img{
-            display:inline-block;
+            margin: 1em 2em;
+            width: 15%;
 
           }
           figcaption{
             
             p{
-
+              font-size: 0.8em;
               width:100%;
             }
           }
@@ -7663,6 +7681,7 @@ button#myBtn:hover {
 
         p#diff_mat_text
         {
+          font-size: 0.8em;
           flex: 0 0 auto;
         }
 
@@ -7728,16 +7747,10 @@ button#myBtn:hover {
         }
 
         ul#different-materials {
-          
-          
-          width: 40%;
-          
-          
+                            
 
           li {
-            
-            
-            
+                
 
             &:before {
               
@@ -7927,6 +7940,7 @@ button#myBtn:hover {
       #home_contentboxes {
         /*contentbox*/
         article.home_contentbox {
+          width:96%;
           h1 {
             font-size: 1em;
             line-height: 30px;
@@ -7938,7 +7952,7 @@ button#myBtn:hover {
             img#paperBottles,
             img#flowChart,
             img#RecycleCircle {
-              width: 45%;
+              width: 35%;
             }
 
             img#wordSearch {
@@ -8084,7 +8098,7 @@ button#myBtn:hover {
 
   div.grid_24 {
     #slider {
-      height: 280px;
+      height: 230px;
 
       div.main-slider {
         height: 100%;
@@ -8180,19 +8194,20 @@ button#myBtn:hover {
 
         p {
           letter-spacing: 0.1em;
-          font-size: 0.7em;
+          font-size: 0.8em;
         }
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.7em;
+          font-size: 0.8em;
         }
 
         figure#threeRs{
           width:100%;
 
           img{
-            display:inline-block;
+            margin: 1em 1.5em;
+            width:18%;
 
           }
           figcaption{
@@ -8275,7 +8290,7 @@ button#myBtn:hover {
         ul#different-materials {
           
           
-          width: 40%;
+          width: 100%;
           
           
 
@@ -8490,8 +8505,10 @@ button#myBtn:hover {
         justify-content: space-around;
       }
       #home_contentboxes {
+        
         /*contentbox*/
         article.home_contentbox {
+          width: 96%;
           h1 {
             font-size: 1em;
             line-height: 30px;
@@ -8507,7 +8524,7 @@ button#myBtn:hover {
             }
 
             img#wordSearch {
-              width: 20%;
+              width: 35%;
             }
 
             figcaption {
@@ -8648,7 +8665,7 @@ button#myBtn:hover {
 
   div.grid_24 {
     #slider {
-      height: 280px;
+      height: 220px;
 
       div.main-slider {
         height: 100%;
@@ -8744,19 +8761,20 @@ button#myBtn:hover {
 
         p {
           letter-spacing: 0.1em;
-          font-size: 0.7em;
+          font-size: 0.8em;
         }
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.7em;
+          font-size: 0.8em;
         }
 
         figure#threeRs{
           width:100%;
 
           img{
-            display:inline-block;
+            margin: 1em 1.5em;
+            width:18%;
 
           }
           figcaption{
@@ -8837,16 +8855,9 @@ button#myBtn:hover {
         }
 
         ul#different-materials {
-          
-          
-          width: 40%;
-          
-          
 
           li {
             
-                        
-
             &:before {
               
               font-size: 1em;
@@ -9053,11 +9064,11 @@ button#myBtn:hover {
             img#paperBottles,
             img#flowChart,
             img#RecycleCircle {
-              width: 55%;
+              width: 45%;
             }
 
             img#wordSearch {
-              width: 40%;
+              width: 35%;
             }
 
             figcaption {
@@ -9197,7 +9208,7 @@ button#myBtn:hover {
 
   div.grid_24 {
     #slider {
-      height: 280px;
+
 
       div.main-slider {
         height: 100%;
@@ -9293,26 +9304,27 @@ button#myBtn:hover {
 
         p {
           letter-spacing: 0.1em;
-          font-size: 0.7em;
+          font-size: 0.75em;
         }
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.7em;
+          font-size: 0.75em;
         }
 
         figure#threeRs{
           width:100%;
 
           img{
-            display:inline-block;
+            margin: 1em;
+            width: 21%;
 
           }
           figcaption{
             
 
             p{
-
+              font-size: 0.75em;
               width:100%;
             }
           }
@@ -9321,6 +9333,7 @@ button#myBtn:hover {
 
         p#diff_mat_text
         {
+          font-size: 0.75em;
           flex: 0 0 auto;
         }
 
@@ -9386,15 +9399,8 @@ button#myBtn:hover {
         }
 
         ul#different-materials {
-          
-          
-          width: 40%;
-          
-          
-
-          li {
-            
-                        
+               
+          li {    
 
             &:before {
               
@@ -9598,11 +9604,11 @@ button#myBtn:hover {
             img#paperBottles,
             img#flowChart,
             img#RecycleCircle {
-              width: 60%;
+              width: 45%;
             }
 
             img#wordSearch {
-              width: 40%;
+              width: 35%;
             }
 
             figcaption {
@@ -9744,7 +9750,7 @@ button#myBtn:hover {
 
   div.grid_24 {
     #slider {
-      height: 280px;
+      height: 200px;
 
       div.main-slider {
         height: 100%;
@@ -9839,19 +9845,19 @@ button#myBtn:hover {
 
         p {
           letter-spacing: 0.1em;
-          font-size: 0.7em;
+          font-size: 0.75em;
         }
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.7em;
+          font-size: 0.75em;
         }
 
         figure#threeRs{
           width:100%;
 
           img{
-            display:inline-block;
+            width: 20%;
 
           }
           figcaption{
@@ -9930,16 +9936,9 @@ button#myBtn:hover {
         }
 
         ul#different-materials {
-          
-          
-          width: 40%;
-          
-          
-
+                   
           li {
-            
-                       
-
+                                  
             &:before {
               
               font-size: 1em;
@@ -10125,11 +10124,11 @@ button#myBtn:hover {
             img#paperBottles,
             img#flowChart,
             img#RecycleCircle {
-              width: 60%;
+              width: 50%;
             }
 
             img#wordSearch {
-              width: 45%;
+              width: 40%;
             }
 
             figcaption {
