@@ -46,6 +46,7 @@ button#myBtn {
 //Scroll to top button hover state
 button#myBtn:hover {
   background-color: $colorsildertxtbg;
+  
 }
 
 @media only screen and (max-width: 1920px) {
@@ -345,7 +346,7 @@ button#myBtn:hover {
     display: block;
     width: 100%;
     float: none;
-    height: 100vh;
+    min-height: 840px;
     padding: 0;
 
     /*Slider*/
@@ -653,7 +654,8 @@ button#myBtn:hover {
 
           p#location{
             width:45%;
-            &::before {
+            line-height: 25px;
+            &:before {
               font-family: "FontAwesome";
               content: "\f015";
             }
@@ -1323,7 +1325,7 @@ button#myBtn:hover {
   button#myBtn {
     right: 5px;
     /* Place the button 30px from the right */
-    font-size: 16px;
+    font-size: 20px;
     /* Increase font size */
   }
 
@@ -1421,7 +1423,7 @@ button#myBtn:hover {
 
   div.grid_24 {
     float: none;
-
+    
     #slider {
       /*slider*/
       height: 380px;
@@ -1955,8 +1957,7 @@ button#myBtn:hover {
   }
 
   div.grid_24 {
-    margin: 0 auto;
-
+        
     #slider {
       /*slider*/
       height: 350px;
@@ -2490,8 +2491,7 @@ button#myBtn:hover {
   }
 
   div.grid_24 {
-    margin: 0 auto;
-
+    
     #slider {
 
       div.main-slider {
@@ -3028,8 +3028,7 @@ button#myBtn:hover {
   }
 
   div.grid_24 {
-    margin: 0 auto;
-
+    
     #slider {
       height:330px;
       div.main-slider {
@@ -3303,7 +3302,7 @@ button#myBtn:hover {
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 0.85em;
+            font-size: 0.9em;
           }
         }
 
@@ -3568,7 +3567,7 @@ button#myBtn:hover {
   }
 
   div.grid_24 {
-    margin: 0 auto;
+
 
     #slider {
       height: 300px;
@@ -3761,8 +3760,7 @@ button#myBtn:hover {
         }
 
         ul#different-materials {
-          
-          
+                    
           width: 42%;
           
           
@@ -3867,7 +3865,7 @@ button#myBtn:hover {
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 0.85em;
+            font-size: 0.9em;
           }
         }
 
@@ -4130,7 +4128,7 @@ button#myBtn:hover {
   }
 
   div.grid_24 {
-    margin: 0 auto;
+
     height: auto;
 
     #slider {
@@ -4418,7 +4416,7 @@ button#myBtn:hover {
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 0.85em;
+            font-size: 0.9em;
           }
         }
 
@@ -4681,7 +4679,7 @@ button#myBtn:hover {
   }
 
   div.grid_24 {
-    margin: 0 auto;
+
 
     #slider {
 
@@ -4967,7 +4965,7 @@ button#myBtn:hover {
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 0.85em;
+            font-size: 0.9em;
           }
         }
 
@@ -5416,7 +5414,7 @@ button#myBtn:hover {
 
         ul#different-materials {
           
-          
+          padding:0;
           width: 42%;
           
           
@@ -5506,7 +5504,7 @@ button#myBtn:hover {
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 0.85em;
+            font-size: 0.9em;
           }
         }
 
@@ -5885,7 +5883,7 @@ button#myBtn:hover {
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.85em;
+          font-size: 0.9em;
         }
 
         figure#threeRs{
@@ -5976,7 +5974,7 @@ button#myBtn:hover {
         ul#different-materials {
           
           
-          width: 40%;
+          width: 42%;
           
           
 
@@ -5985,7 +5983,7 @@ button#myBtn:hover {
                         
 
             &:before {
-              
+              width: 25%;
               font-size: 1em;
               
               
@@ -6065,7 +6063,7 @@ button#myBtn:hover {
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 0.85em;
+            font-size: 0.9em;
           }
         }
 
@@ -6531,7 +6529,7 @@ button#myBtn:hover {
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.85em;
+          font-size: 0.9em;
         }
 
         figure#threeRs{
@@ -6560,8 +6558,7 @@ button#myBtn:hover {
         }
 
         address#recycle-contact {
-          padding: 0.5em;
-          
+          padding: 0.5em;          
           margin: 0.25em;
           
 
@@ -6578,15 +6575,14 @@ button#myBtn:hover {
 
           p,span{
             padding: 0.25em 0;
-            
+            width:100%;
             line-height: 35px;
                          
             &:before {
-              width: 5%;
-              
-              font-size: 1.5em;
-              
+              width: 100%;              
+              font-size: 1.5em;              
               line-height: 35px;
+              text-align: center;
               
 
             }
@@ -6594,27 +6590,32 @@ button#myBtn:hover {
           }
 
           p#location{
-            width:45%;
+            width:100%;
+            text-align: center;
             
           }
 
           p#telephone {
-            width:50%;  
+            width:100%; 
+            text-align: center; 
             
           }
   
           span#email {
-            width:50%;  
+            width:100%; 
+            text-align: center; 
             
           }
   
           span#links {
-            width:50%;  
+            width:100%;  
+            text-align: center;
             
           }
   
           span#registration {
             width:100%;  
+            text-align: center;
             
           }                            
 
@@ -6719,7 +6720,7 @@ button#myBtn:hover {
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 0.85em;
+            font-size: 0.9em;
           }
         }
 
@@ -7099,7 +7100,7 @@ button#myBtn:hover {
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.85em;
+          font-size: 0.9em;
         }
 
         figure#threeRs{
@@ -7128,9 +7129,7 @@ button#myBtn:hover {
 
         address#recycle-contact {
           padding: 0.5em;
-          
-          margin: 0.25em;
-          
+                  
 
 
           a {
@@ -7144,13 +7143,11 @@ button#myBtn:hover {
           }
 
           p,span{
-            padding: 0.25em 0;
             
             line-height: 35px;
                          
             &:before {
-              width: 5%;
-              
+             
               font-size: 1.5em;
               
               line-height: 35px;
@@ -7161,22 +7158,22 @@ button#myBtn:hover {
           }
 
           p#location{
-            width:45%;
+            width:100%;
             
           }
 
           p#telephone {
-            width:50%;  
+            width:100%;  
             
           }
   
           span#email {
-            width:50%;  
+            width:100%;  
             
           }
   
           span#links {
-            width:50%;  
+            width:100%;  
             
           }
   
@@ -7291,6 +7288,7 @@ button#myBtn:hover {
         article.recycle-facts {
           h1 {
             line-height: 40px;
+            font-size:0.9em;
           }
 
           ul {
@@ -7315,6 +7313,7 @@ button#myBtn:hover {
 
           p {
             font-size: 0.8em;
+            margin:0;
           }
         }
 
@@ -7687,10 +7686,7 @@ button#myBtn:hover {
 
         address#recycle-contact {
           padding: 0.5em;
-          
-          margin: 0.25em;
-          
-
+         
 
           a {
             font-size: 1em;
@@ -7703,39 +7699,34 @@ button#myBtn:hover {
           }
 
           p,span{
-            padding: 0.25em 0;
-            
+
             line-height: 35px;
                          
             &:before {
-              width: 5%;
-              
-              font-size: 1.5em;
               
               line-height: 35px;
               
-
             }
 
           }
 
           p#location{
-            width:45%;
+            width:100%;
             
           }
 
           p#telephone {
-            width:50%;  
+            width:100%;  
             
           }
   
           span#email {
-            width:50%;  
+            width:100%;  
             
           }
   
           span#links {
-            width:50%;  
+            width:100%;  
             
           }
   
@@ -7839,7 +7830,7 @@ button#myBtn:hover {
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 0.75em;
+            font-size: 0.8em;
             margin: 0.5em 0 0 0;
             padding: 0.5em;
           }
@@ -8227,8 +8218,7 @@ button#myBtn:hover {
         }
 
         address#recycle-contact {
-          padding: 0.5em;
-          
+
           margin: 0.25em;
           
 
@@ -8239,44 +8229,39 @@ button#myBtn:hover {
 
             &:hover {
               width: 100%;
-              font-weight: bold;
+
             }
           }
 
           p,span{
-            padding: 0.25em 0;
             
             line-height: 35px;
                          
             &:before {
-              width: 5%;
               
-              font-size: 1.5em;
-              
-              line-height: 35px;
-              
+              line-height: 35px;              
 
             }
 
           }
 
           p#location{
-            width:45%;
+            width:100%;
             
           }
 
           p#telephone {
-            width:50%;  
+            width:100%;  
             
           }
   
           span#email {
-            width:50%;  
+            width:100%;  
             
           }
   
           span#links {
-            width:50%;  
+            width:100%;  
             
           }
   
@@ -8398,7 +8383,7 @@ button#myBtn:hover {
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 0.75em;
+            font-size: 0.8em;
           }
         }
 
@@ -8794,8 +8779,7 @@ button#myBtn:hover {
         }
 
         address#recycle-contact {
-          padding: 0.5em;
-          
+
           margin: 0.25em;
           
 
@@ -8806,20 +8790,16 @@ button#myBtn:hover {
 
             &:hover {
               width: 100%;
-              font-weight: bold;
+
             }
           }
 
           p,span{
-            padding: 0.25em 0;
-            
+
             line-height: 35px;
                          
             &:before {
-              width: 5%;
-              
-              font-size: 1.5em;
-              
+               
               line-height: 35px;
               
 
@@ -8828,22 +8808,22 @@ button#myBtn:hover {
           }
 
           p#location{
-            width:45%;
+            width:100%;
             
           }
 
           p#telephone {
-            width:50%;  
+            width:100%;  
             
           }
   
           span#email {
-            width:50%;  
+            width:100%;  
             
           }
   
           span#links {
-            width:50%;  
+            width:100%;  
             
           }
   
@@ -8945,7 +8925,7 @@ button#myBtn:hover {
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 0.75em;
+            font-size: 0.8em;
           }
         }
 
@@ -9019,7 +8999,7 @@ button#myBtn:hover {
           }
 
           p {
-            font-size: 0.75em;
+            font-size: 0.8em;
           }
           #tenImageTwo,
           #tenImageThree,
@@ -9304,12 +9284,12 @@ button#myBtn:hover {
 
         p {
           letter-spacing: 0.1em;
-          font-size: 0.75em;
+          font-size: 0.8em;
         }
 
         /*Drop Cap*/
         p.collection-text {
-          font-size: 0.75em;
+          font-size: 0.8em;
         }
 
         figure#threeRs{
@@ -9338,8 +9318,7 @@ button#myBtn:hover {
         }
 
         address#recycle-contact {
-          padding: 0.5em;
-          
+
           margin: 0.25em;
           
 
@@ -9350,20 +9329,15 @@ button#myBtn:hover {
 
             &:hover {
               width: 100%;
-              font-weight: bold;
+
             }
           }
 
           p,span{
-            padding: 0.25em 0;
-            
+
             line-height: 35px;
                          
             &:before {
-              width: 5%;
-              
-              font-size: 1.5em;
-              
               line-height: 35px;
               
 
@@ -9372,22 +9346,22 @@ button#myBtn:hover {
           }
 
           p#location{
-            width:45%;
+            width:100%;
             
           }
 
           p#telephone {
-            width:50%;  
+            width:100%;  
             
           }
   
           span#email {
-            width:50%;  
+            width:100%;  
             
           }
   
           span#links {
-            width:50%;  
+            width:100%;  
             
           }
   
@@ -9565,7 +9539,7 @@ button#myBtn:hover {
           }
 
           p {
-            font-size: 0.75em;
+            font-size: 0.8em;
           }
 
           .contentbox_image {
@@ -9877,7 +9851,6 @@ button#myBtn:hover {
 
         address#recycle-contact {
           padding: 0.25em;          
-          margin: 0.25em;
           
 
 
@@ -9887,20 +9860,14 @@ button#myBtn:hover {
 
             &:hover {
               width: 100%;
-              font-weight: bold;
+
             }
           }
 
           p,span{
-            padding: 0.25em 0;
-            
-            line-height: 35px;
                          
             &:before {
-              width: 5%;
-              
-              font-size: 1.5em;
-              
+
               line-height: 35px;
               
 
@@ -9909,22 +9876,22 @@ button#myBtn:hover {
           }
 
           p#location{
-            width:45%;
+            width:100%;
             
           }
 
           p#telephone {
-            width:50%;  
+            width:100%;  
             
           }
   
           span#email {
-            width:50%;  
+            width:100%;  
             
           }
   
           span#links {
-            width:50%;  
+            width:100%;  
             
           }
   
@@ -9942,7 +9909,6 @@ button#myBtn:hover {
             &:before {
               
               font-size: 1em;
-              width:10%;
               
             }
             
