@@ -2,9 +2,6 @@ import "./css/normalize.scss";
 import "./css/style.scss";
 import $ from "jquery";
 
-import "jquery-validation/dist/jquery.validate.js"
-import "jquery-validation/dist/additional-methods.js"
-
 import showSlides from "./js/slideShoes.js";
 
 //reduce reuse recyle
@@ -12,7 +9,6 @@ import showSlides from "./js/slideShoes.js";
 import reduceImage from "./images/Large/reduce-image-green-foot-prints-com-large.png";
 import recycleImage from "./images/Large/recycle-image-green-foot-prints-com-large.png";
 import reuseImage from "./images/Large/reuse-image-green-foot-prints-com-large.png";
-
 
 //header image
 import homeIcon from "./images/Large/logo-green-foot-prints-large.gif";
@@ -45,12 +41,10 @@ import tenImageFive from "./images/Large/respect-recyling-green-foot-prints-com-
 import tenImageSix from "./images/Large/house-in-leaf-green-foot-prints-com-large.jpg";
 
 //header image ******************************************
-
 var homeImg = document.querySelector("#homeImage");
 homeImg.src = homeIcon;
 
 //slider images ******************************************
-
 var sliderOneImg = document.querySelector("#sliderOneImg");
 sliderOneImg.src = sliderImgOne;
 
@@ -61,7 +55,6 @@ var sliderThreeImg = document.querySelector("#sliderThreeImg");
 sliderThreeImg.src = sliderImgThree;
 
 //banner images ******************************************
-
 var imageOne = document.querySelector("#paperBottles");
 imageOne.src = paperBottles;
 
@@ -73,7 +66,6 @@ imageThree.src = wordSearch;
 
 
 //main page images ******************************************
-
 var ImageOne = document.querySelector("#mainImageOne");
 ImageOne.src = mainImageOne;
 
@@ -87,7 +79,6 @@ ImageTwo.src = mainImageTwo;
 //ImageFour.src = mainImageFour;
 
 //Reuse Recyle Reduce ******************************************
-
 var ReduceImage = document.querySelector("#reduceImage");
 ReduceImage.src = reduceImage;
 
@@ -99,7 +90,6 @@ ReuseImage.src = reuseImage;
 
 
 //10 Ways images ******************************************
-
 var twImageOne = document.querySelector("#tenImageOne");
 twImageOne.src = tenImageOne;
 
@@ -161,33 +151,6 @@ twImageSix.src = tenImageSix;
                 }
             );
         } // End if
-    });
-})();
-
-//Validation ******************************************
-(function() {
-
-    $("#feedback-form").validate({
-        rules: {
-            name: "required",
-            email: {
-                required: true,
-                email: true
-            },
-            subject: {
-                required: true
-            }
-        },
-        messages: {
-            name: "Name is required.",
-            email: "Email is required."
-        },
-        /*showErrors: function (errorMap, errorList) {
-            $("#summary").html("Your form contains " +
-                    this.numberOfInvalids() +
-                    " errors, see details below.").addClass('error');
-            this.defaultShowErrors();
-        }*/
     });
 })();
 

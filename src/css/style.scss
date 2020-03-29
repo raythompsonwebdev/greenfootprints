@@ -489,13 +489,13 @@ button#myBtn:hover {
       }
 
       h1 {
-        padding: 0;
-        height: 50px;
-
+        margin: 0.5em auto;
         text-align: center;
-        font-size: 2.5em;
+        font-size: 2em;
         line-height: 50px;
-        text-shadow: 1px 2px 1px $header-shadow;
+        background-color: $honecolor;        
+        font-weight: bold;
+        color: $colorsocmedhov;
       }
 
       #summary {
@@ -961,6 +961,8 @@ button#myBtn:hover {
             line-height: 40px;
             font-size: 1.2em;
             text-shadow: unset;
+            background-color: #ffffff;
+            color: #000;
           }
 
           ul {
@@ -1503,7 +1505,9 @@ button#myBtn:hover {
       }
 
       h1 {
-        font-size: 2.4em;
+        
+        font-size: 1.8em;
+        
       }
 
       #summary {
@@ -2034,7 +2038,7 @@ button#myBtn:hover {
       }
 
       h1 {
-        font-size: 2.3em;
+        font-size: 1.6em;
       }
 
       #summary {
@@ -2564,7 +2568,7 @@ button#myBtn:hover {
       }
 
       h1 {
-        font-size: 2.3em;
+        font-size: 1.5em;
       }
 
       #summary {
@@ -3102,7 +3106,7 @@ button#myBtn:hover {
       }
 
       h1 {
-        font-size: 2.3em;
+        font-size: 1.4em;
       }
 
       #summary {
@@ -3642,7 +3646,7 @@ button#myBtn:hover {
       }
 
       h1 {
-        font-size: 2.3em;
+        font-size: 1.2em;
       }
 
       #summary {
@@ -4201,7 +4205,7 @@ button#myBtn:hover {
       }
 
       h1 {
-        font-size: 2.3em;
+        font-size: 1.2em;
       }
 
       #summary {
@@ -4509,10 +4513,11 @@ button#myBtn:hover {
       }
 
       /*Content boxes*/
+      /*Content boxes
       #contentboxes,
       #collection-boxes {
         height: auto;
-      }
+      }*/
 
       #home_contentboxes {
         /*contentbox*/
@@ -4755,7 +4760,7 @@ button#myBtn:hover {
       }
 
       h1 {
-        font-size: 2.3em;
+        font-size: 1.2em;
       }
 
       #summary {
@@ -5061,11 +5066,11 @@ button#myBtn:hover {
         }
       }
 
-      /*Content boxes*/
+      /*Content boxes
       #contentboxes,
       #collection-boxes {
         height: auto;
-      }
+      }*/
       #home_contentboxes {
         /*contentbox*/
         article.home_contentbox {
@@ -5295,7 +5300,7 @@ button#myBtn:hover {
       }
 
       h1 {
-        font-size: 2.3em;
+        font-size: 1.2em;
       }
 
       #summary {
@@ -5599,11 +5604,11 @@ button#myBtn:hover {
         }
       }
 
-      /*Content boxes*/
+      /*Content boxes
       #contentboxes,
       #collection-boxes {
         height: auto;
-      }
+      }*/
       #home_contentboxes {
         /*contentbox*/
         article.home_contentbox {
@@ -5854,7 +5859,7 @@ button#myBtn:hover {
       }
 
       h1 {
-        font-size: 2.2em;
+        font-size: 1.2em;
       }
 
       #summary {
@@ -6159,11 +6164,11 @@ button#myBtn:hover {
         }
       }
 
-      /*Content boxes*/
+      /*Content boxes
       #contentboxes,
       #collection-boxes {
         height: auto;
-      }
+      }*/
 
       #home_contentboxes {
         height: 280px;
@@ -6500,7 +6505,7 @@ button#myBtn:hover {
       }
 
       h1 {
-        font-size: 2.2em;
+        font-size: 1.2em;
       }
 
       #summary {
@@ -6816,11 +6821,11 @@ button#myBtn:hover {
         }
       }
 
-      /*Content boxes*/
+      /*Content boxes
       #contentboxes,
       #collection-boxes {
         height: auto;
-      }
+      }*/
       #home_contentboxes {
         height: auto;
         -webkit-flex-flow: column;
@@ -7071,7 +7076,7 @@ button#myBtn:hover {
       }
 
       h1 {
-        font-size: 2.2em;
+        font-size: 1.2em;
       }
 
       #summary {
@@ -7382,11 +7387,12 @@ button#myBtn:hover {
         }
       }
 
-      /*Content boxes*/
+      /*Content boxes
       #contentboxes,
       #collection-boxes {
         height: auto;
-      }
+      }*/
+
       #home_contentboxes {
         height: auto;
         /*contentbox*/
@@ -7544,7 +7550,14 @@ button#myBtn:hover {
     display: none;
   }
 
+  div#collections,
+  div#whatcando {
+    min-height: 430px;
+    height:unset;
+  }
+
   div.grid_24 {
+    min-height: 430px;
     #slider {
       height: 250px;
 
@@ -7626,7 +7639,7 @@ button#myBtn:hover {
       }
 
       h1 {
-        font-size: 2.2em;
+        font-size: 1.1em;
       }
 
       #summary {
@@ -7635,6 +7648,8 @@ button#myBtn:hover {
 
       .text {
         padding: 0.25em;
+        overflow: auto;
+        height:430px;
 
         h1 {
           font-size: 1.1em;
@@ -7810,7 +7825,8 @@ button#myBtn:hover {
       }
 
       #facts_box {
-        height: auto;
+        min-height: 430px;
+        height:unset;
       }
 
       /* The dots/bullets/indicators */
@@ -7819,6 +7835,7 @@ button#myBtn:hover {
       #mask_two,
       #mask3 {
         width: 100%;
+        min-height: 430px;
         article.collection-box {
           padding: 0 1em;
 
@@ -7928,7 +7945,7 @@ button#myBtn:hover {
       /*Content boxes*/
       #contentboxes,
       #collection-boxes {
-        height: auto;
+        min-height: 430px;
       }
       #home_contentboxes {
         /*contentbox*/
@@ -8084,10 +8101,7 @@ button#myBtn:hover {
     left: -5.5em;
   }
 
-  div#collections,
-  div#whatcando {
-    height: auto;
-  }
+  
 
   div.grid_24 {
     #slider {
@@ -8159,7 +8173,7 @@ button#myBtn:hover {
       }
 
       h1 {
-        font-size: 2.2em;
+        font-size: 1.1em;
       }
 
       #summary {
@@ -8362,7 +8376,7 @@ button#myBtn:hover {
       }
 
       #facts_box {
-        height: auto;
+        height: unset;
       }
 
       /* The dots/bullets/indicators */
@@ -8481,7 +8495,6 @@ button#myBtn:hover {
       /*Content boxes*/
       #contentboxes,
       #collection-boxes {
-        height: auto;
         float: none;
         display: block;
         -webkit-flex-flow: column;
@@ -8722,7 +8735,7 @@ button#myBtn:hover {
       }
 
       h1 {
-        font-size: 2.2em;
+        font-size: 1.1em;
       }
 
       #summary {
@@ -8730,6 +8743,7 @@ button#myBtn:hover {
       }
 
       .text {
+
         h1 {
           font-size: 1.1em;
         }
@@ -8904,7 +8918,7 @@ button#myBtn:hover {
       }
 
       #facts_box {
-        height: auto;
+        height: unset;
       }
 
       /* The dots/bullets/indicators */
@@ -9028,10 +9042,7 @@ button#myBtn:hover {
       }
 
       /*Content boxes*/
-      #contentboxes,
-      #collection-boxes {
-        height: auto;
-      }
+      
       #home_contentboxes {
         /*contentbox*/
         article.home_contentbox {
@@ -9260,7 +9271,7 @@ button#myBtn:hover {
       }
 
       h1 {
-        font-size: 2.2em;
+        font-size: 1.1em;
       }
 
       #summary {
@@ -9442,7 +9453,7 @@ button#myBtn:hover {
       }
 
       #facts_box {
-        height: auto;
+        height: unset;
       }
 
       /* The dots/bullets/indicators */
@@ -9562,10 +9573,7 @@ button#myBtn:hover {
       }
 
       /*Content boxes*/
-      #contentboxes,
-      #collection-boxes {
-        height: auto;
-      }
+      
       #home_contentboxes {
         /*contentbox*/
         article.home_contentbox {
@@ -9795,7 +9803,7 @@ button#myBtn:hover {
       }
 
       h1 {
-        font-size: 2.2em;
+        font-size: 1em;
       }
 
       #summary {
@@ -9972,7 +9980,7 @@ button#myBtn:hover {
       }
 
       #facts_box {
-        height: auto;
+        height: unset;
       }
 
       /* The dots/bullets/indicators */
@@ -10074,10 +10082,7 @@ button#myBtn:hover {
       }
 
       /*Content boxes*/
-      #contentboxes,
-      #collection-boxes {
-        height: auto;
-      }
+      
       #home_contentboxes {
         /*contentbox*/
         article.home_contentbox {
