@@ -178,37 +178,6 @@ function toTopBtn() {
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {toTopBtn()};
 
-//mobile nav ******************************************
-(function(){
- /*
-	// sliding menu mobile 
-	$('button#mobile-toggle').on('click', function(event){
-    
-		event.preventDefault();
-	
-		// create menu variables
-		var slideoutMenu = $('nav ');
-		var slideoutMenuWidth = $('nav').width();
-	
-		// toggle open class
-		slideoutMenu.toggleClass("open");
-	
-		// slide menu
-		if (slideoutMenu.hasClass("open")) {
-			slideoutMenu.animate({
-				top: "0px"
-			});	
-		} else {
-			slideoutMenu.animate({
-				top: -slideoutMenuWidth
-			}, 500);	
-		}
-    });
-    */
-    // sliding menu mobile
-
-})()
-
 var menuToggle = document.querySelector('#mobile-toggle');
 
 menuToggle.addEventListener('click', function(event){
