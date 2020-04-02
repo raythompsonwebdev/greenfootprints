@@ -4,7 +4,7 @@
 
 ## History
 
-Web application is based on a website brief, I was given to build a website from, for a city and guilds exam in web design I took in 2012. I used elements from Pluralsight video tutorial Javascript Starter Kit by Cory House. 
+Web application is based on a website brief I was given to build a website from for a city and guilds exam in web design I took in 2012. I used elements from Pluralsight video tutorial Javascript Starter Kit by Cory House. 
 
 The task was that I was a member of a local recycling company "Green FootPrints " based in Essex and you have been asked to set up a simple website consisting of 3 pages to advertise what the company has to offer. 
 
@@ -16,9 +16,7 @@ Web application has a ES6 module design pattern that allows additional functiona
 
 ## Installation
 
-
 ## Usage
-
 
 ## License
 
