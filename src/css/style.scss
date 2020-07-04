@@ -249,7 +249,7 @@ button#myBtn:hover {
       margin-right: 0.5em;
       background-color: $colornav;
       height: 100%;
-      background-image: url("../images/medium/logo-green-foot-prints-medium.gif");
+      background-image: url("../images/Large/logo-greenfootprints-com.gif");
       background-size: cover;
 
       img {
@@ -329,7 +329,7 @@ button#myBtn:hover {
 
   /*Collections Section*/
   div#collections {
-    height: 100vh;
+    height: auto;
   }
 
   /*What you can do Section*/
@@ -5270,8 +5270,8 @@ button#myBtn:hover {
       #mask,
       #mask_two,
       #mask3 {
-        width: 100%;
-        min-height: 565px;
+        
+        min-height: 815px;
         article.collection-box {
           padding: 0 1em;
 
@@ -6272,7 +6272,7 @@ button#myBtn:hover {
           width: 100%;
 
           img {
-            width: 19%;
+            width: 18%;
             margin: 1em 2.25em;
           }
           figcaption {

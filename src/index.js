@@ -6,39 +6,34 @@ import showSlides from "./js/slideShoes.js";
 
 //reduce reuse recyle
 
-import reduceImage from "./images/Large/reduce-image-green-foot-prints-com-large.png";
-import recycleImage from "./images/Large/recycle-image-green-foot-prints-com-large.png";
-import reuseImage from "./images/Large/reuse-image-green-foot-prints-com-large.png";
+import reduceImage from "./images/Large/reduce-greenfootprints-com.png";
+import recycleImage from "./images/Large/recycle-greenfootprints-com.png";
+import reuseImage from "./images/Large/reuse-greenfootprints-com.png";
 
 //header image
-import homeIcon from "./images/Large/logo-green-foot-prints-large.gif";
+import homeIcon from "./images/Large/logo-greenfootprints-com.gif";
 
 //slider images ******************************************
-import sliderImgOne from "./images/slider/slider-image-2-recyling-green-foot-prints-com.png";
-import sliderImgTwo from "./images/slider/slider-image-3-recyling-green-foot-prints-com.png";
-import sliderImgThree from "./images/slider/slider-image-4-recyling-green-foot-prints-com.png";
+import sliderImgOne from "./images/slider/slider-image2-greenfootprints-com.png";
+import sliderImgTwo from "./images/slider/slider-image3-greenfootprints-com.png";
+import sliderImgThree from "./images/slider/slider-image4-greenfootprints-com.png";
 
 //banner images ******************************************
-import paperBottles from "./images/Large/paper-bottles-can-guide-green-foot-prints-com-large.gif";
-import flowChart from "./images/Large/recycling-flowchart-green-foot-prints-com-large.gif";
-import wordSearch from "./images/Large/wordsearch-green-foot-prints-com-large.gif";
-
+import paperBottles from "./images/Large/Recycling_image_1.gif";
+import flowChart from "./images/Large/recycling-flowchart.gif";
+import wordSearch from "./images/Large/wordsearch.gif";
 
 //main page images ******************************************
-import mainImageOne from "./images/Large/recyling-materials-green-foot-prints-com-large.gif";
-import mainImageTwo from "./images/Large/recyling-bins-green-foot-prints-com-large.png";
-//import mainImageThree from "./images/Large/recycle-image-green-foot-prints-com-large.png";
-//import mainImageFour from "./images/Large/types-of-recyling-waste-guide-green-foot-prints-com-large.png";
-//import mainImageFive from "./images/Large/types-of-recyling-waste-guide-green-foot-prints-com-large.png";
+import mainImageOne from "./images/Large/recycling-materials-greenfootprints-com.gif";
+import mainImageTwo from "./images/Large/recylingbins-greenfootprints-com.png";
 
 //Ten ways image ******************************************
-
-import tenImageOne from "./images/Large/Image5.jpg";
-import tenImageTwo from "./images/Large/house-green-foot-prints-com-large.jpg";
-import tenImageThree from "./images/Large/contact-us-image-green-foot-prints-com-large.png";
-import tenImageFour from "./images/Large/recycle-continuous-circle-green-foot-prints-com-large.jpg";
-import tenImageFive from "./images/Large/respect-recyling-green-foot-prints-com-large.png";
-import tenImageSix from "./images/Large/house-in-leaf-green-foot-prints-com-large.jpg";
+import tenImageOne from "./images/Large/Image-glass.jpg";
+import tenImageTwo from "./images/Large/house-greenfootprints-com.jpg";
+import tenImageThree from "./images/Large/Contact_image.gif";
+import tenImageFour from "./images/Large/recycle-continuous-circle-greenfootprints-com.jpg";
+import tenImageFive from "./images/Large/three-r-greenfootprints-com.png";
+import tenImageSix from "./images/Large/house-in-leaf-greenfootprints-com.jpg";
 
 //header image ******************************************
 var homeImg = document.querySelector("#homeImage");
@@ -72,12 +67,6 @@ ImageOne.src = mainImageOne;
 var ImageTwo = document.querySelector("#mainImageTwo");
 ImageTwo.src = mainImageTwo;
 
-//var ImageThree = document.querySelector("#mainImageThree");
-//ImageThree.src = mainImageThree;
-
-//var ImageFour = document.querySelector("#mainImageFour");
-//ImageFour.src = mainImageFour;
-
 //Reuse Recyle Reduce ******************************************
 var ReduceImage = document.querySelector("#reduceImage");
 ReduceImage.src = reduceImage;
@@ -87,7 +76,6 @@ RecycleImage.src = recycleImage;
 
 var ReuseImage = document.querySelector("#reuseImage");
 ReuseImage.src = reuseImage;
-
 
 //10 Ways images ******************************************
 var twImageOne = document.querySelector("#tenImageOne");

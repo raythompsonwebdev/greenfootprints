@@ -94,3 +94,7 @@ src/js/site.js
 dist/
 
 
+/greenfootprints/nbproject/private/
+/src/nbproject/private/
+
+nbproject/
