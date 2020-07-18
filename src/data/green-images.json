@@ -1,0 +1,22 @@
+[
+  {
+    "reduceImage" :  "./images/Large/reduce-greenfootprints-com.png",
+    "recycleImage" : "./images/Large/recycle-greenfootprints-com.png",
+    "reuseImage ": "./images/Large/reuse-greenfootprints-com.png",    
+    "homeIcon" : "./images/Large/logo-greenfootprints-com.gif",    
+    "sliderImgOne" : "./images/slider/slider-image2-greenfootprints-com.png",
+    "sliderImgTwo" : "./images/slider/slider-image3-greenfootprints-com.png",
+    "sliderImgThree" : "./images/slider/slider-image4-greenfootprints-com.png",    
+    "paperBottles" : "./images/Large/Recycling_image_1.gif",
+    "flowChart" : "./images/Large/recycling-flowchart.gif",
+    "wordSearch" : "./images/Large/wordsearch.gif",    
+    "mainImageOne" : "./images/Large/recycling-materials-greenfootprints-com.gif",
+    "mainImageTwo" : "./images/Large/recylingbins-greenfootprints-com.png",    
+    "tenImageOne" : "./images/Large/Image-glass.jpg",
+    "tenImageTwo" : "./images/Large/house-greenfootprints-com.jpg",
+    "tenImageThree" : "./images/Large/Contact_image.gif",
+    "tenImageFour" : "./images/Large/recycle-continuous-circle-greenfootprints-com.jpg",
+    "tenImageFive" : "./images/Large/three-r-greenfootprints-com.png",
+    "tenImageSix" : "./images/Large/house-in-leaf-greenfootprints-com.jpg"
+  }
+]

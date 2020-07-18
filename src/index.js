@@ -1,7 +1,6 @@
 import "./css/normalize.scss";
 import "./css/style.scss";
 import $ from "jquery";
-
 import showSlides from "./js/slideShoes.js";
 
 //reduce reuse recyle
