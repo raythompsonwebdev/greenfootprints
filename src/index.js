@@ -1,3 +1,14 @@
+import{getImages} from './api/userApi'; //import get user function from userApi.js
+//code to display data
+ getImages().then(res =>{
+
+     res.forEach(image =>{
+
+         console.log(image.imageUrl)
+
+     })
+
+ });
 import "./css/normalize.scss";
 import "./css/style.scss";
 import $ from "jquery";
@@ -200,4 +211,6 @@ menuToggle.addEventListener('click', function(event){
 
 //slideshow ******************************************
 showSlides();
+
+
 
