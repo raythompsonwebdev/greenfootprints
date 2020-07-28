@@ -249,7 +249,7 @@ button#myBtn:hover {
       margin-right: 0.5em;
       background-color: $colornav;
       height: 100%;
-      background-image: url("../images/Large/logo-greenfootprints-com.gif");
+      background-image: url("../images/Large/gif-images/logo-greenfootprints-com.gif");
       background-size: cover;
 
       img {
@@ -1088,7 +1088,7 @@ button#myBtn:hover {
               text-align: left;
               letter-spacing: 0.1em;
               font-size: 0.9em;
-              height: 50px;
+              height: auto;
               clear: left;
               &:before {
                 font-family: "FontAwesome";
@@ -5995,6 +5995,14 @@ button#myBtn:hover {
 
     height: 60px;
     width: 70px;
+  }
+
+  .closeMenu{
+    top: -365px;
+  }
+
+  .openMenu{
+    top: 0px;
   }
 
   button#mobile-toggle.hide {
