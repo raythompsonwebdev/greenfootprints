@@ -44,3 +44,22 @@ SOFTWARE.
 
 ## Credits
 
+# useful commands
+
+## ngrok - supports static files
+
+## node security package security checks project for security risks
+- nsp check [path to project folder and package.json file] 
+
+## local tunnel
+- lt --port 8000
+
+## now - supports node.js projects
+- npm install -g now
+- create start script
+- now
+
+## surge - only supports static files
+- npm install -g surge
+- surge
+

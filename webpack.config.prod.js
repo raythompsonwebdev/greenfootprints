@@ -1,8 +1,9 @@
 import path from 'path';
-
+//change to ES6 import instead of require
 const WebpackMd5Hash = require('webpack-md5-hash');
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
+const TerserPlugin = require('terser-webpack-plugin');
+
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
@@ -28,22 +29,21 @@ export default {
       // include all types of chunks
       chunks: 'all'
     },
+    minimize: true,
     minimizer: [
-      new UglifyJsPlugin(),
+      // Minify JS
+      new TerserPlugin({
+        sourceMap: true,
+        cache: true
+      }),
       new OptimizeCSSAssetsPlugin()
     ]
   },
   plugins: [
-    
+
     new CleanWebpackPlugin({}),
 
-    // Minify JS
-    new UglifyJsPlugin(
-      {
-        sourceMap: true,
-        cache: true
-      }
-    ),
+
     new MiniCssExtractPlugin({
       filename: 'style.[contenthash].css'
     }),
@@ -70,9 +70,10 @@ export default {
       // using htmlWebpackPlugin.options.varName
       trackJSToken: '43ad216f57d94259968435894490a5c7'
     }),
+
     new WebpackMd5Hash(),
 
-    
+
   ],
 
   module: {
@@ -92,8 +93,8 @@ export default {
             use: [
               {
                 loader: MiniCssExtractPlugin.loader
-              }, 
-              "css-loader", 
+              },
+              "css-loader",
               "sass-loader"
             ]
         },
@@ -132,7 +133,7 @@ export default {
               }
           ]
         }
-        
+
     ]
   },
 };

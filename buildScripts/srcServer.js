@@ -46,6 +46,7 @@ app.get('/images', function(req, res) {
     {"id": 17,"imageName":"tenImageFive","imageUrl":"./images/Large/three-r-greenfootprints-com.png","imageId":"tenImageFive"},
     {"id": 18,"imageName":"tenImageSix","imageUrl":"./images/Large/house-in-leaf-greenfootprints-com.jpg","imageId":"tenImageSix"}
   ]);
+  
 });
 
 

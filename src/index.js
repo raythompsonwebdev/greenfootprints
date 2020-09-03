@@ -2,6 +2,7 @@ import { getImages } from "./api/userApi"; //import get user function from userA
 //code to display data
 getImages().then((res) => {
   res.forEach((image) => {
+    /* eslint-disable no-console */
     console.log(image.imageUrl);
   });
 });
@@ -103,7 +104,7 @@ twImageSix.src = tenImageSix;
 
 //Scroll ******************************************
 (function () {
-  /* ========================================== 
+  /* ==========================================
   scrollTop() >= 100
   Should be equal the the height of the header
   ========================================== */

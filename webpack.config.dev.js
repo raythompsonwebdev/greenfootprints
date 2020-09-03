@@ -1,16 +1,11 @@
 import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 //import StyleLintPlugin from 'stylelint-webpack-plugin';
-//const StyleLintPlugin = require('stylelint-webpack-plugin');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 export default {
     mode: "development",
-
     entry: { main: "./src/index" },
-
-    //entry: [
-    //  path.resolve(__dirname, 'src/index')
-    //],
     target: "web",
     devtool: "inline-source-map",
     output: {
@@ -37,14 +32,14 @@ export default {
               minifyCSS: true,
               minifyURLs: true
             },
-      
-            
+
+
           }),
-        // new StyleLintPlugin({
-        //  configFile: './stylelintrc.json',
-        //  files: './src/assets/css/*.scss',
-        //  syntax: 'scss'
-        // })
+        new StyleLintPlugin({
+         configFile: './stylelintrc.json',
+         files: './src/assets/css/*.scss',
+         syntax: 'scss'
+        })
     ],
 
     module: {
@@ -72,7 +67,7 @@ export default {
             {
                 test: /\.(gif|png|jpe?g|svg)$/i,
                 use: [
-                    'file-loader',                    
+                    'file-loader',
                     {
                         loader: "image-webpack-loader",
                         options: {
