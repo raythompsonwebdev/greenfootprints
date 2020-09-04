@@ -11,6 +11,7 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 const compiler = webpack(config);
 
+//integrate webpack with express
 app.use(require('webpack-dev-middleware')(compiler, {
   noInfo: true,
   publicPath: config.output.publicPath
@@ -46,7 +47,7 @@ app.get('/images', function(req, res) {
     {"id": 17,"imageName":"tenImageFive","imageUrl":"./images/Large/three-r-greenfootprints-com.png","imageId":"tenImageFive"},
     {"id": 18,"imageName":"tenImageSix","imageUrl":"./images/Large/house-in-leaf-greenfootprints-com.jpg","imageId":"tenImageSix"}
   ]);
-  
+
 });
 
 

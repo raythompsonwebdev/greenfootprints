@@ -44,22 +44,67 @@ SOFTWARE.
 
 ## Credits
 
-# useful commands
+## git hub warning 03.09.2020
+Warning: Permanently added the RSA host key for IP address '140.82.121.4' to the list of known hosts.
+
+# Useful Commands
 
 ## ngrok - supports static files
 
-## node security package security checks project for security risks
+needs to installed
+
+## node security package security - NO LONGER available after 30.09.2020
 - nsp check [path to project folder and package.json file] 
 
-## local tunnel
+## retire js - Scan a web app or node app for use of vulnerable JavaScript libraries and/or Node.JS modules. In the source code folder of the application folder run:
+- npm install -g retire
+- retire
+
+## localtunnel
 - lt --port 8000
 
-## now - supports node.js projects
+## NOW - supports node.js projects
 - npm install -g now
 - create start script
 - now
 
-## surge - only supports static files
+## Surge - only supports static files
 - npm install -g surge
 - surge
+
+## To use eslint on experimental javascript features use:
+babel-eslint
+
+## Unit Tests
+
+### assertion library
+chai
+
+#### simulates the browser DOM
+jsdom 
+
+#### query virtual dom using jquery selctors using :
+cheerio
+
+### Where To Run Test
+
+#### headless browser
+phantomjs
+
+#### in memory DOM 
+jsdom 
+
+
+## Continuous Integration
+
+### Travis - MAC/Linux
+sign into travis CI website wiyh github account.
+create config file .travis.yml
+
+### Appveyor - windows
+
+
+
+
+
 

@@ -1,9 +1,7 @@
 import path from 'path';
-//change to ES6 import instead of require
-const WebpackMd5Hash = require('webpack-md5-hash');
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const TerserPlugin = require('terser-webpack-plugin');
-
+import WebpackMd5Hash from 'webpack-md5-hash';
+import OptimizeCSSAssetsPlugin from "optimize-css-assets-webpack-plugin";
+import TerserPlugin from 'terser-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import CleanWebpackPlugin from 'clean-webpack-plugin';

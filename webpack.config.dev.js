@@ -1,7 +1,6 @@
 import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
-//import StyleLintPlugin from 'stylelint-webpack-plugin';
-const StyleLintPlugin = require('stylelint-webpack-plugin');
+import  StyleLintPlugin from 'stylelint-webpack-plugin';
 
 export default {
     mode: "development",
@@ -9,6 +8,7 @@ export default {
     target: "web",
     devtool: "inline-source-map",
     output: {
+        //serves build from memory
         path: path.resolve(__dirname, "src"),
         publicPath: "/",
         filename: "bundle.js"
