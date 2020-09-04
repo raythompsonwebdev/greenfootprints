@@ -12,6 +12,7 @@ export default {
   mode: 'production',
   devtool: 'source-map',
   entry: {
+    //allows third party vendors to be added and bundled seperately
     vendor: path.resolve(__dirname, 'src/vendor'),
     main: path.resolve(__dirname, 'src/index')
   },
@@ -23,6 +24,7 @@ export default {
   },
 
   optimization: {
+    // splitChunks replaces CommonsChunkPluginwhich
     splitChunks: {
       // include all types of chunks
       chunks: 'all'
@@ -40,7 +42,6 @@ export default {
   plugins: [
 
     new CleanWebpackPlugin({}),
-
 
     new MiniCssExtractPlugin({
       filename: 'style.[contenthash].css'
@@ -66,11 +67,10 @@ export default {
 
       // Properties you define here are available in index.html
       // using htmlWebpackPlugin.options.varName
-      trackJSToken: '43ad216f57d94259968435894490a5c7'
+      //trackJSToken: '43ad216f57d94259968435894490a5c7'
     }),
 
     new WebpackMd5Hash(),
-
 
   ],
 

@@ -19,6 +19,7 @@ app.get('/', function(req, res) {
 
 //testAPI
 //Hard coding for simplicity. Pretend this hits a real database
+//remove this app.get for production build. Data now should come from hosted api i.e. heroku ect.
 app.get('/users', function(req, res) {
  res.json([
    {"id": 1,"firstName":"Bob","lastName":"Smith","email":"bob@gmail.com"},

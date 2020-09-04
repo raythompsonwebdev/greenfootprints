@@ -1,11 +1,9 @@
-
 import "./css/normalize.scss";
 import "./css/style.scss";
 import $ from "jquery";
 import showSlides from "./js/slideShoes.js";
 //import GreenImages from "./data/green-images.json";
 import { getUsers } from "./api/userApi"; //import get user function from userApi.js
-
 
 // GreenImages.forEach((item)=>{
 
@@ -15,46 +13,39 @@ import { getUsers } from "./api/userApi"; //import get user function from userAp
 // })
 
 // Populate table of users via API call.
-getUsers().then(result => {
-
+getUsers().then((result) => {
   let usersBody = "";
 
-  result.forEach(user => {
-    usersBody+= `<tr>
+  result.forEach((user) => {
+    usersBody += `<tr>
       <td><a href="#" data-id="${user.id}" class="deleteUser">Delete</a></td>
       <td>${user.id}</td>
       <td>${user.firstName}</td>
       <td>${user.lastName}</td>
       <td>${user.email}</td>
-      </tr>`
+      </tr>`;
   });
 
-  document.querySelector('#users').innerHTML = usersBody;
-
+  document.querySelector("#users").innerHTML = usersBody;
 });
 
 //reduce reuse recyle
 import reduceImage from "./images/Large/reduce-greenfootprints-com.png";
 import recycleImage from "./images/Large/recycle-greenfootprints-com.png";
 import reuseImage from "./images/Large/reuse-greenfootprints-com.png";
-
 //header image
 import homeIcon from "./images/Large/gif-images/logo-greenfootprints-com.gif";
-
 //slider images ******************************************
 import sliderImgOne from "./images/slider/slider-image2-greenfootprints-com.png";
 import sliderImgTwo from "./images/slider/slider-image3-greenfootprints-com.png";
 import sliderImgThree from "./images/slider/slider-image4-greenfootprints-com.png";
-
 //banner images ******************************************
 import paperBottles from "./images/Large/gif-images/Recycling_image_1.gif";
 import flowChart from "./images/Large/gif-images/recycling-flowchart.gif";
 import wordSearch from "./images/Large/gif-images/wordsearch.gif";
-
 //main page images ******************************************
 import mainImageOne from "./images/Large/gif-images/Recycling_image_2.gif";
 import mainImageTwo from "./images/Large/recylingbins-greenfootprints-com.png";
-
 //Ten ways image ******************************************
 import tenImageOne from "./images/Large/Image-glass.jpg";
 import tenImageTwo from "./images/Large/house-greenfootprints-com.jpg";
@@ -67,60 +58,43 @@ import tenImageSix from "./images/Large/house-in-leaf-greenfootprints-com.jpg";
 //header image ******************************************
 var homeImg = document.querySelector("#homeImage");
 homeImg.src = homeIcon;
-
 //slider images ******************************************
 var sliderOneImg = document.querySelector("#sliderOneImg");
 sliderOneImg.src = sliderImgOne;
-
 var sliderTwoImg = document.querySelector("#sliderTwoImg");
 sliderTwoImg.src = sliderImgTwo;
-
 var sliderThreeImg = document.querySelector("#sliderThreeImg");
 sliderThreeImg.src = sliderImgThree;
-
 //banner images ******************************************
 var imageOne = document.querySelector("#paperBottles");
 imageOne.src = paperBottles;
-
 var imageTwo = document.querySelector("#flowChart");
 imageTwo.src = flowChart;
-
 var imageThree = document.querySelector("#wordSearch");
 imageThree.src = wordSearch;
-
 //main page images ******************************************
 var ImageOne = document.querySelector("#mainImageOne");
 ImageOne.src = mainImageOne;
-
 var ImageTwo = document.querySelector("#mainImageTwo");
 ImageTwo.src = mainImageTwo;
-
 //Reuse Recyle Reduce ******************************************
 var ReduceImage = document.querySelector("#reduceImage");
 ReduceImage.src = reduceImage;
-
 var RecycleImage = document.querySelector("#recycleImage");
 RecycleImage.src = recycleImage;
-
 var ReuseImage = document.querySelector("#reuseImage");
 ReuseImage.src = reuseImage;
-
 //10 Ways images ******************************************
 var twImageOne = document.querySelector("#tenImageOne");
 twImageOne.src = tenImageOne;
-
 var twImageTwo = document.querySelector("#tenImageTwo");
 twImageTwo.src = tenImageTwo;
-
 var twImageThree = document.querySelector("#tenImageThree");
 twImageThree.src = tenImageThree;
-
 var twImageFour = document.querySelector("#tenImageFour");
 twImageFour.src = tenImageFour;
-
 var twImageFive = document.querySelector("#tenImageFive");
 twImageFive.src = tenImageFive;
-
 var twImageSix = document.querySelector("#tenImageSix");
 twImageSix.src = tenImageSix;
 

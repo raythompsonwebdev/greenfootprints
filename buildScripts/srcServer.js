@@ -31,7 +31,6 @@ app.get('/users', function(req, res) {
   ]);
  });
 
-
 //error handling
 app.use(function (err, req, res) {
   console.error(err.stack)
