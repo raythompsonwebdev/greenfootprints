@@ -11,7 +11,7 @@ import {schema} from './mockDataSchema';
 import fs from 'fs'; //imported from node.
 import chalk from 'chalk';
 
-//passed to json schemer faker vis jsf().
+//passed to json schemer faker via jsf().
 const json = JSON.stringify(jsf(schema));
 
 fs.writeFile("./src/api/db.json", json, function (err) {

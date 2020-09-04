@@ -12,7 +12,7 @@ webpack(webpackConfig).run((err, stats) => {
     console.log(chalk.red(err));
     return 1;
   }
-  //warnings and errors
+  //warnings and errors and stats displayed in console
   const jsonStats = stats.toJson();
 
   if (jsonStats.hasErrors) {

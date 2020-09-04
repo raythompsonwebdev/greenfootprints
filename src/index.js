@@ -1,18 +1,39 @@
-import { getImages } from "./api/userApi"; //import get user function from userApi.js
-//code to display data
-getImages().then((res) => {
-  res.forEach((image) => {
-    /* eslint-disable no-console */
-    console.log(image.imageUrl);
-  });
-});
+
 import "./css/normalize.scss";
 import "./css/style.scss";
 import $ from "jquery";
 import showSlides from "./js/slideShoes.js";
+//import GreenImages from "./data/green-images.json";
+import { getUsers } from "./api/userApi"; //import get user function from userApi.js
+
+
+// GreenImages.forEach((item)=>{
+
+//   /* eslint-disable no-console */
+//   console.log(item.imageUrl);
+
+// })
+
+// Populate table of users via API call.
+getUsers().then(result => {
+
+  let usersBody = "";
+
+  result.forEach(user => {
+    usersBody+= `<tr>
+      <td><a href="#" data-id="${user.id}" class="deleteUser">Delete</a></td>
+      <td>${user.id}</td>
+      <td>${user.firstName}</td>
+      <td>${user.lastName}</td>
+      <td>${user.email}</td>
+      </tr>`
+  });
+
+  document.querySelector('#users').innerHTML = usersBody;
+
+});
 
 //reduce reuse recyle
-
 import reduceImage from "./images/Large/reduce-greenfootprints-com.png";
 import recycleImage from "./images/Large/recycle-greenfootprints-com.png";
 import reuseImage from "./images/Large/reuse-greenfootprints-com.png";
@@ -41,6 +62,7 @@ import tenImageThree from "./images/Large/gif-images/Contact_image.gif";
 import tenImageFour from "./images/Large/recycle-continuous-circle-greenfootprints-com.jpg";
 import tenImageFive from "./images/Large/three-r-greenfootprints-com.png";
 import tenImageSix from "./images/Large/house-in-leaf-greenfootprints-com.jpg";
+//import { forEach } from "lodash";
 
 //header image ******************************************
 var homeImg = document.querySelector("#homeImage");

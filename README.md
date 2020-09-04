@@ -44,13 +44,10 @@ SOFTWARE.
 
 ## Credits
 
-## git hub warning 03.09.2020
-Warning: Permanently added the RSA host key for IP address '140.82.121.4' to the list of known hosts.
 
 # Useful Commands
 
 ## ngrok - supports static files
-
 needs to installed
 
 ## node security package security - NO LONGER available after 30.09.2020
@@ -73,37 +70,74 @@ needs to installed
 - surge
 
 ## To use eslint on experimental javascript features use:
-babel-eslint
+- babel-eslint
 
 ## Unit Tests
 
 ### assertion library
-chai
+- chai
 
 #### simulates the browser DOM
-jsdom 
+- jsdom 
 
 #### query virtual dom using jquery selctors using :
-cheerio
+- cheerio
 
 ### Where To Run Test
 
 #### headless browser
-phantomjs
+- phantomjs
 
 #### in memory DOM 
-jsdom 
+- jsdom 
 
 
 ## Continuous Integration
 
 ### Travis - MAC/Linux
-sign into travis CI website wiyh github account.
-create config file .travis.yml
+- sign into travis CI website with github account.
+- create config file .travis.yml
 
 ### Appveyor - windows
+- sign into Appveyor website with github account.
+- create config file .appveyor.yml
 
 
+## HTTP Calls
+
+### Node
+- http
+- request
+
+### Browser
+- XMLHttpRequest
+- Jquery
+- Fetch
+- $http - angular
+- async/await
+
+### Browser & Node
+- isomorphic fetch
+- xhr
+- Super Agent
+- Axios
+
+## Mocking Http
+- nock
+- JSON Schema faker
+- JSON server
+
+### set up schema
+- JSON Schema
+- JSON Schema faker 
+
+### generate random data
+- faker.js
+- chance.js
+- randexp.js
+
+### serve dats via api
+- JSON server
 
 
 
