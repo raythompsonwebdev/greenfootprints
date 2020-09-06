@@ -8,9 +8,10 @@ import config from '../webpack.config.dev';
 /* eslint-disable no-console */
 const PORT = process.env.PORT || 3000;
 const app = express();
+//webpack compiler
 const compiler = webpack(config);
 
-//integrate webpack with express
+//integrate webpack with express using middleware
 app.use(require('webpack-dev-middleware')(compiler, {
   noInfo: true,
   publicPath: config.output.publicPath

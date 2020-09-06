@@ -5,12 +5,15 @@ import showSlides from "./js/slideShoes.js";
 //import GreenImages from "./data/green-images.json";
 import { getUsers } from "./api/userApi"; //import get user function from userApi.js
 
+// let greenImage = [];
+
 // GreenImages.forEach((item)=>{
-
 //   /* eslint-disable no-console */
-//   console.log(item.imageUrl);
+//   greenImage.push(item);
+//   return greenImage;
+// });
 
-// })
+// console.log(greenImage);
 
 // Populate table of users via API call.
 getUsers().then((result) => {
@@ -26,7 +29,7 @@ getUsers().then((result) => {
       </tr>`;
   });
 
-  document.querySelector("#users").innerHTML = usersBody;
+  window.document.querySelector("#users").textContent = usersBody;
 });
 
 //reduce reuse recyle
