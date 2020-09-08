@@ -2,7 +2,7 @@ import express from "express";
 import path from "path";
 import open from "open";
 import webpack from "webpack";
-const exphbs = require("express-handlebars");
+const handlebars = require('express-handlebars');
 import config from "./webpack.config.dev";
 var routes = require('./routes/index');
 
@@ -20,27 +20,25 @@ app.use(
   })
 );
 
-// Set static folder - may not need this as well as above home page route
-app.use(express.static(path.join(__dirname, "src/static")));
-
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "hbs");
 
 // Handlebars Middleware
 app.engine(
   "hbs",
-  exphbs({
+  handlebars({
     extname: '.hbs',
-    defaultLayout: "layout",
-    layoutsDir: path.join(__dirname, "views/layouts"),
-    partialsDir: path.join(__dirname, "views/partials")
+    defaultLayout: "index",
+    layoutsDir: path.resolve(__dirname, 'views/layouts/'),
+    partialsDir: path.resolve(__dirname, 'views/partials/')
 
   })
 );
 
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "hbs");
+// Set static folder - may not need this as well as above home page route
+app.use(express.static(path.join(__dirname, "src")));
 
 app.use('/', routes);
-
 
 app.get("/contact", (req, res) => {
   res.render("contact" ,{ title: 'contact Page'});

@@ -1,20 +1,20 @@
 
-@font-face {
-  font-family: 'viroregular';
-  src: url("../fonts/Viro/viro-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/Viro/viro-webfont.eot?#iefix")
-          format("embedded-opentype"),
-      /* IE6-IE8 */ url("../fonts/Viro/viro-webfont.woff") format("woff"),
-      /* Modern Browsers */ url("../fonts/Viro/viro-webfont.ttf")
-          format("truetype"),
-      /* Safari, Android, iOS */
-          url("../fonts/Viro/viro-webfont.svg#svgFontName") format("svg");
-  /* Legacy iOS */
-  font-weight: normal;
-  font-style: normal;
-  font-display: auto;
-}
+// @font-face {
+//   font-family: 'viroregular';
+//   src: url("../fonts/Viro/viro-webfont.eot");
+//   /* IE9 Compat Modes */
+//   src: url("../fonts/Viro/viro-webfont.eot?#iefix")
+//           format("embedded-opentype"),
+//       /* IE6-IE8 */ url("../fonts/Viro/viro-webfont.woff") format("woff"),
+//       /* Modern Browsers */ url("../fonts/Viro/viro-webfont.ttf")
+//           format("truetype"),
+//       /* Safari, Android, iOS */
+//           url("../fonts/Viro/viro-webfont.svg#svgFontName") format("svg");
+//   /* Legacy iOS */
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: auto;
+// }
 /*
 @font-face {
   font-family: "FontAwesome";
@@ -31,7 +31,7 @@
 html {
 	@include box-sizing($type: border-box);
   scroll-behavior: smooth;
-  
+
 }
 
 body {
@@ -85,7 +85,7 @@ figure {
 .seperator{
   height:1px;
   display:block;
-  
+
 }
 
 :focus {
@@ -215,7 +215,7 @@ textarea:focus {
   background-color: $colorsocmed;
   outline: none;
   display: block;
-  
+
 }
 
 
