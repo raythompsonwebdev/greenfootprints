@@ -66,8 +66,10 @@ test/
 .settings/
 package.json
 .vscode/
-
+views/
+routes/
 .htaccess
+api/
 
 src/dist/
 src/img/
