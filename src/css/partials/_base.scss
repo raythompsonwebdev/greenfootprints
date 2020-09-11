@@ -1,34 +1,10 @@
+@import "mixins";
+@import "variables";
+@import "fonts";
 
-// @font-face {
-//   font-family: 'viroregular';
-//   src: url("../fonts/Viro/viro-webfont.eot");
-//   /* IE9 Compat Modes */
-//   src: url("../fonts/Viro/viro-webfont.eot?#iefix")
-//           format("embedded-opentype"),
-//       /* IE6-IE8 */ url("../fonts/Viro/viro-webfont.woff") format("woff"),
-//       /* Modern Browsers */ url("../fonts/Viro/viro-webfont.ttf")
-//           format("truetype"),
-//       /* Safari, Android, iOS */
-//           url("../fonts/Viro/viro-webfont.svg#svgFontName") format("svg");
-//   /* Legacy iOS */
-//   font-weight: normal;
-//   font-style: normal;
-//   font-display: auto;
-// }
-/*
-@font-face {
-  font-family: "FontAwesome";
-  font-weight: normal;
-  font-style : normal;
-  src : url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
-  src : url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
-          url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
-          url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
-          url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
-          url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
-}
-*/
+
 html {
+
 	@include box-sizing($type: border-box);
   scroll-behavior: smooth;
 

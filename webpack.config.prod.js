@@ -13,8 +13,8 @@ export default {
   devtool: 'source-map',
   entry: {
     //allows third party vendors to be added and bundled seperately
-    vendor: path.resolve(__dirname, 'src/vendor'),
-    main: path.resolve(__dirname, 'src/index')
+    vendor: path.resolve(__dirname, './src/vendor'),
+    main: path.resolve(__dirname, './src/views/layouts/index')
   },
   target: 'web',
   output: {
@@ -50,7 +50,7 @@ export default {
     new HtmlWebpackPlugin({
       inject: true, //dynamically adds script tags
       hash: true,
-      template: './src/index.html',
+      template: './src/views/layouts/index.hbs',
       filename: 'index.html',
       minify: {
         removeComments: true,
@@ -76,6 +76,12 @@ export default {
 
   module: {
     rules: [
+        {
+          test: /\.hbs$/,
+          use: [{
+            loader: "handlebars-loader"
+          }]
+        },
         {
             test: /\.js$/,
             exclude: /node_modules/,

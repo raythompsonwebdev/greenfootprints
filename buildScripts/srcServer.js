@@ -4,6 +4,8 @@ import path from 'path';
 import open from 'open';
 import webpack from 'webpack';
 import config from '../webpack.config.dev';
+var routes = require('../routes/main');
+const handlebars = require('express-handlebars')
 
 /* eslint-disable no-console */
 const PORT = process.env.PORT || 3000;
@@ -17,12 +19,27 @@ app.use(require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath
 }));
 
-//routing to root index file
-app.get('/', (req, res) => {
 
-  res.sendFile(path.join( __dirname, '../src/index.html'));
+app.set("views", path.resolve(__dirname, '../views/') );
+app.set("view engine", "hbs");
 
-});
+app.use(express.static(path.join(__dirname, "../src")));
+
+// Handlebars Middleware
+app.engine(
+  "hbs",
+  handlebars({
+    extname: '.hbs',
+    defaultLayout: "index",
+    layoutsDir: path.resolve(__dirname, '../views/layouts/'),
+
+  })
+);
+
+app.use('/', routes);
+
+app.use('/contact', routes);
+
 
 app.get('/users', function(req, res) {
   res.json([
