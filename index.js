@@ -2,8 +2,8 @@ import "./src/css/sass/normalize.scss";
 import "./src/css/sass/style.scss";
 import $ from "jquery";
 import showSlides from "./src/js/slideShoes.js";
-// import Main from './views/main.hbs';
-// import Contact from './views/contact.hbs';
+
+
 
 /* eslint-disable no-console */
 
@@ -103,3 +103,5 @@ menuLinks.forEach(function (e) {
 
 //slideshow ******************************************
 showSlides();
+
+
