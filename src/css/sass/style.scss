@@ -3,7 +3,6 @@
 @import "partials/base";
 @import "partials/fonts";
 
-//Mobile Navigation button
 button#mobile-toggle {
   display: none;
   height: 45px;
@@ -1175,6 +1174,7 @@ button#myBtn:hover {
         }
 
         article.contentbox {
+          position: absolute;
           width: 100%;
           min-height: 225px;
           height: auto;

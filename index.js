@@ -1,7 +1,7 @@
-import "./css/sass/normalize.scss";
-import "./css/sass/style.scss";
+// import "./css/sass/normalize.scss";
+// import "./css/sass/style.scss";
 import $ from "jquery";
-import showSlides from "./js/slideShoes.js";
+import showSlides from "./src/js/slideShoes.js";
 
 
 // import Main from './views/main.hbs';
@@ -30,7 +30,7 @@ import showSlides from "./js/slideShoes.js";
 // import recycleImage from "./images/Large/recycle-greenfootprints-com.png";
 // import reuseImage from "./images/Large/reuse-greenfootprints-com.png";
 //header image
-import homeIcon from "./images/Large/gif-images/logo-greenfootprints-com.gif";
+//import homeIcon from "./images/Large/gif-images/logo-greenfootprints-com.gif";
 
 // //main page images ******************************************
 // import mainImageOne from "./images/Large/gif-images/Recycling_image_2.gif";
@@ -45,8 +45,8 @@ import homeIcon from "./images/Large/gif-images/logo-greenfootprints-com.gif";
 //import { forEach } from "lodash";
 
 //header image ******************************************
-var homeImg = document.querySelector("#homeImage");
-homeImg.src = homeIcon;
+// var homeImg = document.querySelector("#homeImage");
+// homeImg.src = homeIcon;
 //slider images ******************************************
 // var sliderOneImg = document.querySelector("#sliderOneImg");
 // sliderOneImg.src = sliderImgOne;

@@ -6,20 +6,20 @@ import StyleLintPlugin from "stylelint-webpack-plugin";
 export default {
   mode: "development",
   entry: {
-    main: path.resolve(__dirname, "./src/index"),
+    main: path.resolve(__dirname, "./index"),
   },
   target: "web",
   devtool: "inline-source-map",
   output: {
     //serves build from memory
-    path: path.resolve(__dirname, "./views/layouts/"),
-    publicPath: path.resolve(__dirname, "/"),
+    path: path.resolve(__dirname, "./views/layouts"),
+    publicPath: path.resolve(__dirname, "./views/layouts"),
     filename: "bundle.js",
   },
   plugins: [
     // Create HTML file that includes reference to bundled JS.
     new HtmlWebpackPlugin({
-      filename: "index.html",
+      filename: "index.hbs",
       inject: true,
       template: path.resolve("./views/layouts/index.hbs"),
     }),

@@ -24,6 +24,7 @@
 */
 html {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -198,6 +199,7 @@ input:focus,
 select,
 textarea:focus {
   border-color: #3a5f0b;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 3px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 3px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 3px;
   background-color: #ccffbb;
@@ -208,6 +210,7 @@ textarea:focus {
 /*Container*/
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -245,6 +248,8 @@ button#mobile-toggle {
   outline: none;
   border: none;
   -webkit-transition: all 0.2s ease-in 0s;
+  -moz-transition: all 0.2s ease-in 0s;
+  -o-transition: all 0.2s ease-in 0s;
   transition: all 0.2s ease-in 0s;
 }
 
@@ -305,31 +310,30 @@ button#myBtn:hover {
   }
   /*header*/
   header {
+    display: -webkit-flex;
     display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
     height: auto;
     background-color: #5e8b33;
     padding: 0.25em;
+    -webkit-flex-flow: row;
     -ms-flex-flow: row;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-flow: row;
+    flex-flow: row;
+    -webkit-align-items: center;
     -ms-flex-align: center;
-    -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
+    -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
-    -webkit-box-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
     /*social media icons*/
   }
   header hgroup {
     width: 68%;
     display: block;
     float: left;
+    -webkit-flex: 0 1 auto;
     -ms-flex: 0 1 auto;
-    -webkit-box-flex: 0;
-            flex: 0 1 auto;
+    flex: 0 1 auto;
   }
   header hgroup h1 {
     color: #ffffff;
@@ -364,9 +368,9 @@ button#myBtn:hover {
     width: 5%;
     float: left;
     border: 3px solid #2c6700;
+    -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
-    -webkit-box-flex: 1;
-            flex: 1 0 auto;
+    flex: 1 0 auto;
     height: 60px;
   }
   header figure#logo img#homeImage {
@@ -380,25 +384,25 @@ button#myBtn:hover {
     display: block;
     float: right;
     margin: 0;
+    -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
-    -webkit-box-flex: 1;
-            flex: 1 0 auto;
+    flex: 1 0 auto;
   }
   header .socials ul {
     margin: 0;
     padding: 0;
     height: 100%;
     display: block;
+    display: -webkit-flex;
     display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
+    -webkit-flex-flow: row;
     -ms-flex-flow: row;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-flow: row;
+    flex-flow: row;
+    -webkit-align-items: center;
     -ms-flex-align: center;
-    -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
     -ms-flex-pack: space-around;
     justify-content: space-around;
   }
@@ -407,9 +411,9 @@ button#myBtn:hover {
     width: 23%;
     height: 100%;
     margin: 0.1em;
+    -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
-    -webkit-box-flex: 1;
-            flex: 1 0 auto;
+    flex: 1 0 auto;
     font-family: "FontAwesome";
   }
   header .socials ul li a {
@@ -432,14 +436,15 @@ button#myBtn:hover {
     font-size: 1.25em;
     color: #ffffff;
     -webkit-transition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s;
     transition: all 0.2s ease-in 0s;
   }
   header .socials ul li a i.fa-twitter:hover,
   header .socials ul li a i.fa-facebook:hover,
   header .socials ul li a i.fa-google:hover,
   header .socials ul li a i.fa-instagram:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
     font-weight: bold;
     text-shadow: 0 0 0 #165404;
     cursor: pointer;
@@ -490,19 +495,18 @@ button#myBtn:hover {
     padding: 0;
     height: 50px;
     width: 90%;
+    display: -webkit-flex;
     display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
+    -webkit-flex-flow: row;
     -ms-flex-flow: row;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-flow: row;
+    flex-flow: row;
+    -webkit-align-items: center;
     -ms-flex-align: center;
-    -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
+    -webkit-justify-content: flex-start;
     -ms-flex-pack: flex-start;
-    -webkit-box-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
   nav ul li {
     float: left;
@@ -510,9 +514,9 @@ button#myBtn:hover {
     margin-right: 0.1em;
     display: block;
     width: 12%;
+    -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
-    -webkit-box-flex: 1;
-            flex: 1 0 auto;
+    flex: 1 0 auto;
   }
   nav ul li a {
     color: #ffffff;
@@ -524,6 +528,8 @@ button#myBtn:hover {
     height: 100%;
     text-shadow: 1px 2px 1px #165404;
     -webkit-transition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s;
     transition: all 0.2s ease-in 0s;
   }
   nav ul li a:hover {
@@ -672,19 +678,18 @@ button#myBtn:hover {
   }
   div.grid_24 main.content #home_contentboxes {
     height: 310px;
+    display: -webkit-flex;
     display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
+    -webkit-flex-flow: row;
     -ms-flex-flow: row;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-flow: row;
+    flex-flow: row;
+    -webkit-align-items: stretch;
     -ms-flex-align: stretch;
-    -webkit-box-align: stretch;
-            align-items: stretch;
+    align-items: stretch;
+    -webkit-justify-content: flex-start;
     -ms-flex-pack: flex-start;
-    -webkit-box-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
     background-color: #ffffff;
   }
   div.grid_24 main.content #home_contentboxes article.home_contentbox {
@@ -695,11 +700,12 @@ button#myBtn:hover {
     float: left;
     margin: 0.5em;
     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0.5em;
+    -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
-    -webkit-box-flex: 1;
-            flex: 1 0 auto;
+    flex: 1 0 auto;
   }
   div.grid_24 main.content #home_contentboxes article.home_contentbox h1 {
     text-indent: 0;
@@ -762,6 +768,8 @@ button#myBtn:hover {
     text-transform: uppercase;
     text-shadow: 1px 2px 1px #406136;
     -webkit-transition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s;
     transition: all 0.2s ease-in 0s;
   }
   div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button:hover {
@@ -811,19 +819,18 @@ button#myBtn:hover {
     background-color: #ffffff;
     font-size: 1em;
     padding: 0.5em;
+    display: -webkit-flex;
     display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
+    -webkit-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-between;
     -ms-flex-pack: space-between;
-    -webkit-box-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: flex-start;
     -ms-flex-align: start;
-    -webkit-box-align: start;
-            align-items: flex-start;
+    align-items: flex-start;
   }
   div.grid_24 section.content .text h1 {
     margin: 0 0 0.25em 0;
@@ -833,16 +840,14 @@ button#myBtn:hover {
     background-color: #5e8b33;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     font-weight: bold;
     color: #ffffff;
   }
   div.grid_24 section.content .text h2 {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     color: #3a5f0b;
     background-color: #cad996;
     margin: 0 0 0.25em 0;
@@ -854,9 +859,9 @@ button#myBtn:hover {
     font-weight: bold;
   }
   div.grid_24 section.content .text p {
+    -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
-    -webkit-box-flex: 1;
-            flex: 1 1 auto;
+    flex: 1 1 auto;
     letter-spacing: 0.05em;
     padding: 1em;
     width: 84%;
@@ -870,9 +875,7 @@ button#myBtn:hover {
   div.grid_24 section.content .text figure#threeRs {
     width: 100%;
     display: block;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
   }
   div.grid_24 section.content .text figure#threeRs img {
     display: inline-block;
@@ -885,17 +888,13 @@ button#myBtn:hover {
     float: right;
   }
   div.grid_24 section.content .text figure#threeRs figcaption p {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 100%;
     font-size: 1em;
   }
   div.grid_24 section.content .text p#diff_mat_text {
     width: 57%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
     font-size: 1em;
   }
   div.grid_24 section.content .text address#recycle-contact {
@@ -904,19 +903,18 @@ button#myBtn:hover {
     width: 100%;
     margin: 0.25em;
     clear: both;
+    display: -webkit-flex;
     display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
+    -webkit-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-between;
     -ms-flex-pack: space-between;
-    -webkit-box-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: stretch;
     -ms-flex-align: stretch;
-    -webkit-box-align: stretch;
-            align-items: stretch;
+    align-items: stretch;
   }
   div.grid_24 section.content .text address#recycle-contact a {
     font-size: 1em;
@@ -933,9 +931,9 @@ button#myBtn:hover {
     padding: 0.25em 0;
     clear: both;
     display: block;
+    -webkit-flex: 0 1 auto;
     -ms-flex: 0 1 auto;
-    -webkit-box-flex: 0;
-            flex: 0 1 auto;
+    flex: 0 1 auto;
     line-height: 35px;
   }
   div.grid_24 section.content .text address#recycle-contact p:before,
@@ -993,8 +991,7 @@ button#myBtn:hover {
     display: block;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     margin: 0 0 0.25em 0.25em;
   }
   div.grid_24 section.content .text ul#different-materials li {
@@ -1036,8 +1033,7 @@ button#myBtn:hover {
   div.grid_24 section.content .text .recycle_img {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     margin: 0.5em;
     width: 10%;
     height: auto;
@@ -1145,19 +1141,18 @@ button#myBtn:hover {
     position: relative;
     overflow: hidden;
     z-index: 2;
+    display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
-    display: -webkit-inline-box;
     display: inline-flex;
+    -webkit-flex-flow: row;
     -ms-flex-flow: row;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-flow: row;
+    flex-flow: row;
+    -webkit-justify-content: flex-start;
     -ms-flex-pack: flex-start;
-    -webkit-box-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: stretch;
     -ms-flex-align: stretch;
-    -webkit-box-align: stretch;
-            align-items: stretch;
+    align-items: stretch;
     background-color: #ffffff;
     /* Next & previous buttons */
   }
@@ -1300,7 +1295,6 @@ button#myBtn:hover {
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    -webkit-transition: background-color 0.6s ease;
     transition: background-color 0.6s ease;
   }
   div.grid_24 section.content #mask .active,
@@ -1327,7 +1321,6 @@ button#myBtn:hover {
     color: black;
     font-weight: bold;
     font-size: 20px;
-    -webkit-transition: 0.6s ease;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     z-index: 10;
@@ -1356,12 +1349,12 @@ button#myBtn:hover {
   div.grid_24 section.content #mask article.contentbox,
   div.grid_24 section.content #mask_two article.contentbox,
   div.grid_24 section.content #mask3 article.contentbox {
+    position: absolute;
     width: 100%;
     min-height: 225px;
     height: auto;
     margin: 0.5em;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     padding: 0 2.5em;
   }
   div.grid_24 section.content #mask article.contentbox h1,
@@ -1422,6 +1415,8 @@ button#myBtn:hover {
     text-transform: uppercase;
     text-shadow: 1px 2px 1px #165404;
     -webkit-transition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s;
     transition: all 0.2s ease-in 0s;
   }
   div.grid_24 section.content #mask article.contentbox a.content-button:hover,
@@ -1449,28 +1444,27 @@ button#myBtn:hover {
     height: 100%;
     width: 80%;
     margin: auto;
+    display: -webkit-flex;
     display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
+    -webkit-flex-flow: row;
     -ms-flex-flow: row;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-flow: row;
+    flex-flow: row;
+    -webkit-justify-content: center;
     -ms-flex-pack: center;
-    -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   footer ul li {
     float: left;
     height: 50px;
     width: 12%;
     margin: 0;
+    -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
-    -webkit-box-flex: 1;
-            flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-align-items: center;
     -ms-flex-align: center;
-    -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
   }
   footer ul li a {
     line-height: 50px;
@@ -1549,8 +1543,7 @@ button#myBtn:hover {
   header .socials ul li a i.fa-facebook:hover,
   header .socials ul li a i.fa-google:hover,
   header .socials ul li a i.fa-instagram:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
   nav#mobile-nav {
     display: none;
@@ -1703,9 +1696,7 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
     font-size: 0.95em;
   }
   div.grid_24 section.content .text address#recycle-contact {
@@ -2274,9 +2265,7 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     padding: 0.5em;
@@ -2561,9 +2550,7 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
     font-size: 0.9em;
   }
   div.grid_24 section.content .text address#recycle-contact {
@@ -3006,9 +2993,7 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     padding: 0.5em;
@@ -3446,9 +3431,7 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     padding: 0.5em;
@@ -3898,9 +3881,7 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     padding: 0.5em;
@@ -4332,9 +4313,7 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     padding: 0.5em;
@@ -4762,9 +4741,7 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     padding: 0.5em;
@@ -5201,9 +5178,7 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     padding: 0.5em;
@@ -5501,6 +5476,8 @@ button#myBtn:hover {
     color: #ffffff;
     border: none;
     -webkit-transition: all ease-out 400ms;
+    -moz-transition: all ease-out 400ms;
+    -o-transition: all ease-out 400ms;
     transition: all ease-out 400ms;
     height: 60px;
     width: 70px;
@@ -5537,10 +5514,9 @@ button#myBtn:hover {
   }
   nav#mobile-nav ul {
     height: 100%;
+    -webkit-flex-flow: column;
     -ms-flex-flow: column;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-flow: column;
+    flex-flow: column;
     margin-right: 0;
     margin: 0;
     width: 100%;
@@ -5576,10 +5552,9 @@ button#myBtn:hover {
   }
   nav ul {
     height: 100%;
+    -webkit-flex-flow: column;
     -ms-flex-flow: column;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-flow: column;
+    flex-flow: column;
     margin-right: 0;
     margin: 0;
     width: 100%;
@@ -5661,16 +5636,15 @@ button#myBtn:hover {
   }
   div.grid_24 main.content #home_contentboxes {
     height: auto;
+    -webkit-flex-flow: column;
     -ms-flex-flow: column;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-flow: column;
+    flex-flow: column;
+    -webkit-justify-content: center;
     -ms-flex-pack: center;
-    -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
     -ms-flex-align: center;
-    -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
     /*contentbox*/
   }
   div.grid_24 main.content #home_contentboxes article.home_contentbox {
@@ -5751,9 +5725,7 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 100%;
   }
   div.grid_24 section.content .text address#recycle-contact {
@@ -6200,9 +6172,7 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     padding: 0.5em;
@@ -6661,9 +6631,7 @@ button#myBtn:hover {
   }
   div.grid_24 section.content .text p#diff_mat_text {
     font-size: 0.8em;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     padding: 0.5em;
@@ -7083,9 +7051,7 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     margin: 0.25em;
@@ -7315,10 +7281,10 @@ button#myBtn:hover {
   div.grid_24 section.content #collection-boxes {
     float: none;
     display: block;
+    -webkit-flex-flow: column;
     -ms-flex-flow: column;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-flow: column;
+    flex-flow: column;
+    -webkit-justify-content: space-around;
     -ms-flex-pack: justify;
     justify-content: space-around;
   }
@@ -7523,9 +7489,7 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     margin: 0.25em;
@@ -7953,9 +7917,7 @@ button#myBtn:hover {
   }
   div.grid_24 section.content .text p#diff_mat_text {
     font-size: 0.75em;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     margin: 0.25em;
@@ -8372,9 +8334,7 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     padding: 0.25em;
@@ -8587,4 +8547,3 @@ button#myBtn:hover {
     font-size: 0.5em;
   }
 }
-/*# sourceMappingURL=style.css.map */
