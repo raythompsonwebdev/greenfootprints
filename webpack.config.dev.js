@@ -57,20 +57,15 @@ export default {
           },
         },
       },
-      {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
+
       {
         test: /\.scss$/,
         use: [
 
           { loader: 'style-loader' },
           {
-            loader: 'css-loader',
-            options: {
-              modules: true
-            }
+            loader: 'css-loader'
+
           },
           { loader: 'sass-loader' },
         ],
