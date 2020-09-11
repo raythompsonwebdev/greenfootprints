@@ -5,8 +5,8 @@ import open from 'open';
 import webpack from 'webpack';
 import config from '../webpack.config.dev';
 var routes = require('../routes/main');
-const handlebars = require('express-handlebars')
-var sassMiddleware = require('node-sass-middleware')
+const handlebars = require('express-handlebars');
+var sassMiddleware = require('node-sass-middleware');
 
 /* eslint-disable no-console */
 const PORT = process.env.PORT || 3000;
@@ -47,9 +47,6 @@ app.engine(
 );
 
 app.use('/', routes);
-
-app.use('/contact', routes);
-
 
 app.get('/users', function(req, res) {
   res.json([

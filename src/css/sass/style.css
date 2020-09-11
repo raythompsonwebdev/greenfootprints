@@ -449,10 +449,6 @@ button#myBtn:hover {
     text-shadow: 0 0 0 #165404;
     cursor: pointer;
   }
-  /*Mobile Navigation*/
-  nav#mobile-nav {
-    display: none;
-  }
   /*Navigation*/
   nav {
     height: 50px;
@@ -537,6 +533,10 @@ button#myBtn:hover {
     background-color: #ffffff;
     color: #5e8b33;
     text-shadow: none;
+  }
+  /*Mobile Navigation*/
+  nav#mobile-nav {
+    display: none;
   }
   /*Collections Section*/
   div#collections {

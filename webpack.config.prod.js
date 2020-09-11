@@ -14,7 +14,7 @@ export default {
   entry: {
     //allows third party vendors to be added and bundled seperately
     vendor: path.resolve(__dirname, './src/vendor'),
-    main: path.resolve(__dirname, './src/views/layouts/index')
+    main: path.resolve(__dirname, "./src/index")
   },
   target: 'web',
   output: {
@@ -50,7 +50,7 @@ export default {
     new HtmlWebpackPlugin({
       inject: true, //dynamically adds script tags
       hash: true,
-      template: './src/views/layouts/index.hbs',
+      template: path.resolve("./views/layouts/index.hbs"),
       filename: 'index.html',
       minify: {
         removeComments: true,
@@ -93,13 +93,25 @@ export default {
             }
         },
         {
+          test: /\.html$/,
+          loader: "html-loader",
+        },
+        {
+          test: /\.css$/,
+          use: [ MiniCssExtractPlugin.loader,'style-loader', 'css-loader'],
+        },
+        {
             test: /\.scss$/,
             use: [
+              MiniCssExtractPlugin.loader,
+
               {
-                loader: MiniCssExtractPlugin.loader
+                loader: 'css-loader',
+                options: {
+                  modules: true
+                }
               },
-              "css-loader",
-              "sass-loader"
+              { loader: 'sass-loader' },
             ]
         },
         //file loader for fonts

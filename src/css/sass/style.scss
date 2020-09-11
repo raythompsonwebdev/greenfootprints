@@ -229,11 +229,6 @@ button#myBtn:hover {
     /*social media icons*/
   }
 
-  /*Mobile Navigation*/
-  nav#mobile-nav {
-    display: none;
-  }
-
   /*Navigation*/
   nav {
     height: 50px;
@@ -325,6 +320,11 @@ button#myBtn:hover {
         }
       }
     }
+  }
+
+  /*Mobile Navigation*/
+  nav#mobile-nav {
+    display: none;
   }
 
   /*Collections Section*/
