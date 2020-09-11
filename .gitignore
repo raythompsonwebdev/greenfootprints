@@ -69,36 +69,31 @@ package.json
 
 .htaccess
 
-src/dist/
-src/images/
 src/images/
 src/fonts/
 src/favicons/
-src/data/
 
-src/css/
-src/css/min/
+src/css/normalize.css.map
 src/css/style.css.map
 src/css/ie.css.map
+src/css/ie.min-css.map
+src/css/ie.css.map
+src/css/style-min.css.map
+src/css/style.css.map
 
-src/ie.min-css.map
-src/ie.css.map
-src/style-min.css.map
-src/style.css.map
+src/css/partials/_base.css
+src/css/partials/_base.css.map
+src/css/partials/_base.min.css
+src/css/partials/_fonts.css
+src/css/partials/_fonts.css.map
+src/css/partials/_fonts.min.css
+src/css/partials/_mixins.css
+src/css/partials/_mixins.css.map
+src/css/partials/_mixins.min.css
+src/css/partials/_variables.css
+src/css/partials/_variables.css.map
+src/css/partials/_variables.min.css
 
-src/js/
-src/js/old-browser-scripts/
-src/js/jquery.easing.1.3.js
-src/js/jquery.validate.min.js
-src/js/sw.js
-src/js/site.js
-dist/
-api/
-routes/
-views/
-
-
-/greenfootprints/nbproject/private/
-/src/nbproject/private/
-
+nbproject/private/
+src/nbproject/private/
 nbproject/
