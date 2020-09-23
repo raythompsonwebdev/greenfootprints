@@ -6,7 +6,6 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 
-
 export default {
 
   mode: 'production',
@@ -51,8 +50,9 @@ export default {
       inject: true, //dynamically adds script tags
       hash: true,
       template: path.resolve("./views/layouts/index.hbs"),
-      filename: 'index.html',
+      filename: 'index.hbs',
       minify: {
+        html5: true,
         removeComments: true,
         collapseWhitespace: true,
         removeRedundantAttributes: true,
