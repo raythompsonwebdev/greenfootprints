@@ -449,9 +449,8 @@ button#myBtn:hover {
     text-shadow: 0 0 0 #165404;
     cursor: pointer;
   }
-  /*Navigation*/
   nav {
-    height: 50px;
+    height: 60px;
     text-align: center;
     margin: 0.5em 0;
     z-index: 10;
@@ -553,7 +552,7 @@ button#myBtn:hover {
     display: block;
     width: 100%;
     float: none;
-    min-height: 840px;
+    min-height: 80vh;
     padding: 0;
     /*Slider*/
     /*Home Page Content*/
@@ -1131,7 +1130,7 @@ button#myBtn:hover {
   div.grid_24 section.content #collection-boxes {
     position: relative;
     z-index: 1;
-    min-height: 400px;
+    height: auto;
   }
   div.grid_24 section.content #mask,
   div.grid_24 section.content #mask_two,
@@ -1211,7 +1210,7 @@ button#myBtn:hover {
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
   }
   div.grid_24 section.content #mask article.recycle-facts p,
   div.grid_24 section.content #mask_two article.recycle-facts p,

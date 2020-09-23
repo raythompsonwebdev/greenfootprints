@@ -3,8 +3,6 @@ import "./src/css/sass/style.scss";
 import $ from "jquery";
 import showSlides from "./src/js/slideShoes.js";
 
-
-
 /* eslint-disable no-console */
 
 
@@ -38,7 +36,6 @@ import showSlides from "./src/js/slideShoes.js";
   });
 
 })();
-
 
 //show and hide scroll to top button ******************************************
 function toTopBtn() {

@@ -28,8 +28,8 @@ export default {
 
     new StyleLintPlugin({
       configFile: "./.stylelintrc.json",
-      files: "./src/css/*.scss",
-      syntax: "scss",
+      files: "./src/css/sass/*.scss",
+      syntax: "scss"
     }),
   ],
 

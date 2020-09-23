@@ -73,26 +73,27 @@ src/images/
 src/fonts/
 src/favicons/
 
-src/css/normalize.css.map
-src/css/style.css.map
-src/css/ie.css.map
-src/css/ie.min-css.map
-src/css/ie.css.map
-src/css/style-min.css.map
-src/css/style.css.map
+src/css/sass/normalize.css.map
+src/css/sass/style.css.map
+src/css/sass/ie.css.map
+src/css/sass/ie.min-css.map
+src/css/sass/ie.css.map
+src/css/sass/style.css
+src/css/sass/style-min.css.map
+src/css/sass/style.css.map
 
-src/css/partials/_base.css
-src/css/partials/_base.css.map
-src/css/partials/_base.min.css
-src/css/partials/_fonts.css
-src/css/partials/_fonts.css.map
-src/css/partials/_fonts.min.css
-src/css/partials/_mixins.css
-src/css/partials/_mixins.css.map
-src/css/partials/_mixins.min.css
-src/css/partials/_variables.css
-src/css/partials/_variables.css.map
-src/css/partials/_variables.min.css
+src/css/sass/partials/_base.css
+src/css/sass/partials/_base.css.map
+src/css/sass/partials/_base.min.css
+src/css/sass/partials/_fonts.css
+src/css/sass/partials/_fonts.css.map
+src/css/sass/partials/_fonts.min.css
+src/css/sass/partials/_mixins.css
+src/css/sass/partials/_mixins.css.map
+src/css/sass/partials/_mixins.min.css
+src/css/sass/partials/_variables.css
+src/css/sass/partials/_variables.css.map
+src/css/sass/partials/_variables.min.css
 
 nbproject/private/
 src/nbproject/private/

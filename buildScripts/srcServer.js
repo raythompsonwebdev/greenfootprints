@@ -6,7 +6,7 @@ import webpack from 'webpack';
 import config from '../webpack.config.dev';
 var routes = require('../routes/main');
 const handlebars = require('express-handlebars');
-var sassMiddleware = require('node-sass-middleware');
+//var sassMiddleware = require('node-sass-middleware');
 
 /* eslint-disable no-console */
 const PORT = process.env.PORT || 3000;
@@ -20,18 +20,17 @@ app.use(require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath
 }));
 
-
 app.set("views", path.resolve(__dirname, '../views/') );
 app.set("view engine", "hbs");
 
-app.use(sassMiddleware({
-  /* Options */
-  src: path.resolve(__dirname, '../src/css/sass/'),
-  dest: path.resolve(__dirname, '../src/css/'),
-  debug: true,
-  outputStyle: 'compressed',
-  prefix:  '/prefix'  // Where prefix is at <link rel="stylesheets" href="prefix/style.css"/>
-}));
+// app.use(sassMiddleware({
+//   /* Options */
+//   src: path.resolve(__dirname, '../src/css/sass/'),
+//   dest: path.resolve(__dirname, '../src/css/'),
+//   debug: true,
+//   outputStyle: 'compressed',
+//   prefix:  '/prefix'  // Where prefix is at <link rel="stylesheets" href="prefix/style.css"/>
+// }));
 
 app.use(express.static(path.join(__dirname, "../src")));
 

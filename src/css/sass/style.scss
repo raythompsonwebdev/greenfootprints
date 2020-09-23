@@ -229,9 +229,9 @@ button#myBtn:hover {
     /*social media icons*/
   }
 
-  /*Navigation*/
+
   nav {
-    height: 50px;
+    height: 60px;
     text-align: center;
     margin: 0.5em 0;
     z-index: 10;
@@ -344,7 +344,7 @@ button#myBtn:hover {
     display: block;
     width: 100%;
     float: none;
-    min-height: 840px;
+    min-height: 80vh;
     padding: 0;
 
     /*Slider*/
@@ -478,6 +478,7 @@ button#myBtn:hover {
       margin: 0;
       padding: 0.5em;
       height: auto;
+
       /*Home Page Content boxes*/
       #home_contentboxes {
         height: 310px;
@@ -692,15 +693,18 @@ button#myBtn:hover {
           width: 100%;
           display: block;
           flex: 0 0 auto;
+
           img {
             display: inline-block;
             margin: 0 2.5em;
             width: 7%;
           }
+
           figcaption {
             width: 57%;
             display: block;
             float: right;
+
             p {
               flex: 0 0 auto;
               width: 100%;
@@ -770,6 +774,7 @@ button#myBtn:hover {
           p#location {
             width: 45%;
             line-height: 25px;
+
             &:before {
               font-family: "FontAwesome";
               content: "\f015";
@@ -778,6 +783,7 @@ button#myBtn:hover {
 
           p#telephone {
             width: 50%;
+
             &::before {
               font-family: "FontAwesome";
               content: "\f098";
@@ -786,6 +792,7 @@ button#myBtn:hover {
 
           span#email {
             width: 50%;
+
             &::before {
               font-family: "FontAwesome";
               content: "\f0e0";
@@ -982,7 +989,7 @@ button#myBtn:hover {
       #collection-boxes {
         position: relative;
         z-index: 1;
-        min-height: 400px;
+        height: auto;
       }
 
       #mask,
@@ -1056,7 +1063,8 @@ button#myBtn:hover {
           width: 100%;
           height: 100%;
           position: absolute;
-          z-index: 1;
+          z-index: 2;
+
           p {
             font-size: 1em;
           }
@@ -1090,6 +1098,7 @@ button#myBtn:hover {
               font-size: 0.9em;
               height: auto;
               clear: left;
+
               &:before {
                 font-family: "FontAwesome";
                 content: "\f1b8";
@@ -1248,6 +1257,7 @@ button#myBtn:hover {
       }
     }
   }
+
   /*Footer*/
   footer {
     height: 50px;
@@ -1483,9 +1493,11 @@ button#myBtn:hover {
     }
 
     main.content {
+
       /*Content boxes*/
       #home_contentboxes {
         height: 295px;
+
         article.home_contentbox {
           width: 31.5%;
 
@@ -1528,6 +1540,7 @@ button#myBtn:hover {
     }
 
     section.content {
+
       /*Content*/
       background-color: $contentbg;
 
@@ -1563,6 +1576,7 @@ button#myBtn:hover {
           img {
             display: inline-block;
           }
+
           figcaption {
             width: 56%;
 
@@ -1694,6 +1708,7 @@ button#myBtn:hover {
       #facts_box {
         height: auto;
       }
+
       /* The dots/bullets/indicators */
       #mask,
       #mask_two,
@@ -1913,6 +1928,7 @@ button#myBtn:hover {
             text-shadow: none;
           }
         }
+
         a[href^="#whatcando"] {
           font-size: 80%;
         }
@@ -1985,6 +2001,7 @@ button#myBtn:hover {
 
     main.content {
       #home_contentboxes {
+
         /*contentbox*/
         article.home_contentbox {
           width: 31.3%;
@@ -2022,6 +2039,7 @@ button#myBtn:hover {
                   background-color: $colortxtbg;
                 }
               }
+
               a[title~="wordsearch.gif"] {
                 display: inline-block;
                 width: 100%;
@@ -2039,12 +2057,15 @@ button#myBtn:hover {
         content: ".";
         color: $contentbg;
       }
+
       h1 {
         font-size: 1.6em;
       }
+
       #summary {
         width: 80%;
       }
+
       #facts_box {
         height: auto;
       }
@@ -2055,6 +2076,7 @@ button#myBtn:hover {
       #mask_two,
       #mask3 {
         width: 100%;
+
         article.collection-box {
           h1 {
             font-size: 1.2em;
@@ -2078,6 +2100,7 @@ button#myBtn:hover {
           ul {
             list-style: none;
             width: 94%;
+
             li {
               font-size: 0.85em;
 
@@ -2161,6 +2184,7 @@ button#myBtn:hover {
 
       .text {
         padding: 0.25em;
+
         h1 {
           font-size: 1.7em;
         }
@@ -2180,6 +2204,7 @@ button#myBtn:hover {
           img {
             display: inline-block;
           }
+
           figcaption {
             width: 53%;
 
@@ -2482,6 +2507,7 @@ button#myBtn:hover {
     main.content {
       #home_contentboxes {
         height: 275px;
+
         article.home_contentbox {
           width: 31.3%;
 
@@ -2524,6 +2550,7 @@ button#myBtn:hover {
     }
 
     section.content {
+
       /*Content*/
       background-color: $contentbg;
 
@@ -2562,6 +2589,7 @@ button#myBtn:hover {
             display: inline-block;
             margin: 0 2em;
           }
+
           figcaption {
             width: 50%;
 
@@ -2923,6 +2951,7 @@ button#myBtn:hover {
             text-shadow: none;
           }
         }
+
         a[href^="#whatcando"] {
           font-size: 75%;
         }
@@ -2933,6 +2962,7 @@ button#myBtn:hover {
   div.grid_24 {
     #slider {
       height: 330px;
+
       div.main-slider {
         height: 100%;
 
@@ -2949,6 +2979,7 @@ button#myBtn:hover {
 
               div.slider-caption {
                 width: 59%;
+
                 h1 {
                   font-size: 2.2em;
                 }
@@ -2997,6 +3028,7 @@ button#myBtn:hover {
         height: 300px;
         margin: 0;
         padding: 0.25em;
+
         article.home_contentbox {
           width: 31%;
           margin: 0.25em;
@@ -3041,6 +3073,7 @@ button#myBtn:hover {
     }
 
     section.content {
+
       /*Content*/
       background-color: $contentbg;
 
@@ -3077,6 +3110,7 @@ button#myBtn:hover {
           img {
             display: inline-block;
           }
+
           figcaption {
             width: 50%;
 
@@ -3214,6 +3248,7 @@ button#myBtn:hover {
       #mask3 {
         width: 100%;
         min-height: 620px;
+
         article.collection-box {
           h1 {
             font-size: 1.2em;
@@ -3416,6 +3451,7 @@ button#myBtn:hover {
     div.nav-title {
       width: 9%;
       margin-right: 0.25em;
+
       h1 {
         font-size: 0.9rem;
       }
@@ -3592,6 +3628,7 @@ button#myBtn:hover {
             display: inline-block;
             margin: 0.5em 1.5em;
           }
+
           figcaption {
             width: 56%;
 
@@ -3740,6 +3777,7 @@ button#myBtn:hover {
       #mask_two,
       #mask3 {
         width: 100%;
+
         article.collection-box {
           h1 {
             font-size: 1.2em;
@@ -3964,6 +4002,7 @@ button#myBtn:hover {
             text-shadow: none;
           }
         }
+
         a[href^="#whatcando"] {
           font-size: 60%;
         }
@@ -3976,6 +4015,7 @@ button#myBtn:hover {
 
     #slider {
       margin: 0.25em 0;
+
       div.main-slider {
         height: 100%;
 
@@ -4032,6 +4072,7 @@ button#myBtn:hover {
 
     main.content {
       #home_contentboxes {
+
         /*contentbox*/
         article.home_contentbox {
           width: 31%;
@@ -4077,6 +4118,7 @@ button#myBtn:hover {
     section.content {
       background-color: $contentbg;
       min-height: 900px;
+
       &:after {
         content: ".";
         color: $contentbg;
@@ -4122,6 +4164,7 @@ button#myBtn:hover {
           img {
             display: inline-block;
           }
+
           figcaption {
             width: 56%;
 
@@ -4259,6 +4302,7 @@ button#myBtn:hover {
       #mask3 {
         width: 100%;
         min-height: 800px;
+
         article.collection-box {
           padding: 0 1em;
 
@@ -4485,7 +4529,6 @@ button#myBtn:hover {
   }
 
   div.grid_24 {
-
     #slider {
       div.main-slider {
         height: 100%;
@@ -4496,6 +4539,7 @@ button#myBtn:hover {
           ul.slides {
             li {
               padding: 1em 0.5em;
+
               img {
                 z-index: 2;
               }
@@ -4545,6 +4589,7 @@ button#myBtn:hover {
 
     main.content {
       #home_contentboxes {
+
         /*contentbox*/
         article.home_contentbox {
           width: 31.5%;
@@ -4638,6 +4683,7 @@ button#myBtn:hover {
             display: inline-block;
             margin: 0.5em 1.2em;
           }
+
           figcaption {
             width: 56%;
 
@@ -4794,6 +4840,7 @@ button#myBtn:hover {
           ul {
             list-style: none;
             width: 88%;
+
             li {
               font-size: 0.75em;
               line-height: 15px;
@@ -4993,6 +5040,7 @@ button#myBtn:hover {
   div.grid_24 {
     #slider {
       height: 270px;
+
       div.main-slider {
         height: 100%;
 
@@ -5049,6 +5097,7 @@ button#myBtn:hover {
 
     main.content {
       #home_contentboxes {
+
         /*contentbox*/
         article.home_contentbox {
           width: 31.5%;
@@ -5144,6 +5193,7 @@ button#myBtn:hover {
             margin: 1em;
             width: 8.5%;
           }
+
           figcaption {
             width: 56%;
 
@@ -5273,6 +5323,7 @@ button#myBtn:hover {
       #mask3 {
 
         min-height: 815px;
+
         article.collection-box {
           padding: 0 1em;
 
@@ -5322,6 +5373,7 @@ button#myBtn:hover {
             cursor: pointer;
           }
         }
+
         .active,
         .recycle-facts__dots--dot:hover {
           background-color: #717171;
@@ -5414,6 +5466,7 @@ button#myBtn:hover {
   div.container_24 {
     width: 98%;
   }
+
   header {
     padding: 0.2em;
 
@@ -5489,6 +5542,7 @@ button#myBtn:hover {
             text-shadow: none;
           }
         }
+
         a[href^="#whatcando"] {
           font-size: 52%;
         }
@@ -5569,6 +5623,7 @@ button#myBtn:hover {
     main.content {
       #home_contentboxes {
         height: 280px;
+
         article.home_contentbox {
           h1 {
             font-size: 0.85em;
@@ -5656,6 +5711,7 @@ button#myBtn:hover {
           img {
             display: inline-block;
           }
+
           figcaption {
             width: 53%;
 
@@ -6032,6 +6088,7 @@ button#myBtn:hover {
     width: 100%;
     height: 360px;
     margin: 0;
+
     ul {
       height: 100%;
       -webkit-flex-flow: column;
@@ -6067,6 +6124,7 @@ button#myBtn:hover {
 
   nav {
     display: none;
+
     div.nav-title {
       display: none;
 
@@ -6108,12 +6166,14 @@ button#myBtn:hover {
       }
     }
   }
+
   nav.hide {
     left: -5.5em;
   }
 
   div.grid_24 {
     height: auto;
+
     #slider {
       height: 250px;
 
@@ -6193,6 +6253,7 @@ button#myBtn:hover {
         -webkit-align-items: center;
         -ms-flex-align: center;
         align-items: center;
+
         /*contentbox*/
         article.home_contentbox {
           width: 78%;
@@ -6284,6 +6345,7 @@ button#myBtn:hover {
             width: 18%;
             margin: 1em 2.25em;
           }
+
           figcaption {
             width: 100%;
 
@@ -6539,6 +6601,7 @@ button#myBtn:hover {
     ul {
       height: 50px;
       display: none;
+
       li {
         height: 50px;
 
@@ -6630,6 +6693,7 @@ button#myBtn:hover {
   nav#mobile-nav {
     ul {
       height: 360px;
+
       li {
         height: 45px;
 
@@ -6667,6 +6731,7 @@ button#myBtn:hover {
 
               div.slider-caption {
                 width: 56%;
+
                 h1 {
                   font-size: 1.3em;
                   line-height: 30px;
@@ -6716,6 +6781,7 @@ button#myBtn:hover {
     main.content {
       #home_contentboxes {
         height: auto;
+
         /*contentbox*/
         article.home_contentbox {
           h1 {
@@ -6806,6 +6872,7 @@ button#myBtn:hover {
             display: inline-block;
             width: 16%;
           }
+
           figcaption {
             p {
               width: 100%;
@@ -6958,6 +7025,7 @@ button#myBtn:hover {
           ul {
             list-style: none;
             width: 96%;
+
             li {
               font-size: 0.75em;
 
@@ -7081,6 +7149,7 @@ button#myBtn:hover {
   div.container_24 {
     width: 98%;
   }
+
   header {
     padding: 0.2em;
 
@@ -7167,6 +7236,7 @@ button#myBtn:hover {
 
   div.grid_24 {
     min-height: 520px;
+
     #slider {
       height: 250px;
 
@@ -7238,9 +7308,11 @@ button#myBtn:hover {
 
     main.content {
       #home_contentboxes {
+
         /*contentbox*/
         article.home_contentbox {
           width: 96%;
+
           h1 {
             font-size: 1em;
             line-height: 30px;
@@ -7334,6 +7406,7 @@ button#myBtn:hover {
             margin: 1em 2em;
             width: 15%;
           }
+
           figcaption {
             p {
               font-size: 0.8em;
@@ -7462,6 +7535,7 @@ button#myBtn:hover {
       #mask3 {
         width: 100%;
         min-height: 520px;
+
         article.collection-box {
           padding: 0 1em;
 
@@ -7610,6 +7684,7 @@ button#myBtn:hover {
   div.container_24 {
     width: 98%;
   }
+
   header {
     padding: 0.2em;
 
@@ -7682,6 +7757,7 @@ button#myBtn:hover {
   nav {
     display: none;
   }
+
   nav.hide {
     left: -5.5em;
   }
@@ -7748,6 +7824,7 @@ button#myBtn:hover {
       #home_contentboxes {
         article.home_contentbox {
           width: 96%;
+
           h1 {
             font-size: 1em;
             line-height: 30px;
@@ -7838,6 +7915,7 @@ button#myBtn:hover {
             margin: 1em 1.5em;
             width: 18%;
           }
+
           figcaption {
             p {
               width: 100%;
@@ -8132,6 +8210,7 @@ button#myBtn:hover {
   div.container_24 {
     width: 98%;
   }
+
   header {
     padding: 0.2em;
 
@@ -8207,6 +8286,7 @@ button#myBtn:hover {
   nav {
     display: none;
   }
+
   nav.hide {
     left: -5.5em;
   }
@@ -8360,6 +8440,7 @@ button#myBtn:hover {
             margin: 1em 1.5em;
             width: 18%;
           }
+
           figcaption {
             p {
               width: 100%;
@@ -8572,6 +8653,7 @@ button#myBtn:hover {
           p {
             font-size: 0.85em;
           }
+
           #tenImageTwo,
           #tenImageThree,
           #tenImageFour,
@@ -8707,6 +8789,7 @@ button#myBtn:hover {
   nav {
     display: none;
   }
+
   nav.hide {
     left: -5.5em;
   }
@@ -8860,6 +8943,7 @@ button#myBtn:hover {
             margin: 1em;
             width: 21%;
           }
+
           figcaption {
             p {
               font-size: 0.75em;
@@ -9010,6 +9094,7 @@ button#myBtn:hover {
           ul {
             list-style: none;
             width: 76%;
+
             li {
               font-size: 0.7em;
 
@@ -9130,6 +9215,7 @@ button#myBtn:hover {
   div.container_24 {
     width: 98%;
   }
+
   header {
     padding: 0.2em;
 
@@ -9205,6 +9291,7 @@ button#myBtn:hover {
   nav {
     display: none;
   }
+
   nav.hide {
     left: -5.5em;
   }
@@ -9358,6 +9445,7 @@ button#myBtn:hover {
           img {
             width: 20%;
           }
+
           figcaption {
             p {
               width: 100%;
