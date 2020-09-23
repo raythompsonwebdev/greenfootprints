@@ -996,7 +996,7 @@ button#myBtn:hover {
       #mask_two,
       #mask3 {
         width: 100%;
-        min-height: 650px;
+        min-height: 570px;
         position: relative;
         overflow: hidden;
         z-index: 2;
@@ -1103,7 +1103,6 @@ button#myBtn:hover {
                 font-family: "FontAwesome";
                 content: "\f1b8";
                 font-style: normal;
-
                 line-height: 50px;
                 color: $headbg;
                 display: block;
@@ -1113,15 +1112,6 @@ button#myBtn:hover {
                 width: 50px;
                 height: 50px;
                 float: left;
-              }
-            }
-
-            li:last-of-type {
-              height: auto;
-              display: inline-block;
-
-              &::before {
-                display: none;
               }
             }
           }
@@ -1746,13 +1736,6 @@ button#myBtn:hover {
               }
             }
 
-            li:last-of-type {
-              height: auto;
-
-              &::before {
-                display: none;
-              }
-            }
           }
         }
 
@@ -2110,13 +2093,6 @@ button#myBtn:hover {
               }
             }
 
-            li:last-of-type {
-              height: auto;
-
-              &::before {
-                display: none;
-              }
-            }
           }
         }
 
@@ -2762,13 +2738,6 @@ button#myBtn:hover {
               }
             }
 
-            li:last-of-type {
-              height: auto;
-
-              &::before {
-                display: none;
-              }
-            }
           }
         }
 
@@ -3283,13 +3252,6 @@ button#myBtn:hover {
               }
             }
 
-            li:last-of-type {
-              height: auto;
-
-              &::before {
-                display: none;
-              }
-            }
           }
         }
 
@@ -3806,14 +3768,6 @@ button#myBtn:hover {
 
               &:before {
                 font-size: 1.1em;
-              }
-            }
-
-            li:last-of-type {
-              height: auto;
-
-              &::before {
-                display: none;
               }
             }
           }
@@ -4335,14 +4289,6 @@ button#myBtn:hover {
                 font-size: 1.1em;
               }
             }
-
-            li:last-of-type {
-              height: auto;
-
-              &::before {
-                display: none;
-              }
-            }
           }
         }
 
@@ -4850,14 +4796,6 @@ button#myBtn:hover {
                 font-size: 1.1em;
               }
             }
-
-            li:last-of-type {
-              height: auto;
-
-              &::before {
-                display: none;
-              }
-            }
           }
         }
 
@@ -5353,14 +5291,6 @@ button#myBtn:hover {
 
               &:before {
                 font-size: 1.2em;
-              }
-            }
-
-            li:last-of-type {
-              height: auto;
-
-              &::before {
-                display: none;
               }
             }
           }
@@ -5870,14 +5800,6 @@ button#myBtn:hover {
 
               &:before {
                 font-size: 1.2em;
-              }
-            }
-
-            li:last-of-type {
-              height: auto;
-
-              &::before {
-                display: none;
               }
             }
           }
@@ -6517,14 +6439,6 @@ button#myBtn:hover {
                 font-size: 1.3em;
               }
             }
-
-            li:last-of-type {
-              height: auto;
-
-              &::before {
-                display: none;
-              }
-            }
           }
         }
 
@@ -7031,14 +6945,6 @@ button#myBtn:hover {
 
               &:before {
                 font-size: 1.3em;
-              }
-            }
-
-            li:last-of-type {
-              height: auto;
-
-              &::before {
-                display: none;
               }
             }
           }
@@ -7570,14 +7476,6 @@ button#myBtn:hover {
                 font-size: 1.3em;
               }
             }
-
-            li:last-of-type {
-              height: auto;
-
-              &::before {
-                display: none;
-              }
-            }
           }
         }
 
@@ -8086,14 +7984,6 @@ button#myBtn:hover {
                 font-size: 1.3em;
               }
             }
-
-            li:last-of-type {
-              height: auto;
-
-              &::before {
-                display: none;
-              }
-            }
           }
         }
 
@@ -8598,14 +8488,6 @@ button#myBtn:hover {
                 font-size: 1.2em;
               }
             }
-
-            li:last-of-type {
-              height: auto;
-
-              &::before {
-                display: none;
-              }
-            }
           }
         }
 
@@ -9104,14 +8986,6 @@ button#myBtn:hover {
                 font-size: 1.15em;
               }
             }
-
-            li:last-of-type {
-              height: auto;
-
-              &::before {
-                display: none;
-              }
-            }
           }
         }
 
@@ -9582,14 +9456,6 @@ button#myBtn:hover {
 
               &:before {
                 font-size: 1.1em;
-              }
-            }
-
-            li:last-of-type {
-              height: auto;
-
-              &::before {
-                display: none;
               }
             }
           }
