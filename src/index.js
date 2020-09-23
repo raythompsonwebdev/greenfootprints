@@ -1,7 +1,6 @@
 import "./css/sass/normalize.scss";
 import "./css/sass/style.scss";
 //import $ from "jquery";
-//import showSlides from "./js/slideShoes.js";
 
 /* eslint-disable no-console */
 
@@ -52,8 +51,7 @@ menuLinks.forEach(function (e) {
   );
 });
 
-//slideshow ******************************************
-//showSlides();
+
 
 
 
