@@ -65,7 +65,7 @@ Files/
 test/
 .sass-cache/
 .settings/
-package.json
+
 .vscode/
 
 .htaccess
