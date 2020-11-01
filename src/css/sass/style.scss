@@ -229,7 +229,6 @@ button#myBtn:hover {
     /*social media icons*/
   }
 
-
   nav {
     height: 60px;
     text-align: center;
@@ -601,7 +600,7 @@ button#myBtn:hover {
       display: block;
       width: 100%;
       margin: 0;
-      padding: 0.5em;
+      padding: 0 0.5em;
       height: auto;
 
       &:after {
@@ -822,18 +821,18 @@ button#myBtn:hover {
         }
 
         ul#different-materials {
-          padding: 0.25em;
+          padding: 0;
           width: 42%;
           display: block;
           -webkit-align-self: center;
           -ms-flex-item-align: center;
           align-self: center;
-          margin: 0 0 0.25em 0.25em;
+          margin: 0;
 
           li {
             list-style: none;
             text-indent: 0;
-            line-height: 30px;
+            line-height: 25px;
             display: inline-block;
             width: 48%;
             text-align: left;
@@ -845,7 +844,7 @@ button#myBtn:hover {
               font-family: "FontAwesome";
               content: "\f1b8";
               font-style: normal;
-              line-height: 30px;
+              line-height: 25px;
               color: $headbg;
               display: block;
               padding: 0;
@@ -875,7 +874,7 @@ button#myBtn:hover {
           -webkit-align-self: center;
           -ms-flex-item-align: center;
           align-self: center;
-          margin: 0.5em;
+          margin: 0 0.5em;
           width: 10%;
           height: auto;
         }
@@ -1056,6 +1055,11 @@ button#myBtn:hover {
             line-height: 1.5em;
             font-size: 1em;
           }
+
+          img#tenImageTwo {
+            margin: 1em auto;
+            display: block;
+          }
         }
 
         article.recycle-facts {
@@ -1184,7 +1188,7 @@ button#myBtn:hover {
           h1 {
             text-indent: 0;
             height: auto;
-            line-height: 60px;
+            line-height: 50px;
             font-size: 1.3em;
             color: $colortxt;
             background-color: $bgcolor;
@@ -1729,13 +1733,10 @@ button#myBtn:hover {
             list-style: none;
 
             li {
-              font-size: 0.9em;
-
               &:before {
                 font-size: 1.5em;
               }
             }
-
           }
         }
 
@@ -2085,14 +2086,13 @@ button#myBtn:hover {
             width: 94%;
 
             li {
-              font-size: 0.85em;
+              font-size: 0.9em;
 
               &:before {
                 width: 40px;
                 font-size: 1.5em;
               }
             }
-
           }
         }
 
@@ -2731,13 +2731,10 @@ button#myBtn:hover {
             list-style: none;
 
             li {
-              font-size: 0.85em;
-
               &:before {
                 font-size: 1.2em;
               }
             }
-
           }
         }
 
@@ -3243,7 +3240,7 @@ button#myBtn:hover {
 
             li {
               line-height: 25px;
-              font-size: 0.8em;
+              font-size: 0.85em;
 
               &:before {
                 font-size: 1.3em;
@@ -3251,7 +3248,6 @@ button#myBtn:hover {
                 line-height: 25px;
               }
             }
-
           }
         }
 
@@ -3548,7 +3544,7 @@ button#myBtn:hover {
       }
 
       h1 {
-        font-size: 1.2em;
+        font-size: 1.3em;
       }
 
       #summary {
@@ -3764,8 +3760,6 @@ button#myBtn:hover {
             list-style: none;
 
             li {
-              font-size: 0.8em;
-
               &:before {
                 font-size: 1.1em;
               }
@@ -4079,7 +4073,7 @@ button#myBtn:hover {
       }
 
       h1 {
-        font-size: 1.2em;
+        font-size: 1.3em;
       }
 
       #summary {
@@ -4283,8 +4277,6 @@ button#myBtn:hover {
             list-style: none;
 
             li {
-              font-size: 0.75em;
-
               &:before {
                 font-size: 1.1em;
               }
@@ -4588,7 +4580,7 @@ button#myBtn:hover {
       }
 
       h1 {
-        font-size: 1.2em;
+        font-size: 1.3em;
       }
 
       #summary {
@@ -4788,7 +4780,7 @@ button#myBtn:hover {
             width: 88%;
 
             li {
-              font-size: 0.75em;
+              font-size: 0.8em;
               line-height: 15px;
 
               &:before {
@@ -5088,10 +5080,6 @@ button#myBtn:hover {
         color: $contentbg;
       }
 
-      h1 {
-        font-size: 1.2em;
-      }
-
       #summary {
         width: 80%;
       }
@@ -5259,7 +5247,6 @@ button#myBtn:hover {
       #mask,
       #mask_two,
       #mask3 {
-
         min-height: 815px;
 
         article.collection-box {
@@ -5287,8 +5274,6 @@ button#myBtn:hover {
             list-style: none;
 
             li {
-              font-size: 0.8em;
-
               &:before {
                 font-size: 1.2em;
               }
@@ -5600,10 +5585,6 @@ button#myBtn:hover {
         color: $contentbg;
       }
 
-      h1 {
-        font-size: 1.2em;
-      }
-
       #summary {
         line-height: 1.5em;
       }
@@ -5796,8 +5777,6 @@ button#myBtn:hover {
             list-style: none;
 
             li {
-              font-size: 0.8em;
-
               &:before {
                 font-size: 1.2em;
               }
@@ -5976,11 +5955,11 @@ button#myBtn:hover {
     width: 70px;
   }
 
-  .closeMenu{
+  .closeMenu {
     top: -365px;
   }
 
-  .openMenu{
+  .openMenu {
     top: 0px;
   }
 
@@ -6226,10 +6205,6 @@ button#myBtn:hover {
         color: $contentbg;
       }
 
-      h1 {
-        font-size: 1.2em;
-      }
-
       #summary {
         line-height: 1.5em;
       }
@@ -6433,8 +6408,6 @@ button#myBtn:hover {
             list-style: none;
 
             li {
-              font-size: 0.75em;
-
               &:before {
                 font-size: 1.3em;
               }
@@ -6744,10 +6717,6 @@ button#myBtn:hover {
         color: $contentbg;
       }
 
-      h1 {
-        font-size: 1.2em;
-      }
-
       #summary {
         line-height: 1.5em;
       }
@@ -6933,16 +6902,13 @@ button#myBtn:hover {
         article.recycle-facts {
           h1 {
             line-height: 40px;
-            font-size: 0.9em;
           }
 
           ul {
             list-style: none;
-            width: 96%;
+            width: 100%;
 
             li {
-              font-size: 0.75em;
-
               &:before {
                 font-size: 1.3em;
               }
@@ -6950,7 +6916,6 @@ button#myBtn:hover {
           }
 
           p {
-            font-size: 0.8em;
             margin: 0;
           }
         }
@@ -7267,7 +7232,7 @@ button#myBtn:hover {
       }
 
       h1 {
-        font-size: 1.1em;
+        font-size: 1.2em;
       }
 
       #summary {
@@ -7470,8 +7435,6 @@ button#myBtn:hover {
             list-style: none;
 
             li {
-              font-size: 0.7em;
-
               &:before {
                 font-size: 1.3em;
               }
@@ -7769,10 +7732,6 @@ button#myBtn:hover {
         color: $contentbg;
       }
 
-      h1 {
-        font-size: 1.1em;
-      }
-
       #summary {
         line-height: 1.5em;
       }
@@ -7978,8 +7937,6 @@ button#myBtn:hover {
             list-style: none;
 
             li {
-              font-size: 0.7em;
-
               &:before {
                 font-size: 1.3em;
               }
@@ -8472,7 +8429,7 @@ button#myBtn:hover {
         }
 
         article.recycle-facts {
-          padding: 1em;
+          padding: 0 2em;
 
           h1 {
             line-height: 40px;
@@ -8482,8 +8439,6 @@ button#myBtn:hover {
             list-style: none;
 
             li {
-              font-size: 0.7em;
-
               &:before {
                 font-size: 1.2em;
               }
@@ -8978,8 +8933,6 @@ button#myBtn:hover {
             width: 76%;
 
             li {
-              font-size: 0.7em;
-
               &:before {
                 width: 35px;
 
@@ -9451,7 +9404,6 @@ button#myBtn:hover {
             list-style: none;
 
             li {
-              font-size: 0.7em;
               height: 60px;
 
               &:before {

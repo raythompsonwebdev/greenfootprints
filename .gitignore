@@ -73,6 +73,7 @@ test/
 src/images/
 src/fonts/
 src/favicons/
+src/views/
 
 src/css/sass/normalize.css.map
 src/css/sass/style.css.map

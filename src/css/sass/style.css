@@ -788,7 +788,7 @@ button#myBtn:hover {
     display: block;
     width: 100%;
     margin: 0;
-    padding: 0.5em;
+    padding: 0 0.5em;
     height: auto;
     /*Content boxes*/
   }
@@ -985,18 +985,18 @@ button#myBtn:hover {
     font-style: normal;
   }
   div.grid_24 section.content .text ul#different-materials {
-    padding: 0.25em;
+    padding: 0;
     width: 42%;
     display: block;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
-    margin: 0 0 0.25em 0.25em;
+    margin: 0;
   }
   div.grid_24 section.content .text ul#different-materials li {
     list-style: none;
     text-indent: 0;
-    line-height: 30px;
+    line-height: 25px;
     display: inline-block;
     width: 48%;
     text-align: left;
@@ -1008,7 +1008,7 @@ button#myBtn:hover {
     font-family: "FontAwesome";
     content: "\f1b8";
     font-style: normal;
-    line-height: 30px;
+    line-height: 25px;
     color: #406136;
     display: block;
     padding: 0;
@@ -1033,7 +1033,7 @@ button#myBtn:hover {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
-    margin: 0.5em;
+    margin: 0 0.5em;
     width: 10%;
     height: auto;
   }
@@ -1203,6 +1203,12 @@ button#myBtn:hover {
     line-height: 1.5em;
     font-size: 1em;
   }
+  div.grid_24 section.content #mask article.collection-box img#tenImageTwo,
+  div.grid_24 section.content #mask_two article.collection-box img#tenImageTwo,
+  div.grid_24 section.content #mask3 article.collection-box img#tenImageTwo {
+    margin: 1em auto;
+    display: block;
+  }
   div.grid_24 section.content #mask article.recycle-facts,
   div.grid_24 section.content #mask_two article.recycle-facts,
   div.grid_24 section.content #mask3 article.recycle-facts {
@@ -1350,7 +1356,7 @@ button#myBtn:hover {
   div.grid_24 section.content #mask3 article.contentbox h1 {
     text-indent: 0;
     height: auto;
-    line-height: 60px;
+    line-height: 50px;
     font-size: 1.3em;
     color: #3a5f0b;
     background-color: #cad996;
@@ -1809,11 +1815,6 @@ button#myBtn:hover {
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
   }
-  div.grid_24 section.content #mask article.recycle-facts ul li,
-  div.grid_24 section.content #mask_two article.recycle-facts ul li,
-  div.grid_24 section.content #mask3 article.recycle-facts ul li {
-    font-size: 0.9em;
-  }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
   div.grid_24 section.content #mask3 article.recycle-facts ul li:before {
@@ -2121,7 +2122,7 @@ button#myBtn:hover {
   div.grid_24 section.content #mask article.recycle-facts ul li,
   div.grid_24 section.content #mask_two article.recycle-facts ul li,
   div.grid_24 section.content #mask3 article.recycle-facts ul li {
-    font-size: 0.85em;
+    font-size: 0.9em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -2645,11 +2646,6 @@ button#myBtn:hover {
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
   }
-  div.grid_24 section.content #mask article.recycle-facts ul li,
-  div.grid_24 section.content #mask_two article.recycle-facts ul li,
-  div.grid_24 section.content #mask3 article.recycle-facts ul li {
-    font-size: 0.85em;
-  }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
   div.grid_24 section.content #mask3 article.recycle-facts ul li:before {
@@ -3080,7 +3076,7 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts ul li,
   div.grid_24 section.content #mask3 article.recycle-facts ul li {
     line-height: 25px;
-    font-size: 0.8em;
+    font-size: 0.85em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -3336,7 +3332,7 @@ button#myBtn:hover {
     color: #678b3f;
   }
   div.grid_24 section.content h1 {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
   div.grid_24 section.content #summary {
     width: 80%;
@@ -3510,11 +3506,6 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts ul,
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
-  }
-  div.grid_24 section.content #mask article.recycle-facts ul li,
-  div.grid_24 section.content #mask_two article.recycle-facts ul li,
-  div.grid_24 section.content #mask3 article.recycle-facts ul li {
-    font-size: 0.8em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -3780,7 +3771,7 @@ button#myBtn:hover {
     color: #678b3f;
   }
   div.grid_24 section.content h1 {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
   div.grid_24 section.content #summary {
     line-height: 1.5em;
@@ -3945,11 +3936,6 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts ul,
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
-  }
-  div.grid_24 section.content #mask article.recycle-facts ul li,
-  div.grid_24 section.content #mask_two article.recycle-facts ul li,
-  div.grid_24 section.content #mask3 article.recycle-facts ul li {
-    font-size: 0.75em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -4200,7 +4186,7 @@ button#myBtn:hover {
     color: #678b3f;
   }
   div.grid_24 section.content h1 {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
   div.grid_24 section.content #summary {
     width: 80%;
@@ -4366,7 +4352,7 @@ button#myBtn:hover {
   div.grid_24 section.content #mask article.recycle-facts ul li,
   div.grid_24 section.content #mask_two article.recycle-facts ul li,
   div.grid_24 section.content #mask3 article.recycle-facts ul li {
-    font-size: 0.75em;
+    font-size: 0.8em;
     line-height: 15px;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
@@ -4616,9 +4602,6 @@ button#myBtn:hover {
     content: ".";
     color: #678b3f;
   }
-  div.grid_24 section.content h1 {
-    font-size: 1.2em;
-  }
   div.grid_24 section.content #summary {
     width: 80%;
   }
@@ -4777,11 +4760,6 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts ul,
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
-  }
-  div.grid_24 section.content #mask article.recycle-facts ul li,
-  div.grid_24 section.content #mask_two article.recycle-facts ul li,
-  div.grid_24 section.content #mask3 article.recycle-facts ul li {
-    font-size: 0.8em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -5045,9 +5023,6 @@ button#myBtn:hover {
     content: ".";
     color: #678b3f;
   }
-  div.grid_24 section.content h1 {
-    font-size: 1.2em;
-  }
   div.grid_24 section.content #summary {
     line-height: 1.5em;
   }
@@ -5204,11 +5179,6 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts ul,
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
-  }
-  div.grid_24 section.content #mask article.recycle-facts ul li,
-  div.grid_24 section.content #mask_two article.recycle-facts ul li,
-  div.grid_24 section.content #mask3 article.recycle-facts ul li {
-    font-size: 0.8em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -5582,9 +5552,6 @@ button#myBtn:hover {
     content: ".";
     color: #678b3f;
   }
-  div.grid_24 section.content h1 {
-    font-size: 1.2em;
-  }
   div.grid_24 section.content #summary {
     line-height: 1.5em;
   }
@@ -5755,11 +5722,6 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts ul,
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
-  }
-  div.grid_24 section.content #mask article.recycle-facts ul li,
-  div.grid_24 section.content #mask_two article.recycle-facts ul li,
-  div.grid_24 section.content #mask3 article.recycle-facts ul li {
-    font-size: 0.75em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -6021,9 +5983,6 @@ button#myBtn:hover {
     content: ".";
     color: #678b3f;
   }
-  div.grid_24 section.content h1 {
-    font-size: 1.2em;
-  }
   div.grid_24 section.content #summary {
     line-height: 1.5em;
   }
@@ -6174,18 +6133,12 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts h1,
   div.grid_24 section.content #mask3 article.recycle-facts h1 {
     line-height: 40px;
-    font-size: 0.9em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul,
   div.grid_24 section.content #mask_two article.recycle-facts ul,
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
-    width: 96%;
-  }
-  div.grid_24 section.content #mask article.recycle-facts ul li,
-  div.grid_24 section.content #mask_two article.recycle-facts ul li,
-  div.grid_24 section.content #mask3 article.recycle-facts ul li {
-    font-size: 0.75em;
+    width: 100%;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -6195,7 +6148,6 @@ button#myBtn:hover {
   div.grid_24 section.content #mask article.recycle-facts p,
   div.grid_24 section.content #mask_two article.recycle-facts p,
   div.grid_24 section.content #mask3 article.recycle-facts p {
-    font-size: 0.8em;
     margin: 0;
   }
   div.grid_24 section.content #mask article.recycle-facts__dots,
@@ -6466,7 +6418,7 @@ button#myBtn:hover {
     color: #678b3f;
   }
   div.grid_24 section.content h1 {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
   div.grid_24 section.content #summary {
     line-height: 1.5em;
@@ -6630,11 +6582,6 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts ul,
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
-  }
-  div.grid_24 section.content #mask article.recycle-facts ul li,
-  div.grid_24 section.content #mask_two article.recycle-facts ul li,
-  div.grid_24 section.content #mask3 article.recycle-facts ul li {
-    font-size: 0.7em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -6878,9 +6825,6 @@ button#myBtn:hover {
     content: ".";
     color: #678b3f;
   }
-  div.grid_24 section.content h1 {
-    font-size: 1.1em;
-  }
   div.grid_24 section.content #summary {
     line-height: 1.5em;
   }
@@ -7047,11 +6991,6 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts ul,
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
-  }
-  div.grid_24 section.content #mask article.recycle-facts ul li,
-  div.grid_24 section.content #mask_two article.recycle-facts ul li,
-  div.grid_24 section.content #mask3 article.recycle-facts ul li {
-    font-size: 0.7em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -7456,7 +7395,7 @@ button#myBtn:hover {
   div.grid_24 section.content #mask article.recycle-facts,
   div.grid_24 section.content #mask_two article.recycle-facts,
   div.grid_24 section.content #mask3 article.recycle-facts {
-    padding: 1em;
+    padding: 0 2em;
   }
   div.grid_24 section.content #mask article.recycle-facts h1,
   div.grid_24 section.content #mask_two article.recycle-facts h1,
@@ -7467,11 +7406,6 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts ul,
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
-  }
-  div.grid_24 section.content #mask article.recycle-facts ul li,
-  div.grid_24 section.content #mask_two article.recycle-facts ul li,
-  div.grid_24 section.content #mask3 article.recycle-facts ul li {
-    font-size: 0.7em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -7887,11 +7821,6 @@ button#myBtn:hover {
     list-style: none;
     width: 76%;
   }
-  div.grid_24 section.content #mask article.recycle-facts ul li,
-  div.grid_24 section.content #mask_two article.recycle-facts ul li,
-  div.grid_24 section.content #mask3 article.recycle-facts ul li {
-    font-size: 0.7em;
-  }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
   div.grid_24 section.content #mask3 article.recycle-facts ul li:before {
@@ -8272,7 +8201,6 @@ button#myBtn:hover {
   div.grid_24 section.content #mask article.recycle-facts ul li,
   div.grid_24 section.content #mask_two article.recycle-facts ul li,
   div.grid_24 section.content #mask3 article.recycle-facts ul li {
-    font-size: 0.7em;
     height: 60px;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
