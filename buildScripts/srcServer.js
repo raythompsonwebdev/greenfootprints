@@ -6,7 +6,7 @@ import webpack from 'webpack';
 import config from '../webpack.config.dev';
 var routes = require('../routes/main');
 const handlebars = require('express-handlebars');
-//var sassMiddleware = require('node-sass-middleware');
+
 
 /* eslint-disable no-console */
 const PORT = process.env.PORT || 3000;

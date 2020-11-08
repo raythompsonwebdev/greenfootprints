@@ -3,45 +3,21 @@ import express from 'express';
 import path from 'path';
 import open from 'open';
 import compression from 'compression';
-var routes = require('../routes/main');
-const handlebars = require('express-handlebars');
-//var sassMiddleware = require('node-sass-middleware');
+// var routes = require('../routes/main');
+// const handlebars = require('express-handlebars');
 
 /* eslint-disable no-console */
 const port = 3000;
 const app = express();
-
-app.set("views", path.resolve(__dirname, '../views/') );
-app.set("view engine", "hbs");
-
-// app.use(sassMiddleware({
-//   /* Options */
-//   src: path.resolve(__dirname, '../src/css/sass/'),
-//   dest: path.resolve(__dirname, '../src/css/'),
-//   debug: true,
-//   outputStyle: 'compressed',
-//   prefix:  '/prefix'  // Where prefix is at <link rel="stylesheets" href="prefix/style.css"/>
-// }));
-app.use(express.static(path.join(__dirname, "../src")));
-
-// Handlebars Middleware
-app.engine(
-  "hbs",
-  handlebars({
-    extname: '.hbs',
-    defaultLayout: "index",
-    layoutsDir: path.resolve(__dirname, '../views/layouts/'),
-
-  })
-);
-
 
 //add gzip compression
 app.use(compression());
 
 app.use(express.static('dist'));
 
-app.use('/', routes);
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, '../dist/index.html'));
+});
 
 //testAPI
 //Hard coding for simplicity. Pretend this hits a real database

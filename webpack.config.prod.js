@@ -50,7 +50,7 @@ export default {
       inject: true, //dynamically adds script tags
       hash: true,
       template: path.resolve("./views/layouts/index.hbs"),
-      filename: 'index.hbs',
+      filename: 'index.html',
       minify: {
         html5: true,
         removeComments: true,
