@@ -6,15 +6,14 @@ import StyleLintPlugin from "stylelint-webpack-plugin";
 export default {
   mode: "development",
   entry: {
-    main: path.resolve(__dirname, "./src/index")
-
+    main: path.resolve(__dirname, "./src/index"),
   },
   target: "web",
   devtool: "inline-source-map",
   output: {
     //serves build from memory
     path: path.resolve(__dirname, "./views/layouts"),
-    publicPath:  "/",
+    publicPath: "/",
     filename: "bundle.js",
   },
   plugins: [
@@ -22,14 +21,13 @@ export default {
     new HtmlWebpackPlugin({
       filename: "index.hbs",
       inject: true,
-      template: path.resolve("./views/layouts/index.hbs")
+      template: path.resolve("./views/layouts/index.hbs"),
     }),
-
 
     new StyleLintPlugin({
       configFile: "./.stylelintrc.json",
       files: "./src/css/sass/*.scss",
-      syntax: "scss"
+      syntax: "scss",
     }),
   ],
 
@@ -61,13 +59,11 @@ export default {
       {
         test: /\.scss$/,
         use: [
-
-          { loader: 'style-loader' },
+          { loader: "style-loader" },
           {
-            loader: 'css-loader'
-
+            loader: "css-loader",
           },
-          { loader: 'sass-loader' },
+          { loader: "sass-loader" },
         ],
       },
       //file loader for fonts
