@@ -4,6 +4,8 @@ import "./css/sass/style.scss";
 
 /* eslint-disable no-console */
 
+
+
 var menuToggle = document.querySelector("#mobile-toggle");
 var slideoutMenu = document.querySelector("#mobile-nav");
 
