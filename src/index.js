@@ -17,14 +17,14 @@ import "./css/sass/style.scss";
 
 // })()
 
-var template = document.querySelector("#itemTemplate");
-// Handlebars compiles the template into a callable function
-var renderer = Handlebars.compile(template);
+// var template = document.querySelector("#itemTemplate");
+// // Handlebars compiles the template into a callable function
+// var renderer = Handlebars.compile(template);
 
-// call the compiled function with the template data
-var result = renderer({});
+// // call the compiled function with the template data
+// var result = renderer({});
 
-document.querySelector("#container").innerHTML = result;
+//document.querySelector("#container").innerHTML = result;
 
 
 var menuToggle = document.querySelector("#mobile-toggle");
