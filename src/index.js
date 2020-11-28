@@ -4,6 +4,27 @@ import "./css/sass/style.scss";
 
 /* eslint-disable no-console */
 
+// (function(){
+
+//   var template = document.querySelector("#itemTemplate");
+//   // Handlebars compiles the template into a callable function
+//   var compiled = Handlebars.compile(template);
+//   var rendered = compiled();
+//   // call the compiled function with the template data
+//   var result = rendered({id:"gghfdgfdg"});
+//   document.querySelector("#container").innerHTML = result;
+
+
+// })()
+
+var template = document.querySelector("#itemTemplate");
+// Handlebars compiles the template into a callable function
+var renderer = Handlebars.compile(template);
+
+// call the compiled function with the template data
+var result = renderer({});
+
+document.querySelector("#container").innerHTML = result;
 
 
 var menuToggle = document.querySelector("#mobile-toggle");
