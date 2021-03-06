@@ -13,35 +13,35 @@ app.use(express.static(path.join(__dirname, "dist")));
 app.use(compression());
 
 app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "../dist/index.html"));
+ res.sendFile(path.join(__dirname, "../dist/index.html"));
 });
 
 //testAPI
 //Hard coding for simplicity. Pretend this hits a real database
 //remove this app.get for production build. Data now should come from hosted api i.e. heroku ect.
 app.get("/users", function (req, res) {
-  res.json([
-    { id: 1, firstName: "Bob", lastName: "Smith", email: "bob@gmail.com" },
-    {
-      id: 2,
-      firstName: "Tammy",
-      lastName: "Norton",
-      email: "tnorton@yahoo.com",
-    },
-    {
-      id: 3,
-      firstName: "Tina",
-      lastName: "Lee",
-      email: "lee.tina@hotmail.com",
-    },
-  ]);
+ res.json([
+  { id: 1, firstName: "Bob", lastName: "Smith", email: "bob@gmail.com" },
+  {
+   id: 2,
+   firstName: "Tammy",
+   lastName: "Norton",
+   email: "tnorton@yahoo.com",
+  },
+  {
+   id: 3,
+   firstName: "Tina",
+   lastName: "Lee",
+   email: "lee.tina@hotmail.com",
+  },
+ ]);
 });
 
 //opens browser
 app.listen(port, function (err) {
-  if (err) {
-    console.log(err);
-  } else {
-    open("http://localhost:" + port);
-  }
+ if (err) {
+  console.log(err);
+ } else {
+  open("http://localhost:" + port);
+ }
 });
