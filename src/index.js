@@ -1,11 +1,13 @@
-import "./css/sass/normalize.scss";
-import "./css/sass/style.scss";
+import "./static/sass/normalize.scss";
+import "./static/sass/style.scss";
+//import {showSlidesOne, plusSlidesOne} from "./static/js/showSlidesOne"
+//import handlebars from 'handlebars';
 //import $ from "jquery";
 
 /* eslint-disable no-console */
 
-var menuToggle = document.querySelector("#mobile-toggle");
-var slideoutMenu = document.querySelector("#mobile-nav");
+const menuToggle = document.querySelector("#mobile-toggle");
+const slideoutMenu = document.querySelector("#mobile-nav");
 
 menuToggle.addEventListener(
   "click",
@@ -33,7 +35,7 @@ menuToggle.addEventListener(
   false
 );
 
-var menuLinks = document.querySelectorAll(".nav-links");
+const menuLinks = document.querySelectorAll(".nav-links");
 
 menuLinks.forEach(function (e) {
   e.addEventListener(
@@ -50,10 +52,3 @@ menuLinks.forEach(function (e) {
     false
   );
 });
-
-
-
-
-
-
-
