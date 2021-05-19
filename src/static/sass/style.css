@@ -1,30 +1,5 @@
-@font-face {
-  font-family: 'viroregular';
-  src: url("../../fonts/Viro/viro-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("../../fonts/Viro/viro-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Viro/viro-webfont.woff") format("woff"), url("../../fonts/Viro/viro-webfont.ttf") format("truetype"), url("../../fonts/Viro/viro-webfont.svg#svgFontName") format("svg");
-  /* Legacy iOS */
-  font-weight: normal;
-  font-style: normal;
-  font-display: auto;
-}
-
-/*
-@font-face {
-  font-family: "FontAwesome";
-  font-weight: normal;
-  font-style : normal;
-  src : url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
-  src : url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
-          url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
-          url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
-          url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
-          url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
-}
-*/
 html {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -162,19 +137,19 @@ a:active {
 }
 
 h1 {
-  letter-spacing: 0.10em;
+  letter-spacing: 0.1em;
   font-weight: normal;
   width: 100%;
 }
 
 h2 {
-  letter-spacing: 0.10em;
+  letter-spacing: 0.1em;
   font-weight: normal;
   width: 100%;
 }
 
 h3 {
-  letter-spacing: 0.10em;
+  letter-spacing: 0.1em;
   font-weight: normal;
   width: 100%;
 }
@@ -199,7 +174,6 @@ input:focus,
 select,
 textarea:focus {
   border-color: #3a5f0b;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 3px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 3px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 3px;
   background-color: #ccffbb;
@@ -208,36 +182,13 @@ textarea:focus {
 }
 
 /*Container*/
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
-@font-face {
-  font-family: 'viroregular';
-  src: url("../../fonts/Viro/viro-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("../../fonts/Viro/viro-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Viro/viro-webfont.woff") format("woff"), url("../../fonts/Viro/viro-webfont.ttf") format("truetype"), url("../../fonts/Viro/viro-webfont.svg#svgFontName") format("svg");
-  /* Legacy iOS */
-  font-weight: normal;
-  font-style: normal;
-  font-display: auto;
-}
-
-/*
-@font-face {
-  font-family: "FontAwesome";
-  font-weight: normal;
-  font-style : normal;
-  src : url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
-  src : url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
-          url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
-          url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
-          url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
-          url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
-}
-*/
 button#mobile-toggle {
   display: none;
   height: 45px;
@@ -248,8 +199,6 @@ button#mobile-toggle {
   outline: none;
   border: none;
   -webkit-transition: all 0.2s ease-in 0s;
-  -moz-transition: all 0.2s ease-in 0s;
-  -o-transition: all 0.2s ease-in 0s;
   transition: all 0.2s ease-in 0s;
 }
 
@@ -310,30 +259,31 @@ button#myBtn:hover {
   }
   /*header*/
   header {
-    display: -webkit-flex;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     height: auto;
     background-color: #5e8b33;
     padding: 0.25em;
-    -webkit-flex-flow: row;
     -ms-flex-flow: row;
-    flex-flow: row;
-    -webkit-align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row;
     -ms-flex-align: center;
-    align-items: center;
-    -webkit-justify-content: flex-start;
+    -webkit-box-align: center;
+            align-items: center;
     -ms-flex-pack: start;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+            justify-content: flex-start;
     /*social media icons*/
   }
   header hgroup {
     width: 68%;
     display: block;
     float: left;
-    -webkit-flex: 0 1 auto;
     -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
+    -webkit-box-flex: 0;
+            flex: 0 1 auto;
   }
   header hgroup h1 {
     color: #ffffff;
@@ -368,9 +318,9 @@ button#myBtn:hover {
     width: 5%;
     float: left;
     border: 3px solid #2c6700;
-    -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
+    -webkit-box-flex: 1;
+            flex: 1 0 auto;
     height: 60px;
   }
   header figure#logo img#homeImage {
@@ -384,25 +334,25 @@ button#myBtn:hover {
     display: block;
     float: right;
     margin: 0;
-    -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
+    -webkit-box-flex: 1;
+            flex: 1 0 auto;
   }
   header .socials ul {
     margin: 0;
     padding: 0;
     height: 100%;
     display: block;
-    display: -webkit-flex;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
-    -webkit-flex-flow: row;
     -ms-flex-flow: row;
-    flex-flow: row;
-    -webkit-align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row;
     -ms-flex-align: center;
-    align-items: center;
-    -webkit-justify-content: space-around;
+    -webkit-box-align: center;
+            align-items: center;
     -ms-flex-pack: space-around;
     justify-content: space-around;
   }
@@ -411,9 +361,9 @@ button#myBtn:hover {
     width: 23%;
     height: 100%;
     margin: 0.1em;
-    -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
+    -webkit-box-flex: 1;
+            flex: 1 0 auto;
     font-family: "FontAwesome";
   }
   header .socials ul li a {
@@ -436,15 +386,14 @@ button#myBtn:hover {
     font-size: 1.25em;
     color: #ffffff;
     -webkit-transition: all 0.2s ease-in 0s;
-    -moz-transition: all 0.2s ease-in 0s;
-    -o-transition: all 0.2s ease-in 0s;
     transition: all 0.2s ease-in 0s;
   }
   header .socials ul li a i.fa-twitter:hover,
   header .socials ul li a i.fa-facebook:hover,
   header .socials ul li a i.fa-google:hover,
   header .socials ul li a i.fa-instagram:hover {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
     font-weight: bold;
     text-shadow: 0 0 0 #165404;
     cursor: pointer;
@@ -490,18 +439,19 @@ button#myBtn:hover {
     padding: 0;
     height: 50px;
     width: 90%;
-    display: -webkit-flex;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
-    -webkit-flex-flow: row;
     -ms-flex-flow: row;
-    flex-flow: row;
-    -webkit-align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row;
     -ms-flex-align: center;
-    align-items: center;
-    -webkit-justify-content: flex-start;
+    -webkit-box-align: center;
+            align-items: center;
     -ms-flex-pack: flex-start;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+            justify-content: flex-start;
   }
   nav ul li {
     float: left;
@@ -509,9 +459,9 @@ button#myBtn:hover {
     margin-right: 0.1em;
     display: block;
     width: 12%;
-    -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
+    -webkit-box-flex: 1;
+            flex: 1 0 auto;
   }
   nav ul li a {
     color: #ffffff;
@@ -523,8 +473,6 @@ button#myBtn:hover {
     height: 100%;
     text-shadow: 1px 2px 1px #165404;
     -webkit-transition: all 0.2s ease-in 0s;
-    -moz-transition: all 0.2s ease-in 0s;
-    -o-transition: all 0.2s ease-in 0s;
     transition: all 0.2s ease-in 0s;
   }
   nav ul li a:hover {
@@ -608,6 +556,7 @@ button#myBtn:hover {
     text-shadow: 1px 1px 1px #165404;
     line-height: 55px;
     margin: 0;
+    font-family: "viroregular", Candara, Georgia, Arial, sans-serif;
   }
   div.grid_24 #slider div.main-slider div.flexslider ul.slides li div.slider-caption p {
     font-size: 1.2em;
@@ -677,18 +626,19 @@ button#myBtn:hover {
   }
   div.grid_24 main.content #home_contentboxes {
     height: 310px;
-    display: -webkit-flex;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
-    -webkit-flex-flow: row;
     -ms-flex-flow: row;
-    flex-flow: row;
-    -webkit-align-items: stretch;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row;
     -ms-flex-align: stretch;
-    align-items: stretch;
-    -webkit-justify-content: flex-start;
+    -webkit-box-align: stretch;
+            align-items: stretch;
     -ms-flex-pack: flex-start;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+            justify-content: flex-start;
     background-color: #ffffff;
   }
   div.grid_24 main.content #home_contentboxes article.home_contentbox {
@@ -699,12 +649,11 @@ button#myBtn:hover {
     float: left;
     margin: 0.5em;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0.5em;
-    -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
+    -webkit-box-flex: 1;
+            flex: 1 0 auto;
   }
   div.grid_24 main.content #home_contentboxes article.home_contentbox h1 {
     text-indent: 0;
@@ -767,8 +716,6 @@ button#myBtn:hover {
     text-transform: uppercase;
     text-shadow: 1px 2px 1px #406136;
     -webkit-transition: all 0.2s ease-in 0s;
-    -moz-transition: all 0.2s ease-in 0s;
-    -o-transition: all 0.2s ease-in 0s;
     transition: all 0.2s ease-in 0s;
   }
   div.grid_24 main.content #home_contentboxes article.home_contentbox figure.contentbox_image figcaption a.content-button:hover {
@@ -788,9 +735,8 @@ button#myBtn:hover {
     display: block;
     width: 100%;
     margin: 0;
-    padding: 0 0.5em;
+    padding: 0.5em;
     height: auto;
-    /*Content boxes*/
   }
   div.grid_24 section.content:after {
     content: ".";
@@ -818,18 +764,19 @@ button#myBtn:hover {
     background-color: #ffffff;
     font-size: 1em;
     padding: 0.5em;
-    display: -webkit-flex;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
-    -webkit-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -webkit-justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row wrap;
     -ms-flex-pack: space-between;
-    justify-content: space-between;
-    -webkit-align-items: flex-start;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     -ms-flex-align: start;
-    align-items: flex-start;
+    -webkit-box-align: start;
+            align-items: flex-start;
   }
   div.grid_24 section.content .text h1 {
     margin: 0 0 0.25em 0;
@@ -839,14 +786,16 @@ button#myBtn:hover {
     background-color: #5e8b33;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
-    align-self: center;
+    -ms-grid-row-align: center;
+        align-self: center;
     font-weight: bold;
     color: #ffffff;
   }
   div.grid_24 section.content .text h2 {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
-    align-self: center;
+    -ms-grid-row-align: center;
+        align-self: center;
     color: #3a5f0b;
     background-color: #cad996;
     margin: 0 0 0.25em 0;
@@ -858,9 +807,9 @@ button#myBtn:hover {
     font-weight: bold;
   }
   div.grid_24 section.content .text p {
-    -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
+    -webkit-box-flex: 1;
+            flex: 1 1 auto;
     letter-spacing: 0.05em;
     padding: 1em;
     width: 84%;
@@ -874,7 +823,9 @@ button#myBtn:hover {
   div.grid_24 section.content .text figure#threeRs {
     width: 100%;
     display: block;
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
   div.grid_24 section.content .text figure#threeRs img {
     display: inline-block;
@@ -887,13 +838,17 @@ button#myBtn:hover {
     float: right;
   }
   div.grid_24 section.content .text figure#threeRs figcaption p {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     width: 100%;
     font-size: 1em;
   }
   div.grid_24 section.content .text p#diff_mat_text {
     width: 57%;
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     font-size: 1em;
   }
   div.grid_24 section.content .text address#recycle-contact {
@@ -902,18 +857,19 @@ button#myBtn:hover {
     width: 100%;
     margin: 0.25em;
     clear: both;
-    display: -webkit-flex;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
-    -webkit-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -webkit-justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row wrap;
     -ms-flex-pack: space-between;
-    justify-content: space-between;
-    -webkit-align-items: stretch;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     -ms-flex-align: stretch;
-    align-items: stretch;
+    -webkit-box-align: stretch;
+            align-items: stretch;
   }
   div.grid_24 section.content .text address#recycle-contact a {
     font-size: 1em;
@@ -930,9 +886,9 @@ button#myBtn:hover {
     padding: 0.25em 0;
     clear: both;
     display: block;
-    -webkit-flex: 0 1 auto;
     -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
+    -webkit-box-flex: 0;
+            flex: 0 1 auto;
     line-height: 35px;
   }
   div.grid_24 section.content .text address#recycle-contact p:before,
@@ -985,18 +941,19 @@ button#myBtn:hover {
     font-style: normal;
   }
   div.grid_24 section.content .text ul#different-materials {
-    padding: 0;
+    padding: 0.25em;
     width: 42%;
     display: block;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
-    align-self: center;
-    margin: 0;
+    -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0 0 0.25em 0.25em;
   }
   div.grid_24 section.content .text ul#different-materials li {
     list-style: none;
     text-indent: 0;
-    line-height: 25px;
+    line-height: 30px;
     display: inline-block;
     width: 48%;
     text-align: left;
@@ -1008,7 +965,7 @@ button#myBtn:hover {
     font-family: "FontAwesome";
     content: "\f1b8";
     font-style: normal;
-    line-height: 25px;
+    line-height: 30px;
     color: #406136;
     display: block;
     padding: 0;
@@ -1032,8 +989,9 @@ button#myBtn:hover {
   div.grid_24 section.content .text .recycle_img {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
-    align-self: center;
-    margin: 0 0.5em;
+    -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0.5em;
     width: 10%;
     height: auto;
   }
@@ -1140,18 +1098,19 @@ button#myBtn:hover {
     position: relative;
     overflow: hidden;
     z-index: 2;
-    display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
+    display: -webkit-inline-box;
     display: inline-flex;
-    -webkit-flex-flow: row;
     -ms-flex-flow: row;
-    flex-flow: row;
-    -webkit-justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row;
     -ms-flex-pack: flex-start;
-    justify-content: flex-start;
-    -webkit-align-items: stretch;
+    -webkit-box-pack: start;
+            justify-content: flex-start;
     -ms-flex-align: stretch;
-    align-items: stretch;
+    -webkit-box-align: stretch;
+            align-items: stretch;
     background-color: #ffffff;
     /* Next & previous buttons */
   }
@@ -1202,12 +1161,6 @@ button#myBtn:hover {
     background-color: #ccffbb;
     line-height: 1.5em;
     font-size: 1em;
-  }
-  div.grid_24 section.content #mask article.collection-box img#tenImageTwo,
-  div.grid_24 section.content #mask_two article.collection-box img#tenImageTwo,
-  div.grid_24 section.content #mask3 article.collection-box img#tenImageTwo {
-    margin: 1em auto;
-    display: block;
   }
   div.grid_24 section.content #mask article.recycle-facts,
   div.grid_24 section.content #mask_two article.recycle-facts,
@@ -1289,6 +1242,7 @@ button#myBtn:hover {
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
+    -webkit-transition: background-color 0.6s ease;
     transition: background-color 0.6s ease;
   }
   div.grid_24 section.content #mask .active,
@@ -1315,6 +1269,7 @@ button#myBtn:hover {
     color: black;
     font-weight: bold;
     font-size: 20px;
+    -webkit-transition: 0.6s ease;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     z-index: 10;
@@ -1348,7 +1303,8 @@ button#myBtn:hover {
     min-height: 225px;
     height: auto;
     margin: 0.5em;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 0 2.5em;
   }
   div.grid_24 section.content #mask article.contentbox h1,
@@ -1356,7 +1312,7 @@ button#myBtn:hover {
   div.grid_24 section.content #mask3 article.contentbox h1 {
     text-indent: 0;
     height: auto;
-    line-height: 50px;
+    line-height: 60px;
     font-size: 1.3em;
     color: #3a5f0b;
     background-color: #cad996;
@@ -1409,8 +1365,6 @@ button#myBtn:hover {
     text-transform: uppercase;
     text-shadow: 1px 2px 1px #165404;
     -webkit-transition: all 0.2s ease-in 0s;
-    -moz-transition: all 0.2s ease-in 0s;
-    -o-transition: all 0.2s ease-in 0s;
     transition: all 0.2s ease-in 0s;
   }
   div.grid_24 section.content #mask article.contentbox a.content-button:hover,
@@ -1438,27 +1392,28 @@ button#myBtn:hover {
     height: 100%;
     width: 80%;
     margin: auto;
-    display: -webkit-flex;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
-    -webkit-flex-flow: row;
     -ms-flex-flow: row;
-    flex-flow: row;
-    -webkit-justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row;
     -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
   }
   footer ul li {
     float: left;
     height: 50px;
     width: 12%;
     margin: 0;
-    -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
-    -webkit-align-items: center;
+    -webkit-box-flex: 1;
+            flex: 1 0 auto;
     -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
   }
   footer ul li a {
     line-height: 50px;
@@ -1537,7 +1492,8 @@ button#myBtn:hover {
   header .socials ul li a i.fa-facebook:hover,
   header .socials ul li a i.fa-google:hover,
   header .socials ul li a i.fa-instagram:hover {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   nav#mobile-nav {
     display: none;
@@ -1616,9 +1572,6 @@ button#myBtn:hover {
     opacity: 1;
     background: #ffffff;
   }
-  div.grid_24 main.content {
-    /*Content boxes*/
-  }
   div.grid_24 main.content #home_contentboxes {
     height: 295px;
   }
@@ -1653,7 +1606,6 @@ button#myBtn:hover {
     background-color: #ccffbb;
   }
   div.grid_24 section.content {
-    /*Content*/
     background-color: #678b3f;
     /* The dots/bullets/indicators */
   }
@@ -1690,7 +1642,9 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     font-size: 0.95em;
   }
   div.grid_24 section.content .text address#recycle-contact {
@@ -1814,6 +1768,11 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts ul,
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
+  }
+  div.grid_24 section.content #mask article.recycle-facts ul li,
+  div.grid_24 section.content #mask_two article.recycle-facts ul li,
+  div.grid_24 section.content #mask3 article.recycle-facts ul li {
+    font-size: 0.9em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -2027,9 +1986,6 @@ button#myBtn:hover {
   div.grid_24 #slider div.main-slider div.flexslider .flex-control-paging li a.flex-active {
     opacity: 1;
   }
-  div.grid_24 main.content #home_contentboxes {
-    /*contentbox*/
-  }
   div.grid_24 main.content #home_contentboxes article.home_contentbox {
     width: 31.3%;
   }
@@ -2122,7 +2078,7 @@ button#myBtn:hover {
   div.grid_24 section.content #mask article.recycle-facts ul li,
   div.grid_24 section.content #mask_two article.recycle-facts ul li,
   div.grid_24 section.content #mask3 article.recycle-facts ul li {
-    font-size: 0.9em;
+    font-size: 0.85em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -2234,7 +2190,9 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     padding: 0.5em;
@@ -2479,7 +2437,6 @@ button#myBtn:hover {
     background-color: #ccffbb;
   }
   div.grid_24 section.content {
-    /*Content*/
     background-color: #678b3f;
     /* The dots/bullets/indicators */
   }
@@ -2519,7 +2476,9 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     font-size: 0.9em;
   }
   div.grid_24 section.content .text address#recycle-contact {
@@ -2645,6 +2604,11 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts ul,
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
+  }
+  div.grid_24 section.content #mask article.recycle-facts ul li,
+  div.grid_24 section.content #mask_two article.recycle-facts ul li,
+  div.grid_24 section.content #mask3 article.recycle-facts ul li {
+    font-size: 0.85em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -2910,7 +2874,6 @@ button#myBtn:hover {
     background-color: #ccffbb;
   }
   div.grid_24 section.content {
-    /*Content*/
     background-color: #678b3f;
     /* The dots/bullets/indicators */
   }
@@ -2947,7 +2910,9 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     padding: 0.5em;
@@ -3076,7 +3041,7 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts ul li,
   div.grid_24 section.content #mask3 article.recycle-facts ul li {
     line-height: 25px;
-    font-size: 0.85em;
+    font-size: 0.8em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -3325,14 +3290,13 @@ button#myBtn:hover {
   div.grid_24 section.content {
     background-color: #678b3f;
     /* The dots/bullets/indicators */
-    /*Content boxes*/
   }
   div.grid_24 section.content:after {
     content: ".";
     color: #678b3f;
   }
   div.grid_24 section.content h1 {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
   div.grid_24 section.content #summary {
     width: 80%;
@@ -3375,7 +3339,9 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     padding: 0.5em;
@@ -3506,6 +3472,11 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts ul,
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
+  }
+  div.grid_24 section.content #mask article.recycle-facts ul li,
+  div.grid_24 section.content #mask_two article.recycle-facts ul li,
+  div.grid_24 section.content #mask3 article.recycle-facts ul li {
+    font-size: 0.8em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -3728,9 +3699,6 @@ button#myBtn:hover {
   div.grid_24 #slider div.main-slider div.flexslider .flex-control-paging li a.flex-active {
     opacity: 1;
   }
-  div.grid_24 main.content #home_contentboxes {
-    /*contentbox*/
-  }
   div.grid_24 main.content #home_contentboxes article.home_contentbox {
     width: 31%;
   }
@@ -3771,7 +3739,7 @@ button#myBtn:hover {
     color: #678b3f;
   }
   div.grid_24 section.content h1 {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
   div.grid_24 section.content #summary {
     line-height: 1.5em;
@@ -3810,7 +3778,9 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     padding: 0.5em;
@@ -3936,6 +3906,11 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts ul,
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
+  }
+  div.grid_24 section.content #mask article.recycle-facts ul li,
+  div.grid_24 section.content #mask_two article.recycle-facts ul li,
+  div.grid_24 section.content #mask3 article.recycle-facts ul li {
+    font-size: 0.75em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -4144,9 +4119,6 @@ button#myBtn:hover {
   div.grid_24 #slider div.main-slider div.flexslider .flex-control-paging li a.flex-active {
     opacity: 1;
   }
-  div.grid_24 main.content #home_contentboxes {
-    /*contentbox*/
-  }
   div.grid_24 main.content #home_contentboxes article.home_contentbox {
     width: 31.5%;
     margin: 0.25em;
@@ -4186,7 +4158,7 @@ button#myBtn:hover {
     color: #678b3f;
   }
   div.grid_24 section.content h1 {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
   div.grid_24 section.content #summary {
     width: 80%;
@@ -4227,7 +4199,9 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     padding: 0.5em;
@@ -4352,7 +4326,7 @@ button#myBtn:hover {
   div.grid_24 section.content #mask article.recycle-facts ul li,
   div.grid_24 section.content #mask_two article.recycle-facts ul li,
   div.grid_24 section.content #mask3 article.recycle-facts ul li {
-    font-size: 0.8em;
+    font-size: 0.75em;
     line-height: 15px;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
@@ -4560,9 +4534,6 @@ button#myBtn:hover {
   div.grid_24 #slider div.main-slider div.flexslider .flex-control-paging li a.flex-active {
     opacity: 1;
   }
-  div.grid_24 main.content #home_contentboxes {
-    /*contentbox*/
-  }
   div.grid_24 main.content #home_contentboxes article.home_contentbox {
     width: 31.5%;
   }
@@ -4601,6 +4572,9 @@ button#myBtn:hover {
   div.grid_24 section.content:after {
     content: ".";
     color: #678b3f;
+  }
+  div.grid_24 section.content h1 {
+    font-size: 1.2em;
   }
   div.grid_24 section.content #summary {
     width: 80%;
@@ -4642,7 +4616,9 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     padding: 0.5em;
@@ -4760,6 +4736,11 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts ul,
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
+  }
+  div.grid_24 section.content #mask article.recycle-facts ul li,
+  div.grid_24 section.content #mask_two article.recycle-facts ul li,
+  div.grid_24 section.content #mask3 article.recycle-facts ul li {
+    font-size: 0.8em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -5023,6 +5004,9 @@ button#myBtn:hover {
     content: ".";
     color: #678b3f;
   }
+  div.grid_24 section.content h1 {
+    font-size: 1.2em;
+  }
   div.grid_24 section.content #summary {
     line-height: 1.5em;
   }
@@ -5061,7 +5045,9 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     padding: 0.5em;
@@ -5179,6 +5165,11 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts ul,
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
+  }
+  div.grid_24 section.content #mask article.recycle-facts ul li,
+  div.grid_24 section.content #mask_two article.recycle-facts ul li,
+  div.grid_24 section.content #mask3 article.recycle-facts ul li {
+    font-size: 0.8em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -5344,8 +5335,6 @@ button#myBtn:hover {
     color: #ffffff;
     border: none;
     -webkit-transition: all ease-out 400ms;
-    -moz-transition: all ease-out 400ms;
-    -o-transition: all ease-out 400ms;
     transition: all ease-out 400ms;
     height: 60px;
     width: 70px;
@@ -5382,9 +5371,10 @@ button#myBtn:hover {
   }
   nav#mobile-nav ul {
     height: 100%;
-    -webkit-flex-flow: column;
     -ms-flex-flow: column;
-    flex-flow: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-flow: column;
     margin-right: 0;
     margin: 0;
     width: 100%;
@@ -5420,9 +5410,10 @@ button#myBtn:hover {
   }
   nav ul {
     height: 100%;
-    -webkit-flex-flow: column;
     -ms-flex-flow: column;
-    flex-flow: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-flow: column;
     margin-right: 0;
     margin: 0;
     width: 100%;
@@ -5504,16 +5495,16 @@ button#myBtn:hover {
   }
   div.grid_24 main.content #home_contentboxes {
     height: auto;
-    -webkit-flex-flow: column;
     -ms-flex-flow: column;
-    flex-flow: column;
-    -webkit-justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-flow: column;
     -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     -ms-flex-align: center;
-    align-items: center;
-    /*contentbox*/
+    -webkit-box-align: center;
+            align-items: center;
   }
   div.grid_24 main.content #home_contentboxes article.home_contentbox {
     width: 78%;
@@ -5551,6 +5542,9 @@ button#myBtn:hover {
   div.grid_24 section.content:after {
     content: ".";
     color: #678b3f;
+  }
+  div.grid_24 section.content h1 {
+    font-size: 1.2em;
   }
   div.grid_24 section.content #summary {
     line-height: 1.5em;
@@ -5590,7 +5584,9 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     width: 100%;
   }
   div.grid_24 section.content .text address#recycle-contact {
@@ -5722,6 +5718,11 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts ul,
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
+  }
+  div.grid_24 section.content #mask article.recycle-facts ul li,
+  div.grid_24 section.content #mask_two article.recycle-facts ul li,
+  div.grid_24 section.content #mask3 article.recycle-facts ul li {
+    font-size: 0.75em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -5947,7 +5948,6 @@ button#myBtn:hover {
   }
   div.grid_24 main.content #home_contentboxes {
     height: auto;
-    /*contentbox*/
   }
   div.grid_24 main.content #home_contentboxes article.home_contentbox h1 {
     font-size: 1em;
@@ -5982,6 +5982,9 @@ button#myBtn:hover {
   div.grid_24 section.content:after {
     content: ".";
     color: #678b3f;
+  }
+  div.grid_24 section.content h1 {
+    font-size: 1.2em;
   }
   div.grid_24 section.content #summary {
     line-height: 1.5em;
@@ -6019,7 +6022,9 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     padding: 0.5em;
@@ -6133,12 +6138,18 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts h1,
   div.grid_24 section.content #mask3 article.recycle-facts h1 {
     line-height: 40px;
+    font-size: 0.9em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul,
   div.grid_24 section.content #mask_two article.recycle-facts ul,
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
-    width: 100%;
+    width: 96%;
+  }
+  div.grid_24 section.content #mask article.recycle-facts ul li,
+  div.grid_24 section.content #mask_two article.recycle-facts ul li,
+  div.grid_24 section.content #mask3 article.recycle-facts ul li {
+    font-size: 0.75em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -6148,6 +6159,7 @@ button#myBtn:hover {
   div.grid_24 section.content #mask article.recycle-facts p,
   div.grid_24 section.content #mask_two article.recycle-facts p,
   div.grid_24 section.content #mask3 article.recycle-facts p {
+    font-size: 0.8em;
     margin: 0;
   }
   div.grid_24 section.content #mask article.recycle-facts__dots,
@@ -6374,9 +6386,6 @@ button#myBtn:hover {
   div.grid_24 #slider div.main-slider div.flexslider .flex-control-paging li a.flex-active {
     opacity: 1;
   }
-  div.grid_24 main.content #home_contentboxes {
-    /*contentbox*/
-  }
   div.grid_24 main.content #home_contentboxes article.home_contentbox {
     width: 96%;
   }
@@ -6411,14 +6420,13 @@ button#myBtn:hover {
     background-color: #678b3f;
     min-height: 520px;
     /* The dots/bullets/indicators */
-    /*Content boxes*/
   }
   div.grid_24 section.content:after {
     content: ".";
     color: #678b3f;
   }
   div.grid_24 section.content h1 {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   div.grid_24 section.content #summary {
     line-height: 1.5em;
@@ -6461,7 +6469,9 @@ button#myBtn:hover {
   }
   div.grid_24 section.content .text p#diff_mat_text {
     font-size: 0.8em;
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     padding: 0.5em;
@@ -6582,6 +6592,11 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts ul,
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
+  }
+  div.grid_24 section.content #mask article.recycle-facts ul li,
+  div.grid_24 section.content #mask_two article.recycle-facts ul li,
+  div.grid_24 section.content #mask3 article.recycle-facts ul li {
+    font-size: 0.7em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -6819,11 +6834,13 @@ button#myBtn:hover {
   div.grid_24 section.content {
     background-color: #678b3f;
     /* The dots/bullets/indicators */
-    /*Content boxes*/
   }
   div.grid_24 section.content:after {
     content: ".";
     color: #678b3f;
+  }
+  div.grid_24 section.content h1 {
+    font-size: 1.1em;
   }
   div.grid_24 section.content #summary {
     line-height: 1.5em;
@@ -6863,7 +6880,9 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     margin: 0.25em;
@@ -6992,6 +7011,11 @@ button#myBtn:hover {
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
   }
+  div.grid_24 section.content #mask article.recycle-facts ul li,
+  div.grid_24 section.content #mask_two article.recycle-facts ul li,
+  div.grid_24 section.content #mask3 article.recycle-facts ul li {
+    font-size: 0.7em;
+  }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
   div.grid_24 section.content #mask3 article.recycle-facts ul li:before {
@@ -7078,10 +7102,10 @@ button#myBtn:hover {
   div.grid_24 section.content #collection-boxes {
     float: none;
     display: block;
-    -webkit-flex-flow: column;
     -ms-flex-flow: column;
-    flex-flow: column;
-    -webkit-justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-flow: column;
     -ms-flex-pack: justify;
     justify-content: space-around;
   }
@@ -7286,7 +7310,9 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     margin: 0.25em;
@@ -7395,7 +7421,7 @@ button#myBtn:hover {
   div.grid_24 section.content #mask article.recycle-facts,
   div.grid_24 section.content #mask_two article.recycle-facts,
   div.grid_24 section.content #mask3 article.recycle-facts {
-    padding: 0 2em;
+    padding: 1em;
   }
   div.grid_24 section.content #mask article.recycle-facts h1,
   div.grid_24 section.content #mask_two article.recycle-facts h1,
@@ -7406,6 +7432,11 @@ button#myBtn:hover {
   div.grid_24 section.content #mask_two article.recycle-facts ul,
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
+  }
+  div.grid_24 section.content #mask article.recycle-facts ul li,
+  div.grid_24 section.content #mask_two article.recycle-facts ul li,
+  div.grid_24 section.content #mask3 article.recycle-facts ul li {
+    font-size: 0.7em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -7699,7 +7730,9 @@ button#myBtn:hover {
   }
   div.grid_24 section.content .text p#diff_mat_text {
     font-size: 0.75em;
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     margin: 0.25em;
@@ -7820,6 +7853,11 @@ button#myBtn:hover {
   div.grid_24 section.content #mask3 article.recycle-facts ul {
     list-style: none;
     width: 76%;
+  }
+  div.grid_24 section.content #mask article.recycle-facts ul li,
+  div.grid_24 section.content #mask_two article.recycle-facts ul li,
+  div.grid_24 section.content #mask3 article.recycle-facts ul li {
+    font-size: 0.7em;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
   div.grid_24 section.content #mask_two article.recycle-facts ul li:before,
@@ -8101,7 +8139,9 @@ button#myBtn:hover {
     width: 100%;
   }
   div.grid_24 section.content .text p#diff_mat_text {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
   div.grid_24 section.content .text address#recycle-contact {
     padding: 0.25em;
@@ -8201,6 +8241,7 @@ button#myBtn:hover {
   div.grid_24 section.content #mask article.recycle-facts ul li,
   div.grid_24 section.content #mask_two article.recycle-facts ul li,
   div.grid_24 section.content #mask3 article.recycle-facts ul li {
+    font-size: 0.7em;
     height: 60px;
   }
   div.grid_24 section.content #mask article.recycle-facts ul li:before,
@@ -8303,3 +8344,4 @@ button#myBtn:hover {
     font-size: 0.5em;
   }
 }
+/*# sourceMappingURL=style.css.map */

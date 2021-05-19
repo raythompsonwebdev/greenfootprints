@@ -20,7 +20,7 @@ app.use(
  })
 );
 
-app.set("views", path.resolve(__dirname, "../views/"));
+app.set("views", path.resolve(__dirname, "../src/views/"));
 app.set("view engine", "hbs");
 
 app.use(express.static(path.join(__dirname, "../src/static/")));
@@ -30,8 +30,8 @@ app.engine(
  "hbs",
  handlebars({
   extname: ".hbs",
-  defaultLayout: "index",
-  layoutsDir: path.resolve(__dirname, "../views/layouts/"),
+  defaultLayout: "template",
+  layoutsDir: path.resolve(__dirname, "../src/views/layouts/"),
  })
 );
 
@@ -56,8 +56,7 @@ app.get("/users", function (req, res) {
 });
 
 //error handling
-app.use(function (err, req, res) {
- console.error(err.stack);
+app.use(function (req, res) {
  res.status(500).send("Something broke!");
 });
 

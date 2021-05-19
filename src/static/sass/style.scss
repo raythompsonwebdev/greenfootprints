@@ -1,3 +1,4 @@
+@import "partials/fonts";
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/base";
@@ -386,6 +387,7 @@ button#myBtn:hover {
         display: block;
         text-align: center;
         height: auto;
+
         color: $colorsocmedhov;
         margin: 0;
 
@@ -397,6 +399,7 @@ button#myBtn:hover {
          text-shadow: 1px 1px 1px $header-shadow;
          line-height: 55px;
          margin: 0;
+         font-family: $fontList;
         }
 
         p {
@@ -982,7 +985,6 @@ button#myBtn:hover {
     position: relative;
    }
 
-   /*Content boxes*/
    #contentboxes,
    #collection-boxes {
     position: relative;
@@ -1481,7 +1483,6 @@ button#myBtn:hover {
   }
 
   main.content {
-   /*Content boxes*/
    #home_contentboxes {
     height: 295px;
 
@@ -1527,7 +1528,6 @@ button#myBtn:hover {
   }
 
   section.content {
-   /*Content*/
    background-color: $contentbg;
 
    &:after {
@@ -1979,7 +1979,6 @@ button#myBtn:hover {
 
   main.content {
    #home_contentboxes {
-    /*contentbox*/
     article.home_contentbox {
      width: 31.3%;
 
@@ -2519,7 +2518,6 @@ button#myBtn:hover {
   }
 
   section.content {
-   /*Content*/
    background-color: $contentbg;
 
    &:after {
@@ -3033,7 +3031,6 @@ button#myBtn:hover {
   }
 
   section.content {
-   /*Content*/
    background-color: $contentbg;
 
    &:after {
@@ -3829,7 +3826,6 @@ button#myBtn:hover {
     }
    }
 
-   /*Content boxes*/
    #contentboxes,
    #collection-boxes {
     height: auto;
@@ -4015,7 +4011,6 @@ button#myBtn:hover {
 
   main.content {
    #home_contentboxes {
-    /*contentbox*/
     article.home_contentbox {
      width: 31%;
 
@@ -4523,7 +4518,6 @@ button#myBtn:hover {
 
   main.content {
    #home_contentboxes {
-    /*contentbox*/
     article.home_contentbox {
      width: 31.5%;
      margin: 0.25em;
@@ -5022,7 +5016,6 @@ button#myBtn:hover {
 
   main.content {
    #home_contentboxes {
-    /*contentbox*/
     article.home_contentbox {
      width: 31.5%;
 
@@ -6161,7 +6154,6 @@ button#myBtn:hover {
     -ms-flex-align: center;
     align-items: center;
 
-    /*contentbox*/
     article.home_contentbox {
      width: 78%;
 
@@ -6681,7 +6673,6 @@ button#myBtn:hover {
    #home_contentboxes {
     height: auto;
 
-    /*contentbox*/
     article.home_contentbox {
      h1 {
       font-size: 1em;
@@ -7199,7 +7190,6 @@ button#myBtn:hover {
 
   main.content {
    #home_contentboxes {
-    /*contentbox*/
     article.home_contentbox {
      width: 96%;
 
@@ -7524,7 +7514,6 @@ button#myBtn:hover {
     }
    }
 
-   /*Content boxes*/
    #contentboxes,
    #collection-boxes {
     min-height: 520px;
@@ -8034,7 +8023,6 @@ button#myBtn:hover {
     }
    }
 
-   /*Content boxes*/
    #contentboxes,
    #collection-boxes {
     float: none;
