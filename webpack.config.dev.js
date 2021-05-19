@@ -40,19 +40,60 @@ export default {
       loader: "handlebars-loader",
      },
     ],
-   },
-   {
-    test: /\.html$/i,
-    loader: "html-loader",
-   },
-   {
-    test: /\.js$/,
-    exclude: /node_modules/,
-    use: {
-     loader: "babel-loader",
-     options: {
-      presets: ["@babel/preset-env"],
-     },
+
+    module: {
+     rules: [
+      {
+       test: /\.js$/,
+       exclude: /node_modules/,
+       use: {
+        loader: "babel-loader",
+        options: {
+         presets: ["@babel/preset-env"],
+        },
+       },
+      },
+      {
+       test: /\.scss$/,
+       use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      //file loader for fonts
+      {
+       test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+       use: ["file-loader"],
+      },
+      //file loader for images
+      {
+       test: /\.(gif|png|jpe?g|svg)$/i,
+       use: [
+        "file-loader",
+        {
+         loader: "image-webpack-loader",
+         options: {
+          mozjpeg: {
+           progressive: true,
+           quality: 65,
+          },
+          // optipng.enabled: false will disable optipng
+          optipng: {
+           enabled: false,
+          },
+          pngquant: {
+           quality: [0.65, 0.9],
+           speed: 4,
+          },
+          gifsicle: {
+           interlaced: false,
+          },
+          // the webp option will enable WEBP
+          webp: {
+           quality: 75,
+          },
+         },
+        },
+       ],
+      },
+     ],
     },
    },
    {

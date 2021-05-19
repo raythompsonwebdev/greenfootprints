@@ -67,8 +67,10 @@ test/
 .settings/
 
 .vscode/
-
+views/
+routes/
 .htaccess
+api/
 
 src/images/
 src/fonts/
