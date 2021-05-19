@@ -46,6 +46,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+dist/
 
 Files/
 npm-debug.log
@@ -64,39 +65,40 @@ Files/
 test/
 .sass-cache/
 .settings/
-package.json
+
 .vscode/
 views/
 routes/
 .htaccess
 api/
 
-src/dist/
-src/img/
 src/images/
-src/fonts
-src/favicons
+src/fonts/
+src/favicons/
+src/views/
 
-src/css/.sass-cache/
-src/css/min/
-src/css/style.css.map
-src/css/ie.css.map
+src/css/sass/normalize.css.map
+src/css/sass/style.css.map
+src/css/sass/ie.css.map
+src/css/sass/ie.min-css.map
+src/css/sass/ie.css.map
+src/css/sass/style.css
+src/css/sass/style-min.css.map
+src/css/sass/style.css.map
 
-src/ie.min-css.map
-src/ie.css.map
-src/style-min.css.map
-src/style.css.map
+src/css/sass/partials/_base.css
+src/css/sass/partials/_base.css.map
+src/css/sass/partials/_base.min.css
+src/css/sass/partials/_fonts.css
+src/css/sass/partials/_fonts.css.map
+src/css/sass/partials/_fonts.min.css
+src/css/sass/partials/_mixins.css
+src/css/sass/partials/_mixins.css.map
+src/css/sass/partials/_mixins.min.css
+src/css/sass/partials/_variables.css
+src/css/sass/partials/_variables.css.map
+src/css/sass/partials/_variables.min.css
 
-src/js/deps/
-src/js/old-browser-scripts/
-src/js/jquery.easing.1.3.js
-src/js/jquery.validate.min.js
-src/js/sw.js
-src/js/site.js
-dist/
-
-
-/greenfootprints/nbproject/private/
-/src/nbproject/private/
-
+nbproject/private/
+src/nbproject/private/
 nbproject/
