@@ -66,6 +66,7 @@ button#myBtn:hover {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
  }
 
  //main container
@@ -79,16 +80,16 @@ button#myBtn:hover {
  }
 
  /*header*/
- header {
+ header#site_header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   height: auto;
   background-color: $honecolor;
   padding: 0.25em;
-  -webkit-flex-flow: row;
-  -ms-flex-flow: row;
-  flex-flow: row;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -230,10 +231,11 @@ button#myBtn:hover {
  }
 
  nav {
-  height: 60px;
+  height: auto;
   text-align: center;
   margin: 0.5em 0;
   z-index: 10;
+  width: 100%;
 
   div.nav-title {
    width: 6%;
@@ -343,7 +345,7 @@ button#myBtn:hover {
   display: block;
   width: 100%;
   float: none;
-  min-height: 80vh;
+  min-height: 100vh;
   padding: 0;
 
   /*Slider*/
@@ -1139,8 +1141,12 @@ button#myBtn:hover {
 
     /* Next & previous buttons */
 
-    .prev,
-    .next {
+    .prev1,
+    .next1,
+    .prev2,
+    .next2,
+    .prev3,
+    .next3 {
      cursor: pointer;
      position: absolute;
      top: 0;
@@ -1156,13 +1162,19 @@ button#myBtn:hover {
      z-index: 10;
     }
 
-    .next {
+    .next1,
+    .next2,
+    .next3 {
      right: 0;
      border-radius: 3px 0 0 3px;
     }
 
-    .prev:hover,
-    .next:hover {
+    .prev1:hover,
+    .next1:hover,
+    .prev2:hover,
+    .next2:hover,
+    .prev3:hover,
+    .next3:hover {
      background-color: rgba(0, 0, 0, 0.8);
      color: #fff;
     }
@@ -1328,7 +1340,7 @@ button#myBtn:hover {
   height: auto;
  }
 
- header {
+ header#site_header {
   padding: 0.25em;
 
   hgroup {
@@ -1834,7 +1846,7 @@ button#myBtn:hover {
   height: auto;
  }
 
- header {
+ header#site_header {
   padding: 0.25em;
 
   hgroup {
@@ -2335,7 +2347,7 @@ button#myBtn:hover {
   height: auto;
  }
 
- header {
+ header#site_header {
   padding: 0.25em;
 
   hgroup {
@@ -2834,7 +2846,7 @@ button#myBtn:hover {
   height: auto;
  }
 
- header {
+ header#site_header {
   padding: 0.25em;
 
   hgroup {
@@ -3342,7 +3354,7 @@ button#myBtn:hover {
   height: auto;
  }
 
- header {
+ header#site_header {
   padding: 0.25em;
 
   hgroup {
@@ -3869,7 +3881,7 @@ button#myBtn:hover {
   height: auto;
  }
 
- header {
+ header#site_header {
   padding: 0.25em;
 
   hgroup {
@@ -4379,7 +4391,7 @@ button#myBtn:hover {
   visibility: visible;
  }
 
- header {
+ header#site_header {
   padding: 0.25em;
 
   hgroup {
@@ -4878,7 +4890,7 @@ button#myBtn:hover {
   width: 98%;
  }
 
- header {
+ header#site_header {
   padding: 0.2em;
 
   hgroup {
@@ -5375,7 +5387,7 @@ button#myBtn:hover {
   width: 98%;
  }
 
- header {
+ header#site_header {
   padding: 0.2em;
 
   hgroup {
@@ -5885,7 +5897,7 @@ button#myBtn:hover {
   width: 98%;
  }
 
- header {
+ header#site_header {
   padding: 0.2em;
 
   hgroup {
@@ -6522,7 +6534,7 @@ button#myBtn:hover {
   width: 98%;
  }
 
- header {
+ header#site_header {
   padding: 0.2em;
 
   hgroup {
@@ -7032,7 +7044,7 @@ button#myBtn:hover {
   width: 98%;
  }
 
- header {
+ header#site_header {
   padding: 0.2em;
 
   hgroup {
@@ -7556,7 +7568,7 @@ button#myBtn:hover {
   width: 98%;
  }
 
- header {
+ header#site_header {
   padding: 0.2em;
 
   hgroup {
@@ -8073,7 +8085,7 @@ button#myBtn:hover {
   width: 98%;
  }
 
- header {
+ header#site_header {
   padding: 0.2em;
 
   hgroup {
@@ -8568,7 +8580,7 @@ button#myBtn:hover {
   width: 98%;
  }
 
- header {
+ header#site_header {
   padding: 0.2em;
 
   hgroup {
@@ -9062,7 +9074,7 @@ button#myBtn:hover {
   width: 98%;
  }
 
- header {
+ header#site_header {
   padding: 0.2em;
 
   hgroup {

@@ -1,13 +1,26 @@
+let prev = document.querySelector(".prev");
+let next = document.querySelector(".next");
+
 var slideIndex = 1;
 
+showSlidesOne(slideIndex);
+
 /* eslint-disable no-console */
-
-const plusSlidesOne = (n) => {
+function plusSlidesOne(n) {
  showSlidesOne((slideIndex += n));
-};
+}
 
+prev.addEventListener("click", (e) => {
+ e.preventDefault();
+ plusSlidesOne(-1);
+});
+
+next.addEventListener("click", (e) => {
+ e.preventDefault();
+ plusSlidesOne(1);
+});
 // Slider 1
-const showSlidesOne = (n) => {
+function showSlidesOne(n) {
  var i;
  var slides = document.getElementsByClassName("collection-box");
 
@@ -24,8 +37,6 @@ const showSlidesOne = (n) => {
  }
 
  slides[slideIndex - 1].style.display = "block";
-};
-
-showSlidesOne(slideIndex);
+}
 
 export { showSlidesOne, plusSlidesOne };
