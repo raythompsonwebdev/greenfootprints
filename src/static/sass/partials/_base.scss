@@ -1,8 +1,6 @@
 @import "mixins";
 @import "variables";
-//@import "fonts";
-
-$fontList: "viroregular", Candara, Georgia, Arial, sans-serif;
+@import "fonts";
 
 html {
  @include box-sizing($type: border-box);

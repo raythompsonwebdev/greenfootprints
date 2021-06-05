@@ -1,0 +1,35 @@
+<section class="content">
+
+  <h1>Recycling facts and figures</h1>
+
+  <div id="facts_box">
+
+    <div id="mask_two">
+
+      {{#each recyclingfacts}}
+
+      <article class="recycle-facts fade">
+
+        <h1>{{this.title}}</h1>
+
+        <p>{{this.text}}</p>
+
+        <ul>
+          {{#each this.list}}
+          <li>{{this.text}}</li>
+          {{/each}}
+          <br />
+        </ul>
+
+      </article>
+
+      {{/each}}
+
+      <a class="prev" onclick="plusSlidesOne(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlidesOne(1)">&#10095;</a>
+
+    </div>
+
+  </div>
+
+</section>
