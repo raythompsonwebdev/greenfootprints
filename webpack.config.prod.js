@@ -62,6 +62,22 @@ export default {
    hash: true,
    template: path.resolve("./src/index.html"),
    filename: path.join(__dirname, "dist/index.html"),
+   minify: {
+    removeComments: true,
+    collapseWhitespace: true,
+    removeRedundantAttributes: true,
+    useShortDoctype: true,
+    removeEmptyAttributes: true,
+    removeStyleLinkTypeAttributes: true,
+    keepClosingSlash: true,
+    minifyJS: true,
+    minifyCSS: true,
+    minifyURLs: true,
+   },
+
+   // Properties you define here are available in index.html
+   // using htmlWebpackPlugin.options.varName
+   trackJSToken: "",
   },
 
   // new HandlebarsPlugin({

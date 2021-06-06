@@ -71,7 +71,7 @@ button#myBtn:hover {
 
  //main container
  div.container_24 {
-  width: 90%;
+  width: 96%;
   height: auto;
   margin-top: 0.5em;
   margin-left: auto;
@@ -86,7 +86,7 @@ button#myBtn:hover {
   display: flex;
   height: auto;
   background-color: $honecolor;
-  padding: 0.25em;
+  padding: 0.2em;
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
@@ -96,26 +96,26 @@ button#myBtn:hover {
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  height: 115px;
+  width: 98%;
+  margin: auto;
 
   hgroup {
-   width: 68%;
+   width: 76%;
    display: block;
    float: left;
-   -webkit-flex: 0 1 auto;
-   -ms-flex: 0 1 auto;
-   flex: 0 1 auto;
+   -webkit-flex: 0 0 auto;
+   -ms-flex: 0 0 auto;
+   flex: 0 0 auto;
 
    h1 {
     color: $colorsocmedhov;
     font-size: 2em;
     font-family: $fontList;
     text-align: left;
-    letter-spacing: 0.15em;
     line-height: 40px;
     margin: 0;
-
     padding: 0;
-    width: 100%;
     text-shadow: 1px 1px 1px $header-shadow;
    }
 
@@ -124,15 +124,11 @@ button#myBtn:hover {
     float: left;
     color: $colorsocmedhov;
     padding: 0;
-
     font-size: 0.85em;
     font-family: $fontList;
     line-height: 20px;
-    width: 100%;
     text-align: left;
-    letter-spacing: 0.15em;
     margin: 0;
-    width: 100%;
     text-shadow: 2px 1px 1px $header-shadow;
    }
   }
@@ -140,12 +136,12 @@ button#myBtn:hover {
   figure#logo {
    display: block;
    margin: 0 0.5em 0 0;
-   width: 5%;
+   width: 8%;
    float: left;
    border: 3px solid $colorsildertxtbg;
-   -webkit-flex: 1 0 auto;
-   -ms-flex: 1 0 auto;
-   flex: 1 0 auto;
+   -webkit-flex: 0 0 auto;
+   -ms-flex: 0 0 auto;
+   flex: 0 0 auto;
    height: 60px;
 
    img#homeImage {
@@ -156,21 +152,17 @@ button#myBtn:hover {
   }
 
   .socials {
-   width: 20%;
-   height: 50px;
-   display: block;
-   float: right;
+   width: 15%;
+   height: 45px;
    margin: 0;
-
-   -webkit-flex: 1 0 auto;
-   -ms-flex: 1 0 auto;
-   flex: 1 0 auto;
+   -webkit-flex: 0 0 auto;
+   -ms-flex: 0 0 auto;
+   flex: 0 0 auto;
 
    ul {
     margin: 0;
     padding: 0;
     height: 100%;
-    display: block;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -233,7 +225,7 @@ button#myBtn:hover {
  nav {
   height: auto;
   text-align: center;
-  margin: 0.5em 0;
+  margin-top: 0.5em;
   z-index: 10;
   width: 100%;
 
@@ -245,13 +237,10 @@ button#myBtn:hover {
    margin-right: 0.5em;
    background-color: $colornav;
    height: 100%;
-   //background-image: url("../images/Large/gif-images/logo-greenfootprints-com.gif");
-   background-size: cover;
 
    img {
     max-width: 100%;
     height: 100%;
-
     vertical-align: middle;
    }
 
@@ -266,7 +255,6 @@ button#myBtn:hover {
     margin: 0;
     background-color: $colornav;
     padding: 0;
-    width: 100%;
     text-shadow: 1px 1px 1px $header-shadow;
    }
   }
@@ -275,28 +263,20 @@ button#myBtn:hover {
    list-style: none;
    margin: 0;
    padding: 0;
-   height: 50px;
-   width: 90%;
-
+   height: 40px;
+   width: 100%;
    display: -webkit-flex;
-   display: -ms-flexbox;
    display: flex;
    -webkit-flex-flow: row;
-   -ms-flex-flow: row;
    flex-flow: row;
    -webkit-align-items: center;
-   -ms-flex-align: center;
    align-items: center;
-   -webkit-justify-content: flex-start;
-   -ms-flex-pack: flex-start;
-   justify-content: flex-start;
+   -webkit-justify-content: stretch;
+   justify-content: stretch;
 
    li {
-    float: left;
     height: 100%;
     margin-right: 0.1em;
-    display: block;
-    width: 12%;
     -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
@@ -305,7 +285,7 @@ button#myBtn:hover {
      color: $colorsocmedhov;
      background-color: $headbg;
      display: block;
-     line-height: 50px;
+     line-height: 40px;
      font-size: 1em;
      letter-spacing: 0.1em;
      height: 100%;
@@ -338,6 +318,35 @@ button#myBtn:hover {
   height: auto;
  }
 
+ @keyframes example {
+  0% {
+   transform: scale(0);
+  }
+
+  25% {
+   transform: scale(0.25);
+  }
+
+  50% {
+   transform: scale(0.5);
+  }
+
+  100% {
+   transform: scale(1);
+  }
+ }
+
+ div.grid_24 {
+  opacity: 0;
+  transition: opacity 500ms;
+ }
+
+ div.grid_24.scrolled {
+  opacity: 1;
+  animation-name: example;
+  animation-duration: 1s;
+ }
+
  /*Wrapper*/
  div.grid_24 {
   margin-left: auto;
@@ -352,7 +361,7 @@ button#myBtn:hover {
   #slider {
    background-color: $honecolor;
    width: 100%;
-   height: 380px;
+   height: 400px;
    margin: 0.5em 0;
 
    div.main-slider {
@@ -368,52 +377,46 @@ button#myBtn:hover {
      font-family: $fontList;
 
      ul.slides {
-      height: 100%;
       margin: 0;
       padding: 0;
       position: relative;
 
       li {
-       padding: 1em;
-       height: 100%;
+       height: 400px;
 
        img {
-        width: 20%;
-        display: inline-block;
-        margin: 0 1.5em;
+        display: block;
+        width: 100%;
        }
 
        div.slider-caption {
-        width: 65%;
-        float: left;
-        display: block;
+        position: absolute;
+        width: 100%;
         text-align: center;
         height: auto;
-
         color: $colorsocmedhov;
-        margin: 0;
+        margin: 1em auto;
 
         h1 {
-         font-size: 2.6em;
+         font-size: 3.5em;
          text-transform: uppercase;
          font-weight: bold;
          color: $colorsocmedhov;
          text-shadow: 1px 1px 1px $header-shadow;
-         line-height: 55px;
+         line-height: 120px;
          margin: 0;
          font-family: $fontList;
         }
 
         p {
-         font-size: 1.2em;
+         font-size: 1.5em;
          text-transform: uppercase;
          letter-spacing: 0.05em;
-         width: 97%;
-         margin: 0.5em;
+         width: 100%;
          line-height: 1.8em;
          color: $colorsocmedhov;
          background-color: $headbg;
-         padding: 0.5em;
+         padding: 0.25em;
 
          font-weight: bold;
         }
@@ -421,11 +424,10 @@ button#myBtn:hover {
         a.largeButton.homeBgColor {
          display: block;
          color: $colorsocmedhov;
-         width: 40%;
+         width: 20%;
          margin: auto;
-         padding: 1%;
          background-color: $headbg;
-         line-height: 34px;
+         line-height: 35px;
          font-size: 1.2em;
          letter-spacing: 0.1em;
 
@@ -479,44 +481,32 @@ button#myBtn:hover {
    display: block;
    width: 100%;
    margin: 0;
-   padding: 0.5em;
+   padding: 0;
    height: auto;
 
    /*Home Page Content boxes*/
    #home_contentboxes {
-    height: 310px;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    height: auto;
     display: flex;
-    -webkit-flex-flow: row;
-    -ms-flex-flow: row;
     flex-flow: row;
-    -webkit-align-items: stretch;
-    -ms-flex-align: stretch;
     align-items: stretch;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: flex-start;
     justify-content: flex-start;
     background-color: $colorsocmedhov;
 
     article.home_contentbox {
      width: 31.5%;
-     min-height: 225px;
      height: auto;
-     background-color: $honecolor;
-     float: left;
-     margin: 0.5em;
+     //background-color: $honecolor;
+     margin: 0.25em;
      @include box-sizing($type: border-box);
-     padding: 0.5em;
-     -webkit-flex: 1 0 auto;
-     -ms-flex: 1 0 auto;
+     padding: 0.25em;
      flex: 1 0 auto;
 
      h1 {
       text-indent: 0;
       height: auto;
       line-height: 35px;
-      font-size: 1.1em;
+      font-size: 1.25em;
       color: $colortxt;
       background-color: $bgcolor;
       text-align: center;
@@ -530,39 +520,41 @@ button#myBtn:hover {
      figure.contentbox_image {
       margin: 0 0.25em 0 0;
       width: 100%;
+      display: flex;
+      align-items: flex-start;
+      flex-flow: row;
 
       img#paperBottles,
       img#flowChart,
-      img#RecycleCircle {
-       display: block;
-       width: 34%;
-       margin: 0 auto;
-      }
-
+      img#RecycleCircle,
       img#wordSearch {
-       display: block;
-       width: 31%;
+       -webkit-flex: 0 1 auto;
+       -ms-flex: 0 1 auto;
+       flex: 0 1 auto;
+       width: 44%;
        margin: 0 0.25em 0 0;
-       float: left;
       }
 
       figcaption {
        margin: 0;
        padding: 0;
+       -webkit-flex: 0 1 auto;
+       -ms-flex: 0 1 auto;
+       flex: 0 1 auto;
 
        p {
         letter-spacing: 0.05em;
         font-size: 1em;
         margin: 0.25em 0;
-        padding: 0.5em;
-        background-color: $colortxtbg;
+        padding: 0.25em;
+        //background-color: $colortxtbg;
         line-height: 1.6em;
         width: auto;
         display: block;
        }
 
        a.content-button {
-        font-size: 0.95em;
+        font-size: 1em;
         height: 35px;
         padding: 0;
         width: 100%;
@@ -582,15 +574,14 @@ button#myBtn:hover {
          background-color: $colorsocmedhov;
          color: $headbg;
          cursor: pointer;
-         letter-spacing: 0.12em;
+         letter-spacing: 0.2em;
          font-weight: bold;
          text-shadow: none;
         }
        }
 
        a[title~="wordsearch.gif"] {
-        display: inline-block;
-        width: 58.5%;
+        width: 100%;
        }
       }
      }
@@ -615,8 +606,8 @@ button#myBtn:hover {
    h1 {
     margin: 0 auto;
     text-align: center;
-    font-size: 2em;
-    line-height: 50px;
+    font-size: 1.25em;
+    line-height: 45px;
     background-color: $honecolor;
     font-weight: bold;
     color: $colorsocmedhov;
@@ -636,24 +627,11 @@ button#myBtn:hover {
     background-color: $colorsocmedhov;
     font-size: 1em;
     padding: 0.5em;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: space-between;
-    justify-content: space-between;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
 
     h1 {
-     margin: 0 0 0.25em 0;
+     margin: 0;
      text-align: center;
-     font-size: 2em;
-     line-height: 50px;
+     line-height: 45px;
      background-color: $honecolor;
      -webkit-align-self: center;
      -ms-flex-item-align: center;
@@ -668,28 +646,23 @@ button#myBtn:hover {
      align-self: center;
      color: $colortxt;
      background-color: $bgcolor;
-     margin: 0 0 0.25em 0;
+     margin: 0;
      text-align: center;
-     font-size: 1.5em;
-     line-height: 45px;
+     font-size: 1.15em;
+     line-height: 40px;
      display: block;
      clear: both;
      font-weight: bold;
     }
 
     p {
-     -webkit-flex: 1 1 auto;
-     -ms-flex: 1 1 auto;
-     flex: 1 1 auto;
-     letter-spacing: 0.05em;
-     padding: 1em;
-     width: 84%;
-     margin: 0 0 0.25em 0;
+     padding: 0.25em;
+     width: auto;
+     margin: 0;
      color: $colorblk;
-     background-color: $colortxtbg;
+     //background-color: $colortxtbg;
      line-height: 1.7em;
      font-size: 1em;
-     display: block;
     }
 
     figure#threeRs {
@@ -717,9 +690,10 @@ button#myBtn:hover {
     }
 
     p#diff_mat_text {
-     width: 57%;
-     flex: 0 0 auto;
+     width: 50%;
      font-size: 1em;
+     float: left;
+     display: block;
     }
 
     address#recycle-contact {
@@ -825,24 +799,20 @@ button#myBtn:hover {
     }
 
     ul#different-materials {
-     padding: 0.25em;
-     width: 42%;
-     display: block;
-     -webkit-align-self: center;
-     -ms-flex-item-align: center;
-     align-self: center;
-     margin: 0 0 0.25em 0.25em;
+     padding: 0;
+     width: 50%;
+     margin: 0;
+     display: inline-block;
 
      li {
       list-style: none;
       text-indent: 0;
       line-height: 30px;
       display: inline-block;
-      width: 48%;
+      width: 49%;
       text-align: left;
       letter-spacing: 0.05em;
       height: auto;
-      clear: left;
 
       &:before {
        font-family: "FontAwesome";
@@ -854,33 +824,44 @@ button#myBtn:hover {
        padding: 0;
        text-align: center;
        font-size: 1em;
-       width: 10%;
-       height: 100%;
+       width: 30px;
+       height: auto;
        float: left;
       }
 
       a {
-       font-size: 1em;
+       font-size: 0.9em;
        width: 100%;
        text-align: left;
+       line-height: 30px;
        color: #000;
        height: 100%;
+       display: block;
+       @include transitioner(all 0.2s ease-in 0s);
 
        &:hover {
         width: 100%;
         font-weight: bold;
+        cursor: pointer;
        }
       }
      }
     }
 
     .recycle_img {
-     -webkit-align-self: center;
-     -ms-flex-item-align: center;
-     align-self: center;
-     margin: 0.5em;
+     margin: 0.25em 0.25em 0 0;
+     width: 5%;
+     height: auto;
+     display: block;
+     float: left;
+    }
+
+    .recycle_img_right {
+     margin: 0 0 0.25em 0.25em;
      width: 10%;
      height: auto;
+     display: block;
+     float: right;
     }
 
     form#feedback-form {
@@ -1179,7 +1160,8 @@ button#myBtn:hover {
      color: #fff;
     }
 
-    article.contentbox > img {
+    article.contentbox > img,
+    article.collection-box > img {
      display: block;
      margin: 2em auto;
     }
@@ -1336,7 +1318,7 @@ button#myBtn:hover {
  }
 
  div.container_24 {
-  width: 90%;
+  width: 96%;
   height: auto;
  }
 
@@ -1410,13 +1392,13 @@ button#myBtn:hover {
   margin: 0.2em 0;
 
   ul {
-   height: 50px;
+   height: 40px;
 
    li {
     width: 12%;
 
     a {
-     font-size: 1em;
+     font-size: 0.9em;
 
      &:hover {
       text-shadow: none;
@@ -1430,7 +1412,7 @@ button#myBtn:hover {
   float: none;
 
   #slider {
-   height: 380px;
+   height: 400px;
 
    div.main-slider {
     height: 100%;
@@ -1442,11 +1424,6 @@ button#myBtn:hover {
       height: 100%;
 
       li {
-       img {
-        position: relative;
-        width: 28%;
-       }
-
        div.slider-caption {
         h1 {
          font-size: 2.4em;
@@ -1496,7 +1473,7 @@ button#myBtn:hover {
 
   main.content {
    #home_contentboxes {
-    height: 295px;
+    height: auto;
 
     article.home_contentbox {
      width: 31.5%;
@@ -1510,12 +1487,9 @@ button#myBtn:hover {
 
       img#paperBottles,
       img#flowChart,
-      img#RecycleCircle {
-       width: 33%;
-      }
-
+      img#RecycleCircle,
       img#wordSearch {
-       width: 33%;
+       width: 44%;
       }
 
       figcaption {
@@ -1641,12 +1615,9 @@ button#myBtn:hover {
     }
 
     ul#different-materials {
-     width: 42%;
-
      li {
       &:before {
        font-size: 1em;
-       width: 10%;
       }
 
       a {
@@ -1661,6 +1632,10 @@ button#myBtn:hover {
     }
 
     .recycle_img {
+     width: 5%;
+    }
+
+    .recycle_img_right {
      width: 10%;
     }
 
@@ -1842,7 +1817,7 @@ button#myBtn:hover {
 
 @media only screen and (max-width: 1280px) {
  div.container_24 {
-  width: 94%;
+  width: 96%;
   height: auto;
  }
 
@@ -1908,19 +1883,15 @@ button#myBtn:hover {
   }
 
   ul {
-   height: 50px;
+   height: 40px;
 
    li {
     a {
-     font-size: 1em;
+     font-size: 0.85em;
 
      &:hover {
       text-shadow: none;
      }
-    }
-
-    a[href^="#whatcando"] {
-     font-size: 80%;
     }
    }
   }
@@ -1928,7 +1899,7 @@ button#myBtn:hover {
 
  div.grid_24 {
   #slider {
-   height: 350px;
+   height: 400px;
 
    div.main-slider {
     height: 100%;
@@ -1940,10 +1911,6 @@ button#myBtn:hover {
       height: 100%;
 
       li {
-       img {
-        width: 28%;
-       }
-
        div.slider-caption {
         h1 {
          font-size: 2.2em;
@@ -2003,13 +1970,9 @@ button#myBtn:hover {
 
       img#paperBottles,
       img#flowChart,
-      img#RecycleCircle {
-       width: 40%;
-      }
-
+      img#RecycleCircle,
       img#wordSearch {
-       width: 35%;
-       margin: 0 0.25em 0.25em 0;
+       width: 44%;
       }
 
       figcaption {
@@ -2249,12 +2212,9 @@ button#myBtn:hover {
     }
 
     ul#different-materials {
-     width: 42%;
-
      li {
       &:before {
        font-size: 1em;
-       width: 12%;
       }
 
       a {
@@ -2269,6 +2229,10 @@ button#myBtn:hover {
     }
 
     .recycle_img {
+     width: 5%;
+    }
+
+    .recycle_img_right {
      width: 10%;
     }
 
@@ -2399,7 +2363,7 @@ button#myBtn:hover {
  }
 
  nav {
-  height: 50px;
+  height: 40px;
 
   div.nav-title {
    width: 9%;
@@ -2410,13 +2374,13 @@ button#myBtn:hover {
   }
 
   ul {
-   height: 50px;
+   height: 40px;
 
    li {
     width: 12%;
 
     a {
-     font-size: 1em;
+     font-size: 0.85em;
 
      &:hover {
       text-shadow: none;
@@ -2438,19 +2402,15 @@ button#myBtn:hover {
       height: 100%;
 
       li {
-       img {
-        width: 34%;
-       }
-
        div.slider-caption {
-        width: 59%;
+        width: 100%;
 
         h1 {
          font-size: 2.6em;
         }
 
         p {
-         font-size: 0.9em;
+         font-size: 1.2em;
         }
 
         a.largeButton.homeBgColor {
@@ -2486,7 +2446,7 @@ button#myBtn:hover {
 
   main.content {
    #home_contentboxes {
-    height: 275px;
+    height: auto;
 
     article.home_contentbox {
      width: 31.3%;
@@ -2500,12 +2460,9 @@ button#myBtn:hover {
 
       img#paperBottles,
       img#flowChart,
-      img#RecycleCircle {
-       width: 40%;
-      }
-
+      img#RecycleCircle,
       img#wordSearch {
-       width: 27%;
+       width: 44%;
       }
 
       figcaption {
@@ -2517,7 +2474,7 @@ button#myBtn:hover {
        }
 
        a.content-button {
-        font-size: 0.95em;
+        font-size: 0.85em;
 
         &:hover {
          background-color: $colortxtbg;
@@ -2634,12 +2591,9 @@ button#myBtn:hover {
     }
 
     ul#different-materials {
-     width: 42%;
-
      li {
       &:before {
        font-size: 1em;
-       width: 14%;
       }
 
       a {
@@ -2654,7 +2608,11 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 12%;
+     width: 5%;
+    }
+
+    .recycle_img_right {
+     width: 10%;
     }
 
     form#feedback-form {
@@ -2842,7 +2800,7 @@ button#myBtn:hover {
 
 @media only screen and (max-width: 980px) {
  div.container_24 {
-  width: 96%;
+  width: 98%;
   height: auto;
  }
 
@@ -2921,17 +2879,13 @@ button#myBtn:hover {
       text-shadow: none;
      }
     }
-
-    a[href^="#whatcando"] {
-     font-size: 75%;
-    }
    }
   }
  }
 
  div.grid_24 {
   #slider {
-   height: 330px;
+   height: 350px;
 
    div.main-slider {
     height: 100%;
@@ -2943,15 +2897,14 @@ button#myBtn:hover {
       height: 100%;
 
       li {
-       img {
-        position: relative;
-       }
+       height: 350px;
 
        div.slider-caption {
-        width: 59%;
+        width: 100%;
 
         h1 {
          font-size: 2.2em;
+         line-height: 100px;
         }
 
         p {
@@ -2995,7 +2948,7 @@ button#myBtn:hover {
 
   main.content {
    #home_contentboxes {
-    height: 300px;
+    height: auto;
     margin: 0;
     padding: 0.25em;
 
@@ -3009,15 +2962,15 @@ button#myBtn:hover {
 
      figure.contentbox_image {
       width: 100%;
+      flex-flow: column;
+      justify-content: center;
 
       img#paperBottles,
       img#flowChart,
-      img#RecycleCircle {
-       width: 51%;
-      }
-
+      img#RecycleCircle,
       img#wordSearch {
-       width: 33%;
+       width: 44%;
+       margin: auto;
       }
 
       figcaption {
@@ -3143,11 +3096,9 @@ button#myBtn:hover {
     }
 
     ul#different-materials {
-     width: 42%;
-
      li {
       &:before {
-       width: 17%;
+       width: 30px;
        font-size: 1em;
       }
 
@@ -3163,6 +3114,10 @@ button#myBtn:hover {
     }
 
     .recycle_img {
+     width: 5%;
+    }
+
+    .recycle_img_right {
      width: 10%;
     }
 
@@ -3350,7 +3305,6 @@ button#myBtn:hover {
 
 @media only screen and (max-width: 800px) {
  div.container_24 {
-  width: 96%;
   height: auto;
  }
 
@@ -3446,10 +3400,6 @@ button#myBtn:hover {
 
      ul.slides {
       li {
-       img {
-        position: relative;
-       }
-
        div.slider-caption {
         h1 {
          font-size: 2em;
@@ -3508,12 +3458,9 @@ button#myBtn:hover {
 
       img#paperBottles,
       img#flowChart,
-      img#RecycleCircle {
-       width: 48%;
-      }
-
+      img#RecycleCircle,
       img#wordSearch {
-       width: 32%;
+       width: 44%;
       }
 
       figcaption {
@@ -3654,8 +3601,6 @@ button#myBtn:hover {
     }
 
     ul#different-materials {
-     width: 42%;
-
      li {
       &:before {
        font-size: 1em;
@@ -3673,6 +3618,10 @@ button#myBtn:hover {
     }
 
     .recycle_img {
+     width: 5%;
+    }
+
+    .recycle_img_right {
      width: 10%;
     }
 
@@ -3877,7 +3826,6 @@ button#myBtn:hover {
 
 @media only screen and (max-width: 768px) {
  div.container_24 {
-  width: 96%;
   height: auto;
  }
 
@@ -3953,10 +3901,6 @@ button#myBtn:hover {
       text-shadow: none;
      }
     }
-
-    a[href^="#whatcando"] {
-     font-size: 60%;
-    }
    }
   }
  }
@@ -3975,11 +3919,6 @@ button#myBtn:hover {
 
      ul.slides {
       li {
-       img {
-        z-index: 2;
-        width: 33%;
-       }
-
        div.slider-caption {
         h1 {
          font-size: 1.6em;
@@ -4035,12 +3974,9 @@ button#myBtn:hover {
 
       img#paperBottles,
       img#flowChart,
-      img#RecycleCircle {
-       width: 56%;
-      }
-
+      img#RecycleCircle,
       img#wordSearch {
-       width: 33%;
+       width: 44%;
       }
 
       figcaption {
@@ -4178,12 +4114,9 @@ button#myBtn:hover {
     }
 
     ul#different-materials {
-     width: 42%;
-
      li {
       &:before {
        font-size: 1em;
-       width: 20%;
       }
 
       a {
@@ -4198,7 +4131,11 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 12%;
+     width: 5%;
+    }
+
+    .recycle_img_right {
+     width: 10%;
     }
 
     form#feedback-form {
@@ -4384,7 +4321,7 @@ button#myBtn:hover {
  }
 
  div.container_24 {
-  width: 96%;
+  width: 98%;
  }
 
  .nav-title {
@@ -4479,12 +4416,6 @@ button#myBtn:hover {
 
      ul.slides {
       li {
-       padding: 1em 0.5em;
-
-       img {
-        z-index: 2;
-       }
-
        div.slider-caption {
         h1 {
          font-size: 1.6em;
@@ -4544,12 +4475,9 @@ button#myBtn:hover {
 
       img#paperBottles,
       img#flowChart,
-      img#RecycleCircle {
-       width: 55%;
-      }
-
+      img#RecycleCircle,
       img#wordSearch {
-       width: 35%;
+       width: 44%;
       }
 
       figcaption {
@@ -4687,8 +4615,6 @@ button#myBtn:hover {
     }
 
     ul#different-materials {
-     width: 42%;
-
      li {
       &:before {
        font-size: 1em;
@@ -4706,7 +4632,11 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 18%;
+     width: 9%;
+    }
+
+    .recycle_img_right {
+     width: 14%;
     }
 
     form#feedback-form {
@@ -4980,10 +4910,6 @@ button#myBtn:hover {
 
      ul.slides {
       li {
-       img {
-        z-index: 2;
-       }
-
        div.slider-caption {
         h1 {
          font-size: 1.5em;
@@ -5044,10 +4970,6 @@ button#myBtn:hover {
       img#flowChart,
       img#RecycleCircle {
        width: 55%;
-      }
-
-      img#wordSearch {
-       width: 34%;
       }
 
       figcaption {
@@ -5188,7 +5110,6 @@ button#myBtn:hover {
 
     ul#different-materials {
      padding: 0;
-     width: 42%;
 
      li {
       &:before {
@@ -5207,7 +5128,11 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 18%;
+     width: 9%;
+    }
+
+    .recycle_img_right {
+     width: 14%;
     }
 
     form#feedback-form {
@@ -5462,10 +5387,6 @@ button#myBtn:hover {
       text-shadow: none;
      }
     }
-
-    a[href^="#whatcando"] {
-     font-size: 52%;
-    }
    }
   }
  }
@@ -5484,11 +5405,6 @@ button#myBtn:hover {
 
      ul.slides {
       li {
-       img {
-        z-index: 2;
-        width: 31%;
-       }
-
        div.slider-caption {
         h1 {
          font-size: 1.5em;
@@ -5542,7 +5458,7 @@ button#myBtn:hover {
 
   main.content {
    #home_contentboxes {
-    height: 280px;
+    height: auto;
 
     article.home_contentbox {
      h1 {
@@ -5554,12 +5470,9 @@ button#myBtn:hover {
 
       img#paperBottles,
       img#flowChart,
-      img#RecycleCircle {
-       width: 52%;
-      }
-
+      img#RecycleCircle,
       img#wordSearch {
-       width: 33%;
+       width: 44%;
       }
 
       figcaption {
@@ -5696,11 +5609,8 @@ button#myBtn:hover {
     }
 
     ul#different-materials {
-     width: 42%;
-
      li {
       &:before {
-       width: 25%;
        font-size: 1em;
       }
 
@@ -5716,7 +5626,11 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 18%;
+     width: 9%;
+    }
+
+    .recycle_img_right {
+     width: 14%;
     }
 
     form#feedback-form {
@@ -6097,10 +6011,6 @@ button#myBtn:hover {
 
      ul.slides {
       li {
-       img {
-        z-index: 2;
-       }
-
        div.slider-caption {
         h1 {
          font-size: 1.4em;
@@ -6179,12 +6089,9 @@ button#myBtn:hover {
 
       img#paperBottles,
       img#flowChart,
-      img#RecycleCircle {
-       width: 35%;
-      }
-
+      img#RecycleCircle,
       img#wordSearch {
-       width: 20%;
+       width: 44%;
       }
 
       figcaption {
@@ -6344,7 +6251,11 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 20%;
+     width: 9%;
+    }
+
+    .recycle_img_right {
+     width: 14%;
     }
 
     form#feedback-form {
@@ -6627,11 +6538,6 @@ button#myBtn:hover {
 
      ul.slides {
       li {
-       img {
-        z-index: 2;
-        width: 33%;
-       }
-
        div.slider-caption {
         width: 56%;
 
@@ -6696,12 +6602,9 @@ button#myBtn:hover {
 
       img#paperBottles,
       img#flowChart,
-      img#RecycleCircle {
-       width: 35%;
-      }
-
+      img#RecycleCircle,
       img#wordSearch {
-       width: 20%;
+       width: 44%;
       }
 
       figcaption {
@@ -6848,7 +6751,11 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 20%;
+     width: 9%;
+    }
+
+    .recycle_img_right {
+     width: 14%;
     }
 
     form#feedback-form {
@@ -7142,13 +7049,6 @@ button#myBtn:hover {
 
      ul.slides {
       li {
-       img {
-        position: absolute;
-        left: 18%;
-        width: 50%;
-        z-index: 2;
-       }
-
        div.slider-caption {
         z-index: 7;
         position: relative;
@@ -7215,12 +7115,9 @@ button#myBtn:hover {
 
       img#paperBottles,
       img#flowChart,
-      img#RecycleCircle {
-       width: 35%;
-      }
-
+      img#RecycleCircle,
       img#wordSearch {
-       width: 20%;
+       width: 44%;
       }
 
       figcaption {
@@ -7372,8 +7269,11 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 25%;
-     margin: auto;
+     width: 9%;
+    }
+
+    .recycle_img_right {
+     width: 14%;
     }
 
     form#feedback-form {
@@ -7657,10 +7557,6 @@ button#myBtn:hover {
 
      ul.slides {
       li {
-       img {
-        z-index: 2;
-       }
-
        div.slider-caption {
         h1 {
          font-size: 1.2em;
@@ -7718,12 +7614,9 @@ button#myBtn:hover {
 
       img#paperBottles,
       img#flowChart,
-      img#RecycleCircle {
-       width: 45%;
-      }
-
+      img#RecycleCircle,
       img#wordSearch {
-       width: 35%;
+       width: 44%;
       }
 
       figcaption {
@@ -7871,7 +7764,11 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 25%;
+     width: 9%;
+    }
+
+    .recycle_img_right {
+     width: 14%;
     }
 
     form#feedback-form {
@@ -8177,10 +8074,6 @@ button#myBtn:hover {
 
      ul.slides {
       li {
-       img {
-        z-index: 2;
-       }
-
        div.slider-caption {
         h1 {
          font-size: 1.1em;
@@ -8236,12 +8129,9 @@ button#myBtn:hover {
 
       img#paperBottles,
       img#flowChart,
-      img#RecycleCircle {
-       width: 45%;
-      }
-
+      img#RecycleCircle,
       img#wordSearch {
-       width: 35%;
+       width: 44%;
       }
 
       figcaption {
@@ -8385,7 +8275,11 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 25%;
+     width: 9%;
+    }
+
+    .recycle_img_right {
+     width: 14%;
     }
 
     form#feedback-form {
@@ -8670,10 +8564,6 @@ button#myBtn:hover {
 
      ul.slides {
       li {
-       img {
-        z-index: 2;
-       }
-
        div.slider-caption {
         h1 {
          font-size: 1.1em;
@@ -8731,12 +8621,9 @@ button#myBtn:hover {
 
       img#paperBottles,
       img#flowChart,
-      img#RecycleCircle {
-       width: 45%;
-      }
-
+      img#RecycleCircle,
       img#wordSearch {
-       width: 35%;
+       width: 44%;
       }
 
       figcaption {
@@ -8882,7 +8769,11 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 25%;
+     width: 9%;
+    }
+
+    .recycle_img_right {
+     width: 14%;
     }
 
     form#feedback-form {
@@ -9165,10 +9056,6 @@ button#myBtn:hover {
      height: 100%;
 
      ul.slides {
-      img {
-       z-index: 2;
-      }
-
       li {
        div.slider-caption {
         h1 {
@@ -9226,12 +9113,9 @@ button#myBtn:hover {
 
       img#paperBottles,
       img#flowChart,
-      img#RecycleCircle {
-       width: 50%;
-      }
-
+      img#RecycleCircle,
       img#wordSearch {
-       width: 40%;
+       width: 44%;
       }
 
       figcaption {
@@ -9372,7 +9256,11 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 25%;
+     width: 9%;
+    }
+
+    .recycle_img_right {
+     width: 14%;
     }
 
     form#feedback-form {

@@ -1,20 +1,21 @@
 import "./static/sass/normalize.scss";
 import "./static/sass/style.scss";
 import showSlides from "./static/js/slideShoes";
-//import sliderSlider from "./static/js/sliderIndex";
 import tenways from "./static/data/tenways.json";
 import collections from "./static/data/collections.json";
 import recyclingfacts from "./static/data/recyclingfacts.json";
 
 /* eslint-disable no-console */
+//header image
+import homeIcon from "./static/images/Large/gif-images/logo-greenfootprints-com.gif";
+//header image ******************************************
+var homeImg = document.querySelector("#homeImage");
+homeImg.src = homeIcon;
 
 //home page
 let template = require("./views/index.hbs");
-
 let html = template();
-
 let homeContainer = document.getElementById("home");
-//console.log(homeContainer);
 homeContainer.innerHTML = html;
 //home page slider function
 showSlides();
@@ -126,7 +127,6 @@ next2.addEventListener("click", (e) => {
 /* eslint-disable no-console */
 
 //Your code to run since DOM is loaded and ready
-
 const menuToggle = document.querySelector("#mobile-toggle");
 // create menu variables
 const slideoutMenu = document.querySelector(".site_navigation");
@@ -165,7 +165,7 @@ const scrollElements = document.querySelectorAll(".grid_24");
 // });
 
 //detect page scroll function
-const elementInView = (el, scrollOffset = 135) => {
+const elementInView = (el, scrollOffset = 115) => {
  const elementTop = el.getBoundingClientRect().top;
 
  return (
@@ -187,7 +187,7 @@ const hideScrollElement = (element) => {
 //add animation to element on page scroll
 const handleScrollAnimation = () => {
  scrollElements.forEach((el) => {
-  if (elementInView(el, 135)) {
+  if (elementInView(el, 115)) {
    displayScrollElement(el);
   } else {
    hideScrollElement(el);
@@ -200,7 +200,7 @@ handleScrollAnimation();
 //In JavaScript, using the addEventListener() method:  object.addEventListener("scroll", myScript);
 window.onscroll = function () {
  //fixes header to top of page on page scroll.
- if (scrollScreen.scrollTop >= 135) {
+ if (scrollScreen.scrollTop >= 115) {
   siteHeader.classList.add("fixed-header");
  } else {
   siteHeader.classList.remove("fixed-header");
@@ -213,7 +213,7 @@ const scrollTo = (element) => {
  scrollScreen.scrollTo({
   behavior: "smooth",
   left: 0,
-  top: element.offsetTop - 135, // deduct height of header.
+  top: element.offsetTop - 120, // deduct height of header.
  });
 };
 

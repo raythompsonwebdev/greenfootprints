@@ -5,7 +5,7 @@
 html {
  @include box-sizing($type: border-box);
  scroll-behavior: smooth;
- scroll-margin-top: 135px;
+ scroll-margin-top: 115px;
 }
 
 body {
@@ -126,35 +126,22 @@ q {
 
 a {
  text-decoration: none;
-
- &:link {
-  color: $colorsocmedhov;
- }
- &:visited {
-  color: $colorsocmedhov;
- }
  &:focus {
   outline: 1px dotted $colortxt;
- }
- &:active {
-  color: $colortxtbg;
  }
 }
 
 h1 {
- letter-spacing: 0.1em;
  font-weight: normal;
  width: 100%;
 }
 
 h2 {
- letter-spacing: 0.1em;
  font-weight: normal;
  width: 100%;
 }
 
 h3 {
- letter-spacing: 0.1em;
  font-weight: normal;
  width: 100%;
 }
