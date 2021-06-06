@@ -242,24 +242,3 @@ Array.from(navLinks).forEach((link) => {
   }
  });
 });
-
-// const menuToggle = document.querySelector("#mobile-toggle");
-// const slideoutMenu = document.querySelector("#mobile-nav");
-
-// const menuLinks = document.querySelectorAll(".nav-links");
-
-// menuLinks.forEach(function (e) {
-//  e.addEventListener(
-//   "click",
-//   function () {
-//    slideoutMenu.classList.remove("open");
-
-//    if (!slideoutMenu.classList.contains("open")) {
-//     slideoutMenu.style.top = "-365px";
-//    } else {
-//     slideoutMenu.style.top = "0px";
-//    }
-//   },
-//   false
-//  );
-// });

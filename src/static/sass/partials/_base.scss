@@ -5,6 +5,7 @@
 html {
  @include box-sizing($type: border-box);
  scroll-behavior: smooth;
+ scroll-margin-top: 135px;
 }
 
 body {
