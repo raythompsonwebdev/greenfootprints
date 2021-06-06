@@ -163,18 +163,13 @@ button#myBtn:hover {
     margin: 0;
     padding: 0;
     height: 100%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     -webkit-flex-flow: row;
-    -ms-flex-flow: row;
     flex-flow: row;
     -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: space-around;
-    justify-content: space-around;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
 
     li {
      display: block;
@@ -202,7 +197,7 @@ button#myBtn:hover {
        width: 100%;
        height: 100%;
        text-align: center;
-       line-height: 50px;
+       line-height: 45px;
        font-size: 1.25em;
        color: $colorsocmedhov;
        @include transitioner(all 0.2s ease-in 0s);
@@ -222,7 +217,7 @@ button#myBtn:hover {
   /*social media icons*/
  }
 
- nav {
+ nav.site_navigation {
   height: auto;
   text-align: center;
   margin-top: 0.5em;
@@ -301,11 +296,6 @@ button#myBtn:hover {
     }
    }
   }
- }
-
- /*Mobile Navigation*/
- nav#mobile-nav {
-  display: none;
  }
 
  /*Collections Section*/
@@ -1376,11 +1366,7 @@ button#myBtn:hover {
   /*social media icons*/
  }
 
- nav#mobile-nav {
-  display: none;
- }
-
- nav {
+ nav.site_navigation {
   div.nav-title {
    width: 8%;
 
@@ -1866,12 +1852,7 @@ button#myBtn:hover {
   /*social media icons*/
  }
 
- nav#mobile-nav {
-  display: none;
- }
-
- nav {
-  height: 50px;
+ nav.site_navigation {
   margin: 0.2em 0;
 
   div.nav-title {
@@ -2137,7 +2118,6 @@ button#myBtn:hover {
     }
 
     p {
-     width: 80%;
      padding: 0.25em;
     }
 
@@ -2229,7 +2209,7 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 5%;
+     width: 8%;
     }
 
     .recycle_img_right {
@@ -2358,11 +2338,7 @@ button#myBtn:hover {
   /*social media icons*/
  }
 
- nav#mobile-nav {
-  display: none;
- }
-
- nav {
+ nav.site_navigation {
   height: 40px;
 
   div.nav-title {
@@ -2514,7 +2490,6 @@ button#myBtn:hover {
 
     p {
      font-size: 0.9em;
-     width: 78%;
     }
 
     figure#threeRs {
@@ -2608,7 +2583,7 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 5%;
+     width: 10%;
     }
 
     .recycle_img_right {
@@ -2851,11 +2826,7 @@ button#myBtn:hover {
   /*social media icons*/
  }
 
- nav#mobile-nav {
-  display: none;
- }
-
- nav {
+ nav.site_navigation {
   margin: 0.2em 0;
 
   div.nav-title {
@@ -2873,11 +2844,15 @@ button#myBtn:hover {
     width: 12%;
 
     a {
-     font-size: 0.85em;
+     font-size: 0.8em;
 
      &:hover {
       text-shadow: none;
      }
+    }
+
+    a[href*="#whatcando"] {
+     font-size: 75%;
     }
    }
   }
@@ -2969,7 +2944,7 @@ button#myBtn:hover {
       img#flowChart,
       img#RecycleCircle,
       img#wordSearch {
-       width: 44%;
+       width: 50%;
        margin: auto;
       }
 
@@ -3022,7 +2997,7 @@ button#myBtn:hover {
     }
 
     p {
-     width: 75%;
+     width: auto;
     }
 
     figure#threeRs {
@@ -3114,7 +3089,7 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 5%;
+     width: 14%;
     }
 
     .recycle_img_right {
@@ -3355,12 +3330,8 @@ button#myBtn:hover {
   /*social media icons*/
  }
 
- nav#mobile-nav {
-  display: none;
- }
-
- nav {
-  height: 50px;
+ nav.site_navigation {
+  height: 40px;
 
   div.nav-title {
    width: 9%;
@@ -3378,7 +3349,7 @@ button#myBtn:hover {
     width: 12%;
 
     a {
-     font-size: 0.8em;
+     font-size: 0.75em;
 
      &:hover {
       text-shadow: none;
@@ -3390,7 +3361,7 @@ button#myBtn:hover {
 
  div.grid_24 {
   #slider {
-   height: 300px;
+   height: 325px;
 
    div.main-slider {
     height: 100%;
@@ -3400,6 +3371,8 @@ button#myBtn:hover {
 
      ul.slides {
       li {
+       height: 325px;
+
        div.slider-caption {
         h1 {
          font-size: 2em;
@@ -3460,7 +3433,7 @@ button#myBtn:hover {
       img#flowChart,
       img#RecycleCircle,
       img#wordSearch {
-       width: 44%;
+       width: 50%;
       }
 
       figcaption {
@@ -3472,7 +3445,7 @@ button#myBtn:hover {
        }
 
        a.content-button {
-        font-size: 0.95em;
+        font-size: 0.85em;
 
         &:hover {
          background-color: $colortxtbg;
@@ -3618,7 +3591,7 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 5%;
+     width: 16%;
     }
 
     .recycle_img_right {
@@ -3875,11 +3848,7 @@ button#myBtn:hover {
   /*social media icons*/
  }
 
- nav#mobile-nav {
-  display: none;
- }
-
- nav {
+ nav.site_navigation {
   height: 50px;
 
   div.nav-title {
@@ -3900,6 +3869,10 @@ button#myBtn:hover {
      &:hover {
       text-shadow: none;
      }
+    }
+
+    a[href*="#whatcando"] {
+     font-size: 70%;
     }
    }
   }
@@ -3976,7 +3949,7 @@ button#myBtn:hover {
       img#flowChart,
       img#RecycleCircle,
       img#wordSearch {
-       width: 44%;
+       width: 50%;
       }
 
       figcaption {
@@ -3988,7 +3961,7 @@ button#myBtn:hover {
        }
 
        a.content-button {
-        font-size: 0.9em;
+        font-size: 0.8em;
 
         &:hover {
          background-color: $colortxtbg;
@@ -4131,7 +4104,7 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 5%;
+     width: 26%;
     }
 
     .recycle_img_right {
@@ -4374,11 +4347,7 @@ button#myBtn:hover {
   /*social media icons*/
  }
 
- nav#mobile-nav {
-  display: none;
- }
-
- nav {
+ nav.site_navigation {
   height: 50px;
 
   div.nav-title {
@@ -4401,6 +4370,10 @@ button#myBtn:hover {
      &:hover {
       text-shadow: none;
      }
+    }
+
+    a[href*="#whatcando"] {
+     font-size: 65%;
     }
    }
   }
@@ -4535,7 +4508,6 @@ button#myBtn:hover {
 
     p {
      letter-spacing: 0.1em;
-     width: 70%;
     }
 
     /*Drop Cap*/
@@ -4632,7 +4604,7 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 9%;
+     width: 26%;
     }
 
     .recycle_img_right {
@@ -4866,11 +4838,7 @@ button#myBtn:hover {
   /*social media icons*/
  }
 
- nav#mobile-nav {
-  display: none;
- }
-
- nav {
+ nav.site_navigation {
   height: 50px;
 
   div.nav-title {
@@ -4888,11 +4856,15 @@ button#myBtn:hover {
     width: 12%;
 
     a {
-     font-size: 0.75em;
+     font-size: 0.9em;
 
      &:hover {
       text-shadow: none;
      }
+    }
+
+    a[href*="#whatcando"] {
+     font-size: 100%;
     }
    }
   }
@@ -5028,7 +5000,6 @@ button#myBtn:hover {
 
     p {
      letter-spacing: 0.1em;
-     width: 70%;
     }
 
     /*Drop Cap*/
@@ -5128,7 +5099,7 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 9%;
+     width: 30%;
     }
 
     .recycle_img_right {
@@ -5358,11 +5329,7 @@ button#myBtn:hover {
   /*social media icons*/
  }
 
- nav#mobile-nav {
-  display: none;
- }
-
- nav {
+ nav.site_navigation {
   height: 50px;
 
   div.nav-title {
@@ -5381,7 +5348,7 @@ button#myBtn:hover {
     width: 12%;
 
     a {
-     font-size: 0.75em;
+     font-size: 0.85em;
 
      &:hover {
       text-shadow: none;
@@ -5626,7 +5593,7 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 9%;
+     width: 30%;
     }
 
     .recycle_img_right {
@@ -5815,14 +5782,14 @@ button#myBtn:hover {
   padding: 0.2em;
 
   hgroup {
-   width: 50%;
+   width: 80%;
 
    h1 {
-    font-size: 1.2em;
+    font-size: 1.5em;
    }
 
    h2 {
-    font-size: 0.6em;
+    font-size: 0.8em;
    }
   }
 
@@ -5832,14 +5799,20 @@ button#myBtn:hover {
   }
 
   .socials {
-   width: 30%;
+   width: 100%;
+   height: 35px;
 
    ul {
     margin: 0;
     padding: 0;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
 
     li {
-     width: 23%;
+     width: 9%;
+     flex: 0 1 auto;
 
      a {
       width: 100%;
@@ -5848,7 +5821,8 @@ button#myBtn:hover {
       i.fa-facebook,
       i.fa-google,
       i.fa-instagram {
-       font-size: 0.85em;
+       font-size: 1em;
+       line-height: 35px;
       }
      }
     }
@@ -5866,18 +5840,17 @@ button#myBtn:hover {
  button#mobile-toggle {
   position: fixed;
   z-index: 100;
-  top: 3em;
-  left: 87%;
-  padding: 0.7em;
+  top: 0.2em;
+  left: calc(70% - 1%);
   font-size: 1.5em;
   text-transform: uppercase;
   background-color: $contentbg;
   color: $colorsocmedhov;
   border: none;
   @include transitioner(all ease-out 400ms);
-
-  height: 60px;
-  width: 70px;
+  height: 50px;
+  line-height: 50px;
+  width: 170px;
  }
 
  .closeMenu {
@@ -5905,51 +5878,15 @@ button#myBtn:hover {
  }
 
  /*Mobile Navigation*/
- nav#mobile-nav {
+ nav.site_navigation {
   display: block;
   position: fixed;
   top: -365px;
   left: 0;
   z-index: 98;
   width: 100%;
-  height: 360px;
+  height: 365px;
   margin: 0;
-
-  ul {
-   height: 100%;
-   -webkit-flex-flow: column;
-   -ms-flex-flow: column;
-   flex-flow: column;
-   margin-right: 0;
-   margin: 0;
-   width: 100%;
-
-   li {
-    height: 45px;
-    list-style: none;
-    width: 100%;
-    display: block;
-
-    a {
-     line-height: 45px;
-     margin: 0;
-     letter-spacing: 0.1em;
-     font-size: 1em;
-     text-align: center;
-     display: block;
-
-     &:hover {
-      text-shadow: none;
-      letter-spacing: 0.2em;
-      font-weight: bold;
-     }
-    }
-   }
-  }
- }
-
- nav {
-  display: none;
 
   div.nav-title {
    display: none;
@@ -5965,7 +5902,6 @@ button#myBtn:hover {
    -webkit-flex-flow: column;
    -ms-flex-flow: column;
    flex-flow: column;
-   margin-right: 0;
    margin: 0;
    width: 100%;
 
@@ -6251,7 +6187,7 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 9%;
+     width: 30%;
     }
 
     .recycle_img_right {
@@ -6465,14 +6401,14 @@ button#myBtn:hover {
   }
 
   .socials {
-   width: 30%;
+   width: 100%;
 
    ul {
     margin: 0;
     padding: 0;
 
     li {
-     width: 22%;
+     width: 12%;
 
      a {
       width: 100%;
@@ -6504,7 +6440,7 @@ button#myBtn:hover {
   left: 100vw;
  }
 
- nav#mobile-nav {
+ nav.site_navigation {
   ul {
    height: 360px;
 
@@ -6522,10 +6458,6 @@ button#myBtn:hover {
     }
    }
   }
- }
-
- nav {
-  display: none;
  }
 
  div.grid_24 {
@@ -6751,7 +6683,7 @@ button#myBtn:hover {
     }
 
     .recycle_img {
-     width: 9%;
+     width: 30%;
     }
 
     .recycle_img_right {
@@ -6971,15 +6903,15 @@ button#myBtn:hover {
   }
 
   .socials {
-   width: 30%;
-   visibility: hidden;
+   width: 100%;
+   //visibility: hidden;
 
    ul {
     margin: 0;
     padding: 0;
 
     li {
-     width: 22%;
+     width: 12%;
 
      a {
       width: 100%;
@@ -7007,7 +6939,7 @@ button#myBtn:hover {
   left: 100vw;
  }
 
- nav#mobile-nav {
+ nav.site_navigation {
   ul {
    li {
     height: 45px;
@@ -7023,10 +6955,6 @@ button#myBtn:hover {
     }
    }
   }
- }
-
- nav {
-  display: none;
  }
 
  div#collections,
@@ -7488,11 +7416,11 @@ button#myBtn:hover {
   }
 
   .socials {
-   width: 30%;
+   width: 100%;
 
    ul {
     li {
-     width: 22%;
+     width: 12%;
 
      a {
       width: 100%;
@@ -7519,7 +7447,7 @@ button#myBtn:hover {
   left: 100vw;
  }
 
- nav#mobile-nav {
+ nav.site_navigation {
   ul {
    li {
     height: 45px;
@@ -7535,10 +7463,6 @@ button#myBtn:hover {
     }
    }
   }
- }
-
- nav {
-  display: none;
  }
 
  nav.hide {
@@ -8002,14 +7926,14 @@ button#myBtn:hover {
   }
 
   .socials {
-   width: 30%;
+   width: 100%;
 
    ul {
     margin: 0;
     padding: 0;
 
     li {
-     width: 22%;
+     width: 12%;
 
      a {
       width: 100%;
@@ -8036,7 +7960,7 @@ button#myBtn:hover {
   left: 100vw;
  }
 
- nav#mobile-nav {
+ nav.site_navigation {
   ul {
    li {
     height: 45px;
@@ -8052,10 +7976,6 @@ button#myBtn:hover {
     }
    }
   }
- }
-
- nav {
-  display: none;
  }
 
  nav.hide {
@@ -8494,14 +8414,14 @@ button#myBtn:hover {
   }
 
   .socials {
-   width: 30%;
+   width: 100%;
 
    ul {
     margin: 0;
     padding: 0;
 
     li {
-     width: 22%;
+     width: 12%;
 
      a {
       width: 100%;
@@ -8528,7 +8448,7 @@ button#myBtn:hover {
   left: 100vw;
  }
 
- nav#mobile-nav {
+ nav.site_navigation {
   ul {
    li {
     height: 45px;
@@ -8544,10 +8464,6 @@ button#myBtn:hover {
     }
    }
   }
- }
-
- nav {
-  display: none;
  }
 
  nav.hide {
@@ -8985,14 +8901,14 @@ button#myBtn:hover {
   }
 
   .socials {
-   width: 30%;
+   width: 100%;
 
    ul {
     margin: 0;
     padding: 0;
 
     li {
-     width: 22%;
+     width: 12%;
 
      a {
       width: 100%;
@@ -9019,7 +8935,7 @@ button#myBtn:hover {
   left: 100vw;
  }
 
- nav#mobile-nav {
+ nav.site_navigation {
   ul {
    li {
     height: 45px;
@@ -9035,10 +8951,6 @@ button#myBtn:hover {
     }
    }
   }
- }
-
- nav {
-  display: none;
  }
 
  nav.hide {
