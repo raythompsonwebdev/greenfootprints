@@ -4,8 +4,8 @@ import OptimizeCSSAssetsPlugin from "optimize-css-assets-webpack-plugin";
 import TerserPlugin from "terser-webpack-plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
-import CleanWebpackPlugin from "clean-webpack-plugin";
-const HandlebarsPlugin = require("handlebars-webpack-plugin");
+import { CleanWebpackPlugin } from "clean-webpack-plugin";
+//const HandlebarsPlugin = require("handlebars-webpack-plugin");
 
 export default {
  mode: "production",
@@ -31,50 +31,62 @@ export default {
   minimizer: [
    // Minify JS
    new TerserPlugin({
-    sourceMap: true,
-    cache: true,
+    terserOptions: {
+     compress: {},
+    },
    }),
    new OptimizeCSSAssetsPlugin(),
   ],
  },
  plugins: [
-  new CleanWebpackPlugin({}),
+  new CleanWebpackPlugin({
+   // Simulate the removal of files
+   //
+   // default: false
+   dry: false,
+
+   // Write Logs to Console
+   // (Always enabled when dry is true)
+   //
+   // default: false
+   verbose: false,
+  }),
 
   new MiniCssExtractPlugin({
    filename: "style.[contenthash].css",
   }),
 
   new HtmlWebpackPlugin(),
-  //  {
-  //  inject: true, //dynamically adds script tags
-  //  hash: true,
-  //  template: path.resolve("./src/views/layouts/template.hbs"),
-  //  filename: path.join(__dirname, "dist/index.html"),
-  // }
+  {
+   inject: true, //dynamically adds script tags
+   hash: true,
+   template: path.resolve("./src/index.html"),
+   filename: path.join(__dirname, "dist/index.html"),
+  },
 
-  new HandlebarsPlugin({
-   // path to hbs entry file(s). Also supports nested directories if write path.join(process.cwd(), "app", "src", "**", "*.hbs"),
-   entry: path.join(process.cwd(), "src", "views", "**", "*.hbs"),
-   // output path and filename(s). This should lie within the webpacks output-folder
-   // if ommited, the input filepath stripped of its extension will be used
-   output: path.join(process.cwd(), "dist", "[name].html"),
-   // you can also add a [path] variable, which will emit the files with their relative path, like
-   // output: path.join(process.cwd(), "build", [path], "[name].html"),
-  }),
+  // new HandlebarsPlugin({
+  //  // path to hbs entry file(s). Also supports nested directories if write path.join(process.cwd(), "app", "src", "**", "*.hbs"),
+  //  entry: path.join(process.cwd(), "src", "views", "**", "*.hbs"),
+  //  // output path and filename(s). This should lie within the webpacks output-folder
+  //  // if ommited, the input filepath stripped of its extension will be used
+  //  output: path.join(process.cwd(), "dist", "[name].html"),
+  //  // you can also add a [path] variable, which will emit the files with their relative path, like
+  //  // output: path.join(process.cwd(), "build", [path], "[name].html"),
+  // }),
 
   new WebpackMd5Hash(),
  ],
 
  module: {
   rules: [
-   {
-    test: /\.hbs$/,
-    use: [
-     {
-      loader: "handlebars-loader",
-     },
-    ],
-   },
+   // {
+   //  test: /\.hbs$/,
+   //  use: [
+   //   {
+   //    loader: "handlebars-loader",
+   //   },
+   //  ],
+   // },
    {
     test: /\.js$/,
     exclude: /node_modules/,
