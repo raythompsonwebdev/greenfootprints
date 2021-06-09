@@ -24,18 +24,6 @@ export default {
    //hash: true,
    template: "./src/index.html",
    filename: "index.html",
-   minify: {
-    removeComments: true,
-    collapseWhitespace: true,
-    removeRedundantAttributes: true,
-    useShortDoctype: true,
-    removeEmptyAttributes: true,
-    removeStyleLinkTypeAttributes: true,
-    keepClosingSlash: true,
-    minifyJS: true,
-    minifyCSS: true,
-    minifyURLs: true,
-   },
   }),
   new StyleLintPlugin({
    configFile: "./.stylelintrc.json",
@@ -67,11 +55,11 @@ export default {
    },
    {
     test: /\.css$/i,
-    use: [MiniCssExtractPlugin.loader, "css-loader"],
+    use: [MiniCssExtractPlugin.loader, "style-loader", "css-loader"],
    },
    {
     test: /\.scss$/,
-    use: ["style-loader", "css-loader", "sass-loader", "postcss-loader"],
+    use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
    },
    //file loader for fonts
    {
