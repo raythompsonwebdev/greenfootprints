@@ -1,21 +1,22 @@
-import 'whatwg-fetch';
-import getBaseUrl from './baseUrl';
+import "whatwg-fetch";
+import getBaseUrl from "./baseUrl";
 
 const baseUrl = getBaseUrl();
 
-//get user function
+// get user function
+// eslint-disable-next-line import/prefer-default-export
 export function getUsers() {
-  return get('users');
+  // eslint-disable-next-line no-use-before-define
+  return get("users");
 }
 
-//GET request to api
+// GET request to api
 function get(url) {
-
+  // eslint-disable-next-line no-use-before-define
   return fetch(baseUrl + url).then(onSuccess, onError);
-
 }
 
-//response
+// response
 function onSuccess(response) {
   return response.json();
 }

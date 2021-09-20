@@ -9,18 +9,18 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, "dist")));
 
-//add gzip compression
+// add gzip compression
 app.use(compression());
 
-app.get("/", function (req, res) {
- res.sendFile(path.join(__dirname, "../dist/index.html"));
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../dist/index.html"));
 });
 
-//opens browser
-app.listen(port, function (err) {
- if (err) {
-  console.log(err);
- } else {
-  open("http://localhost:" + port);
- }
+// opens browser
+app.listen(port, (err) => {
+  if (err) {
+    console.log(err);
+  } else {
+    open(`http://localhost:${port}`);
+  }
 });

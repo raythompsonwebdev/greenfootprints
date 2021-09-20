@@ -6,18 +6,18 @@
 
 /* eslint-disable no-console */
 
-import jsf from 'json-schema-faker';
-import {schema} from './mockDataSchema';
-import fs from 'fs'; //imported from node.
-import chalk from 'chalk';
+import jsf from "json-schema-faker";
+import fs from "fs"; // imported from node.
+import chalk from "chalk";
+import { schema } from "./mockDataSchema";
 
-//passed to json schemer faker via jsf().
+// passed to json schemer faker via jsf().
 const json = JSON.stringify(jsf(schema));
 
-fs.writeFile("./src/api/db.json", json, function (err) {
+// eslint-disable-next-line consistent-return
+fs.writeFile("./src/api/db.json", json, (err) => {
   if (err) {
     return console.log(chalk.red(err));
-  } else {
-    console.log(chalk.green("Mock data generated."));
   }
+  console.log(chalk.green("Mock data generated."));
 });

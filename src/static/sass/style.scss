@@ -62,7 +62,7 @@ button#myBtn:hover {
 
  //javascript applies fixed header styles when page scrolls
  .fixed-header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -326,16 +326,16 @@ button#myBtn:hover {
   }
  }
 
- div.grid_24 {
-  opacity: 0;
-  transition: opacity 500ms;
- }
+ // div.grid_24 {
+ //  opacity: 0;
+ //  transition: opacity 500ms;
+ // }
 
- div.grid_24.scrolled {
-  opacity: 1;
-  animation-name: example;
-  animation-duration: 1s;
- }
+ // div.grid_24.scrolled {
+ //  opacity: 1;
+ //  animation-name: example;
+ //  animation-duration: 1s;
+ // }
 
  /*Wrapper*/
  div.grid_24 {

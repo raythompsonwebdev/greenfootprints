@@ -1,10 +1,10 @@
-//uses expect style instead of assert
-import {expect} from 'chai';
+// uses expect style instead of assert
+import { expect } from "chai";
 // import jsdom from 'jsdom';
 // import fs from 'fs';
 
-describe('Our first test', () => {
-  it('should pass', () => {
+describe("Our first test", () => {
+  it("should pass", () => {
     expect(true).to.equal(true);
   });
 });
@@ -25,5 +25,3 @@ describe('Our first test', () => {
 //     });
 //   })
 // })
-
-
