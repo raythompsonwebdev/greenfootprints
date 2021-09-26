@@ -3,8 +3,9 @@ import path from "path";
 import open from "open";
 import webpack from "webpack";
 import config from "../webpack.config.dev";
-// var routes = require("../routes/main");
+
 const handlebars = require("express-handlebars");
+const routes = require("../routes/main");
 
 /* eslint-disable no-console */
 const PORT = process.env.PORT || 3000;
@@ -30,16 +31,17 @@ app.engine(
   "hbs",
   handlebars({
     extname: ".hbs",
-    defaultLayout: "template",
+    defaultLayout: "index",
     layoutsDir: path.resolve(__dirname, "../src/views/layouts/"),
   })
 );
 
-// app.use("/", routes);
+app.use("/", routes);
+
 // routing to root index file
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../src/index.html"));
-});
+// app.get("/", (req, res) => {
+//   res.sendFile(path.join(__dirname, "../src/index.html"));
+// });
 
 // error handling
 app.use((req, res) => {

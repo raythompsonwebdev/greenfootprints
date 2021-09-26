@@ -65,6 +65,8 @@
   "nock": "^13.1.0",
   "node-sass": "^6.0.0",
   "npm-run-all": "^4.1.5",
+  "postcss": "^8.3.7",
+  "postcss-loader": "^6.1.1",
   "rimraf": "^3.0.2",
   "sass-loader": "^12.0.0",
   "style-loader": "^2.0.0",
@@ -77,20 +79,20 @@
   "webpack-md5-hash": "^0.0.6"
  },
  "dependencies": {
-  "autoprefixer": "^10.2.6",
   "@babel/register": "^7.13.16",
-  "webpack": "^5.38.1",
+  "autoprefixer": "^10.2.6",
   "chalk": "^4.1.1",
-  "express": "^4.17.1",
-  "express-handlebars": "^5.3.2",
-  "open": "^8.2.0",
   "compression": "^1.7.4",
-  "json-schema-faker": "^0.5.0-rcv.34",
-  "webpack-dev-middleware": "^5.0.0",
   "eslint-config-airbnb": "^18.2.1",
   "eslint-config-prettier": "^8.3.0",
   "eslint-plugin-prettier": "^4.0.0",
+  "express": "^4.17.1",
+  "express-handlebars": "^5.3.2",
   "imagemin-pngquant": "^9.0.2",
+  "json-schema-faker": "^0.5.0-rcv.34",
+  "open": "^8.2.0",
+  "webpack": "^5.38.1",
+  "webpack-dev-middleware": "^5.0.0",
   "whatwg-fetch": "^3.6.2"
  }
 }

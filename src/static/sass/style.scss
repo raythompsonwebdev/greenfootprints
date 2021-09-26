@@ -60,14 +60,7 @@ button#myBtn:hover {
   visibility: visible;
  }
 
- //javascript applies fixed header styles when page scrolls
- .fixed-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
- }
+
 
  //main container
  div.container_24 {
@@ -81,7 +74,7 @@ button#myBtn:hover {
 
  /*header*/
  header#site_header {
-  display: -webkit-flex;
+  position:sticky;
   display: -ms-flexbox;
   display: flex;
   height: auto;
@@ -97,7 +90,6 @@ button#myBtn:hover {
   -ms-flex-pack: start;
   justify-content: flex-start;
   height: 115px;
-  width: 98%;
   margin: auto;
 
   hgroup {
@@ -217,6 +209,15 @@ button#myBtn:hover {
   /*social media icons*/
  }
 
+ //javascript applies fixed header styles when page scrolls
+ .fixed-header {
+  position: fixed;
+  top :0;
+  left:0;
+  width: 100%;
+  z-index: 100;
+ }
+
  nav.site_navigation {
   height: auto;
   text-align: center;
@@ -298,6 +299,7 @@ button#myBtn:hover {
   }
  }
 
+
  /*Collections Section*/
  div#collections {
   height: auto;
@@ -326,16 +328,6 @@ button#myBtn:hover {
   }
  }
 
- // div.grid_24 {
- //  opacity: 0;
- //  transition: opacity 500ms;
- // }
-
- // div.grid_24.scrolled {
- //  opacity: 1;
- //  animation-name: example;
- //  animation-duration: 1s;
- // }
 
  /*Wrapper*/
  div.grid_24 {
@@ -351,7 +343,7 @@ button#myBtn:hover {
   #slider {
    background-color: $honecolor;
    width: 100%;
-   height: 400px;
+   height: 500px;
    margin: 0.5em 0;
 
    div.main-slider {
@@ -662,14 +654,14 @@ button#myBtn:hover {
 
      img {
       display: inline-block;
-      margin: 0 2.5em;
+      margin: 0 2em;
       width: 7%;
      }
 
      figcaption {
       width: 57%;
       display: block;
-      float: right;
+      float: left;
 
       p {
        flex: 0 0 auto;
@@ -840,7 +832,7 @@ button#myBtn:hover {
 
     .recycle_img {
      margin: 0.25em 0.25em 0 0;
-     width: 5%;
+     width: 8%;
      height: auto;
      display: block;
      float: left;
@@ -848,7 +840,7 @@ button#myBtn:hover {
 
     .recycle_img_right {
      margin: 0 0 0.25em 0.25em;
-     width: 10%;
+     width: 8%;
      height: auto;
      display: block;
      float: right;
@@ -1112,15 +1104,29 @@ button#myBtn:hover {
 
     /* Next & previous buttons */
 
-    .prev1,
-    .next1,
-    .prev2,
-    .next2,
-    .prev3,
-    .next3 {
-     cursor: pointer;
+    .prev,
+    .prevFacts,
+    .prevWays{
      position: absolute;
-     top: 0;
+     top: 50%;
+     width: auto;
+     margin-top: -22px;
+     padding: 16px;
+     color: black;
+     font-weight: bold;
+     font-size: 20px;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
+     z-index: 10;
+     left :0;
+
+    }
+
+    .next,
+    .nextFacts,
+    .nextWays{
+     position: absolute;
+     right: 0;
      top: 50%;
      width: auto;
      margin-top: -22px;
@@ -1133,21 +1139,22 @@ button#myBtn:hover {
      z-index: 10;
     }
 
-    .next1,
-    .next2,
-    .next3 {
-     right: 0;
-     border-radius: 3px 0 0 3px;
-    }
-
-    .prev1:hover,
-    .next1:hover,
-    .prev2:hover,
-    .next2:hover,
-    .prev3:hover,
-    .next3:hover {
+    .prev:active,
+    .next:active{
      background-color: rgba(0, 0, 0, 0.8);
      color: #fff;
+     cursor: pointer;
+    }
+
+    .prev:hover,
+    .next:hover,
+    .nextFacts:hover,
+    .prevFacts:hover,
+    .nextWays:hover,
+    .prevWays:hover{
+     background-color: rgba(0, 0, 0, 0.8);
+     color: #fff;
+     cursor: pointer;
     }
 
     article.contentbox > img,

@@ -1,137 +1,83 @@
 import "./static/sass/normalize.scss";
 import "./static/sass/style.scss";
-import tenways from "./static/data/tenways.json";
-import collections from "./static/data/collections.json";
-import recyclingfacts from "./static/data/recyclingfacts.json";
-import "./static/js/scrollScreen";
-import showSlides from "./static/js/slide-functions/showSlides";
-
-/* eslint-disable no-console */
-// header image
+// import tenways from "./static/data/tenways.json";
+// import collections from "./static/data/collections.json";
+// import recyclingfacts from "./static/data/recyclingfacts.json";
+// import "./static/js/scrollScreen";
+import "./static/js/menusToggle";
+// import showSlides from "./static/js/showSlides";
 import homeIcon from "./static/images/Large/gif-images/logo-greenfootprints-com.gif";
 
-// header image ******************************************
+// header image
 const homeImg = document.querySelector("#homeImage");
 homeImg.src = homeIcon;
 
-// home page
-const template = require("./views/main.hbs");
+// showSlides();
 
-const html = template();
-const homeContainer = document.getElementById("home");
-homeContainer.innerHTML = html;
-// home page slider function
-showSlides();
+// // slider button/links
+// const prev = document.querySelector(".prev");
+// const next = document.querySelector(".next");
+// const prevFacts = document.querySelector(".prevFacts");
+// const nextFacts = document.querySelector(".nextFacts");
+// const prevWays = document.querySelector(".prevWays");
+// const nextWays = document.querySelector(".nextWays");
 
-// whatcando page
-const template2 = require("./views/whatcando.hbs");
+// // page sliders
+// const sliderId = ["collection-box", "contentbox", "recycle-facts"];
+// const sliderIndex = [1, 1, 1];
 
-const html2 = template2();
-const whatcandoContainer = document.getElementById("whatcando");
-whatcandoContainer.innerHTML = html2;
+// const pagePanelSlides = (n, no) => {
+//   let i;
 
-// recycling page
-const template3 = require("./views/recycling.hbs");
+//   const x = document.getElementsByClassName(sliderId[no]);
 
-const html3 = template3();
-const recyclingContainer = document.getElementById("recycling");
-recyclingContainer.innerHTML = html3;
+//   if (n > x.length) {
+//     sliderIndex[no] = 1;
+//   }
+//   if (n < 1) {
+//     sliderIndex[no] = x.length;
+//   }
+//   // eslint-disable-next-line no-plusplus
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";
+//   }
 
-// recycling facts page
-const template4 = require("./views/recyclingfacts.hbs");
+//   x[sliderIndex[no] - 1].style.display = "block";
+// };
 
-const html4 = template4({ recyclingfacts });
-const recyclingfactsContainer = document.getElementById("recycling-facts");
-recyclingfactsContainer.innerHTML = html4;
+// const pageSlider = (n, no) => {
+//   pagePanelSlides((sliderIndex[no] += n), no);
+// };
 
-// collections page
-const template5 = require("./views/collections.hbs");
+// prev.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   pageSlider(-1, 0);
+// });
 
-const html5 = template5({ collections });
-const collectionsContainer = document.getElementById("collections");
-collectionsContainer.innerHTML = html5;
+// next.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   pageSlider(1, 0);
+// });
 
-// tenways page
-const template6 = require("./views/tenways.hbs");
+// prevWays.addEventListener("click", (e) => {
+//   e.preventDefault();
 
-const html6 = template6({ tenways });
-const tenwaysContainer = document.getElementById("ten-ways");
-tenwaysContainer.innerHTML = html6;
+//   pageSlider(-1, 1);
+// });
 
-// contact page
-const template7 = require("./views/contact.hbs");
+// nextWays.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   pageSlider(1, 1);
+// });
 
-const html7 = template7();
-const contactContainer = document.getElementById("contact");
-contactContainer.innerHTML = html7;
+// prevFacts.addEventListener("click", (e) => {
+//   e.preventDefault();
 
-const prev1 = document.querySelector(".prev1");
-const next1 = document.querySelector(".next1");
-const prev2 = document.querySelector(".prev2");
-const next2 = document.querySelector(".next2");
-const prev3 = document.querySelector(".prev3");
-const next3 = document.querySelector(".next3");
+//   pageSlider(-1, 2);
+// });
 
-const sliderId = ["collection-box", "contentbox", "recycle-facts"];
-const sliderIndex = [1, 1, 1];
+// nextFacts.addEventListener("click", (e) => {
+//   e.preventDefault();
 
-const pagePanelSlides = (n, no) => {
-  let i;
-
-  const x = document.getElementsByClassName(sliderId[no]);
-
-  if (n > x.length) {
-    sliderIndex[no] = 1;
-  }
-  if (n < 1) {
-    sliderIndex[no] = x.length;
-  }
-  // eslint-disable-next-line no-plusplus
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-
-  x[sliderIndex[no] - 1].style.display = "block";
-};
-pagePanelSlides(1, 0);
-pagePanelSlides(1, 1);
-pagePanelSlides(1, 2);
-
-const plusSlides = (n, no) => {
-  pagePanelSlides((sliderIndex[no] += n), no);
-};
-
-prev1.addEventListener("click", (e) => {
-  e.preventDefault();
-  plusSlides(-1, 0);
-});
-
-next1.addEventListener("click", (e) => {
-  e.preventDefault();
-  plusSlides(1, 0);
-});
-
-prev3.addEventListener("click", (e) => {
-  e.preventDefault();
-
-  plusSlides(-1, 1);
-});
-
-next3.addEventListener("click", (e) => {
-  e.preventDefault();
-  plusSlides(1, 1);
-});
-
-prev2.addEventListener("click", (e) => {
-  e.preventDefault();
-
-  plusSlides(-1, 2);
-});
-
-next2.addEventListener("click", (e) => {
-  e.preventDefault();
-
-  plusSlides(1, 2);
-});
-
-export default { pagePanelSlides };
+//   pageSlider(1, 2);
+// });

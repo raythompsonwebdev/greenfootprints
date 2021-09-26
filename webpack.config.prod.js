@@ -114,6 +114,7 @@ export default {
       filename: "style.[contenthash].css",
       chunkFilename: "style.[id].css",
     }),
+
     new HtmlWebpackPlugin({
       inject: true, // dynamically adds script tags
       hash: true,

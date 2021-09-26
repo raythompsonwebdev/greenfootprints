@@ -2,6 +2,8 @@
 const navLinks = document.getElementsByClassName("nav-links");
 // get body and html elements
 const scrollScreen = document.querySelector(["body", "html"]);
+
+// const scrollScreen = document.querySelector([".container_24"]);
 // get header element
 const siteHeader = document.querySelector("#site_header");
 // In JavaScript, using the addEventListener() method:  object.addEventListener("scroll", myScript);
@@ -13,7 +15,7 @@ window.onscroll = function () {
     siteHeader.classList.remove("fixed-header");
   }
   // handle scroll animation
-  handleScrollAnimation();
+  // handleScrollAnimation();
 };
 // scrolling function - (https://codepen.io/ugg0t/pen/mqBBBY)
 const scrollTo = (element) => {

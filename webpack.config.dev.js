@@ -1,7 +1,7 @@
 import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import StyleLintPlugin from "stylelint-webpack-plugin";
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
+// import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 export default {
   mode: "development",
@@ -12,26 +12,25 @@ export default {
   devtool: "inline-source-map",
   output: {
     // serves build from memory
-    path: path.resolve(__dirname, "./src/"),
+    path: path.resolve(__dirname, "./src"),
     publicPath: "/",
     filename: "bundle.js",
-    // chunkFilename: "[name].chunk.js",
+    chunkFilename: "[name].js",
   },
+
   plugins: [
     // Create HTML file that includes reference to bundled JS.
     new HtmlWebpackPlugin({
       inject: true,
-      // hash: true,
-      template: "./src/index.html",
-      filename: "index.html",
+      hash: true,
+      template: "./src/views/layouts/index.hbs",
+      filename: "index.hbs",
     }),
     new StyleLintPlugin({
       configFile: "./.stylelintrc.json",
       files: "./src/static/sass/*.scss",
       syntax: "scss",
     }),
-
-    new MiniCssExtractPlugin(),
   ],
   module: {
     rules: [
@@ -55,11 +54,20 @@ export default {
       },
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "style-loader", "css-loader"],
+        use: ["style-loader", "css-loader", "postcss-loader"],
       },
       {
-        test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        test: /\.s[ac]ss$/i,
+        use: [
+          // MiniCssExtractPlugin.loader,
+          // Creates `style` nodes from JS strings
+          "style-loader",
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Compiles Sass to CSS
+          "sass-loader",
+          "postcss-loader",
+        ],
       },
       // file loader for fonts
       {
