@@ -8,6 +8,7 @@ export default {
   entry: {
     main: "./src/index",
   },
+  watch: true,
   target: "web",
   devtool: "inline-source-map",
   output: {
@@ -114,6 +115,4 @@ export default {
       Fonts: path.resolve(__dirname, "./src/static/fonts/"),
     },
   },
-
-  watch: true,
 };

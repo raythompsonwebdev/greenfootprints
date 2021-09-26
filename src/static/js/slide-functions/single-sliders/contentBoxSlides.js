@@ -1,10 +1,13 @@
 let slideIndex = 1;
 
-// Slider 2
+const prevWays = document.querySelector(".prevWays");
+const nextWays = document.querySelector(".nextWays");
+
+// Slider 3
 const contentBoxSlides = (n) => {
   let i;
   const slides = document.getElementsByClassName("contentbox");
-  const dots = document.getElementsByClassName("dot");
+
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -15,24 +18,22 @@ const contentBoxSlides = (n) => {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  // eslint-disable-next-line no-plusplus
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
 };
 
-contentBoxSlides(slideIndex);
-
-// Next/previous controls 2
-const contentSlidePrev = (n) => {
+const contentSlides = (n) => {
   contentBoxSlides((slideIndex += n));
 };
 
-// Next/previous controls 2
-const contentSlideNext = (n) => {
-  contentBoxSlides((slideIndex = n));
-};
+prevWays.addEventListener("click", (e) => {
+  e.preventDefault();
+  contentSlides(-1);
+});
 
-export default { contentBoxSlides, contentSlidePrev, contentSlideNext };
+nextWays.addEventListener("click", (e) => {
+  e.preventDefault();
+  contentSlides(1);
+});
+
+export default { contentBoxSlides, contentSlides };

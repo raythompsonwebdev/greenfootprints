@@ -1,9 +1,12 @@
 let slideIndex = 1;
+
+const prevFacts = document.querySelector(".prevFacts");
+const nextFacts = document.querySelector(".nextFacts");
 // Slider 3
 const recycleBoxSlides = (n) => {
   let i;
-  const slides = document.getElementsByClassName("recycle-fact");
-  const dots = document.getElementsByClassName("dot");
+  const slides = document.getElementsByClassName("recycle-facts");
+
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -14,24 +17,22 @@ const recycleBoxSlides = (n) => {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  // eslint-disable-next-line no-plusplus
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
 };
 
-recycleBoxSlides(slideIndex);
-
-// Next/previous controls 3
-function recycleSlidesPrev(n) {
+const recycleSlides = (n) => {
   recycleBoxSlides((slideIndex += n));
-}
+};
 
-// Next/previous controls 3
-function recycleSlidesNext(n) {
-  recycleBoxSlides((slideIndex = n));
-}
+prevFacts.addEventListener("click", (e) => {
+  e.preventDefault();
+  recycleSlides(-1);
+});
 
-export default { recycleBoxSlides, recycleSlidesPrev, recycleSlidesNext };
+nextFacts.addEventListener("click", (e) => {
+  e.preventDefault();
+  recycleSlides(1);
+});
+
+export default { recycleBoxSlides, recycleSlides };

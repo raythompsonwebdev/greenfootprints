@@ -1,5 +1,5 @@
 const path = require("path");
-// var WebpackMd5Hash = require("webpack-md5-hash");
+
 const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -66,7 +66,30 @@ export default {
       },
       {
         test: /\.(scss|sass)$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: "css-loader",
+            options: {
+              sourceMap: true,
+            },
+          },
+          // {
+          //   loader: "postcss-loader",
+          //   options: {
+          //     autoprefixer: {
+          //       browsers: ["last 2 versions"],
+          //     },
+          //     plugins: () => [autoprefixer],
+          //   },
+          // },
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true,
+            },
+          },
+        ],
       },
       // file loader for fonts
       {
@@ -114,40 +137,51 @@ export default {
       filename: "style.[contenthash].css",
       chunkFilename: "style.[id].css",
     }),
-
     new HtmlWebpackPlugin({
-      inject: true, // dynamically adds script tags
-      hash: true,
-      // the template you want to use
-      template: path.resolve(__dirname, "./src/index.html"), // handlebar file
+      // Also generate a test.html
       filename: "index.html",
-      // Properties you define here are available in index.html
-      // using htmlWebpackPlugin.options.varName
-      // trackJSToken: "",
+      template: "./src/views/layouts/index.hbs",
+      inject: "head",
     }),
-
     // new HandlebarsPlugin({
-    //  htmlWebpackPlugin: {
-    //   enabled: false, // register all partials from html-webpack-plugin, defaults to `false`
-    //   prefix: "html", // where to look for htmlWebpackPlugin output. default is "html"
-    //   HtmlWebpackPlugin, // optionally: pass in HtmlWebpackPlugin if it cannot be resolved
-    //  },
-    //  enabled: false, // register all partials from html-webpack-plugin, defaults to `false`
-    //  // path to hbs entry file(s). Also supports nested directories if write path.join(process.cwd(), "app", "src", "**", "*.hbs"),
-    //  entry: path.join(process.cwd(), "src", "views", "**", "*.hbs"),
-    //  // output path and filename(s). This should lie within the webpacks output-folder
-    //  // if ommited, the input filepath stripped of its extension will be used
-    //  output: path.join(process.cwd(), "dist", "[name].html"),
-    //  // you can also add a [path] variable, which will emit the files with their relative path, like
-    //  // output: path.join(process.cwd(), "build", [path], "[name].html"),
-    // }),
+    //   htmlWebpackPlugin: {
+    //     enabled: true, // register all partials from html-webpack-plugin, defaults to `false`
+    //     prefix: "html", // where to look for htmlWebpackPlugin output. default is "html"
+    //     HtmlWebpackPlugin, // optionally: pass in HtmlWebpackPlugin if it cannot be resolved
+    //   },
+    //   // path to hbs entry file(s). Also supports nested directories if write path.join(process.cwd(), "app", "src", "**", "*.hbs"),
+    //   entry: path.join(process.cwd(), "src", "views", "**", "*.hbs"),
+    //   // output path and filename(s). This should lie within the webpacks output-folder
+    //   // if ommited, the input filepath stripped of its extension will be used
+    //   output: path.join(process.cwd(), "dist", "[name].html"),
+    //   // you can also add a [path] variable, which will emit the files with their relative path, like
+    //   // output: path.join(process.cwd(), "build", [path], "[name].html"),
 
-    // new WebpackMd5Hash(),
+    //   // data passed to main hbs template: `main-template(data)`
+    //   // data: require("./app/data/project.json"),
+    //   // or add it as filepath to rebuild data on change using webpack-dev-server
+    //   data: path.join(__dirname, "src/static/data/collections.json"),
+
+    //   // globbed path to partials, where folder/filename is unique
+    //   // partials: [
+    //   //   path.join(process.cwd(), "app", "src", "components", "*", "*.hbs")
+    //   // ],
+
+    //   // register custom helpers. May be either a function or a glob-pattern
+    //   // helpers: {
+    //   //   nameOfHbsHelper: Function.prototype,
+    //   //   projectHelpers: path.join(process.cwd(), "app", "helpers", "*.helper.js")
+    //   // },
+
+    //   // hooks
+    //   // getTargetFilepath: function (filepath, outputTemplate) {},
+    //   // getPartialId: function (filePath) {}
+    //   // onBeforeSetup: function (Handlebars) {},
+    //   // onBeforeAddPartials: function (Handlebars, partialsMap) {},
+    //   // onBeforeCompile: function (Handlebars, templateContent) {},
+    //   // onBeforeRender: function (Handlebars, data, filename) {},
+    //   // onBeforeSave: function (Handlebars, resultHtml, filename) {},
+    //   // onDone: function (Handlebars, filename) {}
+    // }),
   ],
-  resolve: {
-    alias: {
-      Images: path.resolve(__dirname, "./src/static/images/"),
-      Fonts: path.resolve(__dirname, "./src/static/fonts/"),
-    },
-  },
 };

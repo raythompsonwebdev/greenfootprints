@@ -1,5 +1,5 @@
 let slideIndex = 0;
-const showSlides = () => {
+const homePageSlider = () => {
   let i;
 
   const slides = document.getElementsByClassName("sliders");
@@ -17,7 +17,7 @@ const showSlides = () => {
 
   slides[slideIndex - 1].style.display = "block";
 
-  setTimeout(showSlides, 4000); // Change image every 2 seconds
+  setTimeout(homePageSlider, 4000); // Change image every 2 seconds
 };
 
-export default showSlides;
+export default homePageSlider;
