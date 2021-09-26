@@ -1,7 +1,15 @@
+import recyclingfacts from "../data/recyclingfacts.json";
+import tenways from "../data/tenways.json";
+import collections from "../data/collections.json";
+
+// const Handlebars = require("handlebars");
+
 // home page
 const template = require("../../views/main.hbs");
 
 const homePage = template();
+
+// const homePage = Handlebars.compile(template);
 const homeContainer = document.getElementById("home");
 homeContainer.innerHTML = homePage;
 

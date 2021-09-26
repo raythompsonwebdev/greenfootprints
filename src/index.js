@@ -1,32 +1,54 @@
 import "./static/sass/normalize.scss";
 import "./static/sass/style.scss";
-// import "./static/js/menusToggle";
+
+import homePageSlider from "./static/js/slide-functions/homePageSlider";
+import { singleSlider } from "./static/js/slide-functions/multiSlider";
+import "./static/js/menusToggle";
+import "./static/js/hbsfiles";
 import homeIcon from "./static/images/Large/gif-images/logo-greenfootprints-com.gif";
+import "./static/js/scrollScreen";
 // header image
 const homeImg = document.querySelector("#homeImage");
 homeImg.src = homeIcon;
 
-// Your code to run since DOM is loaded and ready
-const menuToggle = document.querySelector("#mobile-toggle");
-// create menu variables
-const slideoutMenu = document.querySelector(".site_navigation");
+homePageSlider();
 
-const slideoutMenuHeight = slideoutMenu.offsetHeight;
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+const prevFacts = document.querySelector(".prevFacts");
+const nextFacts = document.querySelector(".nextFacts");
+const prevWays = document.querySelector(".prevWays");
+const nextWays = document.querySelector(".nextWays");
 
-// mobile menu toggle button
-menuToggle.addEventListener("click", (event) => {
-  event.preventDefault();
+prev.addEventListener("click", (e) => {
+  e.preventDefault();
+  singleSlider(-1, 0);
+});
 
-  // toggle open class
-  slideoutMenu.classList.toggle("open");
+next.addEventListener("click", (e) => {
+  e.preventDefault();
+  singleSlider(1, 0);
+});
 
-  slideoutMenu.style.transition = "all 0.3s ease-in 0s";
+prevWays.addEventListener("click", (e) => {
+  e.preventDefault();
 
-  // slide menu
-  if (slideoutMenu.classList.contains("open")) {
-    slideoutMenu.style.top = "0px";
-  } else {
-    slideoutMenu.style.transition = "all 0.3s ease-in 0s";
-    slideoutMenu.style.top = `${-slideoutMenuHeight}px`;
-  }
+  singleSlider(-1, 1);
+});
+
+nextWays.addEventListener("click", (e) => {
+  e.preventDefault();
+  singleSlider(1, 1);
+});
+
+prevFacts.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  singleSlider(-1, 2);
+});
+
+nextFacts.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  singleSlider(1, 2);
 });
