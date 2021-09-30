@@ -139,8 +139,9 @@ export default {
     }),
     new HtmlWebpackPlugin({
       // Also generate a test.html
+      hash: true,
       filename: "index.html",
-      template: "./src/index.html",
+      template: "./src/index.hbs",
       inject: true,
     }),
   ],

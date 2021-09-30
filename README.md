@@ -4,21 +4,58 @@
 
 ## History
 
-Web application is based on a website brief I was given to build a website from for a city and guilds exam in web design I took in 2012. I used elements from Pluralsight video tutorial Javascript Starter Kit by Cory House. 
+Web application is based on a website brief I was given to build a website from for a city and guilds exam in web design I took in 2012. I used Javascript Starter Kit by Cory House from Pluralsight video tutorial as starter point and updated packages. 
 
 The task was that I was a member of a local recycling company "Green FootPrints " based in Essex and you have been asked to set up a simple website consisting of 3 pages to advertise what the company has to offer. 
 
 I was given a few guidelines outlining requirements. see [Website brief](https://drive.google.com/open?id=1qWS7W83edL72MfMZc3ILgJejs1nAV3ft).
 
-Greenfootprints.com is a single page web application built using coding languages HTML, CSS, Javascript and Jquery.
+Greenfootprints.com is a single page web application built using coding languages HTML, CSS and Javascript.
 
 Web application has a ES6 module design pattern that allows additional functionality to be added easliy. 
 
+## Build Tools
+
+- Webpack
+- eslint
+- mocha
+- chai
+- Travis CI
+- StyleLint
+- Faker
+- Express
+- Handlebars
+- Surge
+- Express handlebars
+- Babel
+- JSON Schemer Faker
+- PostCSS
+- Chalk
+- Local Tunnel
+- SASS
+
+Greenfootprints requires [Node.js](https://nodejs.org/) v10+ to run.
+
 ## Installation
 
-npm install
+```sh
+$ npm install
+```
 
 ## Usage
+
+Start development server :
+
+```sh
+$ npm run start
+```
+Run production build :
+
+```sh
+$ npm run build
+```
+
+( please note production build not currently working - will be fixed very soon)
 
 ## License
 

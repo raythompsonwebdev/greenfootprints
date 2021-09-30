@@ -30,7 +30,7 @@ app.use(express.static(path.join(__dirname, "../src/static/")));
 app.engine(
   "hbs",
   handlebars({
-    extname: ".html",
+    extname: ".hbs",
     defaultLayout: "index",
     layoutsDir: path.resolve(__dirname, "../src/"),
   })
