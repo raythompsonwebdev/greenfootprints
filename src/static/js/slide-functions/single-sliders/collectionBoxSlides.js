@@ -1,6 +1,3 @@
-const prev = document.querySelector(".prev");
-const next = document.querySelector(".next");
-
 let slideIndex = 1;
 // Slider 1
 const collectionBoxSlides = (n) => {
@@ -26,15 +23,5 @@ const collectionBoxSlides = (n) => {
 const collectionSlides = (n) => {
   collectionBoxSlides((slideIndex += n));
 };
-
-prev.addEventListener("click", (e) => {
-  e.preventDefault();
-  collectionSlides(-1);
-});
-
-next.addEventListener("click", (e) => {
-  e.preventDefault();
-  collectionSlides(1);
-});
 
 export { collectionBoxSlides, collectionSlides };

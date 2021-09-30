@@ -32,7 +32,7 @@ app.engine(
   handlebars({
     extname: ".hbs",
     defaultLayout: "index",
-    layoutsDir: path.resolve(__dirname, "../src/views/layouts/"),
+    layoutsDir: path.resolve(__dirname, "../src/"),
   })
 );
 
