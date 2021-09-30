@@ -24,7 +24,7 @@ export default {
     new HtmlWebpackPlugin({
       inject: true,
       hash: true,
-      template: "./src/views/layouts/index.hbs",
+      template: "./src/index.hbs",
       filename: "index.hbs",
     }),
     new StyleLintPlugin({
