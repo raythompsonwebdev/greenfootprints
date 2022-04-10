@@ -7,9 +7,10 @@
 /* eslint-disable no-console */
 
 import jsf from "json-schema-faker";
-import fs from "fs"; // imported from node.
-import chalk from "chalk";
+import fs from "fs";
 import { schema } from "./mockDataSchema";
+// imported from node.
+const chalk = require("chalk");
 
 // passed to json schemer faker via jsf().
 const json = JSON.stringify(jsf(schema));
@@ -18,6 +19,8 @@ const json = JSON.stringify(jsf(schema));
 fs.writeFile("./src/api/db.json", json, (err) => {
   if (err) {
     return console.log(chalk.red(err));
+    // return console.log(err);
   }
   console.log(chalk.green("Mock data generated."));
+  // console.log("Mock data generated.");
 });

@@ -2,6 +2,8 @@ import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import StyleLintPlugin from "stylelint-webpack-plugin";
 // import MiniCssExtractPlugin from "mini-css-extract-plugin";
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+// const { extendDefaultPlugins } = require("svgo");
 
 export default {
   mode: "development",
@@ -24,13 +26,45 @@ export default {
     new HtmlWebpackPlugin({
       inject: true,
       hash: true,
-      template: "./src/index.hbs",
+      template: "./src/views/layouts/index.hbs",
       filename: "index.hbs",
     }),
     new StyleLintPlugin({
       configFile: "./.stylelintrc.json",
       files: "./src/static/sass/*.scss",
       syntax: "scss",
+    }),
+    new ImageMinimizerPlugin({
+      minimizer: {
+        implementation: ImageMinimizerPlugin.imageminMinify,
+        options: {
+          // Lossless optimization with custom option
+          // Feel free to experiment with options for better result for you
+          plugins: [
+            ["gifsicle", { interlaced: true }],
+            ["jpegtran", { progressive: true }],
+            ["optipng", { optimizationLevel: 5 }],
+            // Svgo configuration here https://github.com/svg/svgo#configuration
+            // [
+            //   "svgo",
+            //   {
+            //     plugins: extendDefaultPlugins([
+            //       {
+            //         name: "removeViewBox",
+            //         active: false,
+            //       },
+            //       {
+            //         name: "addAttributesToSVGElement",
+            //         params: {
+            //           attributes: [{ xmlns: "http://www.w3.org/2000/svg" }],
+            //         },
+            //       },
+            //     ]),
+            //   },
+            // ],
+          ],
+        },
+      },
     }),
   ],
   module: {
@@ -79,7 +113,7 @@ export default {
       {
         test: /\.(gif|png|jpe?g|svg)$/i,
         use: [
-          "file-loader",
+          "url-loader",
           {
             loader: "image-webpack-loader",
             options: {
@@ -110,6 +144,7 @@ export default {
   },
 
   resolve: {
+    extensions: ["*", ".js", ".jsx"],
     alias: {
       Images: path.resolve(__dirname, "./src/static/images/"),
       Fonts: path.resolve(__dirname, "./src/static/fonts/"),

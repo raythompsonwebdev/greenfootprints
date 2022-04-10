@@ -7,7 +7,7 @@ import compression from "compression";
 const port = 3000;
 const app = express();
 
-app.use(express.static(path.join(__dirname, "dist")));
+app.use(express.static(path.join(__dirname, "../dist/")));
 
 // add gzip compression
 app.use(compression());

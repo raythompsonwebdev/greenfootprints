@@ -4,8 +4,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-// const HandlebarsPlugin = require("handlebars-webpack-plugin");
+const HandlebarsPlugin = require("handlebars-webpack-plugin");
 
 export default {
   mode: "production",
@@ -30,7 +29,6 @@ export default {
     minimizer: [
       // Minify JS
       new TerserPlugin(),
-      new CssMinimizerPlugin(),
     ],
   },
   module: {
@@ -141,8 +139,24 @@ export default {
       // Also generate a test.html
       hash: true,
       filename: "index.html",
-      template: "./src/index.hbs",
+      template: "./src/views/layouts/index.hbs",
       inject: true,
     }),
+    new HtmlWebpackPlugin({
+      // Also generate a test.html
+      hash: true,
+      filename: "collections.html",
+      template: "./src/views/collections.hbs",
+      inject: true,
+    }),
+    // new HandlebarsPlugin({
+    //   // path to hbs entry file(s). Also supports nested directories if write path.join(process.cwd(), "app", "src", "**", "*.hbs"),
+    //   entry: path.join(process.cwd(), "src", "views", "*.hbs"),
+    //   // output path and filename(s). This should lie within the webpacks output-folder
+    //   // if ommited, the input filepath stripped of its extension will be used
+    //   output: path.join(process.cwd(), "dist", "[name].html"),
+    //   // you can also add a [path] variable, which will emit the files with their relative path, like
+    //   // output: path.join(process.cwd(), "build", [path], "[name].html"),
+    // }),
   ],
 };

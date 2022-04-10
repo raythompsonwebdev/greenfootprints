@@ -2,9 +2,9 @@ import express from "express";
 import path from "path";
 import open from "open";
 import webpack from "webpack";
+import { engine } from "express-handlebars";
 import config from "../webpack.config.dev";
 
-const handlebars = require("express-handlebars");
 const routes = require("../routes/main");
 
 /* eslint-disable no-console */
@@ -29,10 +29,10 @@ app.use(express.static(path.join(__dirname, "../src/static/")));
 // Handlebars Middleware
 app.engine(
   "hbs",
-  handlebars({
+  engine({
     extname: ".hbs",
     defaultLayout: "index",
-    layoutsDir: path.resolve(__dirname, "../src/"),
+    layoutsDir: path.resolve(__dirname, "../src/views/layouts/"),
   })
 );
 
@@ -40,7 +40,7 @@ app.use("/", routes);
 
 // routing to root index file
 // app.get("/", (req, res) => {
-//   res.sendFile(path.join(__dirname, "../src/index.html"));
+//   res.sendFile(path.resolve(__dirname, "../src/views/layouts/index.hbs"));
 // });
 
 // error handling
