@@ -5,9 +5,12 @@ import history from "connect-history-api-fallback";
 import webpack from "webpack";
 import middleware from "webpack-dev-middleware";
 import webmiddleware from "webpack-dev-middleware";
-import config from "../webpack.config.dev";
+import path from "path";
+import config from "./webpack.config.dev.js";
 
 const compiler = webpack(config);
+
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
 /* eslint-disable no-console */
 const PORT = process.env.PORT || 3000;
@@ -23,7 +26,7 @@ app.use(
 );
 
 // content to be served from
-const publicPath = `${__dirname}/public`;
+const publicPath = path.join(__dirname, "/public");
 
 // Fallback to index.html
 app.use(
@@ -34,12 +37,13 @@ app.use(
 
 app.use(middleware(compiler));
 // Static assets
-const staticMiddleware = app.static(publicPath);
+const staticMiddleware = express.static(publicPath);
+
 app.use(staticMiddleware);
 
 // Serve index on homepage
 app.get("/", (req, res) => {
-  res.sendFile(`${publicPath}index.html`);
+  res.sendFile(publicPath + "/index.html");
 });
 
 const httpServer = createServer(app);

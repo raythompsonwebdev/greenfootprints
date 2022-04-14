@@ -61,7 +61,6 @@ button#myBtn:hover {
  }
 
 
-
  //main container
  div.container_24 {
   width: 96%;
@@ -74,7 +73,7 @@ button#myBtn:hover {
 
  /*header*/
  header#site_header {
-  position:sticky;
+  position: sticky;
   display: -ms-flexbox;
   display: flex;
   height: auto;
@@ -212,8 +211,8 @@ button#myBtn:hover {
  //javascript applies fixed header styles when page scrolls
  .fixed-header {
   position: fixed;
-  top :0;
-  left:0;
+  top : 0;
+  left: 0;
   width: 100%;
   z-index: 100;
  }
@@ -329,7 +328,7 @@ button#myBtn:hover {
  }
 
 .fade {
-  display:block;
+  display: block;
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -355,7 +354,6 @@ button#myBtn:hover {
    opacity: 1;
   }
  }
-
 
 
  /*Wrapper*/
@@ -398,7 +396,7 @@ button#myBtn:hover {
        img {
         display: block;
         width: 25%;
-        margin:auto;
+        margin: auto;
        }
 
        div.slider-caption {
@@ -1130,7 +1128,7 @@ button#myBtn:hover {
      transition: 0.6s ease;
      border-radius: 0 3px 3px 0;
      z-index: 10;
-     left :0;
+     left : 0;
 
     }
 
