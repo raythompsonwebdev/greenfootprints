@@ -10,7 +10,7 @@ function HomePageCard()  {
         <h1>Household Recycling Guide</h1>
         <figure className="contentbox_image">
 
-        <img id="paperBottles" src="./images/Large/gif-images/recyling-guide.gif" alt="recycling-advice-green-foot-prints-com" />
+        <img id="paperBottles" src="/static/images/Large/gif-images/recyling-guide.gif" alt="recycling-advice-green-foot-prints-com" />
 
         <figcaption>
 

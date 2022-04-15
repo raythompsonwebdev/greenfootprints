@@ -9,7 +9,7 @@ function Whatcando() {
 
   <section className="content" >
     <h1>What You Can Do </h1>
-    <article class="text">
+    <article className="text">
 
       <h2>Reduce, Reuse, Recycle  </h2>
 

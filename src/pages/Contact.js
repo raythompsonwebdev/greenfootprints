@@ -47,7 +47,7 @@ const Contacts = () => {
 
       </article>
 
-      <div class="clearfix"> </div>
+      <div className="clearfix"> </div>
 
     </section>
 

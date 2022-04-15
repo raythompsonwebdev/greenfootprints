@@ -3,38 +3,38 @@ import React, { useEffect } from "react";
 
 function TenWays() {
 
-  let slideIndex = 1;
+  useEffect(() => {
+
+    let slideIndex = 1;
 
   // Slider 3
-  const recycleBoxSlides = (n) => {
-    let i;
-    const slides = document.getElementsByClassName("contentbox");
+    const recycleBoxSlides = (n) => {
+      let i;
+      const slides = document.getElementsByClassName("contentbox");
 
-    if (n > slides.length) {
-      slideIndex = 1;
-    }
-    if (n < 1) {
-      slideIndex = slides.length;
-    }
-    // eslint-disable-next-line no-plusplus
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      // eslint-disable-next-line no-plusplus
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
 
-    slides[slideIndex - 1].style.display = "block";
-    slides[slideIndex - 1].classList.add('fade');
+      slides[slideIndex - 1].style.display = "block";
+      slides[slideIndex - 1].classList.add('fade');
 
-  };
+    };
 
-  const recycleSlides = (n) => {
-    recycleBoxSlides((slideIndex += n));
-  };
-
-  useEffect(() => {
+    const recycleSlides = (n) => {
+      recycleBoxSlides((slideIndex += n));
+    };
 
     const prevWays = document.querySelector(".prevWays");
     const nextWays = document.querySelector(".nextWays");
-    
+
     prevWays.addEventListener("click", (e) => {
         e.preventDefault();
         recycleSlides(-1);
@@ -45,7 +45,7 @@ function TenWays() {
       recycleSlides(1);
     });
 
-  });   
+  });
 
   return (
     <div className="grid_24" id="ten-ways">

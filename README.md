@@ -1,7 +1,6 @@
 ![https://www.greenfootprints.raythompsonwebdev.co.uk](/_assets/www-greenfootprints-home-page-large.png)
 
-# GreenFootPrints-project
-
+# GreenFootPrints
 ## History
 
 Web application is based on a website brief I was given to build a website from for a city and guilds exam in web design I took in 2012. I used Javascript Starter Kit by Cory House from Pluralsight video tutorial as starter point and updated packages. 
@@ -16,29 +15,18 @@ Web application has a ES6 module design pattern that allows additional functiona
 
 ## Build Tools
 
+- [React 18](https://react.js.org/)
 - [Webpack](https://webpack.js.org/)
 - [Babel](https://babeljs.io/)
 - [ESLInt](https://eslint.org/)
-- [Mocha](https://mochajs.org/)
-- [Chai](https://www.chaijs.com/)
-- [Travis CI](https://travis-ci.org/)
 - [Stylelint](https://stylelint.io/)
 - [EditorConfig](https://editorconfig.org/)
 - [NPM Scripts](https://docs.npmjs.com/cli/v7/using-npm/scripts)
-- [Faker](https://www.npmjs.com/package/faker)
 - [Express](https://expressjs.com/)
-- [Handlebars](https://handlebarsjs.com/)
-- [Surge](https://surge.sh/)
-- [Express Handlebars](https://www.npmjs.com/package/express-handlebars)
-- [JSON Schemer Faker](https://json-schema-faker.js.org/)
 - [PostCSS](https://postcss.org/)
 - [Chalk](https://www.npmjs.com/package/chalk)
-- [Local Tunnel](https://github.com/localtunnel/localtunnel)
 - [Node Sass](https://www.npmjs.com/package/node-sass)
-- [JSDOM](https://github.com/jsdom/jsdom)
-- [JSON Server](https://www.npmjs.com/package/json-server)
-- [Nock](https://github.com/nock/nock)
-- [Cheerio](https://www.npmjs.com/package/cheerio)
+
 
 Greenfootprints requires [Node.js](https://nodejs.org/) v10+ to run.
 

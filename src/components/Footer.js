@@ -22,11 +22,11 @@ function Footer() {
        >Collections</Link>
      </li>
      <li>
-      <Link to="/ten-ways" className="nav-links" title="Ten ways to recycle page"
+      <Link to="/tenways" className="nav-links" title="Ten ways to recycle page"
        >10 Ways</Link>
      </li>
      <li>
-      <Link to="/recycling-facts" className="nav-links" title="Recycling facts page"
+      <Link to="/recyclingfacts" className="nav-links" title="Recycling facts page"
        >Facts</Link>
      </li>
      <li>

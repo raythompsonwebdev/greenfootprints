@@ -102,10 +102,12 @@ src/css/sass/partials/_variables.min.css
 nbproject/private/
 src/nbproject/private/
 nbproject/
-src/static/images/Large/wordsearch.gif
+src/static/images/Large/
 src/static/images/slider/patricia-valerio-eV2x6CmfIns-unsplash-copy.jpg
 src/static/images/slider/patricia-valerio-eV2x6CmfIns-unsplash.jpg
 src/static/images/slider/pawel-czerwinski-RkIsyD_AVvc-unsplash-copy.jpg
 src/static/images/slider/pawel-czerwinski-RkIsyD_AVvc-unsplash.jpg
 src/static/images/slider/roberto-sorin-ZZ3qxWFZNRg-unsplash-copy.jpg
 src/static/images/slider/roberto-sorin-ZZ3qxWFZNRg-unsplash.jpg
+public/static/*
+buildScripts/
