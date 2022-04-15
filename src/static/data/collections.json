@@ -2,7 +2,7 @@
   {
     "id":1,
     "title": "Recycling and rubbish bin in a German railway station.",
-    "text": "A number of different systems have been implemented to collect recyclates from the general waste stream. These systems lie along the spectrum of trade-off between public convenience and government ease and expense. The three main categories of collection are \"drop-off centres\", \"buy-back centres\" and \"curbside collection\".",
+    "text": "A number of different systems have been implemented to collect recyclates from the general waste stream.\n These systems lie along the spectrum of trade-off between public convenience and government ease and expense. The three main categories of collection are \"drop-off centres\", \"buy-back centres\" and \"curbside collection\".",
     "image": "/static/images/Large/Image-glass.jpg",
     "alt": "reuse-image-green-foot-prints-com"
   },
@@ -16,21 +16,21 @@
   {
     "id":3,
     "title": "Curbside collection",
-    "text": "Curbside collection encompasses many subtly different systems,which differ mostly on where in the process the recyclates are sorted and cleaned. The main categories are mixed waste collection, commingled recyclables and source separation. A waste collection vehicle generally picks up the waste.At one end of the spectrum is mixed waste collection, in which all recyclates are collected mixed in with the rest of the waste, and the desired material is then sorted out and cleaned at a central sorting facility. This results in a large amount ofrecyclable waste, paper especially, being too soiled to reprocess, but has advantages as well: the city need not pay for a separate collection of recyclates and no public education is needed. Any changes to which materials are recyclable is easy to accommodate as all sorting happens in a central location.",
+    "text": "Curbside collection encompasses many subtly different systems,which differ mostly on where in the process the recyclates are sorted and cleaned. The main categories are mixed waste collection, commingled recyclables and source separation. A waste collection vehicle generally picks up the waste. At one end of the spectrum is mixed waste collection, in which all recyclates are collected mixed in with the rest of the waste, and the desired material is then sorted out and cleaned at a central sorting facility. This results in a large amount ofrecyclable waste, paper especially, being too soiled to reprocess, but has advantages as well: the city need not pay for a separate collection of recyclates and no public education is needed. Any changes to which materials are recyclable is easy to accommodate as all sorting happens in a central location.",
     "image": "/static/images/Large/gif-images/Contact_image.gif",
     "alt": "contact-us-image-green-foot-prints-com"
   },
   {
     "id":4,
     "title": "Curbside collection...",
-    "text": "In a Commingled or single-stream system, all recyclables for collection are mixed but kept separate from other waste. This greatly reduces the need for post-collection cleaning but does require public education on what materials are recyclable. Source separation is the other extreme, where each material is cleaned and sorted prior to collection. This method requires the least post-collection sorting and produces the purest recyclates, but incurs additional operating costs for collection of each separate material. An extensive public education program is also required, which must be successful if recyclate contaminationis to be avoided.",
+    "text": "In a Commingled or single-stream system, all recyclables for collection are mixed but kept separate from other waste. This greatly reduces the need for post-collection cleaning but does require public education on what materials are recyclable. Source separation is the other extreme, where each material is cleaned and sorted prior to collection. \nThis method requires the least post-collection sorting and produces the purest recyclates, but incurs additional operating costs for collection of each separate material. An extensive public education program is also required, which must be successful if recyclate contaminationis to be avoided.",
     "image": "/static/images/Large/recycle-continuous-circle-greenfootprints-com.jpg",
     "alt": "recycle-continuous-circle-green-foot-prints-com"
   },
   {
     "id":5,
     "title": "Buy-back centres",
-    "text": "Buy-back centres differ in that the cleaned recyclates are purchased, thus providing a clear incentive for use and creating a stable supply. The post-processed material can then be sold on, hopefully creating a profit. Unfortunately government subsidies are necessary to make buy-back centres a viable enterprise, as according to the United States National Solid Wastes Management Association it costs on average US$50 to process a ton of material, which can only be resold for US$30.",
+    "text": "Buy-back centres differ in that the cleaned recyclates are purchased, thus providing a clear incentive for use and creating a stable supply. The post-processed material can then be sold on, hopefully creating a profit. \nUnfortunately government subsidies are necessary to make buy-back centres a viable enterprise, as according to the United States National Solid Wastes Management Association it costs on average US$50 to process a ton of material, which can only be resold for US$30.",
     "image": "/static/images/Large/three-r-greenfootprints-com.png",
     "alt": "respect-recyling-green-foot-prints-com"
   },

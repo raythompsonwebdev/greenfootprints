@@ -1,56 +1,56 @@
 //import { hot } from 'react-hot-loader/root';
-import React, { useEffect } from 'react'
-import CollectionSlide from '../components/CollectionSlide.js'
-import CollectionData from '../static/data/collections.json'
+import React, { useEffect } from 'react';
+import CollectionSlide from '../components/CollectionSlide.js';
+import CollectionData from '../static/data/collections.json';
 
 const Collections = () => {
   useEffect(() => {
-    let slideIndex = 1
+    let slideIndex = 1;
     // Slider 1
     const collectionBoxSlides = (n) => {
-      let i
-      const slides = document.getElementsByClassName('collection-box')
+      let i;
+      const slides = document.getElementsByClassName('collection-box');
 
       if (n > slides.length) {
-        slideIndex = 1
+        slideIndex = 1;
       }
 
       if (n < 1) {
-        slideIndex = slides.length
+        slideIndex = slides.length;
       }
 
       // eslint-disable-next-line no-plusplus
       for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none'
+        slides[i].style.display = 'none';
       }
 
-      slides[slideIndex - 1].style.display = 'block'
-    }
+      slides[slideIndex - 1].style.display = 'block';
+    };
     /* eslint-disable no-console */
     const collectionSlides = (n) => {
-      collectionBoxSlides((slideIndex += n))
-    }
+      collectionBoxSlides((slideIndex += n));
+    };
 
-    const prev = document.querySelector('.prev')
-    const next = document.querySelector('.next')
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
 
     prev.addEventListener('click', (e) => {
-      e.preventDefault()
-      collectionSlides(-1)
-    })
+      e.preventDefault();
+      collectionSlides(-1);
+    });
 
     next.addEventListener('click', (e) => {
-      e.preventDefault()
-      collectionSlides(1)
-    })
-  })
+      e.preventDefault();
+      collectionSlides(1);
+    });
+  });
 
   return (
     <div className="page-wrapper" id="collections">
       <section className="content">
-        <h1>Collections &amp; Sorting</h1>
-        <section id="collection-boxes">
-          <article id="mask3">
+        <h2>Collections &amp; Sorting</h2>
+        <div id="collection-boxes">
+          <div class="mask">
             {CollectionData.map((slide) => (
               <CollectionSlide
                 data={slide}
@@ -65,12 +65,12 @@ const Collections = () => {
             <a className="next" href="http://www.google.com">
               &#10095;
             </a>
-          </article>
-        </section>
+          </div>
+        </div>
       </section>
       <div className="clearfix"> </div>
     </div>
-  )
-}
+  );
+};
 
-export default Collections
+export default Collections;

@@ -1,11 +1,11 @@
 //import { hot } from 'react-hot-loader/root';
-import React from 'react'
+import React from 'react';
 
 function Recycling() {
   return (
     <div class="page-wrapper" id="recycling">
       <section className="content">
-        <h1>Recycling consumer waste</h1>
+        <h2>Recycling consumer waste</h2>
 
         <article className="text">
           <p>
@@ -16,7 +16,6 @@ function Recycling() {
             landfilling) by reducing the need for "conventional" waste disposal,
             and lower greenhouse gas emissions as compared to virgin production.
           </p>
-
           <p>
             {' '}
             Recycling is a key component of modern waste reduction and is the
@@ -32,6 +31,12 @@ function Recycling() {
             composting or other reuse of biodegradable waste – such as food or
             garden waste – is not typically considered recycling.{' '}
           </p>
+
+          <img
+            className="recycle_page_img"
+            src="/static/images/Large/Image-mobile-batteries.jpg"
+            alt="recycling-family-home-green-foot-prints-com"
+          />
 
           <p>
             Materials to be recycled are either brought to a collection center
@@ -78,7 +83,7 @@ function Recycling() {
 
       <div className="clearfix"></div>
     </div>
-  )
+  );
 }
 
-export default Recycling
+export default Recycling;

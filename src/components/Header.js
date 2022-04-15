@@ -1,6 +1,6 @@
-import React from 'react'
-import ToggleButton from './ToggleButton.js'
-import SocialMediaLink from './SocialMediaLinks.js'
+import React from 'react';
+import ToggleButton from './ToggleButton.js';
+import SocialMediaLink from './SocialMediaLinks.js';
 
 function Header() {
   return (
@@ -15,14 +15,14 @@ function Header() {
 
       <div id="site-title">
         <h1>GreenFootPrints</h1>
-        <h2>UK's leading Recycling website</h2>
+        <p>UK's leading Recycling website</p>
       </div>
 
       <ToggleButton />
 
       <SocialMediaLink />
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

@@ -1,20 +1,22 @@
 //import { hot } from 'react-hot-loader/root';
-import React from 'react'
+import React from 'react';
 
 const RecyclingFactSlide = (props) => {
-  const { data, classname } = { ...props }
+  const { data, classname } = { ...props };
 
   return (
     <article className={classname}>
-      <h1>{data.title}</h1>
+      <h3>{data.title}</h3>
       <p>{data.text}</p>
       <ul>
-        {data.list
-          ? data.list.map((listitem) => <li>{listitem.text}</li>)
-          : false}
+        {data.list ? (
+          data.list.map((listitem) => <li>{listitem.text}</li>)
+        ) : (
+          <img id="tenImageOne" src={data.image} />
+        )}
       </ul>
     </article>
-  )
-}
+  );
+};
 
-export default RecyclingFactSlide
+export default RecyclingFactSlide;
