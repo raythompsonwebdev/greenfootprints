@@ -13,14 +13,14 @@
     "prestart": "babel-node buildScripts/startMessage.js",
     "start": " npm-run-all --parallel open:src",
     "open:src": "babel-node srcServer.js",
-    "lint": "esw webpack.config.* src buildScripts --color --fix",
+    "lint": "eslint webpack.config.* src --color --fix",
     "lint:watch": "npm run lint -- --watch",
     "security-check": "retire --package",
     "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
     "test:watch": "npm run test -- --watch",
     "clean-dist": "rimraf ./dist && mkdir dist",
-    "prebuild": "npm-run-all clean-dist test lint",
-    "build": "babel-node buildScripts/build.js",
+    "prebuild": "npm-run-all clean-dist ",
+    "build": "webpack --config webpack.config.prod.js --progress",
     "postbuild": "babel-node buildScripts/distServer.js",
     "deploy": "surge ./dist"
   },
@@ -76,7 +76,8 @@
     "stylelint": "^14.5.3",
     "stylelint-webpack-plugin": "^3.1.1",
     "terser-webpack-plugin": "^5.3.1",
-    "url-loader": "^4.1.1"
+    "url-loader": "^4.1.1",
+    "webpack-cli": "^4.9.2"
   },
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.17.0",

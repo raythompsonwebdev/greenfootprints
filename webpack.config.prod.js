@@ -1,33 +1,72 @@
-const path = require("path");
+import path from 'path';
+import webpack from 'webpack';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import { CleanWebpackPlugin } from 'clean-webpack-plugin';
+import TerserPlugin from 'terser-webpack-plugin';
+import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 
-const TerserPlugin = require("terser-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
+
+const isDev = false;
 
 export default {
-  mode: "production",
-  devtool: "source-map",
+  mode: 'production',
+  devtool: 'source-map',
   entry: {
-    main: path.resolve(__dirname, "./src/index"),
-    vendor: path.resolve(__dirname, "./src/vendor"),
+    main: path.resolve(__dirname, './src/index.js'),
+    vendor: ['react', 'react-dom'],
   },
-  target: "web",
+  target: 'web',
   output: {
-    filename: "bundle.[chunkhash].js",
-    chunkFilename: "bundle.[chunkhash].[id].js",
-    path: path.resolve(__dirname, "dist/"),
-    publicPath: "/",
+    filename: 'js/[name].bundle.[fullhash].js',
+    chunkFilename: 'chunks/[name].chunk.[fullhash].js',
+    path: path.resolve(__dirname, 'dist/'),
+    publicPath: '/',
   },
   optimization: {
     // splitChunks replaces CommonsChunkPlugin
+    runtimeChunk: false,
     splitChunks: {
-      chunks: "all",
+      cacheGroups: {
+        default: false,
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendor_app',
+          chunks: 'all',
+          minChunks: 2,
+        },
+      },
     },
     minimize: true,
     minimizer: [
       // Minify JS
-      new TerserPlugin(),
+      new TerserPlugin({
+        terserOptions: {
+          output: {
+            comments: false,
+          },
+          compress: {
+            passes: 3,
+            pure_getters: true,
+            unsafe: true,
+          },
+          ecma: undefined,
+          warnings: false,
+          parse: {
+            html5_comments: false,
+          },
+          mangle: true,
+          module: false,
+          toplevel: false,
+          nameCache: null,
+          ie8: false,
+          keep_classnames: false,
+          keep_fnames: false,
+          safari10: false,
+        },
+      }),
+      new CssMinimizerPlugin(),
     ],
   },
   module: {
@@ -37,29 +76,29 @@ export default {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: ["@babel/preset-env"],
+            presets: ['@babel/preset-env', '@babel/preset-react'],
           },
         },
       },
       // file loader for html
       {
         test: /\.html$/,
-        loader: "html-loader",
+        loader: 'html-loader',
       },
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
-        test: /\.(scss|sass)$/,
+        test: /\.css$|sass$|\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
-              sourceMap: true,
+              sourceMap: isDev,
             },
           },
           // {
@@ -72,9 +111,9 @@ export default {
           //   },
           // },
           {
-            loader: "sass-loader",
+            loader: 'sass-loader',
             options: {
-              sourceMap: true,
+              sourceMap: isDev,
             },
           },
         ],
@@ -82,16 +121,17 @@ export default {
       // file loader for fonts
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        use: ["file-loader"],
+        use: ['file-loader'],
       },
       // file loader for images
       {
-        test: /\.(gif|png|jpe?g|svg)$/i,
+        test: /\.(jpg|jpeg|png|gif|svg|pdf|ico)$/,
         use: [
-          "file-loader",
+          'file-loader',
           {
-            loader: "image-webpack-loader",
+            loader: 'image-webpack-loader',
             options: {
+              name: '[path][name]-[fullhash:8].[ext]',
               mozjpeg: {
                 progressive: true,
                 quality: 65,
@@ -118,19 +158,26 @@ export default {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: ["**/*"],
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production'),
     }),
-    new MiniCssExtractPlugin({
-      filename: "style.[contenthash].css",
-      chunkFilename: "style.[id].css",
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: ['**/*'],
     }),
     new HtmlWebpackPlugin({
       // Also generate a test.html
       hash: true,
-      filename: "index.html",
-      template: "./src/views/layouts/index.hbs",
+      filename: 'index.html',
+      template: path.join(__dirname, '/public/index.html'),
       inject: true,
     }),
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].bundle.[fullhash].css',
+      chunkFilename: 'chunks/[id].chunk.[fullhash].css',
+    }),
   ],
+  stats: {
+    children: true,
+    errorDetails: true,
+  },
 };
