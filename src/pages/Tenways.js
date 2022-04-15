@@ -1,82 +1,75 @@
 //import { hot } from 'react-hot-loader/root';
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react'
+import CollectionSlide from '../components/CollectionSlide.js'
+import TenWaysData from '../static/data/tenways.json'
 
 function TenWays() {
-
   useEffect(() => {
+    let slideIndex = 1
 
-    let slideIndex = 1;
-
-  // Slider 3
+    // Slider 3
     const recycleBoxSlides = (n) => {
-      let i;
-      const slides = document.getElementsByClassName("contentbox");
+      let i
+      const slides = document.getElementsByClassName('contentbox')
 
       if (n > slides.length) {
-        slideIndex = 1;
+        slideIndex = 1
       }
       if (n < 1) {
-        slideIndex = slides.length;
+        slideIndex = slides.length
       }
       // eslint-disable-next-line no-plusplus
       for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+        slides[i].style.display = 'none'
       }
 
-      slides[slideIndex - 1].style.display = "block";
-      slides[slideIndex - 1].classList.add('fade');
-
-    };
+      slides[slideIndex - 1].style.display = 'block'
+      slides[slideIndex - 1].classList.add('fade')
+    }
 
     const recycleSlides = (n) => {
-      recycleBoxSlides((slideIndex += n));
-    };
+      recycleBoxSlides((slideIndex += n))
+    }
 
-    const prevWays = document.querySelector(".prevWays");
-    const nextWays = document.querySelector(".nextWays");
+    const prevWays = document.querySelector('.prevWays')
+    const nextWays = document.querySelector('.nextWays')
 
-    prevWays.addEventListener("click", (e) => {
-        e.preventDefault();
-        recycleSlides(-1);
-      });
+    prevWays.addEventListener('click', (e) => {
+      e.preventDefault()
+      recycleSlides(-1)
+    })
 
-    nextWays.addEventListener("click", (e) => {
-      e.preventDefault();
-      recycleSlides(1);
-    });
-
-  });
+    nextWays.addEventListener('click', (e) => {
+      e.preventDefault()
+      recycleSlides(1)
+    })
+  })
 
   return (
-    <div className="grid_24" id="ten-ways">
+    <div className="page-wrapper" id="ten-ways">
       <section className="content">
         <h1>10 Ways to recycle</h1>
         <section id="contentboxes">
-
           <div id="mask">
+            {TenWaysData.map((slide) => (
+              <CollectionSlide
+                data={slide}
+                key={slide.id}
+                classname="contentbox"
+              />
+            ))}
 
-            <article className="contentbox">
-
-              <h1>{}</h1>
-              <p></p>
-
-              <img id="tenImageOne" src="fdgf" alt="dfsdf" />
-
-            </article>
-
-            <a className="prevWays" href="http://ww.google.com">&#10094;</a>
-            <a className="nextWays" href="http://ww.google.com">&#10095;</a>
-
+            <a className="prevWays" href="http://ww.google.com">
+              &#10094;
+            </a>
+            <a className="nextWays" href="http://ww.google.com">
+              &#10095;
+            </a>
           </div>
-
         </section>
       </section>
     </div>
-  );
+  )
 }
 
-export default TenWays;
-
-
-
-
+export default TenWays

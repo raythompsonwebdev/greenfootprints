@@ -1,84 +1,76 @@
 //import { hot } from 'react-hot-loader/root';
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react'
+import CollectionSlide from '../components/CollectionSlide.js'
+import CollectionData from '../static/data/collections.json'
 
 const Collections = () => {
-
-  
-  let slideIndex = 1;
-  // Slider 1
-  const collectionBoxSlides = (n) => {
-    let i;
-    const slides = document.getElementsByClassName("collection-box");
-
-    if (n > slides.length) {
-      slideIndex = 1;
-    }
-
-    if (n < 1) {
-      slideIndex = slides.length;
-    }
-
-    // eslint-disable-next-line no-plusplus
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-
-    slides[slideIndex - 1].style.display = "block";
-  };
-  /* eslint-disable no-console */
-  const collectionSlides = (n) => {
-    collectionBoxSlides((slideIndex += n));
-  };
-
   useEffect(() => {
-    
-    const prev = document.querySelector(".prev");
-    const next = document.querySelector(".next");
+    let slideIndex = 1
+    // Slider 1
+    const collectionBoxSlides = (n) => {
+      let i
+      const slides = document.getElementsByClassName('collection-box')
 
-    prev.addEventListener("click", (e) => {
-      e.preventDefault();
-      collectionSlides(-1);
-    });
+      if (n > slides.length) {
+        slideIndex = 1
+      }
 
-    next.addEventListener("click", (e) => {
-      e.preventDefault();
-      collectionSlides(1);
-    });
+      if (n < 1) {
+        slideIndex = slides.length
+      }
 
-  });  
+      // eslint-disable-next-line no-plusplus
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none'
+      }
 
-  return(
-    <div className="grid_24" id="collections">
-        <section className="content">
-          <h1>Collections &amp; Sorting</h1>
-          <section id="collection-boxes">
-            <article id="mask3">
+      slides[slideIndex - 1].style.display = 'block'
+    }
+    /* eslint-disable no-console */
+    const collectionSlides = (n) => {
+      collectionBoxSlides((slideIndex += n))
+    }
 
-                <article className="collection-box">
+    const prev = document.querySelector('.prev')
+    const next = document.querySelector('.next')
 
-                  <h1 className="collections_title">{}</h1>
+    prev.addEventListener('click', (e) => {
+      e.preventDefault()
+      collectionSlides(-1)
+    })
 
-                  <p className="collection-text">{}</p>
+    next.addEventListener('click', (e) => {
+      e.preventDefault()
+      collectionSlides(1)
+    })
+  })
 
-                  <img id="tenImageOne" src="fdfs" alt="sdfdsfds" />
+  return (
+    <div className="page-wrapper" id="collections">
+      <section className="content">
+        <h1>Collections &amp; Sorting</h1>
+        <section id="collection-boxes">
+          <article id="mask3">
+            {CollectionData.map((slide) => (
+              <CollectionSlide
+                data={slide}
+                key={slide.id}
+                classname="collection-box"
+              />
+            ))}
 
-                </article>
-
-
-              <a className="prev" href="http://www.google.com">&#10094;</a>
-              <a className="next" href="http://www.google.com">&#10095;</a>
+            <a className="prev" href="http://www.google.com">
+              &#10094;
+            </a>
+            <a className="next" href="http://www.google.com">
+              &#10095;
+            </a>
           </article>
-          </section>
-
         </section>
+      </section>
       <div className="clearfix"> </div>
-
     </div>
-  );
-
+  )
 }
 
-export default Collections;
-
-
-
+export default Collections

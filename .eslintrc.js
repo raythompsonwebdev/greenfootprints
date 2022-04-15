@@ -18,12 +18,13 @@ export default {
     "plugin:react/recommended",
     "plugin:import/warnings",
     "plugin:jsx-a11y/recommended",
+    "prettier"
   ],
   globals: {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly",
   },
-  plugins: ["react", "import", "jsx-a11y"],
+  plugins: ["react", "import", "jsx-a11y", "prettier"],
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",

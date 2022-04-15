@@ -38,14 +38,14 @@ function HomeSlider() {
   return (
 
     <section id="slider">
-    <div className="main-slider">
-      <div className="flexslider">
-        <ul className="slides">
-          {siteImages.map((slide)=> <HomeSlide data={slide} key={slide.id} /> )};
-        </ul>
+
+        <div className="flexslider">
+          <div id="slides">
+            {siteImages.map((slide)=> <HomeSlide data={slide} key={slide.id} /> )};
+          </div>
+
       </div>
-    </div>
-  </section>
+    </section>
 
   );
 }
