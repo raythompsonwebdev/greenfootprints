@@ -36,7 +36,7 @@ button#mobile-toggle {
   }
 }
 
-//Scroll to top button
+//Scroll to top button.
 button#myBtn {
   display: none;
   position: fixed;
@@ -129,7 +129,7 @@ header#site_header {
   margin: auto;
 
   div#site-title {
-    width: 72%;
+    width: 75%;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
@@ -160,7 +160,6 @@ header#site_header {
   }
 
   figure#logo {
-    margin: 0 0.5em 0 0;
     width: auto;
     border: 3px solid $colorsildertxtbg;
     -webkit-flex: 0 0 auto;
@@ -277,7 +276,6 @@ nav.site_navigation {
       font-size: 2rem;
       font-family: $fontList;
       text-align: left;
-      letter-spacing: 0.05em;
       line-height: 50px;
       margin: 0;
       background-color: $colornav;
@@ -309,20 +307,20 @@ nav.site_navigation {
       flex: 1 0 auto;
 
       a {
-        color: $colorsocmedhov;
-        background-color: $headbg;
+        color: $headbg;
+        //background-color: $headbg;
         display: block;
         line-height: 40px;
         font-size: 1em;
-        letter-spacing: 0.1em;
         height: 100%;
         text-shadow: 1px 2px 1px $header-shadow;
         @include transitioner(all 0.2s ease-in 0s);
 
         &:hover {
           font-weight: bold;
-          background-color: $colorsocmedhov;
+
           color: $honecolor;
+          text-decoration: underline;
           text-shadow: none;
         }
       }
@@ -386,7 +384,7 @@ div.page-wrapper {
             color: $colorsocmedhov;
             margin: 1em auto;
 
-            h3 {
+            h2 {
               font-size: 3.5em;
               text-transform: uppercase;
               font-weight: bold;
@@ -401,8 +399,6 @@ div.page-wrapper {
 
             p {
               font-size: 1.5em;
-              text-transform: uppercase;
-              letter-spacing: 0.05em;
               width: 90%;
               margin: 1em auto;
               line-height: 1.8em;
@@ -421,7 +417,6 @@ div.page-wrapper {
               background-color: $headbg;
               line-height: 35px;
               font-size: 1.2em;
-              letter-spacing: 0.1em;
 
               &:hover {
                 color: $headbg;
@@ -491,8 +486,9 @@ div.page-wrapper {
         @include box-sizing($type: border-box);
         padding: 0.25em;
         flex: 1 0 auto;
+        border: 1px solid #000;
 
-        h2 {
+        h3 {
           text-indent: 0;
           height: auto;
           line-height: 35px;
@@ -521,7 +517,7 @@ div.page-wrapper {
             -webkit-flex: 0 1 auto;
             -ms-flex: 0 1 auto;
             flex: 0 1 auto;
-            width: 44%;
+            width: auto;
             margin: 0 0.25em 0 0;
           }
 
@@ -533,11 +529,9 @@ div.page-wrapper {
             flex: 0 1 auto;
 
             p {
-              letter-spacing: 0.05em;
               font-size: 1em;
               margin: 0.25em 0;
               padding: 0.25em;
-
               line-height: 1.6em;
               width: auto;
               display: block;
@@ -555,7 +549,6 @@ div.page-wrapper {
               border: 0;
               color: $colorsocmedhov;
               display: block;
-              letter-spacing: 0.15em;
               text-transform: uppercase;
               text-shadow: 1px 2px 1px $headbg;
               @include transitioner(all 0.2s ease-in 0s);
@@ -564,7 +557,6 @@ div.page-wrapper {
                 background-color: $colorsocmedhov;
                 color: $headbg;
                 cursor: pointer;
-                letter-spacing: 0.2em;
                 font-weight: bold;
                 text-shadow: none;
               }
@@ -691,7 +683,6 @@ div.page-wrapper {
             display: inline-block;
             width: 100%;
             text-align: left;
-            letter-spacing: 0.05em;
             height: auto;
 
             &:before {
@@ -743,13 +734,13 @@ div.page-wrapper {
         .recycle_img_right {
           width: auto;
           height: auto;
-          display: block;
+          display: none;
           margin: 0.9em;
           float: right;
         }
 
         figcaption#recycle_where_caption {
-          width: 80%;
+          width: 100%;
           display: block;
           float: left;
         }
@@ -921,7 +912,6 @@ div.page-wrapper {
               margin: 0.5em 0;
               display: block;
               text-align: left;
-              letter-spacing: 0.2em;
             }
 
             input {
@@ -932,7 +922,6 @@ div.page-wrapper {
               padding: 0;
               margin: 0.5em 0 0 0;
               display: block;
-              letter-spacing: 0.1em;
             }
 
             textarea {
@@ -940,11 +929,9 @@ div.page-wrapper {
               border: 0;
               margin: 0.5em 0 0 0;
               display: block;
-              letter-spacing: 0.1em;
             }
 
             input[type='submit'] {
-              letter-spacing: 0.2em;
               height: 30px;
               width: 30%;
               margin: 0;
@@ -1060,7 +1047,6 @@ div.page-wrapper {
 
         /*Drop Cap*/
         p.collection-text {
-          letter-spacing: 0.05em;
           width: auto;
           padding: 0.5em;
           color: $colorblk;
@@ -1113,7 +1099,6 @@ div.page-wrapper {
             display: block;
             width: 100%;
             text-align: left;
-            letter-spacing: 0.1em;
             font-size: 0.9em;
             height: auto;
             clear: left;
@@ -1220,7 +1205,6 @@ div.page-wrapper {
         }
 
         p {
-          letter-spacing: 0.05em;
           font-size: 1em;
           margin: 0 0 0.2em 0;
           padding: 0.5em;
@@ -1252,7 +1236,6 @@ div.page-wrapper {
           border: 0;
           color: $colortxtbg;
           display: block;
-          letter-spacing: 0.12em;
           text-transform: uppercase;
           text-shadow: 1px 2px 1px $header-shadow;
           @include transitioner(all 0.2s ease-in 0s);
@@ -1261,7 +1244,6 @@ div.page-wrapper {
             background-color: $colortxtbg;
             color: $colornav;
             cursor: pointer;
-            letter-spacing: 0.12em;
             width: 50%;
             text-shadow: none;
           }
@@ -1307,7 +1289,6 @@ footer {
         display: block;
         font-size: 0.7em;
         text-shadow: 1px 2px 1px $header-shadow;
-        letter-spacing: 0.01em;
         text-transform: uppercase;
 
         &:hover {
@@ -1325,7 +1306,7 @@ p.copyr {
   color: $colorblk;
   font-size: 0.65em;
   width: 100%;
-  letter-spacing: 0.1em;
+
   margin: 1em auto;
 }
 
@@ -1353,9 +1334,7 @@ p.copyr {
 
   /*header*/
   header#site_header {
-    position: sticky;
     display: flex;
-    height: auto;
     background-color: $honecolor;
     padding: 0.2em;
     -webkit-flex-flow: row wrap;
@@ -1371,7 +1350,7 @@ p.copyr {
     margin: auto;
 
     div#site-title {
-      width: 72%;
+      width: 25%;
       -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
       flex: 0 0 auto;
@@ -1380,8 +1359,8 @@ p.copyr {
         color: $colorsocmedhov;
         font-size: 2.5em;
         font-family: $fontList;
-        text-align: left;
-        line-height: 50px;
+        text-align: center;
+        line-height: 55px;
         margin: 0;
         padding: 0;
         text-shadow: 1px 1px 1px $header-shadow;
@@ -1395,16 +1374,14 @@ p.copyr {
         font-size: 0.9em;
         font-family: $fontList;
         line-height: 20px;
-        text-align: left;
+        text-align: center;
         margin: 0;
         text-shadow: 2px 1px 1px $header-shadow;
       }
     }
 
     figure#logo {
-      margin: 0 0.5em 0 0;
       width: auto;
-      height: auto;
 
       img#logo-image {
         display: block;
@@ -1515,7 +1492,6 @@ p.copyr {
         font-size: 2rem;
         font-family: $fontList;
         text-align: left;
-        letter-spacing: 0.05em;
         line-height: 50px;
         margin: 0;
         background-color: $colornav;
@@ -1552,7 +1528,6 @@ p.copyr {
           display: block;
           line-height: 40px;
           font-size: 1em;
-          letter-spacing: 0.1em;
           height: 100%;
           text-shadow: 1px 2px 1px $header-shadow;
           @include transitioner(all 0.2s ease-in 0s);
@@ -1666,14 +1641,14 @@ p.copyr {
 
             figcaption.slider-caption {
               float: right;
-              width: 72%;
+              width: 70%;
               text-align: center;
               height: auto;
               color: $colorsocmedhov;
 
-              h3 {
-                font-size: 2.5em;
-                line-height: 120px;
+              h2 {
+                font-size: 2.23em;
+                line-height: 80px;
                 font-family: $fontList;
               }
 
@@ -1756,7 +1731,7 @@ p.copyr {
           padding: 0.25em;
           flex: 1 0 auto;
 
-          h2 {
+          h3 {
             text-indent: 0;
             height: auto;
             line-height: 35px;
@@ -1785,7 +1760,7 @@ p.copyr {
               -webkit-flex: 0 1 auto;
               -ms-flex: 0 1 auto;
               flex: 0 1 auto;
-              width: 44%;
+              width: auto;
               margin: 0 0.25em 0 0;
             }
 
@@ -1797,7 +1772,6 @@ p.copyr {
               flex: 0 1 auto;
 
               p {
-                letter-spacing: 0.05em;
                 font-size: 1em;
                 margin: 0.25em 0;
                 padding: 0.25em;
@@ -1819,7 +1793,6 @@ p.copyr {
                 border: 0;
                 color: $colorsocmedhov;
                 display: block;
-                letter-spacing: 0.15em;
                 text-transform: uppercase;
                 text-shadow: 1px 2px 1px $headbg;
                 @include transitioner(all 0.2s ease-in 0s);
@@ -1828,7 +1801,6 @@ p.copyr {
                   background-color: $colorsocmedhov;
                   color: $headbg;
                   cursor: pointer;
-                  letter-spacing: 0.2em;
                   font-weight: bold;
                   text-shadow: none;
                 }
@@ -1929,6 +1901,10 @@ p.copyr {
           font-size: 1em;
         }
 
+        figure {
+          border: 1px solid #000;
+        }
+
         figcaption {
           width: 100%;
           display: block;
@@ -1955,7 +1931,6 @@ p.copyr {
               display: inline-block;
               width: 100%;
               text-align: left;
-              letter-spacing: 0.05em;
               height: auto;
 
               &:before {
@@ -2007,13 +1982,13 @@ p.copyr {
           .recycle_img_right {
             width: auto;
             height: auto;
-            display: block;
+            display: none;
             margin: 0.9em;
             float: right;
           }
 
           figcaption#recycle_where_caption {
-            width: 80%;
+            width: 100%;
             display: block;
             float: left;
           }
@@ -2186,7 +2161,6 @@ p.copyr {
                 margin: 0.5em 0;
                 display: block;
                 text-align: left;
-                letter-spacing: 0.2em;
               }
 
               input {
@@ -2197,7 +2171,6 @@ p.copyr {
                 padding: 0;
                 margin: 0.5em 0 0 0;
                 display: block;
-                letter-spacing: 0.1em;
               }
 
               textarea {
@@ -2205,11 +2178,9 @@ p.copyr {
                 border: 0;
                 margin: 0.5em 0 0 0;
                 display: block;
-                letter-spacing: 0.1em;
               }
 
               input[type='submit'] {
-                letter-spacing: 0.2em;
                 height: 30px;
                 width: 30%;
                 margin: 0;
@@ -2323,7 +2294,6 @@ p.copyr {
 
           /*Drop Cap*/
           p.collection-text {
-            letter-spacing: 0.05em;
             padding: 0.5em;
             width: auto;
             color: $colorblk;
@@ -2370,7 +2340,6 @@ p.copyr {
               display: block;
               width: 100%;
               text-align: left;
-              letter-spacing: 0.1em;
               font-size: 1.2em;
               height: auto;
               clear: left;
@@ -2479,7 +2448,6 @@ p.copyr {
           }
 
           p {
-            letter-spacing: 0.05em;
             font-size: 1em;
             margin: 0 0 0.2em 0;
             padding: 0.5em;
@@ -2511,7 +2479,6 @@ p.copyr {
             border: 0;
             color: $colortxtbg;
             display: block;
-            letter-spacing: 0.12em;
             text-transform: uppercase;
             text-shadow: 1px 2px 1px $header-shadow;
             @include transitioner(all 0.2s ease-in 0s);
@@ -2520,7 +2487,6 @@ p.copyr {
               background-color: $colortxtbg;
               color: $colornav;
               cursor: pointer;
-              letter-spacing: 0.12em;
               width: 50%;
               text-shadow: none;
             }
@@ -2575,7 +2541,6 @@ p.copyr {
           display: block;
           font-size: 1em;
           text-shadow: 1px 2px 1px $header-shadow;
-          letter-spacing: 0.01em;
           text-transform: uppercase;
 
           &:hover {
@@ -2593,7 +2558,6 @@ p.copyr {
     color: $colorblk;
     font-size: 0.65em;
     width: 100%;
-    letter-spacing: 0.1em;
     margin: 1em auto;
   }
 }
@@ -2611,25 +2575,38 @@ p.copyr {
 
   header#site_header {
     padding: 0.25em;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    height: 100px;
+    margin: auto;
 
     div#site-title {
-      width: 71%;
+      width: 30%;
       -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
       flex: 0 0 auto;
 
       h1 {
         font-size: 2.5em;
+        line-height: 55px;
+        text-align: center;
       }
 
       p {
         font-size: 0.9em;
+        text-align: center;
       }
     }
 
     figure#logo {
-      margin: 0 0.5em 0 0;
-      width: 8%;
+      width: auto;
     }
 
     aside.socials {
@@ -2660,8 +2637,6 @@ p.copyr {
         }
       }
     }
-
-    /*social media icons*/
   }
 
   nav.site_navigation {
@@ -2706,11 +2681,11 @@ p.copyr {
 
             figcaption.slider-caption {
               float: right;
-              width: 66%;
+              width: 64%;
 
-              h3 {
-                font-size: 2.5em;
-                line-height: 120px;
+              h2 {
+                font-size: 2.25em;
+                line-height: 80px;
               }
 
               p {
@@ -2784,7 +2759,7 @@ p.copyr {
           padding: 0.25em;
           flex: 1 0 auto;
 
-          h2 {
+          h3 {
             font-size: 1.25em;
             text-shadow: unset;
           }
@@ -2809,7 +2784,7 @@ p.copyr {
               flex: 0 1 auto;
 
               p {
-                font-size: 1em;
+                font-size: 0.9em;
                 line-height: 1.6em;
               }
 
@@ -2895,8 +2870,6 @@ p.copyr {
             display: block;
 
             li {
-              letter-spacing: 0.05em;
-
               &:before {
                 font-family: 'FontAwesome';
                 content: '\f1b8';
@@ -2931,13 +2904,13 @@ p.copyr {
           .recycle_img_right {
             width: auto;
             height: auto;
-            display: block;
+            display: none;
             margin: 0.9em;
             float: right;
           }
 
           figcaption#recycle_where_caption {
-            width: 80%;
+            width: 100%;
             display: block;
             float: left;
           }
@@ -3096,8 +3069,6 @@ p.copyr {
               }
 
               input[type='submit'] {
-                letter-spacing: 0.2em;
-
                 &:hover {
                   font-weight: bold;
                   cursor: pointer;
@@ -3238,7 +3209,6 @@ p.copyr {
           a.content-button {
             font-size: 0.9em;
             width: 55%;
-            letter-spacing: 0.12em;
 
             &:hover {
               width: 55%;
@@ -3280,28 +3250,44 @@ p.copyr {
 
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
   div#main-wrapper {
-    width: 96%;
+    width: 98%;
     height: auto;
   }
 
   header#site_header {
     padding: 0.25em;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    height: 100px;
+    margin: auto;
 
     div#site-title {
-      width: 69%;
+      width: 35%;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
 
       h1 {
-        font-size: 1.7em;
+        font-size: 2.3em;
+        line-height: 55px;
+        text-align: center;
       }
 
       p {
-        font-size: 0.75em;
+        font-size: 0.9em;
+        text-align: center;
       }
     }
 
     figure#logo {
-      margin: 0 0.5em 0 0;
-      width: 10%;
+      width: auto;
     }
 
     aside.socials {
@@ -3312,25 +3298,31 @@ p.copyr {
         padding: 0;
 
         li {
+          width: 23%;
+
           a {
+            height: 100%;
             width: 100%;
 
             i.fa-twitter,
             i.fa-facebook,
             i.fa-google,
             i.fa-instagram {
-              font-size: 1em;
+              font-size: 1.1em;
+
+              &:hover {
+                transform: scale(1.2);
+              }
             }
           }
         }
       }
     }
-
-    /*social media icons*/
   }
 
   nav.site_navigation {
     margin: 0.2em 0;
+    display: block;
 
     div.nav-title {
       width: 9%;
@@ -3345,7 +3337,7 @@ p.copyr {
 
       li {
         a {
-          font-size: 0.85em;
+          font-size: 0.8em;
 
           &:hover {
             text-shadow: none;
@@ -3357,27 +3349,37 @@ p.copyr {
 
   div.page-wrapper {
     #slider {
-      height: 400px;
+      margin: 0.5em 0;
 
       div.flexslider {
-        height: 100%;
+        height: auto;
 
         div#slides {
-          height: 100%;
+          position: relative;
 
           figure.sliders {
+            height: 400px;
+
+            img {
+              margin: 1em;
+            }
+
             figcaption.slider-caption {
-              h3 {
-                font-size: 2.2em;
+              float: right;
+              width: 60%;
+
+              h2 {
+                font-size: 1.9em;
+                line-height: 55px;
               }
 
               p {
-                font-size: 1.1em;
+                font-size: 1em;
               }
 
               a.largeButton.homeBgColor {
-                width: 25%;
-                font-size: 1em;
+                width: 30%;
+                font-size: 1.1em;
 
                 &:hover {
                   cursor: pointer;
@@ -3389,21 +3391,31 @@ p.copyr {
 
         .flex-control-nav,
         .flex-control-paging {
+          //width: calc(100% - 15%);
           width: 100%;
+          position: relative;
+          height: 35px;
 
           li {
+            display: inline-block;
+            height: 100%;
             width: 5%;
 
             a {
-              margin: 12% auto;
-            }
+              border: 2px solid black;
+              opacity: 0.6;
+              display: block;
+              margin: 11% auto;
+              line-height: 35px;
 
-            &:hover {
-              opacity: 1;
+              &:hover {
+                opacity: 1;
+              }
             }
 
             a.flex-active {
               opacity: 1;
+              background: $colorsocmedhov;
             }
           }
         }
@@ -3425,15 +3437,15 @@ p.copyr {
           padding: 0.25em;
           flex: 1 0 auto;
 
-          h2 {
-            font-size: 1.25em;
+          h3 {
+            font-size: 1.15em;
             text-shadow: unset;
           }
 
           figure.contentbox_image {
             display: flex;
             align-items: flex-start;
-            flex-flow: row;
+            flex-flow: column;
 
             img#paperBottles,
             img#flowChart,
@@ -3442,6 +3454,7 @@ p.copyr {
               -webkit-flex: 0 1 auto;
               -ms-flex: 0 1 auto;
               flex: 0 1 auto;
+              margin: auto;
             }
 
             figcaption {
@@ -3450,12 +3463,12 @@ p.copyr {
               flex: 0 1 auto;
 
               p {
-                font-size: 1em;
+                font-size: 0.9em;
                 line-height: 1.6em;
               }
 
               a.content-button {
-                font-size: 1em;
+                font-size: 0.9em;
 
                 &:hover {
                   cursor: pointer;
@@ -3653,8 +3666,6 @@ p.copyr {
             display: block;
 
             li {
-              letter-spacing: 0.05em;
-
               &:before {
                 font-family: 'FontAwesome';
                 content: '\f1b8';
@@ -3687,13 +3698,13 @@ p.copyr {
           .recycle_img_right {
             width: auto;
             height: auto;
-            display: block;
+            display: none;
             margin: 0.9em;
             float: right;
           }
 
           figcaption#recycle_where_caption {
-            width: 80%;
+            width: 100%;
             display: block;
             float: left;
           }
@@ -3852,8 +3863,6 @@ p.copyr {
               }
 
               input[type='submit'] {
-                letter-spacing: 0.2em;
-
                 &:hover {
                   font-weight: bold;
                   cursor: pointer;
@@ -3924,28 +3933,41 @@ p.copyr {
 
 @media only screen and (min-width: 801px) and (max-width: 1024px) {
   div#main-wrapper {
-    width: 96%;
+    width: 98%;
     height: auto;
   }
 
   header#site_header {
     padding: 0.25em;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    height: 100px;
+    margin: auto;
 
     div#site-title {
-      width: 66%;
+      width: 40%;
 
       h1 {
-        font-size: 1.6em;
-        line-height: 35px;
+        font-size: 1.7em;
+        line-height: 50px;
+        text-align: center;
       }
 
       p {
         font-size: 0.75em;
+        text-align: center;
       }
     }
 
     figure#logo {
-      width: 12%;
+      width: auto;
     }
 
     aside.socials {
@@ -3977,6 +3999,7 @@ p.copyr {
 
   nav.site_navigation {
     height: 40px;
+    display: block;
 
     div.nav-title {
       width: 9%;
@@ -3993,7 +4016,7 @@ p.copyr {
         width: 12%;
 
         a {
-          font-size: 0.85em;
+          font-size: 0.7em;
 
           &:hover {
             text-shadow: none;
@@ -4012,15 +4035,27 @@ p.copyr {
           height: 100%;
 
           figure.sliders {
+            img {
+              display: block;
+              width: auto;
+              float: none;
+              position: absolute;
+              z-index: 0;
+              left: 50vw;
+            }
+
             figcaption.slider-caption {
               width: 100%;
+              position: relative;
+              z-index: 1;
 
-              h3 {
-                font-size: 2.6em;
+              h2 {
+                font-size: 2.15em;
+                line-height: 75px;
               }
 
               p {
-                font-size: 1.2em;
+                font-size: 1.1em;
               }
 
               a.largeButton.homeBgColor {
@@ -4058,9 +4093,9 @@ p.copyr {
         height: auto;
 
         article.home_contentbox {
-          width: 31.3%;
+          width: 100%;
 
-          h1 {
+          h3 {
             font-size: 1.1em;
           }
 
@@ -4071,7 +4106,7 @@ p.copyr {
             img#flowChart,
             img#RecycleCircle,
             img#wordSearch {
-              width: 44%;
+              width: auto;
             }
 
             figcaption {
@@ -4158,8 +4193,6 @@ p.copyr {
             margin: 1em 0;
 
             li {
-              letter-spacing: 0.05em;
-
               &:before {
                 font-family: 'FontAwesome';
                 content: '\f1b8';
@@ -4191,13 +4224,13 @@ p.copyr {
           .recycle_img_right {
             width: auto;
             height: auto;
-            display: block;
+            display: none;
             margin: 0.9em;
             float: right;
           }
 
           figcaption#recycle_where_caption {
-            width: 80%;
+            width: 100%;
             display: block;
             float: left;
           }
@@ -4356,8 +4389,6 @@ p.copyr {
               }
 
               input[type='submit'] {
-                letter-spacing: 0.2em;
-
                 &:hover {
                   font-weight: bold;
                   cursor: pointer;
@@ -4431,22 +4462,35 @@ p.copyr {
 
   header#site_header {
     padding: 0.25em;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    height: 100px;
+    margin: auto;
 
     div#site-title {
-      width: 60%;
+      width: 45%;
 
       h1 {
-        font-size: 1.5em;
-        line-height: 30px;
+        font-size: 1.6em;
+        line-height: 45px;
+        text-align: center;
       }
 
       p {
         font-size: 0.7em;
+        text-align: center;
       }
     }
 
     figure#logo {
-      margin: 0 0.5em 0 0;
+      width: auto;
     }
 
     aside.socials {
@@ -4472,12 +4516,11 @@ p.copyr {
         }
       }
     }
-
-    /*social media icons*/
   }
 
   nav.site_navigation {
     height: 40px;
+    display: block;
 
     div.nav-title {
       width: 9%;
@@ -4517,12 +4560,13 @@ p.copyr {
             height: 325px;
 
             figcaption.slider-caption {
-              h3 {
-                font-size: 2em;
+              h2 {
+                font-size: 2.05em;
+                line-height: 75px;
               }
 
               p {
-                font-size: 0.85em;
+                font-size: 0.5em;
               }
 
               a.largeButton.homeBgColor {
@@ -4564,7 +4608,7 @@ p.copyr {
         article.home_contentbox {
           width: 31%;
 
-          h1 {
+          h3 {
             font-size: 0.9em;
           }
 
@@ -4575,7 +4619,7 @@ p.copyr {
             img#flowChart,
             img#RecycleCircle,
             img#wordSearch {
-              width: 50%;
+              width: auto;
             }
 
             figcaption {
@@ -4665,8 +4709,6 @@ p.copyr {
             display: block;
 
             li {
-              letter-spacing: 0.05em;
-
               &:before {
                 font-family: 'FontAwesome';
                 content: '\f1b8';
@@ -4699,13 +4741,13 @@ p.copyr {
           .recycle_img_right {
             width: auto;
             height: auto;
-            display: block;
+            display: none;
             margin: 0.9em;
             float: right;
           }
 
           figcaption#recycle_where_caption {
-            width: 80%;
+            width: 100%;
             display: block;
             float: left;
           }
@@ -4864,8 +4906,6 @@ p.copyr {
               }
 
               input[type='submit'] {
-                letter-spacing: 0.2em;
-
                 &:hover {
                   font-weight: bold;
                   cursor: pointer;
@@ -4996,7 +5036,6 @@ p.copyr {
           a.content-button {
             font-size: 1em;
             width: 100%;
-            letter-spacing: 0.12em;
 
             &:hover {
               width: 100%;
@@ -5044,21 +5083,32 @@ p.copyr {
 
   header#site_header {
     padding: 0.2em;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    height: 100px;
+    margin: auto;
 
     div#site-title {
-      width: 54%;
+      width: 35%;
 
       h1 {
-        font-size: 1.3em;
+        font-size: 1.5em;
       }
 
       p {
-        font-size: 0.6em;
+        font-size: 0.7em;
       }
     }
 
     figure#logo {
-      width: 13%;
+      width: auto;
     }
 
     aside.socials {
@@ -5090,6 +5140,7 @@ p.copyr {
 
   nav.site_navigation {
     height: 50px;
+    display: block;
 
     div.nav-title {
       width: 9%;
@@ -5130,8 +5181,9 @@ p.copyr {
         div#slides {
           figure.sliders {
             figcaption.slider-caption {
-              h3 {
+              h2 {
                 font-size: 1.5em;
+                line-height: 55px;
               }
 
               p {
@@ -5175,7 +5227,7 @@ p.copyr {
         article.home_contentbox {
           width: 31.5%;
 
-          h1 {
+          h3 {
             font-size: 0.85em;
             line-height: 20px;
             padding: 0.2em 0;
@@ -5187,7 +5239,7 @@ p.copyr {
             img#paperBottles,
             img#flowChart,
             img#RecycleCircle {
-              width: 55%;
+              width: auto;
             }
 
             figcaption {
@@ -5276,8 +5328,6 @@ p.copyr {
             display: block;
 
             li {
-              letter-spacing: 0.05em;
-
               &:before {
                 font-family: 'FontAwesome';
                 content: '\f1b8';
@@ -5310,13 +5360,13 @@ p.copyr {
           .recycle_img_right {
             width: auto;
             height: auto;
-            display: block;
+            display: none;
             margin: 0.9em;
             float: right;
           }
 
           figcaption#recycle_where_caption {
-            width: 80%;
+            width: 100%;
             display: block;
             float: left;
           }
@@ -5475,8 +5525,6 @@ p.copyr {
               }
 
               input[type='submit'] {
-                letter-spacing: 0.2em;
-
                 &:hover {
                   font-weight: bold;
                   cursor: pointer;
@@ -5601,7 +5649,6 @@ p.copyr {
           a.content-button {
             font-size: 0.9em;
             width: 100%;
-            letter-spacing: 0.12em;
 
             &:hover {
               width: 100%;
@@ -5655,9 +5702,20 @@ p.copyr {
 
   header#site_header {
     padding: 0.2em;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    height: 100px;
+    margin: auto;
 
     div#site-title {
-      width: 80%;
+      width: 30%;
 
       h1 {
         font-size: 1.5em;
@@ -5669,8 +5727,7 @@ p.copyr {
     }
 
     figure#logo {
-      width: 16%;
-      margin: 0 0.25em 0 0;
+      width: auto;
     }
 
     aside.socials {
@@ -5789,14 +5846,12 @@ p.copyr {
         a {
           line-height: 45px;
           margin: 0;
-          letter-spacing: 0.1em;
           font-size: 1em;
           text-align: center;
           display: block;
 
           &:hover {
             text-shadow: none;
-            letter-spacing: 0.2em;
             font-weight: bold;
           }
         }
@@ -5820,8 +5875,9 @@ p.copyr {
         div#slides {
           figure.sliders {
             figcaption.slider-caption {
-              h3 {
+              h2 {
                 font-size: 1.4em;
+                line-height: 55px;
               }
 
               p {
@@ -5886,7 +5942,7 @@ p.copyr {
         article.home_contentbox {
           width: 78%;
 
-          h1 {
+          h3 {
             font-size: 1em;
             line-height: 30px;
           }
@@ -5898,7 +5954,7 @@ p.copyr {
             img#flowChart,
             img#RecycleCircle,
             img#wordSearch {
-              width: 44%;
+              width: auto;
             }
 
             figcaption {
@@ -5986,8 +6042,6 @@ p.copyr {
             display: block;
 
             li {
-              letter-spacing: 0.05em;
-
               &:before {
                 font-family: 'FontAwesome';
                 content: '\f1b8';
@@ -6020,13 +6074,13 @@ p.copyr {
           .recycle_img_right {
             width: auto;
             height: auto;
-            display: block;
+            display: none;
             margin: 0.9em;
             float: right;
           }
 
           figcaption#recycle_where_caption {
-            width: 80%;
+            width: 100%;
             display: block;
             float: left;
           }
@@ -6185,8 +6239,6 @@ p.copyr {
               }
 
               input[type='submit'] {
-                letter-spacing: 0.2em;
-
                 &:hover {
                   font-weight: bold;
                   cursor: pointer;
@@ -6380,7 +6432,7 @@ p.copyr {
     }
 
     figure#logo {
-      width: 18%;
+      width: auto;
     }
 
     aside.socials {
@@ -6460,13 +6512,13 @@ p.copyr {
               position: relative;
               width: 100%;
 
-              h3 {
-                font-size: 1.3em;
-                line-height: 30px;
+              h2 {
+                font-size: 1.35em;
+                line-height: 45px;
               }
 
               p {
-                font-size: 0.75em;
+                font-size: 0.8em;
                 width: 90%;
                 margin: 0 auto 10px auto;
                 background-color: unset;
@@ -6510,7 +6562,7 @@ p.copyr {
         article.home_contentbox {
           width: 96%;
 
-          h1 {
+          h3 {
             font-size: 1em;
             line-height: 30px;
           }
@@ -6522,7 +6574,7 @@ p.copyr {
             img#flowChart,
             img#RecycleCircle,
             img#wordSearch {
-              width: 44%;
+              width: auto;
             }
 
             figcaption {
@@ -6611,8 +6663,6 @@ p.copyr {
             display: block;
 
             li {
-              letter-spacing: 0.05em;
-
               &:before {
                 font-family: 'FontAwesome';
                 content: '\f1b8';
@@ -6645,13 +6695,13 @@ p.copyr {
           .recycle_img_right {
             width: auto;
             height: auto;
-            display: block;
+            display: none;
             margin: 0.9em;
             float: right;
           }
 
           figcaption#recycle_where_caption {
-            width: 80%;
+            width: 100%;
             display: block;
             float: left;
           }
@@ -6810,8 +6860,6 @@ p.copyr {
               }
 
               input[type='submit'] {
-                letter-spacing: 0.2em;
-
                 &:hover {
                   font-weight: bold;
                   cursor: pointer;
@@ -7003,7 +7051,7 @@ p.copyr {
     }
 
     figure#logo {
-      width: 21%;
+      width: auto;
     }
 
     aside.socials {
@@ -7070,7 +7118,7 @@ p.copyr {
         div#slides {
           figure.sliders {
             figcaption.slider-caption {
-              h3 {
+              h2 {
                 font-size: 1.2em;
               }
 
@@ -7115,7 +7163,7 @@ p.copyr {
         article.home_contentbox {
           width: 96%;
 
-          h1 {
+          h3 {
             font-size: 1em;
             line-height: 30px;
           }
@@ -7127,7 +7175,7 @@ p.copyr {
             img#flowChart,
             img#RecycleCircle,
             img#wordSearch {
-              width: 44%;
+              width: auto;
             }
 
             figcaption {
@@ -7215,8 +7263,6 @@ p.copyr {
             display: block;
 
             li {
-              letter-spacing: 0.05em;
-
               &:before {
                 font-family: 'FontAwesome';
                 content: '\f1b8';
@@ -7249,13 +7295,13 @@ p.copyr {
           .recycle_img_right {
             width: auto;
             height: auto;
-            display: block;
+            display: none;
             margin: 0.9em;
             float: right;
           }
 
           figcaption#recycle_where_caption {
-            width: 80%;
+            width: 100%;
             display: block;
             float: left;
           }
@@ -7414,8 +7460,6 @@ p.copyr {
               }
 
               input[type='submit'] {
-                letter-spacing: 0.2em;
-
                 &:hover {
                   font-weight: bold;
                   cursor: pointer;
@@ -7615,7 +7659,7 @@ p.copyr {
     }
 
     figure#logo {
-      width: 23%;
+      width: auto;
     }
 
     aside.socials {
@@ -7683,7 +7727,7 @@ p.copyr {
         div#slides {
           figure.sliders {
             figcaption.slider-caption {
-              h3 {
+              h2 {
                 font-size: 1.1em;
               }
 
@@ -7728,7 +7772,7 @@ p.copyr {
     main.content {
       #home_contentboxes {
         article.home_contentbox {
-          h1 {
+          h3 {
             font-size: 1em;
             line-height: 30px;
           }
@@ -7740,7 +7784,7 @@ p.copyr {
             img#flowChart,
             img#RecycleCircle,
             img#wordSearch {
-              width: 44%;
+              width: auto;
             }
 
             figcaption {
@@ -7828,8 +7872,6 @@ p.copyr {
             display: block;
 
             li {
-              letter-spacing: 0.05em;
-
               &:before {
                 font-family: 'FontAwesome';
                 content: '\f1b8';
@@ -7862,13 +7904,13 @@ p.copyr {
           .recycle_img_right {
             width: auto;
             height: auto;
-            display: block;
+            display: none;
             margin: 0.9em;
             float: right;
           }
 
           figcaption#recycle_where_caption {
-            width: 80%;
+            width: 100%;
             display: block;
             float: left;
           }
@@ -8027,8 +8069,6 @@ p.copyr {
               }
 
               input[type='submit'] {
-                letter-spacing: 0.2em;
-
                 &:hover {
                   font-weight: bold;
                   cursor: pointer;

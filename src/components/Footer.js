@@ -12,7 +12,7 @@ function Footer() {
         </li>
         <li>
           <Link to="/whatcando" className="nav-links" title="What you can page">
-            What You Can Do
+            Can Do
           </Link>
         </li>
         <li>

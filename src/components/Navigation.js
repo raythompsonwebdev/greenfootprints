@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navigation() {
   return (
@@ -12,7 +12,7 @@ function Navigation() {
         </li>
         <li>
           <Link to="/whatcando" className="nav-links" title="What you can page">
-            What You Can Do
+            Can Do
           </Link>
         </li>
         <li>
@@ -24,8 +24,7 @@ function Navigation() {
           <Link
             to="/collections"
             className="nav-links"
-            title="Recycling collection page"
-          >
+            title="Recycling collection page">
             Collections
           </Link>
         </li>
@@ -33,8 +32,7 @@ function Navigation() {
           <Link
             to="/tenways"
             className="nav-links"
-            title="Ten ways to recycle page"
-          >
+            title="Ten ways to recycle page">
             10 Ways
           </Link>
         </li>
@@ -42,8 +40,7 @@ function Navigation() {
           <Link
             to="/recyclingfacts"
             className="nav-links"
-            title="Recycling facts page"
-          >
+            title="Recycling facts page">
             Facts
           </Link>
         </li>
@@ -54,7 +51,7 @@ function Navigation() {
         </li>
       </ul>
     </nav>
-  )
+  );
 }
 
-export default Navigation
+export default Navigation;

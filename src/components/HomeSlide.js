@@ -8,7 +8,7 @@ function HomeSlide(props) {
   return (
     <figure className="sliders">
       <figcaption className="slider-caption">
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <p>{caption}</p>
         <Link to={link} title={linktitle} className="largeButton homeBgColor">
           Read More

@@ -6,7 +6,7 @@ function HomePageCard(props) {
 
   return (
     <article className="home_contentbox">
-      <h2>{data.title}</h2>
+      <h3>{data.title}</h3>
       <figure className="contentbox_image">
         <img id={data.imageId} src={data.imageUrl} alt={data.alt} />
 

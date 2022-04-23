@@ -50,7 +50,7 @@ const Collections = () => {
       <section className="content">
         <h2>Collections &amp; Sorting</h2>
         <div id="collection-boxes">
-          <div class="mask">
+          <div className="mask">
             {CollectionData.map((slide) => (
               <CollectionSlide
                 data={slide}

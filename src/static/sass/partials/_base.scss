@@ -106,23 +106,27 @@ a {
 h1 {
   font-weight: normal;
   width: 100%;
+  letter-spacing: 0.02em;
 }
 
 h2 {
   font-weight: normal;
   width: 100%;
+  letter-spacing: 0.05em;
 }
 
 h3 {
   font-weight: normal;
   width: 100%;
+  letter-spacing: 0.1em;
 }
 
 p {
   overflow: hidden;
   font-weight: normal;
   width: 100%;
-  line-height: 1.5;
+  line-height: 1.8em;
+  letter-spacing: 0.02em;
 }
 
 img {

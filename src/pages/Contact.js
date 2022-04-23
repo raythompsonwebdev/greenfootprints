@@ -1,11 +1,11 @@
 //import { hot } from 'react-hot-loader/root';
-import React from 'react'
+import React from 'react';
 
 const Contacts = () => {
   return (
     <div className="page-wrapper" id="contact">
       <section className="content">
-        <h1>Contact Us</h1>
+        <h2>Contact Us</h2>
 
         <article className="text">
           <address id="recycle-contact">
@@ -60,7 +60,7 @@ const Contacts = () => {
         <div className="clearfix"> </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Contacts
+export default Contacts;
