@@ -39,7 +39,7 @@ function Home() {
         'https://drive.google.com/open?id=0B8rtAcEuG9wLejZCRnFsUl80d00',
       download: 'Summary.pdf',
       title: 'Recycling wordsearch',
-      text: 'Have a go at our Recycling Guide Word Search. Help Crush find all 20 hidden words relating to recycling.</p><p> Just click to download the PDF and print it off on your home computer or at school.',
+      text: 'Have a go at our Recycling Guide Word Search. Help Crush find all 20 hidden words relating to recycling. Just click to download the PDF and print it off on your home computer or at school.',
     },
   ];
 
