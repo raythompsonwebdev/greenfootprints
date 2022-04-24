@@ -51,7 +51,7 @@ function RecyclingFacts() {
         <h2>Recycling facts and figures</h2>
 
         <div id="facts-boxes">
-          <div class="mask">
+          <div className="mask">
             {RecyclingFactsData.map((slide) => (
               <RecyclingFactSlide
                 data={slide}

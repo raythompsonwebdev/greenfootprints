@@ -125,18 +125,18 @@ header#site_header {
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  height: 100px;
+  height: 140px;
   margin: auto;
 
   div#site-title {
-    width: 75%;
+    width: 68%;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
 
     h1 {
       color: $colorsocmedhov;
-      font-size: 2em;
+      font-size: 1.5em;
       font-family: $fontList;
       text-align: left;
       line-height: 40px;
@@ -150,7 +150,7 @@ header#site_header {
       float: left;
       color: $colorsocmedhov;
       padding: 0;
-      font-size: 0.85em;
+      font-size: 0.7em;
       font-family: $fontList;
       line-height: 20px;
       text-align: left;
@@ -173,7 +173,7 @@ header#site_header {
   }
 
   aside.socials {
-    width: 15%;
+    width: 100%;
     height: 45px;
     margin: 0;
     -webkit-flex: 0 0 auto;
@@ -194,7 +194,7 @@ header#site_header {
 
       li {
         display: block;
-        width: 23%;
+        width: 25%;
         height: 100%;
         margin: 0.1em;
         -webkit-flex: 1 0 auto;
@@ -236,15 +236,6 @@ header#site_header {
   }
 
   /*social media icons*/
-}
-
-//javascript applies fixed header styles when page scrolls
-.fixed-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
 }
 
 nav.site_navigation {
@@ -373,11 +364,16 @@ div.page-wrapper {
           img {
             display: block;
             width: auto;
-            float: left;
+            float: none;
+            position: absolute;
+            z-index: 0;
+            left: 30vw;
+            top: 0.5em;
           }
 
           figcaption.slider-caption {
-            float: right;
+            position: relative;
+            z-index: 1;
             width: 100%;
             text-align: center;
             height: auto;
@@ -385,23 +381,23 @@ div.page-wrapper {
             margin: 1em auto;
 
             h2 {
-              font-size: 3.5em;
+              font-size: 1.1em;
               text-transform: uppercase;
               font-weight: bold;
               color: $colorsocmedhov;
               text-shadow: 1px 1px 1px $header-shadow;
               background-color: $headbg;
-              line-height: 120px;
+              line-height: 35px;
               margin: 0 auto;
               font-family: $fontList;
               width: 90%;
             }
 
             p {
-              font-size: 1.5em;
+              font-size: 0.75em;
               width: 90%;
               margin: 1em auto;
-              line-height: 1.8em;
+              line-height: 1.6em;
               color: $colorsocmedhov;
               background-color: $headbg;
               padding: 0.25em;
@@ -412,11 +408,11 @@ div.page-wrapper {
             a.largeButton.homeBgColor {
               display: block;
               color: $colorsocmedhov;
-              width: 20%;
+              width: 50%;
               margin: 1em auto;
               background-color: $headbg;
               line-height: 35px;
-              font-size: 1.2em;
+              font-size: 1em;
 
               &:hover {
                 color: $headbg;
@@ -541,8 +537,8 @@ div.page-wrapper {
               font-size: 1em;
               height: 35px;
               padding: 0;
-              width: 100%;
-              margin: 0;
+              width: 90%;
+              margin: 1em auto;
               line-height: 35px;
               text-align: center;
               background-color: $headbg;
@@ -1637,6 +1633,7 @@ p.copyr {
               width: auto;
               float: left;
               margin: 2em;
+              position: unset;
             }
 
             figcaption.slider-caption {
@@ -1660,7 +1657,7 @@ p.copyr {
 
               a.largeButton.homeBgColor {
                 display: block;
-                width: 20%;
+                width: 35%;
                 margin: 1em auto;
                 font-size: 1.2em;
 
@@ -2677,6 +2674,7 @@ p.copyr {
 
             img {
               margin: 2em;
+              position: unset;
             }
 
             figcaption.slider-caption {
@@ -2693,7 +2691,7 @@ p.copyr {
               }
 
               a.largeButton.homeBgColor {
-                width: 20%;
+                width: 30%;
                 font-size: 1.2em;
 
                 &:hover {
@@ -3362,6 +3360,7 @@ p.copyr {
 
             img {
               margin: 1em;
+              position: unset;
             }
 
             figcaption.slider-caption {
@@ -3955,13 +3954,13 @@ p.copyr {
       width: 40%;
 
       h1 {
-        font-size: 1.7em;
+        font-size: 2em;
         line-height: 50px;
         text-align: center;
       }
 
       p {
-        font-size: 0.75em;
+        font-size: 0.8em;
         text-align: center;
       }
     }
@@ -4035,13 +4034,16 @@ p.copyr {
           height: 100%;
 
           figure.sliders {
+            height: 380px;
+
             img {
               display: block;
               width: auto;
               float: none;
               position: absolute;
               z-index: 0;
-              left: 50vw;
+              left: 30vw;
+              top: 1em;
             }
 
             figcaption.slider-caption {
@@ -4059,6 +4061,8 @@ p.copyr {
               }
 
               a.largeButton.homeBgColor {
+                width: 35%;
+
                 &:hover {
                   cursor: pointer;
                 }
@@ -4090,6 +4094,9 @@ p.copyr {
 
     main.content {
       #home_contentboxes {
+        flex-flow: column;
+        align-items: center;
+        justify-content: flex-start;
         height: auto;
 
         article.home_contentbox {
@@ -4114,11 +4121,12 @@ p.copyr {
               padding: 0;
 
               p {
-                font-size: 0.8em;
+                font-size: 0.95em;
+                line-height: 1.8em;
               }
 
               a.content-button {
-                font-size: 0.85em;
+                font-size: 1em;
 
                 &:hover {
                   background-color: $colortxtbg;
@@ -4478,13 +4486,13 @@ p.copyr {
       width: 45%;
 
       h1 {
-        font-size: 1.6em;
-        line-height: 45px;
+        font-size: 2em;
+        line-height: 50px;
         text-align: center;
       }
 
       p {
-        font-size: 0.7em;
+        font-size: 0.8em;
         text-align: center;
       }
     }
@@ -4550,27 +4558,39 @@ p.copyr {
 
   div.page-wrapper {
     #slider {
-      height: 325px;
+      height: 370px;
 
       div.flexslider {
         height: 100%;
 
         div#slides {
           figure.sliders {
-            height: 325px;
+            img {
+              display: block;
+              width: auto;
+              float: none;
+              position: absolute;
+              z-index: 0;
+              left: 30vw;
+              top: 1em;
+            }
 
             figcaption.slider-caption {
+              width: 100%;
+              position: relative;
+              z-index: 1;
+
               h2 {
-                font-size: 2.05em;
+                font-size: 2em;
                 line-height: 75px;
               }
 
               p {
-                font-size: 0.5em;
+                font-size: 1em;
               }
 
               a.largeButton.homeBgColor {
-                width: 40%;
+                width: 35%;
 
                 &:hover {
                   cursor: pointer;
@@ -4605,8 +4625,12 @@ p.copyr {
 
     main.content {
       #home_contentboxes {
+        flex-flow: column;
+        align-items: center;
+        justify-content: flex-start;
+
         article.home_contentbox {
-          width: 31%;
+          width: 100%;
 
           h3 {
             font-size: 0.9em;
@@ -4627,11 +4651,11 @@ p.copyr {
               padding: 0;
 
               p {
-                font-size: 0.8em;
+                font-size: 0.95em;
               }
 
               a.content-button {
-                font-size: 0.85em;
+                font-size: 1em;
 
                 &:hover {
                   background-color: $colortxtbg;
@@ -5096,14 +5120,16 @@ p.copyr {
     margin: auto;
 
     div#site-title {
-      width: 35%;
+      width: 37%;
 
       h1 {
-        font-size: 1.5em;
+        font-size: 1.7em;
+        text-align: center;
       }
 
       p {
-        font-size: 0.7em;
+        font-size: 0.75em;
+        text-align: center;
       }
     }
 
@@ -5173,24 +5199,40 @@ p.copyr {
 
   div.page-wrapper {
     #slider {
-      height: 270px;
-
       div.flexslider {
         height: 100%;
 
         div#slides {
           figure.sliders {
+            height: 370px;
+
+            img {
+              display: block;
+              width: auto;
+              float: none;
+              position: absolute;
+              z-index: 0;
+              left: 30vw;
+              top: 1em;
+            }
+
             figcaption.slider-caption {
+              width: 100%;
+              position: relative;
+              z-index: 1;
+
               h2 {
                 font-size: 1.5em;
-                line-height: 55px;
+                line-height: 75px;
               }
 
               p {
-                font-size: 0.75em;
+                font-size: 0.85em;
               }
 
               a.largeButton.homeBgColor {
+                width: 40%;
+
                 &:hover {
                   cursor: pointer;
                 }
@@ -5224,8 +5266,12 @@ p.copyr {
 
     main.content {
       #home_contentboxes {
+        flex-flow: column;
+        align-items: center;
+        justify-content: flex-start;
+
         article.home_contentbox {
-          width: 31.5%;
+          width: 100%;
 
           h3 {
             font-size: 0.85em;
@@ -5246,12 +5292,12 @@ p.copyr {
               margin: 0;
 
               p {
-                font-size: 0.75em;
+                font-size: 0.9em;
                 padding: 0.25em;
               }
 
               a.content-button {
-                font-size: 0.9em;
+                font-size: 1em;
 
                 &:hover {
                   background-color: $colortxtbg;
@@ -5711,18 +5757,20 @@ p.copyr {
     -webkit-justify-content: space-between;
     -ms-flex-pack: space-between;
     justify-content: space-between;
-    height: 100px;
+    height: 140px;
     margin: auto;
 
     div#site-title {
-      width: 30%;
+      width: 69%;
 
       h1 {
-        font-size: 1.5em;
+        font-size: 1.7em;
+        text-align: left;
       }
 
       p {
-        font-size: 0.8em;
+        font-size: 0.75em;
+        text-align: left;
       }
     }
 
@@ -5743,7 +5791,7 @@ p.copyr {
         justify-content: flex-end;
 
         li {
-          width: 9%;
+          width: 25%;
           flex: 0 1 auto;
 
           a {
@@ -5773,7 +5821,7 @@ p.copyr {
     position: fixed;
     z-index: 100;
     top: 0.2em;
-    left: calc(70% - 1%);
+    left: calc(82% - 1%);
     font-size: 1.5em;
     text-transform: uppercase;
     background-color: $contentbg;
@@ -5782,7 +5830,7 @@ p.copyr {
     @include transitioner(all ease-out 400ms);
     height: 50px;
     line-height: 50px;
-    width: 170px;
+    width: 100px;
   }
 
   .closeMenu {
@@ -5874,30 +5922,38 @@ p.copyr {
 
         div#slides {
           figure.sliders {
+            height: 350px;
+
+            img {
+              display: block;
+              width: auto;
+              float: none;
+              position: absolute;
+              z-index: 0;
+              left: 30vw;
+              top: 0.5em;
+            }
+
             figcaption.slider-caption {
+              width: 100%;
+              position: relative;
+              z-index: 1;
+
               h2 {
-                font-size: 1.4em;
-                line-height: 55px;
+                font-size: 1.25em;
+                line-height: 75px;
               }
 
               p {
-                font-size: 0.75em;
+                font-size: 0.9em;
               }
 
               a.largeButton.homeBgColor {
-                width: 50%;
+                width: 40%;
 
                 &:hover {
                   cursor: pointer;
                 }
-              }
-
-              a.largeButton.portfolioBgColor {
-                border-color: #169f60;
-              }
-
-              a.largeButton.contactBgColor {
-                border-color: #9f164d;
               }
             }
           }
@@ -5929,18 +5985,12 @@ p.copyr {
     main.content {
       #home_contentboxes {
         height: auto;
-        -webkit-flex-flow: column;
-        -ms-flex-flow: column;
         flex-flow: column;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
         align-items: center;
+        justify-content: flex-start;
 
         article.home_contentbox {
-          width: 78%;
+          width: 100%;
 
           h3 {
             font-size: 1em;
@@ -5961,11 +6011,11 @@ p.copyr {
               margin: 0;
 
               p {
-                font-size: 0.85em;
+                font-size: 0.9em;
               }
 
               a.content-button {
-                font-size: 0.9em;
+                font-size: 1em;
 
                 &:hover {
                   background-color: $colortxtbg;
@@ -6418,16 +6468,19 @@ p.copyr {
 
   header#site_header {
     padding: 0.2em;
+    height: 140px;
 
     div#site-title {
-      width: 45%;
+      width: 55%;
 
       h1 {
-        font-size: 1.2em;
+        font-size: 1.5em;
+        text-align: left;
       }
 
       p {
-        font-size: 0.6em;
+        font-size: 0.75em;
+        text-align: left;
       }
     }
 
@@ -6444,7 +6497,7 @@ p.copyr {
         padding: 0;
 
         li {
-          width: 12%;
+          width: 25%;
 
           a {
             width: 100%;
@@ -6464,8 +6517,19 @@ p.copyr {
   }
 
   button#mobile-toggle {
+    position: fixed;
+    z-index: 100;
     top: 0.2em;
-    left: 85%;
+    left: calc(82% - 1%);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    background-color: $contentbg;
+    color: $colorsocmedhov;
+    border: none;
+    @include transitioner(all ease-out 400ms);
+    height: 50px;
+    line-height: 50px;
+    width: 100px;
   }
 
   button#mobile-toggle.hide {
@@ -6507,22 +6571,28 @@ p.copyr {
 
         div#slides {
           figure.sliders {
+            img {
+              display: block;
+              width: auto;
+              float: none;
+              position: absolute;
+              z-index: 0;
+              left: 30vw;
+              top: 0.5em;
+            }
+
             figcaption.slider-caption {
-              z-index: 7;
-              position: relative;
               width: 100%;
+              position: relative;
+              z-index: 1;
 
               h2 {
-                font-size: 1.35em;
-                line-height: 45px;
+                font-size: 1.1em;
+                line-height: 75px;
               }
 
               p {
-                font-size: 0.8em;
-                width: 90%;
-                margin: 0 auto 10px auto;
-                background-color: unset;
-                text-shadow: 1px 1px 1px #000;
+                font-size: 0.9em;
               }
 
               a.largeButton.homeBgColor {
@@ -6559,6 +6629,10 @@ p.copyr {
 
     main.content {
       #home_contentboxes {
+        flex-flow: column;
+        align-items: center;
+        justify-content: flex-start;
+
         article.home_contentbox {
           width: 96%;
 
@@ -6581,11 +6655,11 @@ p.copyr {
               margin: 0;
 
               p {
-                font-size: 0.85em;
+                font-size: 0.9em;
               }
 
               a.content-button {
-                font-size: 0.9em;
+                font-size: 1em;
 
                 &:hover {
                   background-color: $colortxtbg;
@@ -7079,7 +7153,19 @@ p.copyr {
   }
 
   button#mobile-toggle {
-    left: 82%;
+    position: fixed;
+    z-index: 100;
+    top: 0.2em;
+    left: calc(82% - 1%);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    background-color: $contentbg;
+    color: $colorsocmedhov;
+    border: none;
+    @include transitioner(all ease-out 400ms);
+    height: 50px;
+    line-height: 50px;
+    width: 100px;
   }
 
   button#mobile-toggle.hide {
@@ -7117,16 +7203,33 @@ p.copyr {
 
         div#slides {
           figure.sliders {
+            img {
+              display: block;
+              width: auto;
+              float: none;
+              position: absolute;
+              z-index: 0;
+              left: 30vw;
+              top: 0.5em;
+            }
+
             figcaption.slider-caption {
+              width: 100%;
+              position: relative;
+              z-index: 1;
+
               h2 {
-                font-size: 1.2em;
+                font-size: 1.1em;
+                line-height: 40px;
               }
 
               p {
-                font-size: 0.7em;
+                font-size: 0.75em;
               }
 
               a.largeButton.homeBgColor {
+                width: 50%;
+
                 &:hover {
                   cursor: pointer;
                 }
@@ -7160,6 +7263,10 @@ p.copyr {
 
     main.content {
       #home_contentboxes {
+        flex-flow: column;
+        align-items: center;
+        justify-content: flex-start;
+
         article.home_contentbox {
           width: 96%;
 
@@ -7635,619 +7742,5 @@ p.copyr {
 
   p.copyr {
     font-size: 0.6em;
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  div#main-wrapper {
-    width: 98%;
-  }
-
-  header#site_header {
-    padding: 0.2em;
-
-    div#site-title {
-      width: 45%;
-
-      h1 {
-        font-size: 1.1em;
-      }
-
-      p {
-        font-size: 0.55em;
-      }
-    }
-
-    figure#logo {
-      width: auto;
-    }
-
-    aside.socials {
-      width: 100%;
-
-      ul {
-        margin: 0;
-        padding: 0;
-
-        li {
-          width: 12%;
-
-          a {
-            width: 100%;
-
-            i.fa-twitter,
-            i.fa-facebook,
-            i.fa-google,
-            i.fa-instagram {
-              font-size: 0.7em;
-            }
-          }
-        }
-      }
-    }
-
-    /*social media icons*/
-  }
-
-  button#mobile-toggle {
-    left: 82%;
-  }
-
-  button#mobile-toggle.hide {
-    left: 100vw;
-  }
-
-  nav.site_navigation {
-    ul {
-      li {
-        height: 45px;
-
-        a {
-          line-height: 45px;
-
-          font-size: 1em;
-
-          &:hover {
-            text-shadow: none;
-          }
-        }
-      }
-    }
-  }
-
-  nav.hide {
-    left: -5.5em;
-  }
-
-  div.page-wrapper {
-    #slider {
-      div.flexslider {
-        height: 100%;
-
-        div#slides {
-          figure.sliders {
-            figcaption.slider-caption {
-              h2 {
-                font-size: 1.1em;
-              }
-
-              p {
-                font-size: 0.7em;
-              }
-
-              a.largeButton.homeBgColor {
-                width: 55%;
-
-                &:hover {
-                  cursor: pointer;
-                }
-              }
-            }
-          }
-        }
-
-        .flex-control-nav,
-        .flex-control-paging {
-          height: 30px;
-
-          li {
-            width: 5%;
-
-            a {
-              margin: 35% auto;
-            }
-
-            &:hover {
-              opacity: 1;
-            }
-
-            a.flex-active {
-              opacity: 1;
-            }
-          }
-        }
-      }
-    }
-
-    main.content {
-      #home_contentboxes {
-        article.home_contentbox {
-          h3 {
-            font-size: 1em;
-            line-height: 30px;
-          }
-
-          figure.contentbox_image {
-            width: 100%;
-
-            img#paperBottles,
-            img#flowChart,
-            img#RecycleCircle,
-            img#wordSearch {
-              width: auto;
-            }
-
-            figcaption {
-              margin: 0;
-
-              p {
-                font-size: 0.85em;
-              }
-
-              a.content-button {
-                font-size: 0.9em;
-
-                &:hover {
-                  background-color: $colortxtbg;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    section.content {
-      background-color: $contentbg;
-
-      &:after {
-        content: '.';
-        color: $contentbg;
-      }
-
-      h2 {
-        font-size: 1.3em;
-      }
-
-      h3 {
-        font-size: 1.1em;
-      }
-
-      #summary {
-        line-height: 1.5em;
-      }
-
-      #whatcandolist {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 50px repeat(6, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-
-        h2 {
-          -webkit-align-self: center;
-          -ms-flex-item-align: center;
-          align-self: center;
-          font-size: 1.15em;
-        }
-
-        h3 {
-          -webkit-align-self: center;
-          -ms-flex-item-align: center;
-          align-self: center;
-          font-size: 1.15em;
-        }
-
-        p {
-          font-size: 1em;
-        }
-
-        figcaption {
-          width: 100%;
-          display: block;
-        }
-
-        figure#threeRs {
-          width: 100%;
-          grid-area: 1 / 1 / 6 / 2;
-        }
-
-        figure#diff_matt {
-          grid-area: 1 / 2 / 6 / 3;
-
-          ul#different-materials {
-            padding: 0;
-            width: 100%;
-            margin: 1em 0;
-            display: block;
-
-            li {
-              &:before {
-                font-family: 'FontAwesome';
-                content: '\f1b8';
-
-                font-size: 1em;
-              }
-
-              a {
-                font-size: 0.9em;
-
-                &:hover {
-                  width: 100%;
-                }
-              }
-            }
-          }
-        }
-
-        figure#recycle_ett {
-          grid-area: 1 / 3 / 6 / 4;
-        }
-
-        figure#rubbish_bin {
-          grid-area: 1 / 4 / 6 / 5;
-        }
-
-        figure#recycle_where {
-          grid-area: 6 / 1 / 9 / 5;
-
-          .recycle_img_right {
-            width: auto;
-            height: auto;
-            display: none;
-            margin: 0.9em;
-            float: right;
-          }
-
-          figcaption#recycle_where_caption {
-            width: 100%;
-            display: block;
-            float: left;
-          }
-        }
-
-        .recycle_img {
-          margin: 2em auto;
-          width: auto;
-          height: auto;
-          display: block;
-        }
-      }
-
-      .text {
-        width: 100%;
-
-        img.recycle_page_img {
-          float: left;
-          display: block;
-        }
-
-        h2 {
-          -webkit-align-self: center;
-          -ms-flex-item-align: center;
-          align-self: center;
-          font-size: 1.15em;
-        }
-
-        p {
-          font-size: 1em;
-        }
-
-        address#recycle-contact {
-          padding: 0.5em;
-          background-color: $colortxtbg;
-          width: 100%;
-          margin: 0.25em;
-          display: flex;
-          -webkit-flex-flow: row wrap;
-          -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-          -webkit-justify-content: space-between;
-          -ms-flex-pack: space-between;
-          justify-content: space-between;
-          -webkit-align-items: stretch;
-          -ms-flex-align: stretch;
-          align-items: stretch;
-
-          a {
-            font-size: 1em;
-            width: 100%;
-            color: #000;
-            height: auto;
-
-            &:hover {
-              width: 100%;
-              font-weight: bold;
-            }
-          }
-
-          p,
-          span {
-            padding: 0.25em 0;
-            clear: both;
-            display: block;
-            -webkit-flex: 0 1 auto;
-            -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
-            line-height: 35px;
-
-            &:before {
-              width: 5%;
-              display: block;
-              font-size: 1.5em;
-              font-style: normal;
-              text-align: left;
-              text-indent: 0;
-              line-height: 35px;
-            }
-          }
-
-          p#location {
-            width: 45%;
-            line-height: 25px;
-
-            &:before {
-              font-family: 'FontAwesome';
-              content: '\f015';
-            }
-          }
-
-          p#telephone {
-            width: 50%;
-
-            &::before {
-              font-family: 'FontAwesome';
-              content: '\f098';
-            }
-          }
-
-          span#email {
-            width: 50%;
-
-            &::before {
-              font-family: 'FontAwesome';
-              content: '\f0e0';
-              font-style: normal;
-            }
-          }
-
-          span#links {
-            width: 50%;
-
-            &::before {
-              font-family: 'FontAwesome';
-              content: '\f1ad';
-              font-style: normal;
-            }
-          }
-
-          span#registration {
-            width: 100%;
-
-            &::before {
-              font-family: 'FontAwesome';
-              content: '\f0ac';
-              font-style: normal;
-            }
-          }
-        }
-
-        form#feedback-form {
-          width: 40%;
-          margin: 1em auto;
-
-          ul {
-            margin: 1% auto;
-
-            padding: 1em;
-
-            li {
-              width: 100%;
-
-              label {
-                width: 100%;
-                margin: 0.5em 0;
-              }
-
-              input {
-                border: 0;
-                width: 100%;
-              }
-
-              textarea {
-                width: 100%;
-              }
-
-              input[type='submit'] {
-                &:hover {
-                  font-weight: bold;
-                  cursor: pointer;
-                }
-              }
-
-              .error,
-              .notice,
-              .success {
-                line-height: 35px;
-              }
-
-              .error {
-                background: $colorsocmedhov;
-              }
-
-              .notice {
-                width: 100%;
-              }
-
-              .success {
-                width: 100%;
-              }
-            }
-          }
-        }
-      }
-
-      #facts-boxes {
-        height: unset;
-      }
-
-      #tenways-boxes,
-      #collection-boxes {
-        float: none;
-        display: block;
-        -webkit-flex-flow: column;
-        -ms-flex-flow: column;
-        flex-flow: column;
-        -webkit-justify-content: space-around;
-        -ms-flex-pack: justify;
-        justify-content: space-around;
-      }
-
-      div.mask {
-        width: 100%;
-
-        article.collection-box {
-          padding: 0 1em;
-
-          h3 {
-            font-size: 1em;
-
-            &:hover {
-              cursor: pointer;
-            }
-          }
-
-          /*Drop Cap*/
-          p.collection-text {
-            font-size: 1em;
-          }
-        }
-
-        article.recycle-facts {
-          padding: 0.5em;
-
-          h3 {
-            line-height: 40px;
-          }
-
-          ul {
-            list-style: none;
-            width: 76%;
-
-            li {
-              font-size: 0.7em;
-
-              &:before {
-                width: 35px;
-
-                font-size: 1.15em;
-              }
-            }
-          }
-        }
-
-        article.recycle-facts__dots {
-          text-align: center;
-
-          &--dot {
-            cursor: pointer;
-          }
-        }
-
-        .active,
-        .recycle-facts__dots--dot:hover {
-          background-color: #717171;
-        }
-
-        /* Next & previous buttons */
-
-        .prev,
-        .next {
-          top: 50%;
-
-          margin-top: -22px;
-
-          font-size: 18px;
-        }
-
-        .next {
-          right: 0;
-        }
-
-        .prev:hover,
-        .next:hover {
-          background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        article.contentbox {
-          min-height: 180px;
-
-          h3 {
-            font-size: 0.9em;
-            line-height: 30px;
-          }
-
-          p {
-            font-size: 0.85em;
-          }
-
-          .contentbox_image {
-            img {
-              display: block;
-            }
-          }
-
-          a.content-button {
-            font-size: 0.9em;
-            width: 100%;
-
-            &:hover {
-              width: 100%;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  footer {
-    height: 50px;
-    margin-top: 10px;
-
-    ul {
-      height: 50px;
-
-      li {
-        height: 50px;
-
-        &:hover {
-          color: $colorsocmedhov;
-        }
-
-        a {
-          font-size: 0.7em;
-          line-height: 25px;
-
-          &:hover {
-            text-decoration: none;
-            line-height: 25px;
-          }
-        }
-      }
-    }
-  }
-
-  p.copyr {
-    font-size: 0.55em;
   }
 }
