@@ -19,8 +19,7 @@ const Collections = () => {
         slideIndex = slides.length;
       }
 
-      // eslint-disable-next-line no-plusplus
-      for (i = 0; i < slides.length; i++) {
+      for (i = 0; i < slides.length; i + 1) {
         slides[i].style.display = 'none';
       }
 
@@ -59,10 +58,10 @@ const Collections = () => {
               />
             ))}
 
-            <a className="prev" href="http://www.google.com">
+            <a className="prev" href="#">
               &#10094;
             </a>
-            <a className="next" href="http://www.google.com">
+            <a className="next" href="#">
               &#10095;
             </a>
           </div>

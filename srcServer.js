@@ -12,10 +12,8 @@ const compiler = webpack(config);
 
 const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
-/* eslint-disable no-console */
 const PORT = process.env.PORT || 3000;
 const app = express();
-// webpack compiler
 
 // integrate webpack with express using middleware
 app.use(
@@ -28,7 +26,6 @@ app.use(
 // content to be served from
 const publicPath = path.join(__dirname, '/public');
 
-// Fallback to index.html
 app.use(
   history({
     verbose: true,
@@ -36,6 +33,7 @@ app.use(
 );
 
 app.use(middleware(compiler));
+
 // Static assets
 const staticMiddleware = express.static(publicPath);
 

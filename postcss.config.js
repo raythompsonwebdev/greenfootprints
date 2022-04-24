@@ -1,7 +1,3 @@
 export default {
-  plugins: [
-      'precss',
-      "autoprefixer",
-      "postcss-preset-env"
-  ]
-}
+  plugins: ['autoprefixer', ['postcss-preset-env', {}]],
+};

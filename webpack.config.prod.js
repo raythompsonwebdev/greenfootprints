@@ -102,13 +102,7 @@ export default {
             },
           },
           // {
-          //   loader: "postcss-loader",
-          //   options: {
-          //     autoprefixer: {
-          //       browsers: ["last 2 versions"],
-          //     },
-          //     plugins: () => [autoprefixer],
-          //   },
+          //   loader: 'postcss-loader',
           // },
           {
             loader: 'sass-loader',

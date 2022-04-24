@@ -1,12 +1,12 @@
-import path from 'path'
-import webpack from 'webpack'
-import HtmlWebpackPlugin from 'html-webpack-plugin'
-import StyleLintPlugin from 'stylelint-webpack-plugin'
-import MiniCssExtractPlugin from 'mini-css-extract-plugin'
-import ImageMinimizerPlugin from 'image-minimizer-webpack-plugin'
-const __dirname = path.dirname(new URL(import.meta.url).pathname)
+import path from 'path';
+import webpack from 'webpack';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import StyleLintPlugin from 'stylelint-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import ImageMinimizerPlugin from 'image-minimizer-webpack-plugin';
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
 // const { extendDefaultPlugins } = require("svgo");
-const isDev = true
+const isDev = true;
 
 export default {
   mode: 'development',
@@ -101,9 +101,21 @@ export default {
               sourceMap: isDev,
             },
           },
-          // {
-          //   loader: "postcss-loader",
-          // },
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    'postcss-preset-env',
+                    {
+                      // Options
+                    },
+                  ],
+                ],
+              },
+            },
+          },
           {
             loader: 'sass-loader',
             options: {
@@ -142,4 +154,4 @@ export default {
       Fonts: path.resolve(__dirname, './src/static/fonts/'),
     },
   },
-}
+};
