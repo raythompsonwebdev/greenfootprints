@@ -14,15 +14,19 @@ div#main-wrapper {
 }
 
 button#mobile-toggle {
-  display: none;
-  height: 45px;
-  width: 45px;
-  color: $colortxtbg;
-  background-color: $headbg;
-  z-index: 150;
-  outline: none;
+  position: fixed;
+  z-index: 1;
+  top: 0.2em;
+  left: calc(82% - 1%);
+  font-size: 1.5em;
+  text-transform: uppercase;
+  background-color: $colorsocmed;
+  color: $colorsocmedhov;
   border: none;
-  @include transitioner(all 0.2s ease-in 0s);
+  @include transitioner(all ease-out 400ms);
+  height: 50px;
+  line-height: 50px;
+  width: 100px;
 
   &:hover {
     background-color: $headbg;
@@ -110,10 +114,7 @@ button#myBtn:hover {
 
 /*header*/
 header#site_header {
-  position: sticky;
-  display: -ms-flexbox;
   display: flex;
-  height: auto;
   background-color: $honecolor;
   padding: 0.2em;
   -webkit-flex-flow: row wrap;
@@ -122,24 +123,24 @@ header#site_header {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-justify-content: flex-start;
+  -webkit-justify-content: space-between;
   -ms-flex-pack: start;
-  justify-content: flex-start;
-  height: 140px;
+  justify-content: space-between;
+  height: auto;
   margin: auto;
 
   div#site-title {
-    width: 68%;
+    width: 73%;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
 
     h1 {
       color: $colorsocmedhov;
-      font-size: 1.5em;
+      font-size: 1.35em;
       font-family: $fontList;
       text-align: left;
-      line-height: 40px;
+      line-height: 35px;
       margin: 0;
       padding: 0;
       text-shadow: 1px 1px 1px $header-shadow;
@@ -150,7 +151,7 @@ header#site_header {
       float: left;
       color: $colorsocmedhov;
       padding: 0;
-      font-size: 0.7em;
+      font-size: 0.65em;
       font-family: $fontList;
       line-height: 20px;
       text-align: left;
@@ -160,7 +161,7 @@ header#site_header {
   }
 
   figure#logo {
-    width: auto;
+    width: 25%;
     border: 3px solid $colorsildertxtbg;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
@@ -175,7 +176,7 @@ header#site_header {
   aside.socials {
     width: 100%;
     height: 45px;
-    margin: 0;
+    margin-top: 0.5em;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
@@ -194,7 +195,7 @@ header#site_header {
 
       li {
         display: block;
-        width: 25%;
+        width: 24%;
         height: 100%;
         margin: 0.1em;
         -webkit-flex: 1 0 auto;
@@ -298,7 +299,7 @@ nav.site_navigation {
       flex: 1 0 auto;
 
       a {
-        color: $headbg;
+        color: $colorsocmedhov;
         //background-color: $headbg;
         display: block;
         line-height: 40px;
@@ -341,10 +342,11 @@ div.page-wrapper {
 
   /*Slider*/
   #slider {
-    background-color: $honecolor;
+    //background-color: $honecolor;
     width: 100%;
     height: auto;
     margin: 0.5em 0;
+    height: 350px;
 
     div.flexslider {
       height: auto;
@@ -359,21 +361,21 @@ div.page-wrapper {
         position: relative;
 
         figure.sliders {
-          height: 400px;
+          height: 350px;
 
           img {
             display: block;
             width: auto;
             float: none;
             position: absolute;
-            z-index: 0;
-            left: 30vw;
-            top: 0.5em;
+            z-index: -2;
+            left: 0;
+            top: 0em;
           }
 
           figcaption.slider-caption {
             position: relative;
-            z-index: 1;
+            z-index: -1;
             width: 100%;
             text-align: center;
             height: auto;
@@ -488,7 +490,7 @@ div.page-wrapper {
           text-indent: 0;
           height: auto;
           line-height: 35px;
-          font-size: 1.25em;
+          font-size: 1em;
           color: $colortxt;
           background-color: $bgcolor;
           text-align: center;
@@ -504,7 +506,8 @@ div.page-wrapper {
           width: 100%;
           display: flex;
           align-items: flex-start;
-          flex-flow: row;
+          justify-content: center;
+          flex-flow: column;
 
           img#paperBottles,
           img#flowChart,
@@ -514,7 +517,7 @@ div.page-wrapper {
             -ms-flex: 0 1 auto;
             flex: 0 1 auto;
             width: auto;
-            margin: 0 0.25em 0 0;
+            margin: 0 auto;
           }
 
           figcaption {
@@ -1307,6 +1310,9 @@ p.copyr {
 }
 
 @media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  button#mobile-toggle {
+    display: none;
+  }
   //main container
   div#main-wrapper {
     width: 96%;
@@ -1492,7 +1498,7 @@ p.copyr {
         margin: 0;
         background-color: $colornav;
         padding: 0;
-        text-shadow: 1px 1px 1px $header-shadow;
+        text-shadow: 1px 1px 1px $colorblk;
       }
     }
 
@@ -1608,7 +1614,7 @@ p.copyr {
 
     /*Slider*/
     #slider {
-      background-color: $honecolor;
+      //background-color: $honecolor;
       width: 100%;
       height: auto;
       margin: 0.5em 0;
@@ -1626,7 +1632,7 @@ p.copyr {
           position: relative;
 
           figure.sliders {
-            height: 400px;
+            height: 425px;
 
             img {
               display: block;
@@ -1732,7 +1738,7 @@ p.copyr {
             text-indent: 0;
             height: auto;
             line-height: 35px;
-            font-size: 1.25em;
+            font-size: 1.15em;
             color: $colortxt;
             background-color: $bgcolor;
             text-align: center;
@@ -2560,6 +2566,10 @@ p.copyr {
 }
 
 @media only screen and (min-width: 1281px) and (max-width: 1440px) {
+  button#mobile-toggle {
+    display: none;
+  }
+
   div#main-wrapper {
     width: 96%;
     height: auto;
@@ -2608,6 +2618,7 @@ p.copyr {
 
     aside.socials {
       width: 20%;
+      margin: 0;
 
       ul {
         margin: 0;
@@ -2647,7 +2658,9 @@ p.copyr {
         width: 12%;
 
         a {
-          font-size: 0.9em;
+          font-size: 0.95em;
+          color: $colorsocmedhov;
+          background-color: $headbg;
 
           &:hover {
             text-shadow: none;
@@ -2670,7 +2683,7 @@ p.copyr {
           position: relative;
 
           figure.sliders {
-            height: 400px;
+            height: 425px;
 
             img {
               margin: 2em;
@@ -2682,12 +2695,12 @@ p.copyr {
               width: 64%;
 
               h2 {
-                font-size: 2.25em;
+                font-size: 2em;
                 line-height: 80px;
               }
 
               p {
-                font-size: 1.1em;
+                font-size: 1em;
               }
 
               a.largeButton.homeBgColor {
@@ -2758,13 +2771,14 @@ p.copyr {
           flex: 1 0 auto;
 
           h3 {
-            font-size: 1.25em;
+            font-size: 1.05em;
             text-shadow: unset;
           }
 
           figure.contentbox_image {
             display: flex;
             align-items: flex-start;
+
             flex-flow: row;
 
             img#paperBottles,
@@ -3247,6 +3261,10 @@ p.copyr {
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  button#mobile-toggle {
+    display: none;
+  }
+
   div#main-wrapper {
     width: 98%;
     height: auto;
@@ -3290,6 +3308,7 @@ p.copyr {
 
     aside.socials {
       width: 20%;
+      margin: 0;
 
       ul {
         margin: 0;
@@ -3322,20 +3341,14 @@ p.copyr {
     margin: 0.2em 0;
     display: block;
 
-    div.nav-title {
-      width: 9%;
-
-      h1 {
-        font-size: 1.4rem;
-      }
-    }
-
     ul {
       height: 40px;
 
       li {
         a {
-          font-size: 0.8em;
+          font-size: 0.95em;
+          color: $colorsocmedhov;
+          background-color: $headbg;
 
           &:hover {
             text-shadow: none;
@@ -3356,7 +3369,7 @@ p.copyr {
           position: relative;
 
           figure.sliders {
-            height: 400px;
+            height: 425px;
 
             img {
               margin: 1em;
@@ -3373,7 +3386,7 @@ p.copyr {
               }
 
               p {
-                font-size: 1em;
+                font-size: 0.9em;
               }
 
               a.largeButton.homeBgColor {
@@ -3437,7 +3450,7 @@ p.copyr {
           flex: 1 0 auto;
 
           h3 {
-            font-size: 1.15em;
+            font-size: 1em;
             text-shadow: unset;
           }
 
@@ -3619,6 +3632,20 @@ p.copyr {
           }
         }
       }
+
+      // .parent {
+      //   display: grid;
+      //   grid-template-columns: repeat(4, 1fr);
+      //   grid-template-rows: 50px repeat(11, 1fr);
+      //   grid-column-gap: 0px;
+      //   grid-row-gap: 0px;
+      //   }
+
+      //   .div1 { grid-area: 1 / 1 / 5 / 3; }
+      //   .div2 { grid-area: 5 / 1 / 9 / 3; }
+      //   .div3 { grid-area: 1 / 3 / 5 / 5; }
+      //   .div4 { grid-area: 5 / 3 / 9 / 5; }
+      //   .div5 { grid-area: 9 / 1 / 13 / 5; }
 
       #whatcandolist {
         display: grid;
@@ -3931,6 +3958,10 @@ p.copyr {
 // laptop - tablet
 
 @media only screen and (min-width: 801px) and (max-width: 1024px) {
+  button#mobile-toggle {
+    display: none;
+  }
+
   div#main-wrapper {
     width: 98%;
     height: auto;
@@ -3971,6 +4002,7 @@ p.copyr {
 
     aside.socials {
       width: 20%;
+      margin: 0;
 
       ul {
         margin: 0;
@@ -4000,14 +4032,6 @@ p.copyr {
     height: 40px;
     display: block;
 
-    div.nav-title {
-      width: 9%;
-
-      h1 {
-        font-size: 1.1rem;
-      }
-    }
-
     ul {
       height: 40px;
 
@@ -4015,7 +4039,9 @@ p.copyr {
         width: 12%;
 
         a {
-          font-size: 0.7em;
+          font-size: 0.95em;
+          color: $colorsocmedhov;
+          background-color: $headbg;
 
           &:hover {
             text-shadow: none;
@@ -4034,14 +4060,13 @@ p.copyr {
           height: 100%;
 
           figure.sliders {
-            height: 380px;
+            height: 425px;
 
             img {
               display: block;
               width: auto;
               float: none;
               position: absolute;
-              z-index: 0;
               left: 30vw;
               top: 1em;
             }
@@ -4049,15 +4074,14 @@ p.copyr {
             figcaption.slider-caption {
               width: 100%;
               position: relative;
-              z-index: 1;
 
               h2 {
-                font-size: 2.15em;
+                font-size: 1.9em;
                 line-height: 75px;
               }
 
               p {
-                font-size: 1.1em;
+                font-size: 0.9em;
               }
 
               a.largeButton.homeBgColor {
@@ -4103,7 +4127,7 @@ p.copyr {
           width: 100%;
 
           h3 {
-            font-size: 1.1em;
+            font-size: 1em;
           }
 
           figure.contentbox_image {
@@ -4464,6 +4488,10 @@ p.copyr {
 }
 
 @media only screen and (min-width: 668px) and (max-width: 800px) {
+  button#mobile-toggle {
+    display: none;
+  }
+
   div#main-wrapper {
     height: auto;
   }
@@ -4503,6 +4531,7 @@ p.copyr {
 
     aside.socials {
       width: 25%;
+      margin: 0;
 
       ul {
         margin: 0;
@@ -4530,15 +4559,6 @@ p.copyr {
     height: 40px;
     display: block;
 
-    div.nav-title {
-      width: 9%;
-      margin-right: 0.25em;
-
-      h1 {
-        font-size: 0.9rem;
-      }
-    }
-
     ul {
       margin: 0;
 
@@ -4546,7 +4566,9 @@ p.copyr {
         width: 12%;
 
         a {
-          font-size: 0.75em;
+          font-size: 0.9em;
+          color: $colorsocmedhov;
+          background-color: $headbg;
 
           &:hover {
             text-shadow: none;
@@ -4558,8 +4580,6 @@ p.copyr {
 
   div.page-wrapper {
     #slider {
-      height: 370px;
-
       div.flexslider {
         height: 100%;
 
@@ -4570,7 +4590,6 @@ p.copyr {
               width: auto;
               float: none;
               position: absolute;
-              z-index: 0;
               left: 30vw;
               top: 1em;
             }
@@ -4578,7 +4597,6 @@ p.copyr {
             figcaption.slider-caption {
               width: 100%;
               position: relative;
-              z-index: 1;
 
               h2 {
                 font-size: 2em;
@@ -5101,6 +5119,10 @@ p.copyr {
 }
 
 @media only screen and (min-width: 601px) and (max-width: 667px) {
+  button#mobile-toggle {
+    display: none;
+  }
+
   div#main-wrapper {
     width: 98%;
   }
@@ -5120,10 +5142,10 @@ p.copyr {
     margin: auto;
 
     div#site-title {
-      width: 37%;
+      width: 42%;
 
       h1 {
-        font-size: 1.7em;
+        font-size: 1.8em;
         text-align: center;
       }
 
@@ -5134,11 +5156,12 @@ p.copyr {
     }
 
     figure#logo {
-      width: auto;
+      width: 25%;
     }
 
     aside.socials {
       width: 30%;
+      margin: 0;
 
       ul {
         margin: 0;
@@ -5168,14 +5191,6 @@ p.copyr {
     height: 50px;
     display: block;
 
-    div.nav-title {
-      width: 9%;
-
-      h1 {
-        font-size: 0.8rem;
-      }
-    }
-
     ul {
       height: 50px;
 
@@ -5183,7 +5198,9 @@ p.copyr {
         width: 12%;
 
         a {
-          font-size: 0.9em;
+          font-size: 0.8em;
+          color: $colorsocmedhov;
+          background-color: $headbg;
 
           &:hover {
             text-shadow: none;
@@ -5199,6 +5216,8 @@ p.copyr {
 
   div.page-wrapper {
     #slider {
+      height: 370px;
+
       div.flexslider {
         height: 100%;
 
@@ -5211,15 +5230,13 @@ p.copyr {
               width: auto;
               float: none;
               position: absolute;
-              z-index: 0;
-              left: 30vw;
-              top: 1em;
+              left: 25%;
+              top: 0.5em;
             }
 
             figcaption.slider-caption {
               width: 100%;
               position: relative;
-              z-index: 1;
 
               h2 {
                 font-size: 1.5em;
@@ -5275,7 +5292,6 @@ p.copyr {
 
           h3 {
             font-size: 0.85em;
-            line-height: 20px;
             padding: 0.2em 0;
           }
 
@@ -5757,14 +5773,14 @@ p.copyr {
     -webkit-justify-content: space-between;
     -ms-flex-pack: space-between;
     justify-content: space-between;
-    height: 140px;
+    height: auto;
     margin: auto;
 
     div#site-title {
-      width: 69%;
+      width: 73%;
 
       h1 {
-        font-size: 1.7em;
+        font-size: 1.9em;
         text-align: left;
       }
 
@@ -5775,12 +5791,13 @@ p.copyr {
     }
 
     figure#logo {
-      width: auto;
+      width: 25%;
     }
 
     aside.socials {
       width: 100%;
       height: 35px;
+      margin-top: 0.5em;
 
       ul {
         margin: 0;
@@ -5819,18 +5836,19 @@ p.copyr {
 
   button#mobile-toggle {
     position: fixed;
-    z-index: 100;
+    z-index: 1;
     top: 0.2em;
     left: calc(82% - 1%);
     font-size: 1.5em;
     text-transform: uppercase;
-    background-color: $contentbg;
+    background-color: $colorsocmed;
     color: $colorsocmedhov;
     border: none;
     @include transitioner(all ease-out 400ms);
     height: 50px;
     line-height: 50px;
     width: 100px;
+    display: block;
   }
 
   .closeMenu {
@@ -5867,15 +5885,6 @@ p.copyr {
     width: 100%;
     height: 365px;
     margin: 0;
-
-    div.nav-title {
-      display: none;
-
-      h1 {
-        font-size: 0.75rem;
-        text-indent: 0.25em;
-      }
-    }
 
     ul {
       height: 100%;
@@ -5915,7 +5924,7 @@ p.copyr {
     height: auto;
 
     #slider {
-      height: 250px;
+      height: 350px;
 
       div.flexslider {
         height: 100%;
@@ -5929,15 +5938,13 @@ p.copyr {
               width: auto;
               float: none;
               position: absolute;
-              z-index: 0;
-              left: 30vw;
-              top: 0.5em;
+              left: 15vw;
+              top: 0.25em;
             }
 
             figcaption.slider-caption {
               width: 100%;
               position: relative;
-              z-index: 1;
 
               h2 {
                 font-size: 1.25em;
@@ -6468,36 +6475,36 @@ p.copyr {
 
   header#site_header {
     padding: 0.2em;
-    height: 140px;
+    height: auto;
 
     div#site-title {
-      width: 55%;
+      width: 73%;
 
       h1 {
-        font-size: 1.5em;
+        font-size: 1.7em;
         text-align: left;
       }
 
       p {
-        font-size: 0.75em;
+        font-size: 0.7em;
         text-align: left;
       }
     }
 
     figure#logo {
-      width: auto;
+      width: 25%;
     }
 
     aside.socials {
       width: 100%;
-      //visibility: hidden;
+      margin-top: 0.5em;
 
       ul {
         margin: 0;
         padding: 0;
 
         li {
-          width: 25%;
+          width: 24%;
 
           a {
             width: 100%;
@@ -6518,12 +6525,12 @@ p.copyr {
 
   button#mobile-toggle {
     position: fixed;
-    z-index: 100;
+    z-index: 1;
     top: 0.2em;
     left: calc(82% - 1%);
     font-size: 1.5em;
     text-transform: uppercase;
-    background-color: $contentbg;
+    background-color: $colorsocmed;
     color: $colorsocmedhov;
     border: none;
     @include transitioner(all ease-out 400ms);
@@ -6564,27 +6571,27 @@ p.copyr {
     min-height: 520px;
 
     #slider {
-      height: 250px;
+      height: 350px;
 
       div.flexslider {
         height: 100%;
 
         div#slides {
           figure.sliders {
+            height: 350px;
+
             img {
               display: block;
               width: auto;
               float: none;
               position: absolute;
-              z-index: 0;
-              left: 30vw;
-              top: 0.5em;
+              left: 10vw;
+              top: 0.25em;
             }
 
             figcaption.slider-caption {
               width: 100%;
               position: relative;
-              z-index: 1;
 
               h2 {
                 font-size: 1.1em;
@@ -6643,12 +6650,17 @@ p.copyr {
 
           figure.contentbox_image {
             width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-flow: column;
 
             img#paperBottles,
             img#flowChart,
             img#RecycleCircle,
             img#wordSearch {
               width: auto;
+              margin: 0 auto;
             }
 
             figcaption {
@@ -7111,29 +7123,32 @@ p.copyr {
 
   header#site_header {
     padding: 0.2em;
+    height: auto;
 
     div#site-title {
-      width: 43%;
+      width: 73%;
 
       h1 {
-        font-size: 1.1em;
+        font-size: 1.45em;
+        line-height: 35px;
       }
 
       p {
-        font-size: 0.6em;
+        font-size: 0.65em;
       }
     }
 
     figure#logo {
-      width: auto;
+      width: 25%;
     }
 
     aside.socials {
       width: 100%;
+      margin-top: 0.5em;
 
       ul {
         li {
-          width: 12%;
+          width: 24%;
 
           a {
             width: 100%;
@@ -7154,12 +7169,12 @@ p.copyr {
 
   button#mobile-toggle {
     position: fixed;
-    z-index: 100;
+    z-index: 1;
     top: 0.2em;
     left: calc(82% - 1%);
     font-size: 1.5em;
     text-transform: uppercase;
-    background-color: $contentbg;
+    background-color: $colorsocmed;
     color: $colorsocmedhov;
     border: none;
     @include transitioner(all ease-out 400ms);
@@ -7196,27 +7211,27 @@ p.copyr {
 
   div.page-wrapper {
     #slider {
-      height: 230px;
+      height: 350px;
 
       div.flexslider {
         height: 100%;
 
         div#slides {
           figure.sliders {
+            height: 350px;
+
             img {
               display: block;
               width: auto;
               float: none;
               position: absolute;
-              z-index: 0;
-              left: 30vw;
-              top: 0.5em;
+              left: 10vw;
+              top: 0.25em;
             }
 
             figcaption.slider-caption {
               width: 100%;
               position: relative;
-              z-index: 1;
 
               h2 {
                 font-size: 1.1em;
@@ -7277,12 +7292,17 @@ p.copyr {
 
           figure.contentbox_image {
             width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-flow: column;
 
             img#paperBottles,
             img#flowChart,
             img#RecycleCircle,
             img#wordSearch {
               width: auto;
+              margin: 0 auto;
             }
 
             figcaption {

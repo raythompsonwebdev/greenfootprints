@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-function ToggleButton() {
+function ToggleButton(props) {
+  const { menuToggleFunc } = { ...props };
+
   return (
-    <button id="mobile-toggle" title="menu">
+    <button id="mobile-toggle" title="menu" onClick={menuToggleFunc}>
       <i className="fa fa-bars" aria-hidden="true"></i>
     </button>
-  )
+  );
 }
 
-export default ToggleButton
+export default ToggleButton;

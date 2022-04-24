@@ -37,7 +37,6 @@ function HomeSlider() {
           {siteImages.map((slide) => (
             <HomeSlide data={slide} key={slide.id} />
           ))}
-          ;
         </div>
       </div>
     </section>
