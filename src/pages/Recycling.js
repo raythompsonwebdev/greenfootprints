@@ -3,7 +3,7 @@ import React from 'react';
 
 function Recycling() {
   return (
-    <div class="page-wrapper" id="recycling">
+    <div className="page-wrapper" id="recycling">
       <section className="content">
         <h2>Recycling consumer waste</h2>
 

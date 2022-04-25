@@ -50,7 +50,7 @@ function TenWays() {
       <section className="content">
         <h2>10 Ways to recycle</h2>
         <div id="tenways-boxes">
-          <div class="mask">
+          <div className="mask">
             {TenWaysData.map((slide) => (
               <CollectionSlide
                 data={slide}

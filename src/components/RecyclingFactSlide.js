@@ -12,7 +12,9 @@ const RecyclingFactSlide = (props) => {
         {!data.list ? (
           <img id="tenImageOne" src={data.image} />
         ) : (
-          data.list.map((listitem) => <li>{listitem.text}</li>)
+          data.list.map((listitem, index) => (
+            <li key={index}>{listitem.text}</li>
+          ))
         )}
       </ul>
     </article>
