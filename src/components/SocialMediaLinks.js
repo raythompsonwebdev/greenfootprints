@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function SocialMediaLink() {
   return (
@@ -8,17 +8,15 @@ function SocialMediaLink() {
           <a
             href="https://www.twitter.com"
             title="Follow us on Twitter"
-            target="blank"
-          >
-            <i className="fa fa-twitter"> </i>
+            target="blank">
+            <i className="fa-twitter"> </i>
           </a>
         </li>
         <li>
           <a
             href="https://www.facebook.com"
             title="Follow us on Facebook"
-            target="blank"
-          >
+            target="blank">
             <i className="fa fa-facebook"> </i>
           </a>
         </li>
@@ -26,8 +24,7 @@ function SocialMediaLink() {
           <a
             href="https://www.google.com"
             title="Follow us on Google+"
-            target="blank"
-          >
+            target="blank">
             <i className="fa fa-google"> </i>
           </a>
         </li>
@@ -35,14 +32,13 @@ function SocialMediaLink() {
           <a
             href="https://www.instagram.com"
             title="Follow us on Instagram"
-            target="blank"
-          >
+            target="blank">
             <i className="fa fa-instagram"> </i>
           </a>
         </li>
       </ul>
     </aside>
-  )
+  );
 }
 
-export default SocialMediaLink
+export default SocialMediaLink;

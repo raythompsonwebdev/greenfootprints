@@ -11,10 +11,12 @@ function HomeSlider() {
 
       const slides = document.getElementsByClassName('sliders');
 
-      // eslint-disable-next-line no-plusplus
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-      }
+      //convert html collection into an array.
+      const slideArray = Array.from(slides);
+
+      slideArray.forEach((slides) => {
+        slides.style.display = 'none';
+      });
 
       // eslint-disable-next-line no-plusplus
       slideIndex++;
@@ -23,6 +25,7 @@ function HomeSlider() {
       }
 
       slides[slideIndex - 1].style.display = 'block';
+      slides[slideIndex - 1].classList.add('fade');
 
       setTimeout(homePageSlider, 4000); // Change image every 2 seconds
     };

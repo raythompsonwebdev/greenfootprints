@@ -5,12 +5,15 @@ import TenWaysData from '../static/data/tenways.json';
 
 function TenWays() {
   useEffect(() => {
-    let slideIndex = 1;
+    let slideIndex = 0;
 
     // Slider 3
     const recycleBoxSlides = (n) => {
       let i;
       const slides = document.getElementsByClassName('contentbox');
+
+      //convert html collection into an array.
+      const slideArray = Array.from(slides);
 
       if (n > slides.length) {
         slideIndex = 1;
@@ -19,9 +22,9 @@ function TenWays() {
         slideIndex = slides.length;
       }
       // eslint-disable-next-line no-plusplus
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-      }
+      slideArray.forEach((slides) => {
+        slides.style.display = 'none';
+      });
 
       slides[slideIndex - 1].style.display = 'block';
       slides[slideIndex - 1].classList.add('fade');

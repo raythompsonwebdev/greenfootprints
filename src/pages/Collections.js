@@ -5,11 +5,17 @@ import CollectionData from '../static/data/collections.json';
 
 const Collections = () => {
   useEffect(() => {
-    let slideIndex = 1;
     // Slider 1
+    let slideIndex = 0;
+
     const collectionBoxSlides = (n) => {
       let i;
+
+      // get html collection
       const slides = document.getElementsByClassName('collection-box');
+
+      //convert html collection into an array.
+      const slideArray = Array.from(slides);
 
       if (n > slides.length) {
         slideIndex = 1;
@@ -19,12 +25,14 @@ const Collections = () => {
         slideIndex = slides.length;
       }
 
-      for (i = 0; i < slides.length; i + 1) {
-        slides[i].style.display = 'none';
-      }
+      slideArray.forEach((slides) => {
+        slides.style.display = 'none';
+      });
 
       slides[slideIndex - 1].style.display = 'block';
+      slides[slideIndex - 1].classList.add('fade');
     };
+
     /* eslint-disable no-console */
     const collectionSlides = (n) => {
       collectionBoxSlides((slideIndex += n));

@@ -13,6 +13,7 @@ import Recyclingfacts from './pages/Recyclingfacts.js';
 import Tenways from './pages/Tenways.js';
 import Contact from './pages/Contact.js';
 import ToggleButton from './components/ToggleButton.js';
+import './static/fonts/fontawesome/css/font-awesome.css';
 import './static/sass/style.scss';
 
 const routing = (

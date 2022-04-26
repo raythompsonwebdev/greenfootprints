@@ -12,6 +12,9 @@ function RecyclingFacts() {
       let i;
       const slides = document.getElementsByClassName('recycle-facts');
 
+      //convert html collection into an array.
+      const slideArray = Array.from(slides);
+
       if (n > slides.length) {
         slideIndex = 1;
       }
@@ -19,9 +22,9 @@ function RecyclingFacts() {
         slideIndex = slides.length;
       }
       // eslint-disable-next-line no-plusplus
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-      }
+      slideArray.forEach((slides) => {
+        slides.style.display = 'none';
+      });
 
       slides[slideIndex - 1].style.display = 'block';
       slides[slideIndex - 1].classList.add('fade');
