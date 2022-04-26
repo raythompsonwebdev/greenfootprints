@@ -1,5 +1,6 @@
 //import { hot } from 'react-hot-loader/root';
 import React from 'react';
+
 function Whatcando() {
   return (
     <div className="page-wrapper" id="whatcando">

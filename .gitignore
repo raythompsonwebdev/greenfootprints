@@ -67,25 +67,23 @@ test/
 .settings/
 
 .vscode/
-views/
 routes/
 .htaccess
 api/
 
 src/images/
-src/fonts/
-src/fonts/fontawesome/
-src/favicons/
-src/views/
+src/static/fonts/
+src/static/js/slide-functions/
+src/static/favicons/
 
-src/css/sass/normalize.css.map
-src/css/sass/style.css.map
-src/css/sass/ie.css.map
-src/css/sass/ie.min-css.map
-src/css/sass/ie.css.map
-src/css/sass/style.css
-src/css/sass/style-min.css.map
-src/css/sass/style.css.map
+src/static//css/sass/normalize.css.map
+src/static//css/sass/style.css.map
+src/static//css/sass/ie.css.map
+src/static//css/sass/ie.min-css.map
+src/static//css/sass/ie.css.map
+src/static//css/sass/style.css
+src/static//css/sass/style-min.css.map
+src/static//css/sass/style.css.map
 
 src/css/sass/partials/_base.css
 src/css/sass/partials/_base.css.map
