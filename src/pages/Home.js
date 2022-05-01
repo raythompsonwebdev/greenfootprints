@@ -12,7 +12,7 @@ function Home() {
       alt: 'recycling-advice-green-foot-prints-com',
       imageId: 'paperBottles',
       downloadlink:
-        'https://drive.google.com/open?id=0B8rtAcEuG9wLWlJOWFdBZjBwZ1k',
+        'https://www.dropbox.com/s/aadvfk718co01hh/household-recycling-guide.pdf?dl=0',
       download: 'household-recycling-guide.pdf',
       title: 'Household Recycling Guide',
       text: 'A reminder of the three key factors when thinking about how to recycle. Just click button below to download the PDF and print it off..',
@@ -24,7 +24,7 @@ function Home() {
       alt: 'recycling-advice-green-foot-prints-com',
       imageId: 'flowChart',
       downloadlink:
-        'https://drive.google.com/open?id=0B8rtAcEuG9wLYVpLYXZEaHdWalE',
+        'https://www.dropbox.com/s/lbeualgiiwd4qc8/recycling-flowchart-poster.pdf?dl=0',
       download: 'reduce-reuse-recycle-poster.pdf',
       title: 'Reduce-Reuse-Recycle-poster',
       text: 'Print off our posters to remind you about the 3 R’s at home, in the classroom or at work. Just click button below to download the PDF and print it off.',
@@ -36,7 +36,7 @@ function Home() {
       alt: 'recycling-advice-green-foot-prints-com',
       imageId: 'wordSearch',
       downloadlink:
-        'https://drive.google.com/open?id=0B8rtAcEuG9wLejZCRnFsUl80d00',
+        'https://www.dropbox.com/s/8m7d9vtsix05e8y/wordsearch.pdf?dl=0',
       download: 'Summary.pdf',
       title: 'Recycling wordsearch',
       text: 'Have a go at our Recycling Guide Word Search. Help Crush find all 20 hidden words relating to recycling. Just click to download the PDF and print it off on your home computer or at school.',

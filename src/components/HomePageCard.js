@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 function HomePageCard(props) {
   const { data } = { ...props };
@@ -12,13 +12,14 @@ function HomePageCard(props) {
 
         <figcaption>
           <p> {data.text}</p>
-          <Link
+          <a
             className="content-button"
-            to={data.downloadlink}
+            href={data.downloadlink}
             download={data.download}
-            title={data.title}>
+            title={data.title}
+            target="blank">
             Download PDF
-          </Link>
+          </a>
         </figcaption>
       </figure>
     </article>

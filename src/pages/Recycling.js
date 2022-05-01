@@ -20,16 +20,11 @@ function Recycling() {
             {' '}
             Recycling is a key component of modern waste reduction and is the
             third component of the "Reduce, Reuse, Recycle" waste hierarchy.
+          </p>
+          <p>
             There are some ISO standards relating to recycling such as ISO
             15270:2008 for plastics waste and ISO 14001:2004 for environmental
             management control of recycling practice.
-          </p>
-
-          <p>
-            Recyclable materials include many kinds of glass, paper, metal,
-            plastic, textiles, and electronics. Although similar in effect, the
-            composting or other reuse of biodegradable waste – such as food or
-            garden waste – is not typically considered recycling.{' '}
           </p>
 
           <img
@@ -37,6 +32,13 @@ function Recycling() {
             src="/static/images/Large/Image-mobile-batteries.jpg"
             alt="recycling-family-home-green-foot-prints-com"
           />
+
+          <p>
+            Recyclable materials include many kinds of glass, paper, metal,
+            plastic, textiles, and electronics. Although similar in effect, the
+            composting or other reuse of biodegradable waste – such as food or
+            garden waste – is not typically considered recycling.{' '}
+          </p>
 
           <p>
             Materials to be recycled are either brought to a collection center

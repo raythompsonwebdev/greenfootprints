@@ -6,7 +6,7 @@ const CollectionSlide = (props) => {
 
   return (
     <article className={classname}>
-      <h3 className="collections_title">{data.title}</h3>
+      <h3>{data.title}</h3>
       <p className="collection-text">{data.text}</p>
       <img id="tenImageOne" src={data.image} alt={data.alt} />
     </article>

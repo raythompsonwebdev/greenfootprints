@@ -993,7 +993,7 @@ div.page-wrapper {
         h3 {
           text-indent: 0;
           height: auto;
-          line-height: 30px;
+          line-height: 45px;
           color: $colortxt;
           background-color: $bgcolor;
           text-shadow: unset;
@@ -1011,7 +1011,7 @@ div.page-wrapper {
           color: $colorblk;
           background-color: $colortxtbg;
           line-height: 1.5em;
-          font-size: 0.85em;
+          font-size: 0.75em;
           margin: 0;
           white-space: pre-wrap;
         }
@@ -1169,7 +1169,7 @@ div.page-wrapper {
         }
 
         p {
-          font-size: 0.85em;
+          font-size: 0.75em;
           margin: 0 0 0.2em 0;
           padding: 0.5em;
           background-color: $colortxtbg;
@@ -2206,17 +2206,11 @@ p.copyr {
             line-height: 1.5;
             margin: 0.5em auto;
             text-align: center;
-            font-size: 1.5em;
+            font-size: 1.3em;
             margin: 0.25em 0 0 0;
             padding: 0;
             line-height: 50px;
             text-shadow: unset;
-
-            &:hover {
-              cursor: pointer;
-              color: $colortxt;
-              background-color: $bgcolor;
-            }
           }
 
           /*Drop Cap*/
@@ -2360,28 +2354,14 @@ p.copyr {
           background: white;
 
           h3 {
-            text-indent: 0;
-            height: auto;
             line-height: 60px;
             font-size: 1.3em;
-            color: $colortxt;
-            background-color: $bgcolor;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            font-weight: bold;
-            width: 100%;
-            text-shadow: unset;
           }
 
           p {
-            font-size: 1em;
-            margin: 0 0 0.2em 0;
-            padding: 0.5em;
+            font-size: 1.1em;
             background-color: $colortxtbg;
             line-height: 1.5em;
-            width: auto;
-            display: block;
           }
 
           .contentbox_image {
@@ -3056,11 +3036,8 @@ p.copyr {
 
         article.collection-box {
           h3 {
-            font-size: 1.2em;
-
-            &:hover {
-              cursor: pointer;
-            }
+            font-size: 1.25em;
+            line-height: 60px;
           }
 
           /*Drop Cap*/
@@ -3139,10 +3116,11 @@ p.copyr {
 
           h3 {
             font-size: 1.3em;
+            line-height: 60px;
           }
 
           p {
-            font-size: 1em;
+            font-size: 1.1em;
           }
 
           .contentbox_image {
@@ -3453,7 +3431,7 @@ p.copyr {
       }
 
       h2 {
-        font-size: 1.3em;
+        font-size: 1.7em;
       }
 
       #summary {
@@ -3470,10 +3448,7 @@ p.copyr {
         article.collection-box {
           h3 {
             font-size: 1.2em;
-
-            &:hover {
-              cursor: pointer;
-            }
+            line-height: 55px;
           }
 
           /*Drop Cap*/
@@ -3550,11 +3525,12 @@ p.copyr {
           min-height: 200px;
 
           h3 {
-            font-size: 1.3em;
+            font-size: 1.2em;
+            line-height: 50px;
           }
 
           p {
-            font-size: 1em;
+            font-size: 1.1em;
             padding: 0.25em;
           }
 
@@ -3997,7 +3973,7 @@ p.copyr {
         height: 40px;
 
         a {
-          font-size: 0.95em;
+          font-size: 0.85em;
           line-height: 40px;
 
           &:hover {
@@ -4128,12 +4104,126 @@ p.copyr {
       }
 
       h2 {
-        font-size: 1.5em;
+        font-size: 1.35em;
       }
 
       #summary {
         width: 80%;
         line-height: 1.5em;
+      }
+
+      #facts_box {
+        height: auto;
+      }
+
+      div.mask {
+        width: 100%;
+
+        article.collection-box {
+          h3 {
+            font-size: 1.1em;
+            line-height: 50px;
+          }
+
+          p.collection-text {
+            padding: 0.25em;
+            font-size: 1em;
+          }
+        }
+
+        article.recycle-facts {
+          margin: 0.5em;
+
+          p {
+            font-size: 1.2em;
+          }
+
+          h3 {
+            font-size: 1.4em;
+            text-shadow: unset;
+          }
+
+          ul {
+            list-style: none;
+            margin: 1em auto;
+            padding: 0;
+            width: 85%;
+
+            li {
+              line-height: 50px;
+              font-size: 1.2em;
+
+              &:before {
+                font-family: 'FontAwesome';
+                content: '\f1b8';
+                line-height: 50px;
+                font-size: 1.5em;
+              }
+            }
+          }
+        }
+
+        article.recycle-facts__dots {
+          text-align: center;
+
+          &--dot {
+            cursor: pointer;
+          }
+        }
+
+        .active,
+        .recycle-facts__dots--dot:hover {
+          background-color: #717171;
+        }
+
+        /* Next & previous buttons */
+
+        .prev,
+        .next {
+          top: 50%;
+          margin-top: -22px;
+          font-size: 18px;
+        }
+
+        .next {
+          right: 0;
+        }
+
+        .prev:hover,
+        .next:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        article.contentbox {
+          min-height: 200px;
+
+          h3 {
+            font-size: 1.15em;
+            line-height: 50px;
+          }
+
+          p {
+            font-size: 1em;
+            padding: 0.25em;
+          }
+
+          .contentbox_image {
+            width: 40%;
+
+            img {
+              display: block;
+            }
+          }
+
+          a.content-button {
+            font-size: 0.85em;
+            width: 60%;
+
+            &:hover {
+              width: 60%;
+            }
+          }
+        }
       }
 
       #whatcandolist {
@@ -4533,7 +4623,7 @@ p.copyr {
         height: 40px;
 
         a {
-          font-size: 0.9em;
+          font-size: 0.85em;
           line-height: 40px;
 
           &:hover {
@@ -4951,16 +5041,13 @@ p.copyr {
 
         article.collection-box {
           h3 {
-            font-size: 1.2em;
-
-            &:hover {
-              cursor: pointer;
-            }
+            font-size: 1.1em;
+            line-height: 50px;
           }
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 1.1em;
+            font-size: 0.95em;
           }
         }
 
@@ -5016,8 +5103,11 @@ p.copyr {
         }
 
         article.contentbox {
+          min-height: 200px;
+
           h3 {
-            font-size: 1.2em;
+            font-size: 1.1em;
+            line-height: 50px;
           }
 
           p {
@@ -5174,7 +5264,7 @@ p.copyr {
         height: 40px;
 
         a {
-          font-size: 0.8em;
+          font-size: 0.75em;
           line-height: 40px;
 
           &:hover {
@@ -5309,7 +5399,7 @@ p.copyr {
       }
 
       h2 {
-        font-size: 1.3em;
+        font-size: 1.25em;
       }
 
       #summary {
@@ -5601,15 +5691,12 @@ p.copyr {
           padding: 0 1em;
 
           h3 {
-            font-size: 1.1em;
-
-            &:hover {
-              cursor: pointer;
-            }
+            font-size: 1em;
+            line-height: 50px;
           }
 
           p.collection-text {
-            font-size: 1.1em;
+            font-size: 0.95em;
           }
         }
 
@@ -5663,8 +5750,8 @@ p.copyr {
 
         article.contentbox {
           h3 {
-            font-size: 1.2em;
-            height: auto;
+            font-size: 1em;
+            line-height: 50px;
           }
 
           p {
@@ -6014,7 +6101,7 @@ p.copyr {
       }
 
       h2 {
-        font-size: 1.3em;
+        font-size: 1.2em;
       }
 
       #summary {
@@ -6306,16 +6393,13 @@ p.copyr {
           padding: 0 1em;
 
           h3 {
-            font-size: 1.1em;
-
-            &:hover {
-              cursor: pointer;
-            }
+            font-size: 0.95em;
+            line-height: 50px;
           }
 
           /*Drop Cap*/
           p.collection-text {
-            font-size: 1.1em;
+            font-size: 0.85em;
           }
         }
 
@@ -6375,12 +6459,12 @@ p.copyr {
           width: 98.7%;
 
           h3 {
-            font-size: 1.3em;
+            font-size: 0.95em;
             line-height: 40px;
           }
 
           p {
-            font-size: 0.9em;
+            font-size: 0.85em;
           }
 
           .contentbox_image {
@@ -6683,7 +6767,7 @@ p.copyr {
       }
 
       h2 {
-        font-size: 1.3em;
+        font-size: 1.1em;
       }
 
       #summary {
@@ -6977,16 +7061,12 @@ p.copyr {
           padding: 0 1em;
 
           h3 {
-            font-size: 1em;
-
-            &:hover {
-              cursor: pointer;
-            }
+            font-size: 0.9em;
+            line-height: 50px;
           }
 
-          /*Drop Cap*/
           p.collection-text {
-            font-size: 1.1em;
+            font-size: 0.8em;
             padding: 0.5em;
           }
         }
@@ -7047,11 +7127,11 @@ p.copyr {
           width: 98.7%;
 
           h3 {
-            font-size: 1em;
+            font-size: 0.9em;
           }
 
           p {
-            font-size: 0.85em;
+            font-size: 0.8em;
           }
 
           .contentbox_image {
@@ -7626,16 +7706,12 @@ p.copyr {
           padding: 0.25em 2em;
 
           h3 {
-            font-size: 1em;
-
-            &:hover {
-              cursor: pointer;
-            }
+            font-size: 0.9em;
+            line-height: 50px;
           }
 
-          /*Drop Cap*/
           p.collection-text {
-            font-size: 0.85em;
+            font-size: 0.8em;
           }
         }
 
@@ -7697,11 +7773,11 @@ p.copyr {
           padding: 0.25em 2em;
 
           h3 {
-            font-size: 1em;
+            font-size: 0.9em;
           }
 
           p {
-            font-size: 0.85em;
+            font-size: 0.8em;
           }
 
           .contentbox_image {
