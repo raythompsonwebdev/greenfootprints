@@ -743,9 +743,9 @@ div.page-wrapper {
       p {
         padding: 0.25em;
         width: auto;
-        margin: 0;
+        margin: 0 0.1em 0 0;
         color: $colorblk;
-        line-height: 1.7em;
+        line-height: 1.9em;
         font-size: 0.85em;
       }
 
@@ -3993,7 +3993,7 @@ p.copyr {
           height: 100%;
 
           figure.sliders {
-            height: 425px;
+            height: 350px;
 
             img {
               display: block;
@@ -4641,6 +4641,8 @@ p.copyr {
 
         div#slides {
           figure.sliders {
+            height: 350px;
+
             img {
               display: block;
               width: auto;
@@ -5288,7 +5290,7 @@ p.copyr {
 
         div#slides {
           figure.sliders {
-            height: 370px;
+            height: 350px;
 
             img {
               display: block;

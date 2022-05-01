@@ -3,7 +3,7 @@
     {
         "id": 1,
         "imageAlt": "recycling-advice-green-foot-prints-com",
-        "imageUrl": "/static/images/slider/slider-image2-greenfootprints-com.png",
+        "imageUrl": "/static/images/slider/greenfootprint-awards.png",
         "imageId": "sliderImgOne",
         "title": "Recycling",
         "caption": "Award winning recycling website. Voted best recyling website 2010 and 2012",
@@ -13,7 +13,7 @@
     {
         "id": 2,
         "imageAlt": "recycling-advice-green-foot-prints-com",
-        "imageUrl": "/static/images/slider/slider-image3-greenfootprints-com.png",
+        "imageUrl": "/static/images/slider/three-rs.png",
         "imageId": "sliderImgTwo",
         "title": "Reduce, Reuse, Recycle",
         "caption": "There are three key factors when thinking about how to recycle &apos; The 3 R's:",
