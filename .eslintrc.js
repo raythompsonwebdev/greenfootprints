@@ -1,31 +1,44 @@
-module.exports = {
+export default {
   root: true,
   env: {
     browser: true,
-    es6: true,
-    commonjs: true,
     es2021: true,
     node: true,
-    mocha: true,
+  },
+  settings: {
+    "react": {
+      "version": "detect"
+    }
   },
   extends: [
     "airbnb",
-    "prettier",
     "eslint:recommended",
     "plugin:import/recommended",
     "plugin:import/errors",
+    "plugin:react/recommended",
     "plugin:import/warnings",
+    "plugin:jsx-a11y/recommended",
+    "prettier"
   ],
   globals: {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly",
   },
-  plugins: ["prettier", "import"],
+  plugins: ["react", "import", "jsx-a11y", "prettier"],
   parserOptions: {
-    ecmaVersion: 12,
+    ecmaVersion: "latest",
     sourceType: "module",
+    ecmaFeatures: {
+      jsx: true,
+    },
+    babelOptions: {
+      configFile: "./babel.config.json",
+    },
+
   },
+  parser: '@babel/eslint-parser',
   rules: {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "prettier/prettier": "error",
     "no-unused-vars": "off",
     "no-var": "warn",

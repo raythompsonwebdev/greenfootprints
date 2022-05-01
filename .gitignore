@@ -67,24 +67,23 @@ test/
 .settings/
 
 .vscode/
-views/
 routes/
 .htaccess
 api/
 
 src/images/
-src/fonts/
-src/favicons/
-src/views/
-
-src/css/sass/normalize.css.map
-src/css/sass/style.css.map
-src/css/sass/ie.css.map
-src/css/sass/ie.min-css.map
-src/css/sass/ie.css.map
-src/css/sass/style.css
-src/css/sass/style-min.css.map
-src/css/sass/style.css.map
+src/static/fonts/
+src/static/js/slide-functions/
+src/static/favicons/
+src/static/images/three-rs.xcf
+src/static//css/sass/normalize.css.map
+src/static//css/sass/style.css.map
+src/static//css/sass/ie.css.map
+src/static//css/sass/ie.min-css.map
+src/static//css/sass/ie.css.map
+src/static//css/sass/style.css
+src/static//css/sass/style-min.css.map
+src/static//css/sass/style.css.map
 
 src/css/sass/partials/_base.css
 src/css/sass/partials/_base.css.map
@@ -102,10 +101,12 @@ src/css/sass/partials/_variables.min.css
 nbproject/private/
 src/nbproject/private/
 nbproject/
-src/static/images/Large/wordsearch.gif
+src/static/images/Large/
 src/static/images/slider/patricia-valerio-eV2x6CmfIns-unsplash-copy.jpg
 src/static/images/slider/patricia-valerio-eV2x6CmfIns-unsplash.jpg
 src/static/images/slider/pawel-czerwinski-RkIsyD_AVvc-unsplash-copy.jpg
 src/static/images/slider/pawel-czerwinski-RkIsyD_AVvc-unsplash.jpg
 src/static/images/slider/roberto-sorin-ZZ3qxWFZNRg-unsplash-copy.jpg
 src/static/images/slider/roberto-sorin-ZZ3qxWFZNRg-unsplash.jpg
+public/static/*
+buildScripts/
