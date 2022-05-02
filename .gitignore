@@ -109,4 +109,6 @@ src/static/images/slider/pawel-czerwinski-RkIsyD_AVvc-unsplash.jpg
 src/static/images/slider/roberto-sorin-ZZ3qxWFZNRg-unsplash-copy.jpg
 src/static/images/slider/roberto-sorin-ZZ3qxWFZNRg-unsplash.jpg
 public/static/*
-buildScripts/
+buildScripts/generateMockData.js
+buildScripts/mockDataSchema.js
+buildScripts/testSetup.js

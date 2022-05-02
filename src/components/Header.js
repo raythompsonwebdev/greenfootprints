@@ -6,9 +6,9 @@ function Header() {
     <header role="banner" id="site_header">
       <figure id="logo">
         <img
-          id="home"
+          id="logo-image"
           src="/static/images/Large/gif-images/logo-greenfootprints-com.gif"
-          alt="home page"
+          alt="greenfootprints logo"
         />
       </figure>
 
