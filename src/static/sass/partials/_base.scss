@@ -1,9 +1,39 @@
-@import 'mixins';
 @import 'variables';
 @import 'fonts';
 
+/*Container*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.group:before,
+.group:after {
+  content: '';
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.box-set:before,
+.box-set:after {
+  content: '';
+  display: table;
+}
+
+.box-set:after {
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+}
+
 html {
-  @include box-sizing($type: border-box);
+  box-sizing: border-box;
   scroll-behavior: smooth;
   scroll-margin-top: 115px;
 }
@@ -22,10 +52,6 @@ body {
 
 figure {
   margin: 0;
-}
-
-.clearfix {
-  clear: both;
 }
 
 .seperator {
@@ -69,26 +95,6 @@ q:after {
 blockquote,
 q {
   quotes: '' '';
-}
-
-.group:before,
-.group:after {
-  content: '';
-  display: table;
-}
-
-.group:after {
-  clear: both;
-}
-
-.box-set:before,
-.box-set:after {
-  content: '';
-  display: table;
-}
-
-.box-set:after {
-  clear: both;
 }
 
 #title,
@@ -151,12 +157,4 @@ textarea:focus {
   background-color: $colorsocmed;
   outline: none;
   display: block;
-}
-
-/*Container*/
-
-*,
-*:before,
-*:after {
-  @include box-sizing($type: inherit);
 }

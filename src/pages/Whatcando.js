@@ -6,14 +6,13 @@ function Whatcando() {
     <div className="page-wrapper" id="whatcando">
       <section className="content">
         <h2>What You Can Do </h2>
-        <article className="text" id="whatcandolist">
+        <article className="text" id="whatcando-list">
           <figure id="threeRs">
             <img
-              className="recycle_img"
+              className="whatcando-image"
               src="/static/images/Large/recycle-continuous-circle-greenfootprints-com.jpg"
               alt="reduce-green-foot-prints-com"
             />
-
             <figcaption>
               <h3>Reduce, Reuse, Recycle </h3>
               <p>
@@ -23,9 +22,9 @@ function Whatcando() {
             </figcaption>
           </figure>
 
-          <figure id="rubbish_bin">
+          <figure id="in-rubbish-bin">
             <img
-              className="recycle_img"
+              className="whatcando-image"
               id="mainImageOne"
               src="/static/images/Large/what-is-in-your-rubbish-bin.jpg"
               alt="recycling-advice-green-foot-prints-com"
@@ -50,9 +49,9 @@ function Whatcando() {
             </figcaption>
           </figure>
 
-          <figure id="diff_matt">
+          <figure id="different-materials">
             <img
-              className="recycle_img"
+              className="whatcando-image"
               src="/static/images/Large/gif-images/Recycling_image_1.gif"
               alt="reduce-green-foot-prints-com"
             />
@@ -65,7 +64,7 @@ function Whatcando() {
                 the right hand side.
               </p>
 
-              <ul id="different-materials">
+              <ul id="different-materials-list">
                 <li>
                   <a href="http://www.recycling-guide.org.uk/materials/plastic.html">
                     Plastic Bottles
@@ -90,9 +89,9 @@ function Whatcando() {
             </figcaption>
           </figure>
 
-          <figure id="recycle_ett">
+          <figure id="recycle-ettiqutte">
             <img
-              className="recycle_img"
+              className="whatcando-image"
               src="/static/images/Large/gif-images/family_home_page.gif"
               alt="reduce-green-foot-prints-com"
             />
@@ -111,17 +110,15 @@ function Whatcando() {
             </figcaption>
           </figure>
 
-          <figure id="recycle_where">
+          <figure id="where-to-recycle">
             <figcaption id="recycle_where_caption">
               <h3>Where can you recycle? </h3>
-
               <p>
                 As well as home recycling bins, there are many recycling banks
                 across the UK that can be used to recycle different materials.
                 They are located on streets across the UK as well as in
                 supermarkets and outside housing estates.{' '}
               </p>
-
               <p>
                 {' '}
                 Most recycling banks are emptied on a regular basis. However, if
@@ -138,7 +135,7 @@ function Whatcando() {
               </p>
             </figcaption>
             <img
-              className="recycle_img_right"
+              className="whatcando-image-right"
               id="mainImageTwo"
               src="/static/images/Large/gif-images/Recycling_image_2.gif"
               alt="recycling-advice-green-foot-prints-com"
@@ -147,8 +144,6 @@ function Whatcando() {
           <br />
         </article>
       </section>
-
-      <div className="clearfix"></div>
     </div>
   );
 }

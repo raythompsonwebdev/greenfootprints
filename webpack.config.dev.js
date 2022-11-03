@@ -4,8 +4,8 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import StyleLintPlugin from 'stylelint-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import ImageMinimizerPlugin from 'image-minimizer-webpack-plugin';
+import postcssPresetEnv from 'postcss-preset-env';
 const __dirname = path.dirname(new URL(import.meta.url).pathname);
-// const { extendDefaultPlugins } = require("svgo");
 const isDev = true;
 
 export default {
@@ -13,7 +13,6 @@ export default {
   entry: {
     main: './src/index.js',
   },
-  watch: true,
   target: 'web',
   devtool: 'inline-source-map',
   output: {
@@ -49,27 +48,8 @@ export default {
           // Lossless optimization with custom option
           // Feel free to experiment with options for better result for you
           plugins: [
-            ['gifsicle', { interlaced: true }],
-            //['jpegtran', { progressive: true }],
-            ['pngquant', { optimizationLevel: 5 }],
-            // Svgo configuration here https://github.com/svg/svgo#configuration
-            // [
-            //   "svgo",
-            //   {
-            //     plugins: extendDefaultPlugins([
-            //       {
-            //         name: "removeViewBox",
-            //         active: false,
-            //       },
-            //       {
-            //         name: "addAttributesToSVGElement",
-            //         params: {
-            //           attributes: [{ xmlns: "http://www.w3.org/2000/svg" }],
-            //         },
-            //       },
-            //     ]),
-            //   },
-            // ],
+            ['jpegtran', { progressive: true }],
+            ['optipng', { optimizationLevel: 5 }],
           ],
         },
       },
@@ -95,27 +75,23 @@ export default {
             loader: MiniCssExtractPlugin.loader,
             options: {},
           },
+          'css-loader',
           {
-            loader: 'css-loader',
+            loader: 'postcss-loader',
             options: {
-              sourceMap: isDev,
+              postcssOptions: {
+                plugins: [
+                  postcssPresetEnv({
+                    /* use stage 3 features + css nesting rules */
+                    stage: 3,
+                    features: {
+                      'nesting-rules': true,
+                    },
+                  }),
+                ],
+              },
             },
           },
-          // {
-          //   loader: 'postcss-loader',
-          //   options: {
-          //     postcssOptions: {
-          //       plugins: [
-          //         [
-          //           'postcss-preset-env',
-          //           {
-          //             // Options
-          //           },
-          //         ],
-          //       ],
-          //     },
-          //   },
-          // },
           {
             loader: 'sass-loader',
             options: {
@@ -127,11 +103,13 @@ export default {
 
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        type: 'asset/resource',
         use: ['file-loader'],
       },
       // file loader for images
       {
         test: /\.(jpg|jpeg|png|gif|svg|pdf|ico)$/,
+        type: 'asset/resource',
         use: [
           {
             loader: 'file-loader',

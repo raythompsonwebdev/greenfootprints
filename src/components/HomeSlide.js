@@ -8,13 +8,18 @@ function HomeSlide(props) {
   return (
     <figure className="sliders">
       <figcaption className="slider-caption">
-        <h2>{title}</h2>
-        <p>{caption}</p>
+        <h2 className="slider-caption-title">{title}</h2>
+        <p className="slider-caption-text">{caption}</p>
         <Link to={link} title={linktitle} className="largeButton homeBgColor">
           Read More
         </Link>
       </figcaption>
-      <img id={imageId} alt={imageAlt} src={imageUrl} />
+      <img
+        id={imageId}
+        className="slider-caption-image"
+        alt={imageAlt}
+        src={imageUrl}
+      />
     </figure>
   );
 }

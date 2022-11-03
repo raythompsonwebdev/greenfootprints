@@ -53,20 +53,20 @@ function RecyclingFacts() {
       <section className="content">
         <h2>Recycling facts and figures</h2>
 
-        <div id="facts-boxes">
+        <div id="recycling-facts-slides">
           <div className="mask">
             {RecyclingFactsData.map((slide) => (
               <RecyclingFactSlide
                 data={slide}
                 key={slide.id}
-                classname="recycle-facts"
+                classname="recycling-facts-slide"
               />
             ))}
 
-            <a className="prevFacts" href="http://ww.google.com">
+            <a className="facts-prev" href="http://ww.google.com">
               &#10094;
             </a>
-            <a className="nextFacts" href="http://ww.google.com">
+            <a className="facts-next" href="http://ww.google.com">
               &#10095;
             </a>
           </div>

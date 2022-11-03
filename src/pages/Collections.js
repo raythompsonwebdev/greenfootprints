@@ -56,13 +56,13 @@ const Collections = () => {
     <div className="page-wrapper" id="collections">
       <section className="content">
         <h2>Collections &amp; Sorting</h2>
-        <div id="collection-boxes">
+        <div id="collection-slides">
           <div className="mask">
             {CollectionData.map((slide) => (
               <CollectionSlide
                 data={slide}
                 key={slide.id}
-                classname="collection-box"
+                classname="collection-slide"
               />
             ))}
 

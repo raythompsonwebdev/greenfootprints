@@ -23,8 +23,8 @@ function Navigation(props) {
   };
 
   return (
-    <nav role="navigation" className="site_navigation">
-      <ul>
+    <nav role="navigation" id="site-navigation">
+      <ul id="site-navigation-container">
         <li>
           <Link
             to="/"

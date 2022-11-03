@@ -52,20 +52,20 @@ function TenWays() {
     <div className="page-wrapper" id="ten-ways">
       <section className="content">
         <h2>10 Ways to recycle</h2>
-        <div id="tenways-boxes">
+        <div id="tenways-slides">
           <div className="mask">
             {TenWaysData.map((slide) => (
               <CollectionSlide
                 data={slide}
                 key={slide.id}
-                classname="contentbox"
+                classname="tenways-slide"
               />
             ))}
 
-            <a className="prevWays" href="http://ww.google.com">
+            <a className="tenways-prev" href="http://ww.google.com">
               &#10094;
             </a>
-            <a className="nextWays" href="http://ww.google.com">
+            <a className="tenway-next" href="http://ww.google.com">
               &#10095;
             </a>
           </div>

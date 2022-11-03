@@ -5,15 +5,15 @@ function HomePageCard(props) {
   const { data } = { ...props };
 
   return (
-    <article className="home_contentbox">
-      <h3>{data.title}</h3>
-      <figure className="contentbox_image">
+    <article className="home-page-card">
+      <h3 className="home-page-title">{data.title}</h3>
+      <figure className="home-page-image">
         <img id={data.imageId} src={data.imageUrl} alt={data.alt} />
 
-        <figcaption>
-          <p> {data.text}</p>
+        <figcaption classname="card-image-caption">
+          <p classname="card-image-text"> {data.text}</p>
           <a
-            className="content-button"
+            className="card-image-button"
             href={data.downloadlink}
             download={data.download}
             title={data.title}

@@ -2,8 +2,8 @@ import React from 'react';
 
 function SocialMediaLink() {
   return (
-    <aside className="socials">
-      <ul>
+    <aside id="socials">
+      <ul id="socials-container">
         <li>
           <a
             href="https://www.twitter.com"

@@ -7,10 +7,10 @@ function Home() {
   const infoData = [
     {
       id: 1,
-      imageName: 'paperBottles',
+      imageName: 'paper-bottles',
       imageUrl: '/static/images/Large/gif-images/recyling-guide.gif',
       alt: 'recycling-advice-green-foot-prints-com',
-      imageId: 'paperBottles',
+      imageId: 'paper-bottles',
       downloadlink:
         'https://www.dropbox.com/s/aadvfk718co01hh/household-recycling-guide.pdf?dl=0',
       download: 'household-recycling-guide.pdf',
@@ -19,10 +19,10 @@ function Home() {
     },
     {
       id: 2,
-      imageName: 'flowChart',
+      imageName: 'flow-chart',
       imageUrl: '/static/images/Large/gif-images/recycling-flowchart.gif',
       alt: 'recycling-advice-green-foot-prints-com',
-      imageId: 'flowChart',
+      imageId: 'flow-chart',
       downloadlink:
         'https://www.dropbox.com/s/lbeualgiiwd4qc8/recycling-flowchart-poster.pdf?dl=0',
       download: 'reduce-reuse-recycle-poster.pdf',
@@ -31,10 +31,10 @@ function Home() {
     },
     {
       id: 3,
-      imageName: 'wordSearch',
+      imageName: 'word-search',
       imageUrl: '/static/images/Large/gif-images/wordsearch.gif',
       alt: 'recycling-advice-green-foot-prints-com',
-      imageId: 'wordSearch',
+      imageId: 'word-search',
       downloadlink:
         'https://www.dropbox.com/s/8m7d9vtsix05e8y/wordsearch.pdf?dl=0',
       download: 'Summary.pdf',
@@ -46,8 +46,8 @@ function Home() {
   return (
     <div className="page-wrapper" id="home">
       <HomeSlider />
-      <main className="content">
-        <div id="home_contentboxes">
+      <main id="home-page-content">
+        <div id="home-page-cards">
           {infoData.map((card) => (
             <HomepageCard data={card} key={card.id} />
           ))}

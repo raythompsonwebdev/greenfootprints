@@ -3,7 +3,7 @@ import SocialMediaLink from './SocialMediaLinks.js';
 
 function Header() {
   return (
-    <header role="banner" id="site_header">
+    <header role="banner" id="site-header">
       <figure id="logo">
         <img
           id="logo-image"
@@ -13,8 +13,8 @@ function Header() {
       </figure>
 
       <div id="site-title">
-        <h1>GreenfootPrints</h1>
-        <p>UK's leading Recycling website</p>
+        <h1 id="logo-title">GreenfootPrints</h1>
+        <p id="logo-text">UK's leading Recycling website</p>
       </div>
 
       <SocialMediaLink />
