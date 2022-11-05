@@ -12,7 +12,7 @@ const Collections = () => {
       let i;
 
       // get html collection
-      const slides = document.getElementsByClassName('collection-box');
+      const slides = document.getElementsByClassName('collection-slide');
 
       //convert html collection into an array.
       const slideArray = Array.from(slides);
@@ -54,8 +54,8 @@ const Collections = () => {
 
   return (
     <div className="page-wrapper" id="collections">
-      <section className="content">
-        <h2>Collections &amp; Sorting</h2>
+      <main className="content">
+        <h2 className="content-title">Collections &amp; Sorting</h2>
         <div id="collection-slides">
           <div className="mask">
             {CollectionData.map((slide) => (
@@ -74,8 +74,7 @@ const Collections = () => {
             </a>
           </div>
         </div>
-      </section>
-      <div className="clearfix"> </div>
+      </main>
     </div>
   );
 };

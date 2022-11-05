@@ -1,3 +1,4 @@
 export default {
-  plugins: ['autoprefixer', ['postcss-preset-env', {}]],
+  // eslint-disable-next-line global-require
+  plugins: ['autoprefixer', 'postcss-preset-env'],
 };

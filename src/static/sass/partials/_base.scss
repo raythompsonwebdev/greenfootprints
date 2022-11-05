@@ -43,20 +43,13 @@ body {
   margin: 0;
   line-height: 1;
   background-color: $bgcolor;
-  font-size: 1em;
   height: auto;
-  padding-bottom: 20px;
 }
 
 /* remember to define focus styles! */
 
 figure {
   margin: 0;
-}
-
-.seperator {
-  height: 1px;
-  display: block;
 }
 
 :focus {
@@ -102,31 +95,11 @@ q {
   font-family: $fontList;
 }
 
-a {
-  text-decoration: none;
-  &:focus {
-    outline: 1px dotted $colortxt;
-  }
-}
-
-h1 {
-  font-weight: normal;
-  width: 100%;
-  letter-spacing: 0.02em;
-  display: block;
-}
-
-h2 {
-  font-weight: normal;
-  width: 100%;
-  letter-spacing: 0.05em;
-  display: block;
-}
-
+h1,
+h2,
 h3 {
   font-weight: normal;
   width: 100%;
-  letter-spacing: 0.1em;
   display: block;
 }
 
@@ -134,8 +107,6 @@ p {
   overflow: hidden;
   font-weight: normal;
   width: 100%;
-  line-height: 1.8em;
-  letter-spacing: 0.02em;
 }
 
 img {
@@ -143,18 +114,4 @@ img {
   max-width: 100%;
   border: none;
   outline: none;
-}
-
-input:hover,
-textarea:hover,
-input:focus,
-select,
-textarea:focus {
-  border-color: $colortxt;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 3px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 3px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 3px;
-  background-color: $colorsocmed;
-  outline: none;
-  display: block;
 }

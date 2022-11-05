@@ -6,9 +6,9 @@ const CollectionSlide = (props) => {
 
   return (
     <article className={classname}>
-      <h3>{data.title}</h3>
+      <h3 className="collection-slide-title">{data.title}</h3>
       <p className="collection-slider-text">{data.text}</p>
-      <img id="tenImageOne" src={data.image} alt={data.alt} />
+      <img id="ten-image-one" src={data.image} alt={data.alt} />
     </article>
   );
 };

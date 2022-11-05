@@ -4,48 +4,54 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <footer>
-      <ul>
-        <li>
-          <Link to="/" className="nav-links" title="Home page">
+      <ul id="footer-nav">
+        <li className="footer-nav-links">
+          <Link to="/" className="footer-nav-link" title="Home page">
             Home
           </Link>
         </li>
-        <li>
-          <Link to="/whatcando" className="nav-links" title="What you can page">
+        <li className="footer-nav-links">
+          <Link
+            to="/whatcando"
+            className="footer-nav-link"
+            title="What you can page">
             Can Do
           </Link>
         </li>
-        <li>
-          <Link to="/recycling" className="nav-links" title="Recycling page">
+        <li className="footer-nav-links">
+          <Link
+            to="/recycling"
+            className="footer-nav-link"
+            title="Recycling page">
             Recycling
           </Link>
         </li>
-        <li>
+        <li className="footer-nav-links">
           <Link
             to="/collections"
-            className="nav-links"
+            className="footer-nav-link"
             title="Recycling collection page">
             Collections
           </Link>
         </li>
-        <li>
+        <li className="footer-nav-links">
           <Link
             to="/tenways"
-            className="nav-links"
+            className="footer-nav-link"
             title="Ten ways to recycle page">
             10 Ways
           </Link>
         </li>
-        <li>
+        <li className="footer-nav-links">
           <Link
             to="/recyclingfacts"
-            className="nav-links"
+            className="footer-nav-link"
             title="Recycling facts page">
             Facts
           </Link>
         </li>
-        <li>
-          <Link to="/contact" className="nav-links" title="Contact page">
+        <li className="footer-nav-links">
+          <Link to="/contact" className="footer-nav-link" title="Contact page">
             Contact
           </Link>
         </li>

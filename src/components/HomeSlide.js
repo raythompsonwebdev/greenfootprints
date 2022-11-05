@@ -10,7 +10,7 @@ function HomeSlide(props) {
       <figcaption className="slider-caption">
         <h2 className="slider-caption-title">{title}</h2>
         <p className="slider-caption-text">{caption}</p>
-        <Link to={link} title={linktitle} className="largeButton homeBgColor">
+        <Link to={link} title={linktitle} className="large-button homebg-color">
           Read More
         </Link>
       </figcaption>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Navigation(props) {
   const menuToggleFunc = () => {
     // create menu variables
-    const slideoutMenu = document.querySelector('.site_navigation');
+    const slideoutMenu = document.querySelector('#site-navigation');
     const slideoutMenuHeight = slideoutMenu.offsetHeight;
     // mobile menu toggle button
 
@@ -25,7 +25,7 @@ function Navigation(props) {
   return (
     <nav role="navigation" id="site-navigation">
       <ul id="site-navigation-container">
-        <li>
+        <li className="site-navigation-link">
           <Link
             to="/"
             className="nav-links"
@@ -34,7 +34,7 @@ function Navigation(props) {
             Home
           </Link>
         </li>
-        <li>
+        <li className="site-navigation-link">
           <Link
             to="/whatcando"
             className="nav-links"
@@ -43,7 +43,7 @@ function Navigation(props) {
             Can Do
           </Link>
         </li>
-        <li>
+        <li className="site-navigation-link">
           <Link
             to="/recycling"
             className="nav-links"
@@ -52,7 +52,7 @@ function Navigation(props) {
             Recycling
           </Link>
         </li>
-        <li>
+        <li className="site-navigation-link">
           <Link
             to="/collections"
             className="nav-links"
@@ -61,7 +61,7 @@ function Navigation(props) {
             Collections
           </Link>
         </li>
-        <li>
+        <li className="site-navigation-link">
           <Link
             to="/tenways"
             className="nav-links"
@@ -70,7 +70,7 @@ function Navigation(props) {
             10 Ways
           </Link>
         </li>
-        <li>
+        <li className="site-navigation-link">
           <Link
             to="/recyclingfacts"
             className="nav-links"
@@ -79,7 +79,7 @@ function Navigation(props) {
             Facts
           </Link>
         </li>
-        <li>
+        <li className="site-navigation-link">
           <Link
             to="/contact"
             className="nav-links"

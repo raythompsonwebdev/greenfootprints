@@ -1,17 +1,30 @@
-$colorblk: #000; //black
-$bgcolor: #cad996; //bg
-$headbg: #406136; //buttons
+// $contenttxtbg: #3ea514;
+// $formboxbg: #136899;
+// $colorslidebg: #82b602;
+// $colorsildertxt: #e6fbb3;
+
+$color-black: #000;
+$color-white: #ffffff;
+$bgcolor: #cad996;
+$headbg: #406136;
 $colornav: #3fa63a;
 $colortxtbg: #ccffbb;
 $colortxt: #3a5f0b;
 $colorsocmed: #ccffbb;
-$colorsocmedhov: #ffffff; //header text color
-$colorslidebg: #82b602;
-$colorsildertxt: #e6fbb3;
 $colorsildertxtbg: #2c6700;
-$honecolor: #5e8b33; //content background
+$honecolor: #5e8b33;
 $contentbg: #678b3f;
 $header-shadow: #165404;
-$contenttxtbg: #3ea514;
+$prev-next-button: #000000;
 
-$formboxbg: #136899;
+$error-border: #ffffff;
+$error-color: #297f10;
+$error-bg: #297f10;
+
+$success-border: #c6d880;
+$success-color: #264409;
+$success-bg: #e6efc2;
+
+$notice-border: #ffd324;
+$notice-color: #514721;
+$notice-bg: #fff6bf;

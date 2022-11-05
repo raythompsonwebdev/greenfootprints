@@ -1,6 +1,6 @@
 //import { hot } from 'react-hot-loader/root';
 import React, { useEffect } from 'react';
-import CollectionSlide from '../components/CollectionSlide.js';
+import TenwaysSlide from '../components/TenwaysSlide.js';
 import TenWaysData from '../static/data/tenways.json';
 
 function TenWays() {
@@ -10,7 +10,7 @@ function TenWays() {
     // Slider 3
     const recycleBoxSlides = (n) => {
       let i;
-      const slides = document.getElementsByClassName('contentbox');
+      const slides = document.getElementsByClassName('tenways-slide');
 
       //convert html collection into an array.
       const slideArray = Array.from(slides);
@@ -34,8 +34,8 @@ function TenWays() {
       recycleBoxSlides((slideIndex += n));
     };
 
-    const prevWays = document.querySelector('.prevWays');
-    const nextWays = document.querySelector('.nextWays');
+    const prevWays = document.querySelector('.tenways-prev');
+    const nextWays = document.querySelector('.tenways-next');
 
     prevWays.addEventListener('click', (e) => {
       e.preventDefault();
@@ -50,27 +50,27 @@ function TenWays() {
 
   return (
     <div className="page-wrapper" id="ten-ways">
-      <section className="content">
-        <h2>10 Ways to recycle</h2>
+      <main className="content">
+        <h2 className="content-title">10 Ways to recycle</h2>
         <div id="tenways-slides">
           <div className="mask">
             {TenWaysData.map((slide) => (
-              <CollectionSlide
+              <TenwaysSlide
                 data={slide}
                 key={slide.id}
                 classname="tenways-slide"
               />
             ))}
 
-            <a className="tenways-prev" href="http://ww.google.com">
+            <a className="tenways-prev" href="#">
               &#10094;
             </a>
-            <a className="tenway-next" href="http://ww.google.com">
+            <a className="tenways-next" href="#">
               &#10095;
             </a>
           </div>
         </div>
-      </section>
+      </main>
     </div>
   );
 }

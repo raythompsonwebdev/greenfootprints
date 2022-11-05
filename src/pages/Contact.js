@@ -4,8 +4,8 @@ import React from 'react';
 const Contacts = () => {
   return (
     <div className="page-wrapper" id="contact">
-      <section className="content">
-        <h2>Contact Us</h2>
+      <main className="content">
+        <h2 className="content-title">Contact Us</h2>
 
         <article className="text">
           <address id="recycle-contact">
@@ -31,17 +31,23 @@ const Contacts = () => {
             <span id="links">
               <p>Further Information on Recycling Please Visit</p>
               <p>
-                <a href="http://www.recycling-guide.org.uk">
+                <a
+                  className="recycle-contact-link"
+                  href="http://www.recycling-guide.org.uk">
                   http://www.recycling-guide.org.uk
                 </a>
               </p>
               <p>
-                <a href="http://www.recyclezone.org.uk/">
+                <a
+                  className="recycle-contact-link"
+                  href="http://www.recyclezone.org.uk/">
                   http://www.recyclezone.org.uk/
                 </a>
               </p>
               <p>
-                <a href="http://www.greenrecycling.co.uk/">
+                <a
+                  className="recycle-contact-link"
+                  href="http://www.greenrecycling.co.uk/">
                   http://www.greenrecycling.co.uk/.
                 </a>
               </p>
@@ -56,9 +62,7 @@ const Contacts = () => {
             </span>
           </address>
         </article>
-
-        <div className="clearfix"> </div>
-      </section>
+      </main>
     </div>
   );
 };

@@ -10,7 +10,7 @@ function RecyclingFacts() {
     // Slider 3
     const recycleBoxSlides = (n) => {
       let i;
-      const slides = document.getElementsByClassName('recycle-facts');
+      const slides = document.getElementsByClassName('recycling-facts-slide');
 
       //convert html collection into an array.
       const slideArray = Array.from(slides);
@@ -34,8 +34,8 @@ function RecyclingFacts() {
       recycleBoxSlides((slideIndex += n));
     };
 
-    const prevFacts = document.querySelector('.prevFacts');
-    const nextFacts = document.querySelector('.nextFacts');
+    const prevFacts = document.querySelector('.facts-prev');
+    const nextFacts = document.querySelector('.facts-next');
 
     prevFacts.addEventListener('click', (e) => {
       e.preventDefault();
@@ -50,8 +50,8 @@ function RecyclingFacts() {
 
   return (
     <div className="page-wrapper" id="recycling-facts">
-      <section className="content">
-        <h2>Recycling facts and figures</h2>
+      <main className="content">
+        <h2 className="content-title">Recycling facts and figures</h2>
 
         <div id="recycling-facts-slides">
           <div className="mask">
@@ -63,15 +63,15 @@ function RecyclingFacts() {
               />
             ))}
 
-            <a className="facts-prev" href="http://ww.google.com">
+            <a className="facts-prev" href="#">
               &#10094;
             </a>
-            <a className="facts-next" href="http://ww.google.com">
+            <a className="facts-next" href="#">
               &#10095;
             </a>
           </div>
         </div>
-      </section>
+      </main>
     </div>
   );
 }

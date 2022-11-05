@@ -5,7 +5,7 @@ function ToggleButton(props) {
     // Your code to run since DOM is loaded and ready
     const menuToggle = document.querySelector('#mobile-toggle');
     // create menu variables
-    const slideoutMenu = document.querySelector('.site_navigation');
+    const slideoutMenu = document.querySelector('#site-navigation');
 
     const slideoutMenuHeight = slideoutMenu.offsetHeight;
 

@@ -4,9 +4,8 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import StyleLintPlugin from 'stylelint-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import ImageMinimizerPlugin from 'image-minimizer-webpack-plugin';
-import postcssPresetEnv from 'postcss-preset-env';
+//import postcssPresetEnv from 'postcss-preset-env';
 const __dirname = path.dirname(new URL(import.meta.url).pathname);
-const isDev = true;
 
 export default {
   mode: 'development',
@@ -69,35 +68,28 @@ export default {
         },
       },
       {
-        test: /\.css$|sass$|\.scss$/,
+        test: /\.(scss|css)$/,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {},
-          },
+          'style-loader',
           'css-loader',
-          {
-            loader: 'postcss-loader',
-            options: {
-              postcssOptions: {
-                plugins: [
-                  postcssPresetEnv({
-                    /* use stage 3 features + css nesting rules */
-                    stage: 3,
-                    features: {
-                      'nesting-rules': true,
-                    },
-                  }),
-                ],
-              },
-            },
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: isDev,
-            },
-          },
+          'sass-loader',
+          //'postcss-loader',
+          // {
+          //   loader: 'postcss-loader',
+          //   options: {
+          //     postcssOptions: {
+          //       plugins: [
+          //         postcssPresetEnv({
+          //           /* use stage 3 features + css nesting rules */
+          //           stage: 3,
+          //           features: {
+          //             'nesting-rules': true,
+          //           },
+          //         }),
+          //       ],
+          //     },
+          //   },
+          // },
         ],
       },
 

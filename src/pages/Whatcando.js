@@ -4,10 +4,10 @@ import React from 'react';
 function Whatcando() {
   return (
     <div className="page-wrapper" id="whatcando">
-      <section className="content">
-        <h2>What You Can Do </h2>
-        <article className="text" id="whatcando-list">
-          <figure id="threeRs">
+      <main className="content">
+        <h2 className="content-title">What You Can Do </h2>
+        <article className="text" id="whatcando-page">
+          <figure id="three-rs">
             <img
               className="whatcando-image"
               src="/static/images/Large/recycle-continuous-circle-greenfootprints-com.jpg"
@@ -65,23 +65,31 @@ function Whatcando() {
               </p>
 
               <ul id="different-materials-list">
-                <li>
-                  <a href="http://www.recycling-guide.org.uk/materials/plastic.html">
+                <li className="different-materials-list-item">
+                  <a
+                    href="http://www.recycling-guide.org.uk/materials/plastic.html"
+                    className="different-materials-list-link">
                     Plastic Bottles
                   </a>
                 </li>
-                <li>
-                  <a href="http://www.recycling-guide.org.uk/materials/batteries.html">
+                <li className="different-materials-list-item">
+                  <a
+                    href="http://www.recycling-guide.org.uk/materials/batteries.html"
+                    className="different-materials-list-link">
                     Batteries
                   </a>
                 </li>
-                <li>
-                  <a href="http://www.recycling-guide.org.uk/materials/glass.html">
+                <li className="different-materials-list-item">
+                  <a
+                    href="http://www.recycling-guide.org.uk/materials/glass.html"
+                    className="different-materials-list-link">
                     Glass Bottles
                   </a>
                 </li>
-                <li>
-                  <a href="http://www.recycling-guide.org.uk/materials/mobiles.html">
+                <li className="different-materials-list-item">
+                  <a
+                    href="http://www.recycling-guide.org.uk/materials/mobiles.html"
+                    className="different-materials-list-link">
                     Mobile Phones
                   </a>
                 </li>
@@ -143,7 +151,7 @@ function Whatcando() {
           </figure>
           <br />
         </article>
-      </section>
+      </main>
     </div>
   );
 }

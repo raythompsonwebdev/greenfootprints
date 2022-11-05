@@ -53,8 +53,6 @@ function Home() {
           ))}
         </div>
       </main>
-
-      <div className="clearfix"> </div>
     </div>
   );
 }

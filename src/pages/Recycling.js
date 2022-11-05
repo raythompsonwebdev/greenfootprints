@@ -4,8 +4,8 @@ import React from 'react';
 function Recycling() {
   return (
     <div className="page-wrapper" id="recycling">
-      <section className="content">
-        <h2>Recycling consumer waste</h2>
+      <main className="content">
+        <h2 className="content-title">Recycling consumer waste</h2>
 
         <article className="text">
           <p>
@@ -83,9 +83,7 @@ function Recycling() {
           <br />
           <br />
         </article>
-      </section>
-
-      <div className="clearfix"></div>
+      </main>
     </div>
   );
 }

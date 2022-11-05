@@ -4,7 +4,7 @@ function SocialMediaLink() {
   return (
     <aside id="socials">
       <ul id="socials-container">
-        <li>
+        <li className="socials-container-link">
           <a
             href="https://www.twitter.com"
             title="Follow us on Twitter"
@@ -12,7 +12,7 @@ function SocialMediaLink() {
             <i className="fa-twitter"> </i>
           </a>
         </li>
-        <li>
+        <li className="socials-container-link">
           <a
             href="https://www.facebook.com"
             title="Follow us on Facebook"
@@ -20,7 +20,7 @@ function SocialMediaLink() {
             <i className="fa fa-facebook"> </i>
           </a>
         </li>
-        <li>
+        <li className="socials-container-link">
           <a
             href="https://www.google.com"
             title="Follow us on Google+"
@@ -28,7 +28,7 @@ function SocialMediaLink() {
             <i className="fa fa-google"> </i>
           </a>
         </li>
-        <li>
+        <li className="socials-container-link">
           <a
             href="https://www.instagram.com"
             title="Follow us on Instagram"

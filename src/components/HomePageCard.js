@@ -6,14 +6,14 @@ function HomePageCard(props) {
 
   return (
     <article className="home-page-card">
-      <h3 className="home-page-title">{data.title}</h3>
-      <figure className="home-page-image">
+      <h3 className="home-page-card-title">{data.title}</h3>
+      <figure className="home-page-card-image">
         <img id={data.imageId} src={data.imageUrl} alt={data.alt} />
 
-        <figcaption classname="card-image-caption">
-          <p classname="card-image-text"> {data.text}</p>
+        <figcaption className="home-page-card-caption">
+          <p className="card-caption-text"> {data.text}</p>
           <a
-            className="card-image-button"
+            className="card-caption-button"
             href={data.downloadlink}
             download={data.download}
             title={data.title}
