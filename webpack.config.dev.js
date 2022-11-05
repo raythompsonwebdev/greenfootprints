@@ -4,7 +4,8 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import StyleLintPlugin from 'stylelint-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import ImageMinimizerPlugin from 'image-minimizer-webpack-plugin';
-//import postcssPresetEnv from 'postcss-preset-env';
+import postcssPresetEnv from 'postcss-preset-env';
+//const postcssPresetEnv = require('postcss-preset-env');
 const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
 export default {
@@ -70,26 +71,27 @@ export default {
       {
         test: /\.(scss|css)$/,
         use: [
+          //MiniCssExtractPlugin.loader,
           'style-loader',
           'css-loader',
-          'sass-loader',
           //'postcss-loader',
-          // {
-          //   loader: 'postcss-loader',
-          //   options: {
-          //     postcssOptions: {
-          //       plugins: [
-          //         postcssPresetEnv({
-          //           /* use stage 3 features + css nesting rules */
-          //           stage: 3,
-          //           features: {
-          //             'nesting-rules': true,
-          //           },
-          //         }),
-          //       ],
-          //     },
-          //   },
-          // },
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  postcssPresetEnv({
+                    /* use stage 3 features + css nesting rules */
+                    stage: 3,
+                    features: {
+                      'nesting-rules': true,
+                    },
+                  }),
+                ],
+              },
+            },
+          },
+          'sass-loader',
         ],
       },
 
