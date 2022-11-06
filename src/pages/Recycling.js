@@ -29,10 +29,10 @@ function Recycling() {
 
           <img
             className="recycle-page-img"
-            src="/static/images/Large/Image-mobile-batteries.jpg"
-            srcset="/static/images/Large/Image-mobile-batteries-113.jpg 113w, /static/images/Large/Image-mobile-batteries-103.jpg 103w"
+            src="/static/images/jpg/Image-mobile-batteries.jpg"
+            srcSet="/static/images/jpg/Image-mobile-batteries-113.jpg 113w, /static/images/jpg/Image-mobile-batteries-103.jpg 103w"
             sizes="(min-width: 1281px) 123px,(max-width: 1280px) 113px,(max-width: 800px) 103px, (max-width: 360px) 103px, 35vw"
-            alt="recycling-family-home-green-foot-prints-com"
+            alt="mobile-batteries-green-foot-prints-com"
           />
 
           <p>

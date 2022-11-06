@@ -1,6 +1,41 @@
 import React, { useEffect } from 'react';
 import HomeSlide from '../components/HomeSlide.js';
-import siteImages from '../static/data/slider-images.json';
+
+const siteImages = [
+  {
+    id: 1,
+    imageAlt: 'recycling-advice-green-foot-prints-com',
+    imageUrl: '/static/images/slider/slider-image1-greenfootprints-com.png',
+    imageId: 'sliderimg-one',
+    title: 'Recycling',
+    caption:
+      'Award winning recycling website. Voted best recyling website 2010 and 2012',
+    link: '/recycling',
+    linktitle: 'link to recycling',
+  },
+  {
+    id: 2,
+    imageAlt: 'recycling-advice-green-foot-prints-com',
+    imageUrl: '/static/images/slider/slider-image2-greenfootprints-com.png',
+    imageId: 'sliderimg-two',
+    title: 'Reduce, Reuse, Recycle',
+    caption:
+      "There are three key factors when thinking about how to recycle &apos; The 3 R's:",
+    link: '/recyclingfacts',
+    linktitle: 'link to recycling facts',
+  },
+  {
+    id: 3,
+    imageAlt: 'recycling-advice-green-foot-prints-com',
+    imageUrl: '/static/images/slider/slider-image4-greenfootprints-com.png',
+    imageId: 'sliderimg-three',
+    title: 'Recycling Different Materials',
+    caption:
+      'You can find out how to recycle different materials such as Glass, Batteries and Mobile Phones by simply using our list by clicking button below',
+    link: '/tenways',
+    linktitle: 'link to ten ways to recycle',
+  },
+];
 
 function HomeSlider() {
   useEffect(() => {
@@ -27,7 +62,7 @@ function HomeSlider() {
       slides[slideIndex - 1].style.display = 'block';
       slides[slideIndex - 1].classList.add('fade');
 
-      setTimeout(homePageSlider, 4000); // Change image every 2 seconds
+      setTimeout(homePageSlider, 5000); // Change image every 2 seconds
     };
 
     homePageSlider();

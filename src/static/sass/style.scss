@@ -739,7 +739,7 @@
           margin: 1em 0;
           display: block;
 
-          #different-materials-list-item {
+          .different-materials-list-item {
             list-style: none;
             text-indent: 0;
             line-height: 30px;
@@ -763,7 +763,7 @@
               float: left;
             }
 
-            #different-materials-list-link {
+            .different-materials-list-link {
               font-size: 0.85em;
               width: 100%;
               text-align: left;
@@ -772,6 +772,7 @@
               height: 100%;
               display: block;
               transition: all 0.2s ease-in 0s;
+              text-decoration: none;
 
               &:hover {
                 width: 100%;
@@ -1812,10 +1813,10 @@ footer {
             margin: 1em 0;
             display: block;
 
-            #different-materials-list-item {
+            .different-materials-list-item {
               list-style: none;
               text-indent: 0;
-              line-height: 30px;
+              line-height: 40px;
               display: inline-block;
               width: 100%;
               text-align: left;
@@ -1825,26 +1826,27 @@ footer {
                 font-family: FontAwesome;
                 content: '\f1b8';
                 font-style: normal;
-                line-height: 30px;
+                line-height: 40px;
                 color: $headbg;
                 display: block;
                 padding: 0;
                 text-align: center;
                 font-size: 1em;
-                width: 30px;
+                width: 40px;
                 height: auto;
                 float: left;
               }
 
-              #different-materials-list-link {
+              .different-materials-list-link {
                 font-size: 0.9em;
                 width: 100%;
                 text-align: left;
-                line-height: 30px;
+                line-height: 40px;
                 color: $color-black;
                 height: 100%;
                 display: block;
                 transition: all 0.2s ease-in 0s;
+                text-decoration: none;
 
                 &:hover {
                   width: 100%;
@@ -2673,21 +2675,21 @@ footer {
             margin: 1em 0;
             display: block;
 
-            #different-materials-list-item {
-              line-height: 30px;
+            .different-materials-list-item {
+              line-height: 40px;
               display: inline-block;
               &::before {
                 font-family: FontAwesome;
                 content: '\f1b8';
-                line-height: 30px;
+                line-height: 40px;
                 font-size: 1em;
-                width: 30px;
+                width: 40px;
                 float: left;
               }
 
-              #different-materials-list-link {
+              .different-materials-list-link {
                 font-size: 0.9em;
-                line-height: 30px;
+                line-height: 40px;
 
                 &:hover {
                   width: 100%;
@@ -3340,14 +3342,15 @@ footer {
             margin: 1em 0;
             display: block;
 
-            #different-materials-list-item {
+            .different-materials-list-item {
               &::before {
                 font-family: FontAwesome;
                 content: '\f1b8';
                 font-size: 1em;
+                width: 40px;
               }
 
-              #different-materials-list-link {
+              .different-materials-list-link {
                 font-size: 0.9em;
 
                 &:hover {
@@ -3968,14 +3971,14 @@ footer {
             margin: 1em 0;
             display: block;
 
-            #different-materials-list-item {
+            .different-materials-list-item {
               &::before {
                 font-family: FontAwesome;
                 content: '\f1b8';
                 font-size: 1em;
               }
 
-              #different-materials-list-link {
+              .different-materials-list-link {
                 font-size: 0.9em;
 
                 &:hover {
@@ -4564,14 +4567,14 @@ footer {
           #different-materials-list {
             margin: 1em 0;
 
-            #different-materials-list-item {
+            .different-materials-list-item {
               &::before {
                 font-family: FontAwesome;
                 content: '\f1b8';
                 font-size: 1em;
               }
 
-              #different-materials-list-link {
+              .different-materials-list-link {
                 font-size: 0.9em;
 
                 &:hover {
@@ -5156,14 +5159,14 @@ footer {
             margin: 1em 0;
             display: block;
 
-            #different-materials-list-item {
+            .different-materials-list-item {
               &::before {
                 font-family: FontAwesome;
                 content: '\f1b8';
                 font-size: 1em;
               }
 
-              #different-materials-list-link {
+              .different-materials-list-link {
                 font-size: 0.9em;
 
                 &:hover {
@@ -5735,16 +5738,19 @@ footer {
             width: 100%;
             margin: 1em 0;
             display: block;
+            line-height: 30px;
 
-            #different-materials-list-item {
+            .different-materials-list-item {
               &::before {
                 font-family: FontAwesome;
                 content: '\f1b8';
                 font-size: 1em;
+                line-height: 30px;
               }
 
-              #different-materials-list-link {
+              .different-materials-list-link {
                 font-size: 0.9em;
+                line-height: 30px;
 
                 &:hover {
                   width: 100%;
@@ -6378,17 +6384,19 @@ footer {
             width: 100%;
             margin: 1em 0;
             display: block;
+            line-height: 30px;
 
-            #different-materials-list-item {
+            .different-materials-list-item {
               &::before {
                 font-family: FontAwesome;
                 content: '\f1b8';
                 font-size: 1em;
+                line-height: 30px;
               }
 
-              #different-materials-list-link {
+              .different-materials-list-link {
                 font-size: 0.9em;
-
+                line-height: 30px;
                 &:hover {
                   width: 100%;
                 }
@@ -6987,17 +6995,18 @@ footer {
             width: 100%;
             margin: 1em 0;
             display: block;
-
-            #different-materials-list-item {
+            line-height: 30px;
+            .different-materials-list-item {
               &::before {
                 font-family: FontAwesome;
                 content: '\f1b8';
                 font-size: 1em;
+                line-height: 30px;
               }
 
-              #different-materials-list-link {
+              .different-materials-list-link {
                 font-size: 0.9em;
-
+                line-height: 30px;
                 &:hover {
                   width: 100%;
                 }
@@ -7591,16 +7600,17 @@ footer {
             margin: 1em 0;
             display: block;
 
-            #different-materials-list-item {
+            .different-materials-list-item {
               &::before {
                 font-family: FontAwesome;
                 content: '\f1b8';
                 font-size: 1em;
+                line-height: 30px;
               }
 
-              #different-materials-list-link {
+              .different-materials-list-link {
                 font-size: 0.9em;
-
+                line-height: 30px;
                 &:hover {
                   width: 100%;
                 }

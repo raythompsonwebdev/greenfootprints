@@ -43,15 +43,33 @@ export default {
     }),
     new ImageMinimizerPlugin({
       minimizer: {
-        implementation: ImageMinimizerPlugin.imageminMinify,
+        //   implementation: ImageMinimizerPlugin.imageminMinify,
+        //   options: {
+        //     // Lossless optimization with custom option
+        //     // Feel free to experiment with options for better result for you
+        //     plugins: [
+        //       ['gifsicle', { interlaced: true }],
+        //       ['jpegtran', { progressive: true }],
+        //       ['optipng', { optimizationLevel: 5 }],
+        //     ],
+        //   },
+        // },
+        implementation: ImageMinimizerPlugin.squooshMinify,
         options: {
-          // Lossless optimization with custom option
-          // Feel free to experiment with options for better result for you
-          plugins: [
-            ['gifsicle', { interlaced: true }],
-            ['jpegtran', { progressive: true }],
-            ['optipng', { optimizationLevel: 5 }],
-          ],
+          encodeOptions: {
+            mozjpeg: {
+              // That setting might be close to lossless, but it’s not guaranteed
+              // https://github.com/GoogleChromeLabs/squoosh/issues/85
+              quality: 100,
+            },
+            webp: {
+              lossless: 1,
+            },
+            avif: {
+              // https://github.com/GoogleChromeLabs/squoosh/blob/dev/codecs/avif/enc/README.md
+              cqLevel: 0,
+            },
+          },
         },
       },
     }),
@@ -102,6 +120,7 @@ export default {
       // file loader for images
       {
         test: /\.(jpg|jpeg|png|gif|svg|pdf|ico)$/,
+
         type: 'asset/resource',
         use: [
           {

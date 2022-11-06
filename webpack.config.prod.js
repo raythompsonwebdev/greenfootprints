@@ -58,13 +58,33 @@ export default {
       }),
       new ImageMinimizerPlugin({
         minimizer: {
-          implementation: ImageMinimizerPlugin.imageminMinify,
+          //   implementation: ImageMinimizerPlugin.imageminMinify,
+          //   options: {
+          //     // Lossless optimization with custom option
+          //     // Feel free to experiment with options for better result for you
+          //     plugins: [
+          //       ['gifsicle', { interlaced: true }],
+          //       ['jpegtran', { progressive: true }],
+          //       ['optipng', { optimizationLevel: 5 }],
+          //     ],
+          //   },
+          // },
+          implementation: ImageMinimizerPlugin.squooshMinify,
           options: {
-            plugins: [
-              ['gifsicle', { interlaced: true }],
-              ['jpegtran', { progressive: true }],
-              ['optipng', { optimizationLevel: 5 }],
-            ],
+            encodeOptions: {
+              mozjpeg: {
+                // That setting might be close to lossless, but it’s not guaranteed
+                // https://github.com/GoogleChromeLabs/squoosh/issues/85
+                quality: 100,
+              },
+              webp: {
+                lossless: 1,
+              },
+              avif: {
+                // https://github.com/GoogleChromeLabs/squoosh/blob/dev/codecs/avif/enc/README.md
+                cqLevel: 0,
+              },
+            },
           },
         },
       }),
@@ -124,30 +144,6 @@ export default {
       {
         test: /\.(jpg|jpeg|png|gif|svg|pdf|ico|webp)$/,
         type: 'asset/resource',
-        // use: [
-        //   'file-loader',
-        //   {
-        //     loader: 'image-webpack-loader',
-        //     options: {
-        //       name: '[path][name]-[fullhash:8].[ext]',
-        //       jpegtran: {
-        //         progressive: true,
-        //         quality: 65,
-        //       },
-        //       // optipng.enabled: false will disable optipng
-        //       optipng: {
-        //         enabled: true,
-        //       },
-        //       gifsicle: {
-        //         interlaced: true,
-        //       },
-        //       // the webp option will enable WEBP
-        //       webp: {
-        //         quality: 75,
-        //       },
-        //     },
-        //   },
-        // ],
       },
     ],
   },

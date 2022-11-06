@@ -1,4 +1,3 @@
-//import { hot } from 'react-hot-loader/root';
 import React from 'react';
 
 function Whatcando() {
@@ -10,8 +9,8 @@ function Whatcando() {
           <figure id="three-rs">
             <img
               className="whatcando-image"
-              src="/static/images/Large/recycle-continuous-circle-greenfootprints-com.jpg"
-              alt="reduce-green-foot-prints-com"
+              src="/static/images/jpg/recycle-continuous-circle-greenfootprints-com.jpg"
+              alt="recycle-continuous-circle"
             />
             <figcaption>
               <h3>Reduce, Reuse, Recycle </h3>
@@ -26,8 +25,8 @@ function Whatcando() {
             <img
               className="whatcando-image"
               id="mainImageOne"
-              src="/static/images/Large/what-is-in-your-rubbish-bin.jpg"
-              alt="recycling-advice-green-foot-prints-com"
+              src="/static/images/jpg/what-is-in-your-rubbish-bin.jpg"
+              alt="what-is-in-your-rubbish-bin"
             />
             <figcaption>
               <h3>What’s in your Rubbish Bin? </h3>
@@ -52,7 +51,7 @@ function Whatcando() {
           <figure id="different-materials">
             <img
               className="whatcando-image"
-              src="/static/images/Large/gif-images/Recycling_image_1.gif"
+              src="/static/images/gif/Recycling_image_1.gif"
               alt="reduce-green-foot-prints-com"
             />
             <figcaption>
@@ -100,8 +99,8 @@ function Whatcando() {
           <figure id="recycle-ettiqutte">
             <img
               className="whatcando-image"
-              src="/static/images/Large/gif-images/family_home_page.gif"
-              alt="reduce-green-foot-prints-com"
+              src="/static/images/gif/family_home_page.gif"
+              alt="family_home_page"
             />
             <figcaption>
               <h3>Recycling Ettiquette </h3>
@@ -145,8 +144,8 @@ function Whatcando() {
             <img
               className="whatcando-image-right"
               id="mainImageTwo"
-              src="/static/images/Large/gif-images/Recycling_image_2.gif"
-              alt="recycling-advice-green-foot-prints-com"
+              src="/static/images/gif/recycling-materials-greenfootprints-com.gif"
+              alt="recycling-materials"
             />
           </figure>
           <br />

@@ -4,11 +4,11 @@ import HomeSlider from '../components/HomeSlider.js';
 import HomepageCard from '../components/HomePageCard.js';
 
 function Home() {
-  const infoData = [
+  const cardData = [
     {
       id: 1,
       imageName: 'paper-bottles',
-      imageUrl: '/static/images/Large/gif-images/recyling-guide.gif',
+      imageUrl: '/static/images/gif/recyling-guide.gif',
       alt: 'recycling-advice-green-foot-prints-com',
       imageId: 'paper-bottles',
       downloadlink:
@@ -20,7 +20,7 @@ function Home() {
     {
       id: 2,
       imageName: 'flow-chart',
-      imageUrl: '/static/images/Large/gif-images/recycling-flowchart.gif',
+      imageUrl: '/static/images/gif/recycling-flowchart.gif',
       alt: 'recycling-advice-green-foot-prints-com',
       imageId: 'flow-chart',
       downloadlink:
@@ -32,7 +32,7 @@ function Home() {
     {
       id: 3,
       imageName: 'word-search',
-      imageUrl: '/static/images/Large/gif-images/wordsearch.gif',
+      imageUrl: '/static/images/gif/wordsearch.gif',
       alt: 'recycling-advice-green-foot-prints-com',
       imageId: 'word-search',
       downloadlink:
@@ -48,7 +48,7 @@ function Home() {
       <HomeSlider />
       <main id="home-page-content">
         <div id="home-page-cards">
-          {infoData.map((card) => (
+          {cardData.map((card) => (
             <HomepageCard data={card} key={card.id} />
           ))}
         </div>

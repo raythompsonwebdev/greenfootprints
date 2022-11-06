@@ -11,7 +11,7 @@ const RecyclingFactSlide = (props) => {
       <ul className="recycling-facts-slide-list">
         {!data.list ? (
           <img
-            id="tenImageOne"
+            id="ten-image-one"
             src={data.image}
             className="recycling-facts-slide-image"
           />
