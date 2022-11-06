@@ -5,10 +5,9 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import TerserPlugin from 'terser-webpack-plugin';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
-
+import ImageMinimizerPlugin from 'image-minimizer-webpack-plugin';
+import postcssPresetEnv from 'postcss-preset-env';
 const __dirname = path.dirname(new URL(import.meta.url).pathname);
-
-const isDev = false;
 
 export default {
   mode: 'production',
@@ -26,17 +25,8 @@ export default {
   },
   optimization: {
     // splitChunks replaces CommonsChunkPlugin
-    runtimeChunk: false,
     splitChunks: {
-      cacheGroups: {
-        default: false,
-        commons: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendor_app',
-          chunks: 'all',
-          minChunks: 2,
-        },
-      },
+      chunks: 'all',
     },
     minimize: true,
     minimizer: [
@@ -66,6 +56,18 @@ export default {
           safari10: false,
         },
       }),
+      new ImageMinimizerPlugin({
+        minimizer: {
+          implementation: ImageMinimizerPlugin.imageminMinify,
+          options: {
+            plugins: [
+              ['gifsicle', { interlaced: true }],
+              ['jpegtran', { progressive: true }],
+              ['optipng', { optimizationLevel: 5 }],
+            ],
+          },
+        },
+      }),
       new CssMinimizerPlugin(),
     ],
   },
@@ -88,66 +90,64 @@ export default {
         loader: 'html-loader',
       },
       {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
-      },
-      {
-        test: /\.css$|sass$|\.scss$/,
+        test: /\.(scss|css)$/,
         use: [
           MiniCssExtractPlugin.loader,
+          //'style-loader',
+          'css-loader',
           {
-            loader: 'css-loader',
+            loader: 'postcss-loader',
             options: {
-              sourceMap: isDev,
+              postcssOptions: {
+                plugins: [
+                  postcssPresetEnv({
+                    /* use stage 3 features + css nesting rules */
+                    stage: 3,
+                    features: {
+                      'nesting-rules': true,
+                    },
+                  }),
+                ],
+              },
             },
           },
-          // {
-          //   loader: 'postcss-loader',
-          // },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: isDev,
-            },
-          },
+          'sass-loader',
         ],
       },
       // file loader for fonts
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        type: 'asset/resource',
         use: ['file-loader'],
       },
       // file loader for images
       {
-        test: /\.(jpg|jpeg|png|gif|svg|pdf|ico)$/,
-        use: [
-          'file-loader',
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              name: '[path][name]-[fullhash:8].[ext]',
-              mozjpeg: {
-                progressive: true,
-                quality: 65,
-              },
-              // optipng.enabled: false will disable optipng
-              optipng: {
-                enabled: false,
-              },
-              pngquant: {
-                quality: [0.65, 0.9],
-                speed: 4,
-              },
-              gifsicle: {
-                interlaced: false,
-              },
-              // the webp option will enable WEBP
-              webp: {
-                quality: 75,
-              },
-            },
-          },
-        ],
+        test: /\.(jpg|jpeg|png|gif|svg|pdf|ico|webp)$/,
+        type: 'asset/resource',
+        // use: [
+        //   'file-loader',
+        //   {
+        //     loader: 'image-webpack-loader',
+        //     options: {
+        //       name: '[path][name]-[fullhash:8].[ext]',
+        //       jpegtran: {
+        //         progressive: true,
+        //         quality: 65,
+        //       },
+        //       // optipng.enabled: false will disable optipng
+        //       optipng: {
+        //         enabled: true,
+        //       },
+        //       gifsicle: {
+        //         interlaced: true,
+        //       },
+        //       // the webp option will enable WEBP
+        //       webp: {
+        //         quality: 75,
+        //       },
+        //     },
+        //   },
+        // ],
       },
     ],
   },

@@ -48,6 +48,7 @@ export default {
           // Lossless optimization with custom option
           // Feel free to experiment with options for better result for you
           plugins: [
+            ['gifsicle', { interlaced: true }],
             ['jpegtran', { progressive: true }],
             ['optipng', { optimizationLevel: 5 }],
           ],
@@ -71,10 +72,8 @@ export default {
       {
         test: /\.(scss|css)$/,
         use: [
-          //MiniCssExtractPlugin.loader,
           'style-loader',
           'css-loader',
-          //'postcss-loader',
           {
             loader: 'postcss-loader',
             options: {
