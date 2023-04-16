@@ -57,6 +57,7 @@ test/
 .settings/
 .vscode/
 
+src/static/data/
 src/static/images/
 src/static/images/slider/
 src/static/fonts/
@@ -69,7 +70,8 @@ src/css/sass/partials/_fonts.css
 src/css/sass/partials/_mixins.css
 src/css/sass/partials/_variables.css
 
-public/static/
+public/fonts/
+public/images/
 buildScripts/generateMockData.js
 buildScripts/mockDataSchema.js
 buildScripts/testSetup.js

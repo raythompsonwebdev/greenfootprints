@@ -1,7 +1,7 @@
 //import { hot } from 'react-hot-loader/root';
 import React, { useEffect } from 'react';
 import CollectionSlide from '../components/CollectionSlide.js';
-import CollectionData from '../static/data/collections.json';
+import collectionData from '../collectionData.js';
 
 const Collections = () => {
   useEffect(() => {
@@ -58,7 +58,7 @@ const Collections = () => {
         <h2 className="content-title">Collections &amp; Sorting</h2>
         <div id="collection-slides">
           <div className="mask">
-            {CollectionData.map((slide) => (
+            {collectionData.map((slide) => (
               <CollectionSlide
                 data={slide}
                 key={slide.id}

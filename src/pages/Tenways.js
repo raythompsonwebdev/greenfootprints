@@ -1,7 +1,7 @@
 //import { hot } from 'react-hot-loader/root';
 import React, { useEffect } from 'react';
 import TenwaysSlide from '../components/TenwaysSlide.js';
-import TenWaysData from '../static/data/tenways.json';
+import tenwaysData from '../tenwaysData.js';
 
 function TenWays() {
   useEffect(() => {
@@ -54,7 +54,7 @@ function TenWays() {
         <h2 className="content-title">10 Ways to recycle</h2>
         <div id="tenways-slides">
           <div className="mask">
-            {TenWaysData.map((slide) => (
+            {tenwaysData.map((slide) => (
               <TenwaysSlide
                 data={slide}
                 key={slide.id}

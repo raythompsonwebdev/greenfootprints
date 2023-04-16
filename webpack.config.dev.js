@@ -20,6 +20,7 @@ export default {
     path: path.join(__dirname, '..', 'public'),
     filename: 'js/[name].bundle.[fullhash].js',
     chunkFilename: 'chunks/[name].chunk.[fullhash].js',
+    publicPath: '/',
   },
 
   plugins: [
@@ -38,43 +39,36 @@ export default {
     }),
     new StyleLintPlugin({
       configFile: './.stylelintrc.json',
-      files: './src/static/sass/*.scss',
+      files: './src/sass/*.scss',
       fix: true,
     }),
-    new ImageMinimizerPlugin({
-      minimizer: {
-        //   implementation: ImageMinimizerPlugin.imageminMinify,
-        //   options: {
-        //     // Lossless optimization with custom option
-        //     // Feel free to experiment with options for better result for you
-        //     plugins: [
-        //       ['gifsicle', { interlaced: true }],
-        //       ['jpegtran', { progressive: true }],
-        //       ['optipng', { optimizationLevel: 5 }],
-        //     ],
-        //   },
-        // },
-        implementation: ImageMinimizerPlugin.squooshMinify,
-        options: {
-          encodeOptions: {
-            mozjpeg: {
-              // That setting might be close to lossless, but it’s not guaranteed
-              // https://github.com/GoogleChromeLabs/squoosh/issues/85
-              quality: 100,
-            },
-            webp: {
-              lossless: 1,
-            },
-            avif: {
-              // https://github.com/GoogleChromeLabs/squoosh/blob/dev/codecs/avif/enc/README.md
-              cqLevel: 0,
+  ],
+  optimization: {
+    minimizer: [
+      '...',
+      new ImageMinimizerPlugin({
+        minimizer: {
+          implementation: ImageMinimizerPlugin.squooshMinify,
+          options: {
+            encodeOptions: {
+              mozjpeg: {
+                // That setting might be close to lossless, but it’s not guaranteed
+                // https://github.com/GoogleChromeLabs/squoosh/issues/85
+                quality: 100,
+              },
+              webp: {
+                lossless: 1,
+              },
+              avif: {
+                // https://github.com/GoogleChromeLabs/squoosh/blob/dev/codecs/avif/enc/README.md
+                cqLevel: 0,
+              },
             },
           },
         },
-      },
-    }),
-    // new webpack.HotModuleReplacementPlugin(),
-  ],
+      }),
+    ],
+  },
   module: {
     rules: [
       {
@@ -140,8 +134,8 @@ export default {
   resolve: {
     extensions: ['*', '.js', '.jsx'],
     alias: {
-      Images: path.resolve(__dirname, './src/static/images/'),
-      Fonts: path.resolve(__dirname, './src/static/fonts/'),
+      Images: path.resolve(__dirname, './public/images/'),
+      Fonts: path.resolve(__dirname, './public/fonts/'),
     },
   },
 };

@@ -1,7 +1,7 @@
 //import { hot } from 'react-hot-loader/root';
 import React, { useEffect } from 'react';
 import RecyclingFactSlide from '../components/RecyclingFactSlide.js';
-import RecyclingFactsData from '../static/data/recyclingfacts.json';
+import recyclingfactsData from '../recyclingfactsData.js';
 
 function RecyclingFacts() {
   useEffect(() => {
@@ -55,7 +55,7 @@ function RecyclingFacts() {
 
         <div id="recycling-facts-slides">
           <div className="mask">
-            {RecyclingFactsData.map((slide) => (
+            {recyclingfactsData.map((slide) => (
               <RecyclingFactSlide
                 data={slide}
                 key={slide.id}

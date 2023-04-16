@@ -7,7 +7,7 @@ function Header() {
       <figure id="logo">
         <img
           id="logo-image"
-          src="/static/images/gif/logo-greenfootprints-com.gif"
+          src="/images/gif/logo-greenfootprints-com.gif"
           alt="greenfootprints logo"
         />
       </figure>

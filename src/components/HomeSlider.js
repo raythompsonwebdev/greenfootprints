@@ -5,7 +5,7 @@ const siteImages = [
   {
     id: 1,
     imageAlt: 'recycling-advice-green-foot-prints-com',
-    imageUrl: '/static/images/slider/slider-image1-greenfootprints-com.png',
+    imageUrl: '/images/slider/slider-image1-greenfootprints-com.png',
     imageId: 'sliderimg-one',
     title: 'Recycling',
     caption:
@@ -16,7 +16,7 @@ const siteImages = [
   {
     id: 2,
     imageAlt: 'recycling-advice-green-foot-prints-com',
-    imageUrl: '/static/images/slider/slider-image2-greenfootprints-com.png',
+    imageUrl: '/images/slider/slider-image2-greenfootprints-com.png',
     imageId: 'sliderimg-two',
     title: 'Reduce, Reuse, Recycle',
     caption:
@@ -27,7 +27,7 @@ const siteImages = [
   {
     id: 3,
     imageAlt: 'recycling-advice-green-foot-prints-com',
-    imageUrl: '/static/images/slider/slider-image4-greenfootprints-com.png',
+    imageUrl: '/images/slider/slider-image4-greenfootprints-com.png',
     imageId: 'sliderimg-three',
     title: 'Recycling Different Materials',
     caption:
