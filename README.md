@@ -1,21 +1,22 @@
 ![https://www.greenfootprints.raythompsonwebdev.co.uk](/_assets/www-greenfootprints-home-page-large.png)
 
 # GreenFootPrints
-## History
 
-Web application is based on a website brief I was given to build a website from for a city and guilds exam in web design I took in 2012. I used Javascript Starter Kit by Cory House from Pluralsight video tutorial as starter point and updated packages. 
+## Description
 
-The task was that I was a member of a local recycling company "Green FootPrints " based in Essex and you have been asked to set up a simple website consisting of 3 pages to advertise what the company has to offer. 
+Web application is based on a website brief I was given to build a website from for a city and guilds exam in web design I took in 2012. I used Javascript Starter Kit by Cory House from Pluralsight video tutorial as starter point and updated packages.
+
+The task was that I was a member of a local recycling company "Green FootPrints " based in Essex and you have been asked to set up a simple website consisting of 3 pages to advertise what the company has to offer.
 
 I was given a few guidelines outlining requirements. see [Website brief](https://drive.google.com/open?id=1qWS7W83edL72MfMZc3ILgJejs1nAV3ft).
 
 Greenfootprints.com is a single page web application built using coding languages HTML, CSS and Javascript.
 
-Web application has a ES6 module design pattern that allows additional functionality to be added easliy. 
+Web application has a ES6 module design pattern that allows additional functionality to be added easliy.
 
-## Build Tools
+## Tools
 
-- [React 18](https://react.js.org/)
+- [React](https://react.js.org/)
 - [Webpack](https://webpack.js.org/)
 - [Babel](https://babeljs.io/)
 - [ESLInt](https://eslint.org/)
@@ -26,7 +27,6 @@ Web application has a ES6 module design pattern that allows additional functiona
 - [PostCSS](https://postcss.org/)
 - [Chalk](https://www.npmjs.com/package/chalk)
 - [Node Sass](https://www.npmjs.com/package/node-sass)
-
 
 Greenfootprints requires [Node.js](https://nodejs.org/) v10+ to run.
 
@@ -43,6 +43,7 @@ Start development server :
 ```sh
 $ npm run start
 ```
+
 Run production build :
 
 ```sh
@@ -77,13 +78,9 @@ SOFTWARE.
 
 ## Credits
 
-- Cory House Pluralsight.com Course 
+- Cory House Pluralsight.com Course
 - Building a JavaScript Development Environment : https://www.pluralsight.com/courses/javascript-development-environment
 
-### API for JS Dev Env Demo in Pluralsight course forked from: 
+### API for JS Dev Env Demo in Pluralsight course forked from:
+
 https://github.com/coryhouse/js-dev-env-demo-api
-
-
-
-
-
