@@ -6,7 +6,7 @@ import webpack from 'webpack';
 import middleware from 'webpack-dev-middleware';
 import webmiddleware from 'webpack-dev-middleware';
 import path from 'path';
-import config from './webpack.config.dev.js';
+import config from '../webpack.config.dev.js';
 
 const compiler = webpack(config);
 
@@ -24,7 +24,7 @@ app.use(
 );
 
 // content to be served from
-const publicPath = path.join(__dirname, '/public');
+const publicPath = path.join(__dirname, '../public');
 
 app.use(
   history({
