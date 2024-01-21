@@ -1,12 +1,14 @@
 //import fs from "fs";
 import express from 'express';
-import { createServer } from 'http';
+// import { createServer } from 'http';
 import history from 'connect-history-api-fallback';
 import webpack from 'webpack';
 import middleware from 'webpack-dev-middleware';
 import webmiddleware from 'webpack-dev-middleware';
 import path from 'path';
 import config from '../webpack.config.dev.js';
+
+import rateLimit from 'express-rate-limit';
 
 const compiler = webpack(config);
 
@@ -34,6 +36,17 @@ app.use(
 
 app.use(middleware(compiler));
 
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  limit: 100, // Limit each IP to 100 requests per `window` (here, per 15 minutes).
+  standardHeaders: 'draft-7', // draft-6: `RateLimit-*` headers; draft-7: combined `RateLimit` header
+  legacyHeaders: false, // Disable the `X-RateLimit-*` headers.
+  // store: ... , // Use an external store for consistency across multiple server instances.
+});
+
+// Apply the rate limiting middleware to all requests
+app.use(limiter);
+
 // Static assets
 const staticMiddleware = express.static(publicPath);
 
@@ -44,8 +57,8 @@ app.get('/', (req, res) => {
   res.sendFile(publicPath + '/index.html');
 });
 
-const httpServer = createServer(app);
+// const httpServer = createServer(app);
 
-httpServer.listen(PORT, () => {
+app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`);
 });
