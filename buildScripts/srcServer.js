@@ -7,7 +7,6 @@ import middleware from 'webpack-dev-middleware';
 import webmiddleware from 'webpack-dev-middleware';
 import path from 'path';
 import config from '../webpack.config.dev.js';
-
 import rateLimit from 'express-rate-limit';
 
 const compiler = webpack(config);
@@ -16,25 +15,6 @@ const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
 const PORT = process.env.PORT || 3000;
 const app = express();
-
-// integrate webpack with express using middleware
-app.use(
-  webmiddleware(compiler, {
-    // noInfo: true,
-    publicPath: config.output.publicPath,
-  })
-);
-
-// content to be served from
-const publicPath = path.join(__dirname, '../public');
-
-app.use(
-  history({
-    verbose: true,
-  })
-);
-
-app.use(middleware(compiler));
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
@@ -47,14 +27,31 @@ const limiter = rateLimit({
 // Apply the rate limiting middleware to all requests
 app.use(limiter);
 
-// Static assets
-const staticMiddleware = express.static(publicPath);
+// integrate webpack with express using middleware
+app.use(
+  webmiddleware(compiler, {
+    // noInfo: true,
+    publicPath: config.output.publicPath,
+  })
+);
 
-app.use(staticMiddleware);
+// content to be served from
+// const publicPath = path.join(__dirname + '/public');
+
+app.use(
+  history({
+    verbose: true,
+  })
+);
+
+app.use(middleware(compiler));
+
+// Static assets
+app.use(express.static(path.join(__dirname + '/public')));
 
 // Serve index on homepage
 app.get('/', (req, res) => {
-  res.sendFile(publicPath + '/index.html');
+  res.sendFile(path.join(__dirname + '/build/index.html'));
 });
 
 // const httpServer = createServer(app);

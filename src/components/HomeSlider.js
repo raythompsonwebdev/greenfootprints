@@ -5,7 +5,7 @@ const siteImages = [
   {
     id: 1,
     imageAlt: 'recycling-advice-green-foot-prints-com',
-    imageUrl: '/images/slider/slider-image1-greenfootprints-com.png',
+    imageUrl: '/static/images/webp/slider-image2-greenfootprints-com.webp',
     imageId: 'sliderimg-one',
     title: 'Recycling',
     caption:
@@ -16,7 +16,7 @@ const siteImages = [
   {
     id: 2,
     imageAlt: 'recycling-advice-green-foot-prints-com',
-    imageUrl: '/images/slider/slider-image2-greenfootprints-com.png',
+    imageUrl: '/static/images/slider/slider-image3-greenfootprints-com.png',
     imageId: 'sliderimg-two',
     title: 'Reduce, Reuse, Recycle',
     caption:
