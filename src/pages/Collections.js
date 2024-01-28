@@ -81,6 +81,10 @@ const Collections = () => {
       // get html collection
       const slides = document.getElementsByClassName('collection-slide');
 
+      if(slides === undefined){
+        return false;
+      }
+
       //convert html collection into an array.
       const slideArray = Array.from(slides);
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function HomeSlide(props) {
-  const { data } = { ...props };
+function HomeSlide({ data }) {
+
   const { caption, imageAlt, imageId, imageUrl, link, linktitle, title } = data;
 
   return (

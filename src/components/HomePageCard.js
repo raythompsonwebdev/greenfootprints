@@ -1,8 +1,6 @@
 import React from 'react';
-//import { Link } from 'react-router-dom';
 
-function HomePageCard(props) {
-  const { data } = { ...props };
+function HomePageCard({ data }) {
 
   return (
     <article className="home-page-card">

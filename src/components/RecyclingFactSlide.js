@@ -1,23 +1,22 @@
-//import { hot } from 'react-hot-loader/root';
 import React from 'react';
 
-const RecyclingFactSlide = (props) => {
-  const { data, classname } = { ...props };
-
+const RecyclingFactSlide = ({ data, classname } ) => {
+  const {title,text,image, alt,list} = {...data};
   return (
     <article className={classname}>
-      <h3 className="recycling-facts-slide-title">{data.title}</h3>
-      <p className="recycling-facts-slide-text">{data.text}</p>
+      <h3 className="recycling-facts-slide-title">{title}</h3>
+      <p className="recycling-facts-slide-text">{text}</p>
       <ul className="recycling-facts-slide-list">
-        {!data.list ? (
+        {!list ? (
           <img
             id="ten-image-one"
-            src={data.image}
+            src={image}
             className="recycling-facts-slide-image"
+            alt={alt}
           />
         ) : (
-          data.list.map((listitem, index) => (
-            <li key={index} className="recycling-facts-slide-list-item">
+          list.map((listitem, indx) => (
+            <li key={indx} className="recycling-facts-slide-list-item">
               {listitem.text}
             </li>
           ))

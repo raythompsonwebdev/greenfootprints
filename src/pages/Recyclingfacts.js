@@ -137,6 +137,10 @@ function RecyclingFacts() {
       // let i;
       const slides = document.getElementsByClassName('recycling-facts-slide');
 
+      if(slides === undefined){
+        return false;
+      }
+
       //convert html collection into an array.
       const slideArray = Array.from(slides);
 
@@ -183,7 +187,7 @@ function RecyclingFacts() {
             {recyclingfactsData.map((slide) => (
               <RecyclingFactSlide
                 data={slide}
-                key={slide.id}
+                key={slide}
                 classname="recycling-facts-slide"
               />
             ))}

@@ -38,8 +38,8 @@ function Recycling() {
           <p>
             Recyclable materials include many kinds of glass, paper, metal,
             plastic, textiles, and electronics. Although similar in effect, the
-            composting or other reuse of biodegradable waste – such as food or
-            garden waste – is not typically considered recycling.{' '}
+            composting or other reuse of biodegradable waste - such as food or
+            garden waste - is not typically considered recycling.{' '}
           </p>
 
           <p>

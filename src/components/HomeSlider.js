@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import HomeSlide from '../components/HomeSlide.js';
-import sliderImageTwo from '../static/images/webp/slider-image2-greenfootprints-com.webp';
-import sliderImageThree from '../static/images/webp/slider-image3-greenfootprints-com.webp';
-import sliderImageFour from '../static/images/webp/slider-image4-greenfootprints-com.webp';
+import sliderImageTwo from '../static/images/slider/slider-image2-greenfootprints-com.png';
+import sliderImageThree from '../static/images/slider/slider-image3-greenfootprints-com.png';
+import sliderImageFour from '../static/images/slider/slider-image4-greenfootprints-com.png';
 
 const siteImages = [
   {
-    id: 1,
+    id: 0,
     imageAlt: 'recycling-advice-green-foot-prints-com',
     imageUrl: sliderImageTwo,
     imageId: 'sliderimg-one',
@@ -17,7 +17,7 @@ const siteImages = [
     linktitle: 'link to recycling',
   },
   {
-    id: 2,
+    id: 1,
     imageAlt: 'recycling-advice-green-foot-prints-com',
     imageUrl: sliderImageThree,
     imageId: 'sliderimg-two',
@@ -28,7 +28,7 @@ const siteImages = [
     linktitle: 'link to recycling facts',
   },
   {
-    id: 3,
+    id: 2,
     imageAlt: 'recycling-advice-green-foot-prints-com',
     imageUrl: sliderImageFour,
     imageId: 'sliderimg-three',
@@ -42,26 +42,35 @@ const siteImages = [
 
 function HomeSlider() {
   useEffect(() => {
+
+    let slideIndex = 0;
     const homePageSlider = () => {
-      let slideIndex = 0;
-      let i;
 
       const slides = document.getElementsByClassName('sliders');
 
+      if(!slides){
+        return false;
+      }
       // eslint-disable-next-line no-plusplus
-      for (i = 0; i < slides.length; i++) {
+      for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = 'none';
       }
 
       // eslint-disable-next-line no-plusplus
       slideIndex++;
+
       if (slideIndex > slides.length) {
         slideIndex = 1;
       }
 
-      slides[slideIndex - 1].style.display = 'block';
+      if(slides === undefined){
+        slideIndex = 0;
+      }else{
+        slides[slideIndex - 1].style.display = 'block';
+        setTimeout(homePageSlider, 4000); // Change image every 4 seconds
+      }
 
-      setTimeout(homePageSlider, 8000); // Change image every 2 seconds
+
     };
 
     homePageSlider();
