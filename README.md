@@ -31,7 +31,7 @@ $ npm install
 
 ## Usage
 
-Start development server :
+Start development server :-
 
 ```sh
 $ npm run start
