@@ -17,7 +17,7 @@ function SocialMediaLink() {
             href="https://www.facebook.com"
             title="Follow us on Facebook"
             target="blank">
-            <i className="fa fa-facebook"> </i>
+            <i className="fa-facebook"> </i>
           </a>
         </li>
         <li className="socials-container-link">
@@ -25,7 +25,7 @@ function SocialMediaLink() {
             href="https://www.google.com"
             title="Follow us on Google+"
             target="blank">
-            <i className="fa fa-google"> </i>
+            <i className="fa-google"> </i>
           </a>
         </li>
         <li className="socials-container-link">
@@ -33,7 +33,7 @@ function SocialMediaLink() {
             href="https://www.instagram.com"
             title="Follow us on Instagram"
             target="blank">
-            <i className="fa fa-instagram"> </i>
+            <i className="fa-instagram"> </i>
           </a>
         </li>
       </ul>

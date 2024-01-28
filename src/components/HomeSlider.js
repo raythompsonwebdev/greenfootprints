@@ -1,22 +1,26 @@
 import React, { useEffect } from 'react';
 import HomeSlide from '../components/HomeSlide.js';
+import sliderImageTwo from '../static/images/slider/slider-image2-greenfootprints-com.png';
+import sliderImageThree from '../static/images/slider/slider-image3-greenfootprints-com.png';
+import sliderImageFour from '../static/images/slider/slider-image4-greenfootprints-com.png';
 
 const siteImages = [
   {
-    id: 1,
+    id: 0,
     imageAlt: 'recycling-advice-green-foot-prints-com',
-    imageUrl: '/static/images/webp/slider-image2-greenfootprints-com.webp',
+    imageUrl: sliderImageTwo,
     imageId: 'sliderimg-one',
     title: 'Recycling',
     caption:
       'Award winning recycling website. Voted best recyling website 2010 and 2012',
     link: '/recycling',
     linktitle: 'link to recycling',
+
   },
   {
-    id: 2,
+    id: 1,
     imageAlt: 'recycling-advice-green-foot-prints-com',
-    imageUrl: '/static/images/slider/slider-image3-greenfootprints-com.png',
+    imageUrl: sliderImageThree,
     imageId: 'sliderimg-two',
     title: 'Reduce, Reuse, Recycle',
     caption:
@@ -25,9 +29,9 @@ const siteImages = [
     linktitle: 'link to recycling facts',
   },
   {
-    id: 3,
+    id: 2,
     imageAlt: 'recycling-advice-green-foot-prints-com',
-    imageUrl: '/images/slider/slider-image4-greenfootprints-com.png',
+    imageUrl: sliderImageFour,
     imageId: 'sliderimg-three',
     title: 'Recycling Different Materials',
     caption:
@@ -39,30 +43,42 @@ const siteImages = [
 
 function HomeSlider() {
   useEffect(() => {
-    let slideIndex = 0;
 
+    let slideIndex = 0;
     const homePageSlider = () => {
+
       let i;
 
-      const slides = document.getElementsByClassName('sliders');
+      const slides = Array.from(document.getElementsByClassName('sliders'));
 
-      //convert html collection into an array.
-      const slideArray = Array.from(slides);
-
-      slideArray.forEach((slides) => {
-        slides.style.display = 'none';
-      });
+      if(slides === undefined){
+        return false;
+      }
+      // eslint-disable-next-line no-plusplus
+      for (i = 0; i < slides.length; i++) {
+        if(slides[i]){
+          slides[i].style.display = 'none';
+        }
+      }
 
       // eslint-disable-next-line no-plusplus
       slideIndex++;
+
       if (slideIndex > slides.length) {
         slideIndex = 1;
       }
 
-      slides[slideIndex - 1].style.display = 'block';
-      slides[slideIndex - 1].classList.add('fade');
 
-      setTimeout(homePageSlider, 5000); // Change image every 2 seconds
+        if(slides[slideIndex - 1] !== undefined){
+           slides[slideIndex - 1].style.display = 'block' }
+        else{
+          slides[i].style.display = 'none';
+        }
+
+        setTimeout(homePageSlider, 4000); // Change image every 4 seconds
+
+
+
     };
 
     homePageSlider();

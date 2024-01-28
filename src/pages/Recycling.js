@@ -1,5 +1,5 @@
-//import { hot } from 'react-hot-loader/root';
 import React from 'react';
+import mobileBatteries from '../static/images/JPG/Image-mobile-batteries.jpg';
 
 function Recycling() {
   return (
@@ -29,17 +29,17 @@ function Recycling() {
 
           <img
             className="recycle-page-img"
-            src="/images/jpg/Image-mobile-batteries.jpg"
-            srcSet="/images/jpg/Image-mobile-batteries-113.jpg 113w, /images/jpg/Image-mobile-batteries-103.jpg 103w"
-            sizes="(min-width: 1281px) 123px,(max-width: 1280px) 113px,(max-width: 800px) 103px, (max-width: 360px) 103px, 35vw"
+            src={mobileBatteries}
+            // srcSet="../static/images/JPG/Image-mobile-batteries-113.jpg 113w, ../static/images/JPG/Image-mobile-batteries-103.jpg 103w"
+            // sizes="(min-width: 1281px) 123px,(max-width: 1280px) 113px,(max-width: 800px) 103px, (max-width: 360px) 103px, 35vw"
             alt="mobile-batteries-green-foot-prints-com"
           />
 
           <p>
             Recyclable materials include many kinds of glass, paper, metal,
             plastic, textiles, and electronics. Although similar in effect, the
-            composting or other reuse of biodegradable waste – such as food or
-            garden waste – is not typically considered recycling.{' '}
+            composting or other reuse of biodegradable waste - such as food or
+            garden waste - is not typically considered recycling.{' '}
           </p>
 
           <p>

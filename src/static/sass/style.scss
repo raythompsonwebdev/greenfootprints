@@ -2,6 +2,7 @@
 @import 'partials/variables';
 @import 'partials/base';
 
+
 // main container
 #main-wrapper {
   width: 100%;
@@ -284,21 +285,15 @@
           .slider-caption-image {
             display: block;
             width: auto;
-            float: none;
-            position: absolute;
-            z-index: -2;
-            left: 0;
-            top: 0;
           }
 
           .slider-caption {
-            position: relative;
-            z-index: -1;
             width: 100%;
             text-align: center;
             height: auto;
+            float:right;
             color: $color-white;
-            margin: 1em auto;
+
 
             .slider-caption-title {
               font-size: 1.1em;
@@ -504,13 +499,12 @@
       }
 
       h3 {
-        -ms-flex-item-align: center;
         align-self: center;
         color: $colortxt;
         background-color: $bgcolor;
         margin: 0;
         text-align: center;
-        font-size: 0.95em;
+        font-size: 0.9em;
         line-height: 40px;
         display: block;
         clear: both;
@@ -878,7 +872,7 @@
           line-height: 1.5em;
           font-size: 0.75em;
           margin: 0;
-          white-space: pre-wrap;
+          white-space: wrap;
         }
       }
 
@@ -917,7 +911,7 @@
           list-style: none;
           margin: 1em auto;
           padding: 0;
-          width: 85%;
+          width: 95%;
 
           .recycling-facts-slide-list-item {
             list-style: none;
@@ -980,7 +974,7 @@
           line-height: 1.5em;
           width: auto;
           display: block;
-          white-space: pre-wrap;
+          white-space: wrap;
         }
       }
 
@@ -1016,6 +1010,7 @@
         font-size: 20px;
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
+        border:none;
         z-index: 10;
         left: 0;
         text-decoration: none;
@@ -1037,6 +1032,7 @@
         border-radius: 0 3px 3px 0;
         z-index: 10;
         text-decoration: none;
+        border:none;
       }
 
       .facts-next:active,
@@ -1153,7 +1149,7 @@ footer {
     margin: auto;
 
     #site-title {
-      width: 25%;
+      width: 30%;
       flex: 0 0 auto;
 
       #logo-title {
@@ -1191,7 +1187,7 @@ footer {
 
     /* social media icons */
     #socials {
-      width: 15%;
+      width: 20%;
       height: 45px;
       margin: 0;
       flex: 0 0 auto;
@@ -1378,27 +1374,25 @@ footer {
 
             .slider-caption-image {
               display: block;
-              width: auto;
-              float: left;
+              width: 20%;
               margin: 0;
-              position: unset;
+
             }
 
             .slider-caption {
-              float: right;
-              width: 70%;
               text-align: center;
+              width: 60%;
               height: auto;
-              color: $color-white;
+              float:right;
 
               .slider-caption-title {
-                font-size: 2.23em;
+                font-size: 2em;
                 line-height: 80px;
                 font-family: $fontList;
               }
 
               .slider-caption-text {
-                font-size: 1.1em;
+                font-size: 1em;
                 line-height: 1.8em;
                 width: 90%;
               }
@@ -1465,8 +1459,9 @@ footer {
             margin: 0 0.25em 0 0;
             width: 100%;
             display: flex;
-            align-items: flex-start;
-            flex-flow: row;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column;
 
             #paper-bottles,
             #flow-chart,
@@ -1579,11 +1574,8 @@ footer {
           color: $colortxt;
           background-color: $bgcolor;
           text-align: center;
-          font-size: 1.15em;
+          font-size: 1em;
           line-height: 40px;
-          display: block;
-          clear: both;
-          font-weight: bold;
           margin: 0 auto;
         }
 
@@ -1593,7 +1585,7 @@ footer {
           margin: 0;
           color: $color-black;
           line-height: 1.7em;
-          font-size: 1em;
+          font-size: 0.9em;
         }
       }
 
@@ -1920,7 +1912,7 @@ footer {
           width: 100%;
           height: 100%;
           margin: 0;
-          padding: 0 3em;
+          padding: 0;
           overflow: auto;
           background: $color-white;
 
@@ -1944,19 +1936,18 @@ footer {
             color: $color-black;
             background-color: $colortxtbg;
             line-height: 1.5em;
-            font-size: 1.1em;
+            font-size: 1em;
             margin: 0;
           }
         }
 
         .recycling-facts-slide {
-          padding: 0 3em;
+          padding: 0.25em 4em;
           width: 100%;
           height: 100%;
           position: absolute;
           z-index: 2;
           background: $color-white;
-          margin: 0.5em;
 
           .recycling-facts-slide-text {
             font-size: 1.2em;
@@ -1977,7 +1968,7 @@ footer {
             list-style: none;
             margin: 1em auto;
             padding: 0;
-            width: 85%;
+            width: 95%;
 
             .recycling-facts-slide-list-item {
               list-style: none;
@@ -1985,7 +1976,7 @@ footer {
               display: block;
               width: 100%;
               text-align: left;
-              font-size: 1.2em;
+              font-size: 1em;
               height: auto;
               clear: left;
 
@@ -2013,18 +2004,17 @@ footer {
           width: 100%;
           min-height: 225px;
           height: auto;
-          margin: 0.5em;
-          box-sizing: border-box;
-          padding: 0 2.5em;
+          margin: 0;
+          padding: 0.5em 4em;
           background: $color-white;
 
           .tenways-slide-title {
-            line-height: 60px;
-            font-size: 1.3em;
+            line-height: 45px;
+            font-size: 1.2em;
           }
 
           .tenways-slide-text {
-            font-size: 1.1em;
+            font-size: 1em;
             background-color: $colortxtbg;
             line-height: 1.5em;
           }
@@ -2176,14 +2166,14 @@ footer {
   }
 }
 
-@media screen and (min-width: 1441px) and (max-width: 1920px) {
+@media screen and (min-width: 960px) and (max-width: 1920px) {
   #mobile-toggle {
     display: none;
   }
 
   // main container
   #main-wrapper {
-    width: 85%;
+    width: 90%;
   }
 
   nav div {
@@ -2206,7 +2196,7 @@ footer {
     height: 100px;
 
     #site-title {
-      width: 25%;
+      width: 30%;
       flex: 0 0 auto;
 
       #logo-title {
@@ -2233,7 +2223,7 @@ footer {
 
     /* social media icons */
     #socials {
-      width: 15%;
+      width: 20%;
       height: 45px;
       flex: 0 0 auto;
 
@@ -2342,23 +2332,21 @@ footer {
             height: 100%;
 
             .slider-caption-image {
-              float: left;
               margin: 0;
-              position: unset;
+              width:20%;
             }
 
             .slider-caption {
-              float: right;
-              width: 70%;
+              width: 60%;
               height: auto;
-
+              float:right;
               .slider-caption-title {
-                font-size: 2.23em;
-                line-height: 80px;
+                font-size: 2em;
+                line-height: 50px;
               }
 
               .slider-caption-text {
-                font-size: 1.1em;
+                font-size: 1em;
                 line-height: 1.8em;
                 width: 90%;
               }
@@ -2391,8 +2379,6 @@ footer {
 
         .home-page-card {
           width: 31.5%;
-
-          // background-color: $honecolor;
           margin: 0.25em;
           padding: 0.25em;
           flex: 1 0 auto;
@@ -2408,8 +2394,9 @@ footer {
           .home-page-card-image {
             margin: 0 0.25em 0 0;
             display: flex;
-            align-items: flex-start;
-            flex-flow: row;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column;
 
             #paper-bottles,
             #flow-chart,
@@ -2459,7 +2446,7 @@ footer {
 
       .content-title {
         margin: 0 auto;
-        font-size: 1.8em;
+        font-size: 1.5em;
         line-height: 60px;
       }
 
@@ -2482,14 +2469,13 @@ footer {
         h3 {
           -ms-flex-item-align: center;
           align-self: center;
-          font-size: 1.15em;
+          font-size: 1em;
           line-height: 40px;
         }
 
         p {
           padding: 0.25em;
-          line-height: 1.7em;
-          font-size: 1em;
+          font-size: 0.9em;
         }
       }
 
@@ -2749,11 +2735,12 @@ footer {
 
         .collection-slide {
           z-index: 1;
-          padding: 0 3em;
+          padding: 0;
           overflow: auto;
+          padding: 0.25em 4em;
 
           .collection-slide-title {
-            font-size: 1.3em;
+            font-size: 1.2em;
             margin: 0.25em 0 0;
             line-height: 50px;
             text-shadow: unset;
@@ -2762,18 +2749,17 @@ footer {
           /* Drop Cap */
           .collection-slider-text {
             padding: 0.5em;
-            line-height: 1.5em;
-            font-size: 1.1em;
+            font-size: 1em;
           }
         }
 
         .recycling-facts-slide {
-          padding: 0 3em;
+          padding: 0.25em 4em;
           z-index: 2;
-          margin: 0.5em;
+
 
           .recycling-facts-slide-text {
-            font-size: 1.2em;
+            font-size: 1.1em;
           }
 
           .recycling-facts-slide-title {
@@ -2784,11 +2770,11 @@ footer {
 
           .recycling-facts-slide-list {
             margin: 1em auto;
-            width: 85%;
+            width: 95%;
 
             .recycling-facts-slide-list-item {
               line-height: 50px;
-              font-size: 1.2em;
+              font-size: 1em;
 
               &::before {
                 font-family: FontAwesome;
@@ -2805,16 +2791,16 @@ footer {
 
         .tenways-slide {
           min-height: 225px;
-          margin: 0.5em;
-          padding: 0 2.5em;
+          margin: 0;
+          padding: 0.5em 4em;
 
           .tenways-slide-title {
-            line-height: 60px;
-            font-size: 1.3em;
+            line-height: 45px;
+            font-size: 1.2em;
           }
 
           .tenways-slide-text {
-            font-size: 1.1em;
+            font-size: 1em;
             line-height: 1.5em;
           }
 
@@ -2920,1857 +2906,15 @@ footer {
   }
 }
 
-@media screen and (min-width: 1281px) and (max-width: 1440px) {
+@media screen and (min-width: 601px) and (max-width: 959px) {
   #mobile-toggle {
     display: none;
   }
 
   #main-wrapper {
+    height: auto;
     width: 96%;
-    height: auto;
-  }
 
-  #site-header {
-    padding: 0.25em;
-    flex-flow: row wrap;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -ms-flex-pack: space-between;
-    justify-content: space-between;
-    height: 100px;
-    margin: auto;
-
-    #site-title {
-      width: 30%;
-      flex: 0 0 auto;
-
-      #logo-title {
-        font-size: 2.5em;
-        line-height: 55px;
-        text-align: center;
-      }
-
-      #logo-text {
-        font-size: 0.9em;
-        text-align: center;
-      }
-    }
-
-    #logo {
-      width: auto;
-    }
-
-    #socials {
-      width: 20%;
-      margin: 0;
-
-      #socials-container {
-        margin: 0;
-        padding: 0;
-
-        .socials-container-link {
-          width: 23%;
-
-          a {
-            height: 100%;
-            width: 100%;
-
-            .fa-twitter,
-            .fa-facebook,
-            .fa-google,
-            .fa-instagram {
-              font-size: 1.1em;
-
-              &:hover {
-                transform: scale(1.2);
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  #site-navigation {
-    margin-top: 0.5em;
-    display: block;
-    position: unset;
-    height: 40px;
-
-    #site-navigation-container {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      height: 40px;
-      width: 100%;
-      display: flex;
-      flex-flow: row;
-      align-items: center;
-      justify-content: space-between;
-
-      .site-navigation-link {
-        width: 14%;
-        height: 40px;
-
-        .nav-links {
-          font-size: 0.95em;
-          line-height: 40px;
-
-          &:hover {
-            text-shadow: none;
-          }
-        }
-      }
-    }
-  }
-
-  .page-wrapper {
-    float: none;
-
-    #slider {
-      margin: 0.5em 0;
-      height: 370px;
-      .flexslider {
-        height: 370px;
-
-        #slides {
-          position: relative;
-          height: 370px;
-          .sliders {
-            height: 100%;
-
-            .slider-caption-image {
-              margin: 0;
-              position: unset;
-            }
-
-            .slider-caption {
-              float: right;
-              width: 64%;
-
-              .slider-caption-title {
-                font-size: 2em;
-                line-height: 80px;
-              }
-
-              .slider-caption-text {
-                font-size: 1em;
-              }
-
-              .large-button.homebg-color {
-                width: 30%;
-                font-size: 1.2em;
-
-                &:hover {
-                  cursor: pointer;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    #home-page-content {
-      background-color: $contentbg;
-      display: block;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      height: auto;
-
-      #home-page-cards {
-        height: auto;
-        display: flex;
-        flex-flow: row;
-        align-items: stretch;
-        justify-content: flex-start;
-        background-color: $color-white;
-
-        .home-page-card {
-          width: 31.5%;
-          margin: 0.25em;
-          padding: 0.25em;
-          flex: 1 0 auto;
-
-          .home-page-card-title {
-            font-size: 1.05em;
-            text-shadow: unset;
-          }
-
-          .home-page-card-image {
-            display: flex;
-            align-items: flex-start;
-            flex-flow: row;
-
-            #paper-bottles,
-            #flow-chart,
-            #recycle-circle {
-              flex: 0 1 auto;
-            }
-
-            .home-page-card-caption {
-              flex: 0 1 auto;
-
-              .card-caption-text {
-                font-size: 0.9em;
-                line-height: 1.6em;
-              }
-
-              .card-caption-button {
-                font-size: 1em;
-
-                &:hover {
-                  cursor: pointer;
-                }
-              }
-
-              a[title~='wordsearch.gif'] {
-                width: 100%;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .content {
-      background-color: $contentbg;
-
-      &::after {
-        content: '.';
-        color: $contentbg;
-      }
-
-      .content-title {
-        font-size: 1.8em;
-      }
-
-      .text {
-        width: 100%;
-
-        .recycle-page-img {
-          float: left;
-          display: block;
-        }
-
-        h2 {
-          -ms-flex-item-align: center;
-          align-self: center;
-          font-size: 1.15em;
-        }
-
-        h3 {
-          -ms-flex-item-align: center;
-          align-self: center;
-          font-size: 1.1em;
-        }
-
-        p {
-          font-size: 1em;
-        }
-
-        #recycle-contact {
-          padding: 0.5em;
-          background-color: $colortxtbg;
-          width: 100%;
-          margin: 0.25em;
-          display: flex;
-          flex-flow: row wrap;
-          -ms-flex-pack: space-between;
-          justify-content: space-between;
-          -ms-flex-align: stretch;
-          align-items: stretch;
-
-          .recycle-contact-link {
-            font-size: 1em;
-            width: 100%;
-            color: $color-black;
-            height: auto;
-
-            &:hover {
-              width: 100%;
-              font-weight: bold;
-            }
-          }
-
-          p,
-          span {
-            padding: 0.25em 0;
-            clear: both;
-            display: block;
-            flex: 0 1 auto;
-            line-height: 35px;
-
-            &::before {
-              width: 5%;
-              display: block;
-              font-size: 1.5em;
-              font-style: normal;
-              text-align: left;
-              text-indent: 0;
-              line-height: 35px;
-            }
-          }
-
-          #location {
-            width: 45%;
-            line-height: 25px;
-
-            &::before {
-              font-family: FontAwesome;
-              content: '\f015';
-            }
-          }
-
-          #telephone {
-            width: 50%;
-
-            &::before {
-              font-family: FontAwesome;
-              content: '\f098';
-            }
-          }
-
-          #email {
-            width: 50%;
-
-            &::before {
-              font-family: FontAwesome;
-              content: '\f0e0';
-              font-style: normal;
-            }
-          }
-
-          #links {
-            width: 50%;
-
-            &::before {
-              font-family: FontAwesome;
-              content: '\f1ad';
-              font-style: normal;
-            }
-          }
-
-          #registration {
-            width: 100%;
-
-            &::before {
-              font-family: FontAwesome;
-              content: '\f0ac';
-              font-style: normal;
-            }
-          }
-        }
-
-        #feedback-form {
-          width: 40%;
-          margin: 1em auto;
-
-          ul {
-            margin: 1% auto;
-            padding: 1em;
-
-            li {
-              width: 100%;
-
-              label {
-                width: 100%;
-                margin: 0.5em 0;
-              }
-
-              input {
-                border: 0;
-                width: 100%;
-              }
-
-              textarea {
-                width: 100%;
-              }
-
-              input[type='submit'] {
-                &:hover {
-                  font-weight: bold;
-                  cursor: pointer;
-                }
-              }
-
-              .error,
-              .notice,
-              .success {
-                line-height: 35px;
-              }
-
-              .error {
-                background: $color-white;
-              }
-
-              .notice {
-                width: 100%;
-              }
-
-              .success {
-                width: 100%;
-              }
-            }
-          }
-        }
-      }
-
-      #whatcando-page {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(7, 1fr);
-        grid-gap: 10px;
-
-        figcaption {
-          width: 100%;
-          display: block;
-        }
-
-        #three-rs {
-          width: 100%;
-          grid-area: 1 / 1 / 4 / 3;
-        }
-
-        #different-materials {
-          grid-area: 1 / 3 / 4 / 5;
-
-          #different-materials-list {
-            padding: 0;
-            width: 100%;
-            margin: 1em 0;
-            display: block;
-
-            .different-materials-list-item {
-              &::before {
-                font-family: FontAwesome;
-                content: '\f1b8';
-                font-size: 1em;
-                width: 40px;
-              }
-
-              .different-materials-list-link {
-                font-size: 0.9em;
-
-                &:hover {
-                  width: 100%;
-                  font-weight: bold;
-                  cursor: pointer;
-                }
-              }
-            }
-          }
-        }
-
-        #recycle-ettiqutte {
-          grid-area: 4 / 1 / 7 / 3;
-        }
-
-        #in-rubbish-bin {
-          grid-area: 4 / 3 / 7 / 5;
-        }
-
-        #where-to-recycle {
-          grid-area: 7 / 1 / 10 / 5;
-
-          .whatcando-image-right {
-            width: auto;
-            height: auto;
-            display: none;
-            margin: 0.9em;
-            float: right;
-          }
-
-          #where-to-recycle-caption {
-            width: 100%;
-            display: block;
-            float: left;
-          }
-        }
-
-        .whatcando-image {
-          margin: 2em auto;
-          width: auto;
-          height: auto;
-          display: block;
-        }
-      }
-
-      #recycling-facts-slides,
-      #tenways-slides,
-      #collection-slides {
-        position: relative;
-        z-index: 1;
-        height: auto;
-      }
-
-      /* The dots/bullets/indicators */
-      .mask {
-        width: 100%;
-
-        .collection-slide {
-          .collection-slide-title {
-            font-size: 1.25em;
-            line-height: 60px;
-          }
-
-          /* Drop Cap */
-          .collection-slider-text {
-            font-size: 1.1em;
-          }
-        }
-
-        .recycling-facts-slide {
-          margin: 0.5em;
-
-          .recycling-facts-slide-text {
-            font-size: 1.2em;
-          }
-
-          .recycling-facts-slide-title {
-            font-size: 1.4em;
-            text-shadow: unset;
-          }
-
-          .recycling-facts-slide-list {
-            list-style: none;
-            margin: 1em auto;
-            padding: 0;
-            width: 85%;
-
-            .recycling-facts-slide-list-item {
-              line-height: 50px;
-              font-size: 1.1em;
-
-              &::before {
-                font-family: FontAwesome;
-                content: '\f1b8';
-                line-height: 50px;
-                font-size: 1.4em;
-                margin-right: 0.3em;
-              }
-            }
-          }
-        }
-
-        .tenways-slide {
-          min-height: 225px;
-
-          .tenways-slide-title {
-            font-size: 1.3em;
-            line-height: 60px;
-          }
-
-          .tenways-slide-text {
-            font-size: 1.1em;
-          }
-
-          .tenways-slide-button {
-            font-size: 0.9em;
-            width: 55%;
-
-            &:hover {
-              width: 55%;
-              text-shadow: none;
-            }
-          }
-        }
-
-        /* Next & previous buttons */
-
-        .prev,
-        .facts-prev,
-        .tenways-prev {
-          top: 50%;
-          margin-top: -22px;
-          font-size: 18px;
-        }
-
-        .next,
-        .facts-next,
-        .tenways-next {
-          right: 0;
-        }
-
-        .facts-next:active,
-        .facts-prev:active,
-        .tenways-next:active,
-        .tenways-prev:active,
-        .prev:active,
-        .next:active {
-          background-color: $prev-next-button;
-          cursor: pointer;
-        }
-
-        .prev:hover,
-        .next:hover,
-        .facts-next:hover,
-        .facts-prev:hover,
-        .tenways-next:hover,
-        .tenways-prev:hover {
-          background-color: $prev-next-button;
-          cursor: pointer;
-        }
-      }
-    }
-  }
-
-  footer {
-    height: 50px;
-
-    #footer-nav {
-      height: 100%;
-      margin: 0 auto;
-      .footer-nav-links {
-        width: 12%;
-        .footer-nav-link {
-          line-height: 50px;
-          font-size: 0.9em;
-
-          &:hover {
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  }
-
-  .copyr {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  #mobile-toggle {
-    display: none;
-  }
-
-  #main-wrapper {
-    width: 98%;
-    height: auto;
-  }
-
-  #site-header {
-    padding: 0.25em;
-    flex-flow: row wrap;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -ms-flex-pack: space-between;
-    justify-content: space-between;
-    height: 100px;
-    margin: auto;
-
-    #site-title {
-      width: 35%;
-      flex: 0 0 auto;
-
-      #logo-title {
-        font-size: 2.3em;
-        line-height: 55px;
-        text-align: center;
-      }
-
-      #logo-text {
-        font-size: 0.9em;
-        text-align: center;
-      }
-    }
-
-    #logo {
-      width: auto;
-    }
-
-    #socials {
-      width: 20%;
-      margin: 0;
-
-      #socials-container {
-        margin: 0;
-        padding: 0;
-
-        .socials-container-link {
-          width: 23%;
-
-          a {
-            height: 100%;
-            width: 100%;
-
-            .fa-twitter,
-            .fa-facebook,
-            .fa-google,
-            .fa-instagram {
-              font-size: 1.1em;
-
-              &:hover {
-                transform: scale(1.2);
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  #site-navigation {
-    margin-top: 0.5em;
-    display: block;
-    position: unset;
-    height: 40px;
-
-    #site-navigation-container {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      height: 40px;
-      width: 100%;
-      display: flex;
-      flex-flow: row;
-      align-items: center;
-      justify-content: space-between;
-
-      .site-navigation-link {
-        width: 14%;
-        height: 40px;
-
-        .nav-links {
-          font-size: 0.95em;
-          line-height: 40px;
-
-          &:hover {
-            text-shadow: none;
-          }
-        }
-      }
-    }
-  }
-
-  .page-wrapper {
-    #slider {
-      margin: 0.5em 0;
-
-      .flexslider {
-        height: 370px;
-
-        #slides {
-          position: relative;
-          height: 370px;
-          .sliders {
-            height: 100%;
-
-            .slider-caption-image {
-              margin: 0;
-              position: unset;
-            }
-
-            .slider-caption {
-              float: right;
-              width: 60%;
-
-              .slider-caption-title {
-                font-size: 1.9em;
-                line-height: 55px;
-              }
-
-              .slider-caption-text {
-                font-size: 0.9em;
-              }
-
-              .large-button.homebg-color {
-                width: 30%;
-                font-size: 1.1em;
-
-                &:hover {
-                  cursor: pointer;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    #home-page-content {
-      margin: 0;
-      #home-page-cards {
-        height: auto;
-        display: flex;
-        flex-flow: row;
-        align-items: stretch;
-        justify-content: flex-start;
-        background-color: $color-white;
-
-        .home-page-card {
-          width: 31.5%;
-          margin: 0.25em;
-          padding: 0.25em;
-          flex: 1 0 auto;
-
-          .home-page-card-title {
-            font-size: 1em;
-            text-shadow: unset;
-          }
-
-          .home-page-card-image {
-            display: flex;
-            align-items: flex-start;
-            flex-flow: column;
-
-            #paper-bottles,
-            #flow-chart,
-            #recycle-circle {
-              flex: 0 1 auto;
-              margin: auto;
-            }
-
-            .home-page-card-caption {
-              flex: 0 1 auto;
-
-              .card-caption-text {
-                font-size: 0.9em;
-                line-height: 1.6em;
-              }
-
-              .card-caption-button {
-                font-size: 0.9em;
-
-                &:hover {
-                  cursor: pointer;
-                }
-              }
-
-              a[title~='wordsearch.gif'] {
-                width: 100%;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .content {
-      background-color: $contentbg;
-
-      &::after {
-        content: '.';
-        color: $contentbg;
-      }
-
-      .content-title {
-        font-size: 1.7em;
-      }
-
-      .text {
-        width: 100%;
-
-        .recycle-page-img {
-          float: left;
-          display: block;
-        }
-
-        h2 {
-          -ms-flex-item-align: center;
-          align-self: center;
-          font-size: 1.15em;
-        }
-
-        h3 {
-          -ms-flex-item-align: center;
-          align-self: center;
-          font-size: 1.1em;
-        }
-
-        p {
-          font-size: 1em;
-        }
-      }
-
-      #recycle-contact {
-        padding: 0.5em;
-        background-color: $colortxtbg;
-        width: 100%;
-        margin: 0.25em;
-        display: flex;
-        flex-flow: row wrap;
-        -ms-flex-pack: space-between;
-        justify-content: space-between;
-        -ms-flex-align: stretch;
-        align-items: stretch;
-
-        .recycle-contact-link {
-          font-size: 1em;
-          width: 100%;
-          color: $color-black;
-          height: auto;
-
-          &:hover {
-            width: 100%;
-            font-weight: bold;
-          }
-        }
-
-        p,
-        span {
-          padding: 0.25em 0;
-          clear: both;
-          display: block;
-          flex: 0 1 auto;
-          line-height: 35px;
-
-          &::before {
-            width: 5%;
-            display: block;
-            font-size: 1.5em;
-            font-style: normal;
-            text-align: left;
-            text-indent: 0;
-            line-height: 35px;
-          }
-        }
-
-        #location {
-          width: 45%;
-          line-height: 25px;
-
-          &::before {
-            font-family: FontAwesome;
-            content: '\f015';
-          }
-        }
-
-        #telephone {
-          width: 50%;
-
-          &::before {
-            font-family: FontAwesome;
-            content: '\f098';
-          }
-        }
-
-        #email {
-          width: 50%;
-
-          &::before {
-            font-family: FontAwesome;
-            content: '\f0e0';
-            font-style: normal;
-          }
-        }
-
-        #links {
-          width: 50%;
-
-          &::before {
-            font-family: FontAwesome;
-            content: '\f1ad';
-            font-style: normal;
-          }
-        }
-
-        #registration {
-          width: 100%;
-
-          &::before {
-            font-family: FontAwesome;
-            content: '\f0ac';
-            font-style: normal;
-          }
-        }
-      }
-
-      #feedback-form {
-        width: 40%;
-        margin: 1em auto;
-
-        ul {
-          margin: 1% auto;
-          padding: 1em;
-
-          li {
-            width: 100%;
-
-            label {
-              width: 100%;
-              margin: 0.5em 0;
-            }
-
-            input {
-              border: 0;
-              width: 100%;
-            }
-
-            textarea {
-              width: 100%;
-            }
-
-            input[type='submit'] {
-              &:hover {
-                font-weight: bold;
-                cursor: pointer;
-              }
-            }
-
-            .error,
-            .notice,
-            .success {
-              line-height: 35px;
-            }
-
-            .error {
-              background: $color-white;
-            }
-
-            .notice {
-              width: 100%;
-            }
-
-            .success {
-              width: 100%;
-            }
-          }
-        }
-      }
-
-      /* .parent {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 50px repeat(11, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        }
-
-        .div1 { grid-area: 1 / 1 / 5 / 3; }
-        .div2 { grid-area: 5 / 1 / 9 / 3; }
-        .div3 { grid-area: 1 / 3 / 5 / 5; }
-        .div4 { grid-area: 5 / 3 / 9 / 5; }
-        .div5 { grid-area: 9 / 1 / 13 / 5; }
-      */
-
-      #whatcando-page {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(9, 1fr);
-        grid-gap: 10px;
-
-        figcaption {
-          width: 100%;
-          display: block;
-        }
-
-        #three-rs {
-          width: 100%;
-          grid-area: 1 / 1 / 4 / 3;
-        }
-
-        #different-materials {
-          grid-area: 1 / 3 / 4 / 5;
-
-          #different-materials-list {
-            padding: 0;
-            width: 100%;
-            margin: 1em 0;
-            display: block;
-
-            .different-materials-list-item {
-              &::before {
-                font-family: FontAwesome;
-                content: '\f1b8';
-                font-size: 1em;
-              }
-
-              .different-materials-list-link {
-                font-size: 0.9em;
-
-                &:hover {
-                  width: 100%;
-                }
-              }
-            }
-          }
-        }
-
-        #recycle-ettiqutte {
-          grid-area: 4 / 1 / 7 / 3;
-        }
-
-        #in-rubbish-bin {
-          grid-area: 4 / 3 / 7 / 5;
-        }
-
-        #where-to-recycle {
-          grid-area: 7 / 1 / 10 / 5;
-
-          .whatcando-image-right {
-            width: auto;
-            height: auto;
-            display: none;
-            margin: 0.9em;
-            float: right;
-          }
-
-          #where-to-recycle-caption {
-            width: 100%;
-            display: block;
-            float: left;
-          }
-        }
-
-        .whatcando-image {
-          margin: 2em auto;
-          width: auto;
-          height: auto;
-          display: block;
-        }
-      }
-
-      #recycling-facts {
-        height: auto;
-      }
-
-      #recycling-facts-slides,
-      #tenways-slides,
-      #collection-slides {
-        position: relative;
-        z-index: 1;
-        height: auto;
-      }
-
-      .mask {
-        width: 100%;
-
-        .collection-slide {
-          .collection-slide-title {
-            font-size: 1.2em;
-            line-height: 55px;
-          }
-
-          /* Drop Cap */
-          .collection-slider-text {
-            padding: 0.25em;
-            font-size: 1.1em;
-          }
-        }
-
-        .recycling-facts-slide {
-          margin: 0.5em;
-
-          .recycling-facts-slide-text {
-            font-size: 1.2em;
-          }
-
-          .recycling-facts-slide-title {
-            font-size: 1.4em;
-            text-shadow: unset;
-          }
-
-          .recycling-facts-slide-list {
-            list-style: none;
-            margin: 1em auto;
-            padding: 0;
-            width: 85%;
-
-            .recycling-facts-slide-list-item {
-              line-height: 50px;
-              font-size: 1.1em;
-
-              &::before {
-                font-family: FontAwesome;
-                content: '\f1b8';
-                line-height: 50px;
-                font-size: 1.3em;
-                margin-right: 0.3em;
-              }
-            }
-          }
-        }
-
-        .tenways-slide {
-          min-height: 200px;
-
-          .tenways-slide-title {
-            font-size: 1.2em;
-            line-height: 50px;
-          }
-
-          .tenways-slide-text {
-            font-size: 1.1em;
-            padding: 0.25em;
-          }
-
-          .tenways-slide-button {
-            font-size: 0.85em;
-            width: 60%;
-
-            &:hover {
-              width: 60%;
-            }
-          }
-        }
-
-        .prev,
-        .facts-prev,
-        .tenways-prev {
-          top: 50%;
-          margin-top: -22px;
-          font-size: 18px;
-        }
-
-        .next,
-        .facts-next,
-        .tenways-next {
-          right: 0;
-        }
-
-        .facts-next:active,
-        .facts-prev:active,
-        .tenways-next:active,
-        .tenways-prev:active,
-        .prev:active,
-        .next:active {
-          background-color: $prev-next-button;
-          cursor: pointer;
-        }
-
-        .prev:hover,
-        .next:hover,
-        .facts-next:hover,
-        .facts-prev:hover,
-        .tenways-next:hover,
-        .tenways-prev:hover {
-          background-color: $prev-next-button;
-          cursor: pointer;
-        }
-      }
-    }
-  }
-
-  footer {
-    height: 50px;
-
-    #footer-nav {
-      margin: 0 auto;
-      .footer-nav-links {
-        height: 50px;
-        width: 12%;
-        .footer-nav-link {
-          line-height: 50px;
-          font-size: 0.85em;
-
-          &:hover {
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  }
-
-  .copyr {
-    width: 100%;
-  }
-}
-
-// laptop - tablet
-
-@media screen and (min-width: 801px) and (max-width: 1024px) {
-  #mobile-toggle {
-    display: none;
-  }
-
-  #main-wrapper {
-    width: 98%;
-    height: auto;
-  }
-
-  #site-header {
-    padding: 0.25em;
-    flex-flow: row wrap;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -ms-flex-pack: space-between;
-    justify-content: space-between;
-    height: 100px;
-    margin: auto;
-
-    #site-title {
-      width: 40%;
-
-      #logo-title {
-        font-size: 2em;
-        line-height: 50px;
-        text-align: center;
-      }
-
-      #logo-text {
-        font-size: 0.8em;
-        text-align: center;
-      }
-    }
-
-    #logo {
-      width: auto;
-    }
-
-    #socials {
-      width: 20%;
-      margin: 0;
-
-      #socials-container {
-        margin: 0;
-        padding: 0;
-
-        .socials-container-link {
-          width: 23%;
-
-          a {
-            width: 100%;
-
-            .fa-twitter,
-            .fa-facebook,
-            .fa-google,
-            .fa-instagram {
-              font-size: 0.9em;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  #site-navigation {
-    margin-top: 0.5em;
-    display: block;
-    position: unset;
-    height: 40px;
-
-    #site-navigation-container {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      height: 40px;
-      width: 100%;
-      display: flex;
-      flex-flow: row;
-      align-items: center;
-      justify-content: space-between;
-
-      .site-navigation-link {
-        width: 14%;
-        height: 40px;
-
-        .nav-links {
-          font-size: 0.85em;
-          line-height: 40px;
-
-          &:hover {
-            text-shadow: none;
-          }
-        }
-      }
-    }
-  }
-
-  .page-wrapper {
-    #slider {
-      height: 370px;
-      .flexslider {
-        height: 370px;
-
-        #slides {
-          height: 370px;
-
-          .sliders {
-            height: 100%;
-
-            .slider-caption-image {
-              display: block;
-              width: auto;
-              float: none;
-              position: absolute;
-              left: 30vw;
-              top: 1em;
-            }
-
-            .slider-caption {
-              width: 100%;
-              position: relative;
-
-              .slider-caption-title {
-                font-size: 1.9em;
-                line-height: 75px;
-              }
-
-              .slider-caption-text {
-                font-size: 0.9em;
-              }
-
-              .large-button.homebg-color {
-                width: 35%;
-
-                &:hover {
-                  cursor: pointer;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    #home-page-content {
-      margin: 0;
-      #home-page-cards {
-        flex-flow: column;
-        align-items: center;
-        justify-content: flex-start;
-        height: auto;
-
-        .home-page-card {
-          width: 75%;
-
-          .home-page-card-title {
-            font-size: 1em;
-          }
-
-          .home-page-card-image {
-            width: 100%;
-
-            #paper-bottles,
-            #flow-chart,
-            #recycle-circle {
-              width: auto;
-            }
-
-            .home-page-card-caption {
-              margin: 0;
-              padding: 0;
-
-              .card-caption-text {
-                font-size: 0.95em;
-                line-height: 1.8em;
-              }
-
-              .card-caption-button {
-                font-size: 1em;
-
-                &:hover {
-                  background-color: $colortxtbg;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .content {
-      background-color: $contentbg;
-
-      &::after {
-        content: '.';
-        color: $contentbg;
-      }
-
-      .content-title {
-        font-size: 1.35em;
-      }
-
-      .text {
-        width: 100%;
-
-        .recycle-page-img {
-          float: left;
-          display: block;
-        }
-
-        h2 {
-          -ms-flex-item-align: center;
-          align-self: center;
-          font-size: 1.15em;
-        }
-
-        h3 {
-          -ms-flex-item-align: center;
-          align-self: center;
-          font-size: 1.1em;
-        }
-
-        p {
-          font-size: 1em;
-        }
-      }
-
-      #recycle-contact {
-        padding: 0.5em;
-        background-color: $colortxtbg;
-        width: 100%;
-        margin: 0.25em;
-        display: flex;
-        flex-flow: row wrap;
-        -ms-flex-pack: space-between;
-        justify-content: space-between;
-        -ms-flex-align: stretch;
-        align-items: stretch;
-
-        .recycle-contact-link {
-          font-size: 1em;
-          width: 100%;
-          color: $color-black;
-          height: auto;
-
-          &:hover {
-            width: 100%;
-            font-weight: bold;
-          }
-        }
-
-        p,
-        span {
-          padding: 0.25em 0;
-          clear: both;
-          display: block;
-          flex: 0 1 auto;
-          line-height: 35px;
-
-          &::before {
-            width: 5%;
-            display: block;
-            font-size: 1.5em;
-            font-style: normal;
-            text-align: left;
-            text-indent: 0;
-            line-height: 35px;
-          }
-        }
-
-        #location {
-          width: 45%;
-          line-height: 25px;
-
-          &::before {
-            font-family: FontAwesome;
-            content: '\f015';
-          }
-        }
-
-        #telephone {
-          width: 50%;
-
-          &::before {
-            font-family: FontAwesome;
-            content: '\f098';
-          }
-        }
-
-        #email {
-          width: 50%;
-
-          &::before {
-            font-family: FontAwesome;
-            content: '\f0e0';
-            font-style: normal;
-          }
-        }
-
-        #links {
-          width: 50%;
-
-          &::before {
-            font-family: FontAwesome;
-            content: '\f1ad';
-            font-style: normal;
-          }
-        }
-
-        #registration {
-          width: 100%;
-
-          &::before {
-            font-family: FontAwesome;
-            content: '\f0ac';
-            font-style: normal;
-          }
-        }
-      }
-
-      #feedback-form {
-        width: 40%;
-        margin: 1em auto;
-
-        ul {
-          margin: 1% auto;
-          padding: 1em;
-
-          li {
-            width: 100%;
-
-            label {
-              width: 100%;
-              margin: 0.5em 0;
-            }
-
-            input {
-              border: 0;
-              width: 100%;
-            }
-
-            textarea {
-              width: 100%;
-            }
-
-            input[type='submit'] {
-              &:hover {
-                font-weight: bold;
-                cursor: pointer;
-              }
-            }
-
-            .error,
-            .notice,
-            .success {
-              line-height: 35px;
-            }
-
-            .error {
-              background: $color-white;
-            }
-
-            .notice {
-              width: 100%;
-            }
-
-            .success {
-              width: 100%;
-            }
-          }
-        }
-      }
-
-      #whatcando-page {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(9, 1fr);
-        grid-gap: 10px;
-
-        figcaption {
-          width: 100%;
-          display: block;
-        }
-
-        #three-rs {
-          width: 100%;
-          grid-area: 1 / 1 / 4 / 3;
-        }
-
-        #different-materials {
-          grid-area: 1 / 3 / 4 / 5;
-
-          #different-materials-list {
-            margin: 1em 0;
-
-            .different-materials-list-item {
-              &::before {
-                font-family: FontAwesome;
-                content: '\f1b8';
-                font-size: 1em;
-              }
-
-              .different-materials-list-link {
-                font-size: 0.9em;
-
-                &:hover {
-                  width: 100%;
-                }
-              }
-            }
-          }
-        }
-
-        #recycle-ettiqutte {
-          grid-area: 4 / 1 / 7 / 3;
-        }
-
-        #in-rubbish-bin {
-          grid-area: 4 / 3 / 7 / 5;
-        }
-
-        #where-to-recycle {
-          grid-area: 7 / 1 / 10 / 5;
-
-          .whatcando-image-right {
-            width: auto;
-            height: auto;
-            display: none;
-            margin: 0.9em;
-            float: right;
-          }
-
-          #where-to-recycle-caption {
-            width: 100%;
-            display: block;
-            float: left;
-          }
-        }
-
-        .whatcando-image {
-          margin: 2em auto;
-          width: auto;
-          height: auto;
-          display: block;
-        }
-      }
-
-      #recycling-facts {
-        height: auto;
-      }
-
-      #recycling-facts-slides,
-      #tenways-slides,
-      #collection-slides {
-        position: relative;
-        z-index: 1;
-        height: auto;
-      }
-
-      .mask {
-        width: 100%;
-
-        .collection-slide {
-          .collection-slide-title {
-            font-size: 1.1em;
-            line-height: 50px;
-          }
-
-          .collection-slider-text {
-            padding: 0.25em;
-            font-size: 1em;
-          }
-        }
-
-        .recycling-facts-slide {
-          margin: 0.5em;
-
-          .recycling-facts-slide-text {
-            font-size: 1.2em;
-          }
-
-          .recycling-facts-slide-title {
-            font-size: 1.4em;
-            text-shadow: unset;
-          }
-
-          .recycling-facts-slide-list {
-            list-style: none;
-            margin: 1em auto;
-            padding: 0;
-            width: 85%;
-
-            .recycling-facts-slide-list-item {
-              line-height: 50px;
-              font-size: 1em;
-
-              &::before {
-                font-family: FontAwesome;
-                content: '\f1b8';
-                line-height: 50px;
-                font-size: 1.3em;
-                margin-right: 0.2em;
-              }
-            }
-          }
-        }
-
-        .tenways-slide {
-          min-height: 200px;
-
-          .tenways-slide-title {
-            font-size: 1.15em;
-            line-height: 50px;
-          }
-
-          .tenways-slide-text {
-            font-size: 1em;
-            padding: 0.25em;
-          }
-
-          .tenways-slide-button {
-            font-size: 0.85em;
-            width: 60%;
-
-            &:hover {
-              width: 60%;
-            }
-          }
-        }
-
-        .prev,
-        .facts-prev,
-        .tenways-prev {
-          top: 50%;
-          margin-top: -22px;
-          font-size: 18px;
-        }
-
-        .next,
-        .facts-next,
-        .tenways-next {
-          right: 0;
-        }
-
-        .facts-next:active,
-        .facts-prev:active,
-        .tenways-next:active,
-        .tenways-prev:active,
-        .prev:active,
-        .next:active {
-          background-color: $prev-next-button;
-          cursor: pointer;
-        }
-
-        .prev:hover,
-        .next:hover,
-        .facts-next:hover,
-        .facts-prev:hover,
-        .tenways-next:hover,
-        .tenways-prev:hover {
-          background-color: $prev-next-button;
-          cursor: pointer;
-        }
-      }
-    }
-  }
-
-  footer {
-    height: 50px;
-
-    #footer-nav {
-      margin: 0 auto;
-      .footer-nav-links {
-        height: 50px;
-        width: 12%;
-        .footer-nav-link {
-          font-size: 0.8em;
-          line-height: 50px;
-
-          &:hover {
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  }
-
-  .copyr {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 668px) and (max-width: 800px) {
-  #mobile-toggle {
-    display: none;
-  }
-
-  #main-wrapper {
-    height: auto;
   }
 
   #site-header {
@@ -4787,7 +2931,7 @@ footer {
       width: 45%;
 
       #logo-title {
-        font-size: 2em;
+        font-size: 2.4em;
         line-height: 50px;
         text-align: center;
       }
@@ -4875,23 +3019,20 @@ footer {
             .slider-caption-image {
               display: block;
               width: auto;
-              float: none;
-              position: absolute;
-              left: 30vw;
-              top: 1em;
+
             }
 
             .slider-caption {
-              width: 100%;
+              width: 60%;
               position: relative;
 
               .slider-caption-title {
-                font-size: 2em;
+                font-size: 1.5em;
                 line-height: 75px;
               }
 
               .slider-caption-text {
-                font-size: 1em;
+                font-size: 0.9em;
               }
 
               .large-button.homebg-color {
@@ -4910,12 +3051,12 @@ footer {
     #home-page-content {
       margin: 0;
       #home-page-cards {
-        flex-flow: column;
-        align-items: center;
+        flex-flow: row;
+        align-items: flex-start;
         justify-content: flex-start;
 
         .home-page-card {
-          width: 75%;
+          width: 32%;
 
           .home-page-card-title {
             font-size: 0.9em;
@@ -4923,7 +3064,9 @@ footer {
 
           .home-page-card-image {
             width: 100%;
-
+            align-items: center;
+            justify-content: center;
+            flex-flow: column;
             #paper-bottles,
             #flow-chart,
             #recycle-circle {
@@ -5223,6 +3366,7 @@ footer {
         width: 100%;
 
         .collection-slide {
+          padding: 0.25em 2em;
           .collection-slide-title {
             font-size: 1.1em;
             line-height: 50px;
@@ -5257,6 +3401,8 @@ footer {
 
         .tenways-slide {
           min-height: 200px;
+          margin: 0;
+          padding: 0.5em 4em;
 
           .tenways-slide-title {
             font-size: 1.1em;
@@ -5340,590 +3486,593 @@ footer {
   }
 }
 
-@media screen and (min-width: 601px) and (max-width: 667px) {
-  #mobile-toggle {
-    display: none;
-  }
-
-  #main-wrapper {
-    width: 98%;
-  }
-
-  #site-header {
-    padding: 0.2em;
-    flex-flow: row wrap;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -ms-flex-pack: space-between;
-    justify-content: space-between;
-    height: 100px;
-    margin: auto;
-
-    #site-title {
-      width: 42%;
-
-      #logo-title {
-        font-size: 1.8em;
-        text-align: center;
-      }
-
-      #logo-text {
-        font-size: 0.75em;
-        text-align: center;
-      }
-    }
-
-    #logo {
-      width: 25%;
-    }
-
-    #socials {
-      width: 30%;
-      margin: 0;
-
-      #socials-container {
-        margin: 0;
-        padding: 0;
-
-        .socials-container-link {
-          width: 23%;
-
-          a {
-            width: 100%;
-
-            .fa-twitter,
-            .fa-facebook,
-            .fa-google,
-            .fa-instagram {
-              font-size: 0.8em;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  #site-navigation {
-    margin-top: 0.5em;
-    display: block;
-    position: unset;
-    height: 40px;
-
-    #site-navigation-container {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      height: 40px;
-      width: 100%;
-      display: flex;
-      flex-flow: row;
-      align-items: center;
-      justify-content: space-between;
-
-      .site-navigation-link {
-        width: 14%;
-        height: 40px;
-
-        .nav-links {
-          font-size: 0.75em;
-          line-height: 40px;
-
-          &:hover {
-            text-shadow: none;
-          }
-        }
-
-        a[href*='#whatcando'] {
-          font-size: 100%;
-        }
-      }
-    }
-  }
-
-  .page-wrapper {
-    #slider {
-      height: 370px;
-
-      .flexslider {
-        height: 350px;
-
-        #slides {
-          height: 350px;
-          .sliders {
-            height: 100%;
-            .slider-caption-image {
-              display: block;
-              width: auto;
-              float: none;
-              position: absolute;
-              left: 25%;
-              top: 0.5em;
-            }
-
-            .slider-caption {
-              width: 100%;
-              position: relative;
-
-              .slider-caption-title {
-                font-size: 1.5em;
-                line-height: 75px;
-              }
-
-              .slider-caption-text {
-                font-size: 0.85em;
-              }
-
-              .large-button.homebg-color {
-                width: 40%;
-
-                &:hover {
-                  cursor: pointer;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    #home-page-content {
-      margin: 0;
-      #home-page-cards {
-        flex-flow: column;
-        align-items: center;
-        justify-content: flex-start;
-
-        .home-page-card {
-          width: 80%;
-
-          .home-page-card-title {
-            font-size: 0.85em;
-            padding: 0.2em 0;
-          }
-
-          .home-page-card-image {
-            width: 100%;
-
-            #paper-bottles,
-            #flow-chart,
-            #recycle-circle {
-              width: auto;
-            }
-
-            .home-page-card-caption {
-              margin: 0;
-
-              .card-caption-text {
-                font-size: 0.9em;
-                padding: 0.25em;
-              }
-
-              .card-caption-button {
-                font-size: 1em;
-
-                &:hover {
-                  background-color: $colortxtbg;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .content {
-      background-color: $contentbg;
-
-      &::after {
-        content: '.';
-        color: $contentbg;
-      }
-
-      .content-title {
-        font-size: 1.25em;
-      }
-
-      .text {
-        width: 100%;
-
-        .recycle-page-img {
-          float: left;
-          display: block;
-        }
-
-        h2 {
-          -ms-flex-item-align: center;
-          align-self: center;
-          font-size: 1.1em;
-        }
-
-        h3 {
-          -ms-flex-item-align: center;
-          align-self: center;
-          font-size: 1em;
-        }
-
-        p {
-          font-size: 0.9em;
-        }
-      }
-
-      #recycle-contact {
-        padding: 0.5em;
-        background-color: $colortxtbg;
-        width: 100%;
-        margin: 0.25em;
-        display: flex;
-        flex-flow: row wrap;
-        -ms-flex-pack: space-between;
-        justify-content: space-between;
-        -ms-flex-align: stretch;
-        align-items: stretch;
-
-        .recycle-contact-link {
-          font-size: 1em;
-          width: 100%;
-          color: $color-black;
-          height: auto;
-
-          &:hover {
-            width: 100%;
-            font-weight: bold;
-          }
-        }
-
-        p,
-        span {
-          padding: 0.25em 0;
-          clear: both;
-          display: block;
-          flex: 0 1 auto;
-          line-height: 35px;
-
-          &::before {
-            width: 5%;
-            display: block;
-            font-size: 1.5em;
-            font-style: normal;
-            text-align: left;
-            text-indent: 0;
-            line-height: 35px;
-          }
-        }
-
-        #location {
-          width: 45%;
-          line-height: 25px;
-
-          &::before {
-            font-family: FontAwesome;
-            content: '\f015';
-          }
-        }
-
-        #telephone {
-          width: 50%;
-
-          &::before {
-            font-family: FontAwesome;
-            content: '\f098';
-          }
-        }
-
-        #email {
-          width: 50%;
-
-          &::before {
-            font-family: FontAwesome;
-            content: '\f0e0';
-            font-style: normal;
-          }
-        }
-
-        #links {
-          width: 50%;
-
-          &::before {
-            font-family: FontAwesome;
-            content: '\f1ad';
-            font-style: normal;
-          }
-        }
-
-        #registration {
-          width: 100%;
-
-          &::before {
-            font-family: FontAwesome;
-            content: '\f0ac';
-            font-style: normal;
-          }
-        }
-      }
-
-      #feedback-form {
-        width: 40%;
-        margin: 1em auto;
-
-        ul {
-          margin: 1% auto;
-          padding: 1em;
-
-          li {
-            width: 100%;
-
-            label {
-              width: 100%;
-              margin: 0.5em 0;
-            }
-
-            input {
-              border: 0;
-              width: 100%;
-            }
-
-            textarea {
-              width: 100%;
-            }
-
-            input[type='submit'] {
-              &:hover {
-                font-weight: bold;
-                cursor: pointer;
-              }
-            }
-
-            .error,
-            .notice,
-            .success {
-              line-height: 35px;
-            }
-
-            .error {
-              background: $color-white;
-            }
-
-            .notice {
-              width: 100%;
-            }
-
-            .success {
-              width: 100%;
-            }
-          }
-        }
-      }
-
-      #whatcando-page {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
-        grid-gap: 10px;
-
-        figcaption {
-          width: 100%;
-          display: block;
-        }
-
-        #three-rs {
-          width: 100%;
-          grid-area: 1 / 1 / 4 / 2;
-        }
-
-        #different-materials {
-          grid-area: 2 / 1 / 3 / 2;
-
-          #different-materials-list {
-            padding: 0;
-            width: 100%;
-            margin: 1em 0;
-            display: block;
-            line-height: 30px;
-
-            .different-materials-list-item {
-              &::before {
-                font-family: FontAwesome;
-                content: '\f1b8';
-                font-size: 1em;
-                line-height: 30px;
-              }
-
-              .different-materials-list-link {
-                font-size: 0.9em;
-                line-height: 30px;
-
-                &:hover {
-                  width: 100%;
-                }
-              }
-            }
-          }
-        }
-
-        #recycle-ettiqutte {
-          grid-area: 3 / 1 / 4 / 2;
-        }
-
-        #in-rubbish-bin {
-          grid-area: 4 / 1 / 5 / 2;
-        }
-
-        #where-to-recycle {
-          grid-area: 5 / 1 / 6 / 2;
-
-          .whatcando-image-right {
-            width: auto;
-            height: auto;
-            display: none;
-            margin: 0.9em;
-            float: right;
-          }
-
-          #where-to-recycle-caption {
-            width: 100%;
-            display: block;
-            float: left;
-          }
-        }
-
-        .whatcando-image {
-          margin: 2em auto;
-          width: auto;
-          height: auto;
-          display: block;
-        }
-      }
-
-      #recycling-facts-slides,
-      #tenways-slides,
-      #collection-slides {
-        position: relative;
-        z-index: 1;
-        height: auto;
-      }
-
-      .mask {
-        min-height: 570px;
-
-        .collection-slide {
-          padding: 0 1em;
-
-          .collection-slide-title {
-            font-size: 1em;
-            line-height: 50px;
-          }
-
-          .collection-slider-text {
-            font-size: 0.95em;
-          }
-        }
-
-        .recycling-facts-slide {
-          .recycling-facts-slide-title {
-            line-height: 50px;
-          }
-
-          .recycling-facts-slide-list {
-            list-style: none;
-
-            .recycling-facts-slide-list-item {
-              font-size: 0.9em;
-              line-height: 35px;
-
-              &::before {
-                font-size: 1.2em;
-                line-height: 35px;
-              }
-            }
-          }
-        }
-
-        .tenways-slide {
-          .tenways-slide-title {
-            font-size: 1em;
-            line-height: 50px;
-          }
-
-          .tenways-slide-text {
-            font-size: 0.9em;
-          }
-
-          .tenways-slide-button {
-            font-size: 0.9em;
-            width: 100%;
-
-            &:hover {
-              width: 100%;
-            }
-          }
-        }
-
-        .prev,
-        .facts-prev,
-        .tenways-prev {
-          top: 50%;
-          margin-top: -22px;
-          font-size: 18px;
-        }
-
-        .next,
-        .facts-next,
-        .tenways-next {
-          right: 0;
-        }
-
-        .facts-next:active,
-        .facts-prev:active,
-        .tenways-next:active,
-        .tenways-prev:active,
-        .prev:active,
-        .next:active {
-          background-color: $prev-next-button;
-          cursor: pointer;
-        }
-
-        .prev:hover,
-        .next:hover,
-        .facts-next:hover,
-        .facts-prev:hover,
-        .tenways-next:hover,
-        .tenways-prev:hover {
-          background-color: $prev-next-button;
-          cursor: pointer;
-        }
-      }
-    }
-  }
-
-  footer {
-    height: 50px;
-    margin-top: 10px;
-
-    #footer-nav {
-      height: 50px;
-      width: 100%;
-      margin: 0;
-
-      .footer-nav-links {
-        height: 50px;
-        width: 12%;
-
-        .footer-nav-link {
-          font-size: 0.7em;
-          line-height: 50px;
-
-          &:hover {
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  }
-
-  .copyr {
-    margin: 1em auto;
-  }
-}
+// @media screen and (min-width: 601px) and (max-width: 667px) {
+//   #mobile-toggle {
+//     display: none;
+//   }
+
+//   #main-wrapper {
+//     width: 98%;
+//   }
+
+//   #site-header {
+//     padding: 0.2em;
+//     flex-flow: row wrap;
+//     -ms-flex-align: start;
+//     align-items: flex-start;
+//     -ms-flex-pack: space-between;
+//     justify-content: space-between;
+//     height: 100px;
+//     margin: auto;
+
+//     #site-title {
+//       width: 42%;
+
+//       #logo-title {
+//         font-size: 1.8em;
+//         text-align: center;
+//       }
+
+//       #logo-text {
+//         font-size: 0.75em;
+//         text-align: center;
+//       }
+//     }
+
+//     #logo {
+//       width: 25%;
+//     }
+
+//     #socials {
+//       width: 30%;
+//       margin: 0;
+
+//       #socials-container {
+//         margin: 0;
+//         padding: 0;
+
+//         .socials-container-link {
+//           width: 23%;
+
+//           a {
+//             width: 100%;
+
+//             .fa-twitter,
+//             .fa-facebook,
+//             .fa-google,
+//             .fa-instagram {
+//               font-size: 0.8em;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   #site-navigation {
+//     margin-top: 0.5em;
+//     display: block;
+//     position: unset;
+//     height: 40px;
+
+//     #site-navigation-container {
+//       list-style: none;
+//       margin: 0;
+//       padding: 0;
+//       height: 40px;
+//       width: 100%;
+//       display: flex;
+//       flex-flow: row;
+//       align-items: center;
+//       justify-content: space-between;
+
+//       .site-navigation-link {
+//         width: 14%;
+//         height: 40px;
+
+//         .nav-links {
+//           font-size: 0.75em;
+//           line-height: 40px;
+
+//           &:hover {
+//             text-shadow: none;
+//           }
+//         }
+
+//         a[href*='#whatcando'] {
+//           font-size: 100%;
+//         }
+//       }
+//     }
+//   }
+
+//   .page-wrapper {
+//     #slider {
+//       height: 370px;
+
+//       .flexslider {
+//         height: 350px;
+
+//         #slides {
+//           height: 350px;
+//           .sliders {
+//             height: 100%;
+//             .slider-caption-image {
+//               display: block;
+//               width: auto;
+//               float: none;
+//               position: absolute;
+//               left: 25%;
+//               top: 0.5em;
+//             }
+
+//             .slider-caption {
+//               width: 100%;
+//               position: relative;
+
+//               .slider-caption-title {
+//                 font-size: 1.5em;
+//                 line-height: 75px;
+//               }
+
+//               .slider-caption-text {
+//                 font-size: 0.85em;
+//               }
+
+//               .large-button.homebg-color {
+//                 width: 40%;
+
+//                 &:hover {
+//                   cursor: pointer;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+
+//     #home-page-content {
+//       margin: 0;
+//       #home-page-cards {
+//         flex-flow: column;
+//         align-items: center;
+//         justify-content: flex-start;
+
+//         .home-page-card {
+//           width: 80%;
+
+//           .home-page-card-title {
+//             font-size: 0.85em;
+//             padding: 0.2em 0;
+//           }
+
+//           .home-page-card-image {
+//             width: 100%;
+
+//             #paper-bottles,
+//             #flow-chart,
+//             #recycle-circle {
+//               width: auto;
+//             }
+
+//             .home-page-card-caption {
+//               margin: 0;
+
+//               .card-caption-text {
+//                 font-size: 0.9em;
+//                 padding: 0.25em;
+//               }
+
+//               .card-caption-button {
+//                 font-size: 1em;
+
+//                 &:hover {
+//                   background-color: $colortxtbg;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+
+//     .content {
+//       background-color: $contentbg;
+
+//       &::after {
+//         content: '.';
+//         color: $contentbg;
+//       }
+
+//       .content-title {
+//         font-size: 1.25em;
+//       }
+
+//       .text {
+//         width: 100%;
+
+//         .recycle-page-img {
+//           float: left;
+//           display: block;
+//         }
+
+//         h2 {
+//           -ms-flex-item-align: center;
+//           align-self: center;
+//           font-size: 1.1em;
+//         }
+
+//         h3 {
+//           -ms-flex-item-align: center;
+//           align-self: center;
+//           font-size: 1em;
+//         }
+
+//         p {
+//           font-size: 0.9em;
+//         }
+//       }
+
+//       #recycle-contact {
+//         padding: 0.5em;
+//         background-color: $colortxtbg;
+//         width: 100%;
+//         margin: 0.25em;
+//         display: flex;
+//         flex-flow: row wrap;
+//         -ms-flex-pack: space-between;
+//         justify-content: space-between;
+//         -ms-flex-align: stretch;
+//         align-items: stretch;
+
+//         .recycle-contact-link {
+//           font-size: 1em;
+//           width: 100%;
+//           color: $color-black;
+//           height: auto;
+
+//           &:hover {
+//             width: 100%;
+//             font-weight: bold;
+//           }
+//         }
+
+//         p,
+//         span {
+//           padding: 0.25em 0;
+//           clear: both;
+//           display: block;
+//           flex: 0 1 auto;
+//           line-height: 35px;
+
+//           &::before {
+//             width: 5%;
+//             display: block;
+//             font-size: 1.5em;
+//             font-style: normal;
+//             text-align: left;
+//             text-indent: 0;
+//             line-height: 35px;
+//           }
+//         }
+
+//         #location {
+//           width: 45%;
+//           line-height: 25px;
+
+//           &::before {
+//             font-family: FontAwesome;
+//             content: '\f015';
+//           }
+//         }
+
+//         #telephone {
+//           width: 50%;
+
+//           &::before {
+//             font-family: FontAwesome;
+//             content: '\f098';
+//           }
+//         }
+
+//         #email {
+//           width: 50%;
+
+//           &::before {
+//             font-family: FontAwesome;
+//             content: '\f0e0';
+//             font-style: normal;
+//           }
+//         }
+
+//         #links {
+//           width: 50%;
+
+//           &::before {
+//             font-family: FontAwesome;
+//             content: '\f1ad';
+//             font-style: normal;
+//           }
+//         }
+
+//         #registration {
+//           width: 100%;
+
+//           &::before {
+//             font-family: FontAwesome;
+//             content: '\f0ac';
+//             font-style: normal;
+//           }
+//         }
+//       }
+
+//       #feedback-form {
+//         width: 40%;
+//         margin: 1em auto;
+
+//         ul {
+//           margin: 1% auto;
+//           padding: 1em;
+
+//           li {
+//             width: 100%;
+
+//             label {
+//               width: 100%;
+//               margin: 0.5em 0;
+//             }
+
+//             input {
+//               border: 0;
+//               width: 100%;
+//             }
+
+//             textarea {
+//               width: 100%;
+//             }
+
+//             input[type='submit'] {
+//               &:hover {
+//                 font-weight: bold;
+//                 cursor: pointer;
+//               }
+//             }
+
+//             .error,
+//             .notice,
+//             .success {
+//               line-height: 35px;
+//             }
+
+//             .error {
+//               background: $color-white;
+//             }
+
+//             .notice {
+//               width: 100%;
+//             }
+
+//             .success {
+//               width: 100%;
+//             }
+//           }
+//         }
+//       }
+
+//       #whatcando-page {
+//         display: grid;
+//         grid-template-columns: 1fr;
+//         grid-template-rows: repeat(5, 1fr);
+//         grid-gap: 10px;
+
+//         figcaption {
+//           width: 100%;
+//           display: block;
+//         }
+
+//         #three-rs {
+//           width: 100%;
+//           grid-area: 1 / 1 / 4 / 2;
+//         }
+
+//         #different-materials {
+//           grid-area: 2 / 1 / 3 / 2;
+
+//           #different-materials-list {
+//             padding: 0;
+//             width: 100%;
+//             margin: 1em 0;
+//             display: block;
+//             line-height: 30px;
+
+//             .different-materials-list-item {
+//               &::before {
+//                 font-family: FontAwesome;
+//                 content: '\f1b8';
+//                 font-size: 1em;
+//                 line-height: 30px;
+//               }
+
+//               .different-materials-list-link {
+//                 font-size: 0.9em;
+//                 line-height: 30px;
+
+//                 &:hover {
+//                   width: 100%;
+//                 }
+//               }
+//             }
+//           }
+//         }
+
+//         #recycle-ettiqutte {
+//           grid-area: 3 / 1 / 4 / 2;
+//         }
+
+//         #in-rubbish-bin {
+//           grid-area: 4 / 1 / 5 / 2;
+//         }
+
+//         #where-to-recycle {
+//           grid-area: 5 / 1 / 6 / 2;
+
+//           .whatcando-image-right {
+//             width: auto;
+//             height: auto;
+//             display: none;
+//             margin: 0.9em;
+//             float: right;
+//           }
+
+//           #where-to-recycle-caption {
+//             width: 100%;
+//             display: block;
+//             float: left;
+//           }
+//         }
+
+//         .whatcando-image {
+//           margin: 2em auto;
+//           width: auto;
+//           height: auto;
+//           display: block;
+//         }
+//       }
+
+//       #recycling-facts-slides,
+//       #tenways-slides,
+//       #collection-slides {
+//         position: relative;
+//         z-index: 1;
+//         height: auto;
+//       }
+
+//       .mask {
+//         min-height: 570px;
+
+//         .collection-slide {
+
+//           padding: 0;
+
+//           .collection-slide-title {
+//             font-size: 1em;
+//             line-height: 50px;
+//           }
+
+//           .collection-slider-text {
+//             font-size: 0.95em;
+//           }
+//         }
+
+//         .recycling-facts-slide {
+//           .recycling-facts-slide-title {
+//             line-height: 50px;
+//           }
+
+//           .recycling-facts-slide-list {
+//             list-style: none;
+
+//             .recycling-facts-slide-list-item {
+//               font-size: 0.9em;
+//               line-height: 35px;
+
+//               &::before {
+//                 font-size: 1.2em;
+//                 line-height: 35px;
+//               }
+//             }
+//           }
+//         }
+
+//         .tenways-slide {
+//           margin: 0;
+//           padding: 0.5em 4em;
+//           .tenways-slide-title {
+//             font-size: 1em;
+//             line-height: 50px;
+//           }
+
+//           .tenways-slide-text {
+//             font-size: 0.9em;
+//           }
+
+//           .tenways-slide-button {
+//             font-size: 0.9em;
+//             width: 100%;
+
+//             &:hover {
+//               width: 100%;
+//             }
+//           }
+//         }
+
+//         .prev,
+//         .facts-prev,
+//         .tenways-prev {
+//           top: 50%;
+//           margin-top: -22px;
+//           font-size: 18px;
+//         }
+
+//         .next,
+//         .facts-next,
+//         .tenways-next {
+//           right: 0;
+//         }
+
+//         .facts-next:active,
+//         .facts-prev:active,
+//         .tenways-next:active,
+//         .tenways-prev:active,
+//         .prev:active,
+//         .next:active {
+//           background-color: $prev-next-button;
+//           cursor: pointer;
+//         }
+
+//         .prev:hover,
+//         .next:hover,
+//         .facts-next:hover,
+//         .facts-prev:hover,
+//         .tenways-next:hover,
+//         .tenways-prev:hover {
+//           background-color: $prev-next-button;
+//           cursor: pointer;
+//         }
+//       }
+//     }
+//   }
+
+//   footer {
+//     height: 50px;
+//     margin-top: 10px;
+
+//     #footer-nav {
+//       height: 50px;
+//       width: 100%;
+//       margin: 0;
+
+//       .footer-nav-links {
+//         height: 50px;
+//         width: 12%;
+
+//         .footer-nav-link {
+//           font-size: 0.7em;
+//           line-height: 50px;
+
+//           &:hover {
+//             text-decoration: none;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .copyr {
+//     margin: 1em auto;
+//   }
+// }
 
 // mobile
 
@@ -6451,7 +4600,7 @@ footer {
         width: 100%;
 
         .collection-slide {
-          padding: 0 1em;
+          padding: 0;
 
           .collection-slide-title {
             font-size: 0.95em;
@@ -6485,8 +4634,9 @@ footer {
         }
 
         .tenways-slide {
-          width: 98.7%;
-
+          width: 99%;
+          margin: 0;
+          padding: 0.5em 4em;
           .tenways-slide-title {
             font-size: 0.95em;
             line-height: 40px;
@@ -7063,7 +5213,7 @@ footer {
         min-height: 520px;
 
         .collection-slide {
-          padding: 0 1em;
+          padding: 0;
 
           .collection-slide-title {
             font-size: 0.9em;
@@ -7670,7 +5820,7 @@ footer {
         width: 100%;
 
         .collection-slide {
-          padding: 0.25em 2em;
+          padding: 0;
 
           .collection-slide-title {
             font-size: 0.9em;

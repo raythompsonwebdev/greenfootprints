@@ -57,21 +57,16 @@ test/
 .settings/
 .vscode/
 
-src/static/data/
-src/static/images/
-src/static/images/slider/
-src/static/fonts/
-src/static/js/slide-functions/
-src/static/favicons/
-src/static/images/three-rs.xcf
+src/static/data
+src/static/images
+src/static/fonts
+src/static/js
+src/static/favicons
 
-src/css/sass/partials/_base.css
-src/css/sass/partials/_fonts.css
-src/css/sass/partials/_mixins.css
-src/css/sass/partials/_variables.css
 
-public/fonts/
-public/images/
-buildScripts/generateMockData.js
-buildScripts/mockDataSchema.js
-buildScripts/testSetup.js
+src/static/sass/partials/
+
+public/fontawesome-free-6.5.1-web
+
+
+

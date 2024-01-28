@@ -1,4 +1,9 @@
 import React from 'react';
+import recycleCircle from '../static/images/JPG/recycle-continuous-circle-greenfootprints-com.jpg';
+import inRubbishBin from '../static/images/JPG/what-is-in-your-rubbish-bin.jpg';
+import whatCanImg from '../static/images/gif-images/Recycling_image_1.gif';
+import familyHomeImg from '../static/images/gif-images/family_home_page.gif';
+//import recycleMaterialImg from '../static/images/JPG/recylingbins-greenfootprints-com.jpg';
 
 function Whatcando() {
   return (
@@ -9,7 +14,7 @@ function Whatcando() {
           <figure id="three-rs">
             <img
               className="whatcando-image"
-              src="./images/jpg/recycle-continuous-circle-greenfootprints-com.jpg"
+              src={recycleCircle}
               alt="recycle-continuous-circle"
             />
             <figcaption>
@@ -25,7 +30,7 @@ function Whatcando() {
             <img
               className="whatcando-image"
               id="mainImageOne"
-              src="./images/jpg/what-is-in-your-rubbish-bin.jpg"
+              src={inRubbishBin}
               alt="what-is-in-your-rubbish-bin"
             />
             <figcaption>
@@ -51,7 +56,7 @@ function Whatcando() {
           <figure id="different-materials">
             <img
               className="whatcando-image"
-              src="./images/gif/Recycling_image_1.gif"
+              src={whatCanImg}
               alt="reduce-green-foot-prints-com"
             />
             <figcaption>
@@ -99,7 +104,7 @@ function Whatcando() {
           <figure id="recycle-ettiqutte">
             <img
               className="whatcando-image"
-              src="./images/gif/family_home_page.gif"
+              src={familyHomeImg}
               alt="family_home_page"
             />
             <figcaption>
@@ -141,12 +146,12 @@ function Whatcando() {
                 point search <a href="http://www.google.com">here</a>.
               </p>
             </figcaption>
-            <img
+            {/* <img
               className="whatcando-image-right"
               id="mainImageTwo"
-              src="./images/gif/recycling-materials-greenfootprints-com.gif"
+              src={recycleMaterialImg}
               alt="recycling-materials"
-            />
+            /> */}
           </figure>
           <br />
         </article>

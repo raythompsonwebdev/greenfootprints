@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function HomeSlide(props) {
-  const { data } = { ...props };
+function HomeSlide({ data }) {
+
   const { caption, imageAlt, imageId, imageUrl, link, linktitle, title } = data;
 
   return (
-    <figure className="sliders">
+    <figure className="sliders"style={{backgroundImage:`url(${imageUrl})`, backgroundPosition: "5% 50%", backgroundRepeat: "no-repeat", }} >
       <figcaption className="slider-caption">
         <h2 className="slider-caption-title">{title}</h2>
         <p className="slider-caption-text">{caption}</p>
@@ -14,12 +14,12 @@ function HomeSlide(props) {
           Read More
         </Link>
       </figcaption>
-      <img
+      {/* <img
         id={imageId}
         className="slider-caption-image"
         alt={imageAlt}
         src={imageUrl}
-      />
+      /> */}
     </figure>
   );
 }
