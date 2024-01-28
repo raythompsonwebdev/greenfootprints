@@ -9,7 +9,7 @@ function RecyclingFacts() {
 
     // Slider 3
     const recycleBoxSlides = (n) => {
-      let i;
+      // let i;
       const slides = document.getElementsByClassName('recycling-facts-slide');
 
       //convert html collection into an array.
@@ -63,12 +63,8 @@ function RecyclingFacts() {
               />
             ))}
 
-            <a className="facts-prev" href="#">
-              &#10094;
-            </a>
-            <a className="facts-next" href="#">
-              &#10095;
-            </a>
+            <button className="facts-prev">&#10094;</button>
+            <button className="facts-next">&#10095;</button>
           </div>
         </div>
       </main>

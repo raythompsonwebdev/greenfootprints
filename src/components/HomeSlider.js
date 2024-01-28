@@ -1,11 +1,14 @@
 import React, { useEffect } from 'react';
 import HomeSlide from '../components/HomeSlide.js';
+import sliderImageTwo from '../static/images/webp/slider-image2-greenfootprints-com.webp';
+import sliderImageThree from '../static/images/webp/slider-image3-greenfootprints-com.webp';
+import sliderImageFour from '../static/images/webp/slider-image4-greenfootprints-com.webp';
 
 const siteImages = [
   {
     id: 1,
     imageAlt: 'recycling-advice-green-foot-prints-com',
-    imageUrl: '/static/images/webp/slider-image2-greenfootprints-com.webp',
+    imageUrl: sliderImageTwo,
     imageId: 'sliderimg-one',
     title: 'Recycling',
     caption:
@@ -16,7 +19,7 @@ const siteImages = [
   {
     id: 2,
     imageAlt: 'recycling-advice-green-foot-prints-com',
-    imageUrl: '/static/images/slider/slider-image3-greenfootprints-com.png',
+    imageUrl: sliderImageThree,
     imageId: 'sliderimg-two',
     title: 'Reduce, Reuse, Recycle',
     caption:
@@ -27,7 +30,7 @@ const siteImages = [
   {
     id: 3,
     imageAlt: 'recycling-advice-green-foot-prints-com',
-    imageUrl: '/images/slider/slider-image4-greenfootprints-com.png',
+    imageUrl: sliderImageFour,
     imageId: 'sliderimg-three',
     title: 'Recycling Different Materials',
     caption:
@@ -39,19 +42,16 @@ const siteImages = [
 
 function HomeSlider() {
   useEffect(() => {
-    let slideIndex = 0;
-
     const homePageSlider = () => {
+      let slideIndex = 0;
       let i;
 
       const slides = document.getElementsByClassName('sliders');
 
-      //convert html collection into an array.
-      const slideArray = Array.from(slides);
-
-      slideArray.forEach((slides) => {
-        slides.style.display = 'none';
-      });
+      // eslint-disable-next-line no-plusplus
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
 
       // eslint-disable-next-line no-plusplus
       slideIndex++;
@@ -60,9 +60,8 @@ function HomeSlider() {
       }
 
       slides[slideIndex - 1].style.display = 'block';
-      slides[slideIndex - 1].classList.add('fade');
 
-      setTimeout(homePageSlider, 5000); // Change image every 2 seconds
+      setTimeout(homePageSlider, 10000); // Change image every 2 seconds
     };
 
     homePageSlider();
