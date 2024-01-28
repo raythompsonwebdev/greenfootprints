@@ -50,7 +50,7 @@ dist/
 
 npm-debug.log
 node_modules/
-_assets/
+_assets/.eslintrc.js
 .git/
 test/
 .sass-cache/
