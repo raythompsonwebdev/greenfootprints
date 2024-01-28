@@ -57,13 +57,16 @@ test/
 .settings/
 .vscode/
 
-src/static/data/
-src/static/images/
-src/static/fonts/
-src/static/js/
-src/static/images/three-rs.xcf
+src/static/data
+src/static/images
+src/static/fonts
+src/static/js
+src/static/favicons
+
 
 src/static/sass/partials/
+
+public/fontawesome-free-6.5.1-web
 
 
 
