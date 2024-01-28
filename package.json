@@ -33,8 +33,15 @@
       "react-app/jest"
     ],
     "rules": {
-      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-      "prettier/prettier": "error",
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ],
       "no-unused-vars": "off",
       "no-var": "warn",
       "no-console": 0,

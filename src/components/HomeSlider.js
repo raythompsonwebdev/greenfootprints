@@ -61,7 +61,7 @@ function HomeSlider() {
 
       slides[slideIndex - 1].style.display = 'block';
 
-      setTimeout(homePageSlider, 10000); // Change image every 2 seconds
+      setTimeout(homePageSlider, 8000); // Change image every 2 seconds
     };
 
     homePageSlider();

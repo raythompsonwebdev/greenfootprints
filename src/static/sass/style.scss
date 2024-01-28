@@ -1,5 +1,5 @@
-@import 'partials/fonts';
-@import 'partials/variables';
+// @import 'partials/fonts';
+// @import 'partials/variables';
 @import 'partials/base';
 
 // main container
@@ -878,7 +878,7 @@
           line-height: 1.5em;
           font-size: 0.75em;
           margin: 0;
-          white-space: pre-wrap;
+          white-space: wrap;
         }
       }
 
@@ -980,7 +980,7 @@
           line-height: 1.5em;
           width: auto;
           display: block;
-          white-space: pre-wrap;
+          white-space: wrap;
         }
       }
 
@@ -1016,6 +1016,7 @@
         font-size: 20px;
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
+        border:none;
         z-index: 10;
         left: 0;
         text-decoration: none;
@@ -1037,6 +1038,7 @@
         border-radius: 0 3px 3px 0;
         z-index: 10;
         text-decoration: none;
+        border:none;
       }
 
       .facts-next:active,
@@ -1920,7 +1922,7 @@ footer {
           width: 100%;
           height: 100%;
           margin: 0;
-          padding: 0 3em;
+          padding: 0;
           overflow: auto;
           background: $color-white;
 
@@ -1950,13 +1952,12 @@ footer {
         }
 
         .recycling-facts-slide {
-          padding: 0 3em;
+          padding: 0.25em 4em;
           width: 100%;
           height: 100%;
           position: absolute;
           z-index: 2;
           background: $color-white;
-          margin: 0.5em;
 
           .recycling-facts-slide-text {
             font-size: 1.2em;
@@ -2013,9 +2014,8 @@ footer {
           width: 100%;
           min-height: 225px;
           height: auto;
-          margin: 0.5em;
-          box-sizing: border-box;
-          padding: 0 2.5em;
+          margin: 0;
+          padding: 0.5em 4em;
           background: $color-white;
 
           .tenways-slide-title {
@@ -2750,8 +2750,9 @@ footer {
 
         .collection-slide {
           z-index: 1;
-          padding: 0 3em;
+          padding: 0;
           overflow: auto;
+          padding: 0.25em 4em;
 
           .collection-slide-title {
             font-size: 1.3em;
@@ -2769,9 +2770,9 @@ footer {
         }
 
         .recycling-facts-slide {
-          padding: 0 3em;
+          padding: 0.25em 4em;
           z-index: 2;
-          margin: 0.5em;
+
 
           .recycling-facts-slide-text {
             font-size: 1.2em;
@@ -2806,8 +2807,8 @@ footer {
 
         .tenways-slide {
           min-height: 225px;
-          margin: 0.5em;
-          padding: 0 2.5em;
+          margin: 0;
+          padding: 0.5em 4em;
 
           .tenways-slide-title {
             line-height: 60px;
@@ -3412,6 +3413,7 @@ footer {
         width: 100%;
 
         .collection-slide {
+          padding: 0.25em 4em;
           .collection-slide-title {
             font-size: 1.25em;
             line-height: 60px;
@@ -3424,7 +3426,7 @@ footer {
         }
 
         .recycling-facts-slide {
-          margin: 0.5em;
+          padding: 0.25em 4em;
 
           .recycling-facts-slide-text {
             font-size: 1.2em;
@@ -3458,6 +3460,8 @@ footer {
 
         .tenways-slide {
           min-height: 225px;
+          margin: 0;
+          padding: 0.5em 4em;
 
           .tenways-slide-title {
             font-size: 1.3em;
@@ -4042,6 +4046,7 @@ footer {
         width: 100%;
 
         .collection-slide {
+          padding: 0.25em 2em;
           .collection-slide-title {
             font-size: 1.2em;
             line-height: 55px;
@@ -4055,7 +4060,7 @@ footer {
         }
 
         .recycling-facts-slide {
-          margin: 0.5em;
+          padding: 0.25em 4em;
 
           .recycling-facts-slide-text {
             font-size: 1.2em;
@@ -4089,6 +4094,8 @@ footer {
 
         .tenways-slide {
           min-height: 200px;
+          margin: 0;
+          padding: 0.5em 4em;
 
           .tenways-slide-title {
             font-size: 1.2em;
@@ -4638,6 +4645,7 @@ footer {
         width: 100%;
 
         .collection-slide {
+          padding: 0.25em 2em;
           .collection-slide-title {
             font-size: 1.1em;
             line-height: 50px;
@@ -4650,7 +4658,7 @@ footer {
         }
 
         .recycling-facts-slide {
-          margin: 0.5em;
+          padding: 0.25em 4em;
 
           .recycling-facts-slide-text {
             font-size: 1.2em;
@@ -4684,6 +4692,8 @@ footer {
 
         .tenways-slide {
           min-height: 200px;
+          margin: 0;
+          padding: 0.5em 4em;
 
           .tenways-slide-title {
             font-size: 1.15em;
@@ -5226,6 +5236,7 @@ footer {
         width: 100%;
 
         .collection-slide {
+          padding: 0.25em 2em;
           .collection-slide-title {
             font-size: 1.1em;
             line-height: 50px;
@@ -5260,6 +5271,8 @@ footer {
 
         .tenways-slide {
           min-height: 200px;
+          margin: 0;
+          padding: 0.5em 4em;
 
           .tenways-slide-title {
             font-size: 1.1em;
@@ -5809,7 +5822,8 @@ footer {
         min-height: 570px;
 
         .collection-slide {
-          padding: 0 1em;
+
+          padding: 0;
 
           .collection-slide-title {
             font-size: 1em;
@@ -5842,6 +5856,8 @@ footer {
         }
 
         .tenways-slide {
+          margin: 0;
+          padding: 0.5em 4em;
           .tenways-slide-title {
             font-size: 1em;
             line-height: 50px;
@@ -6454,7 +6470,7 @@ footer {
         width: 100%;
 
         .collection-slide {
-          padding: 0 1em;
+          padding: 0;
 
           .collection-slide-title {
             font-size: 0.95em;
@@ -6488,8 +6504,9 @@ footer {
         }
 
         .tenways-slide {
-          width: 98.7%;
-
+          width: 99%;
+          margin: 0;
+          padding: 0.5em 4em;
           .tenways-slide-title {
             font-size: 0.95em;
             line-height: 40px;
@@ -7066,7 +7083,7 @@ footer {
         min-height: 520px;
 
         .collection-slide {
-          padding: 0 1em;
+          padding: 0;
 
           .collection-slide-title {
             font-size: 0.9em;
@@ -7673,7 +7690,7 @@ footer {
         width: 100%;
 
         .collection-slide {
-          padding: 0.25em 2em;
+          padding: 0;
 
           .collection-slide-title {
             font-size: 0.9em;
