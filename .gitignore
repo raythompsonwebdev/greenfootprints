@@ -62,11 +62,11 @@ src/static/images
 src/static/fonts
 src/static/js
 src/static/favicons
+build/
+public/fontawesome-free-6.5.1-web/
+build/fontawesome-free-6.5.1-web/
 
 
-src/static/sass/partials/
-
-public/fontawesome-free-6.5.1-web
 
 
 

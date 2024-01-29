@@ -4,7 +4,7 @@
 
 ## Description
 
-Web application is based on a website brief I was given to build a website from for a city and guilds exam in web design I took in 2012. 
+Web application is based on a website brief I was given to build a website from for a city and guilds exam in web design I took in 2012.
 
 The task was that I was a member of a local recycling company "Green FootPrints " based in Essex and you have been asked to set up a simple website consisting of at least 3 pages to advertise what the company has to offer.
 
@@ -54,6 +54,12 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+To serve build to view locally enter the following in the terminal :
+
+```sh
+ serve -s build
+```
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
@@ -124,5 +130,3 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## Credits
-
-
