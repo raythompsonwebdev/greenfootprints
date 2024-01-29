@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/greenfootprints/static/css/main.03d31098.css",
+    "main.js": "/greenfootprints/static/js/main.e3074d6e.js",
+    "static/media/slider-image4-greenfootprints-com.png": "/greenfootprints/static/media/slider-image4-greenfootprints-com.6085e753e50c6b8e2643.png",
+    "static/media/slider-image3-greenfootprints-com.png": "/greenfootprints/static/media/slider-image3-greenfootprints-com.a0bcd41f642571bb8372.png",
+    "static/media/what-is-in-your-rubbish-bin.jpg": "/greenfootprints/static/media/what-is-in-your-rubbish-bin.cdafdf2db329651677c5.jpg",
+    "static/media/slider-image2-greenfootprints-com.png": "/greenfootprints/static/media/slider-image2-greenfootprints-com.761218d5f0277f23cf77.png",
+    "static/media/recycle-continuous-circle-greenfootprints-com.jpg": "/greenfootprints/static/media/recycle-continuous-circle-greenfootprints-com.d53324e1ab7dd9da9dc2.jpg",
+    "static/media/Recycling_image_1.gif": "/greenfootprints/static/media/Recycling_image_1.86c42bae78988d447397.gif",
+    "static/media/family_home_page.gif": "/greenfootprints/static/media/family_home_page.8c617009f2d9d85206e1.gif",
+    "static/media/recylingbins-greenfootprints-com.jpg": "/greenfootprints/static/media/recylingbins-greenfootprints-com.69830ee1c5761ba9c1a7.jpg",
+    "static/media/wordsearch.gif": "/greenfootprints/static/media/wordsearch.138f0fba9f75cb88623c.gif",
+    "static/media/recyling-guide.gif": "/greenfootprints/static/media/recyling-guide.38913ae217ef3edfe1c3.gif",
+    "static/media/recycling-flowchart.gif": "/greenfootprints/static/media/recycling-flowchart.55621297bcdc45e1c0b0.gif",
+    "index.html": "/greenfootprints/index.html",
+    "main.03d31098.css.map": "/greenfootprints/static/css/main.03d31098.css.map",
+    "main.e3074d6e.js.map": "/greenfootprints/static/js/main.e3074d6e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03d31098.css",
+    "static/js/main.e3074d6e.js"
+  ]
+}
