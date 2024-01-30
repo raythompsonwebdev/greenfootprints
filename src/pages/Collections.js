@@ -1,4 +1,3 @@
-//import { hot } from 'react-hot-loader/root';
 import React, { useEffect } from 'react';
 import CollectionSlide from '../components/CollectionSlide.js';
 import imageBinImg from '../static/images/JPG/Image-bin.jpg';
@@ -81,7 +80,7 @@ const Collections = () => {
       // get html collection
       const slides = document.getElementsByClassName('collection-slide');
 
-      if(slides === undefined){
+      if (slides === undefined) {
         return false;
       }
 

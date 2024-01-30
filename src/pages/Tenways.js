@@ -1,4 +1,3 @@
-//import { hot } from 'react-hot-loader/root';
 import React, { useEffect } from 'react';
 import TenwaysSlide from '../components/TenwaysSlide.js';
 import imageBinImg from '../static/images/JPG/Image-bin.jpg';
@@ -29,7 +28,7 @@ const tenwaysData = [
   {
     id: 3,
     title: '4. Vermicomposting or keeping worms',
-    text: 'A great way to reduce your carbon footprint is to keep worms as pets in your kitchen or if you are a little squeamish in your garden. We arent kidding. Worms are an effective and eco-friendly way of composting hundreds of pounds of kitchen waste every year. They are said to be much faster than normal methods of composting. When green waste is properly composted at home, it doesn\'t give off methane, a gas which contributes to climate change. The leftover compost can then be used in gardens and to plant houseplants which in turn create oxygen. For tips on making your very own wormery, click here.',
+    text: "A great way to reduce your carbon footprint is to keep worms as pets in your kitchen or if you are a little squeamish in your garden. We arent kidding. Worms are an effective and eco-friendly way of composting hundreds of pounds of kitchen waste every year. They are said to be much faster than normal methods of composting. When green waste is properly composted at home, it doesn't give off methane, a gas which contributes to climate change. The leftover compost can then be used in gardens and to plant houseplants which in turn create oxygen. For tips on making your very own wormery, click here.",
     image: imageBinImg,
     alt: 'recycle-continuous-circle-green-foot-prints-com',
   },
@@ -74,7 +73,7 @@ const tenwaysData = [
     text: 'Plastic bags are massive eco-villains. Their production contributes to air pollution and lots of energy consumption. One plastic bag can take an astonishing 1,000 years to decompose.If you havent already noticed, a number of retailers across the UK are charging for the use of plastic bags (usually 5p per bag) or encouraging shoppers to buy eco-friendly bags made of natural fibres to reuse over and over again. These schemes are set to reduce the amount of white pollution as 17 billion plastic bags are issued in the UK everyday. If you are one of those people who rely on plastic bags, then reuse them to line your rubbish bins at home, rather than buying more polluting bin bags.',
     image: imageBinImg,
     alt: 'reuse-image-green-foot-prints-com',
-  }
+  },
 ];
 
 function TenWays() {
@@ -84,9 +83,11 @@ function TenWays() {
     // Slider 3
     const recycleBoxSlides = (n) => {
       // let i;
-      const slides = Array.from(document.getElementsByClassName('tenways-slide'));
+      const slides = Array.from(
+        document.getElementsByClassName('tenways-slide')
+      );
 
-      if(slides === undefined){
+      if (slides === undefined) {
         return false;
       }
 
@@ -121,7 +122,7 @@ function TenWays() {
       e.preventDefault();
       recycleSlides(1);
     });
-  });
+  }, []);
 
   return (
     <div className="page-wrapper" id="ten-ways">
@@ -137,12 +138,8 @@ function TenWays() {
               />
             ))}
 
-            <button className="tenways-prev" >
-              &#10094;
-            </button>
-            <button className="tenways-next" >
-              &#10095;
-            </button>
+            <button className="tenways-prev">&#10094;</button>
+            <button className="tenways-next">&#10095;</button>
           </div>
         </div>
       </main>

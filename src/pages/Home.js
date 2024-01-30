@@ -1,4 +1,3 @@
-//import { hot } from 'react-hot-loader/root';
 import React from 'react';
 import HomeSlider from '../components/HomeSlider.js';
 import HomepageCard from '../components/HomePageCard.js';

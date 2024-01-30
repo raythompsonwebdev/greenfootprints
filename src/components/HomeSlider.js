@@ -15,7 +15,6 @@ const siteImages = [
       'Award winning recycling website. Voted best recyling website 2010 and 2012',
     link: '/recycling',
     linktitle: 'link to recycling',
-
   },
   {
     id: 1,
@@ -43,22 +42,15 @@ const siteImages = [
 
 function HomeSlider() {
   useEffect(() => {
-
     let slideIndex = 0;
     const homePageSlider = () => {
-
       let i;
 
-      const slides = Array.from(document.getElementsByClassName('sliders'));
+      const slides = document.querySelectorAll('.sliders');
 
-      if(slides === undefined){
-        return false;
-      }
       // eslint-disable-next-line no-plusplus
       for (i = 0; i < slides.length; i++) {
-        if(slides[i]){
-          slides[i].style.display = 'none';
-        }
+        slides[i].classList.add('hidden');
       }
 
       // eslint-disable-next-line no-plusplus
@@ -68,21 +60,13 @@ function HomeSlider() {
         slideIndex = 1;
       }
 
+      slides[slideIndex - 1].classList.remove('hidden');
 
-        if(slides[slideIndex - 1] !== undefined){
-           slides[slideIndex - 1].style.display = 'block' }
-        else{
-          slides[i].style.display = 'none';
-        }
-
-        setTimeout(homePageSlider, 4000); // Change image every 4 seconds
-
-
-
+      setTimeout(homePageSlider, 4000); // Change image every 4 seconds
     };
 
     homePageSlider();
-  });
+  }, []); // run after dom content loaded
 
   return (
     <section id="slider">

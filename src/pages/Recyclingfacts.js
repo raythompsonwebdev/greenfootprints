@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import RecyclingFactSlide from '../components/RecyclingFactSlide.js';
 import imageBinImg from '../static/images/JPG/Image-bin.jpg';
 
-
 const recyclingfactsData = [
   {
     id: 1,
@@ -12,7 +11,8 @@ const recyclingfactsData = [
   },
   {
     id: 2,
-    title: 'Recycling is an excellent way of saving energy and conserving the environment',
+    title:
+      'Recycling is an excellent way of saving energy and conserving the environment',
     text: 'Did you know that:',
     list: [
       {
@@ -137,7 +137,7 @@ function RecyclingFacts() {
       // let i;
       const slides = document.getElementsByClassName('recycling-facts-slide');
 
-      if(slides === undefined){
+      if (slides === undefined) {
         return false;
       }
 
@@ -175,7 +175,7 @@ function RecyclingFacts() {
       e.preventDefault();
       recycleSlides(1);
     });
-  });
+  }, []);
 
   return (
     <div className="page-wrapper" id="recycling-facts">
