@@ -5,62 +5,57 @@ const Contacts = () => {
     <div className="page-wrapper" id="contact">
       <main className="content">
         <h2 className="content-title">Contact Us</h2>
-
-        <article className="text">
-          <address id="recycle-contact">
-            <p id="location">
-              Green Recycling Ltd,
-              <br /> Quayside Industrial Park,
-              <br /> Bates Road,
-              <br /> Maldon,
-              <br /> Essex,
-              <br /> CM9 5FA
+        <section id="recycle-contact">
+          <section id="location">
+            <h3>Address</h3>
+            <p>
+              Green Recycling Ltd, Quayside Industrial Park, Bates Road, Maldon,
+              Essex, CM9 5FA
             </p>
-
-            <p id="telephone">
-              Telephone : 01628 942600 <br /> Fax : 01628 974630{' '}
+          </section>
+          <section id="telephone">
+            <h3>Telephone</h3>
+            <p>Telephone: 01628 942600 </p>
+            <p>Fax : 01628 974630 </p>
+          </section>
+          <section id="email">
+            <h3>Email</h3>
+            <p>Email : sales@greenfootprints.com</p>
+            <p>Email : house@greenfootprints.com</p>
+            <p>Any emails will be answered same day..</p>
+          </section>
+          <section id="links">
+            <h3>Further Information on Recycling Please Visit</h3>
+            <address>
+              <a
+                className="recycle-contact-link"
+                href="http://www.recycling-guide.org.uk">
+                http://www.recycling-guide.org.uk
+              </a>
+              <br />
+              <a
+                className="recycle-contact-link"
+                href="http://www.recyclezone.org.uk/">
+                http://www.recyclezone.org.uk/
+              </a>
+              <br />
+              <a
+                className="recycle-contact-link"
+                href="http://www.greenrecycling.co.uk/">
+                http://www.greenrecycling.co.uk/.
+              </a>
+              <br />
+            </address>
+          </section>
+          <section id="registration">
+            <h3>Registration</h3>
+            <p>
+              {' '}
+              Registered Carriers of Waste Registration Number : AEA/792880/CT
+              (Issuing Authority: AEA). Waste Managment Licence : EAWML-72693.
             </p>
-
-            <span id="email">
-              <p>Email : sales@greenfootprints.com</p>
-              <p>Email : house@greenfootprints.com</p>
-              <p>Any emails will be answered same day..</p>
-            </span>
-
-            <span id="links">
-              <p>Further Information on Recycling Please Visit</p>
-              <p>
-                <a
-                  className="recycle-contact-link"
-                  href="http://www.recycling-guide.org.uk">
-                  http://www.recycling-guide.org.uk
-                </a>
-              </p>
-              <p>
-                <a
-                  className="recycle-contact-link"
-                  href="http://www.recyclezone.org.uk/">
-                  http://www.recyclezone.org.uk/
-                </a>
-              </p>
-              <p>
-                <a
-                  className="recycle-contact-link"
-                  href="http://www.greenrecycling.co.uk/">
-                  http://www.greenrecycling.co.uk/.
-                </a>
-              </p>
-            </span>
-
-            <span id="registration">
-              <p>
-                Registered Carriers of Waste Registration Number : AEA/792880/CT
-                (Issuing Authority: AEA).
-              </p>
-              <p>Waste Managment Licence : EAWML-72693.</p>
-            </span>
-          </address>
-        </article>
+          </section>
+        </section>
       </main>
     </div>
   );

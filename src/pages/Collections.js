@@ -128,10 +128,10 @@ const Collections = () => {
         <h2 className="content-title">Collections &amp; Sorting</h2>
         <div id="collection-slides">
           <div className="mask">
-            {collectionData.map((slide) => (
+            {collectionData.map((slide, index) => (
               <CollectionSlide
                 data={slide}
-                key={slide.id}
+                key={index}
                 classname="collection-slide"
               />
             ))}

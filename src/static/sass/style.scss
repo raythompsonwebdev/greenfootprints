@@ -88,7 +88,7 @@
 /* header */
 #site-header {
   display: flex;
-  background-color: $honecolor;
+  // background-color: $honecolor;
   padding: 0.2em;
   flex-flow: row wrap;
   -ms-flex-align: center;
@@ -209,7 +209,10 @@
 
   #site-navigation-container {
     height: 100%;
+    display: flex;
     flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
     margin: 0;
     width: 100%;
 
@@ -482,26 +485,6 @@
       font-size: 1em;
       padding: 0.5em;
 
-      .recycle-page-img {
-        float: none;
-        display: block;
-        margin: auto;
-      }
-
-      h2 {
-        -ms-flex-item-align: center;
-        align-self: center;
-        color: $colortxt;
-        background-color: $bgcolor;
-        margin: 0;
-        text-align: center;
-        font-size: 1em;
-        line-height: 40px;
-        display: block;
-        clear: both;
-        font-weight: bold;
-      }
-
       h3 {
         align-self: center;
         color: $colortxt;
@@ -529,12 +512,10 @@
       padding: 0.5em;
       background-color: $colortxtbg;
       width: 100%;
-      margin: 0.25em;
+      margin: 0;
       display: flex;
       flex-flow: row wrap;
-      -ms-flex-pack: space-between;
       justify-content: space-between;
-      -ms-flex-align: stretch;
       align-items: stretch;
       font-size: 0.9em;
 
@@ -543,6 +524,7 @@
         width: 100%;
         color: $color-black;
         height: auto;
+        line-height: 35px;
 
         &:hover {
           width: 100%;
@@ -550,20 +532,18 @@
         }
       }
 
-      p,
-      span {
+      h3 {
         padding: 0.25em 0;
-        clear: both;
         display: block;
         flex: 0 1 auto;
         line-height: 35px;
 
         &::before {
-          width: 5%;
-          display: block;
-          font-size: 1em;
+          width: 10%;
+          display: inline-block;
+          font-size: 2em;
           font-style: normal;
-          text-align: left;
+          text-align: center;
           text-indent: 0;
           line-height: 35px;
         }
@@ -571,9 +551,8 @@
 
       #location {
         width: 100%;
-        line-height: 25px;
 
-        &::before {
+        h3::before {
           font-family: FontAwesome;
           content: '\f015';
         }
@@ -582,7 +561,7 @@
       #telephone {
         width: 100%;
 
-        &::before {
+        h3::before {
           font-family: FontAwesome;
           content: '\f098';
         }
@@ -591,7 +570,7 @@
       #email {
         width: 100%;
 
-        &::before {
+        h3::before {
           font-family: FontAwesome;
           content: '\f0e0';
           font-style: normal;
@@ -601,7 +580,7 @@
       #links {
         width: 100%;
 
-        &::before {
+        h3::before {
           font-family: FontAwesome;
           content: '\f1ad';
           font-style: normal;
@@ -611,10 +590,11 @@
       #registration {
         width: 100%;
 
-        &::before {
+        h3::before {
           font-family: FontAwesome;
           content: '\f0ac';
           font-style: normal;
+          width: 3.5%;
         }
       }
     }
@@ -839,7 +819,7 @@
       flex-flow: row;
       -ms-flex-pack: flex-start;
       justify-content: flex-start;
-      -ms-flex-align: stretch;
+
       align-items: stretch;
       background-color: $color-white;
 
@@ -1147,7 +1127,7 @@ footer {
     flex-flow: row wrap;
     -ms-flex-align: start;
     align-items: flex-start;
-    -ms-flex-pack: space-between;
+
     justify-content: space-between;
     height: 100px;
     margin: auto;
@@ -1158,10 +1138,10 @@ footer {
 
       #logo-title {
         color: $color-white;
-        font-size: 2.5em;
+        font-size: 3em;
         font-family: $fontList;
         text-align: center;
-        line-height: 55px;
+        line-height: 60px;
         margin: 0;
         padding: 0;
         text-shadow: 1px 1px 1px $header-shadow;
@@ -1275,6 +1255,7 @@ footer {
       flex-flow: row;
       align-items: center;
       justify-content: space-between;
+      gap: 0.2em;
 
       .site-navigation-link {
         height: 40px;
@@ -1360,9 +1341,10 @@ footer {
       width: 100%;
       height: auto;
       margin: 0.5em 0;
+      height: 450px;
 
       .flexslider {
-        height: 370px;
+        height: 450px;
         overflow: hidden;
         padding: 0;
         margin: 0;
@@ -1372,7 +1354,7 @@ footer {
           margin: 0;
           padding: 0;
           position: relative;
-          height: 370px;
+          height: 450px;
           .sliders {
             height: 100%;
 
@@ -1385,7 +1367,7 @@ footer {
             .slider-caption {
               text-align: center;
               width: 60%;
-              height: auto;
+              height: 100%;
               float: right;
 
               .slider-caption-title {
@@ -1542,25 +1524,6 @@ footer {
         font-size: 1em;
         padding: 0.5em;
 
-        .recycle-page-img {
-          float: left;
-          display: block;
-        }
-
-        h2 {
-          -ms-flex-item-align: center;
-          align-self: center;
-          color: $colortxt;
-          background-color: $bgcolor;
-          margin: 0;
-          text-align: center;
-          font-size: 1.2em;
-          line-height: 40px;
-          display: block;
-          clear: both;
-          font-weight: bold;
-        }
-
         h3 {
           -ms-flex-item-align: center;
           align-self: center;
@@ -1585,14 +1548,11 @@ footer {
       #recycle-contact {
         padding: 0.5em;
         background-color: $colortxtbg;
-        width: 100%;
-        margin: 0.25em;
-        clear: both;
+        width: 98%;
+        margin: 0;
         display: flex;
         flex-flow: row wrap;
-        -ms-flex-pack: space-between;
         justify-content: space-between;
-        -ms-flex-align: stretch;
         align-items: stretch;
 
         .recycle-contact-link {
@@ -1600,6 +1560,7 @@ footer {
           width: 100%;
           color: $color-black;
           height: auto;
+          line-height: 35px;
 
           &:hover {
             width: 100%;
@@ -1607,30 +1568,27 @@ footer {
           }
         }
 
-        p,
-        span {
+        h3 {
           padding: 0.25em 0;
           clear: both;
-          display: block;
+          display: inline-block;
           flex: 0 1 auto;
           line-height: 35px;
+          margin: 0;
+          padding: 0;
 
           &::before {
-            width: 5%;
-            display: block;
-            font-size: 1.5em;
-            font-style: normal;
-            text-align: left;
-            text-indent: 0;
+            width: 10%;
+            display: inline-block;
+            font-size: 2em;
             line-height: 35px;
           }
         }
 
         #location {
           width: 45%;
-          line-height: 25px;
 
-          &::before {
+          h3::before {
             font-family: FontAwesome;
             content: '\f015';
           }
@@ -1639,7 +1597,7 @@ footer {
         #telephone {
           width: 50%;
 
-          &::before {
+          h3::before {
             font-family: FontAwesome;
             content: '\f098';
           }
@@ -1648,7 +1606,7 @@ footer {
         #email {
           width: 50%;
 
-          &::before {
+          h3::before {
             font-family: FontAwesome;
             content: '\f0e0';
             font-style: normal;
@@ -1658,7 +1616,7 @@ footer {
         #links {
           width: 50%;
 
-          &::before {
+          h3::before {
             font-family: FontAwesome;
             content: '\f1ad';
             font-style: normal;
@@ -1668,10 +1626,11 @@ footer {
         #registration {
           width: 100%;
 
-          &::before {
+          h3::before {
             font-family: FontAwesome;
             content: '\f0ac';
             font-style: normal;
+            width: 3.5%;
           }
         }
       }
@@ -1895,7 +1854,7 @@ footer {
         flex-flow: row;
         -ms-flex-pack: flex-start;
         justify-content: flex-start;
-        -ms-flex-align: stretch;
+
         align-items: stretch;
         background-color: $color-white;
 
@@ -2184,7 +2143,7 @@ footer {
     flex-flow: row wrap;
     -ms-flex-align: start;
     align-items: flex-start;
-    -ms-flex-pack: space-between;
+
     justify-content: space-between;
     height: 100px;
 
@@ -2193,8 +2152,8 @@ footer {
       flex: 0 0 auto;
 
       #logo-title {
-        font-size: 2.5em;
-        line-height: 55px;
+        font-size: 3em;
+        line-height: 60px;
         text-align: center;
       }
 
@@ -2268,7 +2227,7 @@ footer {
       flex-flow: row;
       align-items: center;
       justify-content: space-between;
-
+      gap: 0.2em;
       .site-navigation-link {
         height: 40px;
         flex: 1 0 auto;
@@ -2311,16 +2270,16 @@ footer {
     /* Slider */
     #slider {
       margin: 0.5em 0;
-      height: 370px;
+      height: 450px;
       .flexslider {
-        height: 370px;
+        height: 450px;
         overflow: hidden;
         font-family: $fontList;
 
         #slides {
           margin: 0;
           position: relative;
-          height: 370px;
+          height: 450px;
           .sliders {
             height: 100%;
 
@@ -2331,7 +2290,7 @@ footer {
 
             .slider-caption {
               width: 60%;
-              height: auto;
+              height: 100%;
               float: right;
               .slider-caption-title {
                 font-size: 2em;
@@ -2444,18 +2403,6 @@ footer {
         font-size: 1em;
         padding: 0.5em;
 
-        .recycle-page-img {
-          float: left;
-          display: block;
-        }
-
-        h2 {
-          -ms-flex-item-align: center;
-          align-self: center;
-          font-size: 1.2em;
-          line-height: 40px;
-        }
-
         h3 {
           -ms-flex-item-align: center;
           align-self: center;
@@ -2470,44 +2417,52 @@ footer {
       }
 
       #recycle-contact {
-        padding: 0.5em;
-        margin: 0.25em;
+        padding: 1.5em;
+        width: 100%;
+        margin: 0;
         display: flex;
         flex-flow: row wrap;
-        -ms-flex-pack: space-between;
-        justify-content: space-between;
-        -ms-flex-align: stretch;
+        justify-content: flex-start;
         align-items: stretch;
+        gap: 0.25em;
 
         .recycle-contact-link {
           font-size: 1em;
           height: auto;
-
+          line-height: 35px;
           &:hover {
             width: 100%;
             font-weight: bold;
           }
         }
 
-        p,
-        span {
+        h3 {
           padding: 0.25em 0;
           clear: both;
+          display: inline-block;
           flex: 0 1 auto;
           line-height: 35px;
+          margin: 0;
+          padding: 0;
 
           &::before {
-            width: 5%;
-            font-size: 1.5em;
+            width: 7%;
+            display: inline-block;
+            font-size: 2em;
             line-height: 35px;
           }
         }
 
-        #location {
-          width: 45%;
+        p {
+          font-size: 1.1em;
           line-height: 25px;
+          margin: 0;
+        }
 
-          &::before {
+        #location {
+          width: 49%;
+
+          h3::before {
             font-family: FontAwesome;
             content: '\f015';
           }
@@ -2516,16 +2471,16 @@ footer {
         #telephone {
           width: 50%;
 
-          &::before {
+          h3::before {
             font-family: FontAwesome;
             content: '\f098';
           }
         }
 
         #email {
-          width: 50%;
+          width: 49%;
 
-          &::before {
+          h3::before {
             font-family: FontAwesome;
             content: '\f0e0';
             font-style: normal;
@@ -2535,7 +2490,7 @@ footer {
         #links {
           width: 50%;
 
-          &::before {
+          h3::before {
             font-family: FontAwesome;
             content: '\f1ad';
             font-style: normal;
@@ -2545,10 +2500,11 @@ footer {
         #registration {
           width: 100%;
 
-          &::before {
+          h3::before {
             font-family: FontAwesome;
             content: '\f0ac';
             font-style: normal;
+            width: 3.5%;
           }
         }
       }
@@ -2719,7 +2675,7 @@ footer {
         flex-flow: row;
         -ms-flex-pack: flex-start;
         justify-content: flex-start;
-        -ms-flex-align: stretch;
+
         align-items: stretch;
         background-color: $color-white;
 
@@ -2910,7 +2866,7 @@ footer {
     flex-flow: row wrap;
     -ms-flex-align: start;
     align-items: flex-start;
-    -ms-flex-pack: space-between;
+
     justify-content: space-between;
     height: 100px;
     margin: auto;
@@ -2919,8 +2875,8 @@ footer {
       width: 45%;
 
       #logo-title {
-        font-size: 2.4em;
-        line-height: 50px;
+        font-size: 2.5em;
+        line-height: 60px;
         text-align: center;
       }
 
@@ -2995,12 +2951,12 @@ footer {
 
   .page-wrapper {
     #slider {
-      height: 350px;
+      height: 450px;
       .flexslider {
-        height: 350px;
+        height: 450px;
 
         #slides {
-          height: 350px;
+          height: 450px;
           .sliders {
             height: 100%;
 
@@ -3097,17 +3053,6 @@ footer {
       .text {
         width: 100%;
 
-        .recycle-page-img {
-          float: left;
-          display: block;
-        }
-
-        h2 {
-          -ms-flex-item-align: center;
-          align-self: center;
-          font-size: 1.15em;
-        }
-
         h3 {
           -ms-flex-item-align: center;
           align-self: center;
@@ -3119,15 +3064,15 @@ footer {
         }
 
         #recycle-contact {
-          padding: 0.5em;
+          padding: 1.5em;
           background-color: $colortxtbg;
           width: 100%;
-          margin: 0.25em;
+          margin: 0;
           display: flex;
           flex-flow: row wrap;
-          -ms-flex-pack: space-between;
+
           justify-content: space-between;
-          -ms-flex-align: stretch;
+
           align-items: stretch;
 
           .recycle-contact-link {
@@ -3135,6 +3080,7 @@ footer {
             width: 100%;
             color: $color-black;
             height: auto;
+            line-height: 25px;
 
             &:hover {
               width: 100%;
@@ -3142,21 +3088,19 @@ footer {
             }
           }
 
-          p,
-          span {
+          h3 {
             padding: 0.25em 0;
             clear: both;
             display: block;
             flex: 0 1 auto;
             line-height: 35px;
+            margin: 0;
+            padding: 0;
 
             &::before {
               width: 5%;
-              display: block;
+              display: inline-block;
               font-size: 1.5em;
-              font-style: normal;
-              text-align: left;
-              text-indent: 0;
               line-height: 35px;
             }
           }
@@ -3165,7 +3109,7 @@ footer {
             width: 45%;
             line-height: 25px;
 
-            &::before {
+            h3::before {
               font-family: FontAwesome;
               content: '\f015';
             }
@@ -3174,7 +3118,7 @@ footer {
           #telephone {
             width: 50%;
 
-            &::before {
+            h3::before {
               font-family: FontAwesome;
               content: '\f098';
             }
@@ -3183,7 +3127,7 @@ footer {
           #email {
             width: 50%;
 
-            &::before {
+            h3::before {
               font-family: FontAwesome;
               content: '\f0e0';
               font-style: normal;
@@ -3193,7 +3137,7 @@ footer {
           #links {
             width: 50%;
 
-            &::before {
+            h3::before {
               font-family: FontAwesome;
               content: '\f1ad';
               font-style: normal;
@@ -3203,10 +3147,11 @@ footer {
           #registration {
             width: 100%;
 
-            &::before {
+            h3::before {
               font-family: FontAwesome;
               content: '\f0ac';
               font-style: normal;
+              width: 3.5%;
             }
           }
         }
@@ -3488,7 +3433,7 @@ footer {
 //     flex-flow: row wrap;
 //     -ms-flex-align: start;
 //     align-items: flex-start;
-//     -ms-flex-pack: space-between;
+//
 //     justify-content: space-between;
 //     height: 100px;
 //     margin: auto;
@@ -3709,9 +3654,9 @@ footer {
 //         margin: 0.25em;
 //         display: flex;
 //         flex-flow: row wrap;
-//         -ms-flex-pack: space-between;
+//
 //         justify-content: space-between;
-//         -ms-flex-align: stretch;
+//
 //         align-items: stretch;
 
 //         .recycle-contact-link {
@@ -4074,7 +4019,7 @@ footer {
     flex-flow: row wrap;
     -ms-flex-align: start;
     align-items: flex-start;
-    -ms-flex-pack: space-between;
+
     justify-content: space-between;
     height: auto;
     margin: auto;
@@ -4192,6 +4137,8 @@ footer {
     #site-navigation-container {
       height: 100%;
       flex-flow: column;
+      align-items: center;
+      justify-content: space-between;
       margin: 0;
       width: 100%;
 
@@ -4329,17 +4276,6 @@ footer {
       .text {
         width: 100%;
 
-        .recycle-page-img {
-          float: left;
-          display: block;
-        }
-
-        h2 {
-          -ms-flex-item-align: center;
-          align-self: center;
-          font-size: 1.05em;
-        }
-
         h3 {
           -ms-flex-item-align: center;
           align-self: center;
@@ -4352,15 +4288,13 @@ footer {
       }
 
       #recycle-contact {
-        padding: 0.5em;
+        padding: 1.5em;
         background-color: $colortxtbg;
         width: 100%;
-        margin: 0.25em;
+        margin: 0;
         display: flex;
         flex-flow: row wrap;
-        -ms-flex-pack: space-between;
         justify-content: space-between;
-        -ms-flex-align: stretch;
         align-items: stretch;
 
         .recycle-contact-link {
@@ -4368,6 +4302,7 @@ footer {
           width: 100%;
           color: $color-black;
           height: auto;
+          line-height: 25px;
 
           &:hover {
             width: 100%;
@@ -4375,21 +4310,19 @@ footer {
           }
         }
 
-        p,
-        span {
+        h3 {
           padding: 0.25em 0;
           clear: both;
           display: block;
           flex: 0 1 auto;
           line-height: 35px;
+          margin: 0;
+          padding: 0;
 
           &::before {
             width: 5%;
-            display: block;
+            display: inline-block;
             font-size: 1.5em;
-            font-style: normal;
-            text-align: left;
-            text-indent: 0;
             line-height: 35px;
           }
         }
@@ -4440,6 +4373,7 @@ footer {
             font-family: FontAwesome;
             content: '\f0ac';
             font-style: normal;
+            width: 3.5%;
           }
         }
       }
@@ -4798,6 +4732,8 @@ footer {
 
     #site-navigation-container {
       height: 100%;
+      align-items: center;
+      justify-content: space-between;
       flex-flow: column;
       margin: 0;
       width: 100%;
@@ -4941,17 +4877,6 @@ footer {
       .text {
         width: 100%;
 
-        .recycle-page-img {
-          float: left;
-          display: block;
-        }
-
-        h2 {
-          -ms-flex-item-align: center;
-          align-self: center;
-          font-size: 1.1em;
-        }
-
         h3 {
           -ms-flex-item-align: center;
           align-self: center;
@@ -4967,12 +4892,10 @@ footer {
         padding: 0.5em;
         background-color: $colortxtbg;
         width: 100%;
-        margin: 0.25em;
+        margin: 0;
         display: flex;
         flex-flow: row wrap;
-        -ms-flex-pack: space-between;
         justify-content: space-between;
-        -ms-flex-align: stretch;
         align-items: stretch;
 
         .recycle-contact-link {
@@ -4980,6 +4903,7 @@ footer {
           width: 100%;
           color: $color-black;
           height: auto;
+          line-height: 25px;
 
           &:hover {
             width: 100%;
@@ -4987,8 +4911,7 @@ footer {
           }
         }
 
-        p,
-        span {
+        h3 {
           padding: 0.25em 0;
           clear: both;
           display: block;
@@ -4997,11 +4920,8 @@ footer {
 
           &::before {
             width: 5%;
-            display: block;
+            display: inline-block;
             font-size: 1.5em;
-            font-style: normal;
-            text-align: left;
-            text-indent: 0;
             line-height: 35px;
           }
         }
@@ -5052,6 +4972,7 @@ footer {
             font-family: FontAwesome;
             content: '\f0ac';
             font-style: normal;
+            width: 3.5%;
           }
         }
       }
@@ -5545,17 +5466,6 @@ footer {
       .text {
         width: 100%;
 
-        .recycle-page-img {
-          float: left;
-          display: block;
-        }
-
-        h2 {
-          -ms-flex-item-align: center;
-          align-self: center;
-          font-size: 1.05em;
-        }
-
         h3 {
           -ms-flex-item-align: center;
           align-self: center;
@@ -5570,12 +5480,10 @@ footer {
           padding: 0.5em;
           background-color: $colortxtbg;
           width: 100%;
-          margin: 0.25em;
+          margin: 0;
           display: flex;
           flex-flow: row wrap;
-          -ms-flex-pack: space-between;
           justify-content: space-between;
-          -ms-flex-align: stretch;
           align-items: stretch;
 
           .recycle-contact-link {
@@ -5583,6 +5491,7 @@ footer {
             width: 100%;
             color: $color-black;
             height: auto;
+            line-height: 25px;
 
             &:hover {
               width: 100%;
@@ -5590,21 +5499,16 @@ footer {
             }
           }
 
-          p,
-          span {
+          h3 {
             padding: 0.25em 0;
-            clear: both;
             display: block;
             flex: 0 1 auto;
             line-height: 35px;
 
             &::before {
               width: 5%;
-              display: block;
+              display: inline-block;
               font-size: 1.5em;
-              font-style: normal;
-              text-align: left;
-              text-indent: 0;
               line-height: 35px;
             }
           }
@@ -5655,6 +5559,7 @@ footer {
               font-family: FontAwesome;
               content: '\f0ac';
               font-style: normal;
+              width: 3.5%;
             }
           }
         }

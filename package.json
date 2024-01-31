@@ -1,7 +1,10 @@
 {
-  "homepage": "http://raythompsonwebdev.github.io/greenfootprints",
+  "homepage": ".",
   "name": "greenfootprints",
   "version": "0.1.0",
+  "license": "MIT",
+  "main": "index.js",
+  "description": "Greenfootprints recycling information website.",
   "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",

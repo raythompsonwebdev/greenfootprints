@@ -4,13 +4,13 @@ import imageBinImg from '../static/images/JPG/Image-bin.jpg';
 
 const recyclingfactsData = [
   {
-    id: 1,
+    id: 0,
     title: 'Introduction',
     text: 'UK households produced 30.5 million tonnes of waste in 2003/04, of which 17% was collected for recycling (source: defra.gov.uk).This figure is still quite low compared to some of our neighbouring EU countries, some recycling over 50% of their waste. There is still a great deal of waste which could be recycled that ends up in landfill sites which is harmful to the environment.',
     image: imageBinImg,
   },
   {
-    id: 2,
+    id: 1,
     title:
       'Recycling is an excellent way of saving energy and conserving the environment',
     text: 'Did you know that:',
@@ -30,7 +30,7 @@ const recyclingfactsData = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     title: 'Some Interesting Facts',
     text: 'Did you know that:',
     list: [
@@ -54,7 +54,7 @@ const recyclingfactsData = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     title: 'Aluminium',
     text: 'Did you know that:',
     list: [
@@ -76,7 +76,7 @@ const recyclingfactsData = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     title: 'Glass',
     text: 'Did you know that:',
     list: [
@@ -93,7 +93,7 @@ const recyclingfactsData = [
     ],
   },
   {
-    id: 6,
+    id: 5,
     title: 'Paper',
     text: 'Did you know that:',
     list: [
@@ -110,7 +110,7 @@ const recyclingfactsData = [
     ],
   },
   {
-    id: 7,
+    id: 6,
     title: 'Plastic',
     text: 'Did you know that:',
     list: [
@@ -184,10 +184,10 @@ function RecyclingFacts() {
 
         <div id="recycling-facts-slides">
           <div className="mask">
-            {recyclingfactsData.map((slide) => (
+            {recyclingfactsData.map((slide, index) => (
               <RecyclingFactSlide
                 data={slide}
-                key={slide}
+                key={index}
                 classname="recycling-facts-slide"
               />
             ))}

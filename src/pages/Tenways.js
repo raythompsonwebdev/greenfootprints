@@ -130,10 +130,10 @@ function TenWays() {
         <h2 className="content-title">10 Ways to recycle</h2>
         <div id="tenways-slides">
           <div className="mask">
-            {tenwaysData.map((slide) => (
+            {tenwaysData.map((slide, index) => (
               <TenwaysSlide
                 data={slide}
-                key={slide.id}
+                key={index}
                 classname="tenways-slide"
               />
             ))}
