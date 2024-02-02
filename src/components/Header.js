@@ -10,7 +10,7 @@ function Header() {
       </figure>
 
       <div id="site-title">
-        <h1 id="logo-title">GreenfootPrints</h1>
+        <h1 id="logo-title">GREENFOOTPRINTS</h1>
         <p id="logo-text">UK's leading Recycling website</p>
       </div>
 

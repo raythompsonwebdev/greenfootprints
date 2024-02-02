@@ -7,7 +7,7 @@ const tenwaysData = [
   {
     id: 0,
     title: '1. Switch to 30°C',
-    text: 'By switching your washing machine temperature to 30°C, you are saving energy and cutting your utility bills too.\n\nWith the help of modern detergents, a lower setting will still provide excellent washing results and can save at least 40&#37; of electrical energy.',
+    text: 'By switching your washing machine temperature to 30°C, you are saving energy and cutting your utility bills too.With the help of modern detergents, a lower setting will still provide excellent washing results and can save at least 40% of electrical energy.',
     image: recyclingBinImg,
     alt: 'reuse-image-green-foot-prints-com',
   },
@@ -49,14 +49,14 @@ const tenwaysData = [
   {
     id: 6,
     title: '7. Keep mobile phones for longer',
-    text: 'In a world ruled by technology, it is difficult not to be tempted by the latest shiny new iPhone or Blackberry with all the latest features. But the DECC suggests we can save on electrical waste by not replacing our mobile phones every year. They say most will work for at least five years. \n\nBy recycling phones, you can help stop harmful chemicals getting into the environment rather than putting them with household rubbish.',
+    text: 'In a world ruled by technology, it is difficult not to be tempted by the latest shiny new iPhone or Blackberry with all the latest features. But the DECC suggests we can save on electrical waste by not replacing our mobile phones every year. They say most will work for at least five years. By recycling phones, you can help stop harmful chemicals getting into the environment rather than putting them with household rubbish.',
     image: recyclingBinImg,
     alt: 'reuse-image-green-foot-prints-com',
   },
   {
     id: 7,
     title: '8. Grow your own food',
-    text: 'Growing vegetables at home diminishes the need for transport required to get food to your table otherwise known as food miles. It also allows you to grow your food without the need for harmful and polluting chemicals. If you dont have a garden, you can still grow some delicious vegetables in even the smallest of spaces such as a balcony or patio space. If keeping a vegetable patch is too much of an effort, you can reduce food miles and therefore your carbon footprint by buying local organic produce. As the distance food travels decreases, so does the need for processing and refrigeration to reduce spoilage.',
+    text: "Growing vegetables at home diminishes the need for transport required to get food to your table otherwise known as food miles. It also allows you to grow your food without the need for harmful and polluting chemicals. If you don't have a garden, you can still grow some delicious vegetables in even the smallest of spaces such as a balcony or patio space. If keeping a vegetable patch is too much of an effort, you can reduce food miles and therefore your carbon footprint by buying local organic produce. As the distance food travels decreases, so does the need for processing and refrigeration to reduce spoilage.",
     image: imageBinImg,
     alt: 'reuse-image-green-foot-prints-com',
   },
@@ -70,7 +70,7 @@ const tenwaysData = [
   {
     id: 9,
     title: '10. Say no to plastic bags',
-    text: 'Plastic bags are massive eco-villains. Their production contributes to air pollution and lots of energy consumption. One plastic bag can take an astonishing 1,000 years to decompose.If you havent already noticed, a number of retailers across the UK are charging for the use of plastic bags (usually 5p per bag) or encouraging shoppers to buy eco-friendly bags made of natural fibres to reuse over and over again. These schemes are set to reduce the amount of white pollution as 17 billion plastic bags are issued in the UK everyday. If you are one of those people who rely on plastic bags, then reuse them to line your rubbish bins at home, rather than buying more polluting bin bags.',
+    text: 'Plastic bags are massive eco-villains. Their production contributes to air pollution and lots of energy consumption. One plastic bag can take an astonishing 1,000 years to decompose.If you havent already noticed, a number of retailers across the UK are charging for the use of plastic bags (usually 5p per bag) or encouraging shoppers to buy eco-friendly bags made of natural fibres to reuse over and over again. These schemes are set to reduce the amount of white pollution as 17 billion plastic bags are issued in the UK everyday. If you are one of those people who rely on plastic bags, then reuse them to line your rubbish bins at home, rather than buying more polluting bin bags.',
     image: imageBinImg,
     alt: 'reuse-image-green-foot-prints-com',
   },
