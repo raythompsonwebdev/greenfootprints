@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/greenfootprints/static/css/main.eac93c42.css",
-    "main.js": "/greenfootprints/static/js/main.4607e634.js",
+    "main.css": "/greenfootprints/static/css/main.1362ce3a.css",
+    "main.js": "/greenfootprints/static/js/main.b9b9aef9.js",
     "static/media/slider-image4-greenfootprints-com.png": "/greenfootprints/static/media/slider-image4-greenfootprints-com.6085e753e50c6b8e2643.png",
     "static/media/slider-image3-greenfootprints-com.png": "/greenfootprints/static/media/slider-image3-greenfootprints-com.a0bcd41f642571bb8372.png",
     "static/media/what-is-in-your-rubbish-bin.jpg": "/greenfootprints/static/media/what-is-in-your-rubbish-bin.cdafdf2db329651677c5.jpg",
@@ -14,11 +14,11 @@
     "static/media/recyling-guide.gif": "/greenfootprints/static/media/recyling-guide.38913ae217ef3edfe1c3.gif",
     "static/media/recycling-flowchart.gif": "/greenfootprints/static/media/recycling-flowchart.55621297bcdc45e1c0b0.gif",
     "index.html": "/greenfootprints/index.html",
-    "main.eac93c42.css.map": "/greenfootprints/static/css/main.eac93c42.css.map",
-    "main.4607e634.js.map": "/greenfootprints/static/js/main.4607e634.js.map"
+    "main.1362ce3a.css.map": "/greenfootprints/static/css/main.1362ce3a.css.map",
+    "main.b9b9aef9.js.map": "/greenfootprints/static/js/main.b9b9aef9.js.map"
   },
   "entrypoints": [
-    "static/css/main.eac93c42.css",
-    "static/js/main.4607e634.js"
+    "static/css/main.1362ce3a.css",
+    "static/js/main.b9b9aef9.js"
   ]
 }
