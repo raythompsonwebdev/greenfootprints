@@ -306,21 +306,22 @@
               font-size: 1.1em;
               text-transform: uppercase;
               font-weight: bold;
-              color: $color-white;
+              color: $headbg;
               text-shadow: 1px 1px 1px $header-shadow;
-              background-color: $headbg;
+              background-color: $bgcolor;
               line-height: 50px;
               margin: 1em auto;
               font-family: $fontList;
               width: 90%;
+              letter-spacing: 0.05em;
             }
 
             .slider-caption-text {
               font-size: 0.8em;
               margin: 1em auto;
               line-height: 1.8em;
-              color: $color-white;
-              background-color: $headbg;
+              color: $color-black;
+              // background-color: $headbg;
               padding: 0.25em;
               width: 80%;
             }
@@ -483,7 +484,6 @@
       width: 100%;
       height: auto;
       background-color: $color-white;
-      font-size: 1em;
       padding: 0.5em;
 
       h3 {
@@ -506,6 +506,157 @@
         color: $color-black;
         line-height: 1.9em;
         font-size: 0.85em;
+      }
+
+      .recycle-page-img {
+        float: left;
+        display: block;
+      }
+
+      #recycle-contact {
+        padding: 1.5em;
+        background-color: $colortxtbg;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-flow: row wrap;
+
+        justify-content: space-between;
+
+        align-items: stretch;
+
+        .recycle-contact-link {
+          font-size: 1em;
+          width: 100%;
+          color: $color-black;
+          height: auto;
+          line-height: 25px;
+
+          &:hover {
+            width: 100%;
+            font-weight: bold;
+          }
+        }
+
+        h3 {
+          padding: 0.25em 0;
+          clear: both;
+          display: block;
+          flex: 0 1 auto;
+          line-height: 35px;
+          margin: 0;
+          padding: 0;
+
+          &::before {
+            width: 5%;
+            display: inline-block;
+            font-size: 1.5em;
+            line-height: 35px;
+          }
+        }
+
+        #location {
+          width: 45%;
+          line-height: 25px;
+
+          h3::before {
+            font-family: FontAwesome;
+            content: '\f015';
+          }
+        }
+
+        #telephone {
+          width: 50%;
+
+          h3::before {
+            font-family: FontAwesome;
+            content: '\f098';
+          }
+        }
+
+        #email {
+          width: 50%;
+
+          h3::before {
+            font-family: FontAwesome;
+            content: '\f0e0';
+            font-style: normal;
+          }
+        }
+
+        #links {
+          width: 50%;
+
+          h3::before {
+            font-family: FontAwesome;
+            content: '\f1ad';
+            font-style: normal;
+          }
+        }
+
+        #registration {
+          width: 100%;
+
+          h3::before {
+            font-family: FontAwesome;
+            content: '\f0ac';
+            font-style: normal;
+            width: 3.5%;
+          }
+        }
+      }
+
+      #feedback-form {
+        width: 40%;
+        margin: 1em auto;
+
+        ul {
+          margin: 1% auto;
+          padding: 1em;
+
+          li {
+            width: 100%;
+
+            label {
+              width: 100%;
+              margin: 0.5em 0;
+            }
+
+            input {
+              border: 0;
+              width: 100%;
+            }
+
+            textarea {
+              width: 100%;
+            }
+
+            input[type='submit'] {
+              &:hover {
+                font-weight: bold;
+                cursor: pointer;
+              }
+            }
+
+            .error,
+            .notice,
+            .success {
+              line-height: 35px;
+            }
+
+            .error {
+              background: $color-white;
+            }
+
+            .notice {
+              width: 100%;
+            }
+
+            .success {
+              width: 100%;
+            }
+          }
+        }
       }
     }
 
@@ -1546,6 +1697,10 @@ footer {
           line-height: 1.7em;
           font-size: 0.9em;
         }
+        .recycle-page-img {
+          float: left;
+          display: block;
+        }
       }
 
       #recycle-contact {
@@ -2420,6 +2575,11 @@ footer {
           padding: 0.25em;
           font-size: 0.9em;
         }
+
+        .recycle-page-img {
+          float: left;
+          display: block;
+        }
       }
 
       #recycle-contact {
@@ -2983,7 +3143,7 @@ footer {
               }
 
               .slider-caption-text {
-                font-size: 0.9em;
+                font-size: 1em;
                 margin: 0.5em auto;
               }
 
@@ -3032,7 +3192,7 @@ footer {
               padding: 0;
 
               .card-caption-text {
-                font-size: 0.9em;
+                font-size: 1em;
               }
 
               .card-caption-button {
@@ -3073,150 +3233,10 @@ footer {
           font-size: 1em;
         }
 
-        #recycle-contact {
-          padding: 1.5em;
-          background-color: $colortxtbg;
-          width: 100%;
-          margin: 0;
-          display: flex;
-          flex-flow: row wrap;
-
-          justify-content: space-between;
-
-          align-items: stretch;
-
-          .recycle-contact-link {
-            font-size: 1em;
-            width: 100%;
-            color: $color-black;
-            height: auto;
-            line-height: 25px;
-
-            &:hover {
-              width: 100%;
-              font-weight: bold;
-            }
-          }
-
-          h3 {
-            padding: 0.25em 0;
-            clear: both;
-            display: block;
-            flex: 0 1 auto;
-            line-height: 35px;
-            margin: 0;
-            padding: 0;
-
-            &::before {
-              width: 5%;
-              display: inline-block;
-              font-size: 1.5em;
-              line-height: 35px;
-            }
-          }
-
-          #location {
-            width: 45%;
-            line-height: 25px;
-
-            h3::before {
-              font-family: FontAwesome;
-              content: '\f015';
-            }
-          }
-
-          #telephone {
-            width: 50%;
-
-            h3::before {
-              font-family: FontAwesome;
-              content: '\f098';
-            }
-          }
-
-          #email {
-            width: 50%;
-
-            h3::before {
-              font-family: FontAwesome;
-              content: '\f0e0';
-              font-style: normal;
-            }
-          }
-
-          #links {
-            width: 50%;
-
-            h3::before {
-              font-family: FontAwesome;
-              content: '\f1ad';
-              font-style: normal;
-            }
-          }
-
-          #registration {
-            width: 100%;
-
-            h3::before {
-              font-family: FontAwesome;
-              content: '\f0ac';
-              font-style: normal;
-              width: 3.5%;
-            }
-          }
-        }
-
-        #feedback-form {
-          width: 40%;
-          margin: 1em auto;
-
-          ul {
-            margin: 1% auto;
-            padding: 1em;
-
-            li {
-              width: 100%;
-
-              label {
-                width: 100%;
-                margin: 0.5em 0;
-              }
-
-              input {
-                border: 0;
-                width: 100%;
-              }
-
-              textarea {
-                width: 100%;
-              }
-
-              input[type='submit'] {
-                &:hover {
-                  font-weight: bold;
-                  cursor: pointer;
-                }
-              }
-
-              .error,
-              .notice,
-              .success {
-                line-height: 35px;
-              }
-
-              .error {
-                background: $color-white;
-              }
-
-              .notice {
-                width: 100%;
-              }
-
-              .success {
-                width: 100%;
-              }
-            }
-          }
+        .recycle-page-img {
+          float: left;
+          display: block;
+          width: 16%;
         }
       }
 
@@ -3415,7 +3435,7 @@ footer {
         height: 50px;
         width: 12%;
         .footer-nav-link {
-          font-size: 0.7em;
+          font-size: 0.8em;
           line-height: 50px;
 
           &:hover {
@@ -3673,7 +3693,7 @@ footer {
               margin: 0;
 
               .card-caption-text {
-                font-size: 0.85em;
+                font-size: 0.9em;
               }
 
               .card-caption-button {
@@ -3712,6 +3732,10 @@ footer {
 
         p {
           font-size: 0.9em;
+        }
+        .recycle-page-img {
+          float: left;
+          display: block;
         }
       }
 
@@ -4054,7 +4078,7 @@ footer {
         height: 50px;
         width: 12%;
         .footer-nav-link {
-          font-size: 0.7em;
+          font-size: 0.75em;
           line-height: 50px;
 
           &:hover {
@@ -4275,7 +4299,7 @@ footer {
               margin: 0;
 
               .card-caption-text {
-                font-size: 0.9em;
+                font-size: 0.85em;
               }
 
               .card-caption-button {
@@ -4315,6 +4339,10 @@ footer {
 
         p {
           font-size: 0.9em;
+        }
+        .recycle-page-img {
+          float: left;
+          display: block;
         }
       }
 
@@ -4654,7 +4682,7 @@ footer {
         height: 50px;
         width: 12%;
         .footer-nav-link {
-          font-size: 0.65em;
+          font-size: 0.7em;
           line-height: 50px;
 
           &:hover {
@@ -4906,146 +4934,9 @@ footer {
         p {
           font-size: 0.9em;
         }
-
-        #recycle-contact {
-          padding: 0.5em;
-          background-color: $colortxtbg;
-          width: 100%;
-          margin: 0;
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: space-between;
-          align-items: stretch;
-
-          .recycle-contact-link {
-            font-size: 1em;
-            width: 100%;
-            color: $color-black;
-            height: auto;
-            line-height: 25px;
-
-            &:hover {
-              width: 100%;
-              font-weight: bold;
-            }
-          }
-
-          h3 {
-            padding: 0.25em 0;
-            display: block;
-            flex: 0 1 auto;
-            line-height: 35px;
-
-            &::before {
-              width: 5%;
-              display: inline-block;
-              font-size: 1.5em;
-              line-height: 35px;
-            }
-          }
-
-          #location {
-            width: 45%;
-            line-height: 25px;
-
-            &::before {
-              font-family: FontAwesome;
-              content: '\f015';
-            }
-          }
-
-          #telephone {
-            width: 50%;
-
-            &::before {
-              font-family: FontAwesome;
-              content: '\f098';
-            }
-          }
-
-          #email {
-            width: 50%;
-
-            &::before {
-              font-family: FontAwesome;
-              content: '\f0e0';
-              font-style: normal;
-            }
-          }
-
-          #links {
-            width: 50%;
-
-            &::before {
-              font-family: FontAwesome;
-              content: '\f1ad';
-              font-style: normal;
-            }
-          }
-
-          #registration {
-            width: 100%;
-
-            &::before {
-              font-family: FontAwesome;
-              content: '\f0ac';
-              font-style: normal;
-              width: 3.5%;
-            }
-          }
-        }
-
-        #feedback-form {
-          width: 40%;
-          margin: 1em auto;
-
-          ul {
-            margin: 1% auto;
-            padding: 1em;
-
-            li {
-              width: 100%;
-
-              label {
-                width: 100%;
-                margin: 0.5em 0;
-              }
-
-              input {
-                border: 0;
-                width: 100%;
-              }
-
-              textarea {
-                width: 100%;
-              }
-
-              input[type='submit'] {
-                &:hover {
-                  font-weight: bold;
-                  cursor: pointer;
-                }
-              }
-
-              .error,
-              .notice,
-              .success {
-                line-height: 35px;
-              }
-
-              .error {
-                background: $color-white;
-              }
-
-              .notice {
-                width: 100%;
-              }
-
-              .success {
-                width: 100%;
-              }
-            }
-          }
+        .recycle-page-img {
+          float: left;
+          display: block;
         }
       }
 
@@ -5248,7 +5139,7 @@ footer {
         width: 11%;
 
         .footer-nav-link {
-          font-size: 0.55em;
+          font-size: 0.65em;
           line-height: 50px;
 
           &:hover {
