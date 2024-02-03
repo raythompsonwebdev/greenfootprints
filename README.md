@@ -6,6 +6,8 @@ Web application is based on a website brief I was given to build a website from 
 
 The task was that I was a member of a local recycling company "Green FootPrints " based in Essex and you have been asked to set up a simple website consisting of at least 3 pages to advertise what the company has to offer.
 
+I was given a few guidelines outlining requirements. see [Website brief](https://www.dropbox.com/scl/fi/id4hyokzhc3tddz8txtli/greenfootprints.com.pdf?rlkey=nhd3e3jbepaxba06mg87fkdpu&dl=0).
+
 Greenfootprints.com is a single page web application built using react.
 
 ## Tools

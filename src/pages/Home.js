@@ -27,7 +27,7 @@ const cardData = [
     downloadlink:
       'https://www.dropbox.com/s/lbeualgiiwd4qc8/recycling-flowchart-poster.pdf?dl=0',
     download: 'reduce-reuse-recycle-poster.pdf',
-    title: 'Reduce-Reuse-Recycle-poster',
+    title: 'Reduce-Reuse-Recycle',
     text: 'Print off our posters to remind you about the 3 R’s at home, in the classroom or at work. Just click button below to download the PDF and print it off.',
   },
   {

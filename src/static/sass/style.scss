@@ -95,35 +95,36 @@
   align-items: center;
   -ms-flex-pack: start;
   justify-content: space-between;
-  height: auto;
+  height: 116px;
   margin: auto;
 
   #site-title {
-    width: 73%;
+    width: 74%;
     flex: 0 0 auto;
 
     #logo-title {
-      color: $color-white;
-      font-size: 1.35em;
+      color: $headbg;
+      font-size: 1.2em;
       font-family: $fontList;
       text-align: left;
-      line-height: 35px;
+      line-height: 30px;
       margin: 0;
       padding: 0;
-      text-shadow: 1px 1px 1px $header-shadow;
+      // text-shadow: 1px 1px 1px $header-shadow;
+      font-weight: bold;
     }
 
     #logo-text {
       display: block;
       float: left;
-      color: $color-white;
+      color: $headbg;
       padding: 0;
       font-size: 0.65em;
       font-family: $fontList;
       line-height: 20px;
       text-align: left;
       margin: 0;
-      text-shadow: 2px 1px 1px $header-shadow;
+      // text-shadow: 2px 1px 1px $header-shadow;
     }
   }
 
@@ -299,7 +300,7 @@
             height: 100%;
             float: right;
             color: $color-white;
-            background-color: $contentbg;
+            background-color: $sliderbg-color;
 
             .slider-caption-title {
               font-size: 1.1em;
@@ -322,7 +323,6 @@
               background-color: $headbg;
               padding: 0.25em;
               width: 80%;
-              font-weight: bold;
             }
 
             .large-button.homebg-color {
@@ -334,6 +334,7 @@
               line-height: 70px;
               font-size: 1em;
               text-decoration: none;
+              font-weight: bold;
 
               &:hover {
                 color: $headbg;
@@ -1101,7 +1102,7 @@ footer {
 
   // main container
   #main-wrapper {
-    width: 85%;
+    width: 90%;
     height: auto;
     margin-top: 0.5em;
     margin-left: auto;
@@ -1139,7 +1140,7 @@ footer {
 
       #logo-title {
         color: $color-white;
-        font-size: 2.1em;
+        font-size: 1.8em;
         font-family: $fontList;
         text-align: center;
         line-height: 60px;
@@ -1153,7 +1154,7 @@ footer {
         float: left;
         color: $color-white;
         padding: 0;
-        font-size: 0.9em;
+        font-size: 0.8em;
         font-family: $fontList;
         line-height: 20px;
         text-align: center;
@@ -1373,8 +1374,8 @@ footer {
               float: right;
 
               .slider-caption-title {
-                font-size: 2em;
-                line-height: 80px;
+                font-size: 1.3em;
+                line-height: 50px;
                 font-family: $fontList;
               }
 
@@ -2127,7 +2128,7 @@ footer {
 
   // main container
   #main-wrapper {
-    width: 98%;
+    width: 90%;
   }
 
   nav div {
@@ -2154,14 +2155,14 @@ footer {
       flex: 0 0 auto;
 
       #logo-title {
-        font-size: 2em;
-        line-height: 60px;
+        font-size: 1.7em;
+        line-height: 50px;
         text-align: center;
       }
 
       #logo-text {
         float: left;
-        font-size: 0.9em;
+        font-size: 0.8em;
         line-height: 20px;
         text-align: center;
       }
@@ -2238,7 +2239,7 @@ footer {
 
         .nav-links {
           line-height: 40px;
-          font-size: 1em;
+          font-size: 0.9em;
           height: 100%;
 
           &:hover {
@@ -2296,8 +2297,8 @@ footer {
               height: 100%;
               float: right;
               .slider-caption-title {
-                font-size: 2em;
-                line-height: 50px;
+                font-size: 1.5em;
+                line-height: 45px;
                 margin: 0.5em auto;
               }
 
@@ -2880,13 +2881,13 @@ footer {
       width: 40%;
 
       #logo-title {
-        font-size: 1.8em;
-        line-height: 60px;
+        font-size: 1.6em;
+        line-height: 50px;
         text-align: center;
       }
 
       #logo-text {
-        font-size: 0.7em;
+        font-size: 0.8em;
         text-align: center;
       }
     }
@@ -2944,7 +2945,7 @@ footer {
         height: 40px;
 
         .nav-links {
-          font-size: 0.8em;
+          font-size: 0.85em;
           line-height: 40px;
 
           &:hover {
@@ -2976,8 +2977,8 @@ footer {
               position: relative;
 
               .slider-caption-title {
-                font-size: 1.5em;
-                line-height: 45px;
+                font-size: 1.3em;
+                line-height: 40px;
                 margin: 0.5em auto;
               }
 
@@ -3450,13 +3451,13 @@ footer {
       width: 73%;
 
       #logo-title {
-        font-size: 1.8em;
+        font-size: 1.5em;
         text-align: left;
         line-height: 45px;
       }
 
       #logo-text {
-        font-size: 0.75em;
+        font-size: 0.7em;
         text-align: left;
       }
     }
@@ -4083,7 +4084,7 @@ footer {
       width: 73%;
 
       #logo-title {
-        font-size: 1.7em;
+        font-size: 1.4em;
         text-align: left;
         line-height: 45px;
       }
@@ -4682,7 +4683,7 @@ footer {
       width: 73%;
 
       #logo-title {
-        font-size: 1.45em;
+        font-size: 1.3em;
         line-height: 45px;
       }
 
