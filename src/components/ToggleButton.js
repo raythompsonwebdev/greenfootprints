@@ -26,11 +26,11 @@ function ToggleButton(props) {
         slideoutMenu.style.top = `${-slideoutMenuHeight}px`;
       }
     });
-  });
+  }, []);
 
   return (
     <button id="mobile-toggle" title="menu">
-      <i className="fa fa-bars" aria-hidden="true"></i>
+      <i className="fa-bars" aria-hidden="true"></i>
     </button>
   );
 }

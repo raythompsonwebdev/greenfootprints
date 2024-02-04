@@ -1,8 +1,7 @@
-//import { hot } from 'react-hot-loader/root';
 import React from 'react';
 
 const CollectionSlide = ({ data, classname }) => {
-const {title,text,image, alt} = {...data};
+  const { title, text, image, alt } = { ...data };
   return (
     <article className={classname}>
       <h3 className="collection-slide-title">{title}</h3>

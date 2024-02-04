@@ -27,11 +27,9 @@ const routing = (
           <Route exact path="/whatcando" element={<Whatcando />} />
           <Route exact path="/collections" element={<Collections />} />
           <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/Recyclingfacts" element={<Recyclingfacts />} />
+          <Route exact path="/recyclingfacts" element={<Recyclingfacts />} />
           <Route exact path="/tenways" element={<Tenways />} />
           {/* <Route element={<NotFound />} /> */}
-          {/* <Route path="/product/:name" render={({ match }) => <ProductPage match={match} />}
-              /> */}
         </Routes>
       </React.StrictMode>
       <Footer />
@@ -42,4 +40,3 @@ const routing = (
 const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(routing);
-//ReactDOM.render(routing);

@@ -1291,7 +1291,7 @@ footer {
 
       #logo-title {
         color: $color-white;
-        font-size: 1.8em;
+        font-size: 2em;
         font-family: $fontList;
         text-align: center;
         line-height: 60px;
@@ -1679,7 +1679,6 @@ footer {
         padding: 0.5em;
 
         h3 {
-          -ms-flex-item-align: center;
           align-self: center;
           color: $colortxt;
           background-color: $bgcolor;
@@ -1974,8 +1973,7 @@ footer {
           .whatcando-image-right {
             width: auto;
             height: auto;
-            display: none;
-            margin: 0.9em;
+            display: block;
             float: right;
           }
 
@@ -2310,7 +2308,7 @@ footer {
       flex: 0 0 auto;
 
       #logo-title {
-        font-size: 1.7em;
+        font-size: 1.9em;
         line-height: 50px;
         text-align: center;
       }
@@ -2336,7 +2334,7 @@ footer {
       width: 30%;
       height: 45px;
       flex: 0 0 auto;
-      padding-left: 3%;
+      padding-left: 4%;
 
       #socials-container {
         display: flex;
@@ -2565,9 +2563,8 @@ footer {
         padding: 0.5em;
 
         h3 {
-          -ms-flex-item-align: center;
           align-self: center;
-          font-size: 1em;
+          font-size: 1.1em;
           line-height: 40px;
         }
 
@@ -2809,7 +2806,7 @@ footer {
           grid-area: 6 / 1 / 9 / 9;
 
           .whatcando-image-right {
-            display: none;
+            display: block;
             margin: 0.9em;
             float: right;
           }
@@ -3041,7 +3038,7 @@ footer {
       width: 40%;
 
       #logo-title {
-        font-size: 1.6em;
+        font-size: 1.7em;
         line-height: 50px;
         text-align: center;
       }
@@ -3059,7 +3056,7 @@ footer {
     #socials {
       width: 30%;
       margin: 0;
-      padding-left: 3%;
+      padding-left: 5%;
 
       #socials-container {
         margin: 0;
@@ -3224,7 +3221,6 @@ footer {
         width: 100%;
 
         h3 {
-          -ms-flex-item-align: center;
           align-self: center;
           font-size: 1.1em;
         }
@@ -3297,7 +3293,7 @@ footer {
           .whatcando-image-right {
             width: auto;
             height: auto;
-            display: none;
+            display: block;
             margin: 0.9em;
             float: right;
           }
@@ -3725,7 +3721,6 @@ footer {
         width: 100%;
 
         h3 {
-          -ms-flex-item-align: center;
           align-self: center;
           font-size: 1em;
         }
@@ -3942,7 +3937,7 @@ footer {
           .whatcando-image-right {
             width: auto;
             height: auto;
-            display: none;
+            display: block;
             margin: 0.9em;
             float: right;
           }
@@ -4332,7 +4327,6 @@ footer {
         width: 100%;
 
         h3 {
-          -ms-flex-item-align: center;
           align-self: center;
           font-size: 1.05em;
         }
@@ -4546,7 +4540,7 @@ footer {
           .whatcando-image-right {
             width: auto;
             height: auto;
-            display: none;
+            display: block;
             margin: 0.9em;
             float: right;
           }
@@ -4926,7 +4920,6 @@ footer {
         width: 100%;
 
         h3 {
-          -ms-flex-item-align: center;
           align-self: center;
           font-size: 1em;
         }
@@ -4998,7 +4991,7 @@ footer {
           .whatcando-image-right {
             width: auto;
             height: auto;
-            display: none;
+            display: block;
             margin: 0.9em;
             float: right;
           }

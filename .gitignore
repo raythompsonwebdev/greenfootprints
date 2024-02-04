@@ -57,9 +57,9 @@ test/
 .settings/
 .vscode/
 
-src/static/data
-src/static/images
-src/static/fonts
+src/static/data/gh-pages-link.txt
+src/static/images/
+
 src/static/js
 src/static/favicons
 build/

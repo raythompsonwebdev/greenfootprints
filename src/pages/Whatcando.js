@@ -1,9 +1,9 @@
 import React from 'react';
-import recycleCircle from '../static/images/JPG/recycle-continuous-circle-greenfootprints-com.jpg';
-import inRubbishBin from '../static/images/JPG/what-is-in-your-rubbish-bin.jpg';
-import whatCanImg from '../static/images/gif-images/Recycling_image_1.gif';
-import familyHomeImg from '../static/images/gif-images/family_home_page.gif';
-//import recycleMaterialImg from '../static/images/JPG/recylingbins-greenfootprints-com.jpg';
+import recycleCircle from 'static/images/webp/recycle-continuous-circle-greenfootprints-com.webp';
+import inRubbishBin from 'static/images/webp/what-is-in-your-rubbish-bin.webp';
+import whatCanImg from 'static/images/webp/Recycling_image_1.webp';
+import familyHomeImg from 'static/images/webp/family_home_page.webp';
+import recycleMaterialImg from 'static/images/webp/recylingbins-greenfootprints-com.webp';
 
 function Whatcando() {
   return (
@@ -64,8 +64,8 @@ function Whatcando() {
 
               <p>
                 You can find out how to recycle different materials such as
-                Glass, Batteries and Mobile Phones by simply using our list on
-                the right hand side.
+                Glass, Batteries and Mobile Phones by simply using our list
+                below.
               </p>
 
               <ul id="different-materials-list">
@@ -146,12 +146,12 @@ function Whatcando() {
                 point search <a href="http://www.google.com">here</a>.
               </p>
             </figcaption>
-            {/* <img
+            <img
               className="whatcando-image-right"
               id="mainImageTwo"
               src={recycleMaterialImg}
               alt="recycling-materials"
-            /> */}
+            />
           </figure>
           <br />
         </article>

@@ -1,6 +1,6 @@
 import React from 'react';
 import SocialMediaLink from './SocialMediaLinks.js';
-import logo from '../static/images/gif-images/logo-greenfootprints-com.gif';
+import logo from 'static/images/webp/logo-greenfootprints-com.webp';
 
 function Header() {
   return (
