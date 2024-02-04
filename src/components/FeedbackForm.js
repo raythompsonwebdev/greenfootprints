@@ -26,7 +26,7 @@ function FeedbackForm() {
     e.preventDefault();
   };
   return (
-    <form class="feedback-form" onSubmit={submit}>
+    <form id="feedback-form" onSubmit={submit}>
       <ul id="feedback-form-fields">
         <li className="feedback-form-item">
           <label htmlFor="username">
