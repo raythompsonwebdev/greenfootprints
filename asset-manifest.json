@@ -1,24 +1,28 @@
 {
   "files": {
-    "main.css": "/greenfootprints/static/css/main.1362ce3a.css",
-    "main.js": "/greenfootprints/static/js/main.b9b9aef9.js",
-    "static/media/slider-image4-greenfootprints-com.png": "/greenfootprints/static/media/slider-image4-greenfootprints-com.6085e753e50c6b8e2643.png",
-    "static/media/slider-image3-greenfootprints-com.png": "/greenfootprints/static/media/slider-image3-greenfootprints-com.a0bcd41f642571bb8372.png",
-    "static/media/what-is-in-your-rubbish-bin.jpg": "/greenfootprints/static/media/what-is-in-your-rubbish-bin.cdafdf2db329651677c5.jpg",
-    "static/media/slider-image2-greenfootprints-com.png": "/greenfootprints/static/media/slider-image2-greenfootprints-com.761218d5f0277f23cf77.png",
-    "static/media/recycle-continuous-circle-greenfootprints-com.jpg": "/greenfootprints/static/media/recycle-continuous-circle-greenfootprints-com.d53324e1ab7dd9da9dc2.jpg",
-    "static/media/Recycling_image_1.gif": "/greenfootprints/static/media/Recycling_image_1.86c42bae78988d447397.gif",
-    "static/media/family_home_page.gif": "/greenfootprints/static/media/family_home_page.8c617009f2d9d85206e1.gif",
-    "static/media/recylingbins-greenfootprints-com.jpg": "/greenfootprints/static/media/recylingbins-greenfootprints-com.69830ee1c5761ba9c1a7.jpg",
-    "static/media/wordsearch.gif": "/greenfootprints/static/media/wordsearch.138f0fba9f75cb88623c.gif",
-    "static/media/recyling-guide.gif": "/greenfootprints/static/media/recyling-guide.38913ae217ef3edfe1c3.gif",
-    "static/media/recycling-flowchart.gif": "/greenfootprints/static/media/recycling-flowchart.55621297bcdc45e1c0b0.gif",
+    "main.css": "/greenfootprints/static/css/main.36f82c30.css",
+    "main.js": "/greenfootprints/static/js/main.97944cef.js",
+    "static/media/slider-image4-greenfootprints-com.webp": "/greenfootprints/static/media/slider-image4-greenfootprints-com.202d3f1a457a7cb9fbb1.webp",
+    "static/media/slider-image3-greenfootprints-com.webp": "/greenfootprints/static/media/slider-image3-greenfootprints-com.9ca31fe44795f4a8e550.webp",
+    "static/media/Recycling_image_1.webp": "/greenfootprints/static/media/Recycling_image_1.c6282f9a832d5319c4e3.webp",
+    "static/media/family_home_page.webp": "/greenfootprints/static/media/family_home_page.a998c38507a3d6648ea8.webp",
+    "static/media/what-is-in-your-rubbish-bin.webp": "/greenfootprints/static/media/what-is-in-your-rubbish-bin.4f96ce9ae7b9e9c0d47e.webp",
+    "static/media/wordsearch.webp": "/greenfootprints/static/media/wordsearch.967a7b2871362f27d578.webp",
+    "static/media/recycle-continuous-circle-greenfootprints-com.webp": "/greenfootprints/static/media/recycle-continuous-circle-greenfootprints-com.acf51d961c963afcaa86.webp",
+    "static/media/recyling-guide.webp": "/greenfootprints/static/media/recyling-guide.afee3ea669ed5256288d.webp",
+    "static/media/slider-image2-greenfootprints-com.webp": "/greenfootprints/static/media/slider-image2-greenfootprints-com.a328a9b96af4a71ef7dc.webp",
+    "static/media/recycling-flowchart.webp": "/greenfootprints/static/media/recycling-flowchart.69cedde6ed66c655a679.webp",
+    "static/media/Image-bin.webp": "/greenfootprints/static/media/Image-bin.16c33f8ff92c1c532417.webp",
+    "static/media/recylingbins-greenfootprints-com.webp": "/greenfootprints/static/media/recylingbins-greenfootprints-com.1b9f55811fc177e3c8e4.webp",
+    "static/media/logo-greenfootprints-com.webp": "/greenfootprints/static/media/logo-greenfootprints-com.c065b1ebd1934c548a1a.webp",
+    "static/media/house-greenfootprints-com.webp": "/greenfootprints/static/media/house-greenfootprints-com.f6fd14a409714011a75b.webp",
+    "static/media/Image-mobile-batteries.webp": "/greenfootprints/static/media/Image-mobile-batteries.128afba90e6ed7569a91.webp",
     "index.html": "/greenfootprints/index.html",
-    "main.1362ce3a.css.map": "/greenfootprints/static/css/main.1362ce3a.css.map",
-    "main.b9b9aef9.js.map": "/greenfootprints/static/js/main.b9b9aef9.js.map"
+    "main.36f82c30.css.map": "/greenfootprints/static/css/main.36f82c30.css.map",
+    "main.97944cef.js.map": "/greenfootprints/static/js/main.97944cef.js.map"
   },
   "entrypoints": [
-    "static/css/main.1362ce3a.css",
-    "static/js/main.b9b9aef9.js"
+    "static/css/main.36f82c30.css",
+    "static/js/main.97944cef.js"
   ]
 }
