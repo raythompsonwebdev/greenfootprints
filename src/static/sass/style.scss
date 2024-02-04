@@ -514,20 +514,25 @@
       }
 
       #recycle-contact {
-        padding: 1.5em;
+        padding: 1em;
         background-color: $colortxtbg;
         width: 100%;
         margin: 0;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
 
-        justify-content: space-between;
-
-        align-items: stretch;
+        address {
+          display: flex;
+          flex-flow: row wrap;
+          align-items: flex-start;
+          gap: 1em;
+        }
 
         .recycle-contact-link {
           font-size: 1em;
-          width: 100%;
+          width: auto;
           color: $color-black;
           height: auto;
           line-height: 25px;
@@ -538,17 +543,15 @@
           }
         }
 
-        h3 {
-          padding: 0.25em 0;
-          clear: both;
-          display: block;
+        p,
+        address {
           flex: 0 1 auto;
-          line-height: 35px;
+          line-height: 60px;
           margin: 0;
           padding: 0;
 
           &::before {
-            width: 5%;
+            width: 2.5%;
             display: inline-block;
             font-size: 1.5em;
             line-height: 35px;
@@ -556,28 +559,27 @@
         }
 
         #location {
-          width: 45%;
-          line-height: 25px;
-
-          h3::before {
+          width: 100%;
+          flex: 0 1 auto;
+          p::before {
             font-family: FontAwesome;
             content: '\f015';
           }
         }
 
         #telephone {
-          width: 50%;
-
-          h3::before {
+          width: 100%;
+          flex: 0 1 auto;
+          p::before {
             font-family: FontAwesome;
             content: '\f098';
           }
         }
 
         #email {
-          width: 50%;
-
-          h3::before {
+          width: 100%;
+          flex: 0 1 auto;
+          p::before {
             font-family: FontAwesome;
             content: '\f0e0';
             font-style: normal;
@@ -585,9 +587,9 @@
         }
 
         #links {
-          width: 50%;
-
-          h3::before {
+          width: 100%;
+          flex: 0 1 auto;
+          address::before {
             font-family: FontAwesome;
             content: '\f1ad';
             font-style: normal;
@@ -596,64 +598,110 @@
 
         #registration {
           width: 100%;
-
-          h3::before {
+          flex: 0 1 auto;
+          p::before {
             font-family: FontAwesome;
             content: '\f0ac';
             font-style: normal;
-            width: 3.5%;
           }
         }
-      }
 
-      #feedback-form {
-        width: 40%;
-        margin: 1em auto;
+        #feedback-form-container {
+          width: 100%;
+          p::before {
+            font-family: FontAwesome;
+            content: '\f0ac';
+          }
+          #feedback-form {
+            width: 40%;
+            margin: 1em auto;
 
-        ul {
-          margin: 1% auto;
-          padding: 1em;
+            #feedback-form-fields {
+              margin: 1% auto;
+              background-color: $headbg;
+              padding: 0;
+              padding: 1em;
 
-          li {
-            width: 100%;
+              .feedback-form-item {
+                width: 100%;
+                padding: 0;
+                background-color: $headbg;
 
-            label {
-              width: 100%;
-              margin: 0.5em 0;
-            }
+                label {
+                  width: 100%;
+                  color: $color-white;
+                  height: auto;
+                  margin: 0.5em 0;
+                  display: block;
+                  text-align: left;
+                }
 
-            input {
-              border: 0;
-              width: 100%;
-            }
+                input {
+                  border: 0;
+                  width: 100%;
+                  height: 35px;
+                  line-height: 35px;
+                  padding: 0;
+                  margin: 0.5em 0 0;
+                  display: block;
+                }
 
-            textarea {
-              width: 100%;
-            }
+                textarea {
+                  width: 100%;
+                  border: 0;
+                  margin: 0.5em 0 0;
+                  display: block;
+                }
 
-            input[type='submit'] {
-              &:hover {
-                font-weight: bold;
-                cursor: pointer;
+                input[type='submit'] {
+                  height: 30px;
+                  width: 30%;
+                  margin: 0;
+                  line-height: 30px;
+                  background-color: $honecolor;
+                  border: 0;
+                  color: $color-white;
+                  display: block;
+
+                  &:hover {
+                    background-color: $honecolor;
+                    color: $color-white;
+                    font-weight: bold;
+                    cursor: pointer;
+                  }
+                }
+
+                .error,
+                .notice,
+                .success {
+                  line-height: 35px;
+                  display: block;
+                  margin-bottom: 0.5em;
+                  text-indent: 0.5em;
+                  padding: 0;
+                }
+
+                .error {
+                  background: $color-white;
+                  color: $error-border;
+                  border-color: $error-border;
+                  width: 100%;
+                }
+
+                .notice {
+                  background: $notice-bg;
+                  color: $notice-color;
+                  border-color: $notice-border;
+                  width: 100%;
+                }
+
+                .success {
+                  background: $success-bg;
+                  color: $success-color;
+                  border-color: $success-border;
+                  width: 100%;
+                }
               }
-            }
-
-            .error,
-            .notice,
-            .success {
-              line-height: 35px;
-            }
-
-            .error {
-              background: $color-white;
-            }
-
-            .notice {
-              width: 100%;
-            }
-
-            .success {
-              width: 100%;
             }
           }
         }
@@ -666,14 +714,20 @@
       width: 100%;
       margin: 0;
       display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      align-items: stretch;
+      flex-flow: column;
+      justify-content: flex-start;
+      align-items: flex-start;
       font-size: 0.9em;
+
+      address {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        gap: 1em;
+      }
 
       .recycle-contact-link {
         font-size: 0.9em;
-        width: 100%;
         color: $color-black;
         height: auto;
         line-height: 35px;
@@ -684,27 +738,25 @@
         }
       }
 
-      h3 {
-        padding: 0.25em 0;
-        display: block;
+      p,
+      address {
         flex: 0 1 auto;
-        line-height: 35px;
+        line-height: 60px;
+        margin: 0;
+        padding: 0;
 
         &::before {
-          width: 10%;
+          width: 2.5%;
           display: inline-block;
-          font-size: 2em;
-          font-style: normal;
-          text-align: left;
-          text-indent: 0;
+          font-size: 1.5em;
           line-height: 35px;
         }
       }
 
       #location {
         width: 100%;
-
-        h3::before {
+        flex: 0 1 auto;
+        p::before {
           font-family: FontAwesome;
           content: '\f015';
         }
@@ -712,8 +764,8 @@
 
       #telephone {
         width: 100%;
-
-        h3::before {
+        flex: 0 1 auto;
+        p::before {
           font-family: FontAwesome;
           content: '\f098';
         }
@@ -721,8 +773,8 @@
 
       #email {
         width: 100%;
-
-        h3::before {
+        flex: 0 1 auto;
+        p::before {
           font-family: FontAwesome;
           content: '\f0e0';
           font-style: normal;
@@ -731,8 +783,8 @@
 
       #links {
         width: 100%;
-
-        h3::before {
+        flex: 0 1 auto;
+        address::before {
           font-family: FontAwesome;
           content: '\f1ad';
           font-style: normal;
@@ -741,104 +793,111 @@
 
       #registration {
         width: 100%;
-
-        h3::before {
+        flex: 0 1 auto;
+        p::before {
           font-family: FontAwesome;
           content: '\f0ac';
           font-style: normal;
-          width: 3.5%;
         }
       }
-    }
 
-    #feedback-form {
-      width: 40%;
-      margin: 1em auto;
+      #feedback-form-container {
+        width: 100%;
 
-      ul {
-        margin: 1% auto;
-        background-color: $headbg;
-        padding: 0;
-        padding: 1em;
+        p::before {
+          font-family: FontAwesome;
+          content: '\f0ac';
+        }
+        #feedback-form {
+          width: 40%;
+          margin: 1em auto;
 
-        li {
-          width: 100%;
-          padding: 0;
-          background-color: $headbg;
-
-          label {
-            width: 100%;
-            color: $color-white;
-            height: auto;
-            margin: 0.5em 0;
-            display: block;
-            text-align: left;
-          }
-
-          input {
-            border: 0;
-            width: 100%;
-            height: 35px;
-            line-height: 35px;
+          #feedback-form-fields {
+            margin: 1% auto;
+            background-color: $headbg;
             padding: 0;
-            margin: 0.5em 0 0;
-            display: block;
-          }
+            padding: 1em;
 
-          textarea {
-            width: 100%;
-            border: 0;
-            margin: 0.5em 0 0;
-            display: block;
-          }
+            .feedback-form-item {
+              width: 100%;
+              padding: 0;
+              background-color: $headbg;
 
-          input[type='submit'] {
-            height: 30px;
-            width: 30%;
-            margin: 0;
-            line-height: 30px;
-            background-color: $honecolor;
-            border: 0;
-            color: $color-white;
-            display: block;
+              label {
+                width: 100%;
+                color: $color-white;
+                height: auto;
+                margin: 0.5em 0;
+                display: block;
+                text-align: left;
+              }
 
-            &:hover {
-              background-color: $honecolor;
-              color: $color-white;
-              font-weight: bold;
-              cursor: pointer;
+              input {
+                border: 0;
+                width: 100%;
+                height: 35px;
+                line-height: 35px;
+                padding: 0;
+                margin: 0.5em 0 0;
+                display: block;
+              }
+
+              textarea {
+                width: 100%;
+                border: 0;
+                margin: 0.5em 0 0;
+                display: block;
+              }
+
+              input[type='submit'] {
+                height: 30px;
+                width: 30%;
+                margin: 0;
+                line-height: 30px;
+                background-color: $honecolor;
+                border: 0;
+                color: $color-white;
+                display: block;
+
+                &:hover {
+                  background-color: $honecolor;
+                  color: $color-white;
+                  font-weight: bold;
+                  cursor: pointer;
+                }
+              }
+
+              .error,
+              .notice,
+              .success {
+                line-height: 35px;
+                display: block;
+                margin-bottom: 0.5em;
+                text-indent: 0.5em;
+                padding: 0;
+              }
+
+              .error {
+                background: $color-white;
+                color: $error-border;
+                border-color: $error-border;
+                width: 100%;
+              }
+
+              .notice {
+                background: $notice-bg;
+                color: $notice-color;
+                border-color: $notice-border;
+                width: 100%;
+              }
+
+              .success {
+                background: $success-bg;
+                color: $success-color;
+                border-color: $success-border;
+                width: 100%;
+              }
             }
-          }
-
-          .error,
-          .notice,
-          .success {
-            line-height: 35px;
-            display: block;
-            margin-bottom: 0.5em;
-            text-indent: 0.5em;
-            padding: 0;
-          }
-
-          .error {
-            background: $color-white;
-            color: $error-border;
-            border-color: $error-border;
-            width: 100%;
-          }
-
-          .notice {
-            background: $notice-bg;
-            color: $notice-color;
-            border-color: $notice-border;
-            width: 100%;
-          }
-
-          .success {
-            background: $success-bg;
-            color: $success-color;
-            border-color: $success-border;
-            width: 100%;
           }
         }
       }
@@ -1708,9 +1767,16 @@ footer {
         width: 98%;
         margin: 0;
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: stretch;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        address {
+          display: flex;
+          flex-flow: row wrap;
+          align-items: flex-start;
+          gap: 1em;
+        }
 
         .recycle-contact-link {
           font-size: 1em;
@@ -1725,45 +1791,43 @@ footer {
           }
         }
 
-        h3 {
-          padding: 0.25em 0;
-          clear: both;
-          display: inline-block;
+        p,
+        address {
           flex: 0 1 auto;
-          line-height: 35px;
+          line-height: 60px;
           margin: 0;
           padding: 0;
 
           &::before {
-            width: 10%;
+            width: 2.5%;
             display: inline-block;
-            font-size: 2em;
+            font-size: 1.5em;
             line-height: 35px;
           }
         }
 
         #location {
-          width: 45%;
-          height: 200px;
-          h3::before {
+          width: 100%;
+          flex: 0 1 auto;
+          p::before {
             font-family: FontAwesome;
             content: '\f015';
           }
         }
 
         #telephone {
-          width: 50%;
-          height: 200px;
-          h3::before {
+          width: 100%;
+          flex: 0 1 auto;
+          p::before {
             font-family: FontAwesome;
             content: '\f098';
           }
         }
 
         #email {
-          width: 50%;
-          height: 200px;
-          h3::before {
+          width: 100%;
+          flex: 0 1 auto;
+          p::before {
             font-family: FontAwesome;
             content: '\f0e0';
             font-style: normal;
@@ -1771,9 +1835,9 @@ footer {
         }
 
         #links {
-          width: 50%;
-          height: 200px;
-          h3::before {
+          width: 100%;
+          flex: 0 1 auto;
+          address::before {
             font-family: FontAwesome;
             content: '\f1ad';
             font-style: normal;
@@ -1782,104 +1846,112 @@ footer {
 
         #registration {
           width: 100%;
-          height: 200px;
-          h3::before {
+          flex: 0 1 auto;
+          p::before {
             font-family: FontAwesome;
             content: '\f0ac';
             font-style: normal;
-            width: 3.5%;
           }
         }
-      }
 
-      #feedback-form {
-        width: 40%;
-        margin: 1em auto;
+        #feedback-form-container {
+          width: 100%;
 
-        ul {
-          margin: 1% auto;
-          background-color: $headbg;
-          padding: 0;
-          padding: 1em;
+          p::before {
+            font-family: FontAwesome;
+            content: '\f0ac';
+          }
 
-          li {
-            width: 100%;
-            padding: 0;
-            background-color: $headbg;
+          #feedback-form {
+            width: 40%;
+            margin: 1em auto;
 
-            label {
-              width: 100%;
-              color: $color-white;
-              height: auto;
-              margin: 0.5em 0;
-              display: block;
-              text-align: left;
-            }
-
-            input {
-              border: 0;
-              width: 100%;
-              height: 35px;
-              line-height: 35px;
+            #feedback-form-fields {
+              margin: 1% auto;
+              background-color: $headbg;
               padding: 0;
-              margin: 0.5em 0 0;
-              display: block;
-            }
+              padding: 1em;
 
-            textarea {
-              width: 100%;
-              border: 0;
-              margin: 0.5em 0 0;
-              display: block;
-            }
+              .feedback-form-item {
+                width: 100%;
+                padding: 0;
+                background-color: $headbg;
 
-            input[type='submit'] {
-              height: 30px;
-              width: 30%;
-              margin: 0;
-              line-height: 30px;
-              background-color: $honecolor;
-              border: 0;
-              color: $color-white;
-              display: block;
+                label {
+                  width: 100%;
+                  color: $color-white;
+                  height: auto;
+                  margin: 0.5em 0;
+                  display: block;
+                  text-align: left;
+                }
 
-              &:hover {
-                background-color: $honecolor;
-                color: $color-white;
-                font-weight: bold;
-                cursor: pointer;
+                input {
+                  border: 0;
+                  width: 100%;
+                  height: 35px;
+                  line-height: 35px;
+                  padding: 0;
+                  margin: 0.5em 0 0;
+                  display: block;
+                }
+
+                textarea {
+                  width: 100%;
+                  border: 0;
+                  margin: 0.5em 0 0;
+                  display: block;
+                }
+
+                input[type='submit'] {
+                  height: 30px;
+                  width: 30%;
+                  margin: 0;
+                  line-height: 30px;
+                  background-color: $honecolor;
+                  border: 0;
+                  color: $color-white;
+                  display: block;
+
+                  &:hover {
+                    background-color: $honecolor;
+                    color: $color-white;
+                    font-weight: bold;
+                    cursor: pointer;
+                  }
+                }
+
+                .error,
+                .notice,
+                .success {
+                  line-height: 35px;
+                  display: block;
+                  margin-bottom: 0.5em;
+                  text-indent: 0.5em;
+                  padding: 0;
+                }
+
+                .error {
+                  background: $color-white;
+                  color: $error-border;
+                  border-color: $error-border;
+                  width: 100%;
+                }
+
+                .notice {
+                  background: $notice-bg;
+                  color: $notice-color;
+                  border-color: $notice-border;
+                  width: 100%;
+                }
+
+                .success {
+                  background: $success-bg;
+                  color: $success-color;
+                  border-color: $success-border;
+                  width: 100%;
+                }
               }
-            }
-
-            .error,
-            .notice,
-            .success {
-              line-height: 35px;
-              display: block;
-              margin-bottom: 0.5em;
-              text-indent: 0.5em;
-              padding: 0;
-            }
-
-            .error {
-              background: $color-white;
-              color: $error-border;
-              border-color: $error-border;
-              width: 100%;
-            }
-
-            .notice {
-              background: $notice-bg;
-              color: $notice-color;
-              border-color: $notice-border;
-              width: 100%;
-            }
-
-            .success {
-              background: $success-bg;
-              color: $success-color;
-              border-color: $success-border;
-              width: 100%;
             }
           }
         }
@@ -2580,14 +2652,20 @@ footer {
       }
 
       #recycle-contact {
-        padding: 1.5em;
+        padding: 1em;
         width: 100%;
         margin: 0;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column;
         justify-content: flex-start;
-        align-items: stretch;
-        gap: 0.25em;
+        align-items: flex-start;
+
+        address {
+          display: flex;
+          flex-flow: row wrap;
+          align-items: flex-start;
+          gap: 1em;
+        }
 
         .recycle-contact-link {
           font-size: 1em;
@@ -2599,51 +2677,43 @@ footer {
           }
         }
 
-        h3 {
-          padding: 0.25em 0;
-          clear: both;
-          display: inline-block;
+        p,
+        address {
           flex: 0 1 auto;
-          line-height: 35px;
+          line-height: 60px;
           margin: 0;
           padding: 0;
 
           &::before {
-            width: 7%;
+            width: 2.5%;
             display: inline-block;
-            font-size: 2em;
+            font-size: 1.5em;
             line-height: 35px;
           }
         }
 
-        p {
-          font-size: 1.1em;
-          line-height: 35px;
-          margin: 0;
-        }
-
         #location {
-          width: 49%;
-          height: 280px;
-          h3::before {
+          width: 100%;
+          flex: 0 1 auto;
+          p::before {
             font-family: FontAwesome;
             content: '\f015';
           }
         }
 
         #telephone {
-          width: 50%;
-          height: 200px;
-          h3::before {
+          width: 100%;
+          flex: 0 1 auto;
+          p::before {
             font-family: FontAwesome;
             content: '\f098';
           }
         }
 
         #email {
-          width: 49%;
-          height: 200px;
-          h3::before {
+          width: 100%;
+          flex: 0 1 auto;
+          p::before {
             font-family: FontAwesome;
             content: '\f0e0';
             font-style: normal;
@@ -2651,9 +2721,9 @@ footer {
         }
 
         #links {
-          width: 50%;
-          height: 200px;
-          h3::before {
+          width: 100%;
+          flex: 0 1 auto;
+          address::before {
             font-family: FontAwesome;
             content: '\f1ad';
             font-style: normal;
@@ -2662,80 +2732,88 @@ footer {
 
         #registration {
           width: 100%;
-
-          h3::before {
+          flex: 0 1 auto;
+          p::before {
             font-family: FontAwesome;
             content: '\f0ac';
             font-style: normal;
-            width: 3.5%;
           }
         }
-      }
 
-      #feedback-form {
-        width: 40%;
-        margin: 1em auto;
+        #feedback-form-container {
+          width: 100%;
+          height: 300px;
+          background: #c90;
+          p::before {
+            font-family: FontAwesome;
+            content: '\f0ac';
+          }
+          .feedback-form {
+            width: 40%;
+            margin: 1em auto;
 
-        ul {
-          margin: 1% auto;
-          padding: 1em;
+            #feedback-form-fields {
+              margin: 1% auto;
+              padding: 1em;
 
-          li {
-            width: 100%;
-            background-color: $headbg;
+              .feedback-form-item {
+                width: 100%;
+                background-color: $headbg;
 
-            label {
-              margin: 0.5em 0;
-            }
+                label {
+                  margin: 0.5em 0;
+                }
 
-            input {
-              height: 35px;
-              line-height: 35px;
-              margin: 0.5em 0 0;
-            }
+                input {
+                  height: 35px;
+                  line-height: 35px;
+                  margin: 0.5em 0 0;
+                }
 
-            textarea {
-              margin: 0.5em 0 0;
-            }
+                textarea {
+                  margin: 0.5em 0 0;
+                }
 
-            input[type='submit'] {
-              height: 30px;
-              width: 30%;
-              line-height: 30px;
+                input[type='submit'] {
+                  height: 30px;
+                  width: 30%;
+                  line-height: 30px;
 
-              &:hover {
-                font-weight: bold;
-                cursor: pointer;
+                  &:hover {
+                    font-weight: bold;
+                    cursor: pointer;
+                  }
+                }
+
+                .error,
+                .notice,
+                .success {
+                  line-height: 35px;
+                  margin-bottom: 0.5em;
+                  text-indent: 0.5em;
+                }
+
+                .error {
+                  background: $error-bg;
+                  color: $error-color;
+                  border-color: $error-border;
+                  width: 100%;
+                }
+
+                .notice {
+                  background: $notice-bg;
+                  color: $notice-color;
+                  border-color: $notice-border;
+                  width: 100%;
+                }
+
+                .success {
+                  background: $success-bg;
+                  color: $success-color;
+                  border-color: $success-border;
+                  width: 100%;
+                }
               }
-            }
-
-            .error,
-            .notice,
-            .success {
-              line-height: 35px;
-              margin-bottom: 0.5em;
-              text-indent: 0.5em;
-            }
-
-            .error {
-              background: $error-bg;
-              color: $error-color;
-              border-color: $error-border;
-              width: 100%;
-            }
-
-            .notice {
-              background: $notice-bg;
-              color: $notice-color;
-              border-color: $notice-border;
-              width: 100%;
-            }
-
-            .success {
-              background: $success-bg;
-              color: $success-color;
-              border-color: $success-border;
-              width: 100%;
             }
           }
         }
@@ -3739,10 +3817,11 @@ footer {
         background-color: $colortxtbg;
         width: 100%;
         margin: 0;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: stretch;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
 
         .recycle-contact-link {
           font-size: 1em;
@@ -3757,17 +3836,15 @@ footer {
           }
         }
 
-        h3 {
-          padding: 0.25em 0;
-          clear: both;
-          display: block;
+        p,
+        address {
           flex: 0 1 auto;
-          line-height: 35px;
+          line-height: 60px;
           margin: 0;
           padding: 0;
 
           &::before {
-            width: 5%;
+            width: 2.5%;
             display: inline-block;
             font-size: 1.5em;
             line-height: 35px;
@@ -3775,28 +3852,27 @@ footer {
         }
 
         #location {
-          width: 45%;
-          line-height: 25px;
-
-          &::before {
+          width: 100%;
+          flex: 0 1 auto;
+          p::before {
             font-family: FontAwesome;
             content: '\f015';
           }
         }
 
         #telephone {
-          width: 50%;
-
-          &::before {
+          width: 100%;
+          flex: 0 1 auto;
+          p::before {
             font-family: FontAwesome;
             content: '\f098';
           }
         }
 
         #email {
-          width: 50%;
-
-          &::before {
+          width: 100%;
+          flex: 0 1 auto;
+          p::before {
             font-family: FontAwesome;
             content: '\f0e0';
             font-style: normal;
@@ -3804,9 +3880,9 @@ footer {
         }
 
         #links {
-          width: 50%;
-
-          &::before {
+          width: 100%;
+          flex: 0 1 auto;
+          address::before {
             font-family: FontAwesome;
             content: '\f1ad';
             font-style: normal;
@@ -3815,64 +3891,71 @@ footer {
 
         #registration {
           width: 100%;
-
-          &::before {
+          flex: 0 1 auto;
+          p::before {
             font-family: FontAwesome;
             content: '\f0ac';
             font-style: normal;
-            width: 3.5%;
           }
         }
-      }
 
-      #feedback-form {
-        width: 40%;
-        margin: 1em auto;
+        #feedback-form-container {
+          width: 100%;
 
-        ul {
-          margin: 1% auto;
-          padding: 1em;
+          p::before {
+            font-family: FontAwesome;
+            content: '\f0ac';
+          }
+          #feedback-form {
+            width: 40%;
+            margin: 1em auto;
 
-          li {
-            width: 100%;
+            #feedback-form-fields {
+              margin: 1% auto;
+              padding: 1em;
 
-            label {
-              width: 100%;
-              margin: 0.5em 0;
-            }
+              .feedback-form-item {
+                width: 100%;
 
-            input {
-              border: 0;
-              width: 100%;
-            }
+                label {
+                  width: 100%;
+                  margin: 0.5em 0;
+                }
 
-            textarea {
-              width: 100%;
-            }
+                input {
+                  border: 0;
+                  width: 100%;
+                }
 
-            input[type='submit'] {
-              &:hover {
-                font-weight: bold;
-                cursor: pointer;
+                textarea {
+                  width: 100%;
+                }
+
+                input[type='submit'] {
+                  &:hover {
+                    font-weight: bold;
+                    cursor: pointer;
+                  }
+                }
+
+                .error,
+                .notice,
+                .success {
+                  line-height: 35px;
+                }
+
+                .error {
+                  background: $color-white;
+                }
+
+                .notice {
+                  width: 100%;
+                }
+
+                .success {
+                  width: 100%;
+                }
               }
-            }
-
-            .error,
-            .notice,
-            .success {
-              line-height: 35px;
-            }
-
-            .error {
-              background: $color-white;
-            }
-
-            .notice {
-              width: 100%;
-            }
-
-            .success {
-              width: 100%;
             }
           }
         }
@@ -4345,10 +4428,11 @@ footer {
         background-color: $colortxtbg;
         width: 100%;
         margin: 0;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: stretch;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
 
         .recycle-contact-link {
           font-size: 1em;
@@ -4363,15 +4447,15 @@ footer {
           }
         }
 
-        h3 {
-          padding: 0.25em 0;
-          clear: both;
-          display: block;
+        p,
+        address {
           flex: 0 1 auto;
-          line-height: 35px;
+          line-height: 60px;
+          margin: 0;
+          padding: 0;
 
           &::before {
-            width: 5%;
+            width: 2.5%;
             display: inline-block;
             font-size: 1.5em;
             line-height: 35px;
@@ -4379,28 +4463,27 @@ footer {
         }
 
         #location {
-          width: 45%;
-          line-height: 25px;
-
-          &::before {
+          width: 100%;
+          flex: 0 1 auto;
+          p::before {
             font-family: FontAwesome;
             content: '\f015';
           }
         }
 
         #telephone {
-          width: 50%;
-
-          &::before {
+          width: 100%;
+          flex: 0 1 auto;
+          p::before {
             font-family: FontAwesome;
             content: '\f098';
           }
         }
 
         #email {
-          width: 50%;
-
-          &::before {
+          width: 100%;
+          flex: 0 1 auto;
+          p::before {
             font-family: FontAwesome;
             content: '\f0e0';
             font-style: normal;
@@ -4408,9 +4491,9 @@ footer {
         }
 
         #links {
-          width: 50%;
-
-          &::before {
+          width: 100%;
+          flex: 0 1 auto;
+          address::before {
             font-family: FontAwesome;
             content: '\f1ad';
             font-style: normal;
@@ -4419,64 +4502,71 @@ footer {
 
         #registration {
           width: 100%;
-
-          &::before {
+          flex: 0 1 auto;
+          p::before {
             font-family: FontAwesome;
             content: '\f0ac';
             font-style: normal;
-            width: 3.5%;
           }
         }
-      }
 
-      #feedback-form {
-        width: 40%;
-        margin: 1em auto;
+        #feedback-form-container {
+          width: 100%;
 
-        ul {
-          margin: 1% auto;
-          padding: 1em;
+          p::before {
+            font-family: FontAwesome;
+            content: '\f0ac';
+          }
+          #feedback-form {
+            width: 40%;
+            margin: 1em auto;
 
-          li {
-            width: 100%;
+            #feedback-form-fields {
+              margin: 1% auto;
+              padding: 1em;
 
-            label {
-              width: 100%;
-              margin: 0.5em 0;
-            }
+              .feedback-form-item {
+                width: 100%;
 
-            input {
-              border: 0;
-              width: 100%;
-            }
+                label {
+                  width: 100%;
+                  margin: 0.5em 0;
+                }
 
-            textarea {
-              width: 100%;
-            }
+                input {
+                  border: 0;
+                  width: 100%;
+                }
 
-            input[type='submit'] {
-              &:hover {
-                font-weight: bold;
-                cursor: pointer;
+                textarea {
+                  width: 100%;
+                }
+
+                input[type='submit'] {
+                  &:hover {
+                    font-weight: bold;
+                    cursor: pointer;
+                  }
+                }
+
+                .error,
+                .notice,
+                .success {
+                  line-height: 35px;
+                }
+
+                .error {
+                  background: $color-white;
+                }
+
+                .notice {
+                  width: 100%;
+                }
+
+                .success {
+                  width: 100%;
+                }
               }
-            }
-
-            .error,
-            .notice,
-            .success {
-              line-height: 35px;
-            }
-
-            .error {
-              background: $color-white;
-            }
-
-            .notice {
-              width: 100%;
-            }
-
-            .success {
-              width: 100%;
             }
           }
         }

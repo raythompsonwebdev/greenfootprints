@@ -1,4 +1,5 @@
 import React from 'react';
+import FeedBackForm from 'components/FeedbackForm.js';
 
 const Contacts = () => {
   return (
@@ -7,59 +8,54 @@ const Contacts = () => {
         <h2 className="content-title">Contact Us</h2>
         <section id="recycle-contact">
           <section id="location">
-            <h3>Address</h3>
-            <p>Green Recycling Ltd , </p>
-            <p>Quayside Industrial Park, </p>
-            <p>Bates Road,</p>
-            <p>Maldon, </p>
-            <p>Essex, </p>
-            <p>CM9 5FA</p>
+            <p>
+              Green Recycling Ltd, Quayside Industrial Park, Bates Road, Maldon,
+              Essex, CM9 5FA
+            </p>
           </section>
           <section id="telephone">
-            <h3>Telephone and Fax</h3>
-            <p>Telephone: 01628 942600 </p>
-            <p>Fax : 01628 974630 </p>
+            <p>
+              <strong>Telephone :</strong> 01628 942600 | <strong>Fax :</strong>{' '}
+              01628 974630
+            </p>
           </section>
           <section id="email">
-            <h3>Email</h3>
-            <p>Email : sales@greenfootprints.com</p>
-            <p>Email : house@greenfootprints.com</p>
-            <p>Any emails will be answered same day..</p>
+            <p>
+              <strong> Email :</strong> sales@greenfootprints.com |{' '}
+              <strong>Email : </strong>
+              house@greenfootprints.com. Any emails will be answered same day..
+            </p>
           </section>
           <section id="links">
-            <h3>Further Information on Recycling Please Visit</h3>
             <address>
-              <p>
-                <a
-                  className="recycle-contact-link"
-                  href="http://www.recycling-guide.org.uk">
-                  http://www.recycling-guide.org.uk
-                </a>
-              </p>
-              <p>
-                <a
-                  className="recycle-contact-link"
-                  href="http://www.recyclezone.org.uk/">
-                  http://www.recyclezone.org.uk/
-                </a>
-              </p>
-              <p>
-                <a
-                  className="recycle-contact-link"
-                  href="http://www.greenrecycling.co.uk/">
-                  http://www.greenrecycling.co.uk/.
-                </a>
-              </p>
+              <a
+                className="recycle-contact-link"
+                href="http://www.recycling-guide.org.uk">
+                http://www.recycling-guide.org.uk
+              </a>
+
+              <a
+                className="recycle-contact-link"
+                href="http://www.recyclezone.org.uk/">
+                http://www.recyclezone.org.uk/
+              </a>
+
+              <a
+                className="recycle-contact-link"
+                href="http://www.greenrecycling.co.uk/">
+                http://www.greenrecycling.co.uk/.
+              </a>
             </address>
           </section>
           <section id="registration">
-            <h3>Registration</h3>
             <p>
               {' '}
               Registered Carriers of Waste Registration Number : AEA/792880/CT
-              (Issuing Authority: AEA).{' '}
+              (Issuing Authority: AEA). Waste Managment Licence : EAWML-72693.{' '}
             </p>
-            <p>Waste Managment Licence : EAWML-72693. </p>
+          </section>
+          <section id="feedback-form-container">
+            <FeedBackForm />
           </section>
         </section>
       </main>
