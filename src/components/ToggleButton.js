@@ -1,32 +1,34 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
-function ToggleButton(props) {
+function ToggleButton() {
+  const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
-    // Your code to run since DOM is loaded and ready
+    //const slideoutMenu = document.querySelector('#site-navigation');
+    // const slideoutMenuHeight = slideoutMenu.offsetHeight;
     const menuToggle = document.querySelector('#mobile-toggle');
-    // create menu variables
-    const slideoutMenu = document.querySelector('#site-navigation');
 
+    const toggleMenu = (event) => {
+      event.preventDefault();
+      setIsOpen((prevIsOpen) => !prevIsOpen);
+    };
+
+    menuToggle.addEventListener('click', toggleMenu);
+
+    return () => {
+      menuToggle.removeEventListener('click', toggleMenu);
+    };
+  }, []);
+
+  useEffect(() => {
+    const slideoutMenu = document.querySelector('#site-navigation');
     const slideoutMenuHeight = slideoutMenu.offsetHeight;
 
-    // mobile menu toggle button
-    menuToggle.addEventListener('click', (event) => {
-      event.preventDefault();
-
-      // toggle open class
-      slideoutMenu.classList.toggle('open');
-
+    if (slideoutMenu) {
       slideoutMenu.style.transition = 'all 0.3s ease-in 0s';
-
-      // slide menu
-      if (slideoutMenu.classList.contains('open')) {
-        slideoutMenu.style.top = '0px';
-      } else {
-        slideoutMenu.style.transition = 'all 0.3s ease-in 0s';
-        slideoutMenu.style.top = `${-slideoutMenuHeight}px`;
-      }
-    });
-  }, []);
+      slideoutMenu.style.top = isOpen ? '0px' : `${-slideoutMenuHeight}px`;
+    }
+  }, [isOpen]);
 
   return (
     <button id="mobile-toggle" title="menu">

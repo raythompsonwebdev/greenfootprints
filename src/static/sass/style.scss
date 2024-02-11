@@ -513,203 +513,6 @@
         float: left;
         display: block;
       }
-
-      #recycle-contact {
-        padding: 1em;
-        background-color: $colortxtbg;
-        width: 100%;
-        margin: 0;
-        display: flex;
-        flex-flow: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 0.5em;
-
-        address {
-          display: flex;
-          flex-flow: column;
-          align-items: flex-start;
-          justify-content: flex-start;
-          gap: 1em;
-          line-height: 60px;
-          height: auto;
-        }
-
-        .recycle-contact-link {
-          font-size: 1em;
-          width: auto;
-          color: $color-black;
-          height: auto;
-          line-height: 35px;
-
-          &:hover {
-            width: 100%;
-            font-weight: bold;
-          }
-        }
-
-        p,
-        address {
-          flex: 0 1 auto;
-          line-height: 60px;
-          margin: 0;
-          padding: 0;
-          font-size: 0.8em;
-
-          &::before {
-            width: 2.5%;
-            display: inline-block;
-            font-size: 1.5em;
-            line-height: 35px;
-          }
-        }
-
-        #location {
-          width: 100%;
-          flex: 0 1 auto;
-          p::before {
-            font-family: FontAwesome;
-            content: '\f015';
-          }
-        }
-
-        #telephone {
-          width: 100%;
-          flex: 0 1 auto;
-          p::before {
-            font-family: FontAwesome;
-            content: '\f098';
-          }
-        }
-
-        #email {
-          width: 100%;
-          flex: 0 1 auto;
-          p::before {
-            font-family: FontAwesome;
-            content: '\f0e0';
-            font-style: normal;
-          }
-        }
-
-        #links {
-          width: 100%;
-          flex: 0 1 auto;
-          address::before {
-            font-family: FontAwesome;
-            content: '\f1ad';
-            font-style: normal;
-          }
-        }
-
-        #registration {
-          width: 100%;
-          flex: 0 1 auto;
-          p::before {
-            font-family: FontAwesome;
-            content: '\f0ac';
-            font-style: normal;
-          }
-        }
-
-        #feedback-form-container {
-          width: 100%;
-
-          #feedback-form {
-            width: 99%;
-            margin: 1em auto;
-            background-color: $color-white;
-
-            #feedback-form-fields {
-              margin: 1em auto;
-              background-color: $headbg;
-              padding: 1em;
-
-              .feedback-form-item {
-                width: 100%;
-                padding: 0;
-                margin-bottom: 0.5em;
-
-                label {
-                  width: 100%;
-                  color: $color-black;
-                  height: auto;
-                  margin: 0.5em 0;
-                  display: block;
-                  text-align: left;
-                  line-height: 40px;
-                }
-
-                input {
-                  width: 100%;
-                  height: auto;
-                  line-height: 35px;
-                  padding: 0;
-                  margin: 0.5em 0 0;
-                  display: block;
-                  border: 1px solid #000;
-                }
-
-                textarea {
-                  width: 100%;
-                  border: 0;
-                  margin: 0.5em 0 0;
-                  display: block;
-                  border: 1px solid #000;
-                }
-
-                input[type='submit'] {
-                  width: 30%;
-                  margin: 1em auto;
-                  line-height: 35px;
-                  background-color: $honecolor;
-                  border: 0;
-                  color: $color-white;
-                  display: block;
-
-                  &:hover {
-                    background-color: $honecolor;
-                    color: $color-white;
-                    font-weight: bold;
-                    cursor: pointer;
-                  }
-                }
-
-                .error,
-                .notice,
-                .success {
-                  line-height: 35px;
-                  display: block;
-                  margin-bottom: 0.5em;
-                  text-indent: 0.5em;
-                  padding: 0;
-                }
-
-                .error {
-                  background: $color-white;
-                  color: $error-border;
-                  border-color: $error-border;
-                  width: 100%;
-                }
-
-                .notice {
-                  background: $notice-bg;
-                  color: $notice-color;
-                  border-color: $notice-border;
-                  width: 100%;
-                }
-
-                .success {
-                  background: $success-bg;
-                  color: $success-color;
-                  border-color: $success-border;
-                  width: 100%;
-                }
-              }
-            }
-          }
-        }
-      }
     }
 
     #recycle-contact {
@@ -722,26 +525,25 @@
       justify-content: flex-start;
       align-items: flex-start;
       font-size: 0.9em;
-      gap: 0.5em;
+      gap: 1em;
 
       address {
         display: flex;
-        flex-flow: column;
+        flex-flow: row wrap;
         align-items: flex-start;
         justify-content: flex-start;
-        gap: 1em;
+        gap: 0.5em;
         line-height: 60px;
         height: auto;
       }
 
       .recycle-contact-link {
-        font-size: 0.9em;
+        font-size: 1em;
         color: $color-black;
         height: auto;
         line-height: 35px;
-
         &:hover {
-          width: 100%;
+          font-style: italic;
           font-weight: bold;
         }
       }
@@ -749,13 +551,13 @@
       p,
       address {
         flex: 0 1 auto;
-        line-height: 60px;
+        line-height: 35px;
         margin: 0;
         padding: 0;
-        font-size: 1em;
+        font-size: 0.9em;
 
         &::before {
-          width: 40px;
+          width: 35px;
           display: inline-block;
           font-size: 1.5em;
           line-height: 35px;
@@ -1363,7 +1165,7 @@ footer {
         float: left;
         color: $color-white;
         padding: 0;
-        font-size: 0.8em;
+        font-size: 0.9em;
         font-family: $fontList;
         line-height: 20px;
         text-align: center;
@@ -1769,16 +1571,16 @@ footer {
         flex-flow: column;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 0.5em;
+        gap: 1em;
 
         address {
           display: flex;
-          flex-flow: row;
-          align-items: center;
+          flex-flow: row wrap;
+          align-items: flex-start;
           justify-content: flex-start;
-          gap: 1em;
+          gap: 0.5em;
           line-height: 60px;
-          height: 60px;
+          height: auto;
         }
 
         .recycle-contact-link {
@@ -1787,9 +1589,8 @@ footer {
           color: $color-black;
           height: auto;
           line-height: 35px;
-
           &:hover {
-            width: 100%;
+            font-style: italic;
             font-weight: bold;
           }
         }
@@ -1800,7 +1601,7 @@ footer {
           line-height: 60px;
           margin: 0;
           padding: 0;
-          font-size: 1em;
+          font-size: 1.1em;
           &::before {
             width: 35px;
             display: inline-block;
@@ -2339,7 +2140,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 960px) and (max-width: 1920px) {
+@media screen and (max-width: 1920px) and (min-width: 960px) {
   #mobile-toggle {
     display: none;
   }
@@ -2380,7 +2181,7 @@ footer {
 
       #logo-text {
         float: left;
-        font-size: 0.8em;
+        font-size: 0.9em;
         line-height: 20px;
         text-align: center;
       }
@@ -2652,16 +2453,16 @@ footer {
         flex-flow: column;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 0.5em;
+        gap: 1em;
 
         address {
           display: flex;
-          flex-flow: row;
-          align-items: center;
+          flex-flow: row wrap;
+          align-items: flex-start;
           justify-content: flex-start;
-          gap: 1em;
+          gap: 0.5em;
           line-height: 50px;
-          height: 50px;
+          height: auto;
         }
 
         .recycle-contact-link {
@@ -2669,7 +2470,7 @@ footer {
           height: auto;
           line-height: 35px;
           &:hover {
-            width: 100%;
+            font-style: italic;
             font-weight: bold;
           }
         }
@@ -3098,7 +2899,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 601px) and (max-width: 959px) {
+@media screen and (max-width: 959px) and (min-width: 601px) {
   #mobile-toggle {
     display: none;
   }
@@ -3128,7 +2929,7 @@ footer {
       }
 
       #logo-text {
-        font-size: 0.8em;
+        font-size: 0.9em;
         text-align: center;
       }
     }
@@ -3317,6 +3118,187 @@ footer {
           float: left;
           display: block;
           width: 16%;
+        }
+      }
+
+      #recycle-contact {
+        padding: 0.5em;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0.5em;
+
+        address {
+          display: flex;
+          flex-flow: row wrap;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 0.5em;
+          line-height: 50px;
+          height: auto;
+        }
+
+        .recycle-contact-link {
+          font-size: 0.9em;
+          height: auto;
+          line-height: 35px;
+          &:hover {
+            font-style: italic;
+            font-weight: bold;
+          }
+        }
+
+        p,
+        address {
+          flex: 0 1 auto;
+          line-height: 50px;
+          margin: 0;
+          padding: 0;
+          font-size: 0.9em;
+
+          &::before {
+            width: 35px;
+            display: inline-block;
+            font-size: 1.5em;
+            line-height: 35px;
+          }
+        }
+
+        #location {
+          width: 100%;
+          flex: 0 1 auto;
+          p::before {
+            font-family: FontAwesome;
+            content: '\f015';
+          }
+        }
+
+        #telephone {
+          width: 100%;
+          flex: 0 1 auto;
+          p::before {
+            font-family: FontAwesome;
+            content: '\f098';
+          }
+        }
+
+        #email {
+          width: 100%;
+          flex: 0 1 auto;
+          p::before {
+            font-family: FontAwesome;
+            content: '\f0e0';
+            font-style: normal;
+          }
+        }
+
+        #links {
+          width: 100%;
+          flex: 0 1 auto;
+          address::before {
+            font-family: FontAwesome;
+            content: '\f1ad';
+            font-style: normal;
+          }
+        }
+
+        #registration {
+          width: 100%;
+          flex: 0 1 auto;
+          p::before {
+            font-family: FontAwesome;
+            content: '\f0ac';
+            font-style: normal;
+          }
+        }
+
+        #feedback-form-container {
+          width: 100%;
+
+          p::before {
+            font-family: FontAwesome;
+            content: '\f0ac';
+          }
+          #feedback-form {
+            width: 99%;
+            margin: 1em auto;
+            background-color: $color-white;
+
+            #feedback-form-fields {
+              margin: 1em auto;
+              padding: 1em;
+
+              .feedback-form-item {
+                width: 100%;
+
+                label {
+                  width: 100%;
+                  font-size: 1.1em;
+                  line-height: 40px;
+                }
+
+                input {
+                  line-height: 35px;
+                  width: 100%;
+                }
+
+                textarea {
+                  margin: 0.5em 0 0;
+                  width: 100%;
+                }
+
+                input[type='submit'] {
+                  width: 20%;
+                  margin: 1em auto;
+                  line-height: 35px;
+                  background-color: $honecolor;
+                  border: 0;
+                  color: $color-white;
+                  display: block;
+                  font-size: 1.1em;
+
+                  &:hover {
+                    background-color: $honecolor;
+                    color: $color-white;
+                    font-weight: bold;
+                    cursor: pointer;
+                  }
+                }
+
+                .error,
+                .notice,
+                .success {
+                  line-height: 35px;
+                  margin-bottom: 0.5em;
+                  text-indent: 0.5em;
+                }
+
+                .error {
+                  background: $error-bg;
+                  color: $error-color;
+                  border-color: $error-border;
+                  width: 100%;
+                }
+
+                .notice {
+                  background: $notice-bg;
+                  color: $notice-color;
+                  border-color: $notice-border;
+                  width: 100%;
+                }
+
+                .success {
+                  background: $success-bg;
+                  color: $success-color;
+                  border-color: $success-border;
+                  width: 100%;
+                }
+              }
+            }
+          }
         }
       }
 
@@ -3827,15 +3809,15 @@ footer {
         flex-flow: column;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 0.5em;
+        gap: 1em;
 
         address {
           display: flex;
           flex-flow: column;
           align-items: flex-start;
           justify-content: flex-start;
-          gap: 1em;
-          line-height: 50px;
+          gap: 0.5em;
+          line-height: 40px;
           height: auto;
         }
 
@@ -3845,17 +3827,12 @@ footer {
           color: $color-black;
           height: auto;
           line-height: 35px;
-
-          &:hover {
-            width: 100%;
-            font-weight: bold;
-          }
         }
 
         p,
         address {
           flex: 0 1 auto;
-          line-height: 50px;
+          line-height: 35px;
           margin: 0;
           padding: 0;
           font-size: 0.9em;
@@ -4479,11 +4456,6 @@ footer {
           color: $color-black;
           height: auto;
           line-height: 35px;
-
-          &:hover {
-            width: 100%;
-            font-weight: bold;
-          }
         }
 
         p,
@@ -4492,7 +4464,7 @@ footer {
           line-height: 50px;
           margin: 0;
           padding: 0;
-          font-size: 0.85em;
+          font-size: 0.9em;
 
           &::before {
             width: 35px;
@@ -5102,11 +5074,6 @@ footer {
           color: $color-black;
           height: auto;
           line-height: 35px;
-
-          &:hover {
-            width: 100%;
-            font-weight: bold;
-          }
         }
 
         p,
