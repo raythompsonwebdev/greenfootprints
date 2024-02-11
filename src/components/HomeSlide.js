@@ -1,17 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function HomeSlide({ data }) {
+function HomeSlide({ data, hidden }) {
   const { caption, imageAlt, imageId, imageUrl, link, linktitle, title } = data;
+
+  const slidersStyle = {
+    backgroundImage: `url(${imageUrl})`,
+    backgroundPosition: '10% 50%',
+    backgroundRepeat: 'no-repeat',
+  };
 
   return (
     <figure
-      className="sliders"
-      style={{
-        backgroundImage: `url(${imageUrl})`,
-        backgroundPosition: '10% 50%',
-        backgroundRepeat: 'no-repeat',
-      }}>
+      className={`sliders ${hidden ? 'hidden' : ''}`}
+      style={slidersStyle}>
       <figcaption className="slider-caption">
         <h2 className="slider-caption-title">{title}</h2>
         <p className="slider-caption-text">{caption}</p>
@@ -19,12 +21,6 @@ function HomeSlide({ data }) {
           Read More
         </Link>
       </figcaption>
-      {/* <img
-        id={imageId}
-        className="slider-caption-image"
-        alt={imageAlt}
-        src={imageUrl}
-      /> */}
     </figure>
   );
 }

@@ -288,6 +288,7 @@
         .sliders {
           height: 100%;
           position: relative;
+          transition: all 5s linear 1s;
 
           .slider-caption-image {
             display: block;
@@ -751,6 +752,7 @@
         line-height: 60px;
         margin: 0;
         padding: 0;
+        font-size: 1em;
 
         &::before {
           width: 40px;
@@ -1798,7 +1800,7 @@ footer {
           line-height: 60px;
           margin: 0;
           padding: 0;
-
+          font-size: 1em;
           &::before {
             width: 35px;
             display: inline-block;
@@ -2678,7 +2680,7 @@ footer {
           line-height: 50px;
           margin: 0;
           padding: 0;
-          font-size: 0.9em;
+          font-size: 1em;
 
           &::before {
             width: 35px;
@@ -3856,7 +3858,7 @@ footer {
           line-height: 50px;
           margin: 0;
           padding: 0;
-          font-size: 0.85em;
+          font-size: 0.9em;
 
           &::before {
             width: 35px;

@@ -1,7 +1,6 @@
 import React from 'react';
 
 function HomePageCard({ data }) {
-
   return (
     <article className="home-page-card">
       <h3 className="home-page-card-title">{data.title}</h3>

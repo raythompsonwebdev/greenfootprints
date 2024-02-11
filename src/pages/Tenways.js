@@ -10,7 +10,7 @@ function TenWays() {
     const recycleBoxSlides = (n) => {
       // let i;
       const slides = Array.from(
-        document.getElementsByClassName('tenways-slide')
+        document.getElementsByclassName('tenways-slide')
       );
 
       if (slides === undefined) {
@@ -60,7 +60,7 @@ function TenWays() {
               <TenwaysSlide
                 data={slide}
                 key={index}
-                classname="tenways-slide"
+                className="tenways-slide"
               />
             ))}
 

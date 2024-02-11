@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Navigation() {
-
   const menuToggleFunc = () => {
     // create menu variables
     const slideoutMenu = document.querySelector('#site-navigation');

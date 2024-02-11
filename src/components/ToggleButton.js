@@ -30,7 +30,7 @@ function ToggleButton(props) {
 
   return (
     <button id="mobile-toggle" title="menu">
-      <i class="fa-solid fa-bars"></i>
+      <i className="fa-solid fa-bars"></i>
     </button>
   );
 }

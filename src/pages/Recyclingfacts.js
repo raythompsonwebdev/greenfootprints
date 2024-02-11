@@ -9,7 +9,7 @@ function RecyclingFacts() {
     // Slider 3
     const recycleBoxSlides = (n) => {
       // let i;
-      const slides = document.getElementsByClassName('recycling-facts-slide');
+      const slides = document.getElementsByclassName('recycling-facts-slide');
 
       if (slides === undefined) {
         return false;
@@ -62,7 +62,7 @@ function RecyclingFacts() {
               <RecyclingFactSlide
                 data={slide}
                 key={index}
-                classname="recycling-facts-slide"
+                className="recycling-facts-slide"
               />
             ))}
 
