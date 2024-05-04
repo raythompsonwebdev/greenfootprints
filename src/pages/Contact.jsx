@@ -1,4 +1,4 @@
-import FeedBackForm from '../components/FeedbackForm.jsx';
+import FeedBackForm from '../components/FeedBackForm.jsx';
 
 const Contacts = () => {
   return (
