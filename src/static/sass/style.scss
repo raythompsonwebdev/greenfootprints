@@ -105,7 +105,6 @@
     #logo-title {
       color: $headbg;
       font-size: 1.2em;
-      font-family: $fontList;
       text-align: left;
       line-height: 30px;
       margin: 0;
@@ -120,7 +119,6 @@
       color: $headbg;
       padding: 0;
       font-size: 0.65em;
-      font-family: $fontList;
       line-height: 20px;
       text-align: left;
       margin: 0;
@@ -278,7 +276,6 @@
       overflow: hidden;
       padding: 0;
       margin: 0;
-      font-family: $fontList;
 
       #slides {
         margin: 0;
@@ -312,7 +309,6 @@
               background-color: $bgcolor;
               line-height: 50px;
               margin: 1em auto;
-              font-family: $fontList;
               width: 90%;
               letter-spacing: 0.05em;
             }
@@ -1152,7 +1148,6 @@ footer {
       #logo-title {
         color: $color-white;
         font-size: 2em;
-        font-family: $fontList;
         text-align: center;
         line-height: 60px;
         margin: 0;
@@ -1166,7 +1161,7 @@ footer {
         color: $color-white;
         padding: 0;
         font-size: 0.9em;
-        font-family: $fontList;
+
         line-height: 20px;
         text-align: center;
         margin: 0;
@@ -1362,7 +1357,6 @@ footer {
         overflow: hidden;
         padding: 0;
         margin: 0;
-        font-family: $fontList;
 
         #slides {
           margin: 0;
@@ -1387,7 +1381,6 @@ footer {
               .slider-caption-title {
                 font-size: 1.3em;
                 line-height: 50px;
-                font-family: $fontList;
               }
 
               .slider-caption-text {
@@ -2297,7 +2290,6 @@ footer {
       .flexslider {
         height: 450px;
         overflow: hidden;
-        font-family: $fontList;
 
         #slides {
           margin: 0;

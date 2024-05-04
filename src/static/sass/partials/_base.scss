@@ -61,6 +61,10 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  li {
+    font-family: $fontText;
+  }
 }
 
 /* tables still need 'cellspacing="0"' in the markup */
@@ -101,12 +105,14 @@ h3 {
   font-weight: normal;
   width: 100%;
   display: block;
+  font-family: $fontList;
 }
 
 p {
   overflow: hidden;
   font-weight: normal;
   width: 100%;
+  font-family: $fontText;
 }
 
 img {
