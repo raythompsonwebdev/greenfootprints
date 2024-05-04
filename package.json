@@ -1,67 +1,36 @@
 {
-  "homepage": ".",
   "name": "greenfootprints",
-  "version": "0.1.0",
-  "license": "MIT",
-  "main": "index.js",
-  "description": "Greenfootprints recycling information website .",
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.2",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "autoprefixer": "^10.4.19",
-    "gh-pages": "^6.1.1",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.2",
-    "prettier": "^3.2.5",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.23.0",
-    "react-scripts": "^5.0.1",
-    "sass": "^1.76.0"
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write"
-    ]
-  },
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "rules": {
-      "react/jsx-filename-extension": [
-        1,
-        {
-          "extensions": [
-            ".js",
-            ".jsx"
-          ]
-        }
-      ],
-      "no-unused-vars": "off",
-      "no-var": "warn",
-      "no-console": 0,
-      "no-import-assign": 0,
-      "no-dupe-else-if": 0,
-      "no-setter-return": 0,
-      "func-names": "off",
-      "no-process-exit": "off",
-      "object-shorthand": "off",
-      "class-methods-use-this": "off",
-      "no-param-reassign": "off",
-      "no-undef": "off",
-      "prefer-arrow-callback": "warn",
-      "prefer-rest-params": "warn"
-    }
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "prop-types": "^15.8.1",
+    "sass": "^1.76.0",
+    "stylelint": "^16.5.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-prettier": "^5.0.0",
+    "vite": "^5.2.0",
+    "vite-plugin-image-optimizer": "^1.1.7",
+    "vite-plugin-stylelint": "^5.3.1"
   },
   "browserslist": {
     "production": [
@@ -74,14 +43,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "postcss-preset-env": "^9.5.10"
   }
 }

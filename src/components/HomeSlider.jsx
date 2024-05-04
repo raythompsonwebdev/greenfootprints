@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import HomeSlide from 'components/HomeSlide.js';
-import siteImages from 'static/data/siteImages.js';
+import { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
+import HomeSlide from '../components/HomeSlide.jsx';
+import siteImages from '../static/data/siteImages.js';
 
 function HomeSlider({ data }) {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -25,5 +26,9 @@ function HomeSlider({ data }) {
     </section>
   );
 }
+
+HomeSlider.propTypes = {
+  data: PropTypes.object.isRequired,
+};
 
 export default HomeSlider;

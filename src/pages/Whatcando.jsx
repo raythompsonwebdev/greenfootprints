@@ -1,9 +1,8 @@
-import React from 'react';
-import recycleCircle from 'static/images/webp/recycle-continuous-circle-greenfootprints-com.webp';
-import inRubbishBin from 'static/images/webp/what-is-in-your-rubbish-bin.webp';
-import whatCanImg from 'static/images/webp/Recycling_image_1.webp';
-import familyHomeImg from 'static/images/webp/family_home_page.webp';
-import recycleMaterialImg from 'static/images/webp/recylingbins-greenfootprints-com.webp';
+import recycleCircle from '../static/images/webp/recycle-continuous-circle-greenfootprints-com.webp';
+import inRubbishBin from '../static/images/webp/what-is-in-your-rubbish-bin.webp';
+import whatCanImg from '../static/images/webp/Recycling_image_1.webp';
+import familyHomeImg from '../static/images/webp/family_home_page.webp';
+import recycleMaterialImg from '../static/images/webp/recylingbins-greenfootprints-com.webp';
 
 function Whatcando() {
   return (

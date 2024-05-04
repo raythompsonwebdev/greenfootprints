@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
-import RecyclingFactSlide from '../components/RecyclingFactSlide.js';
-import recyclingfactsData from 'static/data/recyclingfactsData.js';
+// import React, { useEffect } from 'react';
+import RecyclingFactSlide from '../components/RecyclingFactSlide.jsx';
+import recyclingfactsData from '../static/data/recyclingfactsData.js';
 
 function RecyclingFacts() {
   // useEffect(() => {

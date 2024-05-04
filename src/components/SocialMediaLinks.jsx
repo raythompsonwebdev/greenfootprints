@@ -1,5 +1,3 @@
-import React from 'react';
-
 function SocialMediaLink() {
   return (
     <aside id="socials">
@@ -8,7 +6,8 @@ function SocialMediaLink() {
           <a
             href="https://www.twitter.com"
             title="Follow us on Twitter"
-            target="blank">
+            target="blank"
+          >
             <i className="fa-twitter"> </i>
           </a>
         </li>
@@ -16,7 +15,8 @@ function SocialMediaLink() {
           <a
             href="https://www.facebook.com"
             title="Follow us on Facebook"
-            target="blank">
+            target="blank"
+          >
             <i className="fa-facebook"> </i>
           </a>
         </li>
@@ -24,7 +24,8 @@ function SocialMediaLink() {
           <a
             href="https://www.google.com"
             title="Follow us on Google+"
-            target="blank">
+            target="blank"
+          >
             <i className="fa-google"> </i>
           </a>
         </li>
@@ -32,7 +33,8 @@ function SocialMediaLink() {
           <a
             href="https://www.instagram.com"
             title="Follow us on Instagram"
-            target="blank">
+            target="blank"
+          >
             <i className="fa-instagram"> </i>
           </a>
         </li>

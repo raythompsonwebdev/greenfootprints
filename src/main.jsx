@@ -1,18 +1,18 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header.js';
-import Footer from './components/Footer.js';
-import Navigation from './components/Navigation.js';
-import Home from './pages/Home.js';
-import Recycling from './pages/Recycling.js';
-import Whatcando from './pages/Whatcando.js';
-import Collections from './pages/Collections.js';
-import Recyclingfacts from './pages/Recyclingfacts.js';
-import Tenways from './pages/Tenways.js';
-import Contact from './pages/Contact.js';
-import ToggleButton from './components/ToggleButton.js';
-import './static/sass/style.scss';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
+import Navigation from "./components/Navigation.jsx";
+import Home from "./pages/Home.jsx";
+import Recycling from "./pages/Recycling.jsx";
+import Whatcando from "./pages/Whatcando.jsx";
+import Collections from "./pages/Collections.jsx";
+import Recyclingfacts from "./pages/Recyclingfacts.jsx";
+import Tenways from "./pages/Tenways.jsx";
+import Contact from "./pages/Contact.jsx";
+import ToggleButton from "./components/ToggleButton.jsx";
+import "./static/sass/style.scss";
 
 const routing = (
   <Router>
@@ -37,6 +37,6 @@ const routing = (
   </Router>
 );
 
-const container = document.getElementById('root');
+const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(routing);

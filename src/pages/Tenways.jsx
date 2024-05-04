@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
-import TenwaysSlide from 'components/TenwaysSlide.js';
-import tenwaysData from 'static/data/tenwaysData.js';
+// import React, { useEffect } from 'react';
+import TenwaysSlide from '../components/TenwaysSlide.jsx';
+import tenwaysData from '../static/data/tenwaysData.js';
 
 function TenWays() {
   // useEffect(() => {

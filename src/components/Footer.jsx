@@ -1,5 +1,4 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -14,7 +13,8 @@ function Footer() {
           <Link
             to="/whatcando"
             className="footer-nav-link"
-            title="What you can page">
+            title="What you can page"
+          >
             Can Do
           </Link>
         </li>
@@ -22,7 +22,8 @@ function Footer() {
           <Link
             to="/recycling"
             className="footer-nav-link"
-            title="Recycling page">
+            title="Recycling page"
+          >
             Recycling
           </Link>
         </li>
@@ -30,7 +31,8 @@ function Footer() {
           <Link
             to="/collections"
             className="footer-nav-link"
-            title="Recycling collection page">
+            title="Recycling collection page"
+          >
             Collections
           </Link>
         </li>
@@ -38,7 +40,8 @@ function Footer() {
           <Link
             to="/tenways"
             className="footer-nav-link"
-            title="Ten ways to recycle page">
+            title="Ten ways to recycle page"
+          >
             10 Ways
           </Link>
         </li>
@@ -46,7 +49,8 @@ function Footer() {
           <Link
             to="/recyclingfacts"
             className="footer-nav-link"
-            title="Recycling facts page">
+            title="Recycling facts page"
+          >
             Facts
           </Link>
         </li>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 function ToggleButton() {
   const [isOpen, setIsOpen] = useState(false);
@@ -6,27 +6,27 @@ function ToggleButton() {
   useEffect(() => {
     //const slideoutMenu = document.querySelector('#site-navigation');
     // const slideoutMenuHeight = slideoutMenu.offsetHeight;
-    const menuToggle = document.querySelector('#mobile-toggle');
+    const menuToggle = document.querySelector("#mobile-toggle");
 
     const toggleMenu = (event) => {
       event.preventDefault();
       setIsOpen((prevIsOpen) => !prevIsOpen);
     };
 
-    menuToggle.addEventListener('click', toggleMenu);
+    menuToggle.addEventListener("click", toggleMenu);
 
     return () => {
-      menuToggle.removeEventListener('click', toggleMenu);
+      menuToggle.removeEventListener("click", toggleMenu);
     };
   }, []);
 
   useEffect(() => {
-    const slideoutMenu = document.querySelector('#site-navigation');
+    const slideoutMenu = document.querySelector("#site-navigation");
     const slideoutMenuHeight = slideoutMenu.offsetHeight;
 
     if (slideoutMenu) {
-      slideoutMenu.style.transition = 'all 0.3s ease-in 0s';
-      slideoutMenu.style.top = isOpen ? '0px' : `${-slideoutMenuHeight}px`;
+      slideoutMenu.style.transition = "all 0.3s ease-in 0s";
+      slideoutMenu.style.top = isOpen ? "0px" : `${-slideoutMenuHeight}px`;
     }
   }, [isOpen]);
 

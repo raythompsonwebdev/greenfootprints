@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 const TenwaysSlide = ({ slides, className }) => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   useEffect(() => {
     const collectionBoxSlides = (n) => {
-      const slides = document.getElementsByClassName('tenways-slide');
+      const slides = document.getElementsByClassName("tenways-slide");
 
       if (!slides || !slides.length) {
         return false;
@@ -25,11 +26,11 @@ const TenwaysSlide = ({ slides, className }) => {
       setSlideIndex(newIndex);
 
       slideArray.forEach((slide, index) => {
-        slide.style.display = index + 1 === newIndex ? 'block' : 'none';
+        slide.style.display = index + 1 === newIndex ? "block" : "none";
         if (index + 1 === newIndex) {
-          slide.classList.add('fade');
+          slide.classList.add("fade");
         } else {
-          slide.classList.remove('fade');
+          slide.classList.remove("fade");
         }
       });
     };
@@ -44,15 +45,15 @@ const TenwaysSlide = ({ slides, className }) => {
       collectionBoxSlides(1);
     };
 
-    const prev = document.querySelector('.tenways-prev');
-    const next = document.querySelector('.tenways-next');
+    const prev = document.querySelector(".tenways-prev");
+    const next = document.querySelector(".tenways-next");
 
-    prev.addEventListener('click', handlePrevClick);
-    next.addEventListener('click', handleNextClick);
+    prev.addEventListener("click", handlePrevClick);
+    next.addEventListener("click", handleNextClick);
 
     return () => {
-      prev.removeEventListener('click', handlePrevClick);
-      next.removeEventListener('click', handleNextClick);
+      prev.removeEventListener("click", handlePrevClick);
+      next.removeEventListener("click", handleNextClick);
     };
   }, [slideIndex]); // Dependency array includes slideIndex to ensure the effect is re-run when slideIndex changes
 
@@ -70,6 +71,11 @@ const TenwaysSlide = ({ slides, className }) => {
       <button className="tenways-next">&#10095;</button>
     </div>
   );
+};
+
+TenwaysSlide.propTypes = {
+  slides: PropTypes.object.isRequired,
+  className: PropTypes.string.isRequired,
 };
 
 export default TenwaysSlide;

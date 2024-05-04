@@ -1,6 +1,5 @@
-import React from 'react';
-import CollectionSlide from 'components/CollectionSlide.js';
-import collectionData from 'static/data/collectionData.js';
+import CollectionSlide from '../components/CollectionSlide.jsx';
+import collectionData from '../static/data/collectionData.js';
 
 const Collections = () => {
   // useEffect(() => {

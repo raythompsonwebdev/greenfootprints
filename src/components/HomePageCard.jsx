@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from "prop-types";
 
 function HomePageCard({ data }) {
   return (
@@ -14,7 +14,8 @@ function HomePageCard({ data }) {
             href={data.downloadlink}
             download={data.download}
             title={data.title}
-            target="blank">
+            target="blank"
+          >
             Download PDF
           </a>
         </figcaption>
@@ -22,5 +23,9 @@ function HomePageCard({ data }) {
     </article>
   );
 }
+
+HomePageCard.propTypes = {
+  data: PropTypes.object.isRequired,
+};
 
 export default HomePageCard;

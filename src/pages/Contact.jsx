@@ -1,5 +1,4 @@
-import React from 'react';
-import FeedBackForm from 'components/FeedbackForm.js';
+import FeedBackForm from '../components/FeedbackForm.jsx';
 
 const Contacts = () => {
   return (
