@@ -14,11 +14,12 @@ Greenfootprints.com is a single page web application built using react.
 
 - [React](https://react.js.org/)
 - [React Router](https://reactrouter.com/)
+- [JSX](https://legacy.reactjs.org/docs/introducing-jsx.html/)
 - [Vite](https://vitejs.dev/)
 - [EditorConfig](https://editorconfig.org/)
 - [Prettier](https://prettier.io/)
 - [ESLint](https://eslint.org/)
-- [StyleLint](https://stylelint.io/)
+- [Stylelint](https://stylelint.io/)
 - [Sass](https://www.npmjs.com/package/node-sass)
 
 Greenfootprints requires [Node.js](https://nodejs.org/) v10+ to run.
