@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-function FeedbackForm() {
-  const [username, setUserName] = useState(' ');
-  const [email, setEmail] = useState(' ');
-  const [comments, setComments] = useState(' ');
+function FeedBackForm() {
+  const [username, setUserName] = useState('');
+  const [email, setEmail] = useState('');
+  const [comments, setComments] = useState('');
 
   const handleUserName = (e) => {
     setUserName(e.target.value);
@@ -76,4 +76,4 @@ function FeedbackForm() {
   );
 }
 
-export default FeedbackForm;
+export default FeedBackForm;

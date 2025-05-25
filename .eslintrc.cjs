@@ -1,0 +1,41 @@
+module.exports = {
+  root: true,
+  env: { browser: true, es2020: true },
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
+    'plugin:react-hooks/recommended',
+  ],
+  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
+  settings: { react: { version: '18.2' } },
+  plugins: ['react-refresh'],
+  rules: {
+    'react/jsx-no-target-blank': 'off',
+    'react-refresh/only-export-components': [
+      'warn',
+      { allowConstantExport: true },
+    ],
+    'react/jsx-filename-extension': [
+      1,
+      {
+        extensions: ['.js', '.jsx'],
+      },
+    ],
+    'no-unused-vars': 'off',
+    'no-var': 'warn',
+    'no-console': 0,
+    'no-import-assign': 0,
+    'no-dupe-else-if': 0,
+    'no-setter-return': 0,
+    'func-names': 'off',
+    'no-process-exit': 'off',
+    'object-shorthand': 'off',
+    'class-methods-use-this': 'off',
+    'no-param-reassign': 'off',
+    'no-undef': 'off',
+    'prefer-arrow-callback': 'warn',
+    'prefer-rest-params': 'warn',
+  },
+};

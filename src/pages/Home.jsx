@@ -1,8 +1,7 @@
-import React from 'react';
-import HomeSlider from 'components/HomeSlider.js';
-import HomepageCard from 'components/HomePageCard.js';
-import cardData from 'static/data/cardData.js';
-import siteImages from 'static/data/siteImages.js';
+import HomeSlider from '../components/HomeSlider.jsx';
+import HomepageCard from '../components/HomePageCard.jsx';
+import cardData from '../static/data/cardData.js';
+import siteImages from '../static/data/siteImages.js';
 
 function Home() {
   return (

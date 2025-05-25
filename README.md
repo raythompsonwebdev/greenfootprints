@@ -13,13 +13,18 @@ Greenfootprints.com is a single page web application built using react.
 ## Tools
 
 - [React](https://react.js.org/)
-- [Babel](https://babeljs.io/)
+- [React Router](https://reactrouter.com/)
+- [JSX](https://legacy.reactjs.org/docs/introducing-jsx.html/)
+- [Vite](https://vitejs.dev/)
 - [EditorConfig](https://editorconfig.org/)
+- [Prettier](https://prettier.io/)
+- [ESLint](https://eslint.org/)
+- [Stylelint](https://stylelint.io/)
 - [Sass](https://www.npmjs.com/package/node-sass)
 
 Greenfootprints requires [Node.js](https://nodejs.org/) v10+ to run.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create Vite](https://github.com/vitejs/vite/tree/main/packages/create-vite).
 
 ## Installation
 
@@ -32,7 +37,7 @@ $ npm install
 Start development server :-
 
 ```sh
-$ npm run start
+$ npm run dev
 ```
 
 Runs the app in the development mode.\
@@ -59,49 +64,12 @@ To serve build to view locally enter the following in the terminal :
  serve -s build
 ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-( please note production build not currently working - will be fixed very soon)
+Currently, two official plugins are available:
 
-```sh
-$ npm run eject
-```
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 ## License
 

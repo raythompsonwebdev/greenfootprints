@@ -1,6 +1,5 @@
-import React from 'react';
-import SocialMediaLink from './SocialMediaLinks.js';
-import logo from 'static/images/webp/logo-greenfootprints-com.webp';
+import SocialMediaLink from './SocialMediaLinks.jsx';
+import logo from '../static/images/webp/logo-greenfootprints-com.webp';
 
 function Header() {
   return (
@@ -11,7 +10,7 @@ function Header() {
 
       <div id="site-title">
         <h1 id="logo-title">GREENFOOTPRINTS</h1>
-        <p id="logo-text">UK's leading Recycling website</p>
+        <p id="logo-text">UK&apos;s leading Recycling website</p>
       </div>
 
       <SocialMediaLink />

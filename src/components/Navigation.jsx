@@ -1,23 +1,22 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Navigation() {
   const menuToggleFunc = () => {
     // create menu variables
-    const slideoutMenu = document.querySelector('#site-navigation');
+    const slideoutMenu = document.querySelector("#site-navigation");
     const slideoutMenuHeight = slideoutMenu.offsetHeight;
     // mobile menu toggle button
 
     // toggle open class
-    slideoutMenu.classList.toggle('open');
+    slideoutMenu.classList.toggle("open");
 
-    slideoutMenu.style.transition = 'all 0.3s ease-in 0s';
+    slideoutMenu.style.transition = "all 0.3s ease-in 0s";
 
     // slide menu
-    if (slideoutMenu.classList.contains('open')) {
-      slideoutMenu.style.top = '0px';
+    if (slideoutMenu.classList.contains("open")) {
+      slideoutMenu.style.top = "0px";
     } else {
-      slideoutMenu.style.transition = 'all 0.3s ease-in 0s';
+      slideoutMenu.style.transition = "all 0.3s ease-in 0s";
       slideoutMenu.style.top = `${-slideoutMenuHeight}px`;
     }
   };
@@ -30,7 +29,8 @@ function Navigation() {
             to="/"
             className="nav-links"
             title="Home page"
-            onMouseUp={menuToggleFunc}>
+            onMouseUp={menuToggleFunc}
+          >
             Home
           </Link>
         </li>
@@ -39,7 +39,8 @@ function Navigation() {
             to="/whatcando"
             className="nav-links"
             title="What you can page"
-            onMouseUp={menuToggleFunc}>
+            onMouseUp={menuToggleFunc}
+          >
             Can Do
           </Link>
         </li>
@@ -48,7 +49,8 @@ function Navigation() {
             to="/recycling"
             className="nav-links"
             title="Recycling page"
-            onMouseUp={menuToggleFunc}>
+            onMouseUp={menuToggleFunc}
+          >
             Recycling
           </Link>
         </li>
@@ -57,7 +59,8 @@ function Navigation() {
             to="/collections"
             className="nav-links"
             title="Recycling collection page"
-            onMouseUp={menuToggleFunc}>
+            onMouseUp={menuToggleFunc}
+          >
             Collections
           </Link>
         </li>
@@ -66,7 +69,8 @@ function Navigation() {
             to="/tenways"
             className="nav-links"
             title="Ten ways to recycle page"
-            onMouseUp={menuToggleFunc}>
+            onMouseUp={menuToggleFunc}
+          >
             10 Ways
           </Link>
         </li>
@@ -75,7 +79,8 @@ function Navigation() {
             to="/recyclingfacts"
             className="nav-links"
             title="Recycling facts page"
-            onMouseUp={menuToggleFunc}>
+            onMouseUp={menuToggleFunc}
+          >
             Facts
           </Link>
         </li>
@@ -84,7 +89,8 @@ function Navigation() {
             to="/contact"
             className="nav-links"
             title="Contact page"
-            onMouseUp={menuToggleFunc}>
+            onMouseUp={menuToggleFunc}
+          >
             Contact
           </Link>
         </li>

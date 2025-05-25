@@ -1,5 +1,4 @@
-import React from 'react';
-import mobileBatteries from 'static/images/webp/Image-mobile-batteries.webp';
+import mobileBatteries from '../static/images/webp/Image-mobile-batteries.webp';
 // import mobileBatteries103 from 'static/images/webp/Image-mobile-batteries-103.webp';
 // import mobileBatteries113 from 'static/images/webp/Image-mobile-batteries-113.webp';
 
@@ -15,13 +14,15 @@ function Recycling() {
             prevent waste of potentially useful materials, reduce the
             consumption of fresh raw materials, reduce energy usage, reduce air
             pollution (from incineration) - and water pollution (from
-            landfilling) by reducing the need for "conventional" waste disposal,
-            and lower greenhouse gas emissions as compared to virgin production.
+            landfilling) by reducing the need for &quot;conventional&quot; waste
+            disposal, and lower greenhouse gas emissions as compared to virgin
+            production.
           </p>
           <p>
             {' '}
             Recycling is a key component of modern waste reduction and is the
-            third component of the "Reduce, Reuse, Recycle" waste hierarchy.
+            third component of the &quot;Reduce, Reuse, Recycle&quot; waste
+            hierarchy.
           </p>
           <p>
             There are some ISO standards relating to recycling such as ISO
@@ -58,13 +59,13 @@ function Recycling() {
             {' '}
             However, this is often difficult or too expensive (compared with
             producing the same product from raw materials or other sources), so
-            "recycling" of many products or materials involves their reuse in
-            producing different materials (e.g., paperboard) instead. Another
-            form of recycling is the salvage of certain materials from complex
-            products, either due to their intrinsic value (e.g., lead from car
-            batteries, or gold from computer components), or due to their
-            hazardous nature (e.g., removal and reuse of mercury from various
-            items).
+            &quot;recycling&quot; of many products or materials involves their
+            reuse in producing different materials (e.g., paperboard) instead.
+            Another form of recycling is the salvage of certain materials from
+            complex products, either due to their intrinsic value (e.g., lead
+            from car batteries, or gold from computer components), or due to
+            their hazardous nature (e.g., removal and reuse of mercury from
+            various items).
           </p>
 
           <p>
